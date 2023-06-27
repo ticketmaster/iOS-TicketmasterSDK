@@ -1,0 +1,11 @@
+framework module TicketmasterTickets {
+  umbrella header "TicketmasterTickets.h"
+
+  export *
+  module * { export * }
+}
+
+module TicketmasterTickets.Swift {
+  header "TicketmasterTickets-Swift.h"
+  requires objc
+}

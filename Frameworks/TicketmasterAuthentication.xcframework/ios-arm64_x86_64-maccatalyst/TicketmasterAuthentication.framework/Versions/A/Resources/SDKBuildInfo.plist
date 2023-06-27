@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Fri Jun 23 13:04:53 PDT 2023</string>
+	<key>BuildHost</key>
+	<string>USHOLJBA1-ML</string>
+	<key>GITBranch</key>
+	<string>master</string>
+	<key>GITComment</key>
+	<string>Updated TMFoundation to 0.8.5</string>
+	<key>GITDate</key>
+	<string>Thu Jun 22 17:39:22 2023 -0700</string>
+	<key>GITRevision</key>
+	<string>34a23e9add9e1248c708aeea8a0726f905091830</string>
+	<key>MarketingVersion</key>
+	<string>0.0.11</string>
+</dict>
+</plist>

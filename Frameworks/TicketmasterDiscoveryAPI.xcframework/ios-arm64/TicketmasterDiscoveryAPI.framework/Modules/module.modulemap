@@ -1,0 +1,11 @@
+framework module TicketmasterDiscoveryAPI {
+  umbrella header "TicketmasterDiscoveryAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module TicketmasterDiscoveryAPI.Swift {
+  header "TicketmasterDiscoveryAPI-Swift.h"
+  requires objc
+}

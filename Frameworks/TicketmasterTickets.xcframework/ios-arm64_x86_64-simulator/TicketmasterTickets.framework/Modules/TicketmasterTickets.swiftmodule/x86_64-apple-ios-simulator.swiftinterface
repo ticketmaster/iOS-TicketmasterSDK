@@ -1,0 +1,960 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterTickets
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AuthenticationServices
+import Contacts
+import ContactsUI
+import Darwin
+import Foundation
+import MapKit
+import MessageUI
+import PassKit
+import SafariServices
+import Security
+import Swift
+import SystemConfiguration
+import TicketmasterAuthentication
+import TicketmasterFoundation
+import TicketmasterSecureEntry
+@_exported import TicketmasterTickets
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+public protocol TMTicketsOrderDelegate : AnyObject {
+  func presentClientAppPage(deeplink: Swift.String)
+  func handleNavBarButtonAction(page: TicketmasterTickets.TMTickets.Analytics.Page, screenTitleName: Swift.String?, event: TicketmasterTickets.TMPurchasedEvent?)
+  func didUpdateEvents(events: [TicketmasterTickets.TMPurchasedEvent], fromCache: Swift.Bool)
+  func didUpdateTickets(event: TicketmasterTickets.TMPurchasedEvent, fromCache: Swift.Bool)
+  func didClearEventsTicketsCache(backend: TicketmasterAuthentication.TMAuthentication.BackendService)
+}
+extension TicketmasterTickets.TMTickets {
+  final public func configure(success: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TMTicketsModuleHeaderView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var colorView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var mapView: MapKit.MKMapView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var topLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var centerLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var bottomLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var barcodeBackgroundView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) public static func build() -> TicketmasterTickets.TMTicketsModuleHeaderView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TicketmasterTickets.TMTicketsModuleHeaderView {
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundColor: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, mapCoordinateRegion: MapKit.MKCoordinateRegion, mapAnnotation: (any MapKit.MKAnnotation)? = nil)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, qrCodeValue: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, barcode2DValue: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, avContentURL: Foundation.URL, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) final public func playAVContent()
+  @_Concurrency.MainActor(unsafe) final public func pauseAVContent()
+}
+extension Swift.FixedWidthInteger {
+  @inlinable internal func bytes(totalBytes: Swift.Int = MemoryLayout<Self>.size) -> Swift.Array<Swift.UInt8> {
+    arrayOfBytes(value: self.littleEndian, length: totalBytes)
+    // TODO: adjust bytes order
+    // var value = self.littleEndian
+    // return withUnsafeBytes(of: &value, Array.init).reversed()
+  }
+}
+extension TicketmasterTickets.TMTickets {
+  final public var brandingColorsOverride: TicketmasterTickets.TMTickets.BrandingColors? {
+    get
+    set
+  }
+  final public var brandingColorButtonOverride: Swift.Bool {
+    get
+    set
+  }
+  final public var brandingColorNavBarOverride: Swift.Bool {
+    get
+    set
+  }
+  final public var brandingTeamLogoImage: UIKit.UIImage? {
+    get
+    set
+  }
+  final public var userTrackingEnabled: Swift.Bool {
+    get
+    set
+  }
+  final public var useNewAccountsManager: Swift.Bool {
+    get
+    set
+  }
+}
+public struct TMTicketsPrebuiltModule {
+  public enum ModuleName : Swift.String, Swift.CaseIterable {
+    case venueDirectionsViaAppleMaps
+    case venueConcessions
+    case accountManagerSeatUpgrades
+    case accountManagerMoreTicketActions
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName]
+    public typealias RawValue = Swift.String
+    public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ButtonCallbackName : Swift.String, Swift.CaseIterable {
+    case moreTicketActions
+    case seatUpgrades
+    case getDirections
+    case rideShare
+    case order
+    case wallet
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName]
+    public typealias RawValue = Swift.String
+    public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct HeaderOverride {
+    public let topLabelText: Swift.String?
+    public let topLabelTextAlignment: UIKit.NSTextAlignment?
+    public let centerLabelText: Swift.String?
+    public let centerLabelTextAlignment: UIKit.NSTextAlignment?
+    public let bottomLabelText: Swift.String?
+    public let bottomLabelTextAlignment: UIKit.NSTextAlignment?
+    public let gradientAlpha: CoreFoundation.CGFloat?
+    public let backgroundImage: UIKit.UIImage?
+    public init(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = nil, gradientAlpha: CoreFoundation.CGFloat? = nil, backgroundImage: UIKit.UIImage? = nil)
+  }
+  public static func accountManagerSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func accountManagerMoreTicketActions(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
+  public static func venueDirectionsViaAppleMaps(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
+  public static func venueConcessions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, showWalletButton: Swift.Bool) -> TicketmasterTickets.TMTicketsModule?
+}
+public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
+  public let identifier: Swift.String
+  public let uniqueIdentifier: Swift.String?
+  public let hostIdentifier: Swift.String?
+  public let discoveryIdentifier: Swift.String?
+  public let childEventIDs: [Swift.String]?
+  public let relatedIdentifiers: [Swift.String]?
+  public let name: Swift.String?
+  public let eventDescription: Swift.String?
+  public let imageInfo: TicketmasterTickets.TMPurchasedEventInfo.ImageInfo?
+  public let url: Foundation.URL?
+  public let code: Swift.String?
+  public let typeName: Swift.String?
+  public let status: Swift.String?
+  public let color: Swift.String?
+  public let dateInfo: TicketmasterTickets.TMPurchasedEventInfo.DateInfo?
+  public let isPastEvent: Swift.Bool?
+  public let isHostEvent: Swift.Bool?
+  public let isSeriesMaster: Swift.Bool?
+  public let isSeriesChild: Swift.Bool?
+  public let isThirdPartyResale: Swift.Bool?
+  public let isStreaming: Swift.Bool?
+  public let isSportXREvent: Swift.Bool?
+  public let promoterBranding: TicketmasterTickets.TMPurchasedEventInfo.PromoterBranding?
+  public let healthCheck: TicketmasterTickets.TMPurchasedEventInfo.HealthCheck?
+  public let venue: TicketmasterTickets.TMPurchasedEventInfo.Venue?
+  public let attraction: TicketmasterTickets.TMPurchasedEventInfo.Attraction?
+  public let hostOrderInfos: [TicketmasterTickets.TMPurchasedEventInfo.Order]?
+  public let hostOrderIDs: [Swift.String]?
+  public let encodedHostOrderIDs: [Swift.String]?
+  public let orderStatus: Swift.String?
+  public let isF2FExchangeEnabled: Swift.Bool?
+  public let ticketManagement: TicketmasterTickets.TMPurchasedEventInfo.TicketManagement?
+  public let isOrdersAPI: Swift.Bool?
+  public let useTmtt: Swift.Bool?
+  public let isRetEnabled: Swift.Bool?
+  public let isLarge: Swift.Bool?
+  public let changeStatus: Swift.String?
+  public struct ImageInfo : Swift.Codable, Swift.Hashable {
+    public let identifier: Swift.String?
+    public let name: Swift.String?
+    public let url: Foundation.URL?
+    public let height: CoreFoundation.CGFloat?
+    public let width: CoreFoundation.CGFloat?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.ImageInfo, b: TicketmasterTickets.TMPurchasedEventInfo.ImageInfo) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Venue : Swift.Codable, Swift.Hashable {
+    public let identifier: Swift.String?
+    public let name: Swift.String?
+    public let timezone: Swift.String?
+    public let address: TicketmasterTickets.TMPurchasedEventInfo.Venue.Address?
+    public let geolocation: TicketmasterTickets.TMPurchasedEventInfo.Venue.Location?
+    public struct Address : Swift.Codable, Swift.Hashable {
+      public let line1: Swift.String?
+      public let city: Swift.String?
+      public let region: Swift.String?
+      public let postalCode: Swift.String?
+      public let country: Swift.String?
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.Venue.Address, b: TicketmasterTickets.TMPurchasedEventInfo.Venue.Address) -> Swift.Bool
+      public func encode(to encoder: any Swift.Encoder) throws
+      public var hashValue: Swift.Int {
+        get
+      }
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Location : Swift.Codable, Swift.Hashable {
+      public let latitude: Swift.String?
+      public let longitude: Swift.String?
+      public var coordinate: CoreLocation.CLLocationCoordinate2D? {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.Venue.Location, b: TicketmasterTickets.TMPurchasedEventInfo.Venue.Location) -> Swift.Bool
+      public func encode(to encoder: any Swift.Encoder) throws
+      public var hashValue: Swift.Int {
+        get
+      }
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.Venue, b: TicketmasterTickets.TMPurchasedEventInfo.Venue) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Attraction : Swift.Codable, Swift.Hashable {
+    public let identifier: Swift.String?
+    public let name: Swift.String?
+    public let type: Swift.String?
+    public let url: Foundation.URL?
+    public let locale: Swift.String?
+    public let test: Swift.Bool?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.Attraction, b: TicketmasterTickets.TMPurchasedEventInfo.Attraction) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Order : Swift.Codable, Swift.Hashable {
+    public let orderId: Swift.String?
+    public let displayOrderId: Swift.String?
+    public let legacyOrderId: Swift.String?
+    public let encodedOrderId: Swift.String?
+    public let orderStatus: Swift.String?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.Order, b: TicketmasterTickets.TMPurchasedEventInfo.Order) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct DateInfo : Swift.Codable, Swift.Hashable {
+    public let isMultiDay: Swift.Bool
+    public let dateAtVenueString: Swift.String?
+    public let endDateAtVenueString: Swift.String?
+    public let dateTimeAtVenueString: Swift.String?
+    public let dateTimeUTCString: Swift.String?
+    public let dateTimeUTC: Foundation.Date?
+    public let timezone: Foundation.TimeZone?
+    public let hasDateOverride: Swift.Bool
+    public let dateOverrideText: Swift.String?
+    public let hasTimeOverride: Swift.Bool
+    public let timeOverrideText: Swift.String?
+    public let displayDateTimeText: Swift.String?
+    public let actualDisplayDateTimeText: Swift.String
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.DateInfo, b: TicketmasterTickets.TMPurchasedEventInfo.DateInfo) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct PromoterBranding : Swift.Codable, Swift.Hashable {
+    public let colorString: Swift.String
+    public func color() -> UIKit.UIColor?
+    public let logo1xUrl: Foundation.URL?
+    public let logo2xUrl: Foundation.URL?
+    public let logo3xUrl: Foundation.URL?
+    public func logoForScreenScale() -> Foundation.URL?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.PromoterBranding, b: TicketmasterTickets.TMPurchasedEventInfo.PromoterBranding) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct HealthCheck : Swift.Codable, Swift.Hashable {
+    public let provider: Swift.String?
+    public let smallIcon: Foundation.URL?
+    public let largeIcon: Foundation.URL?
+    public let summary: Swift.String?
+    public let checkDescription: Swift.String?
+    public let learnMoreUrl: Foundation.URL?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.HealthCheck, b: TicketmasterTickets.TMPurchasedEventInfo.HealthCheck) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct TicketManagement : Swift.Codable, Swift.Hashable {
+    public let isEnabled: Swift.Bool?
+    public let url: Foundation.URL?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedEventInfo.TicketManagement, b: TicketmasterTickets.TMPurchasedEventInfo.TicketManagement) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TicketmasterTickets.TMPurchasedEventInfo, b: TicketmasterTickets.TMPurchasedEventInfo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@inlinable internal func rotateLeft(_ value: Swift.UInt8, by: Swift.UInt8) -> Swift.UInt8 {
+  ((value << by) & 0xff) | (value >> (8 - by))
+}
+@inlinable internal func rotateLeft(_ value: Swift.UInt16, by: Swift.UInt16) -> Swift.UInt16 {
+  ((value << by) & 0xffff) | (value >> (16 - by))
+}
+@inlinable internal func rotateLeft(_ value: Swift.UInt32, by: Swift.UInt32) -> Swift.UInt32 {
+  ((value << by) & 0xffffffff) | (value >> (32 - by))
+}
+@inlinable internal func rotateLeft(_ value: Swift.UInt64, by: Swift.UInt64) -> Swift.UInt64 {
+  (value << by) | (value >> (64 - by))
+}
+@inlinable internal func rotateRight(_ value: Swift.UInt16, by: Swift.UInt16) -> Swift.UInt16 {
+  (value >> by) | (value << (16 - by))
+}
+@inlinable internal func rotateRight(_ value: Swift.UInt32, by: Swift.UInt32) -> Swift.UInt32 {
+  (value >> by) | (value << (32 - by))
+}
+@inlinable internal func rotateRight(_ value: Swift.UInt64, by: Swift.UInt64) -> Swift.UInt64 {
+  ((value >> by) | (value << (64 - by)))
+}
+@inlinable internal func reversed(_ uint8: Swift.UInt8) -> Swift.UInt8 {
+  var v = uint8
+  v = (v & 0xf0) >> 4 | (v & 0x0f) << 4
+  v = (v & 0xcc) >> 2 | (v & 0x33) << 2
+  v = (v & 0xaa) >> 1 | (v & 0x55) << 1
+  return v
+}
+@inlinable internal func reversed(_ uint32: Swift.UInt32) -> Swift.UInt32 {
+  var v = uint32
+  v = ((v >> 1) & 0x55555555) | ((v & 0x55555555) << 1)
+  v = ((v >> 2) & 0x33333333) | ((v & 0x33333333) << 2)
+  v = ((v >> 4) & 0x0f0f0f0f) | ((v & 0x0f0f0f0f) << 4)
+  v = ((v >> 8) & 0x00ff00ff) | ((v & 0x00ff00ff) << 8)
+  v = ((v >> 16) & 0xffff) | ((v & 0xffff) << 16)
+  return v
+}
+@inlinable internal func xor<T, V>(_ left: T, _ right: V) -> Swift.ArraySlice<Swift.UInt8> where T : Swift.RandomAccessCollection, V : Swift.RandomAccessCollection, T.Element == Swift.UInt8, T.Index == Swift.Int, V.Element == Swift.UInt8, V.Index == Swift.Int {
+  return xor(left, right).slice
+}
+@inlinable internal func xor<T, V>(_ left: T, _ right: V) -> Swift.Array<Swift.UInt8> where T : Swift.RandomAccessCollection, V : Swift.RandomAccessCollection, T.Element == Swift.UInt8, T.Index == Swift.Int, V.Element == Swift.UInt8, V.Index == Swift.Int {
+  let length = Swift.min(left.count, right.count)
+
+  let buf = UnsafeMutablePointer<UInt8>.allocate(capacity: length)
+  buf.initialize(repeating: 0, count: length)
+  defer {
+    buf.deinitialize(count: length)
+    buf.deallocate()
+  }
+
+  // xor
+  for i in 0..<length {
+    buf[i] = left[left.startIndex.advanced(by: i)] ^ right[right.startIndex.advanced(by: i)]
+  }
+
+  return Array(UnsafeBufferPointer(start: buf, count: length))
+}
+@inline(__always) @inlinable internal func bitPadding(to data: inout Swift.Array<Swift.UInt8>, blockSize: Swift.Int, allowance: Swift.Int = 0) {
+  let msgLength = data.count
+  // Step 1. Append Padding Bits
+  // append one bit (UInt8 with one bit) to message
+  data.append(0x80)
+
+  // Step 2. append "0" bit until message length in bits ≡ 448 (mod 512)
+  let max = blockSize - allowance // 448, 986
+  if msgLength % blockSize < max { // 448
+    data += Array<UInt8>(repeating: 0, count: max - 1 - (msgLength % blockSize))
+  } else {
+    data += Array<UInt8>(repeating: 0, count: blockSize + max - 1 - (msgLength % blockSize))
+  }
+}
+extension TicketmasterTickets.TMTickets {
+  final public var navBarButtonTitle: Swift.String? {
+    get
+    set
+  }
+}
+public protocol TMTicketsModuleDelegate : AnyObject {
+  func addCustomModules(event: TicketmasterTickets.TMPurchasedEvent, completion: @escaping (_ customModuleArray: [TicketmasterTickets.TMTicketsModule]?) -> Swift.Void)
+  func handleModuleActionButton(event: TicketmasterTickets.TMPurchasedEvent, module: TicketmasterTickets.TMTicketsModule, button: TicketmasterTickets.TMTicketsModule.ActionButton, completion: @escaping (_ openWebpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings?) -> Swift.Void)
+}
+public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
+  public let identifier: Swift.String?
+  public let uniqueEventIdentifier: Swift.String?
+  public let eventIdentifier: Swift.String?
+  public let externalEventIdentifier: Swift.String?
+  public let eventName: Swift.String?
+  public let eventCode: Swift.String?
+  public let paramRef: Swift.String?
+  public let ticketType: Swift.String?
+  public let extendedTicketType: Swift.String?
+  public let ticketDescription: Swift.String?
+  public let productType: Swift.String?
+  public let isHostTicket: Swift.Bool?
+  public let isStreamingTicket: Swift.Bool?
+  public let isThirdPartyResale: Swift.Bool?
+  public let ticketSource: Swift.String?
+  public let ticketTextLines: [Swift.String]?
+  public let termsAndConditions: Swift.String?
+  public let hostBranding: TicketmasterTickets.TMPurchasedTicket.HostBranding?
+  public let vipColor: TicketmasterTickets.TMPurchasedTicket.Color?
+  public let vipText: Swift.String?
+  public let isMfaOnViewBarcodeEnabled: Swift.Bool?
+  public let entryGate: Swift.String?
+  public let sectionName: Swift.String?
+  public let rowName: Swift.String?
+  public let seatName: Swift.String?
+  public let seatType: Swift.String?
+  public let seatFrom: Swift.String?
+  public let seatThru: Swift.String?
+  public let deliveryInfo: TicketmasterTickets.TMPurchasedTicket.Delivery?
+  public let deliveryServiceType: Swift.String?
+  public let barcodeRenderStatus: Swift.String?
+  public let ticketStatus: Swift.String?
+  public let transferAvailabilityStatus: Swift.String?
+  public let resaleAvailabilityStatus: Swift.String?
+  public let orderIdentifier: Swift.String?
+  public let displayOrderIdentifier: Swift.String?
+  public let encodedOrderIdentifier: Swift.String?
+  public let isOrdersApi: Swift.Bool?
+  public let orderStatus: Swift.String?
+  public let purchaseDate: Foundation.Date?
+  public let ticketFees: [TicketmasterTickets.TMPurchasedTicket.TicketFee]?
+  public let originalTicketPrice: Swift.Double?
+  public let orderSource: Swift.String?
+  public let printStatus: Swift.String?
+  public let printEligibility: Swift.String?
+  public let eventCPRStatus: Swift.String?
+  public let moreActionsStatus: Swift.String?
+  public let seatUpgradeExchangeStatus: Swift.String?
+  public struct TicketFee : Swift.Codable, Swift.Hashable {
+    public let feeDescription: Swift.String?
+    public let type: Swift.String?
+    public let amount: Swift.Double?
+    public let currency: Swift.String?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedTicket.TicketFee, b: TicketmasterTickets.TMPurchasedTicket.TicketFee) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Delivery : Swift.Codable, Swift.Hashable {
+    public let status: Swift.String?
+    public let source: TicketmasterTickets.TMPurchasedTicket.Delivery.Source?
+    public let deliveryDate: Foundation.Date?
+    public let segmentType: TicketmasterTickets.TMPurchasedTicket.Delivery.SegmentType?
+    public let trackingNumber: Swift.String?
+    public let descriptionLine1: Swift.String?
+    public let descriptionLine2: Swift.String?
+    public let descriptionLine3: Swift.String?
+    public let displayMessage: Swift.String?
+    public let methods: [Swift.String]?
+    public enum Source : Swift.String, Swift.Codable, Swift.Hashable {
+      case flash
+      case ups
+      case willCall
+      case mobileTransfer
+      case unknown
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum SegmentType : Swift.String, Swift.Codable, Swift.Hashable {
+      case barcode
+      case nfc
+      case rotatingSymbology
+      case nfcRotatingSymbology
+      case unknown
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedTicket.Delivery, b: TicketmasterTickets.TMPurchasedTicket.Delivery) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct HostBranding : Swift.Codable, Swift.Hashable {
+    public let headerImageUrl: Foundation.URL?
+    public let sponsorImageUrl: Foundation.URL?
+    public let termsTitle: Swift.String?
+    public let labelColor: TicketmasterTickets.TMPurchasedTicket.Color?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedTicket.HostBranding, b: TicketmasterTickets.TMPurchasedTicket.HostBranding) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Color : Swift.Codable, Swift.Hashable {
+    public let colorString: Swift.String
+    public var color: UIKit.UIColor? {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMPurchasedTicket.Color, b: TicketmasterTickets.TMPurchasedTicket.Color) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TicketmasterTickets.TMPurchasedTicket, b: TicketmasterTickets.TMPurchasedTicket) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TMTicketsViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var addLogoutButton: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Swift.String : Swift.Error {
+}
+extension TicketmasterTickets.TMTickets {
+  public enum IdType : Swift.String, Swift.Codable, Swift.Hashable {
+    case event
+    case order
+    case any
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ActionType : Swift.String, Swift.Codable, Swift.Hashable {
+    case posting
+    case transfer
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct BrandingColors : Swift.Codable, Swift.Hashable {
+    public let navBar: UIKit.UIColor
+    public let button: UIKit.UIColor
+    public let text: UIKit.UIColor
+    public let ticket: UIKit.UIColor
+    public let theme: TicketmasterAuthentication.TMAuthentication.ColorTheme
+    public init()
+    public init(navBarColor: UIKit.UIColor, buttonColor: UIKit.UIColor, textColor: UIKit.UIColor, ticketColor: UIKit.UIColor, theme: TicketmasterAuthentication.TMAuthentication.ColorTheme)
+    public init(color: UIKit.UIColor, theme: TicketmasterAuthentication.TMAuthentication.ColorTheme)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMTickets.BrandingColors, b: TicketmasterTickets.TMTickets.BrandingColors) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension TicketmasterTickets.TMTickets {
+  public struct TicketsError {
+    public static let domain: Swift.String
+    public static let domainTMX: Swift.String
+    public static let configurationNotSet: Foundation.NSError
+    public static let configurationNotMatched: Foundation.NSError
+    public static let configurationServiceNotSet: Foundation.NSError
+    public static let configurationInvalidForOperation: Foundation.NSError
+    public static let configurationInProgress: Foundation.NSError
+    public static let emptyResponse: Foundation.NSError
+    public static let unexpectedReponse: Foundation.NSError
+    public static let userNotLoggedIn: Foundation.NSError
+    public static let userAbortedLogin: Foundation.NSError
+    public static let loginWindowMissing: Foundation.NSError
+    public static let missingOAuthTokens: Foundation.NSError
+    public enum FetchError : Swift.Error {
+      case noMatchingEvent
+      case noOrders
+      case aggregated([any Swift.Error])
+      case unspecified
+    }
+  }
+}
+extension TicketmasterTickets.TMTickets {
+  final public func start(ticketsView: TicketmasterTickets.TMTicketsView)
+}
+@usableFromInline
+internal struct BatchedCollectionIndex<Base> where Base : Swift.Collection {
+}
+extension TicketmasterTickets.BatchedCollectionIndex : Swift.Comparable {
+  @usableFromInline
+  internal static func == <Base>(lhs: TicketmasterTickets.BatchedCollectionIndex<Base>, rhs: TicketmasterTickets.BatchedCollectionIndex<Base>) -> Swift.Bool where Base : Swift.Collection
+  @usableFromInline
+  internal static func < <Base>(lhs: TicketmasterTickets.BatchedCollectionIndex<Base>, rhs: TicketmasterTickets.BatchedCollectionIndex<Base>) -> Swift.Bool where Base : Swift.Collection
+}
+@usableFromInline
+internal struct BatchedCollection<Base> : Swift.Collection where Base : Swift.Collection {
+  @usableFromInline
+  internal init(base: Base, size: Swift.Int)
+  @usableFromInline
+  internal typealias Index = TicketmasterTickets.BatchedCollectionIndex<Base>
+  @usableFromInline
+  internal var startIndex: TicketmasterTickets.BatchedCollection<Base>.Index {
+    get
+  }
+  @usableFromInline
+  internal var endIndex: TicketmasterTickets.BatchedCollection<Base>.Index {
+    get
+  }
+  @usableFromInline
+  internal func index(after idx: TicketmasterTickets.BatchedCollection<Base>.Index) -> TicketmasterTickets.BatchedCollection<Base>.Index
+  @usableFromInline
+  internal subscript(idx: TicketmasterTickets.BatchedCollection<Base>.Index) -> Base.SubSequence {
+    get
+  }
+  @usableFromInline
+  internal typealias Element = Base.SubSequence
+  @usableFromInline
+  internal typealias Indices = Swift.DefaultIndices<TicketmasterTickets.BatchedCollection<Base>>
+  @usableFromInline
+  internal typealias Iterator = Swift.IndexingIterator<TicketmasterTickets.BatchedCollection<Base>>
+  @usableFromInline
+  internal typealias SubSequence = Swift.Slice<TicketmasterTickets.BatchedCollection<Base>>
+}
+extension Swift.Collection {
+  @inlinable internal func batched(by size: Swift.Int) -> TicketmasterTickets.BatchedCollection<Self> {
+    BatchedCollection(base: self, size: size)
+  }
+}
+extension TicketmasterTickets.TMTicketsModule {
+  public static func moduleArray(jsonDict: [Swift.String : Any]) -> [TicketmasterTickets.TMTicketsModule]?
+}
+extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swift.Int {
+  @inlinable internal func toUInt32Array() -> Swift.Array<Swift.UInt32> {
+    guard !isEmpty else {
+      return []
+    }
+
+    let c = strideCount(from: startIndex, to: endIndex, by: 4)
+    return Array<UInt32>(unsafeUninitializedCapacity: c) { buf, count in
+      var counter = 0
+      for idx in stride(from: startIndex, to: endIndex, by: 4) {
+        let val = UInt32(bytes: self, fromIndex: idx).bigEndian
+        buf[counter] = val
+        counter += 1
+      }
+      count = counter
+      assert(counter == c)
+    }
+  }
+  @inlinable internal func toUInt64Array() -> Swift.Array<Swift.UInt64> {
+    guard !isEmpty else {
+      return []
+    }
+
+    let c = strideCount(from: startIndex, to: endIndex, by: 8)
+    return Array<UInt64>(unsafeUninitializedCapacity: c) { buf, count in
+      var counter = 0
+      for idx in stride(from: startIndex, to: endIndex, by: 8) {
+        let val = UInt64(bytes: self, fromIndex: idx).bigEndian
+        buf[counter] = val
+        counter += 1
+      }
+      count = counter
+      assert(counter == c)
+    }
+  }
+}
+@usableFromInline
+internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swift.Int
+public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
+  public let info: TicketmasterTickets.TMPurchasedEventInfo
+  public let orders: [TicketmasterTickets.TMPurchasedOrder]?
+  public let selectedOrder: TicketmasterTickets.TMPurchasedOrder?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TicketmasterTickets.TMPurchasedEvent, b: TicketmasterTickets.TMPurchasedEvent) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension TicketmasterTickets.TMTickets {
+  final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil)
+}
+public protocol TMTicketsAnalyticsDelegate : AnyObject {
+  func userDidView(page: TicketmasterTickets.TMTickets.Analytics.Page, metadata: TicketmasterTickets.TMTickets.Analytics.MetadataType)
+  func userDidPerform(action: TicketmasterTickets.TMTickets.Analytics.Action, metadata: TicketmasterTickets.TMTickets.Analytics.MetadataType)
+}
+extension TicketmasterTickets.TMTickets {
+  public struct Analytics : Swift.Codable, Swift.Hashable {
+    public enum Page : Swift.String {
+      case events
+      case eventTickets
+      case eventModules
+      case ticketBarcode
+      case ticketDelivery
+      case ticketDetails
+      case mfaForTicketOperation
+      case mfaForViewBarcode
+      case mfaForWebpage
+      case eventInfoBanner
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Action : Swift.String {
+      case addTicketToWalletButton
+      case barcodeScreenshot
+      case transferSendButton
+      case transferCancelButton
+      case postingEditButton
+      case postingCancelButton
+      case eventInfoBannerButton
+      case moduleActionButton
+      case pullToRefreshEvents
+      case navbarButtonAction
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum MetadataType {
+      case events(events: [TicketmasterTickets.TMPurchasedEvent])
+      case event(event: TicketmasterTickets.TMPurchasedEvent)
+      case eventTickets(event: TicketmasterTickets.TMPurchasedEvent, tickets: [TicketmasterTickets.TMPurchasedTicket])
+      case eventTicket(event: TicketmasterTickets.TMPurchasedEvent, ticket: TicketmasterTickets.TMPurchasedTicket)
+      case module(event: TicketmasterTickets.TMPurchasedEvent, module: TicketmasterTickets.TMTicketsModule)
+      case moduleButton(event: TicketmasterTickets.TMPurchasedEvent, module: TicketmasterTickets.TMTicketsModule, button: TicketmasterTickets.TMTicketsModule.ActionButton)
+      case empty
+      public var description: Swift.String {
+        get
+      }
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMTickets.Analytics, b: TicketmasterTickets.TMTickets.Analytics) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TMTicketsView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @objc deinit
+}
+extension Swift.UInt32 {
+  @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
+  @inlinable internal init<T>(bytes: T, fromIndex index: T.Index) where T : Swift.Collection, T.Element == Swift.UInt8, T.Index == Swift.Int {
+    if bytes.isEmpty {
+      self = 0
+      return
+    }
+
+    let count = bytes.count
+
+    let val0 = count > 0 ? UInt32(bytes[index.advanced(by: 0)]) << 24 : 0
+    let val1 = count > 1 ? UInt32(bytes[index.advanced(by: 1)]) << 16 : 0
+    let val2 = count > 2 ? UInt32(bytes[index.advanced(by: 2)]) << 8 : 0
+    let val3 = count > 3 ? UInt32(bytes[index.advanced(by: 3)]) : 0
+
+    self = val0 | val1 | val2 | val3
+  }
+}
+public struct TMPurchasedOrder : Swift.Codable, Swift.Hashable, Swift.Comparable {
+  public let orderIdentifier: Swift.String
+  public let displayableOrderIdentifier: Swift.String
+  public let encodedOrderIdentifier: Swift.String?
+  public let tickets: [TicketmasterTickets.TMPurchasedTicket]
+  public static func < (lhs: TicketmasterTickets.TMPurchasedOrder, rhs: TicketmasterTickets.TMPurchasedOrder) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: TicketmasterTickets.TMPurchasedOrder, b: TicketmasterTickets.TMPurchasedOrder) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_specialize(exported: false, kind: full, where T == Swift.Int)
+@_specialize(exported: false, kind: full, where T == Swift.UInt)
+@_specialize(exported: false, kind: full, where T == Swift.UInt8)
+@_specialize(exported: false, kind: full, where T == Swift.UInt16)
+@_specialize(exported: false, kind: full, where T == Swift.UInt32)
+@_specialize(exported: false, kind: full, where T == Swift.UInt64)
+@inlinable internal func arrayOfBytes<T>(value: T, length totalBytes: Swift.Int = MemoryLayout<T>.size) -> Swift.Array<Swift.UInt8> where T : Swift.FixedWidthInteger {
+  let valuePointer = UnsafeMutablePointer<T>.allocate(capacity: 1)
+  valuePointer.pointee = value
+
+  let bytesPointer = UnsafeMutablePointer<UInt8>(OpaquePointer(valuePointer))
+  var bytes = Array<UInt8>(repeating: 0, count: totalBytes)
+  for j in 0..<min(MemoryLayout<T>.size, totalBytes) {
+    bytes[totalBytes - 1 - j] = (bytesPointer + j).pointee
+  }
+
+  valuePointer.deinitialize(count: 1)
+  valuePointer.deallocate()
+
+  return bytes
+}
+extension Swift.UInt64 {
+  @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
+  @inlinable internal init<T>(bytes: T, fromIndex index: T.Index) where T : Swift.Collection, T.Element == Swift.UInt8, T.Index == Swift.Int {
+    if bytes.isEmpty {
+      self = 0
+      return
+    }
+
+    let count = bytes.count
+
+    let val0 = count > 0 ? UInt64(bytes[index.advanced(by: 0)]) << 56 : 0
+    let val1 = count > 1 ? UInt64(bytes[index.advanced(by: 1)]) << 48 : 0
+    let val2 = count > 2 ? UInt64(bytes[index.advanced(by: 2)]) << 40 : 0
+    let val3 = count > 3 ? UInt64(bytes[index.advanced(by: 3)]) << 32 : 0
+    let val4 = count > 4 ? UInt64(bytes[index.advanced(by: 4)]) << 24 : 0
+    let val5 = count > 5 ? UInt64(bytes[index.advanced(by: 5)]) << 16 : 0
+    let val6 = count > 6 ? UInt64(bytes[index.advanced(by: 6)]) << 8 : 0
+    let val7 = count > 7 ? UInt64(bytes[index.advanced(by: 7)]) : 0
+
+    self = val0 | val1 | val2 | val3 | val4 | val5 | val6 | val7
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TMTickets : ObjectiveC.NSObject {
+  public static let shared: TicketmasterTickets.TMTickets
+  final public var version: Swift.String {
+    get
+  }
+  final public var secureEntryVersion: Swift.String {
+    get
+  }
+  weak final public var orderDelegate: (any TicketmasterTickets.TMTicketsOrderDelegate)?
+  weak final public var moduleDelegate: (any TicketmasterTickets.TMTicketsModuleDelegate)?
+  weak final public var analyticsDelegate: (any TicketmasterTickets.TMTicketsAnalyticsDelegate)?
+  @objc deinit
+}
+@objc public class TMTicketsModule : ObjectiveC.NSObject, Swift.Comparable {
+  final public let identifier: Swift.String
+  final public let headerDisplay: TicketmasterTickets.TMTicketsModule.HeaderDisplay?
+  public var actionButtons: [TicketmasterTickets.TMTicketsModule.ActionButton]?
+  public init(identifier: Swift.String, headerDisplay: TicketmasterTickets.TMTicketsModule.HeaderDisplay? = nil, actionButtons: [TicketmasterTickets.TMTicketsModule.ActionButton]? = nil)
+  public static func < (lhs: TicketmasterTickets.TMTicketsModule, rhs: TicketmasterTickets.TMTicketsModule) -> Swift.Bool
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc public class HeaderDisplay : ObjectiveC.NSObject {
+    final public let image: UIKit.UIImage?
+    final public let view: UIKit.UIView?
+    public init(image: UIKit.UIImage)
+    public init(view: UIKit.UIView)
+    @objc deinit
+  }
+  @objc public class ActionButton : ObjectiveC.NSObject {
+    final public let title: Swift.String
+    final public let callbackValue: Swift.String
+    final public let webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings?
+    final public let requiresSpecificOrder: Swift.Bool
+    public var enabled: Swift.Bool
+    public init(title: Swift.String, callbackValue: Swift.String? = nil, requiresSpecificOrder: Swift.Bool? = false, enabled: Swift.Bool? = true)
+    public init(title: Swift.String, callbackValue: Swift.String? = nil, webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings, requiresSpecificOrder: Swift.Bool? = false, enabled: Swift.Bool? = true)
+    @objc deinit
+  }
+  @objc public class WebpageSettings : ObjectiveC.NSObject {
+    public var pageTitle: Swift.String
+    public var urlRequest: Foundation.URLRequest
+    public var openExternalURL: Swift.Bool
+    public var internalPresentationStyle: UIKit.UIModalPresentationStyle?
+    public var reloadTicketInfo: Swift.Bool
+    public var oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings?
+    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings? = nil)
+    @objc deinit
+  }
+  @objc public class OAuthCookieSettings : ObjectiveC.NSObject {
+    public var name: Swift.String
+    public var value: Swift.String?
+    public var webDomains: [Swift.String]
+    public var backend: TicketmasterAuthentication.TMAuthentication.BackendService?
+    public init(name: Swift.String, webDomains: [Swift.String], backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil)
+    public init(name: Swift.String, value: Swift.String?, webDomains: [Swift.String])
+    @objc deinit
+  }
+  @objc deinit
+}
+extension Swift.Array {
+  @inlinable internal init(reserveCapacity: Swift.Int) {
+    self = Array<Element>()
+    self.reserveCapacity(reserveCapacity)
+  }
+  @inlinable internal var slice: Swift.ArraySlice<Element> {
+    get {
+    self[self.startIndex ..< self.endIndex]
+  }
+  }
+}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName : Swift.Equatable {}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName : Swift.Hashable {}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.Equatable {}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.Hashable {}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMPurchasedTicket.Delivery.Source : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMPurchasedTicket.Delivery.SegmentType : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTickets.IdType : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTickets.ActionType : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.Equatable {}
+extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.Hashable {}
+extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.Equatable {}
+extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.Hashable {}
+extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.RawRepresentable {}

@@ -1,0 +1,556 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterDiscoveryAPI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Contacts
+import CoreLocation
+import Foundation
+import Swift
+@_exported import TicketmasterDiscoveryAPI
+import TicketmasterFoundation
+import _Concurrency
+import _StringProcessing
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func venueDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> Swift.Void)
+  public func venueDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> Swift.Void)
+  public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> Swift.Void)
+  public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> Swift.Void)
+}
+public struct DiscoveryPromoter : TicketmasterFoundation.InitJSONThrowable {
+  public let promoterIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryAttraction {
+  public var isMusicAttraction: Swift.Bool {
+    get
+  }
+  public var isSportsAttraction: Swift.Bool {
+    get
+  }
+  public var attractionSegment: Swift.String? {
+    get
+  }
+  public var attractionGenre: Swift.String? {
+    get
+  }
+  public var primaryClassification: TicketmasterDiscoveryAPI.DiscoveryClassification? {
+    get
+  }
+}
+extension TicketmasterDiscoveryAPI.DiscoveryClassification {
+  public var isMusic: Swift.Bool {
+    get
+  }
+  public var isSports: Swift.Bool {
+    get
+  }
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func eventImages(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> Swift.Void)
+  public func eventImages(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> Swift.Void)
+  public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> Swift.Void)
+  public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> Swift.Void)
+}
+public struct DiscoveryEventSearchCriteria {
+  public var keywordsFilter: [Swift.String]?
+  public var eventIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var attractionIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var venueIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var classificationIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var promoterIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var postalCode: Swift.String?
+  public var stateCode: Swift.String?
+  public var countryCodes: [Swift.String]?
+  public var location: CoreLocation.CLCircularRegion?
+  public var marketIdentifier: Swift.String?
+  public var dmaIdentifier: Swift.String?
+  public var startDateTime: Foundation.Date?
+  public var endDateTime: Foundation.Date?
+  public var onsaleStartDateTime: Foundation.Date?
+  public var onsaleEndDateTime: Foundation.Date?
+  public var onsaleOnAfterStartDate: Foundation.Date?
+  public var source: TicketmasterDiscoveryAPI.DiscoverySource
+  public var includeTBAEvents: Swift.Bool
+  public var includeTBDEvents: Swift.Bool
+  public var includeTestEvents: Swift.Bool
+  public var sortMethod: TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort
+  public var currentPage: Swift.Int
+  public var pageSize: Swift.Int
+  public enum EventSort : Swift.String {
+    case dateAscending
+    case dateDescending
+    case nameAscending
+    case nameDescending
+    case dateNameAscending
+    case dateNameDescending
+    case nameDateAscending
+    case nameDateDescending
+    case relevanceAscending
+    case relevanceDescending
+    case distanceAscending
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init()
+}
+public enum DiscoveryLocale : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case EN_US
+  case ES_US
+  case EN_CA
+  case FR_CA
+  case EN_AU
+  case EN_NZ
+  case EN_GB
+  case EN_MX
+  case ES_MX
+  public static func locale(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain?) -> TicketmasterDiscoveryAPI.DiscoveryLocale
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension TicketmasterFoundation.MarketDomain {
+  public var locale: TicketmasterDiscoveryAPI.DiscoveryLocale {
+    get
+  }
+  public func marketDomain(forLocale locale: TicketmasterDiscoveryAPI.DiscoveryLocale) -> TicketmasterFoundation.MarketDomain
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  @discardableResult
+  public func venueSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryVenueResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func classificationDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> Swift.Void)
+}
+public struct DiscoveryPriceRange : TicketmasterFoundation.InitJSONThrowable {
+  public let type: Swift.String?
+  public let minimum: Foundation.NSDecimalNumber
+  public let maximum: Foundation.NSDecimalNumber
+  public let currency: TicketmasterDiscoveryAPI.DiscoveryCurrency
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary)
+}
+@_hasMissingDesignatedInitializers public class DiscoveryService : TicketmasterFoundation.NetworkService {
+  public typealias PaginatedDiscoveryEventResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>>
+  public typealias PaginatedDiscoveryVenueResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>>
+  public typealias PaginatedDiscoveryAttractionResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>>
+  public typealias PaginatedDiscoveryClassificationResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>>
+  public var override_locale: Swift.String?
+  convenience public init(environment: TicketmasterFoundation.ConnectionEnvironment, domain: TicketmasterFoundation.MarketDomain, apiKey: Swift.String)
+  override open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.URLQueryParameters?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class TMDiscoveryAPI : ObjectiveC.NSObject {
+  public static let shared: TicketmasterDiscoveryAPI.TMDiscoveryAPI
+  final public var apiKey: Swift.String?
+  final public var version: Swift.String {
+    get
+  }
+  final public var marketDomain: TicketmasterFoundation.MarketDomain {
+    get
+    set
+  }
+  final public var environment: TicketmasterFoundation.ConnectionEnvironment
+  final public var discoveryService: TicketmasterDiscoveryAPI.DiscoveryService {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct DiscoverySuggestResponse : TicketmasterFoundation.InitJSONThrowable {
+  public let eventArray: [TicketmasterDiscoveryAPI.DiscoveryEvent]
+  public let attractionArray: [TicketmasterDiscoveryAPI.DiscoveryAttraction]
+  public let venueArray: [TicketmasterDiscoveryAPI.DiscoveryVenue]
+  public let productArray: [TicketmasterDiscoveryAPI.DiscoveryProduct]
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct DiscoveryImageMetadata : TicketmasterFoundation.InitJSONThrowable, Swift.Codable {
+  public let url: Foundation.URL
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public let ratio: TicketmasterDiscoveryAPI.DiscoveryImageRatio
+  public let fallback: Swift.Bool
+  public let domains: [Swift.String]
+  public init(url: Foundation.URL, width: Swift.Int, height: Swift.Int, ratio: TicketmasterDiscoveryAPI.DiscoveryImageRatio, fallback: Swift.Bool, domains: [Swift.String])
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  @discardableResult
+  public func classificationSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryClassificationResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+public struct DiscoverySuggestCriteria {
+  public var keywords: [Swift.String]
+  public var entityTypes: [TicketmasterDiscoveryAPI.DiscoveryEntityType]?
+  public var source: TicketmasterDiscoveryAPI.DiscoverySource
+  public var domains: [TicketmasterFoundation.MarketDomain]?
+  public var preferredDomain: TicketmasterFoundation.MarketDomain?
+  public var countryCodes: [Swift.String]?
+  public var includeTBAEvents: TicketmasterDiscoveryAPI.DiscoveryExclusiveBool
+  public var includeTBDEvents: TicketmasterDiscoveryAPI.DiscoveryExclusiveBool
+  public var includeTestEvents: TicketmasterDiscoveryAPI.DiscoveryExclusiveBool
+  public var eventStartEndDateTime: TicketmasterDiscoveryAPI.DiscoveryDateRange?
+  public var eventLocalStartEndDateTime: TicketmasterDiscoveryAPI.DiscoveryDateRange?
+  public var location: CoreLocation.CLCircularRegion?
+  public var includeSpellcheck: Swift.Bool
+  public init(withKeywords keywords: [Swift.String])
+}
+public struct DiscoveryAttraction : TicketmasterFoundation.InitJSONThrowable {
+  public let attractionIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let legacyAttractionIdentifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier?
+  public let name: Swift.String
+  public let isActive: Swift.Bool
+  public let isDiscoverable: Swift.Bool
+  public let isTestAttraction: Swift.Bool
+  public let type: Swift.String
+  public let locale: Swift.String?
+  public let imageMetadataArray: [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public let classificationArray: [TicketmasterDiscoveryAPI.DiscoveryClassification]
+  public var url: Foundation.URL?
+  public let rawJSON: TicketmasterFoundation.JSONDictionary
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct DiscoveryClassificationSearchCriteria {
+  public var keywordsFilter: [Swift.String]?
+  public var classificationIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var source: TicketmasterDiscoveryAPI.DiscoverySource
+  public var sortMethod: TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria.ClassificationSort
+  public var currentPage: Swift.Int
+  public var pageSize: Swift.Int
+  public enum ClassificationSort : Swift.String {
+    case relevanceDescending
+    case nameAscending
+    case nameDescending
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init()
+}
+public struct DiscoveryVenueSearchCriteria {
+  public var keywordsFilter: [Swift.String]?
+  public var venueIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var source: TicketmasterDiscoveryAPI.DiscoverySource
+  public var location: CoreLocation.CLCircularRegion?
+  public var countryCodes: [Swift.String]?
+  public var sortMethod: TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria.VenueSort
+  public var currentPage: Swift.Int
+  public var pageSize: Swift.Int
+  public enum VenueSort : Swift.String {
+    case relevanceDescending
+    case nameAscending
+    case nameDescending
+    case distanceAscending
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init()
+}
+public struct DiscoveryClassification : TicketmasterFoundation.InitJSONThrowable {
+  public let segment: TicketmasterDiscoveryAPI.DiscoveryClassificationItem?
+  public let genre: TicketmasterDiscoveryAPI.DiscoveryClassificationItem?
+  public let subGenre: TicketmasterDiscoveryAPI.DiscoveryClassificationItem?
+  public let type: TicketmasterDiscoveryAPI.DiscoveryClassificationItem?
+  public let subType: TicketmasterDiscoveryAPI.DiscoveryClassificationItem?
+  public let isPrimary: Swift.Bool
+  public let rawJSON: TicketmasterFoundation.JSONDictionary
+  public var description: Swift.String {
+    get
+  }
+  public var mostSpecificItemIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier? {
+    get
+  }
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct DiscoveryClassificationItem : TicketmasterFoundation.InitJSONThrowable {
+  public let classificationIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let name: Swift.String
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct DiscoveryIdentifier : Swift.RawRepresentable, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  public typealias RawValue = Swift.String
+  public let rawValue: TicketmasterDiscoveryAPI.DiscoveryIdentifier.RawValue
+  public func hash(into hasher: inout Swift.Hasher)
+  public init(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier.RawValue)
+  public init(rawValue: Swift.String)
+}
+public struct LegacyHostIdentifier : Swift.RawRepresentable, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  public typealias RawValue = Swift.String
+  public let rawValue: TicketmasterDiscoveryAPI.LegacyHostIdentifier.RawValue
+  public func hash(into hasher: inout Swift.Hasher)
+  public init(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier.RawValue)
+  public init(rawValue: TicketmasterDiscoveryAPI.LegacyHostIdentifier.RawValue)
+}
+extension Swift.String {
+  public static func separated(fromArray array: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], withToken token: Swift.String) -> Swift.String
+  public static func separated(fromArray array: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], withToken token: Swift.String) -> Swift.String
+}
+public struct DiscoveryError : TicketmasterFoundation.InitJSONThrowable {
+  public let code: Swift.String
+  public let status: Swift.String
+  public let detail: Swift.String?
+  public let links: Swift.String?
+  public let rawJSON: TicketmasterFoundation.JSONDictionary
+  public var description: Swift.String {
+    get
+  }
+  public var error: Foundation.NSError {
+    get
+  }
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  @discardableResult
+  public func eventSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryEventResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+public struct DiscoveryVenue : TicketmasterFoundation.InitJSONThrowable {
+  public let venueIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let legacyVenueIdentifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier?
+  public let name: Swift.String?
+  public let isActive: Swift.Bool
+  public let isDiscoverable: Swift.Bool
+  public let isTestVenue: Swift.Bool
+  public let addressLine1: Swift.String?
+  public let addressLine2: Swift.String?
+  public let city: Swift.String?
+  public let stateCode: Swift.String?
+  public let postalCode: Swift.String?
+  public let countryCode: Swift.String?
+  public let countryName: Swift.String?
+  public let location: CoreLocation.CLLocation?
+  public let timeZone: Foundation.TimeZone?
+  public let distance: CoreLocation.CLLocationDistance?
+  public let type: Swift.String
+  public let marketArray: [Swift.String]
+  public let dmaArray: [Swift.Int]
+  public let generalRules: Swift.String?
+  public let childRules: Swift.String?
+  public let parkingDetails: Swift.String?
+  public let accessibleSeatingDetails: Swift.String?
+  public let boxOfficeHours: Swift.String?
+  public let boxOfficePhoneNumber: Swift.String?
+  public let boxOfficePaymentDetails: Swift.String?
+  public let boxOfficeWillCallDetails: Swift.String?
+  public let imageMetadataArray: [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public let locale: Swift.String?
+  public let units: Swift.String?
+  public var url: Foundation.URL?
+  public let rawJSON: TicketmasterFoundation.JSONDictionary
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryVenue {
+  public func cityState() -> Swift.String?
+  public func postalAddress() -> Contacts.CNPostalAddress
+  public func boxOfficePhoneNumberTrimmed() -> Swift.String?
+}
+public enum DiscoverySource : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case all
+  case ticketmaster
+  case ticketweb
+  case universe
+  case frontgate
+  case tmresale
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DiscoveryCurrency : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case USD
+  case CAD
+  case AUD
+  case NZD
+  case GBP
+  case EUR
+  case MXN
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DiscoveryExclusiveBool : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case yes
+  case no
+  case only
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DiscoveryEntityType : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case event
+  case venue
+  case attraction
+  case product
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum DiscoveryImageRatio : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+  case unknown
+  case ratio4x3
+  case ratio3x2
+  case ratio3x1
+  case ratio16x9
+  public init(value: Swift.String?)
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct DiscoveryProduct : TicketmasterFoundation.InitJSONThrowable {
+  public let productIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let legacyProductIdentifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier?
+  public let name: Swift.String
+  public let type: Swift.String
+  public let locale: Swift.String?
+  public let imageMetadataArray: [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public let classificationArray: [TicketmasterDiscoveryAPI.DiscoveryClassification]
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct DiscoveryDateRange : TicketmasterFoundation.InitJSONThrowable {
+  public let name: Swift.String?
+  public let startDate: Foundation.Date?
+  public let endDate: Foundation.Date?
+  public let dateTBD: Swift.Bool
+  public let url: Foundation.URL?
+  public let description: Swift.String?
+  public init(start: Foundation.Date, end: Foundation.Date)
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary)
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, rangeName: Swift.String?)
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func eventDetails(_ identifier: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> Swift.Void)
+  public func eventDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> Swift.Void)
+  public func eventDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> Swift.Void)
+  public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> Swift.Void)
+  public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> Swift.Void)
+}
+public struct DiscoveryAttractionSearchCriteria {
+  public var keywordsFilter: [Swift.String]?
+  public var attractionIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var classificationIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
+  public var webDomain: Swift.String?
+  public var source: TicketmasterDiscoveryAPI.DiscoverySource
+  public var sortMethod: TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria.AttractionSort
+  public var currentPage: Swift.Int
+  public var pageSize: Swift.Int
+  public enum AttractionSort : Swift.String {
+    case nameAscending
+    case nameDescending
+    case relevanceAscending
+    case relevanceDescending
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init()
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func attractionDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> Swift.Void)
+  public func attractionDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> Swift.Void)
+  public func attractionDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> Swift.Void)
+  public func attractionDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> Swift.Void)
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  @discardableResult
+  public func attractionSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryAttractionResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+public struct DiscoveryEvent : TicketmasterFoundation.InitJSONThrowable {
+  public let eventIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
+  public let legacyEventIdentifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier?
+  public let name: Swift.String
+  public let eventSource: Swift.String?
+  public let eventSourceIdentifier: Swift.String?
+  public let startDates: [Foundation.Date]
+  public let endDate: Foundation.Date?
+  public let timeZone: Foundation.TimeZone?
+  public let isAllDay: Swift.Bool
+  public let isMultiDay: Swift.Bool
+  public let isNonConsecutiveDates: Swift.Bool
+  public let dateTBA: Swift.Bool
+  public let dateTBD: Swift.Bool
+  public let timeTBA: Swift.Bool
+  public let isActive: Swift.Bool
+  public let isVisible: Swift.Bool
+  public let isDiscoverable: Swift.Bool
+  public let isCancelled: Swift.Bool
+  public let isTestEvent: Swift.Bool
+  public let visibilityDateRange: TicketmasterDiscoveryAPI.DiscoveryDateRange?
+  public let onsaleStatusCode: Swift.String?
+  public let publicOnsaleDateRange: TicketmasterDiscoveryAPI.DiscoveryDateRange?
+  public let presaleDateRangeArray: [TicketmasterDiscoveryAPI.DiscoveryDateRange]
+  public let priceRangeArray: [TicketmasterDiscoveryAPI.DiscoveryPriceRange]
+  public let type: Swift.String
+  public let hostEventType: Swift.String?
+  public let domain: Swift.String?
+  public let locale: Swift.String?
+  public let info: Swift.String?
+  public let notes: Swift.String?
+  public let ticketLimitInfo: Swift.String?
+  public let externalURL: Foundation.URL?
+  public let resaleSoftLanding: Swift.Bool
+  public let isSeriesMaster: Swift.Bool
+  public let distance: CoreLocation.CLLocationDistance?
+  public let promoter: TicketmasterDiscoveryAPI.DiscoveryPromoter?
+  public let venueArray: [TicketmasterDiscoveryAPI.DiscoveryVenue]
+  public let attractionArray: [TicketmasterDiscoveryAPI.DiscoveryAttraction]
+  public let classificationArray: [TicketmasterDiscoveryAPI.DiscoveryClassification]
+  public let imageMetadataArray: [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public let rawJSON: TicketmasterFoundation.JSONDictionary
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryEvent {
+  public var venueMarketID: Swift.String? {
+    get
+  }
+  public var venueMarketDomain: TicketmasterFoundation.MarketDomain {
+    get
+  }
+  public var formattedDateString: Swift.String? {
+    get
+  }
+  public var isThirdPartyEvent: Swift.Bool {
+    get
+  }
+  public var isVirtualEvent: Swift.Bool {
+    get
+  }
+}
+extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.Equatable {}
+extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.Hashable {}
+extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryLocale : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria.ClassificationSort : Swift.Equatable {}
+extension TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria.ClassificationSort : Swift.Hashable {}
+extension TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria.ClassificationSort : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria.VenueSort : Swift.Equatable {}
+extension TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria.VenueSort : Swift.Hashable {}
+extension TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria.VenueSort : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoverySource : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryCurrency : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryExclusiveBool : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryEntityType : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryImageRatio : Swift.RawRepresentable {}
+extension TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria.AttractionSort : Swift.Equatable {}
+extension TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria.AttractionSort : Swift.Hashable {}
+extension TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria.AttractionSort : Swift.RawRepresentable {}

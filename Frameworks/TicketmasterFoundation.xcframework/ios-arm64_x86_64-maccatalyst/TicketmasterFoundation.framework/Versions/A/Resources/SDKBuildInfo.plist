@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Fri Jun 16 13:52:40 PDT 2023</string>
+	<key>BuildHost</key>
+	<string>Vishwaks-MacBook-Pro-4.local</string>
+	<key>GITBranch</key>
+	<string>master</string>
+	<key>GITComment</key>
+	<string>Merge branch vreddy-gaintegration into master</string>
+	<key>GITDate</key>
+	<string>Fri Jun 16 20:38:32 2023 +0000</string>
+	<key>GITRevision</key>
+	<string>72757db9aab25bb22842f7806c9c556a49eba703</string>
+	<key>MarketingVersion</key>
+	<string>0.8.5</string>
+</dict>
+</plist>

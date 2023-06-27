@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Mon Jun 26 17:27:34 PDT 2023</string>
+	<key>BuildHost</key>
+	<string>USHOLJBA1-ML</string>
+	<key>GITBranch</key>
+	<string>Epic-RetailDevApp</string>
+	<key>GITComment</key>
+	<string>Merge branch MA-9711-ConvenienceDetailsPages into Epic-RetailDevApp</string>
+	<key>GITDate</key>
+	<string>Mon Jun 26 17:14:08 2023 +0000</string>
+	<key>GITRevision</key>
+	<string>f1b51261766d12b519b3b4dab784a2bb42108fb1</string>
+	<key>MarketingVersion</key>
+	<string>1.4.2</string>
+</dict>
+</plist>

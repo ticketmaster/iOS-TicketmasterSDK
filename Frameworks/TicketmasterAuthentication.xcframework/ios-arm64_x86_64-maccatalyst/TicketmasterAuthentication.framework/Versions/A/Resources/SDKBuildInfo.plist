@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jun 23 13:04:53 PDT 2023</string>
+	<string>Tue Jun 27 13:34:49 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Updated TMFoundation to 0.8.5</string>
+	<string>Fix for Link Accounts failing to present</string>
 	<key>GITDate</key>
-	<string>Thu Jun 22 17:39:22 2023 -0700</string>
+	<string>Fri Jun 23 13:08:11 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>34a23e9add9e1248c708aeea8a0726f905091830</string>
+	<string>3f987f66995488ce3ba0550cad1579f6c75fa80b</string>
 	<key>MarketingVersion</key>
-	<string>0.0.11</string>
+	<string>0.0.12</string>
 </dict>
 </plist>

@@ -36408,84 +36408,70 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3052,
-      "length": 37,
-      "value": "\"v\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3088,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 3550,
+      "offset": 3644,
       "length": 10,
       "value": "\"Sign Out\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3603,
+      "offset": 3697,
       "length": 10,
       "value": "\"Sign Out\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3650,
+      "offset": 3744,
       "length": 14,
       "value": "\"Sign out of \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3712,
+      "offset": 3806,
       "length": 9,
       "value": "\"Sign In\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3764,
+      "offset": 3858,
       "length": 9,
       "value": "\"Sign In\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3810,
+      "offset": 3904,
       "length": 13,
       "value": "\"Sign in to \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3868,
+      "offset": 3962,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3883,
+      "offset": 3977,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3897,
+      "offset": 3991,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3950,
+      "offset": 4044,
       "length": 3,
       "value": "2.0"
     },
@@ -38536,42 +38522,42 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 12223,
+      "offset": 12684,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 12270,
+      "offset": 12731,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 12469,
+      "offset": 12980,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 12774,
+      "offset": 13285,
       "length": 15,
       "value": "\"Link Accounts\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 12883,
+      "offset": 13394,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 13004,
+      "offset": 13515,
       "length": 4,
       "value": "true"
     },

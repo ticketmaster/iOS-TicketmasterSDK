@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kCPx32u0yVzbP/vIVqWLZKku/1k=
+		sKoFlCz6dcN1DYREM2XOGTha4Lg=
 		</data>
 		<key>LoginCardCollectionViewCell.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9hHKDYCxiiSx/sT2JACn/XApcEI=
+		l1A585iqrmIbyPstAQgFo1e5nfE=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9hHKDYCxiiSx/sT2JACn/XApcEI=
+		l1A585iqrmIbyPstAQgFo1e5nfE=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		JyvL59mBa70ipjCSP06u+6wMbSM=
+		Y+Ez1Ds6PfOf4JlIIpF4ZIfI6iY=
 		</data>
 		<key>SingleLoginViewController.nib</key>
 		<data>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I1nBCDn+OP+i3WsoXos5phLGO2GbIuQv1lSYDtnPqZk=
+			0BWVg2zQV7yHriQDtA3DT/aQmwMcz5km0NNWgjr2OUg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I1nBCDn+OP+i3WsoXos5phLGO2GbIuQv1lSYDtnPqZk=
+			0BWVg2zQV7yHriQDtA3DT/aQmwMcz5km0NNWgjr2OUg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -237,7 +237,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DyKjMuoE22XT9rRo2UALiKeiHUn/yNzlbsxxjwKIXf0=
+			CSK5Vad/X0eEkwtD55Si3McYzXyB2Irs7wdAibAtxUY=
 			</data>
 		</dict>
 		<key>SingleLoginViewController.nib</key>

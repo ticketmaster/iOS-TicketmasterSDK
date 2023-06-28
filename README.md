@@ -9,7 +9,8 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 * Overview: https://business.ticketmaster.com/ignite/
 * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
 * Frameworks: https://github.com/ticketmaster/iOS-IgniteSDK
-* Example Source Code Integration (Tickets only): https://github.com/ticketmaster/iOS-TicketsDemoApp
+* Android Source (Tickets SDK): https://github.com/ticketmaster/Android-TicketsDemoApp
+* iOS Source (Tickets SDK): https://github.com/ticketmaster/iOS-TicketsDemoApp
 
 ### Basic Requirements
 

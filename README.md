@@ -2,7 +2,7 @@
 
 iOS implementation of Ticketmaster SDK (aka Ignite)
 
-What is Ignite? 
+## What is Ignite? 
 
 A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.
 
@@ -11,7 +11,8 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 * Frameworks: https://github.com/ticketmaster/iOS-IgniteSDK
 * Example Source Code Integration: https://github.com/ticketmaster/iOS-TicketsDemoApp
 
-Basic Requirements:
+### Basic Requirements
+
 * Xcode 14.3+ for development
 * iOS 14.0+ for deployment
 

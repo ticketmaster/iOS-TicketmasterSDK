@@ -1,15 +1,15 @@
 # iOS-IgniteSDK
 
-iOS implementation of Ticketmaster SDK (aka Ignite)
+iOS implementation of Ticketmaster's Ignite SDK
 
 ## What is Ignite? 
 
-A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.
+A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry
 
 * Overview: https://business.ticketmaster.com/ignite/
 * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
 * Frameworks: https://github.com/ticketmaster/iOS-IgniteSDK
-* Example Source Code Integration: https://github.com/ticketmaster/iOS-TicketsDemoApp
+* Example Source Code Integration (Tickets only): https://github.com/ticketmaster/iOS-TicketsDemoApp
 
 ### Basic Requirements
 
@@ -33,7 +33,7 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 ![AddPackages3](Screenshots/AddPackages3.jpg)
 
-When importing Package Products, you should only add the minimum number of Ticketmaster Libraries required for each feature (see document below for requirements).
+When importing Package Products, you should only add the minimum number of Ticketmaster Libraries required for each feature (see **Packages** section below for requirements).
 
 4. Visually verify that selected Packages were added to your Xcode project
 
@@ -43,9 +43,11 @@ When importing Package Products, you should only add the minimum number of Ticke
    * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
    * Example Source Code Integration: https://github.com/ticketmaster/iOS-TicketsDemoApp
 
-## TicketmasterTickets
+## Packages
 
-Function: *Post-Purchase and Event Entry (ie. show Purchase Events, Tickets, and Barcodes)*
+### TicketmasterTickets
+
+Purpose: *Post-Purchase and Event Entry (ie. show Purchase Events, Tickets, and Barcodes)*
 
 Required Packages (.xcframeworks):
 
@@ -54,8 +56,8 @@ Required Packages (.xcframeworks):
 * TicketmasterSecureEntry
 * TicketmasterTickets
 
-## TicketmasterPurchase
-Function: *Event Purchasing*
+### TicketmasterPurchase
+Purpose: *Event Purchasing*
 
 Required Packages (.xcframeworks):
 
@@ -64,8 +66,8 @@ Required Packages (.xcframeworks):
 * TicketmasterFoundation 
 * TicketmasterPurchase
 
-## TicketmasterPrePurchase
-Function: *Webpage-based Event, Attraction, and Venue Discovery*
+### TicketmasterPrePurchase
+Purpose: *Webpage-based Event, Attraction, and Venue Discovery*
 
 Required Packages (.xcframeworks):
 
@@ -74,8 +76,8 @@ Required Packages (.xcframeworks):
 * TicketmasterFoundation 
 * TicketmasterPrePurchase
 
-## TicketmasterDiscoveryAPI
-Function: *API-based Event, Attraction, and Venue Discovery*
+### TicketmasterDiscoveryAPI
+Purpose: *API-based Event, Attraction, and Venue Discovery*
 
 Required Packages (.xcframeworks):
 

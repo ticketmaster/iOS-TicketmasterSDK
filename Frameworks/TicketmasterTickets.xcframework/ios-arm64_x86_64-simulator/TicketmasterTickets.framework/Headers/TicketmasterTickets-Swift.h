@@ -329,6 +329,7 @@ SWIFT_CLASS("_TtC19TicketmasterTickets9TMTickets")
 
 /// create a custom module to be displayed underneath the user’s list of Tickets on the Tickets listing page
 /// some useful modules have already been created for you, see <code>TMTicketsPrebuiltModule</code>
+/// headers can be easily created with <code>TMTicketsModuleHeaderView</code>
 /// Example usage:
 /// \code
 /// // build a UIView for the header
@@ -441,6 +442,9 @@ SWIFT_CLASS("_TtC19TicketmasterTickets25TMTicketsModuleHeaderView")
 
 
 
+
+@interface TMTicketsModuleHeaderView (SWIFT_EXTENSION(TicketmasterTickets))
+@end
 
 @class UIWindow;
 
@@ -872,6 +876,7 @@ SWIFT_CLASS("_TtC19TicketmasterTickets9TMTickets")
 
 /// create a custom module to be displayed underneath the user’s list of Tickets on the Tickets listing page
 /// some useful modules have already been created for you, see <code>TMTicketsPrebuiltModule</code>
+/// headers can be easily created with <code>TMTicketsModuleHeaderView</code>
 /// Example usage:
 /// \code
 /// // build a UIView for the header
@@ -984,6 +989,9 @@ SWIFT_CLASS("_TtC19TicketmasterTickets25TMTicketsModuleHeaderView")
 
 
 
+
+@interface TMTicketsModuleHeaderView (SWIFT_EXTENSION(TicketmasterTickets))
+@end
 
 @class UIWindow;
 

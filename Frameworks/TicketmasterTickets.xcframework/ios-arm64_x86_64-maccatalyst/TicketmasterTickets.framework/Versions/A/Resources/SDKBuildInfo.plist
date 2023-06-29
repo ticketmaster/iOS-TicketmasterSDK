@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Jun 26 18:32:43 PDT 2023</string>
+	<string>Thu Jun 29 14:45:48 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>Epic-PSDK-7705-TicketsSDK</string>
 	<key>GITComment</key>
-	<string>PSDK-9289 Fix ticket header</string>
+	<string>PSDK-9319 Fixed Terms of Use not showing</string>
 	<key>GITDate</key>
-	<string>Mon Jun 26 18:24:19 2023 -0700</string>
+	<string>Thu Jun 29 13:32:18 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>03e7b10ed5a75c90170b740715dde4db576e8ea6</string>
+	<string>3e42dcd2a65b04f40c8f49fb28afa1a94324920d</string>
 	<key>MarketingVersion</key>
 	<string>3.0.0</string>
 </dict>

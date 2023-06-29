@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Jun 27 13:34:49 PDT 2023</string>
+	<string>Wed Jun 28 16:38:53 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Fix for Link Accounts failing to present</string>
+	<string>PSDK-9318 Terms of Use Acceptance Required Missing</string>
 	<key>GITDate</key>
-	<string>Fri Jun 23 13:08:11 2023 -0700</string>
+	<string>Wed Jun 28 16:35:51 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>3f987f66995488ce3ba0550cad1579f6c75fa80b</string>
+	<string>6e00d97c81c49b530fe84257a0a85cf23ed04194</string>
 	<key>MarketingVersion</key>
-	<string>0.0.12</string>
+	<string>0.0.13</string>
 </dict>
 </plist>

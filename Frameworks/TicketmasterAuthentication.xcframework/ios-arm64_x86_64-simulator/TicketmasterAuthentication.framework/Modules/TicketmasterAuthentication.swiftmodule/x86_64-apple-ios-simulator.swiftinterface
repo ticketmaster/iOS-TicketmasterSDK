@@ -258,7 +258,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct TermsOfUse : Swift.Codable, Swift.Hashable {
-    public let version: Swift.String
+    public let version: Swift.String?
     public let acceptanceRequired: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMMemberInfo.TermsOfUse, b: TicketmasterAuthentication.TMMemberInfo.TermsOfUse) -> Swift.Bool

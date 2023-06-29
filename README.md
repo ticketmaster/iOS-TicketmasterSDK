@@ -8,7 +8,7 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 * Overview: https://business.ticketmaster.com/ignite/
 * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
-* Frameworks: https://github.com/ticketmaster/iOS-IgniteSDK
+* Frameworks: https://github.com/ticketmaster/iOS-TicketmasterSDK
 * Android Source (Tickets SDK): https://github.com/ticketmaster/Android-TicketsDemoApp
 * iOS Source (Tickets SDK): https://github.com/ticketmaster/iOS-TicketsDemoApp
 
@@ -21,24 +21,24 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 ### Swift Package Manager
 
-1. In your **Xcode** project, go to **Package Dependencies**, then click the **Add** (**+**) button
+1. In your **Xcode** project, go to **Project**, then **Package Dependencies**, then click the **Add** (**+**) button
 
 ![SPM_Step1](Screenshots/SPM_Step1.jpg)
 
 2. Copy/Paste the URL of this GitHub repo into the **Search** field
 ```
-https://github.com/ticketmaster/iOS-IgniteSDK.git
+https://github.com/ticketmaster/iOS-TicketmasterSDK.git
 ```
 
-2a. Select **Dependency Rule: Exact Version** of the [latest Ignite release version](https://github.com/ticketmaster/iOS-IgniteSDK/releases)
+2a. Select **Dependency Rule: Exact Version** of the [latest Ignite release version](https://github.com/ticketmaster/iOS-TicketmasterSDK/releases)
 
 ![SPM_Step2](Screenshots/SPM_Step2.jpg)
 
-3. Select required Package Products (.xcframework files), then click **Add Package**
-
-![SPM_Step3](Screenshots/SPM_Step3.jpg)
+3. Select required **Package Products** (.xcframework files), then click **Add Package**
 
 When importing Package Products, you should only add the minimum number of Ticketmaster Libraries required for each feature (see Package Products section below for requirements).
+
+![SPM_Step3](Screenshots/SPM_Step3.jpg)
 
 4. Visually verify that the correct Ignite version was added to your project
 

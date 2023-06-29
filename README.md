@@ -1,10 +1,10 @@
-# iOS-IgniteSDK
+# Ticketmaster Ignite SDK
 
 iOS implementation of Ticketmaster's Ignite SDK
 
-## What is Ignite? 
+## What is Ignite?
 
-A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry
+A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.
 
 * Overview: https://business.ticketmaster.com/ignite/
 * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
@@ -30,7 +30,7 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 https://github.com/ticketmaster/iOS-TicketmasterSDK.git
 ```
 
-2a. Select **Dependency Rule: Exact Version** of the [latest Ignite release version](https://github.com/ticketmaster/iOS-TicketmasterSDK/releases)
+2a. Select **Dependency Rule: Exact Version** of the [latest release version](https://github.com/ticketmaster/iOS-TicketmasterSDK/releases)
 
 ![SPM_Step2](Screenshots/SPM_Step2.jpg)
 
@@ -40,7 +40,7 @@ When importing Package Products, you should only add the minimum number of Ticke
 
 ![SPM_Step3](Screenshots/SPM_Step3.jpg)
 
-4. Visually verify that the correct Ignite version was added to your project
+4. Visually verify that the correct SDK version was added to your project
 
 ![SPM_Step4](Screenshots/SPM_Step4.jpg)
 

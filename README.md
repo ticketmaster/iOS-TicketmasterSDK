@@ -23,64 +23,72 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 1. In your **Xcode** project, go to **Package Dependencies**, then click the **Add** (**+**) button
 
-![AddPackages1](Screenshots/AddPackages1.jpg)
+![SPM_Step1](Screenshots/SPM_Step1.jpg)
 
-2. Copy/Paste the URL of this GitHub repo into the Search field
-	- https://github.com/ticketmaster/iOS-IgniteSDK.git
+2. Copy/Paste the URL of this GitHub repo into the **Search** field
+```
+https://github.com/ticketmaster/iOS-IgniteSDK.git
+```
 
-![AddPackages2](Screenshots/AddPackages2.jpg)
+2a. Select **Dependency Rule: Exact Version** of the [latest Ignite release version](https://github.com/ticketmaster/iOS-IgniteSDK/releases)
 
-3. Select required **Packages** (.xcframework files)
+![SPM_Step2](Screenshots/SPM_Step2.jpg)
 
-![AddPackages3](Screenshots/AddPackages3.jpg)
+3. Select required Package Products (.xcframework files), then click **Add Package**
 
-When importing Package Products, you should only add the minimum number of Ticketmaster Libraries required for each feature (see **Packages** section below for requirements).
+![SPM_Step3](Screenshots/SPM_Step3.jpg)
 
-4. Visually verify that selected Packages were added to your Xcode project
+When importing Package Products, you should only add the minimum number of Ticketmaster Libraries required for each feature (see Package Products section below for requirements).
 
-![AddPackages4](Screenshots/AddPackages4.jpg)
+4. Visually verify that the correct Ignite version was added to your project
 
-5. For next steps see:
-   * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
-   * Example Source Code Integration: https://github.com/ticketmaster/iOS-TicketsDemoApp
+![SPM_Step4](Screenshots/SPM_Step4.jpg)
 
-## Packages
+5. Visually verify that selected Package Products (.xcframework libraries) were added to your Xcode project
 
-### TicketmasterTickets
+![SPM_Step5](Screenshots/SPM_Step5.jpg)
+
+6. For next steps see:
+   * Documentation: [Tickets SDK Overview](https://ignite.ticketmaster.com/docs/tickets-sdk-overview)
+   * Example Source Code Integration: [https://github.com/ticketmaster/iOS-TicketsDemoApp](https://github.com/ticketmaster/iOS-TicketsDemoApp)
+
+## Package Products
+
+## TicketmasterTickets
 
 Purpose: *Post-Purchase and Event Entry (ie. show Purchase Events, Tickets, and Barcodes)*
 
-Required Packages (.xcframeworks):
+Required Package Products (.xcframework libraries):
 
 * TicketmasterAuthentication
 * TicketmasterFoundation 
 * TicketmasterSecureEntry
 * TicketmasterTickets
 
-### TicketmasterPurchase
+## TicketmasterPurchase
 Purpose: *Event Purchasing*
 
-Required Packages (.xcframeworks):
+Required Package Products (.xcframework libraries):
 
 * TicketmasterAuthentication
 * TicketmasterDiscoveryAPI
 * TicketmasterFoundation 
 * TicketmasterPurchase
 
-### TicketmasterPrePurchase
+## TicketmasterPrePurchase
 Purpose: *Webpage-based Event, Attraction, and Venue Discovery*
 
-Required Packages (.xcframeworks):
+Required Package Products (.xcframework libraries):
 
 * TicketmasterAuthentication
 * TicketmasterDiscoveryAPI
 * TicketmasterFoundation 
 * TicketmasterPrePurchase
 
-### TicketmasterDiscoveryAPI
+## TicketmasterDiscoveryAPI
 Purpose: *API-based Event, Attraction, and Venue Discovery*
 
-Required Packages (.xcframeworks):
+Required Package Products (.xcframework libraries):
 
 * TicketmasterDiscoveryAPI
 * TicketmasterFoundation 

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Jun 26 17:33:37 PDT 2023</string>
+	<string>Fri Jun 30 16:03:36 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>Epic-RetailDevApp</string>
 	<key>GITComment</key>
-	<string>Merge branch MA-9711-ConvenienceDetailsPages into Epic-RetailDevApp</string>
+	<string>Clone repo using SSH, not HTTP</string>
 	<key>GITDate</key>
-	<string>Mon Jun 26 17:14:08 2023 +0000</string>
+	<string>Fri Jun 30 15:51:27 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>f1b51261766d12b519b3b4dab784a2bb42108fb1</string>
+	<string>d2158320b85f0fe29397f008d088ca24b93be2b7</string>
 	<key>MarketingVersion</key>
-	<string>0.13.0</string>
+	<string>0.14.0</string>
 </dict>
 </plist>

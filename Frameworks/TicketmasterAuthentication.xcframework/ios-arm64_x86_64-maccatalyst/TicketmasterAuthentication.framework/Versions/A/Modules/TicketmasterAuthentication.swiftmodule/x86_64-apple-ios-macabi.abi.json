@@ -3166,6 +3166,13 @@
       },
       {
         "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterAuthentication"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3242,6 +3249,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
         "declKind": "Import",
         "moduleName": "TicketmasterAuthentication"
       },
@@ -36566,30 +36580,37 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
       "kind": "BooleanLiteral",
-      "offset": 3032,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3966,
+      "offset": 3463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
       "kind": "BooleanLiteral",
-      "offset": 4172,
+      "offset": 5000,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
       "kind": "BooleanLiteral",
-      "offset": 4564,
+      "offset": 5598,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+MFA.swift",
+      "kind": "StringLiteral",
+      "offset": 6340,
+      "length": 13,
+      "value": "\"clientToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+TokenState.swift",
@@ -36825,100 +36846,107 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 540,
+      "offset": 569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "StringLiteral",
-      "offset": 159,
+      "offset": 188,
       "length": 25,
       "value": "\"TicketmasterAuthentication.ModernAccountsAuthService\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 11754,
+      "offset": 11189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "Dictionary",
-      "offset": 12233,
+      "offset": 11666,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12466,
+      "offset": 11883,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12540,
+      "offset": 11953,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 12677,
+      "offset": 12082,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13617,
+      "offset": 13523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13691,
+      "offset": 13593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13828,
+      "offset": 13722,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14275,
+      "offset": 14133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14349,
+      "offset": 14203,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14486,
+      "offset": 14332,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
       "kind": "BooleanLiteral",
-      "offset": 14782,
+      "offset": 14600,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/ModernAccounts\/ModernAccountsAuthService.swift",
+      "kind": "StringLiteral",
+      "offset": 14793,
+      "length": 13,
+      "value": "\"clientToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+GameDay.swift",

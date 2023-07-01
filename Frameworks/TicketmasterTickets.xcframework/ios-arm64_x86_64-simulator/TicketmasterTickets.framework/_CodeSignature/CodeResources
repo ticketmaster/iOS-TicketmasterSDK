@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		1dlWKialXlR7sTcBnoJLA9c9nBE=
+		nexdkm7q1dWeOMFxbyZbo0rjZEg=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1dlWKialXlR7sTcBnoJLA9c9nBE=
+		nexdkm7q1dWeOMFxbyZbo0rjZEg=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		QJvD5jgLMxgFmm/lZikZV770kZw=
+		IPevgt/ifLtmXTEl/W4bzdiyGvM=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -478,7 +478,7 @@
 		</data>
 		<key>TicketCard.nib</key>
 		<data>
-		T+eRmpgdeJifWPsajx8PsiJjVw0=
+		0xo9eTzu7LykQX9o6XxIRIjGRao=
 		</data>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
 		<data>
@@ -1130,7 +1130,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jJBZxdlbxttihwodechDCzdJgHJHSTHAV2gBMHplCR8=
+			cyOCiSB6BTIGHPBaJWAI93CdEDvEHrhSa6BaTEQN7d8=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1165,7 +1165,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jJBZxdlbxttihwodechDCzdJgHJHSTHAV2gBMHplCR8=
+			cyOCiSB6BTIGHPBaJWAI93CdEDvEHrhSa6BaTEQN7d8=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1235,7 +1235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HsDzZIKRXxhyXuqWFoSDDCDBGsoDT25MbdOV30H2blo=
+			S3ubPzeOl8DvB5oRBD/Kw50Iw2vwpEr5QEb/ErT7slM=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>
@@ -1487,7 +1487,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Z2+N0OaZSJgz9s9ox607c1TbDwu5LyLtX9GViC6xlY=
+			cOwnRaWfa/KXwDoUNQ2PBheIZxx1SsCTC4hgUIm2GbI=
 			</data>
 		</dict>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>

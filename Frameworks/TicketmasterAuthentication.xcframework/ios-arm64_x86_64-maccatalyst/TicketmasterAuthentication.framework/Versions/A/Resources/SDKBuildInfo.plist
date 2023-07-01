@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Jun 28 16:38:53 PDT 2023</string>
+	<string>Fri Jun 30 12:56:39 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-9318 Terms of Use Acceptance Required Missing</string>
+	<string>MA-9720 Do not save or verify clientTokens provided by mfaProperties</string>
 	<key>GITDate</key>
-	<string>Wed Jun 28 16:35:51 2023 -0700</string>
+	<string>Fri Jun 30 12:47:17 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>6e00d97c81c49b530fe84257a0a85cf23ed04194</string>
+	<string>5bbc796128e2a50a3e99efed8de98827107dfd0a</string>
 	<key>MarketingVersion</key>
-	<string>0.0.13</string>
+	<string>0.0.15</string>
 </dict>
 </plist>

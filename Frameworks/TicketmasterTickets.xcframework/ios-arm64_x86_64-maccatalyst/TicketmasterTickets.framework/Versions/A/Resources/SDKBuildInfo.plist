@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Jun 29 14:45:48 PDT 2023</string>
+	<string>Fri Jun 30 18:08:20 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>Epic-PSDK-7705-TicketsSDK</string>
+	<string>release/3.0.0</string>
 	<key>GITComment</key>
-	<string>PSDK-9319 Fixed Terms of Use not showing</string>
+	<string>PSDK-9341 Use transfers to make sent tickets cards</string>
 	<key>GITDate</key>
-	<string>Thu Jun 29 13:32:18 2023 -0700</string>
+	<string>Fri Jun 30 17:56:09 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>3e42dcd2a65b04f40c8f49fb28afa1a94324920d</string>
+	<string>cd6144bb1df61fac9ab96966f4b200a4482a9d4e</string>
 	<key>MarketingVersion</key>
 	<string>3.0.0</string>
 </dict>

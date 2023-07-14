@@ -266,7 +266,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z0M9A3Q0G4kdEiGmm3l8tWkVYUM=
+		IX/yIavua0BgdoZKGNMidnlf0XM=
 		</data>
 		<key>InputAccessoryView.nib</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5QYJyepnl1MHdZswGukKmmhRyLE=
+		0i1A89oB2raSfZHTHxwS/Y+SFTE=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0ZUV/PLQW1Sb1zAGCy55D0lRryc=
+		7X4l1cVgvyZpUyFAolaJCvIHngQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		DU5+/wWiQLX5kYhu+LrAn4EZpgk=
+		e7APeSsDdAcNKqDzsz8TflwEwRA=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -458,7 +458,7 @@
 		</data>
 		<key>TicketCard.nib</key>
 		<data>
-		jefzPFCw/KKUkPhIz8/sMg7Ix6k=
+		PZgTQN5daFcOqzKXVOSK3iwnZyw=
 		</data>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
 		<data>
@@ -1110,7 +1110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			abJYwcqK1B+S+RfDRK6sIQdpZ6r1/wW052CQtqosFmE=
+			ZrhdH0CA+MWHmTNpyznlUZHiY3zHbPRrBi6Fr8Kxp+o=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1138,7 +1138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IRGHgRB8CyyOIjZCh0fapTZfZoops1XBImBGORjGnKU=
+			3Hmdp5pkbvOLFRWedYF0pnfur1kSRGcY4M+yT5PDDjg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1180,7 +1180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bGI2WxqKUxMWF9eVZU2t+Oavvu3N9ffT3RyXgmjkSO8=
+			CP34gEKu5h/z0+vcf52aZdJbvrnOPfgL8YqOh2J0fJI=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>
@@ -1432,7 +1432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3tiDOfhRTR1UEzHBGwDDKQLz8L5veRr7CQDVRHIOR0A=
+			rPg3SEu3JA7QxMJ0VcEYNJ0/k/3tH/2p67kUhJZ+z68=
 			</data>
 		</dict>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>

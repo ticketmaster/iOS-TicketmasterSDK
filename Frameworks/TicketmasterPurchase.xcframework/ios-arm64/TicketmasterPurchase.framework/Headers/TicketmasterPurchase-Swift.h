@@ -288,6 +288,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 /// A class that stores the global configuration for the TicketmasterPurchase SDK.
 SWIFT_CLASS("_TtC20TicketmasterPurchase10TMPurchase")
 @interface TMPurchase : NSObject
@@ -333,7 +334,7 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase15TMPurchaseOrder")
 
 
 
-/// class used to configure behavior of website Event Details Page (EDP) and Cart
+/// Class used to configure behavior of website Event Details Page (EDP) and Cart
 SWIFT_CLASS("_TtC20TicketmasterPurchase30TMPurchaseWebsiteConfiguration")
 @interface TMPurchaseWebsiteConfiguration : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

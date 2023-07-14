@@ -282,7 +282,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-/// A class that stores the global configuration for the TicketmasterDiscovery SDK.
+
+/// A class that stores the global configuration for the TicketmasterDiscoveryAPI SDK
 SWIFT_CLASS("_TtC24TicketmasterDiscoveryAPI14TMDiscoveryAPI")
 @interface TMDiscoveryAPI : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -581,7 +582,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-/// A class that stores the global configuration for the TicketmasterDiscovery SDK.
+
+/// A class that stores the global configuration for the TicketmasterDiscoveryAPI SDK
 SWIFT_CLASS("_TtC24TicketmasterDiscoveryAPI14TMDiscoveryAPI")
 @interface TMDiscoveryAPI : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

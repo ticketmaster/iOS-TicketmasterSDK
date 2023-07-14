@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		ivybs6lITbgP8JaCGqgGdrVTiAw=
+		yJRH2Jse1HOhjrRCpU8fky+1NeI=
 		</data>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
 		<data>
@@ -26,17 +26,17 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		X7560hwjOh3qR9LYYSITIQdcsO0=
+		M9mnDOTu2pEBQfnKwwYeszNcAI4=
 		</data>
 		<key>Resources/SingleLoginViewController.nib</key>
 		<data>
-		OsQFHh3E5VUf8t9jTSYQm6P8n0o=
+		YfNggCPNIpAiFlaJUSSvyfJjDMo=
 		</data>
 		<key>Resources/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IbUWRmlVmIEkSgFUoaRc7C8Kwt4=
+			eXgHBmXhsh/GxDmbl/JxvFpndqE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -45,7 +45,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CndCiQvSYqYjfYj9uJWj5f40Riw=
+			Gz0DxKPp8rmtUIQQ87AxXyhDj3Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CndCiQvSYqYjfYj9uJWj5f40Riw=
+			kJ1s06OFAY4MzX3yeyRSWvbPoWg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +80,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DXkjMpyUjF7xAMx+Sqhbwdpe5jazDSzQR0jYZARMGJs=
+			B5kNUZ69iq9/AgmXFchWDm2NPdF8q7IL+bKvapSa71I=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -108,14 +108,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QHZugLzED0Otd3F2/B3rN+9pQc0ypWsKERvExAF2V+Q=
+			Ke2Zl9VTVrFx0+DeinL1YQnXKMzhB5adqAXu/abPZ8o=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DXkjMpyUjF7xAMx+Sqhbwdpe5jazDSzQR0jYZARMGJs=
+			B5kNUZ69iq9/AgmXFchWDm2NPdF8q7IL+bKvapSa71I=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -143,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2lFjWFNeu40wHGNDwXLyfeKqFtINUypMK9RFCc/EJf0=
+			96criWoX5jREIcfgPvOBqjItpplCCxFU4Aw2l58MHV4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CZ7oIPm14RFXeeynzK25ZW9LWtNTnmRQk0GcpzInIxs=
+			DVe3ZN65QFPX/OrZ/QVdRJhmu1+7H00Xs7h+OcssBjg=
 			</data>
 		</dict>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
@@ -192,21 +192,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zwOY3oiahMJXduAJKoEC/8c98V270EGPB/dIJrCMULI=
+			x0QISHFv4U1HjDbxIdGM1sFwOi4g4ku5+TnxB0lNEkI=
 			</data>
 		</dict>
 		<key>Resources/SingleLoginViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5BNtZ5Vc21UdUzRAwTUVWSIafkX8RsJK8d/hV35xoA=
+			qVp1V2wBt/GHUIio610W0o0SdBL4mLOUgwpp+M6vuXY=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/T44694V0LY3yrkZmjYqP1BTvaJ5RVXSIiK6CeHPCoE=
+			mzHCDDzLqzPyXC6lYyP/c3DXpxeJe8TPgj/vDSNn0oA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tItE/f4AzFbIylRtsfHoLvvnb+AmUaS0NQFYqYtHqxw=
+			rkFjNbensTBVk3lHDL2ijDpFoxC8SlMz2OK7UfshTrk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +224,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tItE/f4AzFbIylRtsfHoLvvnb+AmUaS0NQFYqYtHqxw=
+			kpSfQ2T9KLub345oQCXOOYo72qJq+K/sw8VgNk1SWVA=
 			</data>
 			<key>optional</key>
 			<true/>

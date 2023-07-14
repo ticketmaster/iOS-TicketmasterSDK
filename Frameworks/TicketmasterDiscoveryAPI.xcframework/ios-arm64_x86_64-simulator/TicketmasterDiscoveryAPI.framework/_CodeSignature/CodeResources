@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TicketmasterDiscoveryAPI-Swift.h</key>
 		<data>
-		1rUCMWRgUvj4f0uF9ctyKBe92bU=
+		xcci2BkIpYbs/OSuxH6LkiNSgnU=
 		</data>
 		<key>Headers/TicketmasterDiscoveryAPI.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fZCp5R/iGFN30LSb+brG8xqFpNw=
+		qGx3i41ZVjp3vaESGPP6+kWJFo4=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Tf6EMWiJhQltjSKu5CC5A2P+l6g=
+		u8FNiWN+scnN/an4J9UpBNBOv6g=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1OkdRGQeTdVqinBleO71NuFKp/g=
+		Q+TzsRE5z/EkyA69VcfwfKbcDQA=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lb6WOFy6PDGnjzAtB9YCtzv96yY=
+		W7ZpszEeN//QP4maskc4E4O+umE=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Tf6EMWiJhQltjSKu5CC5A2P+l6g=
+		u8FNiWN+scnN/an4J9UpBNBOv6g=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OrMFHKexcg7IEZjUB3q2hmAON80=
+		RBqKI33rMOYPHR0MtNyIhhbzEF4=
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uiqV51JJY9Wf/ta3a2WHQ7jykwo=
+		cu6MKV9/b+RzJSad5S9xCeOIn8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		KAdlflc7XnAyE1BcsK5G2v+uLEo=
+		xlA+v5bn91cTuUxGWF41HnvQJX4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJq7TBro21EUWY0Yj1HnI852oTdKcQ43KKgMlEL+meM=
+			2VgSJPrvlKqmg0hwmEYFFJJ5HeFHwxInzaRvZ07TnY8=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterDiscoveryAPI.h</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRKgPI+3snShO1ji+IgF5LrP3gu7ixCC/pmz4yekPqo=
+			FVpPnImjHwGWGn83/c78gxdPVswQHDqlj4qtG2lsPPs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Um6BVluBxpuiXeNpsPgxV3fP1jtjcD63Zw6Uk3ySZKM=
+			6uDN6F/4PG5D6EJU9iSXguKJwh/oatbADkCfXFmnh0k=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLwoRNkDjsDz95FN+Z1bMvOpfp1FSGSNTC1CLP2pCGI=
+			0AH2z59vX+jcdvayc/Sdy1dcWWCmY7ZGvykDFi6EoWQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRKgPI+3snShO1ji+IgF5LrP3gu7ixCC/pmz4yekPqo=
+			FVpPnImjHwGWGn83/c78gxdPVswQHDqlj4qtG2lsPPs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/cg+7qKunXWKp/MH6cXjv1cMcsBC+VXFhMfS2Us57L8=
+			h9TgBEVkfZvnxktpwNgAnw7BCFC+JDQ/44CZrWKWjG8=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterDiscoveryAPI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NCEjOG+MwLTsazCyVxzNiR9i7GLRcwQUJFG1NYXWpdk=
+			iN5Lql6Dv8DLT3t9SeuzVa14NRW8Fg2ZPLXA/VjSwyk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPQFkFJ63rZrg7n3YQJ+/UGyMUzGxSPfC0jxv3kljaI=
+			OV+NkGc7s9KWH2WmPO5nDbe34YyBqXgAc5lgmSkrzvw=
 			</data>
 		</dict>
 	</dict>

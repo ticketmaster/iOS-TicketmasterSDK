@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jun 30 18:08:20 PDT 2023</string>
+	<string>Fri Jul 14 13:57:27 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.0.0</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-9341 Use transfers to make sent tickets cards</string>
+	<string>Added Yinzcam: DC United API Keys</string>
 	<key>GITDate</key>
-	<string>Fri Jun 30 17:56:09 2023 -0700</string>
+	<string>Wed Jul 12 14:47:57 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>cd6144bb1df61fac9ab96966f4b200a4482a9d4e</string>
+	<string>395edf013dd7747387d1195d91ad91152fbf765c</string>
 	<key>MarketingVersion</key>
-	<string>3.0.0</string>
+	<string>3.0.1</string>
 </dict>
 </plist>

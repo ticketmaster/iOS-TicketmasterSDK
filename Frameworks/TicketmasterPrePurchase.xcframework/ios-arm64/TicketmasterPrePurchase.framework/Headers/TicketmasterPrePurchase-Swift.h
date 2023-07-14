@@ -288,7 +288,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 
-/// A class that stores the global configuration for the TMPrePurchase SDK.
+
+/// A class that stores the global configuration for the TicketmasterPrePurchase SDK.
 SWIFT_CLASS("_TtC23TicketmasterPrePurchase13TMPrePurchase")
 @interface TMPrePurchase : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -298,6 +299,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase13TMPrePurchase")
 @class NSString;
 @class NSBundle;
 
+/// Class used to display UI flow for discovering attractions and venues leading up to purchase flow.
 SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 @interface TMPrePurchaseViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;

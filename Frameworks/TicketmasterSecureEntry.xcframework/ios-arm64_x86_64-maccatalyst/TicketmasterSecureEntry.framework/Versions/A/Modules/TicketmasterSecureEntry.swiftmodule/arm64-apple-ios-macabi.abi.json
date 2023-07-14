@@ -20294,505 +20294,491 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
-      "kind": "StringLiteral",
-      "offset": 10219,
-      "length": 42,
-      "value": "\"string contains some invalid characters.\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10364,
+      "offset": 10366,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10396,
+      "offset": 10398,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10416,
+      "offset": 10418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10431,
+      "offset": 10433,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10452,
+      "offset": 10454,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10460,
+      "offset": 10462,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10481,
+      "offset": 10483,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10489,
+      "offset": 10491,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10510,
+      "offset": 10512,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10518,
+      "offset": 10520,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10539,
+      "offset": 10541,
       "length": 1,
       "value": "4"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
-      "kind": "StringLiteral",
-      "offset": 10559,
-      "length": 27,
-      "value": "\"string length is invalid.\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10658,
-      "length": 1,
-      "value": "8"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
       "offset": 10662,
       "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10666,
+      "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10893,
+      "offset": 10897,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 10941,
+      "offset": 10945,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11167,
+      "offset": 11171,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11201,
+      "offset": 11205,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11236,
+      "offset": 11240,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11271,
+      "offset": 11275,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11306,
+      "offset": 11310,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11341,
+      "offset": 11345,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11376,
+      "offset": 11380,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11411,
+      "offset": 11415,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11446,
+      "offset": 11450,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11496,
+      "offset": 11500,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11510,
+      "offset": 11514,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11547,
+      "offset": 11551,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11562,
+      "offset": 11566,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11576,
+      "offset": 11580,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11590,
+      "offset": 11594,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11627,
+      "offset": 11631,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11642,
+      "offset": 11646,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11656,
+      "offset": 11660,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11693,
+      "offset": 11697,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11708,
+      "offset": 11712,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11722,
+      "offset": 11726,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11736,
+      "offset": 11740,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11773,
+      "offset": 11777,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11788,
+      "offset": 11792,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11829,
+      "offset": 11833,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11851,
+      "offset": 11855,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 11887,
+      "offset": 11891,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12045,
+      "offset": 12049,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12078,
+      "offset": 12082,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12113,
+      "offset": 12117,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12140,
+      "offset": 12144,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12173,
+      "offset": 12177,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12200,
+      "offset": 12204,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12233,
+      "offset": 12237,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12268,
+      "offset": 12272,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12295,
+      "offset": 12299,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12328,
+      "offset": 12332,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12363,
+      "offset": 12367,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12427,
+      "offset": 12431,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12456,
+      "offset": 12460,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12471,
+      "offset": 12475,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12485,
+      "offset": 12489,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12499,
+      "offset": 12503,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12523,
+      "offset": 12527,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12561,
+      "offset": 12565,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12576,
+      "offset": 12580,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12590,
+      "offset": 12594,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12614,
+      "offset": 12618,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12652,
+      "offset": 12656,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12667,
+      "offset": 12671,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12681,
+      "offset": 12685,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12695,
+      "offset": 12699,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12719,
+      "offset": 12723,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12772,
+      "offset": 12776,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",
       "kind": "IntegerLiteral",
-      "offset": 12786,
+      "offset": 12790,
       "length": 1,
       "value": "2"
     },
@@ -22962,203 +22948,126 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "StringLiteral",
-      "offset": 871,
-      "length": 47,
-      "value": "\"SwiftGif: Source for the image does not exist\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1158,
-      "length": 54,
-      "value": "\"SwiftGif: This image named \"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1194,
-      "length": 1,
-      "value": "\"\" does not exist\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1361,
-      "length": 58,
-      "value": "\"SwiftGif: Cannot turn image named \"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1404,
-      "length": 1,
-      "value": "\"\" into NSData\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1674,
+      "offset": 1680,
       "length": 5,
       "value": "\"gif\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1706,
-      "length": 55,
-      "value": "\"SwiftGif: This image named \"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1743,
-      "length": 1,
-      "value": "\"\" does not exist\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1910,
-      "length": 59,
-      "value": "\"SwiftGif: Cannot turn image named \"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 1954,
-      "length": 1,
-      "value": "\"\" into NSData\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 2248,
-      "length": 65,
-      "value": "\"SwiftGif: Cannot turn image named \"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
-      "kind": "StringLiteral",
-      "offset": 2293,
-      "length": 1,
-      "value": "\"\" into NSDataAsset\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "FloatLiteral",
-      "offset": 2512,
+      "offset": 2524,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 2721,
+      "offset": 2733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "BooleanLiteral",
-      "offset": 2986,
+      "offset": 2998,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 3429,
+      "offset": 3441,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 3691,
+      "offset": 3703,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "FloatLiteral",
-      "offset": 3764,
+      "offset": 3776,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 4195,
+      "offset": 4207,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "BooleanLiteral",
-      "offset": 4430,
+      "offset": 4442,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 4492,
+      "offset": 4504,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 4748,
+      "offset": 4760,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 4785,
+      "offset": 4797,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 5144,
+      "offset": 5156,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "FloatLiteral",
-      "offset": 5498,
+      "offset": 5510,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 5622,
+      "offset": 5634,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 5914,
+      "offset": 5926,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "IntegerLiteral",
-      "offset": 6060,
+      "offset": 6072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftGif\/UIImage+Gif.swift",
       "kind": "FloatLiteral",
-      "offset": 6258,
+      "offset": 6270,
       "length": 6,
       "value": "1000.0"
     },

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/TicketmasterPrePurchase-Swift.h</key>
 		<data>
-		inJRmbsGKoFRytFRIWrSur0tMmI=
+		hjwPFqtwPehWgJGyS6l4lWHDfE0=
 		</data>
 		<key>Headers/TicketmasterPrePurchase.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zUD0ZUTuG2NPffxipsinVSOZPQc=
+		KnnlGnJdYuT3qmv19Lc9WXUwqWg=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DWIe9VrJmJMcuecku2q0C/e/aY8=
+		LDc8fHzMXMrh8E7HKgCNAVBzyys=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vb7XMvuTsQRfqz7oliEkN6wxZr8=
+		JAVczuj7WXBUkU9eSMH0ghJHd5g=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WgGT3briskH93f5yIGwQNdyRJPg=
+		Jwc0t+Yx9uRrFBxTcJSDrBHRulQ=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DWIe9VrJmJMcuecku2q0C/e/aY8=
+		LDc8fHzMXMrh8E7HKgCNAVBzyys=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AYnElTbaaONW4u8CqsopzEXECQI=
+		uKkGWWQTUDzk7abX0VbVI3bL+gc=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		70xiCnGQmDcyyMwNrJPY902lxRE=
+		PjYRNucWj9zmIL2THasNKJZIpKs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		U0BsILshMQsNwrWu7VmgfD+nEBQ=
+		2k7/omBM7l6ivoChoaPNfnFlHn8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -82,7 +82,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWvEWzUJd/OpVZnE5QNANuIRMPnAlJIkcRMFpMROt7E=
+			tl/IWaAKszA6Lf0cJG1JTVYp/xJJuAhtHcJSitJIsHk=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterPrePurchase.h</key>
@@ -96,7 +96,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hB5VaypS5ffCVLlykZevkjk9evYciVz8CX8SL4GKpG4=
+			LfCXVyo/4eBtkID+VFeCBxBGjqjQBR4aQ5gsL8uAX3Y=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i46UOAk4laY8v7mGh4HdSCKLjA9ovjIJw3P+NJnF2jw=
+			Th84uqtSUPVs38l9gTRFNOky2rlT4BiIaW3/AVctBdY=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -124,14 +124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gr5vHTJCp14HVWaT7dj+qjmcSOBpUkddMYGQpcK7zsc=
+			5EM1eCsDYPRX7KmiKLqVNaIzigF6tYWhixjp6NhpNmY=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hB5VaypS5ffCVLlykZevkjk9evYciVz8CX8SL4GKpG4=
+			LfCXVyo/4eBtkID+VFeCBxBGjqjQBR4aQ5gsL8uAX3Y=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ppXVi/0HfeKCzWGYOLKOYerSJqVTUXeQpxgNREpX8kc=
+			+I/9bySsAD1YNPx3itVp5ykwSu8DPZza7MXUje981n4=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NKqZlmKuB5Cp3L2nQ80I6ExItkniMciGlB4S+enYK1o=
+			p5ddNJnGBF+GmnmCG55PBSJ5uRRsTEyRiLy8+PAASnk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vANn3U0u0/hePDUYvsjGBp4fRGsFJBcljtXUhGGWMdY=
+			iR+YfYseaX36qbs7GZv6AmJRu0u9j3GKRnUDmZTPFC0=
 			</data>
 		</dict>
 	</dict>

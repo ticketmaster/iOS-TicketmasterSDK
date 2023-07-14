@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Jun 13 10:40:19 PDT 2023</string>
+	<string>Fri Jul 14 12:54:56 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>jbacker-PSDK-7710-AuthExample</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Fixed archiving settings</string>
+	<string>Added Yinzcam: DC United API Keys</string>
 	<key>GITDate</key>
-	<string>Tue Jun 13 09:39:03 2023 -0700</string>
+	<string>Wed Jul 12 14:47:57 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>79ce853da6193bfb8be8508807b94b808060925a</string>
+	<string>395edf013dd7747387d1195d91ad91152fbf765c</string>
 	<key>MarketingVersion</key>
-	<string>1.5.2</string>
+	<string>1.5.3</string>
 </dict>
 </plist>

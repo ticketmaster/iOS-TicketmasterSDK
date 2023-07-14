@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jun 30 16:03:36 PDT 2023</string>
+	<string>Fri Jul 14 12:43:08 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>Epic-RetailDevApp</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Clone repo using SSH, not HTTP</string>
+	<string>Increase Swift package manifest TMAuthentication version to match Xcode project</string>
 	<key>GITDate</key>
-	<string>Fri Jun 30 15:51:27 2023 -0700</string>
+	<string>Thu Jul 13 21:52:28 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>d2158320b85f0fe29397f008d088ca24b93be2b7</string>
+	<string>4771ec9cf9aa0b2fe2415b271b10d34c2df39ddc</string>
 	<key>MarketingVersion</key>
-	<string>0.14.0</string>
+	<string>0.14.1</string>
 </dict>
 </plist>

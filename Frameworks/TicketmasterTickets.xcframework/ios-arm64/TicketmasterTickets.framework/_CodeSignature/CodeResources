@@ -266,7 +266,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BimN/WpAV60euSljddYmM0Ky9WE=
+		reahwTYnsYpMIcNr1JeF+El8PVA=
 		</data>
 		<key>InputAccessoryView.nib</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ub1JcsMO1zv9g8WgTFQ4ZrY6mP8=
+		ROJgrRVlTMIlx+qXawsihYbZQKo=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		jdItlNA+maA0XvfgjxAg4uqDMUU=
+		XhMmZE5x12DOsRaniWBI/yapOUY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		eBE4+ltdNldj17AJxK5bh6pXCY8=
+		j29HTvJdDi4hMO4B598vR55RsJM=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -458,7 +458,7 @@
 		</data>
 		<key>TicketCard.nib</key>
 		<data>
-		eU1eki5WjFFYTbBztCdhXH6xSQQ=
+		R3fP0Hu0PCiI7MyKie54I9Qj0W8=
 		</data>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
 		<data>
@@ -1110,7 +1110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			de89Uz0fjqhn/Wu4R7xSFP3WTOhzgsCo+yrqd9kNxdo=
+			J5dHVNG2Fqd6AEkF2dJAuHff3tgqSaHZy+a+vCllziM=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -1138,7 +1138,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aqh91Q6jsUnw8Dj/HoZT4FEct8EriaFiiA6mPXfOU7U=
+			Ywnmok43Y8B5lxBoPKWwuojsk0BOg53Bq4K46G3bFVE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1180,7 +1180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mt+ecx2LtU2Uyn3X6xaE0bIpysnE5A3kZn+6v78QBvU=
+			LDBPrKnIBDxcyglA1v9Jr7M/6aGjAXgYHpAfzNVcN1Q=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>
@@ -1432,7 +1432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E/6ljZrdt/oHHYsbaWMe7lxrGhURnz6C/hDRmi92LHE=
+			INutrCWVYvRYW1/y7dW+tgct0hRrAsnDmzoqPM/682E=
 			</data>
 		</dict>
 		<key>TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>

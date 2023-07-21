@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Jul 20 19:15:28 PDT 2023</string>
+	<string>Fri Jul 21 13:22:07 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Show logout placeholder screen during logout process, updated Authentication to 0.0.17</string>
+	<string>Fixed bug when teams share identical Host login backendService</string>
 	<key>GITDate</key>
-	<string>Thu Jul 20 18:58:39 2023 -0700</string>
+	<string>Fri Jul 21 13:13:20 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>fe81324bc355f8125610c6b5012374e206d39e19</string>
+	<string>87be585a5900f22cd749bd494e232a2523132864</string>
 	<key>MarketingVersion</key>
-	<string>3.0.2</string>
+	<string>3.0.3</string>
 </dict>
 </plist>

@@ -14,11 +14,11 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		yJRH2Jse1HOhjrRCpU8fky+1NeI=
+		W9hfdADM9Pq4sRR6wAh1iBUqV2I=
 		</data>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
 		<data>
-		dCznKl7ZMPj1xC32QLEg4DZDHPg=
+		0XflTDz5DyutEhFZVFw5QOh7Znc=
 		</data>
 		<key>Resources/MultipleLoginViewController.nib</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		M9mnDOTu2pEBQfnKwwYeszNcAI4=
+		2PjmLHqiyfFtfpUINM3KTsMJd1E=
 		</data>
 		<key>Resources/SingleLoginViewController.nib</key>
 		<data>
-		YfNggCPNIpAiFlaJUSSvyfJjDMo=
+		gyC5uvihe82pyulU5cjI2UQWkAQ=
 		</data>
 		<key>Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -45,7 +45,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gz0DxKPp8rmtUIQQ87AxXyhDj3Q=
+			wc0Xhx9R6lITqTPWIEgEYeu8vj8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kJ1s06OFAY4MzX3yeyRSWvbPoWg=
+			lnddqN5DKxsfuJNfBUKf2BdH/t4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +80,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5kNUZ69iq9/AgmXFchWDm2NPdF8q7IL+bKvapSa71I=
+			dzGsdx9BrEvDQMIyt8usalciAMMD4LKCWzM4I9ZSR/A=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5kNUZ69iq9/AgmXFchWDm2NPdF8q7IL+bKvapSa71I=
+			dzGsdx9BrEvDQMIyt8usalciAMMD4LKCWzM4I9ZSR/A=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -171,14 +171,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVe3ZN65QFPX/OrZ/QVdRJhmu1+7H00Xs7h+OcssBjg=
+			BI29OXMCLS5RfSnWAZcsoPSYPPqFxKLpaajMImrsdMs=
 			</data>
 		</dict>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Olz2xGsIvEAr+fGsii3JtN7PawZ3Uhngtp7UY1qRV0=
+			iR1DeOJbpb3qMUALUkKHUAI9mN3hp0QqwedNkg7dJwE=
 			</data>
 		</dict>
 		<key>Resources/MultipleLoginViewController.nib</key>
@@ -192,14 +192,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0QISHFv4U1HjDbxIdGM1sFwOi4g4ku5+TnxB0lNEkI=
+			bXJWMPyv3usg/oIqLv5iQvv4w8F/I47Ff1v5CJ0KzDU=
 			</data>
 		</dict>
 		<key>Resources/SingleLoginViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qVp1V2wBt/GHUIio610W0o0SdBL4mLOUgwpp+M6vuXY=
+			eWS/0+5qHQ0Y8mFm7AHOtgBxvibXNypn4R5EPRFeY+4=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/Localizable.strings</key>
@@ -215,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rkFjNbensTBVk3lHDL2ijDpFoxC8SlMz2OK7UfshTrk=
+			naTmhf8ixM6HSpMjyhauSG0B06LBgYDx7t4gKkB+6a0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -224,7 +224,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kpSfQ2T9KLub345oQCXOOYo72qJq+K/sw8VgNk1SWVA=
+			seTyw0Koc7dJh7MlhODfE/5fsvFUTrdJqNGL+megGPE=
 			</data>
 			<key>optional</key>
 			<true/>

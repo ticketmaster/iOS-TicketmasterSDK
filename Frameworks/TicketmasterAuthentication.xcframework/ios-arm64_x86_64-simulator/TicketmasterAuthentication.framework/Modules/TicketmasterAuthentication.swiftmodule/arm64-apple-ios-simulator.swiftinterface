@@ -53,6 +53,13 @@ public struct TMXNetworkServiceConfig : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol TMAuthenticationProvider : AnyObject {
+  var useCombinedLogin: Swift.Bool { get set }
+  var autoPresentLoginPrompt: Swift.Bool { get set }
+  var forceEphemeralWebBrowserSession: Swift.Bool? { get set }
+  func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
+  func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  func tmxNetworkServiceConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> TicketmasterAuthentication.TMXNetworkServiceConfig?
+  func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource?, instanceID: Swift.String?) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
   func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?) -> UIKit.UIViewController?
   func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
@@ -63,6 +70,7 @@ public protocol TMAuthenticationProvider : AnyObject {
   func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, mfaProperties: [Swift.String : Any]?, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
   func deleteAccount(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, success: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func clearAllCachedData(completion: @escaping () -> Swift.Void)
 }
 public protocol TMApigeeConfigurationProvider : AnyObject {
   func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
@@ -260,6 +268,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
   public struct TermsOfUse : Swift.Codable, Swift.Hashable {
     public let version: Swift.String?
     public let acceptanceRequired: Swift.Bool
+    public let text: Swift.String?
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMMemberInfo.TermsOfUse, b: TicketmasterAuthentication.TMMemberInfo.TermsOfUse) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
@@ -634,6 +643,7 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public var forceEphemeralWebBrowserSession: Swift.Bool?
   weak final public var delegate: (any TicketmasterAuthentication.TMAuthenticationDelegate)?
   final public func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
+  final public var internalTestingKeys: [Swift.String : Any]
   @objc override dynamic public init()
   @objc deinit
 }

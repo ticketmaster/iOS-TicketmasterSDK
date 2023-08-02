@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jul 21 13:22:07 PDT 2023</string>
+	<string>Wed Aug  2 16:19:17 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/3.1.0</string>
 	<key>GITComment</key>
-	<string>Fixed bug when teams share identical Host login backendService</string>
+	<string>Fixed canceling Host login bug</string>
 	<key>GITDate</key>
-	<string>Fri Jul 21 13:13:20 2023 -0700</string>
+	<string>Wed Aug 2 16:03:12 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>87be585a5900f22cd749bd494e232a2523132864</string>
+	<string>6bc36ff270d95924a4618d7de4967e5fc599cd4d</string>
 	<key>MarketingVersion</key>
-	<string>3.0.3</string>
+	<string>3.1.0</string>
 </dict>
 </plist>

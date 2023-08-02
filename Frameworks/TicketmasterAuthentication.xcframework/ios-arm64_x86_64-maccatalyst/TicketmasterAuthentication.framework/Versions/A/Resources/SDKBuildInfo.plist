@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Jul 20 17:13:41 PDT 2023</string>
+	<string>Wed Jul 26 14:59:44 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Improved Spanish translations</string>
+	<string>Merge branch Feature-PSDK-9439-LoginPageVersion into master</string>
 	<key>GITDate</key>
-	<string>Thu Jul 20 17:11:06 2023 -0700</string>
+	<string>Wed Jul 26 21:21:37 2023 +0000</string>
 	<key>GITRevision</key>
-	<string>cba90ddc04f967cd291282fecbf6861328038333</string>
+	<string>fff4bc59c2c1c705e5113bac08be260a0181641c</string>
 	<key>MarketingVersion</key>
-	<string>0.0.17</string>
+	<string>3.1.0</string>
 </dict>
 </plist>

@@ -102,6 +102,9 @@ public struct TMAuthToken : Swift.Codable, Swift.Hashable {
 extension TicketmasterAuthentication.TMAuthentication {
   final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
+extension TicketmasterAuthentication.TMApigeeConfig {
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, acquiredDate: Foundation.Date? = nil)
+}
 extension TicketmasterAuthentication.TMAuthentication {
   final public func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
   final public func hasUnexpiredToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
@@ -288,6 +291,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
 extension TicketmasterAuthentication.TMMemberInfo {
   public func verify(relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?) -> Swift.Bool
   public func localID(relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?) -> Swift.String?
+  public func relatedAccount(localID: Swift.String) -> TicketmasterAuthentication.TMMemberInfo.RelatedAccount?
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public struct TMXSettings : Swift.Codable, Swift.Hashable, Swift.Equatable {
@@ -643,7 +647,10 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public var forceEphemeralWebBrowserSession: Swift.Bool?
   weak final public var delegate: (any TicketmasterAuthentication.TMAuthenticationDelegate)?
   final public func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
-  final public var internalTestingKeys: [Swift.String : Any]
+  final public var internalTestingKeys: [Swift.String : Any] {
+    get
+    set
+  }
   @objc override dynamic public init()
   @objc deinit
 }

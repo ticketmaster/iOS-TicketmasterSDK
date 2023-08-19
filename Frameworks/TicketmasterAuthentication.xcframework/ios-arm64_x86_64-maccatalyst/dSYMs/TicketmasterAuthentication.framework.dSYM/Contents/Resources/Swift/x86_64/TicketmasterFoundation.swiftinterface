@@ -1883,6 +1883,9 @@ extension Swift.String {
   }
 }
 extension TicketmasterFoundation.MarketDomain {
+  public var topLevelURLDomain: Swift.String {
+    get
+  }
   public var countryCode: Swift.String {
     get
   }
@@ -1942,6 +1945,9 @@ open class ConnectionDriver {
 public enum ConnectionEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable {
   case production
   case productionLiveNation
+  case alpha
+  case beta
+  case appDemo
   case localHost
   case customHost
   case preProduction1

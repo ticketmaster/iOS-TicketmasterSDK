@@ -137,12 +137,13 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public func customConfigure(brandedServiceSettingArray: [TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings], success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
   final public func customConfigure(brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings, apigeeConfig: TicketmasterAuthentication.TMApigeeConfig? = nil, sourceFilter: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
   final public func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, instanceID: Swift.String? = nil) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
-  final public func removeAllConfiguredBackendServices(completion: (() -> Swift.Void)? = nil)
+  final public func removeAllConfiguredBackendServices(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public struct AuthError {
     public static let domain: Swift.String
     public static let unknown: Foundation.NSError
+    public static let operationCanceled: Foundation.NSError
     public static let apigeeConfigurationNotFound: Foundation.NSError
     public static let configurationForBackendNotFound: Foundation.NSError
     public static let serviceConfigurationsNotDefined: Foundation.NSError

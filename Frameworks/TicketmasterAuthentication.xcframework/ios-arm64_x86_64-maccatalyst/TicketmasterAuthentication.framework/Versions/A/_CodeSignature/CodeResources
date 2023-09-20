@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		SkHfsodSHPGraNCBkqPC/x3YGgY=
+		bfxxNUStwqxzX9eJI9zLzl6gptM=
 		</data>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		PtlBK+zvV5YZaPApsTHfJQxTDwk=
+		A+ln8N9AmH7h36pH9bzRE/4mYzE=
 		</data>
 		<key>Resources/SingleLoginViewController.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TV7xc7NDizhu2Iox3fsyKEOwLimQ8O3rVdzhoqgvIHY=
+			BmCj7utwDp4fwXAhg8Ue3p/aqm3hsN+y1hI7OWsXVtQ=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterAuthentication.h</key>
@@ -80,70 +80,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5InVgyW2gUJFYVAeo+rTqoyOcKgJpdGzoEfuNPn7IA=
+			sVCIi4UKziULHAhvpo00AYnbOkM+fUNpgbVhPTb30ng=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m9+LGj6YadzKZfESpMb3eA0Nu3cStyG1ucP5SHe0PMc=
+			kOyx2ik6kllgvowAEbLKjHmz2Pi+cXjgors5YEO3Cwc=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WtLcq0yami0kzS29+2Umhzw38VN97TwmTNHGFr49FFY=
+			G3tMxNkpJnKm+jFLsKos/yoihKqkB3bwv8fQfwED2Y0=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m9+LGj6YadzKZfESpMb3eA0Nu3cStyG1ucP5SHe0PMc=
+			kOyx2ik6kllgvowAEbLKjHmz2Pi+cXjgors5YEO3Cwc=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JZfO689Mh1OtPcOOCWlO7H0oMTYOqKqYwIlQFraMwL8=
+			CSsYcL/C0yFQBCTvWGZchYQMCd4giLjfRUfrciUHoLc=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5InVgyW2gUJFYVAeo+rTqoyOcKgJpdGzoEfuNPn7IA=
+			sVCIi4UKziULHAhvpo00AYnbOkM+fUNpgbVhPTb30ng=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKRTtr8IhmDJf4CXKIoGM3m4TA1sBb90aDYswkeQjzk=
+			enpksVDEhGhbq7gXcnQeHmoQ0zmekEp5Yt1kcJEoQpo=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hq73bOGy+4c58Flc5oh2Ua1H28lbfZ/9j+3BfLRaFXY=
+			mkJ/2lhFUzaVYKV4m5KGN38VrvfnhX7kAEtZQlsyO00=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKRTtr8IhmDJf4CXKIoGM3m4TA1sBb90aDYswkeQjzk=
+			enpksVDEhGhbq7gXcnQeHmoQ0zmekEp5Yt1kcJEoQpo=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qMVQ+gR87/hLI2ZQrAjcop8MgFseUZIJGtKI1DM4n8I=
+			FxsNZoi9AlEj5Zx+0kO3QjKhkymONzgev9CQKa098F0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+aFCmbwEdswjEGOVMMXf68e13EpyI7Fxvk071VgeTrA=
+			wZL3rcZ2+i2j9aiTnIzSTz6+gopLWkb7pfEZHB5RDBk=
 			</data>
 		</dict>
 		<key>Resources/LoginCardCollectionViewCell.nib</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TPzzU4SP93YJLO/NLKltSrFNkWgPFLtEOMV3ahMNCz4=
+			WUZ8Wah6rx69olZYxDfyjZhb+n4kzu2WVHhPCSlqSck=
 			</data>
 		</dict>
 		<key>Resources/SingleLoginViewController.nib</key>

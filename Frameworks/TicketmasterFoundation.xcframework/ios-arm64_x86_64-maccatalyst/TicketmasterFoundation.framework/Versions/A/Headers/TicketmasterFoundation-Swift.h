@@ -748,6 +748,7 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UALMessageHandler")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
@@ -806,10 +807,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UFCMessageHandler")
 @end
 
 
-
 @interface UFCMessageHandler (SWIFT_EXTENSION(TicketmasterFoundation)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
 
 
 
@@ -1644,6 +1645,7 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UALMessageHandler")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
@@ -1702,10 +1704,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UFCMessageHandler")
 @end
 
 
-
 @interface UFCMessageHandler (SWIFT_EXTENSION(TicketmasterFoundation)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
 
 
 

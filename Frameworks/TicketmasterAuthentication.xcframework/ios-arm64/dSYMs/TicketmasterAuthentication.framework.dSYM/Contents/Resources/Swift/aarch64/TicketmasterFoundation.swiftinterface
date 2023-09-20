@@ -774,7 +774,7 @@ public enum HTTPStatusCode : Swift.Int {
   case requestHeaderTooLarge
   case certError
   case noCert
-  case httPtoHTTPS
+  case httpToHttps
   case tokenExpiredOrInvalid
   case clientClosedRequest
   case internalServerError
@@ -796,6 +796,9 @@ public enum HTTPStatusCode : Swift.Int {
   case aTimeoutOccurred
   case sslHandshakeFailed
   case invalidSSLCertificate
+  public var publicDescription: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -2003,6 +2006,9 @@ public enum ConnectionError : Swift.Error {
   case badCriteria
   case badConfiguration(reason: Swift.String)
   public init(httpStatusCode: Swift.Int)
+  public var publicDescription: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers final public class LoggedMessageCache {
   public static let shared: TicketmasterFoundation.LoggedMessageCache

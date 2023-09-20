@@ -102,6 +102,7 @@ public struct TMTicketsPrebuiltModule {
     case venueConcessions
     case accountManagerSeatUpgrades
     case accountManagerMoreTicketActions
+    case accountManagerInvoiceAction
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName]
     public typealias RawValue = Swift.String
@@ -115,6 +116,7 @@ public struct TMTicketsPrebuiltModule {
   public enum ButtonCallbackName : Swift.String, Swift.CaseIterable {
     case moreTicketActions
     case seatUpgrades
+    case invoice
     case getDirections
     case rideShare
     case order
@@ -142,6 +144,7 @@ public struct TMTicketsPrebuiltModule {
   }
   public static func accountManagerSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> TicketmasterTickets.TMTicketsModule?
   public static func accountManagerMoreTicketActions(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
+  public static func accountManagerInvoiceAction(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
   public static func venueDirectionsViaAppleMaps(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
   public static func venueConcessions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, showWalletButton: Swift.Bool) -> TicketmasterTickets.TMTicketsModule?
 }
@@ -626,6 +629,7 @@ extension TicketmasterTickets.TMTickets {
     public static let userAbortedLogin: Foundation.NSError
     public static let loginWindowMissing: Foundation.NSError
     public static let missingOAuthTokens: Foundation.NSError
+    public static let authSyncAborted: Foundation.NSError
     public enum FetchError : Swift.Error {
       case noMatchingEvent
       case noOrders
@@ -801,10 +805,10 @@ extension TicketmasterTickets.TMTickets {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @_Concurrency.MainActor(unsafe) public func reload()
-  @objc deinit
 }
 extension Swift.UInt32 {
   @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)

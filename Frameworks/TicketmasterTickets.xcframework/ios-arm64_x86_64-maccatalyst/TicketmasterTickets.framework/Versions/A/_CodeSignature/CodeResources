@@ -134,7 +134,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		AU+l/9uml85tOUpV93JXvbN64Ow=
+		VogkFwcy1CK3flmCDETCRpsubbs=
 		</data>
 		<key>Resources/MoreInfoView.nib</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		w9GK5GNwwHPPRblI57Y6y4mss20=
+		zLD52uRyu8SDY59taok/JuMKtIY=
 		</data>
 		<key>Resources/SeatingMessageCell.nib</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Resources/TicketCard.nib</key>
 		<data>
-		jNl/iRLjEnpikIEvoe2gJKErvwo=
+		hmzFeKD3XbB6NZXTwTHgClSraeY=
 		</data>
 		<key>Resources/TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
 		<data>
@@ -404,7 +404,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivCuaB5AO9c1OX+y2V+ZIt4DpDRh3fQ2U1bLf7YUTqU=
+			1Ce6yZ73XitHMjffWcJreEVZ4NZtC6TK+X0vOOEXseg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -439,7 +439,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivCuaB5AO9c1OX+y2V+ZIt4DpDRh3fQ2U1bLf7YUTqU=
+			1Ce6yZ73XitHMjffWcJreEVZ4NZtC6TK+X0vOOEXseg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -705,7 +705,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y9tURkSBZQqyU4YGfY5pZGREd6szAVGqsJSgS8f7gHo=
+			YNsVhqpULUJLUv5APtZH2PI4mDueticHg1+6Gz3VzMA=
 			</data>
 		</dict>
 		<key>Resources/MoreInfoView.nib</key>
@@ -740,7 +740,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tmpO5dgeN1L9uoX1lyNvpC1FP0pUK8T+q+JquCBhqBs=
+			0STTemd1vQ70YKigqxRI5U1VS1ftr7n7KBD3MCJUkbo=
 			</data>
 		</dict>
 		<key>Resources/SeatingMessageCell.nib</key>
@@ -915,7 +915,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqkVavNJojZXYvomVRlu4PYZmLfmboA569ZG83SN0CY=
+			x2Ssu1DqQJvJgWF8Y88JA/DyOYHCthukhi/AnsPjNrE=
 			</data>
 		</dict>
 		<key>Resources/TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>

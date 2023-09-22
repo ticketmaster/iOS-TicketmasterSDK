@@ -17,6 +17,12 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 * Xcode 14.3+ for development
 * iOS 14.0+ for deployment
 
+### Change Log
+
+* Tickets SDK: https://ignite.ticketmaster.com/docs/ios-tickets-change-log
+* Retail SDK: https://ignite.ticketmaster.com/docs/ios-retail-change-log
+* Authentication SDK: https://ignite.ticketmaster.com/docs/ios-authentication-change-log
+
 ## How do I add these frameworks to my Xcode project?
 
 ### Swift Package Manager

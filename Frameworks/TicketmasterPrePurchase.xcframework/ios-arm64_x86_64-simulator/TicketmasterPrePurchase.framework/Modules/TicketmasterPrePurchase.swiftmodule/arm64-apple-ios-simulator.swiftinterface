@@ -16,14 +16,25 @@ import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers final public class TMPrePurchase : ObjectiveC.NSObject {
   public static let shared: TicketmasterPrePurchase.TMPrePurchase
-  final public var apiKey: Swift.String?
-  final public var environment: TicketmasterFoundation.ConnectionEnvironment
-  final public var useDebugAnalytics: Swift.Bool
-  final public var domain: TicketmasterFoundation.MarketDomain
   final public var version: Swift.String {
     get
   }
+  final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
+  final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
+  final public var environment: TicketmasterFoundation.ConnectionEnvironment {
+    get
+    set
+  }
+  final public var useDebugAnalytics: Swift.Bool
+  final public var marketDomain: TicketmasterFoundation.MarketDomain {
+    get
+    set
+  }
   final public var brandColor: UIKit.UIColor
+  @available(*, deprecated, message: "Use method configure(apiKey:region:completion:) instead")
+  final public var apiKey: Swift.String?
+  @available(*, deprecated, message: "Renamed marketDomain")
+  final public var domain: TicketmasterFoundation.MarketDomain
   @objc override dynamic public init()
   @objc deinit
 }

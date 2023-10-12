@@ -289,7 +289,6 @@ SWIFT_CLASS("_TtC24TicketmasterDiscoveryAPI14TMDiscoveryAPI")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 #endif
 #if defined(__cplusplus)
 #endif

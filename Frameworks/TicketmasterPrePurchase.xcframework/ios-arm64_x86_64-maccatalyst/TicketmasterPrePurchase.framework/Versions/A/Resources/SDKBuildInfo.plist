@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jul 14 12:38:31 PDT 2023</string>
+	<string>Thu Oct 12 13:41:10 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/2.0.3</string>
 	<key>GITComment</key>
-	<string>Increase Swift package manifest TMAuthentication version to match Xcode project</string>
+	<string>Update to TicketmasterFoundation 0.9.6 (UALPageView fix)</string>
 	<key>GITDate</key>
-	<string>Thu Jul 13 21:52:28 2023 -0700</string>
+	<string>Thu Oct 12 13:21:58 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>4771ec9cf9aa0b2fe2415b271b10d34c2df39ddc</string>
+	<string>4087d3732c4e819c326ca13a02852c767288f6d7</string>
 	<key>MarketingVersion</key>
-	<string>1.7.1</string>
+	<string>2.0.3</string>
 </dict>
 </plist>

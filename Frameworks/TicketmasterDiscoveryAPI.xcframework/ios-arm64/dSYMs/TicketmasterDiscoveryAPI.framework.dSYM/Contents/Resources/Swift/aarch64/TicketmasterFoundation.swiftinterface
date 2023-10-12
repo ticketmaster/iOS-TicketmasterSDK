@@ -694,9 +694,9 @@ public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function
   @discardableResult
   @objc public static func objcLogMessage(_ message: Any?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @discardableResult
-  @objc public static func objcLogRequest(_ request: Foundation.URLRequest?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  @objc public static func objcLogRequest(identifier: Swift.String, request: Foundation.URLRequest?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @discardableResult
-  @objc public static func objcLogResponse(_ response: Foundation.URLResponse?, request: Foundation.URLRequest?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  @objc public static func objcLogResponse(identifier: Swift.String, response: Foundation.URLResponse?, request: Foundation.URLRequest?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -774,7 +774,7 @@ public enum HTTPStatusCode : Swift.Int {
   case requestHeaderTooLarge
   case certError
   case noCert
-  case httPtoHTTPS
+  case httpToHttps
   case tokenExpiredOrInvalid
   case clientClosedRequest
   case internalServerError
@@ -796,6 +796,9 @@ public enum HTTPStatusCode : Swift.Int {
   case aTimeoutOccurred
   case sslHandshakeFailed
   case invalidSSLCertificate
+  public var publicDescription: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1883,6 +1886,9 @@ extension Swift.String {
   }
 }
 extension TicketmasterFoundation.MarketDomain {
+  public var topLevelURLDomain: Swift.String {
+    get
+  }
   public var countryCode: Swift.String {
     get
   }
@@ -1942,6 +1948,9 @@ open class ConnectionDriver {
 public enum ConnectionEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable {
   case production
   case productionLiveNation
+  case alpha
+  case beta
+  case appDemo
   case localHost
   case customHost
   case preProduction1
@@ -1997,6 +2006,9 @@ public enum ConnectionError : Swift.Error {
   case badCriteria
   case badConfiguration(reason: Swift.String)
   public init(httpStatusCode: Swift.Int)
+  public var publicDescription: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers final public class LoggedMessageCache {
   public static let shared: TicketmasterFoundation.LoggedMessageCache
@@ -2019,8 +2031,8 @@ public enum URLLoggingDetails {
   }
 }
 extension Foundation.URLRequest {
-  public func logSendRequest(loggingDetails: TicketmasterFoundation.URLLoggingDetails)
-  public func logRecieveRequest(response: Foundation.URLResponse?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  public func logSendRequest(identifier: Swift.String, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  public func logRecieveRequest(identifier: Swift.String, response: Foundation.URLResponse?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
 }
 @objc public protocol UALWebViewMessageHandlerDelegate {
   @objc func adjustTrackedPageView(_ pageView: TicketmasterFoundation.UALPageView) -> TicketmasterFoundation.UALPageView?

@@ -6168,6 +6168,13 @@
         "moduleName": "TicketmasterDiscoveryAPI"
       },
       {
+        "kind": "Import",
+        "name": "TicketmasterAuthentication",
+        "printedName": "TicketmasterAuthentication",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TMDiscoveryAPI",
         "printedName": "TMDiscoveryAPI",
@@ -6226,127 +6233,6 @@
           },
           {
             "kind": "Var",
-            "name": "apiKey",
-            "printedName": "apiKey",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvp",
-            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvp",
-            "moduleName": "TicketmasterDiscoveryAPI",
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvg",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvg",
-                "moduleName": "TicketmasterDiscoveryAPI",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvs",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvs",
-                "moduleName": "TicketmasterDiscoveryAPI",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvM",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvM",
-                "moduleName": "TicketmasterDiscoveryAPI",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "version",
             "printedName": "version",
             "children": [
@@ -6363,7 +6249,8 @@
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -6388,6 +6275,105 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(apiKey:region:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TMXDeploymentRegion",
+                "printedName": "TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion",
+                "hasDefaultArg": true,
+                "usr": "s:26TicketmasterAuthentication16TMAuthenticationC19TMXDeploymentRegionO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C9configure6apiKey6region10completionySS_0A14Authentication16TMAuthenticationC19TMXDeploymentRegionOySbctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C9configure6apiKey6region10completionySS_0A14Authentication16TMAuthenticationC19TMXDeploymentRegionOySbctF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(tmxSettings:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TMXSettings",
+                "printedName": "TicketmasterAuthentication.TMAuthentication.TMXSettings",
+                "usr": "s:26TicketmasterAuthentication16TMAuthenticationC11TMXSettingsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C9configure11tmxSettings10completiony0A14Authentication16TMAuthenticationC11TMXSettingsV_ySbctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C9configure11tmxSettings10completiony0A14Authentication16TMAuthenticationC11TMXSettingsV_ySbctF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -6498,13 +6484,10 @@
             "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvp",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "HasStorage",
               "AccessControl",
               "RawDocComment"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -6522,7 +6505,6 @@
                 "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvg",
                 "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvg",
                 "moduleName": "TicketmasterDiscoveryAPI",
-                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -6549,7 +6531,6 @@
                 "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvs",
                 "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvs",
                 "moduleName": "TicketmasterDiscoveryAPI",
-                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -6585,14 +6566,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DiscoveryService",
-                "printedName": "TicketmasterDiscoveryAPI.DiscoveryService",
-                "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC"
+                "name": "Optional",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DiscoveryService",
+                    "printedName": "TicketmasterDiscoveryAPI.DiscoveryService",
+                    "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0Cvp",
-            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0Cvp",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0CSgvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0CSgvp",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "Final",
@@ -6607,19 +6596,253 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DiscoveryService",
-                    "printedName": "TicketmasterDiscoveryAPI.DiscoveryService",
-                    "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC"
+                    "name": "Optional",
+                    "printedName": "TicketmasterDiscoveryAPI.DiscoveryService?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscoveryService",
+                        "printedName": "TicketmasterDiscoveryAPI.DiscoveryService",
+                        "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0Cvg",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0Cvg",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0CSgvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C16discoveryServiceAA0bF0CSgvg",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "declAttributes": [
                   "Final"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvs",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvs",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvM",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C6apiKeySSSgvM",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKeyError",
+            "printedName": "apiKeyError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvpZ",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvpZ",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvgZ",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvgZ",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvsZ",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvsZ",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvMZ",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11apiKeyErrors0G0_pvMZ",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -24508,30 +24731,44 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 540,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3158,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3429,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 2187,
-      "length": 185,
-      "value": "\"Fatal Error: An API key must be set via TMDiscoveryAPI.apiKey before initializing instances of DiscoveryService. To get a developer API key, visit https:\/\/developer.ticketmaster.com\/.\""
+      "offset": 6000,
+      "length": 16,
+      "value": "\"TMDiscoveryAPI\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2556,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 6024,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2598,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 6066,
+      "length": 188,
+      "value": "\"Fatal Error: An API key must be set via TMDiscoveryAPI.configure before initializing instances of DiscoveryService. To get a developer API key, visit https:\/\/developer.ticketmaster.com\/.\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoverySuggestResponse.swift",

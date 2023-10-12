@@ -467,6 +467,8 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 + (BOOL)objcLogMessage:(id _Nullable)message file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 /// do not call MessageLogger.objcLogRequest() directly, instead use logSendRequest() from TMNetworkLogger.h
+/// \param identifier a unique request identifier to print
+///
 /// \param request <code>URLRequest</code> to print
 ///
 /// \param file file name (ignore, Swift will autofill)
@@ -477,8 +479,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 /// \param level level at which log is displayed (default = .debug)
 ///
-+ (BOOL)objcLogRequest:(NSURLRequest * _Nullable)request file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
++ (BOOL)objcLogRequestWithIdentifier:(NSString * _Nonnull)identifier request:(NSURLRequest * _Nullable)request file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 /// do not call MessageLogger.objcLogResponse() directly, instead use logReceiveResponse() from TMNetworkLogger.h
+/// \param identifier a unique request identifier
+///
 /// \param response <code>URLResponse</code> to print
 ///
 /// \param request original <code>URLRequest</code> that created the response
@@ -497,7 +501,7 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 /// \param level level at which log is displayed (default = .debug)
 ///
-+ (BOOL)objcLogResponse:(NSURLResponse * _Nullable)response request:(NSURLRequest * _Nullable)request data:(NSData * _Nullable)data error:(NSError * _Nullable)error duration:(NSTimeInterval)duration file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
++ (BOOL)objcLogResponseWithIdentifier:(NSString * _Nonnull)identifier response:(NSURLResponse * _Nullable)response request:(NSURLRequest * _Nullable)request data:(NSData * _Nullable)data error:(NSError * _Nullable)error duration:(NSTimeInterval)duration file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -748,7 +752,6 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UALMessageHandler")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 @class WKUserContentController;
 @class WKScriptMessage;
 
@@ -807,10 +810,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UFCMessageHandler")
 @end
 
 
+
 @interface UFCMessageHandler (SWIFT_EXTENSION(TicketmasterFoundation)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
-
 
 
 
@@ -1364,6 +1367,8 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 + (BOOL)objcLogMessage:(id _Nullable)message file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 /// do not call MessageLogger.objcLogRequest() directly, instead use logSendRequest() from TMNetworkLogger.h
+/// \param identifier a unique request identifier to print
+///
 /// \param request <code>URLRequest</code> to print
 ///
 /// \param file file name (ignore, Swift will autofill)
@@ -1374,8 +1379,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 /// \param level level at which log is displayed (default = .debug)
 ///
-+ (BOOL)objcLogRequest:(NSURLRequest * _Nullable)request file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
++ (BOOL)objcLogRequestWithIdentifier:(NSString * _Nonnull)identifier request:(NSURLRequest * _Nullable)request file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 /// do not call MessageLogger.objcLogResponse() directly, instead use logReceiveResponse() from TMNetworkLogger.h
+/// \param identifier a unique request identifier
+///
 /// \param response <code>URLResponse</code> to print
 ///
 /// \param request original <code>URLRequest</code> that created the response
@@ -1394,7 +1401,7 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 ///
 /// \param level level at which log is displayed (default = .debug)
 ///
-+ (BOOL)objcLogResponse:(NSURLResponse * _Nullable)response request:(NSURLRequest * _Nullable)request data:(NSData * _Nullable)data error:(NSError * _Nullable)error duration:(NSTimeInterval)duration file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
++ (BOOL)objcLogResponseWithIdentifier:(NSString * _Nonnull)identifier response:(NSURLResponse * _Nullable)response request:(NSURLRequest * _Nullable)request data:(NSData * _Nullable)data error:(NSError * _Nullable)error duration:(NSTimeInterval)duration file:(NSString * _Nonnull)file function:(NSString * _Nonnull)function line:(NSInteger)line level:(enum LogLevel)level;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1645,7 +1652,6 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UALMessageHandler")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
 @class WKUserContentController;
 @class WKScriptMessage;
 
@@ -1704,10 +1710,10 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation17UFCMessageHandler")
 @end
 
 
+
 @interface UFCMessageHandler (SWIFT_EXTENSION(TicketmasterFoundation)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
-
 
 
 

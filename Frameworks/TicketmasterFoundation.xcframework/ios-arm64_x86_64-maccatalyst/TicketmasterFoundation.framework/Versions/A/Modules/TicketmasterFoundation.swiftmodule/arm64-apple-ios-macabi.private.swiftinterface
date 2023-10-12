@@ -694,9 +694,9 @@ public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function
   @discardableResult
   @objc public static func objcLogMessage(_ message: Any?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @discardableResult
-  @objc public static func objcLogRequest(_ request: Foundation.URLRequest?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  @objc public static func objcLogRequest(identifier: Swift.String, request: Foundation.URLRequest?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @discardableResult
-  @objc public static func objcLogResponse(_ response: Foundation.URLResponse?, request: Foundation.URLRequest?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  @objc public static func objcLogResponse(identifier: Swift.String, response: Foundation.URLResponse?, request: Foundation.URLRequest?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -2031,8 +2031,8 @@ public enum URLLoggingDetails {
   }
 }
 extension Foundation.URLRequest {
-  public func logSendRequest(loggingDetails: TicketmasterFoundation.URLLoggingDetails)
-  public func logRecieveRequest(response: Foundation.URLResponse?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  public func logSendRequest(identifier: Swift.String, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  public func logRecieveRequest(identifier: Swift.String, response: Foundation.URLResponse?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
 }
 @objc public protocol UALWebViewMessageHandlerDelegate {
   @objc func adjustTrackedPageView(_ pageView: TicketmasterFoundation.UALPageView) -> TicketmasterFoundation.UALPageView?

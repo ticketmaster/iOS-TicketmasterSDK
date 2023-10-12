@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Aug 28 15:27:41 PDT 2023</string>
+	<string>Thu Oct 12 13:07:19 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Use correct logging levels, added ConnectionError publicDescription</string>
+	<string>Reverted dotNotation change, doesn’t seem like it’s needed, fix bug when parsing dot notation</string>
 	<key>GITDate</key>
-	<string>Mon Aug 28 15:22:48 2023 -0700</string>
+	<string>Thu Oct 12 13:05:03 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>0cf9e7df6caf9ef1a4b47d676305cc59d1068a13</string>
+	<string>e5267f59bc35172710a41941552a6ac2fe06f610</string>
 	<key>MarketingVersion</key>
-	<string>0.9.3</string>
+	<string>0.9.6</string>
 </dict>
 </plist>

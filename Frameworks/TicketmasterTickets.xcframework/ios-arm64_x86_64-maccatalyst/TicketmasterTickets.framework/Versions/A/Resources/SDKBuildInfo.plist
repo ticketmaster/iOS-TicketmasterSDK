@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Sep 21 14:18:21 PDT 2023</string>
+	<string>Wed Sep 20 15:37:30 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.2.1</string>
+	<string>release/3.2.0</string>
 	<key>GITComment</key>
-	<string>Updated version to 3.2.1</string>
+	<string>Update to Authentication 3.2.3 (MFX Member Info fixes, no changes to Host/Archtics/SportXR)</string>
 	<key>GITDate</key>
-	<string>Thu Sep 21 14:08:20 2023 -0700</string>
+	<string>Wed Sep 20 15:28:31 2023 -0700</string>
 	<key>GITRevision</key>
-	<string>3de7cc11c76fc30c1daa51993fe3c61c963a9335</string>
+	<string>c43b39255aace13a323e6edd20daeaa26ece6dd1</string>
 	<key>MarketingVersion</key>
-	<string>3.2.1</string>
+	<string>3.2.0</string>
 </dict>
 </plist>

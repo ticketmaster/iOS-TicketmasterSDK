@@ -7,6 +7,11 @@ iOS implementation of Ticketmaster's Ignite SDK
 A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.
 
 * Overview: https://business.ticketmaster.com/ignite/
+* Release Notes: 
+  * Retail: https://ignite.ticketmaster.com/docs/ios-retail-change-log
+  * Authentication: https://ignite.ticketmaster.com/docs/ios-authentication-change-log
+  * Tickets: https://ignite.ticketmaster.com/docs/ios-tickets-change-log
+
 * Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
 * Frameworks: https://github.com/ticketmaster/iOS-TicketmasterSDK
 * Android Source (Tickets SDK): https://github.com/ticketmaster/Android-TicketsDemoApp

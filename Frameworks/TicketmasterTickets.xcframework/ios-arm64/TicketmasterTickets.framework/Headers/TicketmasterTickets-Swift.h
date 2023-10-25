@@ -382,7 +382,7 @@ SWIFT_CLASS("_TtC19TicketmasterTickets15TMTicketsModule")
 @class UILabel;
 @class NSCoder;
 
-/// quickly build a UIView for <code>TMTicketsModuleHeaderView/HeaderDisplay-swift.class</code>
+/// quickly build a UIView for <code>TMTicketsModuleHeaderView</code>
 /// \code
 /// // build a UIView for the header
 /// //  we have a handy method to build module UI easily, this includes:

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Oct 24 12:20:04 PDT 2023</string>
+	<string>Tue Oct 31 11:07:49 PDT 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.2.6</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Merged in crash fixes from master branch, updated to 3.2.6</string>
+	<string>Merge branch jbacker-PSDK-9714-LoginWithToken into master</string>
 	<key>GITDate</key>
-	<string>Tue Oct 24 12:11:56 2023 -0700</string>
+	<string>Tue Oct 31 18:03:58 2023 +0000</string>
 	<key>GITRevision</key>
-	<string>4acff3df09b0cc41dab6cce8a14e4ff346325fc4</string>
+	<string>fe499ce2f6dfc55ebdbe166d9a6e4810b527c54c</string>
 	<key>MarketingVersion</key>
-	<string>3.2.6</string>
+	<string>3.3.0</string>
 </dict>
 </plist>

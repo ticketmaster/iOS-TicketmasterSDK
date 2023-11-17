@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Oct 25 11:18:28 PDT 2023</string>
+	<string>Thu Nov 16 15:54:26 PST 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.2.2</string>
+	<string>release/3.3.0</string>
 	<key>GITComment</key>
-	<string>Updated gitlab ci</string>
+	<string>Merge branch Fix-PSDK-10056-Handle-noTickets-error into master</string>
 	<key>GITDate</key>
-	<string>Wed Oct 25 10:59:45 2023 -0700</string>
+	<string>Wed Nov 15 11:35:18 2023 -0600</string>
 	<key>GITRevision</key>
-	<string>701344fd122101e08a1b8789cb19b23553ff6506</string>
+	<string>2ac27c080c884762b59c43f8df4a8f2c570bf5fa</string>
 	<key>MarketingVersion</key>
-	<string>3.2.2</string>
+	<string>3.3.0</string>
 </dict>
 </plist>

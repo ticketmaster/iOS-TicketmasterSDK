@@ -14,6 +14,7 @@ import PassKit
 import SafariServices
 import Security
 import Swift
+import SwiftUI
 import SystemConfiguration
 import TicketmasterAuthentication
 import TicketmasterFoundation

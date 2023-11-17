@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/AccountView.nib</key>
 		<data>
-		f80JzaWw/mcZpJbgkuSnXuZDOa8=
+		biLhqusH5A+6lJpbWxGKULWofnk=
 		</data>
 		<key>Resources/ActivityIndicatorWrapperView.nib</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		A73YHl8vn/LpQ3SMzcjrtFjg9xk=
+		NRnjT5BbVV5H7L8ymZ08RBfa4N8=
 		</data>
 		<key>Resources/BarcodeCell.DeliveryView.nib</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Resources/EventsView.nib</key>
 		<data>
-		xqgEs0Pn/ebf3zThZWtvGQEXXFM=
+		j5JSL5JIm5qZaL510Cs4tzCVF9Y=
 		</data>
 		<key>Resources/HealthCheckView.nib</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		gzVHLJ5+suUggG2Vtxt6iW5yCdU=
+		UWhoadyfig18FNdJ1AYzjlU6Sms=
 		</data>
 		<key>Resources/MoreInfoView.nib</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		qs6c0EpDRC6F/qIjTwvo1at8LwU=
+		ltV6f/tP/q4A3wgifrVxcaQtg6c=
 		</data>
 		<key>Resources/SeatingMessageCell.nib</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>Resources/TicketCard.nib</key>
 		<data>
-		SEGHZ6MZOohr4FrxZN/IFPfuolM=
+		vz9iqJxRrDa/N31vUHXVRBLw2K4=
 		</data>
 		<key>Resources/TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
 		<data>
@@ -329,7 +329,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QxahuvilcwYYIsToRmXPf5cveQg=
+			DJZP724ph2TXe8dJcxn/ez+77l4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -356,7 +356,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sVUJvezo0ngmYu1J5bIdSfWDMCs=
+			0RoW8AZ3BBfpkeAOpgwm3dQjdXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -390,7 +390,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScBHrTa4GFv44+3h566PerW9TbEBJ+ppluJULTc+luI=
+			Zw7NuZBFjidXgtDfH5IsSNm0OtI5fyW8y5iw3LKxr9g=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterTickets.h</key>
@@ -404,14 +404,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hos41OMGzXo+YWtyQhlro390a4nhkbgg+qKR24EUK+k=
+			8G3KrusEkdrzjQlSbuqIWC/Q1tjnFAIrhDoxfzpuOWg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NVAH14nUAn/UzuJucujIWtnScM9oMrskCAic8kiDsag=
+			InOIBMgki43Ub1pwO1GWCxdD1pzEy+7u2rzWDpiTLCQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -425,28 +425,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NVAH14nUAn/UzuJucujIWtnScM9oMrskCAic8kiDsag=
+			InOIBMgki43Ub1pwO1GWCxdD1pzEy+7u2rzWDpiTLCQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t/ZsW31EiDvGg9GWOyBwonBxypfWKpINh89JK7t1W3A=
+			e0bc3BAXY3jsjqBPJIIpHMw3DgHoffw7I1yF+jcesBs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hos41OMGzXo+YWtyQhlro390a4nhkbgg+qKR24EUK+k=
+			8G3KrusEkdrzjQlSbuqIWC/Q1tjnFAIrhDoxfzpuOWg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lFiVMXd3QnsbaUmCWSJunmqL5bGmB/K0pr+IpWBibp8=
+			0eIhKwADdO9q1qi3YMw68aYNIWe8qIsZfRjWsAVl214=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -460,14 +460,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lFiVMXd3QnsbaUmCWSJunmqL5bGmB/K0pr+IpWBibp8=
+			0eIhKwADdO9q1qi3YMw68aYNIWe8qIsZfRjWsAVl214=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kO688Z4plBpGT289KpTy5An0MjkNrh3TUhm0NjrqaQw=
+			ph8Picg3t9M1U311XcielQxNLEMUUTQUJazGqm5xzmg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -509,7 +509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZQFwYCpGHF6BvrRjF7xpNzkUR2MbbQoyH9JY8RfH30=
+			ztyIId8aA/U7Rqs5C/Q8SdjrS1b0S0+RNISsoJUPIhQ=
 			</data>
 		</dict>
 		<key>Resources/ActivityIndicatorWrapperView.nib</key>
@@ -530,7 +530,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/pTGclPHPB/jA101nr9A4ns72a3wpdTzA/gjOa1ccR8=
+			In1SZHZWXarxHN0fsTPTLV0+xOgn4b4lHnLjs3Nhiq0=
 			</data>
 		</dict>
 		<key>Resources/BarcodeCell.DeliveryView.nib</key>
@@ -691,7 +691,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mjx2VciznavkgdFWHTpqxpFJh/BK6NBOF0H6+z/t9eA=
+			JPzydoC7Ewu2QIYwMI4RN8ZJe0e++JbKd05ZSKxyMwU=
 			</data>
 		</dict>
 		<key>Resources/HealthCheckView.nib</key>
@@ -705,7 +705,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DuQLuX00/ITZ11VyMdZ3V1FCBEN3zaASiZd/TSJipA4=
+			Z39uTldxnwvYRn+GTLdB5iHXUKmRq64e0uZH1O3LOS4=
 			</data>
 		</dict>
 		<key>Resources/MoreInfoView.nib</key>
@@ -740,7 +740,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vX9sBzz+ooet6LO6MfgpMFMYmYCb2P+Qoy7XI61CE5Y=
+			tXoLEzG6hQOQAaarTyOd4gbguA/S00UDARBCyB0YA3M=
 			</data>
 		</dict>
 		<key>Resources/SeatingMessageCell.nib</key>
@@ -915,7 +915,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4KTasofGtlnCOezROrSPkiak/ELJ4hyhXv7EjNQcVzE=
+			1i1nCoKwRIlEE1/AjB42PRrqlDivVxMwwfgiiI6qoMU=
 			</data>
 		</dict>
 		<key>Resources/TicketDetailsViewController.storyboardc/Cql-mn-Ysx-view-WXq-R6-M9R.nib</key>
@@ -1036,7 +1036,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lkhzdKWa8oBvnK4uNeNpq0eft+wSQHg/ZRncii8KT7E=
+			FvIzFTO+SYFIIPLQJlC55+Q+363JX7XpAdOPwMV/SHY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1063,7 +1063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QiNtIg8dX9wtCX26hH8c4+wUNbHhYCT86FvUbm7MUg8=
+			/CjhKTp3nmdlNqEORwihUcWQTlJt5Jk5kmqWsR+sEbw=
 			</data>
 			<key>optional</key>
 			<true/>

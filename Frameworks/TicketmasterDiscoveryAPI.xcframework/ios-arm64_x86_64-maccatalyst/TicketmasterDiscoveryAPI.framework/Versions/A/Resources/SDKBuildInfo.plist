@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Oct 12 13:33:28 PDT 2023</string>
+	<string>Thu Nov 16 10:30:21 PST 2023</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/2.0.3</string>
+	<string>release/2.0.6</string>
 	<key>GITComment</key>
-	<string>Update to TicketmasterFoundation 0.9.6 (UALPageView fix)</string>
+	<string>Updated Retail SDK with new Authentication 3.3.0 interface</string>
 	<key>GITDate</key>
-	<string>Thu Oct 12 13:21:58 2023 -0700</string>
+	<string>Thu Nov 16 10:24:52 2023 -0800</string>
 	<key>GITRevision</key>
-	<string>4087d3732c4e819c326ca13a02852c767288f6d7</string>
+	<string>88ca08e3834cce3f39d38e30855cc9126391e8f9</string>
 	<key>MarketingVersion</key>
-	<string>2.0.3</string>
+	<string>2.0.6</string>
 </dict>
 </plist>

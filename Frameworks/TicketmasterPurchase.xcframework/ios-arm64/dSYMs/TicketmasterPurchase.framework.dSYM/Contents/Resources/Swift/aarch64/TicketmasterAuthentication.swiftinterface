@@ -15,15 +15,18 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, environment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment = .Production, branding: TicketmasterAuthentication.TMAuthentication.Branding? = nil, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
-  final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, branding: TicketmasterAuthentication.TMAuthentication.Branding? = nil, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
-  final public func configure(brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, environment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment = .Production, branding: TicketmasterAuthentication.TMAuthentication.Branding? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, branding: TicketmasterAuthentication.TMAuthentication.Branding? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func configure(brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func apigeeConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func tmxNetworkServiceConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> TicketmasterAuthentication.TMXNetworkServiceConfig?
+  final public func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, instanceID: Swift.String? = nil) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
+  final public func removeAllConfiguredBackendServices(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
 }
 public struct TMXNetworkServiceConfig : Swift.Codable, Swift.Hashable {
   public let backendService: TicketmasterAuthentication.TMAuthentication.BackendService
@@ -57,30 +60,33 @@ public protocol TMAuthenticationProvider : AnyObject {
   var autoPresentLoginPrompt: Swift.Bool { get set }
   var forceEphemeralWebBrowserSession: Swift.Bool? { get set }
   func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
-  func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
-  func tmxNetworkServiceConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> TicketmasterAuthentication.TMXNetworkServiceConfig?
-  func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource?, instanceID: Swift.String?) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
-  func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?) -> UIKit.UIViewController?
-  func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?) -> UIKit.UIViewController?
+  func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, externalToken: Swift.String?, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
   func hasUnexpiredToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
   func hasValidatedToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
-  func validToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, showLoginIfNeeded: Swift.Bool, loginProperties: [Swift.String : Swift.String]?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
-  func memberInfo(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?, success: @escaping (_ memberInfo: TicketmasterAuthentication.TMMemberInfo) -> Swift.Void, failure: @escaping (_ oldMemberInfo: TicketmasterAuthentication.TMMemberInfo?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
-  func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, mfaProperties: [Swift.String : Any]?, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
-  func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
-  func deleteAccount(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, success: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func validToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, showLoginIfNeeded: Swift.Bool, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func memberInfo(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ memberInfo: TicketmasterAuthentication.TMMemberInfo) -> Swift.Void, failure: @escaping (_ oldMemberInfo: TicketmasterAuthentication.TMMemberInfo?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, mfaProperties: [Swift.String : Any]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
+  func deleteAccount(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func clearAllCachedData(completion: @escaping () -> Swift.Void)
 }
 public protocol TMApigeeConfigurationProvider : AnyObject {
-  func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  func apigeeConfig(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  func apigeeConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, success: @escaping (_ config: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
   func tmxNetworkServiceConfig(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> TicketmasterAuthentication.TMXNetworkServiceConfig?
+  func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource?, instanceID: Swift.String?) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
+  func removeAllConfiguredBackendServices(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+}
+public protocol TMAuthenticationExternalTokenProvider : AnyObject {
+  func refresh(backend: TicketmasterAuthentication.TMAuthentication.BackendService, oldExternalToken: Swift.String, showLoginIfNeeded: Swift.Bool, success: @escaping (_ refreshedExternalToken: Swift.String) -> Swift.Void, aborted: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func deleteAccount(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, success: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  final public func deleteAccount(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func validToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, showLoginIfNeeded: Swift.Bool = true, loginProperties: [Swift.String : Swift.String]? = nil, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  final public func validToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, showLoginIfNeeded: Swift.Bool = true, loginProperties: [Swift.String : Swift.String]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 public struct TMAuthToken : Swift.Codable, Swift.Hashable {
   public let backend: TicketmasterAuthentication.TMAuthentication.BackendService
@@ -100,7 +106,7 @@ public struct TMAuthToken : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMApigeeConfig {
   public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, acquiredDate: Foundation.Date? = nil)
@@ -131,13 +137,11 @@ extension TicketmasterAuthentication.TMAuthentication {
   }
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, loginProperties: [Swift.String : Swift.String]? = nil, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  final public func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, externalToken: Swift.String? = nil, loginProperties: [Swift.String : Swift.String]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func customConfigure(brandedServiceSettingArray: [TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings], success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
-  final public func customConfigure(brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings, apigeeConfig: TicketmasterAuthentication.TMApigeeConfig? = nil, sourceFilter: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
-  final public func backendServicesConfigured(source: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, instanceID: Swift.String? = nil) -> [TicketmasterAuthentication.TMAuthentication.BackendService]
-  final public func removeAllConfiguredBackendServices(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
+  final public func customConfigure(brandedServiceSettingArray: [TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings], fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
+  final public func customConfigure(brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings, apigeeConfig: TicketmasterAuthentication.TMApigeeConfig? = nil, sourceFilter: TicketmasterAuthentication.TMAuthentication.AuthSource? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService]) -> Swift.Void, failure: @escaping (_ backendsConfigured: [TicketmasterAuthentication.TMAuthentication.BackendService], _ error: any Swift.Error) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public struct AuthError {
@@ -149,19 +153,26 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static let serviceConfigurationsNotDefined: Foundation.NSError
     public static let serviceConfigurationNotFound: Foundation.NSError
     public static let serviceConfigurationNilNotAllowed: Foundation.NSError
+    public static let apigeeConfigurationNotCached: Foundation.NSError
     public static let notSupportedByBackendService: Foundation.NSError
     public static let unknownJSONFormat: Foundation.NSError
     public static let userNotLoggedIn: Foundation.NSError
     public static let relatedAccountNotFound: Foundation.NSError
+    public static let memberInfoNotCached: Foundation.NSError
     public static let missingEncryptedDeviceId: Foundation.NSError
     public static let mfaWidgetUnknown: Foundation.NSError
     public static let mfaWidgetFailedLoad: Foundation.NSError
     public static let mfaWidgetMaxAttempts: Foundation.NSError
     public static let mfaWidgetUnauthorizedUser: Foundation.NSError
+    public static let mfaTokenNotCached: Foundation.NSError
+    public static let externalTokenProviderNil: Foundation.NSError
+    public static let externalTokenExpired: Foundation.NSError
+    public static let externalTokenInvalid: Foundation.NSError
+    public static let externalTokenRefreshRequiresUI: Foundation.NSError
   }
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func memberInfo(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount? = nil, success: @escaping (_ memberInfo: TicketmasterAuthentication.TMMemberInfo) -> Swift.Void, failure: @escaping (_ oldMemberInfo: TicketmasterAuthentication.TMMemberInfo?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  final public func memberInfo(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, success: @escaping (_ memberInfo: TicketmasterAuthentication.TMMemberInfo) -> Swift.Void, failure: @escaping (_ oldMemberInfo: TicketmasterAuthentication.TMMemberInfo?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public struct BackendService : Swift.Codable, Swift.Hashable {
@@ -377,12 +388,23 @@ extension TicketmasterAuthentication.TMAuthentication {
       get
     }
   }
+  public enum FetchRule : Swift.String, Swift.Codable, Swift.Hashable, Swift.Equatable {
+    case cachedOnly
+    case fetchIfEmpty
+    case fetchIfEmptyOrOld
+    case forceFetch
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
 }
 extension UIKit.UIViewController : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, loginProperties: [Swift.String : Swift.String]? = nil) -> UIKit.UIViewController?
+  final public func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, loginProperties: [Swift.String : Swift.String]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld) -> UIKit.UIViewController?
 }
 public struct TMApigeeConfig : Swift.Codable, Swift.Hashable {
   public let tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings
@@ -573,7 +595,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
   }
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
+  final public func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
   final public func clearAllCachedData(completion: @escaping () -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
@@ -647,6 +669,7 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public var autoPresentLoginPrompt: Swift.Bool
   final public var forceEphemeralWebBrowserSession: Swift.Bool?
   weak final public var delegate: (any TicketmasterAuthentication.TMAuthenticationDelegate)?
+  weak final public var externalTokenProviderDelegate: (any TicketmasterAuthentication.TMAuthenticationExternalTokenProvider)?
   final public func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
   final public var internalTestingKeys: [Swift.String : Any] {
     get
@@ -675,6 +698,7 @@ extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion : Swif
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment : Swift.Sendable {}
 extension TicketmasterAuthentication.TMAuthentication.ServiceState : Swift.RawRepresentable {}
+extension TicketmasterAuthentication.TMAuthentication.FetchRule : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.ColorTheme : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.ColorTheme : Swift.Sendable {}
 extension TicketmasterAuthentication.TMAuthentication.EventNameType : Swift.RawRepresentable {}

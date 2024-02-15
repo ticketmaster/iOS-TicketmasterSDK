@@ -3848,6 +3848,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -4199,6 +4206,41 @@
         "moduleName": "TicketmasterPrePurchase"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "AppKit",
+        "printedName": "AppKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
         "kind": "TypeDecl",
         "name": "URLRequest",
         "printedName": "URLRequest",
@@ -4301,6 +4343,16 @@
         "usr": "s:10Foundation10URLRequestV",
         "mangledName": "$s10Foundation10URLRequestV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -4491,6 +4543,80 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NSImage",
+        "printedName": "NSImage",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSImage",
+        "moduleName": "AppKit",
+        "intro_iOS": "13.0",
+        "objc_name": "NSImage",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -9183,6 +9309,62 @@
       "offset": 10191,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 14,
+      "value": "\"back_chevron\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 886,
+      "length": 15,
+      "value": "\"defaultHeader\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 10,
+      "value": "\"fav_icon\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1174,
+      "length": 17,
+      "value": "\"fav_icon_filled\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1331,
+      "length": 18,
+      "value": "\"icon-ignite-back\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1487,
+      "length": 17,
+      "value": "\"icon-ignite-fav\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1655,
+      "length": 24,
+      "value": "\"icon-ignite-fav-filled\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-maccatalyst\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1821,
+      "length": 19,
+      "value": "\"icon-ignite-share\""
     }
   ]
 }

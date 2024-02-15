@@ -1,7 +1,7 @@
 framework module TicketmasterPrePurchase {
   umbrella header "TicketmasterPrePurchase.h"
-
   export *
+
   module * { export * }
 }
 

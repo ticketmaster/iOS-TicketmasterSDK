@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Nov 16 10:33:30 PST 2023</string>
+	<string>Wed Feb 14 20:39:53 PST 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/2.0.6</string>
+	<string>release/2.0.10</string>
 	<key>GITComment</key>
-	<string>Updated Retail SDK with new Authentication 3.3.0 interface</string>
+	<string>Updated SPM settings</string>
 	<key>GITDate</key>
-	<string>Thu Nov 16 10:24:52 2023 -0800</string>
+	<string>Wed Feb 14 20:31:08 2024 -0800</string>
 	<key>GITRevision</key>
-	<string>88ca08e3834cce3f39d38e30855cc9126391e8f9</string>
+	<string>a9fef80203ab7f523c03ac2fb3022cce0351f15a</string>
 	<key>MarketingVersion</key>
-	<string>2.0.6</string>
+	<string>2.0.10</string>
 </dict>
 </plist>

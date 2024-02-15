@@ -3848,6 +3848,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -4199,6 +4206,34 @@
         "moduleName": "TicketmasterPrePurchase"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPrePurchase"
+      },
+      {
         "kind": "TypeDecl",
         "name": "URLRequest",
         "printedName": "URLRequest",
@@ -4301,6 +4336,16 @@
         "usr": "s:10Foundation10URLRequestV",
         "mangledName": "$s10Foundation10URLRequestV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -9183,6 +9228,62 @@
       "offset": 10191,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 736,
+      "length": 14,
+      "value": "\"back_chevron\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 886,
+      "length": 15,
+      "value": "\"defaultHeader\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 10,
+      "value": "\"fav_icon\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1174,
+      "length": 17,
+      "value": "\"fav_icon_filled\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1331,
+      "length": 18,
+      "value": "\"icon-ignite-back\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1487,
+      "length": 17,
+      "value": "\"icon-ignite-fav\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1655,
+      "length": 24,
+      "value": "\"icon-ignite-fav-filled\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPrePurchase-dfcuabakkpganzfevgajofxqkhnf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPrePurchase\/IntermediateBuildFilesPath\/TicketmasterPrePurchase.build\/Release-iphonesimulator\/TicketmasterPrePurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1821,
+      "length": 19,
+      "value": "\"icon-ignite-share\""
     }
   ]
 }

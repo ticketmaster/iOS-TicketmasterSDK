@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterFoundation
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterFoundation
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import CoreLocation
@@ -12,6 +12,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 infix operator <==> : ComparisonPrecedence
 public func <==> (lhs: Foundation.URL, rhs: Foundation.URL) -> Swift.Bool
 extension UIKit.UIImageView {
@@ -659,6 +660,29 @@ public struct EncryptedArchiverFile {
   public let object: Swift.AnyObject
   public let date: Foundation.Date
   public let version: Swift.String
+}
+public enum ConnectionError : Swift.Error, Swift.Equatable {
+  case logicError
+  case missingData(statusCode: TicketmasterFoundation.HTTPStatusCode)
+  case missingDataUnknown(statusCode: Swift.Int)
+  case server(error: any Swift.Error)
+  case malformedResponse
+  case requestCanceled
+  case malformedBody
+  case badObjectSerialization
+  case badJSONFormat(reason: Swift.String)
+  case badXMLFormat(reason: Swift.String)
+  case badURLFormat
+  case badCriteria
+  case badConfiguration(reason: Swift.String)
+  public init(missingDataStatusCode: Swift.Int)
+  public static func == (lhs: TicketmasterFoundation.ConnectionError, rhs: TicketmasterFoundation.ConnectionError) -> Swift.Bool
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public var publicDescription: Swift.String {
+    get
+  }
 }
 extension TicketmasterFoundation.UFCCookieManager {
   public static let oAuthAccessCookieKey: Swift.String
@@ -1314,6 +1338,7 @@ extension Foundation.URL {
 }
 @_inheritsConvenienceInitializers open class GenericService : TicketmasterFoundation.NetworkService {
   convenience public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
+  final public func sendJSONArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.JSONArrayResponse) -> Swift.Void)
   final public func sendJSONRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.JSONResponse) -> Swift.Void)
   final public func sendDataRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.DataResponse) -> Swift.Void)
   final public func sendArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ArrayResponse) -> Swift.Void)
@@ -1870,10 +1895,23 @@ extension Swift.String {
   case UK
   case IE
   case MX
-  public init?(rawValue: Swift.String)
-  public var stringValue: Swift.String {
-    get
-  }
+  case AT
+  case PL
+  case NO
+  case FI
+  case BE
+  case CZ
+  case SE
+  case ZA
+  case ES
+  case DE
+  case AE
+  case NL
+  case CH
+  case DK
+  public init?(locale: Swift.String)
+  public init?(countryCode: Swift.String)
+  public init?(numericCountryCode: Swift.String)
   public init?(marketID: Swift.Int, domainHint: TicketmasterFoundation.MarketDomain? = nil)
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [TicketmasterFoundation.MarketDomain]
@@ -1886,33 +1924,67 @@ extension Swift.String {
   }
 }
 extension TicketmasterFoundation.MarketDomain {
-  public var topLevelURLDomain: Swift.String {
-    get
-  }
   public var countryCode: Swift.String {
     get
   }
-  public var isoCountryCode: Swift.String {
+  public var languageCode: Swift.String {
     get
   }
   public var languageCountryCode: Swift.String {
     get
   }
+  @available(*, deprecated, renamed: "numericCountryCode")
+  public var isoCountryCode: Swift.String {
+    get
+  }
+  public var numericCountryCode: Swift.String {
+    get
+  }
+}
+extension TicketmasterFoundation.MarketDomain {
+  public var topLevelURLDomain: Swift.String {
+    get
+  }
   public var urlHost: [Swift.String] {
     get
   }
+}
+extension TicketmasterFoundation.MarketDomain {
+  @available(*, deprecated, renamed: "isNorthAmericaHost")
   public var isNorthAmerica: Swift.Bool {
     get
   }
+  public var isNorthAmericaHost: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, renamed: "isInternationalHost")
   public var isInternational: Swift.Bool {
     get
   }
+  public var isInternationalHost: Swift.Bool {
+    get
+  }
+  public var isInternationalMicroflex: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, renamed: "isGreatBritainHost")
   public var isGreatBritain: Swift.Bool {
     get
   }
+  public var isGreatBritainHost: Swift.Bool {
+    get
+  }
+}
+extension TicketmasterFoundation.MarketDomain {
   public func isValid(forMarketLocation: TicketmasterFoundation.MarketLocation) -> Swift.Bool
   public func isValid(forUserLocation: TicketmasterFoundation.UserLocation) -> Swift.Bool
   public func isValid(forDomain: TicketmasterFoundation.MarketDomain) -> Swift.Bool
+}
+extension TicketmasterFoundation.MarketDomain {
+  public init?(rawValue: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
 }
 open class ConnectionDriver {
   final public let environment: TicketmasterFoundation.ConnectionEnvironment
@@ -1989,24 +2061,6 @@ public enum ConnectionEnvironment : Swift.String, Swift.CaseIterable, Swift.Coda
     get
   }
   public var rawValue: Swift.String {
-    get
-  }
-}
-public enum ConnectionError : Swift.Error {
-  case unknown
-  case responseCode(statusCode: TicketmasterFoundation.HTTPStatusCode)
-  case unknownResponse(statusCode: Swift.Int)
-  case server(error: any Swift.Error)
-  case requestCanceled
-  case malformedBody
-  case badObjectSerialization
-  case badJSONFormat(reason: Swift.String)
-  case badXMLFormat(reason: Swift.String)
-  case badURLFormat
-  case badCriteria
-  case badConfiguration(reason: Swift.String)
-  public init(httpStatusCode: Swift.Int)
-  public var publicDescription: Swift.String {
     get
   }
 }

@@ -1,7 +1,7 @@
 framework module TicketmasterDiscoveryAPI {
   umbrella header "TicketmasterDiscoveryAPI.h"
-
   export *
+
   module * { export * }
 }
 

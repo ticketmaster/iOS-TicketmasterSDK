@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Zf4PJOe81aL3m0NmIk6uZ62T3mM=
+		JrLB3kPzNSNf5gUX1hMmwFP6JNg=
 		</data>
 		<key>FederatedLoginViewController.nib</key>
 		<data>
-		OFFVZV4dgi1JMhQnB8CkTJnmIbA=
+		lvAHg5Uh2oTC9mCzT4YaEcj74eQ=
 		</data>
 		<key>Headers/TicketmasterAuthentication-Swift.h</key>
 		<data>
-		JUPH/RTDJ5UnbznRsZshDy6CuwE=
+		JdtzJ0xoyYIbMo3XWWYlztaWI+c=
 		</data>
 		<key>Headers/TicketmasterAuthentication.h</key>
 		<data>
@@ -22,73 +22,73 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		80RMcBR8J2hCLXwRN4wysPgmwOo=
+		0k7xoGN+W4Zs62jKpfRTQVOsSQk=
 		</data>
 		<key>LoginCardCollectionViewCell.nib</key>
 		<data>
-		AxA9PdzUwfZaYlCCXzQx+irQ8f0=
+		MSCskfIbrKXocKQc5jgFk85R4M4=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QFc4tBwBJrPVA1o/MeOaA+1Af9Y=
+		H990Cy4l3mUrx14dnYoXPxgjt9Y=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZjWSd98ccVWEmALvTO+9jwK9EJM=
+		1hp7oJOmqFNVI0AcTxy2R8tOsi4=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MVs4IdLTiakeGLGlcb8ssoWrJhk=
+		2zm95eqWwXfQ8wO+oFvuWKC35qY=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZjWSd98ccVWEmALvTO+9jwK9EJM=
+		1hp7oJOmqFNVI0AcTxy2R8tOsi4=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		czDjhLKsg7D6HiYrWN+7BQPUx98=
+		0Cfb9ANg/kN+ZKj9owA+2JBKxlI=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QFc4tBwBJrPVA1o/MeOaA+1Af9Y=
+		H990Cy4l3mUrx14dnYoXPxgjt9Y=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Yh9obyLC77NGz77uJ3n72Z/Ln44=
+		gIjiUU5KHewr2/3ucz/KrkQwyew=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x+ZWliCyLiGfwdsyVwNjiFPP9zw=
+		bVLUpQ/jImFA6kLC+tdQIA9ZPQE=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Yh9obyLC77NGz77uJ3n72Z/Ln44=
+		gIjiUU5KHewr2/3ucz/KrkQwyew=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WTD+iXjXezG0Ei+FlL3MF3FMubE=
+		hioCIG0hx4aSPaOqn4yGOQnbXV4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		CjYy9JfsXd2dyT01HTBWOJyZcFE=
+		1zxEIGNDJQqR/rhUdtzWp2lGS4w=
 		</data>
 		<key>MultipleLoginViewController.nib</key>
 		<data>
-		hZfIjIy5OFI5OAyItorGEjgnIz0=
+		ZVFXqxNAE2+cib4fNetRk33IV78=
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		SAoKKxMpXwuZltzzfTI0xTg/NWM=
+		QZNMM8yxPw+yS9ASbMWqAMc56Uk=
 		</data>
 		<key>SingleLoginViewController.nib</key>
 		<data>
-		AmsgQKMonDHRamPgGmzfnF8GodQ=
+		4hPOM0FKSJvhcxhI1GVio8VQIBo=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QybM39wIttx9QlNoFh0PaNdk1cI=
+			u2f4xOOApYpG6eeY4Wp+HhKg9oE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mGW+5nObqzLpscExczLNiVTvhX4=
+			Px7vWFLLnhZ0DOGccZyYG3KnU3w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NywlnPtXJJ34VYA9sEVkNLVSEqU=
+			nHAgLLbLuT7Xf7xDYA8f6Hur1EM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -118,21 +118,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rt987aUM15AOLdudoWR2wt0SLzuv+uncYGMWu4YySIA=
+			5TopDjvISSyT4+NXSl8uvsqkW9ktqeY8ZXeJmQzWlsQ=
 			</data>
 		</dict>
 		<key>FederatedLoginViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			khPAsB4fny2Y+8bSgmzVwUmCGT0WJopsUg9xZ01J8nM=
+			wFdBXHctql47yLH7O0kQXUZIcOjHdXxo57tlx8EKyIM=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterAuthentication-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BmCj7utwDp4fwXAhg8Ue3p/aqm3hsN+y1hI7OWsXVtQ=
+			BtYywZw6CuS8jHYJ03iHacEn1By5R/L4tDy0ty9vRSI=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterAuthentication.h</key>
@@ -146,112 +146,112 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzBrOjU6MyjSIfbQu29zDoFJNdgEtwlhd+rOU6v9Kro=
+			JoUsqkaoRa6O1l2ImExj+5qD/Zz+dVWSxOMdRnJ0xNo=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A0d2/4QzwKl728HAW39AV2KSFQK2lxeFYHmoD3BHZVI=
+			m36r9veT+8830p2dBM2XGHQsTm5ZZAkhbubig3jqruE=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99PYmzlRYhNGR4XNtiBE08M4Lxev3XKvOn3tbypVQO4=
+			0fvfBbC/uvdPy2Tg2stIv/z4lEL4Q5hoBD+YOwzhbjQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MdK7sO6KgT6rfkNUlcUC6la9S3QoYEFE18O0tQI/zmI=
+			GUbOdmk4R9vnK7zaJoZevoxB9AtK2yGThag6nDGCKTM=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99PYmzlRYhNGR4XNtiBE08M4Lxev3XKvOn3tbypVQO4=
+			0fvfBbC/uvdPy2Tg2stIv/z4lEL4Q5hoBD+YOwzhbjQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XamvieRqXNDqq2PXXmcROPkRdNdINl0CHDkeOghUF1A=
+			X+8iW0F8h6wmdQXhx/6CVyUTc8ZwZbgkwnNgEZShTdU=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A0d2/4QzwKl728HAW39AV2KSFQK2lxeFYHmoD3BHZVI=
+			m36r9veT+8830p2dBM2XGHQsTm5ZZAkhbubig3jqruE=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZ4TiDlYMFKnWxx5JS4Jm/YTIQYym82SdvXtVrQgyyg=
+			aLO9BJ46yNgmLcLQZ0E/vwjisZ+ft7RvzCbeDyFJjDw=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1SCQfZb+ch1e7ZbCHABUPOVXIVSJYcRF0YEU+WV/3qw=
+			g47PKsQhtxCwJtXvehpCP25YI0sMyUoafflxj0dkZlI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sZ4TiDlYMFKnWxx5JS4Jm/YTIQYym82SdvXtVrQgyyg=
+			aLO9BJ46yNgmLcLQZ0E/vwjisZ+ft7RvzCbeDyFJjDw=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XFVBT9sbBgGPZ4mrINTLZB+geWjAcq7/hFPpG5PF0bE=
+			MRB4/lYCXBKvGROxVbEhHpUuUmis4tj1tEUUzeHvI2k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9zGtvOuS11Y2c2jREJzsUHVHwGFFkyBOgYQ0DjEK4M=
+			aoVFEF/1FywyNeWN7HgS+wXGNnn8h4aaaIh6Yd6a+3A=
 			</data>
 		</dict>
 		<key>MultipleLoginViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ssyQxqITdYFLbwJmxdDUvGZtDuieIPx/iAInE0QqEZQ=
+			+WZVVTh3lCf0sDN45c/xhIvKvGcPqKGMR+tzn6PuHfQ=
 			</data>
 		</dict>
 		<key>SDKBuildInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Cav109iyWYkbIezdQe2FpAF4NWgL0Uj4gUwiLtX+58=
+			IGMmFR6Z/vg3FSb74AZsdRN8RYeYg792KDEO6ld8RS4=
 			</data>
 		</dict>
 		<key>SingleLoginViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GJXCxuvt62/Ky4gjcuoidKtHho4DvO3c6tOv3O4gI3Q=
+			wz5/ZBnfi3HrmqLAmg9gARU0F2n/fw7h+CP27Q80SGQ=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2SYoxdd/LimrkDxgTwR5zNC44YZpyrUv0S55+dGqS4=
+			n+LreQpe0tS48Ps+QN9ANwolxKD2qh2VYEtDN+LH1Rg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,7 +260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rMWPXaTSPZztPJejKtMjsWwidBCwdNjKk2pp72ifchU=
+			CPWQyIL+O6Z3Hsd/NTwqgL+uV30/WkiznmD0O9g/Pf4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PX+vcEV4p6ZtXPwt5O3Fiu5DoaEPL9S8b1zgZzN1iSs=
+			d8yRBNANBoRpgC4iFGXQ4ly9GWGMu51N8FhQJ7eJGfY=
 			</data>
 			<key>optional</key>
 			<true/>

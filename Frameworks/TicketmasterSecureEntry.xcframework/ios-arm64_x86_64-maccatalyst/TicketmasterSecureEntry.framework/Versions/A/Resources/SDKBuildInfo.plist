@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Aug  2 16:08:39 PDT 2023</string>
+	<string>Fri Feb  2 16:36:17 PST 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.1.0</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Fixed canceling Host login bug</string>
+	<string>Merge branch Feature-PSDK-10491-Allow-longer-section-value-on-barcode-screen into master</string>
 	<key>GITDate</key>
-	<string>Wed Aug 2 16:03:12 2023 -0700</string>
+	<string>Fri Feb 2 23:39:30 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>6bc36ff270d95924a4618d7de4967e5fc599cd4d</string>
+	<string>8a0377049e224e0c1751943142ce833d0d1c2092</string>
 	<key>MarketingVersion</key>
-	<string>1.6.0</string>
+	<string>1.6.1</string>
 </dict>
 </plist>

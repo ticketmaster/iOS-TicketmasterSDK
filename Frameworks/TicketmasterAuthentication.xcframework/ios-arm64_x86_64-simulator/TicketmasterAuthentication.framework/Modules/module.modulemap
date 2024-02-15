@@ -1,7 +1,7 @@
 framework module TicketmasterAuthentication {
   umbrella header "TicketmasterAuthentication.h"
-
   export *
+
   module * { export * }
 }
 

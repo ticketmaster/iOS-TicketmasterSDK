@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Oct 31 11:07:49 PDT 2023</string>
+	<string>Fri Feb  2 16:12:07 PST 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Merge branch jbacker-PSDK-9714-LoginWithToken into master</string>
+	<string>Merge branch Fix-PSDK-9935-TMTicketsViewController-is-slow-to-respond-to-the-click-of-the-Sign-In-button into master</string>
 	<key>GITDate</key>
-	<string>Tue Oct 31 18:03:58 2023 +0000</string>
+	<string>Thu Feb 1 18:34:42 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>fe499ce2f6dfc55ebdbe166d9a6e4810b527c54c</string>
+	<string>080933fab204d22446427808c94e6b79cf0f59bd</string>
 	<key>MarketingVersion</key>
-	<string>3.3.0</string>
+	<string>3.4.2</string>
 </dict>
 </plist>

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Feb  2 16:12:07 PST 2024</string>
+	<string>Tue Mar 12 09:43:22 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-9935-TMTicketsViewController-is-slow-to-respond-to-the-click-of-the-Sign-In-button into master</string>
+	<string>Set forceEphemeralWebBrowserSession = true on logout</string>
 	<key>GITDate</key>
-	<string>Thu Feb 1 18:34:42 2024 +0000</string>
+	<string>Tue Mar 12 09:40:26 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>080933fab204d22446427808c94e6b79cf0f59bd</string>
+	<string>07d04ae10c1e12af548098088378193d631a7332</string>
 	<key>MarketingVersion</key>
-	<string>3.4.2</string>
+	<string>3.5.1</string>
 </dict>
 </plist>

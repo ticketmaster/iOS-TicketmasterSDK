@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Feb  2 16:36:17 PST 2024</string>
+	<string>Fri Mar 15 17:56:26 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-10491-Allow-longer-section-value-on-barcode-screen into master</string>
+	<string>Removed allow media loads</string>
 	<key>GITDate</key>
-	<string>Fri Feb 2 23:39:30 2024 +0000</string>
+	<string>Fri Mar 15 17:31:02 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>8a0377049e224e0c1751943142ce833d0d1c2092</string>
+	<string>54c0d8fa26c1b740287a93ac3c02c05e88c951c5</string>
 	<key>MarketingVersion</key>
-	<string>1.6.1</string>
+	<string>1.7.0</string>
 </dict>
 </plist>

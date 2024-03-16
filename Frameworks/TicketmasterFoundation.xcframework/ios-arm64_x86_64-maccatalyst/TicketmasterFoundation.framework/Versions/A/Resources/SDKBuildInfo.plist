@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Dec 13 15:46:21 PST 2023</string>
+	<string>Fri Mar  8 18:23:26 PST 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Added more unit tests</string>
+	<string>Added FakeDataSession.cannedResultArray to play many responses in a row</string>
 	<key>GITDate</key>
-	<string>Wed Dec 13 13:48:06 2023 -0800</string>
+	<string>Fri Mar 8 18:20:28 2024 -0800</string>
 	<key>GITRevision</key>
-	<string>80549120cca387008e901aec13f39da9d616a3a5</string>
+	<string>3be4bde0dfe8829780e8e8d489db5aa2289b2931</string>
 	<key>MarketingVersion</key>
-	<string>1.0.0</string>
+	<string>1.2.0</string>
 </dict>
 </plist>

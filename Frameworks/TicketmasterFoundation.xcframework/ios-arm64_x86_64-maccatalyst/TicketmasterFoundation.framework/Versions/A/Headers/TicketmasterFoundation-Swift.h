@@ -396,6 +396,8 @@ typedef SWIFT_ENUM(NSInteger, LocationSource, open) {
   LocationSourceWebsiteDiscovery = 10,
 /// from Favorites website Javascript callback (user selected)
   LocationSourceWebsiteFavorites = 11,
+/// from defaults for a country
+  LocationSourceCountryDefault = 12,
 };
 
 typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
@@ -1350,6 +1352,8 @@ typedef SWIFT_ENUM(NSInteger, LocationSource, open) {
   LocationSourceWebsiteDiscovery = 10,
 /// from Favorites website Javascript callback (user selected)
   LocationSourceWebsiteFavorites = 11,
+/// from defaults for a country
+  LocationSourceCountryDefault = 12,
 };
 
 typedef SWIFT_ENUM(NSInteger, LogLevel, open) {

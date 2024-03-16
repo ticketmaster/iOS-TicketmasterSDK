@@ -47749,6 +47749,48 @@
             "fixedbinaryorder": 11
           },
           {
+            "kind": "Var",
+            "name": "countryDefault",
+            "printedName": "countryDefault",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TicketmasterFoundation.LocationSource.Type) -> TicketmasterFoundation.LocationSource",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationSource",
+                    "printedName": "TicketmasterFoundation.LocationSource",
+                    "usr": "c:@M@TicketmasterFoundation@E@LocationSource"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TicketmasterFoundation.LocationSource.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationSource",
+                        "printedName": "TicketmasterFoundation.LocationSource",
+                        "usr": "c:@M@TicketmasterFoundation@E@LocationSource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TicketmasterFoundation@E@LocationSource@LocationSourceCountryDefault",
+            "mangledName": "$s22TicketmasterFoundation14LocationSourceO14countryDefaultyA2CmF",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -57288,6 +57330,532 @@
                 "moduleName": "TicketmasterFoundation",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CannedResult",
+            "printedName": "CannedResult",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "response",
+                "printedName": "response",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV8responseSo13NSURLResponseCSgvp",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV8responseSo13NSURLResponseCSgvp",
+                "moduleName": "TicketmasterFoundation",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV8responseSo13NSURLResponseCSgvg",
+                    "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV8responseSo13NSURLResponseCSgvg",
+                    "moduleName": "TicketmasterFoundation",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "data",
+                "printedName": "data",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV4data0B00D0VSgvp",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV4data0B00D0VSgvp",
+                "moduleName": "TicketmasterFoundation",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV4data0B00D0VSgvg",
+                    "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV4data0B00D0VSgvg",
+                    "moduleName": "TicketmasterFoundation",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "error",
+                "printedName": "error",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV5errors5Error_pSgvp",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV5errors5Error_pSgvp",
+                "moduleName": "TicketmasterFoundation",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV5errors5Error_pSgvg",
+                    "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV5errors5Error_pSgvg",
+                    "moduleName": "TicketmasterFoundation",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(response:data:error:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CannedResult",
+                    "printedName": "TicketmasterFoundation.FakeDataSession.CannedResult",
+                    "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLResponse?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV8response4data5errorAESo13NSURLResponseCSg_0B00D0VSgs5Error_pSgtcfc",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV8response4data5errorAESo13NSURLResponseCSg_0B00D0VSgs5Error_pSgtcfc",
+                "moduleName": "TicketmasterFoundation",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC12CannedResultV",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cannedResultArray",
+            "printedName": "cannedResultArray",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CannedResult",
+                        "printedName": "TicketmasterFoundation.FakeDataSession.CannedResult",
+                        "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvp",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvp",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CannedResult",
+                            "printedName": "TicketmasterFoundation.FakeDataSession.CannedResult",
+                            "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvg",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvg",
+                "moduleName": "TicketmasterFoundation",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterFoundation.FakeDataSession.CannedResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CannedResult",
+                            "printedName": "TicketmasterFoundation.FakeDataSession.CannedResult",
+                            "usr": "s:22TicketmasterFoundation15FakeDataSessionC12CannedResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvs",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvs",
+                "moduleName": "TicketmasterFoundation",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvM",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC17cannedResultArraySayAC06CannedG0VGSgvM",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cannedResultArrayIterator",
+            "printedName": "cannedResultArrayIterator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivp",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivp",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivg",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivg",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivs",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivs",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivM",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayIteratorSivM",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cannedResultArrayEndError",
+            "printedName": "cannedResultArrayEndError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSError",
+                "printedName": "Foundation.NSError",
+                "usr": "c:objc(cs)NSError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayEndErrorSo7NSErrorCvpZ",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayEndErrorSo7NSErrorCvpZ",
+            "moduleName": "TicketmasterFoundation",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayEndErrorSo7NSErrorCvgZ",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC25cannedResultArrayEndErrorSo7NSErrorCvgZ",
+                "moduleName": "TicketmasterFoundation",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -85792,133 +86360,133 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 2336,
+      "offset": 2379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 2814,
+      "offset": 2857,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 2934,
+      "offset": 2977,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "Array",
-      "offset": 3101,
+      "offset": 3144,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 3506,
+      "offset": 3549,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 3990,
+      "offset": 4033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 4108,
+      "offset": 4151,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "Array",
-      "offset": 4275,
+      "offset": 4318,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 4857,
+      "offset": 4900,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 5560,
+      "offset": 5603,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 5823,
+      "offset": 5866,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 6154,
+      "offset": 6197,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 6311,
+      "offset": 6354,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 6707,
+      "offset": 6750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 7072,
+      "offset": 7115,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 7538,
+      "offset": 7581,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 7853,
+      "offset": 7896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 8006,
+      "offset": 8049,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 8400,
+      "offset": 8443,
       "length": 5,
       "value": "false"
     },
@@ -95871,8 +96439,15 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1455,
+      "length": 14,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "StringLiteral",
-      "offset": 2617,
+      "offset": 2777,
       "length": 41,
       "value": "\"rawValue does not match any known value\""
     },
@@ -95959,6 +96534,13 @@
       "offset": 1383,
       "length": 16,
       "value": "11"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1455,
+      "length": 14,
+      "value": "12"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
@@ -97551,15 +98133,85 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1497,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 3210,
+      "offset": 1565,
+      "length": 17,
+      "value": "\"FakeDataSession\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1590,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "StringLiteral",
+      "offset": 1632,
+      "length": 34,
+      "value": "\"Reached end of cannedResultArray\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2937,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2985,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3244,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3463,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3891,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "StringLiteral",
+      "offset": 5138,
       "length": 30,
       "value": "\"https:\/\/www.mickettaster.com\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 3337,
+      "offset": 5265,
       "length": 5,
       "value": "\"1.1\""
     },
@@ -98980,98 +99632,91 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 16612,
+      "offset": 16694,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 16656,
+      "offset": 16738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "kind": "Array",
+      "offset": 16999,
+      "length": 24,
+      "value": "[\"us\", \"ca\", \"au\", \"nz\"]"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 17006,
+      "offset": 17163,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "StringLiteral",
-      "offset": 17162,
+      "offset": 17319,
       "length": 4,
       "value": "\"gb\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 17193,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
-      "kind": "StringLiteral",
-      "offset": 17321,
-      "length": 4,
-      "value": "\"us\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
-      "kind": "StringLiteral",
-      "offset": 17347,
-      "length": 4,
-      "value": "\"ca\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
-      "kind": "BooleanLiteral",
-      "offset": 17378,
+      "offset": 17350,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 17444,
+      "offset": 17549,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17598,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 17605,
+      "offset": 17759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 17892,
+      "offset": 18085,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 18039,
+      "offset": 18242,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 18093,
+      "offset": 18283,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "StringLiteral",
-      "offset": 19604,
+      "offset": 19794,
       "length": 41,
       "value": "\"rawValue does not match any known value\""
     },
@@ -99449,28 +100094,28 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LoggedMessageCache.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 661,
       "length": 29,
       "value": "\"LoggedMessageCache.logQueue\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LoggedMessageCache.swift",
       "kind": "Array",
-      "offset": 670,
+      "offset": 740,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LoggedMessageCache.swift",
       "kind": "IntegerLiteral",
-      "offset": 973,
+      "offset": 1059,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LoggedMessageCache.swift",
       "kind": "IntegerLiteral",
-      "offset": 1137,
+      "offset": 1258,
       "length": 1,
       "value": "0"
     },

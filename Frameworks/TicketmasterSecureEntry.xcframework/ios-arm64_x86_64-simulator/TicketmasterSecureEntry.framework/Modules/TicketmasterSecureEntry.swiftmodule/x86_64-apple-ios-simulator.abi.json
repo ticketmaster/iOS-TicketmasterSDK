@@ -1892,14 +1892,11 @@
             "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5tokenSSSgvp",
             "moduleName": "TicketmasterSecureEntry",
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "HasStorage",
               "Custom",
               "AccessControl",
               "RawDocComment"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1925,7 +1922,6 @@
                 "usr": "s:23TicketmasterSecureEntry0bC4ViewC5tokenSSSgvg",
                 "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5tokenSSSgvg",
                 "moduleName": "TicketmasterSecureEntry",
-                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -1960,7 +1956,6 @@
                 "usr": "s:23TicketmasterSecureEntry0bC4ViewC5tokenSSSgvs",
                 "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5tokenSSSgvs",
                 "moduleName": "TicketmasterSecureEntry",
-                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
@@ -1988,6 +1983,43 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "setTokenBySkippingDecoding",
+            "printedName": "setTokenBySkippingDecoding(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23TicketmasterSecureEntry0bC4ViewC26setTokenBySkippingDecodingyySSSgF",
+            "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC26setTokenBySkippingDecodingyySSSgF",
+            "moduleName": "TicketmasterSecureEntry",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -37357,231 +37389,231 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2073,
+      "offset": 2696,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2184,
+      "offset": 2807,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2614,
+      "offset": 3237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2760,
+      "offset": 3383,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "FloatLiteral",
-      "offset": 2831,
+      "offset": 3454,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3127,
+      "offset": 3750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3486,
+      "offset": 4109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3688,
+      "offset": 4311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "FloatLiteral",
-      "offset": 3844,
+      "offset": 4467,
       "length": 5,
       "value": "220.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "FloatLiteral",
-      "offset": 3859,
+      "offset": 4482,
       "length": 5,
       "value": "160.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 4373,
+      "offset": 4996,
       "length": 274,
       "value": "\"eyJiIjoiMDg2NzM0NjQ3NjA0MTYxNmEiLCJ0IjoiQkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFDR2tmNWxkZWZ3WEh3WmpvRmMzcnNEY0RINkpyY2pqOW0yS0liKyIsImNrIjoiNjhhZjY5YTRmOWE2NGU0YTkxZmE0NjBiZGExN2Y0MjciLCJlayI6IjA2ZWM1M2M3NDllNDQ3YTQ4ODAyNTdmNzNkYzNhYmZjIiwicnQiOiJyb3RhdGluZ19zeW1ib2xvZ3kifQ==\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5001,
+      "offset": 5624,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 5015,
+      "offset": 5638,
       "length": 5,
       "value": "\"...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5662,
+      "offset": 6285,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5726,
+      "offset": 6349,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6031,
+      "offset": 6654,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6121,
+      "offset": 6744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6212,
+      "offset": 6835,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6301,
+      "offset": 6924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6391,
+      "offset": 7014,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6474,
+      "offset": 7097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6650,
+      "offset": 7273,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6812,
+      "offset": 7435,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6923,
+      "offset": 7546,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7034,
+      "offset": 7657,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "FloatLiteral",
-      "offset": 7159,
+      "offset": 7782,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7185,
+      "offset": 7808,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7322,
+      "offset": 7945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7403,
+      "offset": 8026,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "Array",
-      "offset": 8965,
+      "offset": 9588,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 9796,
+      "offset": 10419,
       "length": 20,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 9815,
+      "offset": 10438,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-TicketsSDK1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView.swift",
       "kind": "StringLiteral",
-      "offset": 9922,
+      "offset": 10545,
       "length": 4,
       "value": "\"::\""
     },

@@ -463,6 +463,7 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   public let ticketStatus: Swift.String?
   public let transferAvailabilityStatus: Swift.String?
   public let resaleAvailabilityStatus: Swift.String?
+  public let sellButtonOverrideURL: Foundation.URL?
   public let orderIdentifier: Swift.String?
   public let displayOrderIdentifier: Swift.String?
   public let encodedOrderIdentifier: Swift.String?

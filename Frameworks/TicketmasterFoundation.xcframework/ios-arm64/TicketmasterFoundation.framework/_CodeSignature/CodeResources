@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TicketmasterFoundation-Swift.h</key>
 		<data>
-		Cz2+VjHoqw6Iq3jqC6XUlDz1sso=
+		+TL1H/yANttzc6NKUATbOCqW6wM=
 		</data>
 		<key>Headers/TicketmasterFoundation.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/k++dScf3Nax2GZ22qb5l8saewE=
+		66ji4PcZ/M4LnsK5WwwFuG3o9yA=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		75HP7GzroiIoLZM+mldExTFnnxU=
+		mCR4g6EmGuAPExQxqnNir4i3gdA=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		dYHZchnMYRKhj7pI9c0R0yh5J9k=
+		bYL38rHwm7GQtJO0ab3Hnn1Z7HE=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		UHSbXc7hMk5LB3exuDhhgbMiNLU=
+		iMpC1RlQm34Vw+eRpkzcRlW0dN0=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		dYHZchnMYRKhj7pI9c0R0yh5J9k=
+		bYL38rHwm7GQtJO0ab3Hnn1Z7HE=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DgWYu62YhCpukFMY3TIaNTTHMb0=
+		As7zw1h2gqmRvABzKi31BG4yV8U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		EuuNI6+cxeDlAbrQO2p1481ETQI=
+		7FUoX305l3FyZsUQJ5V33a8eKxM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7OHay7uF1PSkXwbKHNdAbYSWVOL8Mm9TScx0OWzgN1I=
+			K4UtKuqMYZUfBWiK0xI4j4iXvWfn/sJutktr7hZe4dU=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterFoundation.h</key>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GgoHtKOcwEZSFDg8xh57unJ7tWiVGCELkXA6ZFt2kGg=
+			pLQw5MT3tR8XTq/BFzNhF0VHvbnlggZyAZCMBj7ux74=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			73treh1LPy6m5Kr3eC0eKLJSnrujYYZdV3EOl/4WkpE=
+			RoxVupo1vzfG6p7zO6qYZa8EYk0GT6878MAzdk7kYtE=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/LzLAyWLh8dcXJqnWvRo28ODKB8IKOKiEPE9z9gGi+M=
+			8fMeSXK0MJ5elX7QmpFKDV9EBzQS+QKn8owRHbw3qrg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			73treh1LPy6m5Kr3eC0eKLJSnrujYYZdV3EOl/4WkpE=
+			RoxVupo1vzfG6p7zO6qYZa8EYk0GT6878MAzdk7kYtE=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gKSlcGto/UFdacCCRGxRXjXQh+O2SvdmWEIN8/8dYWM=
+			ufaMnFvFWQqCRCA25EgQn1dQP4b3d8eH9OQ4Eu0AksY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nTjHFrtnsAaZb08LtWczErfT9Fw7O4lZr6PzdxqsiAU=
+			GiKWCcoBo8HPkPVYvlwI2rYdLQ/Vv8FIX2YaP3OVmiM=
 			</data>
 		</dict>
 	</dict>

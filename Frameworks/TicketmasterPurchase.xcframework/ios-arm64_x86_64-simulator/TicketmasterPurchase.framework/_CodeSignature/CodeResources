@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zAec/c1K7TSDClKTiTLepv69g48=
+		o6tMwMV8VAVLo8RHgT7P82CmEdY=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xddOn6XSbS4rGtOO70RgkUUjsKQ=
+		99NfMF7Bkf/dZ+NNkdPr44LiMHY=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NMBAzVNln9xn1yXXGhHubsqUz8A=
+		RyJw+Ufy1NJJP4WuMno8mrdGDDU=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xddOn6XSbS4rGtOO70RgkUUjsKQ=
+		99NfMF7Bkf/dZ+NNkdPr44LiMHY=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jDoX8kTTwIMJojBGlHQdQjxpxTQ=
+		Rw6f0huAu3DHGHpq7264KzGicX8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		ttShvnPmZOmuqw6vZ/J9vKLJ6NU=
+		CUFGXEvt5GDktXNY4Cw36Bx7syw=
 		</data>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1BCrPys2urCq1SSVq5c9ZSZsANvrcbrnhh4llm9O1a8=
+			ljoQXtqkhmI4b73CksPzzMjA9mbjayPjIdI/7vOuM28=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U8LHm0OpBwJOSN7Fo2DeF2Cy7v9TQuQy7UzSQI7xgYQ=
+			pxFdQI2AqqfJdrqKMW1cDyBgwEsyq1l2f0P//kIYKK0=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1BCrPys2urCq1SSVq5c9ZSZsANvrcbrnhh4llm9O1a8=
+			ljoQXtqkhmI4b73CksPzzMjA9mbjayPjIdI/7vOuM28=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,7 +188,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fNQwQUZNxeilJbAYWCQXXvmm5i21ZYShPgUZ1RFGjMo=
+			v1ggx/I3DuuHTsKxhkelJrQwiNxU0rlz59nm4JkNFXE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -202,7 +202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0WtWaH2TKtQw/yZLTaVznCYnyF0j6ThCp1UVWK72cAc=
+			RlnN+6eyXzFVuoWiheK/CEGAh2XNJjL89KfchCPzdlg=
 			</data>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>

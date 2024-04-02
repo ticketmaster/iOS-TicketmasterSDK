@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Mar 15 18:20:09 PDT 2024</string>
+	<string>Tue Apr  2 09:30:39 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/3.5.0</string>
 	<key>GITComment</key>
-	<string>Removed allow media loads</string>
+	<string>Merge branch Fix-PSDK-11198-Fix-more-ticket-actions-for-FR-langugeCode into master</string>
 	<key>GITDate</key>
-	<string>Fri Mar 15 17:31:02 2024 -0700</string>
+	<string>Mon Apr 1 10:14:16 2024 -0600</string>
 	<key>GITRevision</key>
-	<string>54c0d8fa26c1b740287a93ac3c02c05e88c951c5</string>
+	<string>3ddfb5abbb01406eec9bc1f6b3ba7e3a1017d723</string>
 	<key>MarketingVersion</key>
-	<string>3.4.99</string>
+	<string>3.5.0</string>
 </dict>
 </plist>

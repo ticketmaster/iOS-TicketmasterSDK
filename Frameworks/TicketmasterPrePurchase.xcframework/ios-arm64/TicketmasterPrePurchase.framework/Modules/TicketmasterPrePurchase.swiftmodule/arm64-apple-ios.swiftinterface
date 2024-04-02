@@ -129,6 +129,7 @@ extension TicketmasterFoundation.MarketLocation {
 public protocol TMPrePurchaseLocationDelegate : AnyObject {
   func prePurchaseViewController(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController, didChangeLocationTo location: TicketmasterFoundation.MarketLocation)
   func prePurchaseViewControllerDidRequestCurrentLocation(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController)
+  func openLocationSelector(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController)
 }
 public protocol TMPrePurchaseNavigationDelegate : AnyObject {
   func prePurchaseViewController(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController, navigateToEventDetailsPageWithIdentifier eventIdentifier: Swift.String)

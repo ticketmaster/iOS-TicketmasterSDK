@@ -24794,35 +24794,35 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 3158,
+      "offset": 3215,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 3429,
+      "offset": 3486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 6000,
+      "offset": 6403,
       "length": 16,
       "value": "\"TMDiscoveryAPI\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6024,
+      "offset": 6427,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 6066,
+      "offset": 6469,
       "length": 188,
       "value": "\"Fatal Error: An API key must be set via TMDiscoveryAPI.configure before initializing instances of DiscoveryService. To get a developer API key, visit https:\/\/developer.ticketmaster.com\/.\""
     },
@@ -27153,14 +27153,14 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/SDKBuildInfo\/SDKBuildInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1555,
       "length": 14,
       "value": "\"SDKBuildInfo\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/SDKBuildInfo\/SDKBuildInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1579,
       "length": 7,
       "value": "\"plist\""
     },
@@ -27671,77 +27671,119 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 7634,
+      "offset": 7110,
+      "length": 8,
+      "value": "\"domain\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7122,
+      "length": 21,
+      "value": "\"ticketmaster.com.au\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7189,
+      "length": 8,
+      "value": "\"domain\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7201,
+      "length": 20,
+      "value": "\"ticketmaster.co.nz\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7267,
+      "length": 8,
+      "value": "\"domain\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7279,
+      "length": 21,
+      "value": "\"ticketmaster.com.mx\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 7957,
       "length": 23,
       "value": "\"_embedded.attractions\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 7861,
+      "offset": 8184,
       "length": 8,
       "value": "\"errors\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "Array",
-      "offset": 8206,
+      "offset": 8529,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 8732,
+      "offset": 9055,
       "length": 27,
       "value": "\"\/discovery\/v2\/attractions\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9166,
+      "offset": 9489,
       "length": 34,
       "value": "\"\/discovery\/v2\/attractions\/legacy\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "IntegerLiteral",
-      "offset": 9554,
+      "offset": 9877,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9585,
+      "offset": 9908,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9645,
+      "offset": 9968,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "IntegerLiteral",
-      "offset": 9933,
+      "offset": 10256,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 9964,
+      "offset": 10287,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionDetails.swift",
       "kind": "StringLiteral",
-      "offset": 10024,
+      "offset": 10347,
       "length": 3,
       "value": "\",\""
     },

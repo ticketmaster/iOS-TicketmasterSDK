@@ -1578,6 +1578,7 @@ extension Swift.String {
   case websiteOnboarding
   case websiteDiscovery
   case websiteFavorites
+  case countryDefault
   public init?(rawValue: Swift.String)
   public var stringValue: Swift.String {
     get
@@ -1870,6 +1871,18 @@ extension Foundation.TimeZone {
   public var cannedResponse: Foundation.URLResponse?
   public var cannedData: Foundation.Data?
   public var cannedError: (any Swift.Error)?
+  public struct CannedResult {
+    public let response: Foundation.URLResponse?
+    public let data: Foundation.Data?
+    public let error: (any Swift.Error)?
+    public init(response: Foundation.URLResponse? = nil, data: Foundation.Data? = nil, error: (any Swift.Error)? = nil)
+  }
+  public var cannedResultArray: [TicketmasterFoundation.FakeDataSession.CannedResult]? {
+    get
+    set
+  }
+  public var cannedResultArrayIterator: Swift.Int
+  public static let cannedResultArrayEndError: Foundation.NSError
   public var requestValidator: TicketmasterFoundation.FakeDataSession.URLRequestValidator?
   public var testSession: Foundation.URLSession
   @discardableResult

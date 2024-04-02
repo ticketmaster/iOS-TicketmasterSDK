@@ -34,7 +34,7 @@ public protocol TMTicketsOrderDelegate : AnyObject {
   func didClearEventsTicketsCache(backend: TicketmasterAuthentication.TMAuthentication.BackendService)
 }
 extension TicketmasterTickets.TMTickets {
-  final public func configure(success: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
+  final public func configure(callSource: Swift.String? = nil, success: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TMTicketsModuleHeaderView : UIKit.UIView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var colorView: UIKit.UIView!
@@ -645,7 +645,7 @@ extension TicketmasterTickets.TMTickets {
   }
 }
 extension TicketmasterTickets.TMTickets {
-  final public func start(ticketsView: TicketmasterTickets.TMTicketsView)
+  final public func start(ticketsView: TicketmasterTickets.TMTicketsView, callSource: Swift.String? = nil)
 }
 @usableFromInline
 internal struct BatchedCollectionIndex<Base> where Base : Swift.Collection {
@@ -744,7 +744,7 @@ public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension TicketmasterTickets.TMTickets {
-  final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil)
+  final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil, callSource: Swift.String? = nil)
 }
 public protocol TMTicketsAnalyticsDelegate : AnyObject {
   func userDidView(page: TicketmasterTickets.TMTickets.Analytics.Page, metadata: TicketmasterTickets.TMTickets.Analytics.MetadataType)

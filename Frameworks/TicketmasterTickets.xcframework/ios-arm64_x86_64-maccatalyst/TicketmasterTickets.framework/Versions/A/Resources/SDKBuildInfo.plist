@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Apr  2 20:22:04 PDT 2024</string>
+	<string>Thu Apr 11 16:18:02 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.5.1</string>
+	<string>release/3.5.2</string>
 	<key>GITComment</key>
-	<string>Updated Storyboard version</string>
+	<string>Merge branch Feature-PSDK-11432-HideSSOHostLogin into release/3.5.2</string>
 	<key>GITDate</key>
-	<string>Tue Apr 2 20:08:49 2024 -0700</string>
+	<string>Thu Apr 11 22:55:53 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>def156ba13d84feb98b3f764e4499e610830b6e0</string>
+	<string>fd4da608d61e62284ee9e903267994e3260ed24b</string>
 	<key>MarketingVersion</key>
-	<string>3.5.1</string>
+	<string>3.5.2</string>
 </dict>
 </plist>

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Mar 28 17:12:52 PDT 2024</string>
+	<string>Wed Apr 10 13:31:05 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-11288 OpenID Multi-Team Support</string>
+	<string>PSDK-11402 Support Archtics-only accounts for SSO, OpenID, and SystemExchange</string>
 	<key>GITDate</key>
-	<string>Thu Mar 28 17:01:12 2024 -0700</string>
+	<string>Wed Apr 10 13:26:37 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>44353f4156f624e6d0a787fab16fcf975af2534b</string>
+	<string>c662a69e190e3c454693e5e83baf35504b4c03f2</string>
 	<key>MarketingVersion</key>
-	<string>3.5.7</string>
+	<string>3.5.9</string>
 </dict>
 </plist>

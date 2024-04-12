@@ -3503,6 +3503,128 @@
           },
           {
             "kind": "Var",
+            "name": "exchangeSourceBackend",
+            "printedName": "exchangeSourceBackend",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TicketmasterAuthentication.TMAuthentication.BackendService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BackendService",
+                    "printedName": "TicketmasterAuthentication.TMAuthentication.BackendService",
+                    "usr": "s:26TicketmasterAuthentication16TMAuthenticationC14BackendServiceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV21exchangeSourceBackendAA16TMAuthenticationC0G7ServiceVSgvp",
+            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV21exchangeSourceBackendAA16TMAuthenticationC0G7ServiceVSgvp",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TicketmasterAuthentication.TMAuthentication.BackendService?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BackendService",
+                        "printedName": "TicketmasterAuthentication.TMAuthentication.BackendService",
+                        "usr": "s:26TicketmasterAuthentication16TMAuthenticationC14BackendServiceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV21exchangeSourceBackendAA16TMAuthenticationC0G7ServiceVSgvg",
+                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV21exchangeSourceBackendAA16TMAuthenticationC0G7ServiceVSgvg",
+                "moduleName": "TicketmasterAuthentication",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "externalToken",
+            "printedName": "externalToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV08externalD0SSSgvp",
+            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV08externalD0SSSgvp",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV08externalD0SSSgvg",
+                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV08externalD0SSSgvg",
+                "moduleName": "TicketmasterAuthentication",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "accessToken",
             "printedName": "accessToken",
             "children": [
@@ -3540,189 +3662,6 @@
                 "declKind": "Accessor",
                 "usr": "s:26TicketmasterAuthentication11TMAuthTokenV06accessD0SSvg",
                 "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV06accessD0SSvg",
-                "moduleName": "TicketmasterAuthentication",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "hmacID",
-            "printedName": "hmacID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvp",
-            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvp",
-            "moduleName": "TicketmasterAuthentication",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvg",
-                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvg",
-                "moduleName": "TicketmasterAuthentication",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "accountManagerHmacID",
-            "printedName": "accountManagerHmacID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvp",
-            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvp",
-            "moduleName": "TicketmasterAuthentication",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvg",
-                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvg",
-                "moduleName": "TicketmasterAuthentication",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "doNotSellFlag",
-            "printedName": "doNotSellFlag",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvp",
-            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvp",
-            "moduleName": "TicketmasterAuthentication",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Bool?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvg",
-                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvg",
                 "moduleName": "TicketmasterAuthentication",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3922,7 +3861,8 @@
             "moduleName": "TicketmasterAuthentication",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3950,6 +3890,189 @@
                 "declKind": "Accessor",
                 "usr": "s:26TicketmasterAuthentication11TMAuthTokenV02idD0SSSgvg",
                 "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV02idD0SSSgvg",
+                "moduleName": "TicketmasterAuthentication",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hmacID",
+            "printedName": "hmacID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvp",
+            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvp",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvg",
+                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV6hmacIDSSSgvg",
+                "moduleName": "TicketmasterAuthentication",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accountManagerHmacID",
+            "printedName": "accountManagerHmacID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvp",
+            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvp",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvg",
+                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV20accountManagerHmacIDSSSgvg",
+                "moduleName": "TicketmasterAuthentication",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "doNotSellFlag",
+            "printedName": "doNotSellFlag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvp",
+            "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvp",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvg",
+                "mangledName": "$s26TicketmasterAuthentication11TMAuthTokenV13doNotSellFlagSbSgvg",
                 "moduleName": "TicketmasterAuthentication",
                 "implicit": true,
                 "accessorKind": "get"
@@ -39355,161 +39478,161 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "IntegerLiteral",
-      "offset": 3080,
+      "offset": 3494,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "Dictionary",
-      "offset": 4099,
+      "offset": 4522,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4116,
+      "offset": 4539,
       "length": 17,
       "value": "\"externalIdToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4234,
+      "offset": 4657,
       "length": 66,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4252,
+      "offset": 4675,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4299,
+      "offset": 4722,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "Dictionary",
-      "offset": 5053,
+      "offset": 5476,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5192,
+      "offset": 5615,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5253,
+      "offset": 5676,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5299,
+      "offset": 5722,
       "length": 15,
       "value": "\"teamOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5339,
+      "offset": 5762,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5454,
+      "offset": 5877,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5515,
+      "offset": 5938,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5561,
+      "offset": 5984,
       "length": 15,
       "value": "\"hostOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5601,
+      "offset": 6024,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5715,
+      "offset": 6138,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5776,
+      "offset": 6199,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5822,
+      "offset": 6245,
       "length": 14,
       "value": "\"mfxOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5861,
+      "offset": 6284,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5971,
+      "offset": 6394,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6076,
+      "offset": 6499,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6174,
+      "offset": 6597,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+ExternalExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6290,
+      "offset": 6713,
       "length": 13,
       "value": "\"Call-Source\""
     },
@@ -40293,14 +40416,14 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Lifecycle.swift",
       "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 483,
       "length": 54,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Lifecycle.swift",
       "kind": "StringLiteral",
-      "offset": 441,
+      "offset": 504,
       "length": 1,
       "value": "\": Manually calling aborted block\""
     },
@@ -40531,406 +40654,406 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "Dictionary",
-      "offset": 4021,
+      "offset": 4012,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4038,
+      "offset": 4029,
       "length": 13,
       "value": "\"sourceToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4209,
+      "offset": 4200,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4262,
+      "offset": 4253,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4280,
+      "offset": 4271,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4350,
+      "offset": 4341,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4403,
+      "offset": 4394,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4421,
+      "offset": 4412,
       "length": 10,
       "value": "\"archtics\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4494,
+      "offset": 4485,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4547,
+      "offset": 4538,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4565,
+      "offset": 4556,
       "length": 11,
       "value": "\"microflex\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4635,
+      "offset": 4626,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4691,
+      "offset": 4682,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4709,
+      "offset": 4700,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4774,
+      "offset": 4765,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4829,
+      "offset": 4820,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4847,
+      "offset": 4838,
       "length": 10,
       "value": "\"archtics\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4918,
+      "offset": 4909,
       "length": 16,
       "value": "\"sourceClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4971,
+      "offset": 4962,
       "length": 14,
       "value": "\"sourceSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
+      "offset": 4980,
       "length": 9,
       "value": "\"sportxr\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5184,
+      "offset": 5175,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5233,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5265,
+      "offset": 5256,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5335,
+      "offset": 5326,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5393,
+      "offset": 5384,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5416,
+      "offset": 5407,
       "length": 10,
       "value": "\"archtics\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5489,
+      "offset": 5480,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5547,
+      "offset": 5538,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5570,
+      "offset": 5561,
       "length": 11,
       "value": "\"microflex\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5640,
+      "offset": 5631,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5701,
+      "offset": 5692,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5724,
+      "offset": 5715,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5789,
+      "offset": 5780,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5849,
+      "offset": 5840,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5872,
+      "offset": 5863,
       "length": 10,
       "value": "\"archtics\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 5943,
+      "offset": 5934,
       "length": 21,
       "value": "\"destinationClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6001,
+      "offset": 5992,
       "length": 19,
       "value": "\"destinationSystem\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6024,
+      "offset": 6015,
       "length": 9,
       "value": "\"sportxr\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6175,
+      "offset": 6166,
       "length": 69,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6193,
+      "offset": 6184,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 6243,
+      "offset": 6234,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "Dictionary",
-      "offset": 7007,
+      "offset": 6998,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7148,
+      "offset": 7139,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7209,
+      "offset": 7200,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7255,
+      "offset": 7246,
       "length": 15,
       "value": "\"teamOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7295,
+      "offset": 7286,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7410,
+      "offset": 7401,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7471,
+      "offset": 7462,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7517,
+      "offset": 7508,
       "length": 15,
       "value": "\"hostOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7557,
+      "offset": 7548,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7671,
+      "offset": 7662,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7732,
+      "offset": 7723,
       "length": 20,
       "value": "\"x-tmx-placement-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7778,
+      "offset": 7769,
       "length": 14,
       "value": "\"mfxOnlyLogin\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7817,
+      "offset": 7808,
       "length": 21,
       "value": "\"x-tmx-integrator-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 7927,
+      "offset": 7918,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 8032,
+      "offset": 8023,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8121,
       "length": 17,
       "value": "\"x-tmx-client-id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/TMXNetworkService\/TMXNetworkService+SystemTokenExchange.swift",
       "kind": "StringLiteral",
-      "offset": 8246,
+      "offset": 8237,
       "length": 13,
       "value": "\"Call-Source\""
     },
@@ -40986,147 +41109,147 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 19979,
+      "offset": 19970,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 20248,
+      "offset": 20239,
       "length": 69,
       "value": "\"Refreshed AuthToken member does not match original AuthToken member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21374,
+      "offset": 21365,
       "length": 160,
       "value": "\"Exchanging \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21447,
+      "offset": 21438,
       "length": 5,
       "value": "\" token for \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21524,
+      "offset": 21515,
       "length": 5,
       "value": "\" token...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22190,
+      "offset": 22181,
       "length": 60,
       "value": "\"Successfully exchanged fresh AuthToken for matching member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 22361,
+      "offset": 22352,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22630,
+      "offset": 22621,
       "length": 69,
       "value": "\"Refreshed AuthToken member does not match original AuthToken member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22944,
+      "offset": 22935,
       "length": 77,
       "value": "\"Failed to exchange Team token for Host token: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 23020,
+      "offset": 23011,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24430,
+      "offset": 24421,
       "length": 53,
       "value": "\"Refresh Provider Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24482,
+      "offset": 24473,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24829,
+      "offset": 24820,
       "length": 51,
       "value": "\"Exchange Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24872,
+      "offset": 24863,
       "length": 6,
       "value": "\" tokens\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 25227,
+      "offset": 25218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 25789,
+      "offset": 25780,
       "length": 47,
       "value": "\"Exchange Error: No authTokens in output array\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26033,
+      "offset": 26024,
       "length": 38,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26070,
+      "offset": 26061,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26246,
+      "offset": 26237,
       "length": 26,
       "value": "\"Refresh Provider Aborted\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26449,
+      "offset": 26440,
       "length": 34,
       "value": "\"Refresh Provider Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26482,
+      "offset": 26473,
       "length": 2,
       "value": "\"\""
     },
@@ -42085,14 +42208,14 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+TokenState.swift",
       "kind": "BooleanLiteral",
-      "offset": 6936,
+      "offset": 6927,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+TokenState.swift",
       "kind": "BooleanLiteral",
-      "offset": 6966,
+      "offset": 6957,
       "length": 5,
       "value": "false"
     },
@@ -42330,126 +42453,126 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 2464,
       "length": 32,
       "value": "\"SYSTEM_EXCHANGED_REFRESH_TOKEN\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "StringLiteral",
-      "offset": 2529,
+      "offset": 2535,
       "length": 34,
       "value": "\"EXTERNAL_EXCHANGED_REFRESH_TOKEN\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 2763,
+      "offset": 2769,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3007,
+      "offset": 3013,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3115,
+      "offset": 3121,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3122,
+      "offset": 3128,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3186,
+      "offset": 3192,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3193,
+      "offset": 3199,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3252,
+      "offset": 3258,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3259,
+      "offset": 3265,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3337,
+      "offset": 3343,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3344,
+      "offset": 3350,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3408,
+      "offset": 3414,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3415,
+      "offset": 3421,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "FloatLiteral",
-      "offset": 3540,
+      "offset": 3546,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "IntegerLiteral",
-      "offset": 3547,
+      "offset": 3553,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "BooleanLiteral",
-      "offset": 3799,
+      "offset": 3805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken.swift",
       "kind": "BooleanLiteral",
-      "offset": 3936,
+      "offset": 3942,
       "length": 5,
       "value": "false"
     },
@@ -43324,707 +43447,707 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 6705,
+      "offset": 6752,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9164,
+      "offset": 9211,
       "length": 4,
       "value": "7200"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "Dictionary",
-      "offset": 9822,
+      "offset": 9869,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 9843,
+      "offset": 9890,
       "length": 9,
       "value": "\"idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 9881,
+      "offset": 9928,
       "length": 11,
       "value": "\"expiresAt\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 9925,
+      "offset": 9972,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 9971,
+      "offset": 10018,
       "length": 12,
       "value": "\"hmacUserId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 10011,
+      "offset": 10058,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 10059,
+      "offset": 10106,
       "length": 11,
       "value": "\"doNotSell\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 10088,
+      "offset": 10135,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 10897,
+      "offset": 10991,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13077,
+      "offset": 13171,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 13733,
+      "offset": 13827,
       "length": 8,
       "value": "\"Bearer\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 13795,
+      "offset": 13889,
       "length": 45,
       "value": "\"openid profile offline_access ticketing_api\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "Dictionary",
-      "offset": 13922,
+      "offset": 14016,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 13943,
+      "offset": 14037,
       "length": 10,
       "value": "\"id_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 13982,
+      "offset": 14076,
       "length": 12,
       "value": "\"expires_in\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 14027,
+      "offset": 14121,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 14074,
+      "offset": 14168,
       "length": 7,
       "value": "\"scope\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 14108,
+      "offset": 14202,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 14157,
+      "offset": 14251,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 14952,
+      "offset": 15093,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15076,
+      "offset": 15217,
       "length": 27,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15101,
+      "offset": 15242,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15223,
+      "offset": 15364,
       "length": 20,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15231,
+      "offset": 15372,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15242,
+      "offset": 15383,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15322,
+      "offset": 15463,
       "length": 15,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15330,
+      "offset": 15471,
       "length": 1,
       "value": "\": Data\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15387,
+      "offset": 15528,
       "length": 14,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 15395,
+      "offset": 15536,
       "length": 1,
       "value": "\": ???\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18039,
+      "offset": 18180,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18084,
+      "offset": 18225,
       "length": 9,
       "value": "\"expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18126,
+      "offset": 18267,
       "length": 10,
       "value": "\"refTMKey\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18163,
+      "offset": 18304,
       "length": 8,
       "value": "\"member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18200,
+      "offset": 18341,
       "length": 13,
       "value": "\"tm_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18247,
+      "offset": 18388,
       "length": 15,
       "value": "\"presence_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18290,
+      "offset": 18431,
       "length": 18,
       "value": "\"presence_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18342,
+      "offset": 18483,
       "length": 24,
       "value": "\"presence_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18393,
+      "offset": 18534,
       "length": 17,
       "value": "\"presence_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18439,
+      "offset": 18580,
       "length": 20,
       "value": "\"presence_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18500,
+      "offset": 18641,
       "length": 23,
       "value": "\"presence_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18556,
+      "offset": 18697,
       "length": 24,
       "value": "\"presence_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18613,
+      "offset": 18754,
       "length": 21,
       "value": "\"tmx_am_access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18665,
+      "offset": 18806,
       "length": 16,
       "value": "\"tmx_am_expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18714,
+      "offset": 18855,
       "length": 16,
       "value": "\"tmx_am_refresh\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18759,
+      "offset": 18900,
       "length": 13,
       "value": "\"am_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18797,
+      "offset": 18938,
       "length": 18,
       "value": "\"presence_am_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18852,
+      "offset": 18993,
       "length": 21,
       "value": "\"presence_am_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18907,
+      "offset": 19048,
       "length": 27,
       "value": "\"presence_am_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18961,
+      "offset": 19102,
       "length": 20,
       "value": "\"presence_am_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19010,
+      "offset": 19151,
       "length": 23,
       "value": "\"presence_am_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19065,
+      "offset": 19206,
       "length": 26,
       "value": "\"presence_am_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19133,
+      "offset": 19274,
       "length": 27,
       "value": "\"presence_am_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19204,
+      "offset": 19345,
       "length": 31,
       "value": "\"sportxr_identity_access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19269,
+      "offset": 19410,
       "length": 26,
       "value": "\"sportxr_identity_expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19331,
+      "offset": 19472,
       "length": 26,
       "value": "\"sportxr_identity_refresh\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19389,
+      "offset": 19530,
       "length": 27,
       "value": "\"sportxr_identity_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19444,
+      "offset": 19585,
       "length": 23,
       "value": "\"sportxr_identity_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19507,
+      "offset": 19648,
       "length": 26,
       "value": "\"sportxr_identity_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19570,
+      "offset": 19711,
       "length": 32,
       "value": "\"sportxr_identity_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19632,
+      "offset": 19773,
       "length": 25,
       "value": "\"sportxr_identity_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19689,
+      "offset": 19830,
       "length": 28,
       "value": "\"sportxr_identity_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19752,
+      "offset": 19893,
       "length": 31,
       "value": "\"sportxr_identity_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19828,
+      "offset": 19969,
       "length": 32,
       "value": "\"sportxr_identity_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18039,
+      "offset": 18180,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18084,
+      "offset": 18225,
       "length": 9,
       "value": "\"expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18126,
+      "offset": 18267,
       "length": 10,
       "value": "\"refTMKey\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18163,
+      "offset": 18304,
       "length": 8,
       "value": "\"member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18200,
+      "offset": 18341,
       "length": 13,
       "value": "\"tm_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18247,
+      "offset": 18388,
       "length": 15,
       "value": "\"presence_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18290,
+      "offset": 18431,
       "length": 18,
       "value": "\"presence_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18342,
+      "offset": 18483,
       "length": 24,
       "value": "\"presence_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18393,
+      "offset": 18534,
       "length": 17,
       "value": "\"presence_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18439,
+      "offset": 18580,
       "length": 20,
       "value": "\"presence_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18500,
+      "offset": 18641,
       "length": 23,
       "value": "\"presence_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18556,
+      "offset": 18697,
       "length": 24,
       "value": "\"presence_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18613,
+      "offset": 18754,
       "length": 21,
       "value": "\"tmx_am_access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18665,
+      "offset": 18806,
       "length": 16,
       "value": "\"tmx_am_expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18714,
+      "offset": 18855,
       "length": 16,
       "value": "\"tmx_am_refresh\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18759,
+      "offset": 18900,
       "length": 13,
       "value": "\"am_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18797,
+      "offset": 18938,
       "length": 18,
       "value": "\"presence_am_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18852,
+      "offset": 18993,
       "length": 21,
       "value": "\"presence_am_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18907,
+      "offset": 19048,
       "length": 27,
       "value": "\"presence_am_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 18961,
+      "offset": 19102,
       "length": 20,
       "value": "\"presence_am_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19010,
+      "offset": 19151,
       "length": 23,
       "value": "\"presence_am_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19065,
+      "offset": 19206,
       "length": 26,
       "value": "\"presence_am_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19133,
+      "offset": 19274,
       "length": 27,
       "value": "\"presence_am_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19204,
+      "offset": 19345,
       "length": 31,
       "value": "\"sportxr_identity_access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19269,
+      "offset": 19410,
       "length": 26,
       "value": "\"sportxr_identity_expDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19331,
+      "offset": 19472,
       "length": 26,
       "value": "\"sportxr_identity_refresh\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19389,
+      "offset": 19530,
       "length": 27,
       "value": "\"sportxr_identity_identity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19444,
+      "offset": 19585,
       "length": 23,
       "value": "\"sportxr_identity_hmac\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19507,
+      "offset": 19648,
       "length": 26,
       "value": "\"sportxr_identity_idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19570,
+      "offset": 19711,
       "length": 32,
       "value": "\"sportxr_identity_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19632,
+      "offset": 19773,
       "length": 25,
       "value": "\"sportxr_identity_source\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19689,
+      "offset": 19830,
       "length": 28,
       "value": "\"sportxr_identity_client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19752,
+      "offset": 19893,
       "length": 31,
       "value": "\"sportxr_identity_placement_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 19828,
+      "offset": 19969,
       "length": 32,
       "value": "\"sportxr_identity_integrator_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 20009,
+      "offset": 20150,
       "length": 8,
       "value": "\"modern\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/OldKeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 20009,
+      "offset": 20150,
       "length": 8,
       "value": "\"modern\""
     },
@@ -44682,273 +44805,273 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23129,
+      "offset": 23205,
       "length": 77,
       "value": "\"Failed to exchange Team token for Host token: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23205,
+      "offset": 23281,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23521,
+      "offset": 23667,
       "length": 78,
       "value": "\"Could not find matching Host service for Team: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23598,
+      "offset": 23744,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23959,
+      "offset": 24105,
       "length": 15,
       "value": "\"Login Aborted\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 24096,
+      "offset": 24242,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 24371,
+      "offset": 24517,
       "length": 44,
       "value": "\"Login Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 24414,
+      "offset": 24560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 24537,
+      "offset": 24683,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 25731,
+      "offset": 25877,
       "length": 59,
       "value": "\"Exchanging External token for Archtics and Host tokens...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 25995,
+      "offset": 26141,
       "length": 58,
       "value": "\"External Exchange Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 26045,
+      "offset": 26191,
       "length": 6,
       "value": "\" tokens\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 26378,
+      "offset": 26524,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 26824,
+      "offset": 26970,
       "length": 56,
       "value": "\"External Exchange Error: No authTokens in output array\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 27676,
+      "offset": 27822,
       "length": 62,
       "value": "\"Retry External Exchange Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 27737,
+      "offset": 27883,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 28260,
+      "offset": 28406,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 28299,
+      "offset": 28445,
       "length": 43,
       "value": "\"Resource not found: The user is not found\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 28589,
+      "offset": 28735,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 28616,
+      "offset": 28762,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 28717,
+      "offset": 28863,
       "length": 62,
       "value": "\"External Exchange: OpenID user is not found, show login page\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 29541,
+      "offset": 29687,
       "length": 56,
       "value": "\"External Exchange Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 29596,
+      "offset": 29742,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "Dictionary",
-      "offset": 30651,
+      "offset": 30797,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 30674,
+      "offset": 30820,
       "length": 8,
       "value": "\"openId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 30790,
+      "offset": 30936,
       "length": 52,
       "value": "\"Show OpenID Login to allow user to bind account...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 31323,
+      "offset": 31469,
       "length": 85,
       "value": "\"OpenID Login Successful, Perform External Exchange again, now that account is bound\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 31547,
+      "offset": 31693,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32238,
+      "offset": 32384,
       "length": 30,
       "value": "\"OpenID Login aborted by user\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32383,
+      "offset": 32529,
       "length": 51,
       "value": "\"OpenID Login Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32433,
+      "offset": 32579,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 32896,
+      "offset": 33042,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32998,
+      "offset": 33144,
       "length": 38,
       "value": "\"Present Link Accounts Popup Alert...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 33749,
+      "offset": 33895,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 33800,
+      "offset": 33946,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 34069,
+      "offset": 34215,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 34402,
+      "offset": 34548,
       "length": 15,
       "value": "\"Link Accounts\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 34519,
+      "offset": 34665,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 34652,
+      "offset": 34798,
       "length": 4,
       "value": "true"
     },
@@ -48028,70 +48151,70 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 5993,
+      "offset": 6137,
       "length": 33,
       "value": "\"Authentication canceled by user\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 6276,
+      "offset": 6467,
       "length": 65,
       "value": "\"Authentication failed with error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 6340,
+      "offset": 6531,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 6481,
+      "offset": 6821,
       "length": 42,
       "value": "\"Authentication failed with unknown error\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 7988,
+      "offset": 8465,
       "length": 19,
       "value": "\"Authenticating...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 8624,
+      "offset": 9101,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 8662,
+      "offset": 9139,
       "length": 50,
       "value": "\"Error: Callback URL missing 'code' key and value\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 8967,
+      "offset": 9444,
       "length": 7,
       "value": "\"state\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 9010,
+      "offset": 9487,
       "length": 51,
       "value": "\"Error: Callback URL missing 'state' key and value\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/AuthServices\/OAuth2\/OAuth2Manager+Login.swift",
       "kind": "StringLiteral",
-      "offset": 9397,
+      "offset": 9874,
       "length": 57,
       "value": "\"Error: Incoming 'state' does not match original 'state'\""
     },
@@ -48413,854 +48536,882 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 4825,
+      "offset": 4816,
       "length": 12,
       "value": "\"hmacUserId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 4905,
+      "offset": 4896,
       "length": 20,
       "value": "\"archticsHmacUserId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 4981,
+      "offset": 4972,
       "length": 9,
       "value": "\"idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 5050,
+      "offset": 5041,
       "length": 11,
       "value": "\"doNotSell\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 5511,
+      "offset": 5502,
       "length": 9,
       "value": "\"service\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 5555,
+      "offset": 5546,
       "length": 60,
       "value": "\"[AuthToken.TMX.Fed] Error parsing JSON (missing 'service')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 5845,
+      "offset": 5836,
       "length": 6,
       "value": "\"HOST\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 5889,
+      "offset": 5880,
       "length": 55,
       "value": "\"[AuthToken.TMX.Fed] Error: Not Federated Host Service\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6137,
+      "offset": 6128,
       "length": 10,
       "value": "\"ARCHTICS\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6185,
+      "offset": 6176,
       "length": 55,
       "value": "\"[AuthToken.TMX.Fed] Error: Not Federated Team Service\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6482,
+      "offset": 6473,
       "length": 50,
       "value": "\"[AuthToken.TMX.Fed] Error: Not Federated Service\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6694,
+      "offset": 6685,
       "length": 50,
       "value": "\"[AuthToken.TMX.Fed] Error: Not Federated Service\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6927,
+      "offset": 6918,
       "length": 10,
       "value": "\"username\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 6972,
+      "offset": 6963,
       "length": 61,
       "value": "\"[AuthToken.TMX.Fed] Error parsing JSON (missing 'username')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 7323,
+      "offset": 7314,
       "length": 61,
       "value": "\"[AuthToken.TMX.Fed] Error: Federated Usernames do not match\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 7600,
+      "offset": 7591,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 7649,
+      "offset": 7640,
       "length": 65,
       "value": "\"[AuthToken.TMX.Fed] Error parsing JSON (missing 'access_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 8029,
+      "offset": 8020,
       "length": 12,
       "value": "\"expires_in\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 8150,
+      "offset": 8141,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 8155,
+      "offset": 8146,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 8637,
+      "offset": 8628,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 8687,
+      "offset": 8678,
       "length": 66,
       "value": "\"[AuthToken.TMX.Fed] Error parsing JSON (missing 'refresh_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 9176,
+      "offset": 9158,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 9816,
+      "offset": 9798,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 9865,
+      "offset": 9847,
       "length": 65,
       "value": "\"[AuthToken.SportXR] Error parsing JSON (missing 'access_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 10245,
+      "offset": 10227,
       "length": 12,
       "value": "\"expires_in\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 10385,
+      "offset": 10367,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 10390,
+      "offset": 10372,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 10917,
+      "offset": 10899,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 10967,
+      "offset": 10949,
       "length": 66,
       "value": "\"[AuthToken.SportXR] Error parsing JSON (missing 'refresh_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 11472,
+      "offset": 11445,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 11546,
+      "offset": 11519,
       "length": 7,
       "value": "\"scope\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 11677,
+      "offset": 11650,
       "length": 9,
       "value": "\"hmac_Id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 11790,
+      "offset": 11763,
       "length": 10,
       "value": "\"id_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 11868,
+      "offset": 11841,
       "length": 11,
       "value": "\"doNotSell\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 12291,
+      "offset": 12264,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 12340,
+      "offset": 12313,
       "length": 65,
       "value": "\"[AuthToken.AMOAuth] Error parsing JSON (missing 'access_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 12728,
+      "offset": 12701,
       "length": 12,
       "value": "\"expires_in\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 12849,
+      "offset": 12822,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 12854,
+      "offset": 12827,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 13336,
+      "offset": 13309,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 13386,
+      "offset": 13359,
       "length": 66,
       "value": "\"[AuthToken.AMOAuth] Error parsing JSON (missing 'refresh_token')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 13875,
+      "offset": 13839,
       "length": 12,
       "value": "\"token_type\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 14817,
+      "offset": 14756,
       "length": 10,
       "value": "\"archtics\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 14917,
+      "offset": 14856,
       "length": 75,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'archtics')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 15237,
+      "offset": 15160,
       "length": 6,
       "value": "\"host\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 15333,
+      "offset": 15256,
       "length": 71,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'host')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 15638,
+      "offset": 15561,
       "length": 5,
       "value": "\"mfx\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 15733,
+      "offset": 15656,
       "length": 70,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'mfx')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16021,
+      "offset": 15944,
       "length": 9,
       "value": "\"sportxr\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16120,
+      "offset": 16043,
       "length": 74,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'sportxr')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16407,
+      "offset": 16341,
+      "length": 9,
+      "value": "\"fedHost\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
+      "kind": "StringLiteral",
+      "offset": 16440,
+      "length": 74,
+      "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'fedHost')\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
+      "kind": "StringLiteral",
+      "offset": 16738,
+      "length": 9,
+      "value": "\"fedTeam\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
+      "kind": "StringLiteral",
+      "offset": 16837,
+      "length": 74,
+      "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'fedTeam')\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
+      "kind": "StringLiteral",
+      "offset": 17124,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16455,
+      "offset": 17172,
       "length": 78,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'accessToken')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16712,
+      "offset": 17429,
       "length": 10,
       "value": "\"clientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 16792,
+      "offset": 17509,
       "length": 75,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error parsing JSON (missing 'clientId')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 17041,
+      "offset": 17758,
       "length": 18,
       "value": "\"exchangeClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 17801,
+      "offset": 18518,
       "length": 120,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 17879,
+      "offset": 18596,
       "length": 6,
       "value": "\" Forced!= \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 17912,
+      "offset": 18629,
       "length": 7,
       "value": "\"<nil>\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 17920,
+      "offset": 18637,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 18581,
+      "offset": 19298,
       "length": 108,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 18659,
+      "offset": 19376,
       "length": 6,
       "value": "\" Forced!= \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 18688,
+      "offset": 19405,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19103,
+      "offset": 19820,
       "length": 104,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19183,
+      "offset": 19900,
       "length": 2,
       "value": "\" != \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19206,
+      "offset": 19923,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19288,
+      "offset": 20005,
       "length": 116,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19368,
+      "offset": 20085,
       "length": 2,
       "value": "\" != \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19395,
+      "offset": 20112,
       "length": 7,
       "value": "\"<nil>\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19403,
+      "offset": 20120,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19676,
+      "offset": 20393,
       "length": 119,
       "value": "\"[AuthToken.ExternalExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19761,
+      "offset": 20478,
       "length": 2,
       "value": "\" != \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 19794,
+      "offset": 20511,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 20119,
+      "offset": 20836,
       "length": 11,
       "value": "\"expiresAt\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 20195,
+      "offset": 20912,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 20447,
+      "offset": 21164,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 20567,
+      "offset": 21284,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 20572,
+      "offset": 21289,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 22025,
+      "offset": 22706,
       "length": 9,
       "value": "\"idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 22569,
+      "offset": 23241,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 22617,
+      "offset": 23289,
       "length": 76,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error parsing JSON (missing 'accessToken')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 22875,
+      "offset": 23547,
       "length": 10,
       "value": "\"clientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 22955,
+      "offset": 23627,
       "length": 73,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error parsing JSON (missing 'clientId')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 23211,
+      "offset": 23883,
       "length": 18,
       "value": "\"exchangeClientId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 23293,
+      "offset": 23965,
       "length": 81,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error parsing JSON (missing 'exchangeClientId')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24172,
+      "offset": 24844,
       "length": 109,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24250,
+      "offset": 24922,
       "length": 6,
       "value": "\" Forced!= \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24280,
+      "offset": 24952,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24602,
+      "offset": 25274,
       "length": 103,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24680,
+      "offset": 25352,
       "length": 2,
       "value": "\" != \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24704,
+      "offset": 25376,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 24929,
+      "offset": 25601,
       "length": 117,
       "value": "\"[AuthToken.SystemExchangeOAuth] Error: AccessToken JWT Backend \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 25012,
+      "offset": 25684,
       "length": 2,
       "value": "\" != \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 25045,
+      "offset": 25717,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 25373,
+      "offset": 26045,
       "length": 11,
       "value": "\"expiresAt\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 25449,
+      "offset": 26121,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 25701,
+      "offset": 26373,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "IntegerLiteral",
-      "offset": 25821,
+      "offset": 26493,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "FloatLiteral",
-      "offset": 25826,
+      "offset": 26498,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 30084,
+      "offset": 30702,
       "length": 90,
       "value": "\"[AuthToken.TMX.MA] Error invalid 'accessToken' jwt (\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 30172,
+      "offset": 30790,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 30374,
+      "offset": 30992,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 30479,
+      "offset": 31097,
       "length": 72,
       "value": "\"[AuthToken.TMX.MA] Error invalid 'accessToken' jwt (missing client_id)\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31601,
+      "offset": 32366,
       "length": 17,
       "value": "\"internalBackend\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31673,
+      "offset": 32438,
       "length": 12,
       "value": "\"sourceCall\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31733,
-      "length": 32,
-      "value": "\"exchangeSourceAuthTokenBackend\""
+      "offset": 32498,
+      "length": 23,
+      "value": "\"exchangeSourceBackend\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31836,
+      "offset": 32583,
       "length": 15,
       "value": "\"externalToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31893,
+      "offset": 32640,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31946,
+      "offset": 32693,
       "length": 12,
       "value": "\"expireDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 31997,
+      "offset": 32744,
       "length": 14,
       "value": "\"acquiredDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32052,
+      "offset": 32799,
       "length": 19,
       "value": "\"lastValidatedDate\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32117,
+      "offset": 32864,
       "length": 14,
       "value": "\"refreshToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32172,
+      "offset": 32919,
       "length": 13,
       "value": "\"originalTTL\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32225,
+      "offset": 32972,
       "length": 11,
       "value": "\"tokenType\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32274,
+      "offset": 33021,
       "length": 7,
       "value": "\"scope\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32315,
+      "offset": 33062,
       "length": 8,
       "value": "\"hmacID\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32358,
+      "offset": 33105,
       "length": 22,
       "value": "\"accountManagerHmacID\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32429,
+      "offset": 33176,
       "length": 9,
       "value": "\"idToken\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32474,
+      "offset": 33221,
       "length": 15,
       "value": "\"doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32531,
+      "offset": 33278,
       "length": 14,
       "value": "\"originalData\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32656,
+      "offset": 33403,
       "length": 17,
       "value": "\"accessTokenJSON\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/AuthToken+Init.swift",
       "kind": "StringLiteral",
-      "offset": 32829,
+      "offset": 33576,
       "length": 19,
       "value": "\"externalTokenJSON\""
     },
@@ -50590,7 +50741,7 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 11937,
+      "offset": 11928,
       "length": 1,
       "value": "0"
     },

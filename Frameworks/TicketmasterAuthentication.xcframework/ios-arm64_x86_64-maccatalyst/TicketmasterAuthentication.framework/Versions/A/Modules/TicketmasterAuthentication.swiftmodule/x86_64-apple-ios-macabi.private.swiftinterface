@@ -94,14 +94,16 @@ extension TicketmasterAuthentication.TMAuthentication {
 }
 public struct TMAuthToken : Swift.Codable, Swift.Hashable {
   public let backend: TicketmasterAuthentication.TMAuthentication.BackendService
+  public let exchangeSourceBackend: TicketmasterAuthentication.TMAuthentication.BackendService?
+  public let externalToken: Swift.String?
   public let accessToken: Swift.String
-  public let hmacID: Swift.String?
-  public let accountManagerHmacID: Swift.String?
-  public let doNotSellFlag: Swift.Bool?
   public let tokenType: Swift.String?
   public let scope: Swift.String?
   public let expireDate: Foundation.Date
   public let idToken: Swift.String?
+  public let hmacID: Swift.String?
+  public let accountManagerHmacID: Swift.String?
+  public let doNotSellFlag: Swift.Bool?
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMAuthToken, b: TicketmasterAuthentication.TMAuthToken) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws

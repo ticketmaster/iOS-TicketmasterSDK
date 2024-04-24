@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Apr 11 16:18:02 PDT 2024</string>
+	<string>Wed Apr 24 10:42:01 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.5.2</string>
+	<string>release/3.5.3</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-11432-HideSSOHostLogin into release/3.5.2</string>
+	<string>Added Ticketmaster quick switching config</string>
 	<key>GITDate</key>
-	<string>Thu Apr 11 22:55:53 2024 +0000</string>
+	<string>Mon Apr 22 12:28:53 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>fd4da608d61e62284ee9e903267994e3260ed24b</string>
+	<string>c9534ccff3254fc8636697ce76cb723658e7eca2</string>
 	<key>MarketingVersion</key>
-	<string>3.5.2</string>
+	<string>3.5.3</string>
 </dict>
 </plist>

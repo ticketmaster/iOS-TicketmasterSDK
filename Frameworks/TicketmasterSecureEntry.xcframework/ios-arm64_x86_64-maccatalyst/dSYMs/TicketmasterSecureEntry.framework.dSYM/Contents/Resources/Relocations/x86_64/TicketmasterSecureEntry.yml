@@ -1,6 +1,6 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-gowincshrlqzhqfweyhergbhfxxq/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/Versions/A/TicketmasterSecureEntry'
+binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-ajqtbgarzlvribbqkwsrhtkkhlnu/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/Versions/A/TicketmasterSecureEntry'
 relocations:
   - { offsetInCU: 0x34, offset: 0xD0964, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionString, symObjAddr: 0x0, symBinAddr: 0x3C620, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xD0999, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionNumber, symObjAddr: 0x48, symBinAddr: 0x3C668, symSize: 0x0 }

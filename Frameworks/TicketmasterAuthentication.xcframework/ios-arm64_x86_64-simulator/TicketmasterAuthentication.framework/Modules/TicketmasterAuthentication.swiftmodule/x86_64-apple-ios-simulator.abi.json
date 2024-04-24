@@ -41096,148 +41096,169 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
+      "kind": "FloatLiteral",
+      "offset": 17052,
+      "length": 4,
+      "value": "-5.0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
+      "kind": "StringLiteral",
+      "offset": 17145,
+      "length": 85,
+      "value": "\"Requested Token was just refreshed alongside ExchangeSourceBackend Token, return it\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
+      "kind": "StringLiteral",
+      "offset": 17458,
+      "length": 98,
+      "value": "\"Requested Token was NOT just refreshed alongside ExchangeSourceBackend Token, use systemExchange\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 19970,
+      "offset": 20938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 20239,
+      "offset": 21207,
       "length": 69,
       "value": "\"Refreshed AuthToken member does not match original AuthToken member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21365,
+      "offset": 22333,
       "length": 160,
       "value": "\"Exchanging \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21438,
+      "offset": 22406,
       "length": 5,
       "value": "\" token for \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 21515,
+      "offset": 22483,
       "length": 5,
       "value": "\" token...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22181,
+      "offset": 23149,
       "length": 60,
       "value": "\"Successfully exchanged fresh AuthToken for matching member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 22352,
+      "offset": 23320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22621,
+      "offset": 23589,
       "length": 69,
       "value": "\"Refreshed AuthToken member does not match original AuthToken member\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 22935,
+      "offset": 23903,
       "length": 77,
       "value": "\"Failed to exchange Team token for Host token: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 23011,
+      "offset": 23979,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24421,
+      "offset": 25389,
       "length": 53,
       "value": "\"Refresh Provider Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24473,
+      "offset": 25441,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24820,
+      "offset": 25788,
       "length": 51,
       "value": "\"Exchange Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 24863,
+      "offset": 25831,
       "length": 6,
       "value": "\" tokens\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "BooleanLiteral",
-      "offset": 25218,
+      "offset": 26186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 25780,
+      "offset": 26748,
       "length": 47,
       "value": "\"Exchange Error: No authTokens in output array\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26024,
+      "offset": 26992,
       "length": 38,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26061,
+      "offset": 27029,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26237,
+      "offset": 27205,
       "length": 26,
       "value": "\"Refresh Provider Aborted\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26440,
+      "offset": 27408,
       "length": 34,
       "value": "\"Refresh Provider Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Refresh.swift",
       "kind": "StringLiteral",
-      "offset": 26473,
+      "offset": 27441,
       "length": 2,
       "value": "\"\""
     },
@@ -44765,301 +44786,294 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 20751,
+      "offset": 20640,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 22111,
+      "offset": 21717,
       "length": 41,
       "value": "\"Exchanging Team token for Host token...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 22616,
+      "offset": 22222,
       "length": 50,
       "value": "\"Successfully exchanged Team token for Host token\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 22810,
+      "offset": 22416,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23205,
+      "offset": 22811,
       "length": 77,
       "value": "\"Failed to exchange Team token for Host token: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23281,
+      "offset": 22887,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23667,
+      "offset": 23273,
       "length": 78,
       "value": "\"Could not find matching Host service for Team: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 23744,
+      "offset": 23350,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 24105,
+      "offset": 23711,
       "length": 15,
       "value": "\"Login Aborted\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 24242,
+      "offset": 23848,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 24517,
+      "offset": 24123,
       "length": 44,
       "value": "\"Login Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 24560,
+      "offset": 24166,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 24683,
+      "offset": 24289,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 25877,
+      "offset": 25483,
       "length": 59,
       "value": "\"Exchanging External token for Archtics and Host tokens...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 26141,
+      "offset": 25747,
       "length": 58,
       "value": "\"External Exchange Success: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 26191,
+      "offset": 25797,
       "length": 6,
       "value": "\" tokens\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 26524,
+      "offset": 26130,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 26970,
+      "offset": 26576,
       "length": 56,
       "value": "\"External Exchange Error: No authTokens in output array\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 27822,
+      "offset": 27428,
       "length": 62,
       "value": "\"Retry External Exchange Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 27883,
+      "offset": 27489,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 28406,
+      "offset": 28012,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 28445,
+      "offset": 28051,
       "length": 43,
       "value": "\"Resource not found: The user is not found\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 28735,
+      "offset": 28341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 28762,
+      "offset": 28368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 28863,
+      "offset": 28469,
       "length": 62,
       "value": "\"External Exchange: OpenID user is not found, show login page\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 29687,
+      "offset": 29293,
       "length": 56,
       "value": "\"External Exchange Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 29742,
+      "offset": 29348,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "Dictionary",
-      "offset": 30797,
+      "offset": 30403,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 30820,
+      "offset": 30426,
       "length": 8,
       "value": "\"openId\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 30936,
+      "offset": 30542,
       "length": 52,
       "value": "\"Show OpenID Login to allow user to bind account...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 31469,
-      "length": 85,
-      "value": "\"OpenID Login Successful, Perform External Exchange again, now that account is bound\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
-      "kind": "FloatLiteral",
-      "offset": 31693,
-      "length": 3,
-      "value": "2.0"
+      "offset": 30909,
+      "length": 32,
+      "value": "\"OpenID Login completed by user\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32384,
+      "offset": 31049,
       "length": 30,
       "value": "\"OpenID Login aborted by user\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32529,
+      "offset": 31194,
       "length": 51,
       "value": "\"OpenID Login Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 32579,
+      "offset": 31244,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 33042,
+      "offset": 31707,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 33144,
+      "offset": 31809,
       "length": 38,
       "value": "\"Present Link Accounts Popup Alert...\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 33895,
+      "offset": 32560,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "IntegerLiteral",
-      "offset": 33946,
+      "offset": 32611,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "FloatLiteral",
-      "offset": 34215,
+      "offset": 32880,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 34548,
+      "offset": 33213,
       "length": 15,
       "value": "\"Link Accounts\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "StringLiteral",
-      "offset": 34665,
+      "offset": 33330,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Login.swift",
       "kind": "BooleanLiteral",
-      "offset": 34798,
+      "offset": 33463,
       "length": 4,
       "value": "true"
     },

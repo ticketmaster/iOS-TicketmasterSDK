@@ -119,6 +119,10 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController : SafariServices.S
 extension TicketmasterPrePurchase.TMPrePurchaseViewController {
   @_Concurrency.MainActor(unsafe) public func runWhenNotShowingLoadingView(_ task: @escaping (() -> Swift.Void))
 }
+extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoundation.UFCWebViewMessageHandlerDelegate {
+  @_Concurrency.MainActor(unsafe) public func ufcWebview() -> WebKit.WKWebView
+  @_Concurrency.MainActor(unsafe) public func loginStatusUpdated(isLoggedIn: Swift.Bool)
+}
 extension Foundation.URLRequest {
   public init?(page: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, domain: TicketmasterFoundation.MarketDomain, locale: Foundation.Locale, user: TicketmasterFoundation.TMUser?, requestedQueryParameters: TicketmasterFoundation.URLQueryParameters?, environment: TicketmasterFoundation.ConnectionEnvironment)
 }

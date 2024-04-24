@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-gowincshrlqzhqfweyhergbhfxxq/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/TicketmasterSecureEntry'
+binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-ajqtbgarzlvribbqkwsrhtkkhlnu/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/TicketmasterSecureEntry'
 relocations:
   - { offsetInCU: 0x34, offset: 0x549EB, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionString, symObjAddr: 0x0, symBinAddr: 0x357D0, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0x54A20, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionNumber, symObjAddr: 0x48, symBinAddr: 0x35818, symSize: 0x0 }
@@ -580,7 +580,7 @@ relocations:
   - { offsetInCU: 0x94, offset: 0x6B2F2, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6CBCMACCfD', symObjAddr: 0x0, symBinAddr: 0x1D74C, symSize: 0x24 }
   - { offsetInCU: 0xFE, offset: 0x6B35C, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6CBCMACCMa', symObjAddr: 0x24, symBinAddr: 0x1D770, symSize: 0x20 }
   - { offsetInCU: 0x27, offset: 0x6B4BA, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1D790, symSize: 0x28 }
-  - { offsetInCU: 0x4B, offset: 0x6B4DE, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6sharedACvpZ', symObjAddr: 0x82A0, symBinAddr: 0x59E88, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x6B4DE, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6sharedACvpZ', symObjAddr: 0x8298, symBinAddr: 0x59E88, symSize: 0x0 }
   - { offsetInCU: 0x76, offset: 0x6B509, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorCfD', symObjAddr: 0x28, symBinAddr: 0x1D7B8, symSize: 0x10 }
   - { offsetInCU: 0xA5, offset: 0x6B538, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC11generateOTP6secret9algorithm7counter6digitsSSSg10Foundation4DataV_AA12OTPAlgorithmOs6UInt64VSitFTf4nnnnd_n', symObjAddr: 0x1DC, symBinAddr: 0x1D96C, symSize: 0x678 }
   - { offsetInCU: 0x7E5, offset: 0x6BC78, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x1D790, symSize: 0x28 }

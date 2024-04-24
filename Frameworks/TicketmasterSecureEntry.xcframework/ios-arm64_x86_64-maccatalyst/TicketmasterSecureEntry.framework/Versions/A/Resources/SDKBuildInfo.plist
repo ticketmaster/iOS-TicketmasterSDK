@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Mar 15 17:56:26 PDT 2024</string>
+	<string>Wed Apr 24 10:18:54 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/3.5.3</string>
 	<key>GITComment</key>
-	<string>Removed allow media loads</string>
+	<string>Added Ticketmaster quick switching config</string>
 	<key>GITDate</key>
-	<string>Fri Mar 15 17:31:02 2024 -0700</string>
+	<string>Mon Apr 22 12:28:53 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>54c0d8fa26c1b740287a93ac3c02c05e88c951c5</string>
+	<string>c9534ccff3254fc8636697ce76cb723658e7eca2</string>
 	<key>MarketingVersion</key>
-	<string>1.7.0</string>
+	<string>1.7.1</string>
 </dict>
 </plist>

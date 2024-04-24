@@ -22,11 +22,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o6tMwMV8VAVLo8RHgT7P82CmEdY=
+		9ThIeEOq+lh+5VR1K3dop77bGBI=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		99NfMF7Bkf/dZ+NNkdPr44LiMHY=
+		pdFOsT9vP5Sm/pNBppNlLHie0d0=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		99NfMF7Bkf/dZ+NNkdPr44LiMHY=
+		pdFOsT9vP5Sm/pNBppNlLHie0d0=
 		</data>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -68,9 +68,13 @@
 		<data>
 		2leVMyd65GrxinJEy4JANjQ4/2w=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		eWY9XZI+9aIR9t6PZ+e9I5lNyOk=
+		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		CUFGXEvt5GDktXNY4Cw36Bx7syw=
+		xYe4p7ISht+wASpjF7jTVgEw4Yg=
 		</data>
 		<key>es.lproj/Localizable.strings</key>
 		<dict>
@@ -125,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljoQXtqkhmI4b73CksPzzMjA9mbjayPjIdI/7vOuM28=
+			lqtFG5FI/oSNnT8aa4Y9XTD4jAC3D5oQzg8/M/JH2zM=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -160,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljoQXtqkhmI4b73CksPzzMjA9mbjayPjIdI/7vOuM28=
+			lqtFG5FI/oSNnT8aa4Y9XTD4jAC3D5oQzg8/M/JH2zM=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -198,11 +202,18 @@
 			jwJe1YQAlRaBCnmCTuqggbageuV5FkHbBm/6R6TR3Bs=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/eiPBDe+AKfVSMYfX9/yVkcuHFRY9jgQQwFpQ9lu/g0=
+			</data>
+		</dict>
 		<key>SDKBuildInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RlnN+6eyXzFVuoWiheK/CEGAh2XNJjL89KfchCPzdlg=
+			Y9/5Eqz0B5gFz/bdvkgtMlVpOhsRTc626Kg8WJw2OkA=
 			</data>
 		</dict>
 		<key>es.lproj/Localizable.strings</key>

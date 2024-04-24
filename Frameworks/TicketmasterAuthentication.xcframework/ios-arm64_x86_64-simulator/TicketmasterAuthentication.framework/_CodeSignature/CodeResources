@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aMHaUzrYRnHkaFrkBEyMCMVHY7E=
+		keNo4NEpfIQeC+i45wFWcCJnPwE=
 		</data>
 		<key>LoginCardCollectionViewCell.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		PzIn9S7xEIwKYRhCWaWgpMe6H+o=
+		+LPqqnB5kqxfNE2LTwGVI8E0gUM=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PzIn9S7xEIwKYRhCWaWgpMe6H+o=
+		+LPqqnB5kqxfNE2LTwGVI8E0gUM=
 		</data>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -76,9 +76,13 @@
 		<data>
 		ZVFXqxNAE2+cib4fNetRk33IV78=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		piCofn66fZnCLltbmEJsOA19eGU=
+		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		w9U9ZheilSvlzs3JUbvCV3B7oYQ=
+		uivwGP33d/VI48GUnfNcC6rD2pI=
 		</data>
 		<key>SingleLoginViewController.nib</key>
 		<data>
@@ -107,6 +111,15 @@
 			<key>hash</key>
 			<data>
 			nHAgLLbLuT7Xf7xDYA8f6Hur1EM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L2BifHubWVFrZFR47lwW8amIjf8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -153,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5SjMs/QoOAkhBjxmV9MbvUw1tBEo+SKf6vi/E623k/0=
+			MnbzeTa2capNPa/evivNmvvixgD99Ca7HA3rfxEX01M=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5SjMs/QoOAkhBjxmV9MbvUw1tBEo+SKf6vi/E623k/0=
+			MnbzeTa2capNPa/evivNmvvixgD99Ca7HA3rfxEX01M=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -233,11 +246,18 @@
 			+WZVVTh3lCf0sDN45c/xhIvKvGcPqKGMR+tzn6PuHfQ=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P7z0fHDbfGEdx5gKdfG0pZpXWQcvpum/YUZv+zCTXo0=
+			</data>
+		</dict>
 		<key>SDKBuildInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xKJ4EeNbGX6muI/ufv83VXKOLUI0giizsNsfSe5tbN4=
+			u2wR31CMSlZiLMYqVXRDGP9jf/cwzyf6V0g+0U+zgv8=
 			</data>
 		</dict>
 		<key>SingleLoginViewController.nib</key>
@@ -270,6 +290,15 @@
 			<key>hash2</key>
 			<data>
 			d8yRBNANBoRpgC4iFGXQ4ly9GWGMu51N8FhQJ7eJGfY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sv.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zLKg7PUYOZRqoL1zNqZLKeNDtDdWw3KjeKSyYZ5jG1E=
 			</data>
 			<key>optional</key>
 			<true/>

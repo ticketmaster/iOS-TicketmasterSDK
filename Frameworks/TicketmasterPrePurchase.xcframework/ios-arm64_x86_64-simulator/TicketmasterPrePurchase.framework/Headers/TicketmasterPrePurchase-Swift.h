@@ -364,6 +364,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
+
 @class UALPageView;
 @class UALUserAction;
 @class UALCommerceEvent;
@@ -771,6 +772,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKUIDelegate>
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 

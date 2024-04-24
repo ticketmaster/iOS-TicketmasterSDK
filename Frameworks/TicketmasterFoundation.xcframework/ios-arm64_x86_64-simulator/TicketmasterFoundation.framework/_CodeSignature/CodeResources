@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l9PWIi12pQAUhF98fCaDwyaRHtk=
+		nPQugLkDIVJaWbWOAgIiD/6dD4E=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		mCR4g6EmGuAPExQxqnNir4i3gdA=
+		Ov21Q+rcBxRmtZbyowCrElONM5o=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		mCR4g6EmGuAPExQxqnNir4i3gdA=
+		Ov21Q+rcBxRmtZbyowCrElONM5o=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -60,9 +60,13 @@
 		<data>
 		PzVvfZTl1tiT76sihL6O20UPb9U=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ucg9pita0v8d353x3NuGfxweQYU=
+		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		1lOwruDWH9hD+Rn5mTmZG8ZPCsA=
+		0qFrU1ktmVEyNmrQ05tEBS8I43c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -85,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pLQw5MT3tR8XTq/BFzNhF0VHvbnlggZyAZCMBj7ux74=
+			LoEzJ2K/JNX97HEVKgQzpUB35znWlodxk0BdfZRYPis=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -120,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pLQw5MT3tR8XTq/BFzNhF0VHvbnlggZyAZCMBj7ux74=
+			LoEzJ2K/JNX97HEVKgQzpUB35znWlodxk0BdfZRYPis=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -158,11 +162,18 @@
 			R0W9Zmz/hV0yGCRLj7WWxNjhzBqwktJYRfIaZ8YWum8=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
+			</data>
+		</dict>
 		<key>SDKBuildInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EwXaED6oZkEuiZpgqWvwsBkgKF/b2fE9yNJ0qoYoWhQ=
+			S2HX2sMo17y2NKRpFQXgqx4pNN7veUQi58LNitNQkw0=
 			</data>
 		</dict>
 	</dict>

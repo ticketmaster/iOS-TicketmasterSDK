@@ -6,11 +6,15 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		9zUMz5k/+zCfzo7oGsTxJZyM8sI=
+		nNs8j1Vxxb1KsmGXaT3d96RFGwQ=
+		</data>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<data>
+		ucg9pita0v8d353x3NuGfxweQYU=
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		TfeWdtmTPwmtcM3Feg7hy6qsAHw=
+		r/6cS6VPaVHW1lbXKep0UAtEUgI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -33,7 +37,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gUMwTm0Yk1OrJNl5kGo4k6i1TLpO0aUZ4GQTCwKOEFM=
+			FnDWlWKLngjM3v0AHZnZJ/svBiSfSKlX+acXhJE4Cxk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
@@ -68,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gUMwTm0Yk1OrJNl5kGo4k6i1TLpO0aUZ4GQTCwKOEFM=
+			FnDWlWKLngjM3v0AHZnZJ/svBiSfSKlX+acXhJE4Cxk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
@@ -110,14 +114,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n9Av46CbQ/SMrXZz82xuegtiIYPTKeuvfLukfeCEsrc=
+			u6xpTzpjXF6Sw2cy5ANqWCaX7/l9HFNtJRpBrf0dUMg=
+			</data>
+		</dict>
+		<key>Resources/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
 			</data>
 		</dict>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHXCN4AzHEvZ4omcmME3a2TxFYnyQ+QOxJ1cBtt0ogo=
+			TciIu+uO1k1aaIXxGQysioj/hPrVN1PVeVUvlrGZWjs=
 			</data>
 		</dict>
 	</dict>

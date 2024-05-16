@@ -250,7 +250,7 @@ public protocol TMPurchaseSharingDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
 }
 extension TicketmasterPurchase.TMPurchaseNavigationController {
-  @_Concurrency.MainActor(unsafe) public class func eventDetailsNavigationController(eventIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US) -> TicketmasterPurchase.TMPurchaseNavigationController
+  @_Concurrency.MainActor(unsafe) public class func eventDetailsNavigationController(eventIdentifier: Swift.String, internalTestingKeys: [Swift.String : Any] = [:], marketDomain: TicketmasterFoundation.MarketDomain = .US) -> TicketmasterPurchase.TMPurchaseNavigationController
 }
 extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Equatable {}
 extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Hashable {}

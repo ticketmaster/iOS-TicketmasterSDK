@@ -9014,6 +9014,51 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "assignFlowEnabled",
+                "printedName": "assignFlowEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV17assignFlowEnabledSbvp",
+                "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV17assignFlowEnabledSbvp",
+                "moduleName": "TicketmasterAuthentication",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV17assignFlowEnabledSbvg",
+                    "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV17assignFlowEnabledSbvg",
+                    "moduleName": "TicketmasterAuthentication",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -23646,6 +23691,93 @@
           },
           {
             "kind": "Function",
+            "name": "logoutAll",
+            "printedName": "logoutAll(fetchRule:callSource:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "TicketmasterAuthentication.TMAuthentication.FetchRule?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FetchRule",
+                    "printedName": "TicketmasterAuthentication.TMAuthentication.FetchRule",
+                    "usr": "s:26TicketmasterAuthentication16TMAuthenticationC9FetchRuleO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([TicketmasterAuthentication.TMAuthentication.BackendService]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TicketmasterAuthentication.TMAuthentication.BackendService]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterAuthentication.TMAuthentication.BackendService]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BackendService",
+                            "printedName": "TicketmasterAuthentication.TMAuthentication.BackendService",
+                            "usr": "s:26TicketmasterAuthentication16TMAuthenticationC14BackendServiceV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26TicketmasterAuthentication16TMAuthenticationC9logoutAll9fetchRule10callSource10completionyAC05FetchG0OSg_SSSgySayAC14BackendServiceVGSgctF",
+            "mangledName": "$s26TicketmasterAuthentication16TMAuthenticationC9logoutAll9fetchRule10callSource10completionyAC05FetchG0OSg_SSSgySayAC14BackendServiceVGSgctF",
+            "moduleName": "TicketmasterAuthentication",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "clearAllCachedData",
             "printedName": "clearAllCachedData(callSource:completion:)",
             "children": [
@@ -26689,21 +26821,35 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Perform.swift",
       "kind": "StringLiteral",
-      "offset": 4680,
+      "offset": 4672,
       "length": 58,
       "value": "\"Unexpected operation casting: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Perform.swift",
       "kind": "StringLiteral",
-      "offset": 4737,
+      "offset": 4729,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Perform.swift",
+      "kind": "StringLiteral",
+      "offset": 5043,
+      "length": 58,
+      "value": "\"Unexpected operation casting: \""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Perform.swift",
+      "kind": "StringLiteral",
+      "offset": 5100,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Perform.swift",
       "kind": "BooleanLiteral",
-      "offset": 8074,
+      "offset": 8437,
       "length": 4,
       "value": "true"
     },
@@ -39835,56 +39981,56 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 6749,
+      "offset": 6990,
       "length": 38,
       "value": "\"authToken_\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 6786,
+      "offset": 7027,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7201,
+      "offset": 7442,
       "length": 64,
       "value": "\"memberInfo_\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7239,
+      "offset": 7480,
       "length": 1,
       "value": "\"_\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7264,
+      "offset": 7505,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7333,
+      "offset": 7574,
       "length": 39,
       "value": "\"memberInfo_\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7371,
+      "offset": 7612,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/KeychainManager.swift",
       "kind": "StringLiteral",
-      "offset": 7548,
+      "offset": 7789,
       "length": 2,
       "value": "\"\""
     },
@@ -40409,7 +40555,7 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Delete.swift",
       "kind": "BooleanLiteral",
-      "offset": 5702,
+      "offset": 5707,
       "length": 5,
       "value": "false"
     },
@@ -42025,50 +42171,64 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7191,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7495,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 7461,
+      "offset": 7529,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8126,
+      "offset": 8194,
       "length": 4,
       "value": "\"%s\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8259,
+      "offset": 8327,
       "length": 4,
       "value": "\"%t\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8837,
+      "offset": 8905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8951,
+      "offset": 9019,
       "length": 40,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8954,
+      "offset": 9022,
       "length": 12,
       "value": "\"Powered by\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginSelectionUI\/SingleLoginViewController.swift",
       "kind": "StringLiteral",
-      "offset": 8977,
+      "offset": 9045,
       "length": 12,
       "value": "\" Ticketmaster\""
     },
@@ -42887,35 +43047,49 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
       "kind": "StringLiteral",
-      "offset": 4682,
+      "offset": 4674,
       "length": 58,
       "value": "\"Unexpected operation casting: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
       "kind": "StringLiteral",
-      "offset": 4739,
+      "offset": 4731,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
+      "kind": "StringLiteral",
+      "offset": 5044,
+      "length": 58,
+      "value": "\"Unexpected operation casting: \""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
+      "kind": "StringLiteral",
+      "offset": 5101,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
       "kind": "Array",
-      "offset": 5280,
+      "offset": 5642,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
       "kind": "Array",
-      "offset": 5688,
+      "offset": 6050,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+Cancel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6494,
+      "offset": 6856,
       "length": 5,
       "value": "false"
     },
@@ -49432,203 +49606,217 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1144,
+      "offset": 1167,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 2214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 937,
+      "offset": 960,
       "length": 24,
       "value": "\"TicketmasterAuthentication.CustomConfigureOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 2678,
+      "offset": 2701,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 3544,
+      "offset": 3567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 2466,
+      "offset": 2489,
       "length": 29,
       "value": "\"TicketmasterAuthentication.CustomConfigureArrayOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 3967,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 4706,
+      "offset": 4729,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 3737,
+      "offset": 3760,
       "length": 24,
       "value": "\"TicketmasterAuthentication.SingleConfigureOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 5103,
+      "offset": 5126,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 5490,
+      "offset": 5513,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 4891,
+      "offset": 4914,
       "length": 29,
       "value": "\"TicketmasterAuthentication.RemoveConfigurationsOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 6191,
+      "offset": 6214,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 5604,
       "length": 22,
       "value": "\"TicketmasterAuthentication.ClearAllCacheOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 6518,
+      "offset": 6541,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 7186,
+      "offset": 7209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 6314,
+      "offset": 6337,
       "length": 21,
       "value": "\"TicketmasterAuthentication.ApigeeConfigOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 8744,
+      "offset": 8767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 7385,
+      "offset": 7408,
       "length": 14,
       "value": "\"TicketmasterAuthentication.LoginOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 10389,
+      "offset": 10412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 9032,
+      "offset": 9055,
       "length": 16,
       "value": "\"TicketmasterAuthentication.RefreshOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 11809,
+      "offset": 11832,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 10685,
+      "offset": 10708,
       "length": 19,
       "value": "\"TicketmasterAuthentication.MemberInfoOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 13181,
+      "offset": 13204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 12013,
+      "offset": 12036,
       "length": 12,
       "value": "\"TicketmasterAuthentication.MFAOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 14236,
+      "offset": 14259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13418,
+      "offset": 13441,
       "length": 15,
       "value": "\"TicketmasterAuthentication.LogoutOperation\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 15521,
+      "offset": 15090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14362,
+      "offset": 14385,
+      "length": 18,
+      "value": "\"TicketmasterAuthentication.LogoutAllOperation\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16340,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/OperationQueue\/TMAuthOpQueue+AuthOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 15181,
       "length": 22,
       "value": "\"TicketmasterAuthentication.DeleteAccountOperation\""
     },
@@ -50657,105 +50845,126 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6977,
+      "offset": 7074,
       "length": 6,
       "value": "\".sdk\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 6991,
+      "offset": 7088,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9046,
+      "offset": 9143,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9169,
+      "offset": 9266,
       "length": 61,
       "value": "\"https:\/\/mobileentry.ticketmaster.com\/?client_id=\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9229,
+      "offset": 9326,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
+      "kind": "Array",
+      "offset": 6050,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "BooleanLiteral",
-      "offset": 4406,
+      "offset": 7559,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 6454,
+      "offset": 9607,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "Array",
-      "offset": 6553,
+      "offset": 9706,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 6788,
+      "offset": 9941,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 7248,
+      "offset": 10554,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 7673,
+      "offset": 10979,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "BooleanLiteral",
-      "offset": 9279,
+      "offset": 11945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "BooleanLiteral",
-      "offset": 9497,
+      "offset": 12620,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12838,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "Array",
-      "offset": 10430,
+      "offset": 13797,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+Logout.swift",
       "kind": "IntegerLiteral",
-      "offset": 11928,
+      "offset": 15295,
       "length": 1,
       "value": "0"
     },
@@ -51808,6 +52017,13 @@
       "offset": 3251,
       "length": 31,
       "value": "\"allowTeamToHostSystemExchange\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
+      "kind": "StringLiteral",
+      "offset": 3346,
+      "length": 19,
+      "value": "\"assignFlowEnabled\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/JWT\/JWTDecodeError.swift",

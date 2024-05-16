@@ -5331,7 +5331,7 @@
           {
             "kind": "Function",
             "name": "classificationDetails",
-            "printedName": "classificationDetails(_:completion:)",
+            "printedName": "classificationDetails(_:locale:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5343,6 +5343,21 @@
                 "name": "DiscoveryIdentifier",
                 "printedName": "TicketmasterDiscoveryAPI.DiscoveryIdentifier",
                 "usr": "s:24TicketmasterDiscoveryAPI0B10IdentifierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -5372,8 +5387,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -13119,6 +13134,66 @@
                 "declKind": "Accessor",
                 "usr": "s:24TicketmasterDiscoveryAPI0B18ClassificationItemV4nameSSvg",
                 "mangledName": "$s24TicketmasterDiscoveryAPI0B18ClassificationItemV4nameSSvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale",
+            "printedName": "locale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI0B18ClassificationItemV6localeSSSgvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B18ClassificationItemV6localeSSSgvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B18ClassificationItemV6localeSSSgvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B18ClassificationItemV6localeSSSgvg",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "implicit": true,
                 "accessorKind": "get"
@@ -24661,30 +24736,37 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationDetails.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
+      "offset": 2030,
       "length": 8,
       "value": "\"errors\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationDetails.swift",
       "kind": "StringLiteral",
-      "offset": 3054,
+      "offset": 3155,
       "length": 32,
       "value": "\"\/discovery\/v2\/classifications\/\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationDetails.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3212,
       "length": 7,
       "value": "\".json\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationDetails.swift",
       "kind": "Dictionary",
-      "offset": 3253,
+      "offset": 3369,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationDetails.swift",
+      "kind": "StringLiteral",
+      "offset": 3434,
+      "length": 8,
+      "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPriceRange.swift",
@@ -25060,154 +25142,182 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 3879,
+      "offset": 3753,
+      "length": 18,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 3765,
+      "length": 1,
+      "value": "\",en,*\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
       "length": 8,
       "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4023,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 4054,
-      "length": 9,
-      "value": "\"keyword\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4116,
-      "length": 3,
-      "value": "\"+\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4269,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4300,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4370,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4506,
-      "length": 8,
-      "value": "\"source\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4643,
-      "length": 8,
-      "value": "\"source\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4731,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4763,
-      "length": 6,
-      "value": "\"size\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4773,
-      "length": 22,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4794,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4849,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4880,
-      "length": 6,
-      "value": "\"page\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
-      "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 3901,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 4914,
+      "offset": 3920,
+      "length": 1,
+      "value": "\",en,*\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4043,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4074,
+      "length": 9,
+      "value": "\"keyword\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4136,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4289,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4320,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4390,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4526,
+      "length": 8,
+      "value": "\"source\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 8,
+      "value": "\"source\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4751,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4783,
+      "length": 6,
+      "value": "\"size\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4793,
+      "length": 22,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4814,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4869,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4900,
+      "length": 6,
+      "value": "\"page\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4910,
+      "length": 25,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
+      "kind": "StringLiteral",
+      "offset": 4934,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 5034,
+      "offset": 5054,
       "length": 6,
       "value": "\"sort\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 5141,
+      "offset": 5161,
       "length": 6,
       "value": "\"sort\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 5151,
+      "offset": 5171,
       "length": 10,
       "value": "\"name,asc\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 5219,
+      "offset": 5239,
       "length": 6,
       "value": "\"sort\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+ClassificationSearch.swift",
       "kind": "StringLiteral",
-      "offset": 5229,
+      "offset": 5249,
       "length": 11,
       "value": "\"name,desc\""
     },
@@ -25648,30 +25758,37 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
       "kind": "StringLiteral",
-      "offset": 4653,
+      "offset": 4679,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
       "kind": "StringLiteral",
-      "offset": 4692,
+      "offset": 4718,
       "length": 65,
       "value": "\"[DiscoveryClassificationItem] Error parsing JSON (missing 'id')\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
       "kind": "StringLiteral",
-      "offset": 4944,
+      "offset": 4970,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
       "kind": "StringLiteral",
-      "offset": 4985,
+      "offset": 5011,
       "length": 67,
       "value": "\"[DiscoveryClassificationItem] Error parsing JSON (missing 'name')\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
+      "kind": "StringLiteral",
+      "offset": 5383,
+      "length": 8,
+      "value": "\"locale\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/DiscoveryService+AttractionImages.swift",

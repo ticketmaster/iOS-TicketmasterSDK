@@ -128,7 +128,7 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func venueSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryVenueResponse) -> Swift.Void) -> Foundation.URLSessionTask?
 }
 extension TicketmasterDiscoveryAPI.DiscoveryService {
-  public func classificationDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> Swift.Void)
+  public func classificationDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, locale: Swift.String? = nil, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> Swift.Void)
 }
 public struct DiscoveryPriceRange : TicketmasterFoundation.InitJSONThrowable {
   public let type: Swift.String?
@@ -285,6 +285,7 @@ public struct DiscoveryClassification : TicketmasterFoundation.InitJSONThrowable
 public struct DiscoveryClassificationItem : TicketmasterFoundation.InitJSONThrowable {
   public let classificationIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
   public let name: Swift.String
+  public let locale: Swift.String?
   public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
 }
 public struct DiscoveryIdentifier : Swift.RawRepresentable, Swift.Hashable, Swift.Equatable, Swift.Codable {

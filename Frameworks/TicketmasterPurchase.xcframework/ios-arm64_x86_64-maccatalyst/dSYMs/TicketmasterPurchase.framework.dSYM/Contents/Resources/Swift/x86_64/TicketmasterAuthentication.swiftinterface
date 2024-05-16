@@ -497,6 +497,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let logoURL: Foundation.URL?
     public let tmxWillCreateExternalGuestUser: Swift.Bool
     public let allowTeamToHostSystemExchange: Swift.Bool
+    public let assignFlowEnabled: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.Base, b: TicketmasterAuthentication.TMApigeeConfig.Base) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
@@ -649,6 +650,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func logout(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
+  final public func logoutAll(fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, completion: @escaping (_ backends: [TicketmasterAuthentication.TMAuthentication.BackendService]?) -> Swift.Void)
   final public func clearAllCachedData(callSource: Swift.String? = nil, completion: @escaping () -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {

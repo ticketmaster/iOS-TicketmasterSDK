@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Apr 22 11:43:09 PDT 2024</string>
+	<string>Mon May  6 15:52:23 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-11518 Updated privacy manifest</string>
+	<string>Added Spurs OpenID</string>
 	<key>GITDate</key>
-	<string>Mon Apr 22 11:28:47 2024 -0700</string>
+	<string>Thu May 2 13:40:11 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>af2b0b9d3064666a15422bda8b3f01c6263267b9</string>
+	<string>e7c92998fb210d8524f4fa2ec38b65203947ca26</string>
 	<key>MarketingVersion</key>
-	<string>3.5.10</string>
+	<string>3.5.11</string>
 </dict>
 </plist>

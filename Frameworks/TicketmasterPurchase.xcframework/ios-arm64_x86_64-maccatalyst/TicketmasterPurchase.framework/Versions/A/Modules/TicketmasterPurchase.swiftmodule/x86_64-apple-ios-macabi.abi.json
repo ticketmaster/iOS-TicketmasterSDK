@@ -10887,7 +10887,7 @@
           {
             "kind": "Function",
             "name": "eventDetailsNavigationController",
-            "printedName": "eventDetailsNavigationController(eventIdentifier:marketDomain:)",
+            "printedName": "eventDetailsNavigationController(eventIdentifier:internalTestingKeys:marketDomain:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10903,6 +10903,26 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "MarketDomain",
                 "printedName": "TicketmasterFoundation.MarketDomain",
                 "hasDefaultArg": true,
@@ -10910,8 +10930,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC012eventDetailsdE00F10Identifier12marketDomainACSS_0A10Foundation06MarketJ0OtFZ",
-            "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC012eventDetailsdE00F10Identifier12marketDomainACSS_0A10Foundation06MarketJ0OtFZ",
+            "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC012eventDetailsdE00F10Identifier19internalTestingKeys12marketDomainACSS_SDySSypG0A10Foundation06MarketM0OtFZ",
+            "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC012eventDetailsdE00F10Identifier19internalTestingKeys12marketDomainACSS_SDySSypG0A10Foundation06MarketM0OtFZ",
             "moduleName": "TicketmasterPurchase",
             "static": true,
             "declAttributes": [
@@ -13237,85 +13257,92 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 711,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 845,
       "length": 7,
       "value": "\"0.0.0\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 4240,
+      "offset": 4275,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 4499,
+      "offset": 4534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6209,
+      "offset": 6244,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6219,
+      "offset": 6254,
       "length": 3,
       "value": "156"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6223,
+      "offset": 6258,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6234,
+      "offset": 6269,
       "length": 3,
       "value": "222"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6238,
+      "offset": 6273,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6250,
+      "offset": 6285,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 6481,
+      "offset": 6516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7163,
+      "offset": 7198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7605,
+      "offset": 7640,
       "length": 4,
       "value": "true"
     },
@@ -13469,49 +13496,49 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5600,
+      "offset": 5403,
       "length": 18,
       "value": "\"getConsentString\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6279,
+      "offset": 6288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6372,
+      "offset": 6520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6590,
+      "offset": 6738,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6648,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6796,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7395,
+      "offset": 7543,
       "length": 5,
       "value": "false"
     },
@@ -14974,128 +15001,107 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18844,
+      "offset": 18945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19254,
+      "offset": 19355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19396,
+      "offset": 19497,
       "length": 133,
       "value": "\"Sorry this event is not available via the Ticketmaster app. You may view it in your mobile web browser by tapping 'continue' below.\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19610,
+      "offset": 19711,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19707,
+      "offset": 19808,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 19786,
+      "offset": 19887,
       "length": 10,
       "value": "\"Continue\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20115,
+      "offset": 20216,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20196,
+      "offset": 20297,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21080,
+      "offset": 21181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "Array",
-      "offset": 21173,
+      "offset": 21274,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21270,
+      "offset": 21371,
       "length": 11,
       "value": "\"f_appview\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21290,
+      "offset": 21391,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21302,
+      "offset": 21403,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21375,
+      "offset": 21476,
       "length": 11,
       "value": "\"f_appview\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 21395,
+      "offset": 21496,
       "length": 6,
       "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21486,
-      "length": 7,
-      "value": "\"f_app\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 21502,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21514,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
@@ -15113,87 +15119,87 @@
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21615,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 21688,
+      "length": 7,
+      "value": "\"f_app\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 21704,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "Dictionary",
-      "offset": 22380,
+      "offset": 22481,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22522,
+      "offset": 22623,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22859,
+      "offset": 22960,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22936,
+      "offset": 23037,
       "length": 11,
       "value": "\"f_appview\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 22956,
+      "offset": 23057,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22968,
+      "offset": 23069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23046,
+      "offset": 23147,
       "length": 11,
       "value": "\"f_appview\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 23066,
+      "offset": 23167,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 23530,
+      "offset": 23631,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 23603,
-      "length": 9,
-      "value": "\"appview\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 23621,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 23630,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
@@ -15212,140 +15218,161 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24085,
+      "offset": 23731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25155,
+      "offset": 23805,
+      "length": 9,
+      "value": "\"appview\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 23823,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 24186,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 25256,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25310,
+      "offset": 25411,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25658,
+      "offset": 25759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25839,
+      "offset": 25940,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25897,
+      "offset": 25998,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 25951,
+      "offset": 26052,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26013,
+      "offset": 26114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26115,
+      "offset": 26216,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26168,
+      "offset": 26269,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 26474,
+      "offset": 26575,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26777,
+      "offset": 26878,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26998,
+      "offset": 27099,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27093,
+      "offset": 27194,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27712,
+      "offset": 27813,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27949,
+      "offset": 28050,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28448,
+      "offset": 28549,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28535,
+      "offset": 28636,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 29120,
+      "offset": 29221,
       "length": 68,
       "value": "\"Warning: TMPurchaseNavigationController.navigationDelegate not set\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29706,
+      "offset": 29807,
       "length": 4,
       "value": "true"
     },
@@ -17634,98 +17661,98 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7226,
+      "offset": 7432,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7353,
+      "offset": 7700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8069,
+      "offset": 8416,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8259,
+      "offset": 8606,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8274,
+      "offset": 8621,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8424,
+      "offset": 8771,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8439,
+      "offset": 8786,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8595,
+      "offset": 8942,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8610,
+      "offset": 8957,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8789,
+      "offset": 9136,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8804,
+      "offset": 9151,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9062,
+      "offset": 9409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9123,
+      "offset": 9470,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9209,
+      "offset": 9556,
       "length": 4,
       "value": "true"
     },
@@ -18796,28 +18823,42 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10092,
+      "offset": 10159,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10412,
+      "offset": 10479,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10589,
+      "offset": 10656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10749,
+      "offset": 10816,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11143,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11218,
       "length": 4,
       "value": "true"
     },
@@ -18834,6 +18875,13 @@
       "offset": 709,
       "length": 30,
       "value": "\"TicketmasterPurchase.TMPurchaseNavigationController\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
+      "kind": "Dictionary",
+      "offset": 12486,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/UIBarButtonItem+EDPHeader.swift",

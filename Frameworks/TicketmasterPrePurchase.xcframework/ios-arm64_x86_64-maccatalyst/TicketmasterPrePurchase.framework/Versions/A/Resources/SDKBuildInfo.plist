@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Apr 24 12:53:54 PDT 2024</string>
+	<string>Thu May 16 11:07:14 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/2.1.7</string>
+	<string>release/3.0.0</string>
 	<key>GITComment</key>
-	<string>Updated Privacy Info, Auth 3.5.10, TMFoundation 1.3.1</string>
+	<string>Merge branch cherry-pick-ba90f5fc into release/3.0.0</string>
 	<key>GITDate</key>
-	<string>Wed Apr 24 12:46:13 2024 -0700</string>
+	<string>Tue May 14 20:15:28 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>d73eff8c3b168b4464240d5b772f49e916ae855c</string>
+	<string>c2d45be15c976c70a8cd32d3e2e10cb321f70377</string>
 	<key>MarketingVersion</key>
-	<string>2.1.7</string>
+	<string>3.0.0</string>
 </dict>
 </plist>

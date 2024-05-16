@@ -1037,6 +1037,12 @@ extension Swift.String {
   public static let outputPrefix: Swift.String
   @objc deinit
 }
+extension WebKit.WKWebView {
+  @_Concurrency.MainActor(unsafe) public var safeIsInspectable: Swift.Bool {
+    get
+    set
+  }
+}
 extension UIKit.UIAlertController {
   @_Concurrency.MainActor(unsafe) public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", completion: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", completion: @escaping () -> Swift.Void) -> UIKit.UIAlertController

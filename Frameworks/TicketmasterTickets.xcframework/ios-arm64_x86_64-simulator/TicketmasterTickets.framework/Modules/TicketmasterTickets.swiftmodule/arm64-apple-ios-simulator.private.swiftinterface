@@ -34,12 +34,9 @@ public protocol TMTicketsOrderDelegate : AnyObject {
   func didUpdateTickets(event: TicketmasterTickets.TMPurchasedEvent, fromCache: Swift.Bool)
   func didClearEventsTicketsCache(backend: TicketmasterAuthentication.TMAuthentication.BackendService)
 }
-#Preview()
 extension TicketmasterTickets.TMTickets {
   final public func configure(callSource: Swift.String? = nil, success: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
-#Preview()
-#Preview()
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TMTicketsModuleHeaderView : UIKit.UIView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var colorView: UIKit.UIView!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var imageView: UIKit.UIImageView!
@@ -69,7 +66,6 @@ extension TicketmasterTickets.TMTicketsModuleHeaderView {
     @objc deinit
   }
 }
-#Preview()
 extension Swift.FixedWidthInteger {
   @inlinable internal func bytes(totalBytes: Swift.Int = MemoryLayout<Self>.size) -> Swift.Array<Swift.UInt8> {
     arrayOfBytes(value: self.littleEndian, length: totalBytes)
@@ -104,15 +100,11 @@ extension TicketmasterTickets.TMTickets {
     set
   }
 }
-#Preview()
 extension SwiftUI.Font {
   public static func tmFontRegular(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
   public static func tmFontBold(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
   public static func tmFontSemibold(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
 }
-#Preview()
-#Preview()
-#Preview()
 public struct TMTicketsPrebuiltModule {
   public enum ModuleName : Swift.String, Swift.CaseIterable {
     case venueDirectionsViaAppleMaps
@@ -432,7 +424,6 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
     data += Array<UInt8>(repeating: 0, count: blockSize + max - 1 - (msgLength % blockSize))
   }
 }
-#Preview()
 extension TicketmasterTickets.TMTickets {
   final public var navBarButtonTitle: Swift.String? {
     get
@@ -630,7 +621,6 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-#Preview()
 extension Swift.String : Swift.Error {
 }
 extension TicketmasterTickets.TMTickets {
@@ -671,7 +661,6 @@ extension TicketmasterTickets.TMTickets {
     public init(from decoder: any Swift.Decoder) throws
   }
 }
-#Preview()
 extension TicketmasterTickets.TMTickets {
   public struct TicketsError {
     public static let domain: Swift.String
@@ -745,7 +734,6 @@ extension Swift.Collection {
 extension TicketmasterTickets.TMTicketsModule {
   public static func moduleArray(jsonDict: [Swift.String : Any]) -> [TicketmasterTickets.TMTicketsModule]?
 }
-#Preview()
 extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swift.Int {
   @inlinable internal func toUInt32Array() -> Swift.Array<Swift.UInt32> {
     guard !isEmpty else {
@@ -784,8 +772,6 @@ extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swif
 }
 @usableFromInline
 internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swift.Int
-#Preview()
-#Preview()
 public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
   public let info: TicketmasterTickets.TMPurchasedEventInfo
   public let orders: [TicketmasterTickets.TMPurchasedOrder]?
@@ -801,9 +787,6 @@ public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
 extension TicketmasterTickets.TMTickets {
   final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil, callSource: Swift.String? = nil)
 }
-#Preview()
-#Preview()
-#Preview()
 public protocol TMTicketsAnalyticsDelegate : AnyObject {
   func userDidView(page: TicketmasterTickets.TMTickets.Analytics.Page, metadata: TicketmasterTickets.TMTickets.Analytics.MetadataType)
   func userDidPerform(action: TicketmasterTickets.TMTickets.Analytics.Action, metadata: TicketmasterTickets.TMTickets.Analytics.MetadataType)
@@ -949,9 +932,6 @@ extension Swift.UInt64 {
     self = val0 | val1 | val2 | val3 | val4 | val5 | val6 | val7
   }
 }
-#Preview()
-#Preview()
-#Preview()
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class TMTickets : ObjectiveC.NSObject {
   public static let shared: TicketmasterTickets.TMTickets
   final public var version: Swift.String {
@@ -965,7 +945,6 @@ extension Swift.UInt64 {
   weak final public var analyticsDelegate: (any TicketmasterTickets.TMTicketsAnalyticsDelegate)?
   @objc deinit
 }
-#Preview()
 @objc public class TMTicketsModule : ObjectiveC.NSObject, Swift.Comparable {
   final public let identifier: Swift.String
   final public let headerDisplay: TicketmasterTickets.TMTicketsModule.HeaderDisplay?

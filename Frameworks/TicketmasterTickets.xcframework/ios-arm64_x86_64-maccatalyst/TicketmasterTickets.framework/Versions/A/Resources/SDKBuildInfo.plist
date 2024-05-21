@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Apr 24 10:42:01 PDT 2024</string>
+	<string>Tue May 21 12:02:37 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.5.3</string>
+	<string>release/3.6.0</string>
 	<key>GITComment</key>
-	<string>Added Ticketmaster quick switching config</string>
+	<string>Merge branch rogelio.velazquez-PSDK-11791-archtics-transfer into Fix-PSDK-11791-archtics-transfer</string>
 	<key>GITDate</key>
-	<string>Mon Apr 22 12:28:53 2024 -0700</string>
+	<string>Tue May 21 12:05:03 2024 -0600</string>
 	<key>GITRevision</key>
-	<string>c9534ccff3254fc8636697ce76cb723658e7eca2</string>
+	<string>0c08809df35b04bf1fd9bf2b3f568a4c9da9a05d</string>
 	<key>MarketingVersion</key>
-	<string>3.5.3</string>
+	<string>3.5.990</string>
 </dict>
 </plist>

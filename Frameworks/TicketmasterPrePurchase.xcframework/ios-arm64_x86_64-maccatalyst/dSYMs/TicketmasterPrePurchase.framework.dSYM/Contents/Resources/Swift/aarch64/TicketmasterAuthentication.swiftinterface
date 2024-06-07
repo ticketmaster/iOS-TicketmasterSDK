@@ -498,6 +498,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let tmxWillCreateExternalGuestUser: Swift.Bool
     public let allowTeamToHostSystemExchange: Swift.Bool
     public let assignFlowEnabled: Swift.Bool
+    public let useICCPFetchTickets: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.Base, b: TicketmasterAuthentication.TMApigeeConfig.Base) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws

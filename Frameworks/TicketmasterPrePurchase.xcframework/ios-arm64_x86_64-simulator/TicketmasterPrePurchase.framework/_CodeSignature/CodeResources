@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		dNJlUI8+Now0mQN0AnLFsr/p8kw=
+		BA1jJw8RdUtybSr5qr0ST45VWJA=
 		</data>
 		<key>Headers/TicketmasterPrePurchase-Swift.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vEyeYX/ajbQCtT6A7h3mYHZuPRM=
+		Dwj/k1U1hDKnTw+N3nmob6LDsFI=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ciErFas/YEYCo4EgcJwYEBBBVH4=
+		8horxj4L/d44Z3JlI8UgV36fiJ4=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ciErFas/YEYCo4EgcJwYEBBBVH4=
+		8horxj4L/d44Z3JlI8UgV36fiJ4=
 		</data>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		k4EKRCwTRxfDJxSPUZJQ49Yb3lY=
+		FliB6Jqg0Ax57WsWNF9jcYRtg5M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FpWZj2Vjh/4CsLMv8oz8gKQtlsohxX0Q0qRm2E087+U=
+			Zj7LcpeiOK5M7CIWA49NY/nE73SsbE/oRZGuVILdIzE=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterPrePurchase-Swift.h</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			llahHGjY9QZE5NQ3CAisI1DHcYU7EOWNXXQBVwfDfKA=
+			wHBIn7NL98drwtSw7YUG9VUqrr/MmmmNrJgeOzvPO4w=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			llahHGjY9QZE5NQ3CAisI1DHcYU7EOWNXXQBVwfDfKA=
+			wHBIn7NL98drwtSw7YUG9VUqrr/MmmmNrJgeOzvPO4w=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterPrePurchase.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -184,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h5zwFt6tRzeqCKBZYhwUXQYHkursfzZzm72pcYWdmNw=
+			FLDLngWsoPvYEvX2RrMtFjiB7BAvYygfN1d1lt5ql2o=
 			</data>
 		</dict>
 	</dict>

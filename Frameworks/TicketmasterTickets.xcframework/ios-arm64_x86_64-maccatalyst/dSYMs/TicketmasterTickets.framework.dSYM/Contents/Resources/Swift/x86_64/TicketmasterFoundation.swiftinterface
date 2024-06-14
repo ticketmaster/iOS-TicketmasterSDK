@@ -5,6 +5,7 @@
 import CommonCrypto
 import CoreLocation
 import Foundation
+import OSLog
 import Security
 import Swift
 @_exported import TicketmasterFoundation
@@ -711,6 +712,8 @@ extension UIKit.UIColor {
 }
 @discardableResult
 public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel = .debug) -> Swift.Bool
+@discardableResult
+public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel = .debug, logger: os.Logger) -> Swift.Bool
 @objc @_inheritsConvenienceInitializers final public class MessageLogger : ObjectiveC.NSObject {
   public static var currentLogLevel: TicketmasterFoundation.LogLevel
   public static var maximumMessageLength: Swift.Int

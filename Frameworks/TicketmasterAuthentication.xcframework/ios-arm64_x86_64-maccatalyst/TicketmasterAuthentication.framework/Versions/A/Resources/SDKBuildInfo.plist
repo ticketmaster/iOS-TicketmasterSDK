@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue May 28 14:06:04 PDT 2024</string>
+	<string>Mon Jun 24 17:06:31 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-12003 Added useICCPFetchTickets</string>
+	<string>Merge branch jbacker-PSDK-12329-VenueSuppressionParsing into master</string>
 	<key>GITDate</key>
-	<string>Tue May 28 13:53:06 2024 -0700</string>
+	<string>Mon Jun 24 23:59:17 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>dba8aacf2fa8b61fd3fb9221f7cdfd2e49059cb1</string>
+	<string>d325af1b32dbfacfb89935280cf2183f9848383e</string>
 	<key>MarketingVersion</key>
-	<string>3.6.0</string>
+	<string>3.7.3</string>
 </dict>
 </plist>

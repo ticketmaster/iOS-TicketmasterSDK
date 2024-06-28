@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pUClDzP0B6zi/3DhDE+7Z5r8/aI=
+		y/4C5PSlYE6pRWKUSQgGfXKemKA=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		pqzfaF/QR+4LptqGpABuYfUG4FA=
+		cQnTJyNc+wJeM8A+eGcZQUVY3gw=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		MLIGcqOg9AozK7BePyPZlayuKUU=
+		Zamo3Dbgh6FjvmKf/RYOR2Llx3k=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MLIGcqOg9AozK7BePyPZlayuKUU=
+		Zamo3Dbgh6FjvmKf/RYOR2Llx3k=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		oICxoNODHW2pS5qu7s9YOV1lkV4=
+		jXovZL0++TKYNgmsa3KzdUAqfrA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		vCjM8wn7sWrI3miXnpQN9jM2KDc=
+		V8fYHWN1QfzDwWb/pVP9wydBTv0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yZali3xwE7oHse2TSMj0qhtAHA1Y2lj/MCS07uv/+I4=
+			69Vr4vz9cG0zdMC70UnKzIt5JriLqz3qpl5naV3VBLg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ppjkE0kCFwYVJ3Id1esqnog/bOOqi4M/qhnlvQdPOI=
+			/IXPGEvrWpNyX5Tr+Z52z/CBKwnXgGMbubDHsUESIF8=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ppjkE0kCFwYVJ3Id1esqnog/bOOqi4M/qhnlvQdPOI=
+			/IXPGEvrWpNyX5Tr+Z52z/CBKwnXgGMbubDHsUESIF8=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KShvCEfyxTMGx6HHK/RAhRiZPt9e/NVEVIrxgqNQruM=
+			7hUtSy8IWl/qxMTgsc6zPBY+OX72MZPkFq40EnbbGWw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BDyaFlDb7JnCaMWG8Paa42/V3Tclw4QxLl/bnoiBVHM=
+			TkA6FcIq80w0wcY8wA8XjABFS50k6zyr/qj1sTkxScY=
 			</data>
 		</dict>
 	</dict>

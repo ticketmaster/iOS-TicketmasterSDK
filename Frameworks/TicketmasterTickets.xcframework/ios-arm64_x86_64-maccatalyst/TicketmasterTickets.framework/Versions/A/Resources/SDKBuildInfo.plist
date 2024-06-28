@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jun 14 13:24:36 PDT 2024</string>
+	<string>Fri Jun 28 16:15:56 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.6.1</string>
+	<string>release/3.6.2</string>
 	<key>GITComment</key>
-	<string>Updated version to 3.6.1</string>
+	<string>PSDK-11561 Updated KS App to build 2</string>
 	<key>GITDate</key>
-	<string>Fri Jun 14 13:10:22 2024 -0700</string>
+	<string>Fri Jun 28 15:54:19 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>6c63c65aacde4674379f987ed81a880afdd73f1f</string>
+	<string>d9fdf94f56e304f1b09de29ff80bf6427eee7144</string>
 	<key>MarketingVersion</key>
-	<string>3.6.1</string>
+	<string>3.6.2</string>
 </dict>
 </plist>

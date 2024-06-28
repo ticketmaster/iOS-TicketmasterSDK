@@ -878,6 +878,7 @@ extension Foundation.Locale {
   public var testSession: Foundation.URLSession
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
+  public func reset()
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
   @objc deinit
 }
@@ -1892,11 +1893,13 @@ extension Foundation.TimeZone {
   }
   public var cannedResultArrayIterator: Swift.Int
   public static let cannedResultArrayEndError: Foundation.NSError
+  public var clearCannedDataUponCompletion: Swift.Bool
   public var requestValidator: TicketmasterFoundation.FakeDataSession.URLRequestValidator?
   public var testSession: Foundation.URLSession
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
   public static func cannedHTTPResponse(code: Swift.Int) -> Foundation.HTTPURLResponse?
+  public func reset()
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
   @objc deinit
 }

@@ -25612,6 +25612,26 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22TicketmasterFoundation24FakePaginatedDataSessionC5resetyyF",
+            "mangledName": "$s22TicketmasterFoundation24FakePaginatedDataSessionC5resetyyF",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(configuration:delegate:)",
@@ -57948,6 +57968,92 @@
           },
           {
             "kind": "Var",
+            "name": "clearCannedDataUponCompletion",
+            "printedName": "clearCannedDataUponCompletion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvp",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvp",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvg",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvg",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvs",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvs",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvM",
+                "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC011clearCannedD14UponCompletionSbvM",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "requestValidator",
             "printedName": "requestValidator",
             "children": [
@@ -58302,6 +58408,26 @@
             "static": true,
             "declAttributes": [
               "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22TicketmasterFoundation15FakeDataSessionC5resetyyF",
+            "mangledName": "$s22TicketmasterFoundation15FakeDataSessionC5resetyyF",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -90487,6 +90613,13 @@
       "value": "200"
     },
     {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakePaginatedDataSession.swift",
+      "kind": "FloatLiteral",
+      "offset": 3372,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "StringLiteral",
       "offset": 1684,
@@ -98427,93 +98560,114 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 712,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1372,
+      "offset": 1324,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 1497,
+      "offset": 1577,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 1565,
+      "offset": 1645,
       "length": 17,
       "value": "\"FakeDataSession\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 1590,
+      "offset": 1670,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1712,
       "length": 34,
       "value": "\"Reached end of cannedResultArray\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1807,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 2937,
+      "offset": 3080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 2985,
+      "offset": 3128,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3244,
+      "offset": 3419,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3463,
+      "offset": 3638,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 3891,
+      "offset": 4524,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 5138,
+      "offset": 6330,
       "length": 30,
       "value": "\"https:\/\/www.mickettaster.com\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
-      "offset": 5265,
+      "offset": 6457,
       "length": 5,
       "value": "\"1.1\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "FloatLiteral",
+      "offset": 6568,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6733,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Security\/String+SecurityEncoding.swift",

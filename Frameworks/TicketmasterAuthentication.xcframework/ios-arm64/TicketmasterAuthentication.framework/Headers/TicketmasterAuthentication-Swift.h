@@ -301,11 +301,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
 /// <code>TMAuthentication</code> provides login UI, oauth tokens, member info, and MFA support.
 SWIFT_CLASS("_TtC26TicketmasterAuthentication16TMAuthentication")
 @interface TMAuthentication : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 

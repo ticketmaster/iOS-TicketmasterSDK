@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Jul  2 11:49:32 PDT 2024</string>
+	<string>Thu Jul 11 10:01:07 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.6.3</string>
+	<string>release/3.6.4</string>
 	<key>GITComment</key>
-	<string>[Fix]PSDK-10904: Fix issue with custom fonts</string>
+	<string>PSDK-1234 Updated version to 3.6.4</string>
 	<key>GITDate</key>
-	<string>Tue Jul 2 11:10:14 2024 -0700</string>
+	<string>Thu Jul 11 09:36:40 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>ada13d2a2ae16a7f04e08aa4d0ce5b711b69c1e3</string>
+	<string>226c6987a09bb57f2ac835fc61c4d80c5e2fa20d</string>
 	<key>MarketingVersion</key>
-	<string>3.6.3</string>
+	<string>3.6.4</string>
 </dict>
 </plist>

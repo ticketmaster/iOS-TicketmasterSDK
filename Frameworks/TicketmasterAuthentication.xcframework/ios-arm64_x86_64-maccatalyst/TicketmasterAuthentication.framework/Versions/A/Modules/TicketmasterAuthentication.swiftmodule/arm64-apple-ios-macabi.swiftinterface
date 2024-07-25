@@ -169,12 +169,29 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static func backend(notification: Foundation.Notification) -> TicketmasterAuthentication.TMAuthentication.BackendService?
   }
 }
-public struct AppAttestAssertion {
+public protocol TMEncodableAssertion {
+  func base64URLEncodedString() -> Swift.String?
+}
+public protocol TMAssertion : Swift.Decodable, Swift.Encodable, Swift.Hashable, TicketmasterAuthentication.TMEncodableAssertion {
+  var format: Swift.UInt8 { get set }
+  var authenticatorData: Foundation.Data? { get set }
+  var clientDataJSONHash: Foundation.Data? { get set }
+  var signature: Foundation.Data { get set }
+  init(format: Swift.UInt8, signature: Foundation.Data)
+  init(format: Swift.UInt8, authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
+}
+extension TicketmasterAuthentication.TMAssertion {
+  public init(format: Swift.UInt8, signature: Foundation.Data)
+  public init(format: Swift.UInt8, authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
+}
+extension TicketmasterAuthentication.TMAssertion {
+  public func base64URLEncodedString() -> Swift.String?
+}
+public struct AppAttestAssertion : TicketmasterAuthentication.TMAssertion {
   public var format: Swift.UInt8
   public var authenticatorData: Foundation.Data?
   public var clientDataJSONHash: Foundation.Data?
   public var signature: Foundation.Data
-  public func base64URLEncodedString() -> Swift.String?
   public static func == (a: TicketmasterAuthentication.AppAttestAssertion, b: TicketmasterAuthentication.AppAttestAssertion) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -227,6 +244,7 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static let unableToGenerateAttestationKeyId: Foundation.NSError
     public static let unableToDecodeAssertion: Foundation.NSError
     public static let deviceLimitReached: Foundation.NSError
+    public static let appNotAuthorized: Foundation.NSError
     public static let assertionDataInvalid: Foundation.NSError
   }
 }
@@ -718,7 +736,6 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let identifier: Swift.String
     public let appName: Swift.String?
     public let appURL: Foundation.URL?
-    public let learnMoreURLs: [Swift.String : Foundation.URL]?
     public let venueDiscoveryIds: [Swift.String]?
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule, b: TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule) -> Swift.Bool
@@ -833,10 +850,6 @@ public struct TMMFAToken : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-extension TicketmasterAuthentication.AppAttestAssertion : Swift.Hashable {}
-extension TicketmasterAuthentication.AppAttestAssertion : Swift.Equatable {}
-extension TicketmasterAuthentication.AppAttestAssertion : Swift.Encodable {}
-extension TicketmasterAuthentication.AppAttestAssertion : Swift.Decodable {}
 extension TicketmasterAuthentication.TMAuthentication.AuthSource : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment : Swift.RawRepresentable {}

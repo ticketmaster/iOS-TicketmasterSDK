@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon May  6 14:26:19 PDT 2024</string>
+	<string>Thu Jul 25 10:42:13 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>USHOLJBA1-ML</string>
 	<key>GITBranch</key>
-	<string>release/3.5.3</string>
+	<string>release/3.7.0</string>
 	<key>GITComment</key>
-	<string>PSDK-11650 Updated SecureEntry privacy</string>
+	<string>PSDK-12653: Validate string format tokens to avoid crashes Pull latest localizations from transifex</string>
 	<key>GITDate</key>
-	<string>Mon May 6 14:18:33 2024 -0700</string>
+	<string>Wed Jul 24 16:56:13 2024 -0600</string>
 	<key>GITRevision</key>
-	<string>7f5989f1eadab6cb16912c27cbc5db467e119349</string>
+	<string>7f4860d28cac575424ed6223a48733b3bd0e4043</string>
 	<key>MarketingVersion</key>
-	<string>1.7.2</string>
+	<string>1.7.3</string>
 </dict>
 </plist>

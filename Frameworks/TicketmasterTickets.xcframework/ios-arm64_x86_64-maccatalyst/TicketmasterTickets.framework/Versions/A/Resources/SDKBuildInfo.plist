@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Jul 25 10:55:27 PDT 2024</string>
+	<string>Fri Aug  2 02:18:17 EEST 2024</string>
 	<key>BuildHost</key>
-	<string>USHOLJBA1-ML</string>
+	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.7.0</string>
+	<string>release/3.7.1</string>
 	<key>GITComment</key>
-	<string>PSDK-12653: Validate string format tokens to avoid crashes Pull latest localizations from transifex</string>
+	<string>Merge branch Feature-PSDK-12655-Reduce-the-ticketCard-footer-height into master</string>
 	<key>GITDate</key>
-	<string>Wed Jul 24 16:56:13 2024 -0600</string>
+	<string>Thu Aug 1 18:13:45 2024 -0300</string>
 	<key>GITRevision</key>
-	<string>7f4860d28cac575424ed6223a48733b3bd0e4043</string>
+	<string>2f31f175a9eccef8799946f5d4da7e472455de71</string>
 	<key>MarketingVersion</key>
-	<string>3.7.0</string>
+	<string>3.7.1</string>
 </dict>
 </plist>

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Aug  2 02:18:17 EEST 2024</string>
+	<string>Tue Aug  6 16:22:15 EEST 2024</string>
 	<key>BuildHost</key>
 	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.7.1</string>
+	<string>release/3.7.2</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-12655-Reduce-the-ticketCard-footer-height into master</string>
+	<string>PSDK-0000: Update marketing version</string>
 	<key>GITDate</key>
-	<string>Thu Aug 1 18:13:45 2024 -0300</string>
+	<string>Mon Aug 5 15:45:36 2024 +0300</string>
 	<key>GITRevision</key>
-	<string>2f31f175a9eccef8799946f5d4da7e472455de71</string>
+	<string>089c3c52e57df193c11e576b7f82ef75e3edc53e</string>
 	<key>MarketingVersion</key>
-	<string>3.7.1</string>
+	<string>3.7.2</string>
 </dict>
 </plist>

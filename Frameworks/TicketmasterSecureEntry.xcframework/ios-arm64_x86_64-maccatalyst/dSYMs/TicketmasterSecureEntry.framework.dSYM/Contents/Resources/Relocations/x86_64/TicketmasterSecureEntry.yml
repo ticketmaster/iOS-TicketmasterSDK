@@ -1,6 +1,6 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-ajqtbgarzlvribbqkwsrhtkkhlnu/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/Versions/A/TicketmasterSecureEntry'
+binary-path:     '/Users/kristina.borisova/Library/Developer/Xcode/DerivedData/TicketmasterSecureEntry-frzlyorjalvsmyfatfrijdgxxryu/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSecureEntry/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSecureEntry.framework/Versions/A/TicketmasterSecureEntry'
 relocations:
   - { offsetInCU: 0x34, offset: 0xD0964, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionString, symObjAddr: 0x0, symBinAddr: 0x3C620, symSize: 0x0 }
   - { offsetInCU: 0x69, offset: 0xD0999, size: 0x8, addend: 0x0, symName: _TicketmasterSecureEntryVersionNumber, symObjAddr: 0x48, symBinAddr: 0x3C668, symSize: 0x0 }
@@ -185,7 +185,7 @@ relocations:
   - { offsetInCU: 0x1E5, offset: 0xD7229, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9ValueData33_726CEBD6EFA1D5C6A5DEDAF5511F6C3BLLSSvp', symObjAddr: 0xBD90, symBinAddr: 0x5CEB0, symSize: 0x0 }
   - { offsetInCU: 0x200, offset: 0xD7244, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry18UseOperationPrompt33_726CEBD6EFA1D5C6A5DEDAF5511F6C3BLLSSvp', symObjAddr: 0xBDA0, symBinAddr: 0x5CEC0, symSize: 0x0 }
   - { offsetInCU: 0x21B, offset: 0xD725F, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry24UseAuthenticationContext33_726CEBD6EFA1D5C6A5DEDAF5511F6C3BLLSSvp', symObjAddr: 0xBDB0, symBinAddr: 0x5CED0, symSize: 0x0 }
-  - { offsetInCU: 0x236, offset: 0xD727A, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6StatusO11errorDomainSSvpZ', symObjAddr: 0x3A598, symBinAddr: 0x61E28, symSize: 0x0 }
+  - { offsetInCU: 0x236, offset: 0xD727A, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6StatusO11errorDomainSSvpZ', symObjAddr: 0x3A838, symBinAddr: 0x61E28, symSize: 0x0 }
   - { offsetInCU: 0x2BA, offset: 0xD72FE, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry16AuthenticationUIOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x410, symBinAddr: 0xFC60, symSize: 0x10 }
   - { offsetInCU: 0x341, offset: 0xD7385, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry16AuthenticationUIOSHAASH9hashValueSivgTW', symObjAddr: 0x420, symBinAddr: 0xFC70, symSize: 0x40 }
   - { offsetInCU: 0x425, offset: 0xD7469, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry16AuthenticationUIOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x460, symBinAddr: 0xFCB0, symSize: 0x20 }
@@ -473,7 +473,7 @@ relocations:
   - { offsetInCU: 0x157B, offset: 0xE24B1, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4HMACC7VariantOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x70, symBinAddr: 0x1E060, symSize: 0x40 }
   - { offsetInCU: 0x2B, offset: 0xE27C4, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV10stableTime33_B05FAC2907A1B34BA1711AA22499922CLL_WZ', symObjAddr: 0x0, symBinAddr: 0x1EE00, symSize: 0x30 }
   - { offsetInCU: 0x4F, offset: 0xE27E8, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV10stableTime33_B05FAC2907A1B34BA1711AA22499922CLLAA0F6FreezeVSgvpZ', symObjAddr: 0xB50, symBinAddr: 0x5D788, symSize: 0x0 }
-  - { offsetInCU: 0x109, offset: 0xE28A2, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV7storageAA11TimeStorageVvpZ', symObjAddr: 0x68A8, symBinAddr: 0x61E38, symSize: 0x0 }
+  - { offsetInCU: 0x109, offset: 0xE28A2, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV7storageAA11TimeStorageVvpZ', symObjAddr: 0x6AA8, symBinAddr: 0x61E38, symSize: 0x0 }
   - { offsetInCU: 0x17B, offset: 0xE2914, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV10stableTime33_B05FAC2907A1B34BA1711AA22499922CLL_WZ', symObjAddr: 0x0, symBinAddr: 0x1EE00, symSize: 0x30 }
   - { offsetInCU: 0x195, offset: 0xE292E, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV7storage_WZ', symObjAddr: 0x30, symBinAddr: 0x1EE30, symSize: 0x60 }
   - { offsetInCU: 0x1FB, offset: 0xE2994, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry5ClockV4sync4from7samples5first10completionySS_Siy10Foundation4DateV_SdtcSgyAKSg_SdSgtcSgtFZ', symObjAddr: 0x90, symBinAddr: 0x1EE90, symSize: 0x2E0 }
@@ -484,9 +484,9 @@ relocations:
   - { offsetInCU: 0x880, offset: 0xE3019, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9NTPClientC5query4pool7version4port15numberOfSamples14maximumServers7timeout8progressySS_s4Int8VS3iSdySdSg_S2itctFyAA15InternetAddressO_SitcfU_TA', symObjAddr: 0x9C0, symBinAddr: 0x1F7C0, symSize: 0x60 }
   - { offsetInCU: 0x894, offset: 0xE302D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9NTPClientC5query4pool7version4port15numberOfSamples14maximumServers7timeout8progressySS_s4Int8VS3iSdySdSg_S2itctFySayAA15InternetAddressOGcfU0_TA', symObjAddr: 0xA50, symBinAddr: 0x1F850, symSize: 0x30 }
   - { offsetInCU: 0x8A8, offset: 0xE3041, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgWOh', symObjAddr: 0xAC0, symBinAddr: 0x1F880, symSize: 0x30 }
-  - { offsetInCU: 0x4B, offset: 0xE338D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC6syncedSbvpZ', symObjAddr: 0xBA38, symBinAddr: 0x61E50, symSize: 0x0 }
-  - { offsetInCU: 0x65, offset: 0xE33A7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC11completionsSayySbcSgGvpZ', symObjAddr: 0xBA40, symBinAddr: 0x61E58, symSize: 0x0 }
-  - { offsetInCU: 0x7F, offset: 0xE33C1, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC8timePoolSSvpZ', symObjAddr: 0xBA48, symBinAddr: 0x61E60, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xE338D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC6syncedSbvpZ', symObjAddr: 0xBCD8, symBinAddr: 0x61E50, symSize: 0x0 }
+  - { offsetInCU: 0x65, offset: 0xE33A7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC11completionsSayySbcSgGvpZ', symObjAddr: 0xBCE0, symBinAddr: 0x61E58, symSize: 0x0 }
+  - { offsetInCU: 0x7F, offset: 0xE33C1, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC8timePoolSSvpZ', symObjAddr: 0xBCE8, symBinAddr: 0x61E60, symSize: 0x0 }
   - { offsetInCU: 0x8D, offset: 0xE33CF, size: 0x8, addend: 0x0, symName: '_$sIeg_IeyB_TR', symObjAddr: 0x0, symBinAddr: 0x1F8B0, symSize: 0x30 }
   - { offsetInCU: 0xA5, offset: 0xE33E7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC11completions_WZ', symObjAddr: 0x30, symBinAddr: 0x1F8E0, symSize: 0x20 }
   - { offsetInCU: 0xBF, offset: 0xE3401, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC8timePool_WZ', symObjAddr: 0x50, symBinAddr: 0x1F900, symSize: 0x30 }
@@ -580,7 +580,7 @@ relocations:
   - { offsetInCU: 0x94, offset: 0xE709F, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6CBCMACCfD', symObjAddr: 0x0, symBinAddr: 0x23280, symSize: 0x20 }
   - { offsetInCU: 0xFE, offset: 0xE7109, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry6CBCMACCMa', symObjAddr: 0x20, symBinAddr: 0x232A0, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0xE7291, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x23310, symSize: 0x30 }
-  - { offsetInCU: 0x4B, offset: 0xE72B5, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6sharedACvpZ', symObjAddr: 0x8D68, symBinAddr: 0x61E70, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xE72B5, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6sharedACvpZ', symObjAddr: 0x9000, symBinAddr: 0x61E70, symSize: 0x0 }
   - { offsetInCU: 0x76, offset: 0xE72E0, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorCfD', symObjAddr: 0x30, symBinAddr: 0x23340, symSize: 0x20 }
   - { offsetInCU: 0xA3, offset: 0xE730D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC11generateOTP6secret9algorithm7counter6digitsSSSg10Foundation4DataV_AA12OTPAlgorithmOs6UInt64VSitFTf4nnnnd_n', symObjAddr: 0x1E0, symBinAddr: 0x234F0, symSize: 0x730 }
   - { offsetInCU: 0x7BA, offset: 0xE7A24, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry9GeneratorC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x23310, symSize: 0x30 }
@@ -840,7 +840,7 @@ relocations:
   - { offsetInCU: 0xC6, offset: 0xF316A, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry7UInt128VSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x90, symBinAddr: 0x2AF30, symSize: 0x20 }
   - { offsetInCU: 0x123, offset: 0xF31C7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry7UInt128Vs27ExpressibleByIntegerLiteralAAsADP07integerH0x0gH4TypeQz_tcfCTW', symObjAddr: 0xB0, symBinAddr: 0x2AF50, symSize: 0x14 }
   - { offsetInCU: 0x27, offset: 0xF335F, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x2AF70, symSize: 0x30 }
-  - { offsetInCU: 0x4B, offset: 0xF3383, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoC6sharedACvpZ', symObjAddr: 0x3970, symBinAddr: 0x61E78, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xF3383, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoC6sharedACvpZ', symObjAddr: 0x3B58, symBinAddr: 0x61E78, symSize: 0x0 }
   - { offsetInCU: 0x82, offset: 0xF33BA, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoC4KeysO8rawValueSSvg', symObjAddr: 0x30, symBinAddr: 0x2AFA0, symSize: 0xE0 }
   - { offsetInCU: 0xCA, offset: 0xF3402, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoCACycfcTo', symObjAddr: 0x110, symBinAddr: 0x2B080, symSize: 0x30 }
   - { offsetInCU: 0x105, offset: 0xF343D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry12SDKBuildInfoCfD', symObjAddr: 0x140, symBinAddr: 0x2B0B0, symSize: 0x30 }
@@ -924,7 +924,7 @@ relocations:
   - { offsetInCU: 0xA6A, offset: 0xF5356, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry3MD5C6update9withBytes6isLastSays5UInt8VGs10ArraySliceVyAHG_SbtKF', symObjAddr: 0xC0, symBinAddr: 0x2C4E0, symSize: 0x630 }
   - { offsetInCU: 0x130B, offset: 0xF5BF7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry3MD5CMa', symObjAddr: 0x730, symBinAddr: 0x2CB50, symSize: 0x20 }
   - { offsetInCU: 0x27, offset: 0xF60B2, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1C16hashInitialValue_WZ', symObjAddr: 0x0, symBinAddr: 0x2CE10, symSize: 0x30 }
-  - { offsetInCU: 0x4B, offset: 0xF60D6, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1C16hashInitialValues15ContiguousArrayVys6UInt32VGvpZ', symObjAddr: 0xB1D0, symBinAddr: 0x61E80, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0xF60D6, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1C16hashInitialValues15ContiguousArrayVys6UInt32VGvpZ', symObjAddr: 0xB3B0, symBinAddr: 0x61E80, symSize: 0x0 }
   - { offsetInCU: 0x59, offset: 0xF60E4, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1C16hashInitialValue_WZ', symObjAddr: 0x0, symBinAddr: 0x2CE10, symSize: 0x30 }
   - { offsetInCU: 0x32E, offset: 0xF63B9, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1CfD', symObjAddr: 0x4F0, symBinAddr: 0x2D300, symSize: 0x30 }
   - { offsetInCU: 0x38F, offset: 0xF641A, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry4SHA1C7process5block11currentHashys10ArraySliceVys5UInt8VG_s010ContiguousI0Vys6UInt32VGztFTf4xnd_n', symObjAddr: 0x580, symBinAddr: 0x2D390, symSize: 0x310 }
@@ -1136,7 +1136,7 @@ relocations:
   - { offsetInCU: 0x134D, offset: 0xFE222, size: 0x8, addend: 0x0, symName: '_$sSlsE5index_8offsetBy07limitedC05IndexQzSgAE_SiAEtF23TicketmasterSecureEntry0G5BytesC_Tg5Tf4nnnd_n', symObjAddr: 0x8A0, symBinAddr: 0x371B0, symSize: 0x60 }
   - { offsetInCU: 0x13D1, offset: 0xFE2A6, size: 0x8, addend: 0x0, symName: '_$sSlsE22_copyToContiguousArrays0cD0Vy7ElementQzGyF23TicketmasterSecureEntry0G5BytesC_Tg5Tf4g_n', symObjAddr: 0x9F0, symBinAddr: 0x37300, symSize: 0x70 }
   - { offsetInCU: 0x27, offset: 0xFE5B2, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateOwCP', symObjAddr: 0x0, symBinAddr: 0x374C0, symSize: 0x30 }
-  - { offsetInCU: 0x4C, offset: 0xFE5D7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateO7contextSo9CIContextCvpZ', symObjAddr: 0x9EF0, symBinAddr: 0x61E88, symSize: 0x0 }
+  - { offsetInCU: 0x4C, offset: 0xFE5D7, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateO7contextSo9CIContextCvpZ', symObjAddr: 0xA160, symBinAddr: 0x61E88, symSize: 0x0 }
   - { offsetInCU: 0x5A, offset: 0xFE5E5, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateOwCP', symObjAddr: 0x0, symBinAddr: 0x374C0, symSize: 0x30 }
   - { offsetInCU: 0x6E, offset: 0xFE5F9, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateOwxx', symObjAddr: 0xE0, symBinAddr: 0x374F0, symSize: 0x40 }
   - { offsetInCU: 0x82, offset: 0xFE60D, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry0bC4ViewC5StateOwcp', symObjAddr: 0x1B0, symBinAddr: 0x37530, symSize: 0xA0 }
@@ -1174,7 +1174,7 @@ relocations:
   - { offsetInCU: 0x69, offset: 0x100315, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry15StreamEncryptorCfD', symObjAddr: 0x0, symBinAddr: 0x39D50, symSize: 0x20 }
   - { offsetInCU: 0xB5, offset: 0x100361, size: 0x8, addend: 0x0, symName: '_$s23TicketmasterSecureEntry15StreamEncryptorCMa', symObjAddr: 0x20, symBinAddr: 0x39D70, symSize: 0x20 }
   - { offsetInCU: 0x27, offset: 0x1004E4, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC23TicketmasterSecureEntryE9mineShaft_WZ', symObjAddr: 0x0, symBinAddr: 0x39D90, symSize: 0x3E }
-  - { offsetInCU: 0x4B, offset: 0x100508, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC23TicketmasterSecureEntryE9mineShaftABvpZ', symObjAddr: 0x2280, symBinAddr: 0x61E90, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x100508, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC23TicketmasterSecureEntryE9mineShaftABvpZ', symObjAddr: 0x2470, symBinAddr: 0x61E90, symSize: 0x0 }
   - { offsetInCU: 0xB9, offset: 0x100576, size: 0x8, addend: 0x0, symName: '_$sSo7UIColorC23TicketmasterSecureEntryE9mineShaft_WZ', symObjAddr: 0x0, symBinAddr: 0x39D90, symSize: 0x3E }
   - { offsetInCU: 0x27, offset: 0x100759, size: 0x8, addend: 0x0, symName: '_$ss6UInt32V23TicketmasterSecureEntryE5bytes9fromIndexABx_SitcSlRzs5UInt8V7ElementRtzSi0G0RtzlufC', symObjAddr: 0x0, symBinAddr: 0x39E00, symSize: 0x2C0 }
   - { offsetInCU: 0x59, offset: 0x10078B, size: 0x8, addend: 0x0, symName: '_$ss6UInt32V23TicketmasterSecureEntryE5bytes9fromIndexABx_SitcSlRzs5UInt8V7ElementRtzSi0G0RtzlufC', symObjAddr: 0x0, symBinAddr: 0x39E00, symSize: 0x2C0 }

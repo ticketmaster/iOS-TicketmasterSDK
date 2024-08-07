@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Aug  6 16:22:15 EEST 2024</string>
+	<string>Wed Aug  7 18:43:57 EEST 2024</string>
 	<key>BuildHost</key>
 	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.7.2</string>
+	<string>release/3.7.3</string>
 	<key>GITComment</key>
-	<string>PSDK-0000: Update marketing version</string>
+	<string>PSDK-0000-Update marketing version to 3.7.3</string>
 	<key>GITDate</key>
-	<string>Mon Aug 5 15:45:36 2024 +0300</string>
+	<string>Tue Aug 6 19:06:21 2024 +0300</string>
 	<key>GITRevision</key>
-	<string>089c3c52e57df193c11e576b7f82ef75e3edc53e</string>
+	<string>c9c0f1e287bbd907ea5536b168b22ac30bcc9739</string>
 	<key>MarketingVersion</key>
-	<string>3.7.2</string>
+	<string>3.7.3</string>
 </dict>
 </plist>

@@ -121,7 +121,7 @@ $ sudo gem install cocoapods
 2. Update your local `Podfile` to the [latest release version](https://github.com/ticketmaster/iOS-TicketmasterSDK/releases):
 
 ```ruby
-pod 'TM-Ignite', '~> 1.9.3'
+pod 'TM-Ignite', '~> 1.9.5'
 ```
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)
 

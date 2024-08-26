@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Aug  7 18:43:57 EEST 2024</string>
+	<string>Thu Aug 22 12:45:51 PDT 2024</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
-	<string>release/3.7.3</string>
+	<string>release/3.7.5</string>
 	<key>GITComment</key>
-	<string>PSDK-0000-Update marketing version to 3.7.3</string>
+	<string>PSDK-0 Add filtering, searching, and highlighting to ViewDebugLog</string>
 	<key>GITDate</key>
-	<string>Tue Aug 6 19:06:21 2024 +0300</string>
+	<string>Thu Aug 22 11:44:58 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>c9c0f1e287bbd907ea5536b168b22ac30bcc9739</string>
+	<string>0cac499037b98314764b3564b43b1139914eed59</string>
 	<key>MarketingVersion</key>
-	<string>3.7.3</string>
+	<string>3.7.5</string>
 </dict>
 </plist>

@@ -579,6 +579,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let tmxWillCreateExternalGuestUser: Swift.Bool
     public let allowTeamToHostSystemExchange: Swift.Bool
     public let assignFlowEnabled: Swift.Bool
+    public let assignFlowLearnMoreURLs: [Swift.String : Foundation.URL]?
     public let useICCPFetchTickets: Swift.Bool
     public let venueSuppressionRules: [TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule]?
     public let venueUnsuppressRuleIdentifier: Swift.String?

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jul 12 11:08:23 PDT 2024</string>
+	<string>Thu Aug 22 11:08:10 PDT 2024</string>
 	<key>BuildHost</key>
-	<string>USHOLJBA1-ML</string>
+	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/3.7.7</string>
 	<key>GITComment</key>
-	<string>Remove learnMoreURLs from VenueSuppression rules</string>
+	<string>Merge branch Feature-PSDK-13047-AddEmailToDeviceBindingHeaders into master</string>
 	<key>GITDate</key>
-	<string>Fri Jul 12 10:57:25 2024 -0700</string>
+	<string>Thu Aug 22 18:02:43 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>5965e920298deb8138132ba5dfc9fec7fd4bd492</string>
+	<string>7db11f996e88b479e11e7362e149c9434d3ce4c1</string>
 	<key>MarketingVersion</key>
-	<string>3.7.5</string>
+	<string>3.7.7</string>
 </dict>
 </plist>

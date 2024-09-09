@@ -18916,9 +18916,23 @@
     {
       "filePath": "\/Users\/kristina.borisova\/Work\/Code\/iOS-TicketsSDK\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Extensions\/String+Localized.swift",
       "kind": "StringLiteral",
-      "offset": 276,
+      "offset": 328,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kristina.borisova\/Work\/Code\/iOS-TicketsSDK\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Extensions\/String+Localized.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 4,
+      "value": "\"%s\""
+    },
+    {
+      "filePath": "\/Users\/kristina.borisova\/Work\/Code\/iOS-TicketsSDK\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Extensions\/String+Localized.swift",
+      "kind": "StringLiteral",
+      "offset": 440,
+      "length": 4,
+      "value": "\"%@\""
     },
     {
       "filePath": "\/Users\/kristina.borisova\/Work\/Code\/iOS-TicketsSDK\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/SwiftOTP\/Base32\/Base32.swift",

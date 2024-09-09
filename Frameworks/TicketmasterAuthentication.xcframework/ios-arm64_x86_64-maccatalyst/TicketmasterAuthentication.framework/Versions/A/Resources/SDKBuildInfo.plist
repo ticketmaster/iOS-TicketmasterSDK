@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Aug 22 11:08:10 PDT 2024</string>
+	<string>Thu Aug 22 14:46:24 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
-	<string>release/3.7.7</string>
+	<string>release/3.7.8</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-13047-AddEmailToDeviceBindingHeaders into master</string>
+	<string>Update version to 3.7.8, upsellAddOnsEnabled</string>
 	<key>GITDate</key>
-	<string>Thu Aug 22 18:02:43 2024 +0000</string>
+	<string>Thu Aug 22 14:34:59 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>7db11f996e88b479e11e7362e149c9434d3ce4c1</string>
+	<string>1c04f283713a0d8881dda43f3a3f7272b514fc7c</string>
 	<key>MarketingVersion</key>
-	<string>3.7.7</string>
+	<string>3.7.8</string>
 </dict>
 </plist>

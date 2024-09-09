@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Aug  6 16:12:42 EEST 2024</string>
+	<string>Mon Sep  9 17:00:39 BST 2024</string>
 	<key>BuildHost</key>
 	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.7.2</string>
+	<string>release/3.8.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0000: Update marketing version</string>
+	<string>PSDK-13171 - Cherry pick Merge branch Fix-PSDK-13171-Assign-Missing-Validation-On-Phone-Number-Field into mastere74626f3	mateus.forgiarini &lt;mateus.forgiarinidasilva@ticketmaster.com&gt; 4 Sep 2024 at 10:31</string>
 	<key>GITDate</key>
-	<string>Mon Aug 5 15:45:36 2024 +0300</string>
+	<string>Wed Sep 4 10:36:30 2024 -0300</string>
 	<key>GITRevision</key>
-	<string>089c3c52e57df193c11e576b7f82ef75e3edc53e</string>
+	<string>b5b754673452b532baf839fb5d856bc2b3bac168</string>
 	<key>MarketingVersion</key>
-	<string>1.7.3</string>
+	<string>1.7.4</string>
 </dict>
 </plist>

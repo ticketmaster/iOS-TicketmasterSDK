@@ -12064,6 +12064,51 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "upsellAddOnsEnabled",
+                "printedName": "upsellAddOnsEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV19upsellAddOnsEnabledSbvp",
+                "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV19upsellAddOnsEnabledSbvp",
+                "moduleName": "TicketmasterAuthentication",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV19upsellAddOnsEnabledSbvg",
+                    "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV19upsellAddOnsEnabledSbvg",
+                    "moduleName": "TicketmasterAuthentication",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -66833,35 +66878,35 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7649,
+      "offset": 7750,
       "length": 6,
       "value": "\".sdk\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7663,
+      "offset": 7764,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9718,
+      "offset": 9819,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9841,
+      "offset": 9942,
       "length": 61,
       "value": "\"https:\/\/mobileentry.ticketmaster.com\/?client_id=\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 9901,
+      "offset": 10002,
       "length": 2,
       "value": "\"\""
     },
@@ -68061,6 +68106,13 @@
       "offset": 4429,
       "length": 31,
       "value": "\"venueUnsuppressRuleIdentifier\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
+      "kind": "StringLiteral",
+      "offset": 4526,
+      "length": 21,
+      "value": "\"upsellAddOnsEnabled\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/iOS-AuthenticationSDK1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Keychain\/JWT\/JWTDecodeError.swift",

@@ -447,22 +447,16 @@ extension SwiftUI.Color {
   public static var secondaryBorder: SwiftUI.Color {
     get
   }
-  public static var completeShape: SwiftUI.Color {
-    get
-  }
-  public static var incompleteShape: SwiftUI.Color {
-    get
-  }
   public static var success: SwiftUI.Color {
-    get
-  }
-  public static var button: SwiftUI.Color {
     get
   }
   public static var loadingSecondaryColor: SwiftUI.Color {
     get
   }
   public static var loadingPrimaryColor: SwiftUI.Color {
+    get
+  }
+  public static var lightGray: SwiftUI.Color {
     get
   }
 }
@@ -822,6 +816,8 @@ extension TicketmasterTickets.TMTickets {
       case moduleActionButton
       case pullToRefreshEvents
       case navbarButtonAction
+      case addTicketToWalletFinished
+      case addTicketToWalletCanceled
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {

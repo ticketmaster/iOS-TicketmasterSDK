@@ -583,6 +583,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let useICCPFetchTickets: Swift.Bool
     public let venueSuppressionRules: [TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule]?
     public let venueUnsuppressRuleIdentifier: Swift.String?
+    public let upsellAddOnsEnabled: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.Base, b: TicketmasterAuthentication.TMApigeeConfig.Base) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws

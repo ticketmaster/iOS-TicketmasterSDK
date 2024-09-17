@@ -940,6 +940,7 @@ extension Swift.UInt64 {
   weak final public var orderDelegate: (any TicketmasterTickets.TMTicketsOrderDelegate)?
   weak final public var moduleDelegate: (any TicketmasterTickets.TMTicketsModuleDelegate)?
   weak final public var analyticsDelegate: (any TicketmasterTickets.TMTicketsAnalyticsDelegate)?
+  final public var doNotPresentTeamLoginIfHostLoggedIn: Swift.Bool
   @objc deinit
 }
 @objc public class TMTicketsModule : ObjectiveC.NSObject, Swift.Comparable {

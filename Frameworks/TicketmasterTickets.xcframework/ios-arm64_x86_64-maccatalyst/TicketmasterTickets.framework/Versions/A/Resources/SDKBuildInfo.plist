@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Sep 26 10:49:50 BST 2024</string>
+	<string>Mon Sep 30 11:02:45 PDT 2024</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
-	<string>release/3.8.2</string>
+	<string>release/3.8.3</string>
 	<key>GITComment</key>
-	<string>PSDK-0: Change marketing version to 3.8.2</string>
+	<string>Revert PSDK-11666 Add Country Code Menu in Transfer Flow</string>
 	<key>GITDate</key>
-	<string>Wed Sep 25 15:09:28 2024 +0100</string>
+	<string>Fri Sep 27 15:28:10 2024 +0100</string>
 	<key>GITRevision</key>
-	<string>288791df43cda166a27911782a053b24040c95c9</string>
+	<string>f77dd7b322182e5cc179c87c290691c81ece28c0</string>
 	<key>MarketingVersion</key>
-	<string>3.8.2</string>
+	<string>3.8.3</string>
 </dict>
 </plist>

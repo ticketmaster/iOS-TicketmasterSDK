@@ -1728,6 +1728,7 @@ public class TrustedCert {
   final public var transactionData: TicketmasterFoundation.UALCommerceEvent.TransactionData
   final public var products: [TicketmasterFoundation.UALCommerceEvent.ProductData]?
   final public var customAttributes: [Swift.String : Any]
+  final public var rawJSON: TicketmasterFoundation.JSONDictionary?
   convenience public init?(transactionEventJSON: TicketmasterFoundation.JSONDictionary?)
   convenience public init?(addToCartEventJSON: TicketmasterFoundation.JSONDictionary?)
   @objc deinit

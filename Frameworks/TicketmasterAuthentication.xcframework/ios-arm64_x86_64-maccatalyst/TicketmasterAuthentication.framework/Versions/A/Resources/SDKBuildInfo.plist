@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Aug 22 14:46:24 PDT 2024</string>
+	<string>Wed Sep 25 17:40:36 PDT 2024</string>
 	<key>BuildHost</key>
 	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
-	<string>release/3.7.8</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Update version to 3.7.8, upsellAddOnsEnabled</string>
+	<string>PSDK-13290 Fix SportXR refreshToken issue (missing userId in jwt), deprecated hasValidatedToken</string>
 	<key>GITDate</key>
-	<string>Thu Aug 22 14:34:59 2024 -0700</string>
+	<string>Wed Sep 25 17:35:02 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>1c04f283713a0d8881dda43f3a3f7272b514fc7c</string>
+	<string>2bd66c9fd16082c170c6803bc98f97483f7a48cc</string>
 	<key>MarketingVersion</key>
-	<string>3.7.8</string>
+	<string>3.8.0</string>
 </dict>
 </plist>

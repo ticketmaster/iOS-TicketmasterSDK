@@ -70,7 +70,6 @@ public protocol TMAuthenticationProvider : AnyObject {
   func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, externalToken: Swift.String?, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
   func hasUnexpiredToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
-  func hasValidatedToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Bool
   func validToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, showLoginIfNeeded: Swift.Bool, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String?, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func memberInfo(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String?, success: @escaping (_ memberInfo: TicketmasterAuthentication.TMMemberInfo) -> Swift.Void, failure: @escaping (_ oldMemberInfo: TicketmasterAuthentication.TMMemberInfo?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, mfaProperties: [Swift.String : Any]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String?, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
@@ -111,6 +110,7 @@ public struct TMAuthToken : Swift.Codable, Swift.Hashable {
   public let hmacID: Swift.String?
   public let accountManagerHmacID: Swift.String?
   public let doNotSellFlag: Swift.Bool?
+  public init(backend: TicketmasterAuthentication.TMAuthentication.BackendService, exchangeSourceBackend: TicketmasterAuthentication.TMAuthentication.BackendService?, externalToken: Swift.String?, accessToken: Swift.String, tokenType: Swift.String?, scope: Swift.String?, expireDate: Foundation.Date, idToken: Swift.String?, hmacID: Swift.String?, accountManagerHmacID: Swift.String?, doNotSellFlag: Swift.Bool?)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMAuthToken, b: TicketmasterAuthentication.TMAuthToken) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -128,14 +128,8 @@ extension TicketmasterAuthentication.TMApigeeConfig {
 extension TicketmasterAuthentication.TMAuthentication {
   final public func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
   final public func hasUnexpiredToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
+  @available(*, deprecated, message: "Call hasUnexpiredToken(backend:...) instead. Because tokens can be invalidated at any time, this method is meaningless.")
   final public func hasValidatedToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
-}
-public struct Attestation : Swift.Codable, Swift.Equatable {
-  public let attestationObject: Foundation.Data
-  public let clientDataJSON: Foundation.Data
-  public static func == (a: TicketmasterAuthentication.Attestation, b: TicketmasterAuthentication.Attestation) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func boundDeviceIdSignature(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, callSource: Swift.String, stringToEncode: Swift.String? = nil, success: @escaping (_ deviceKey: TicketmasterAuthentication.TMDeviceKey) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
@@ -179,18 +173,12 @@ public protocol TMAssertion : Swift.Decodable, Swift.Encodable, Swift.Hashable, 
   init(format: Swift.UInt8, signature: Foundation.Data)
   init(format: Swift.UInt8, authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
 }
-extension TicketmasterAuthentication.TMAssertion {
-  public init(format: Swift.UInt8, signature: Foundation.Data)
-  public init(format: Swift.UInt8, authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
-}
-extension TicketmasterAuthentication.TMAssertion {
-  public func base64URLEncodedString() -> Swift.String?
-}
 public struct AppAttestAssertion : TicketmasterAuthentication.TMAssertion {
   public var format: Swift.UInt8
   public var authenticatorData: Foundation.Data?
   public var clientDataJSONHash: Foundation.Data?
   public var signature: Foundation.Data
+  public init(authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
   public static func == (a: TicketmasterAuthentication.AppAttestAssertion, b: TicketmasterAuthentication.AppAttestAssertion) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public func encode(to encoder: any Swift.Encoder) throws
@@ -198,6 +186,13 @@ public struct AppAttestAssertion : TicketmasterAuthentication.TMAssertion {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+extension TicketmasterAuthentication.TMAssertion {
+  public init(format: Swift.UInt8, signature: Foundation.Data)
+  public init(format: Swift.UInt8, authenticatorData: Foundation.Data, clientDataJSONHash: Foundation.Data, signature: Foundation.Data)
+}
+extension TicketmasterAuthentication.TMAssertion {
+  public func base64URLEncodedString() -> Swift.String?
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, externalToken: Swift.String? = nil, loginProperties: [Swift.String : Swift.String]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
@@ -250,6 +245,7 @@ extension TicketmasterAuthentication.TMAuthentication {
 public struct TMDeviceKey : Swift.Codable, Swift.Hashable {
   public let keyId: Foundation.Data
   public let assertion: TicketmasterAuthentication.AppAttestAssertion
+  public init(keyId: Foundation.Data, assertion: TicketmasterAuthentication.AppAttestAssertion)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMDeviceKey, b: TicketmasterAuthentication.TMDeviceKey) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -391,6 +387,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
     public let nickname: Swift.String
     public let isDefault: Swift.Bool
     public let isCurrent: Swift.Bool
+    public init(localID: Swift.String, nickname: Swift.String, isDefault: Swift.Bool, isCurrent: Swift.Bool)
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMMemberInfo.RelatedAccount, b: TicketmasterAuthentication.TMMemberInfo.RelatedAccount) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
@@ -403,6 +400,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
     public let version: Swift.String?
     public let acceptanceRequired: Swift.Bool
     public let text: Swift.String?
+    public init(version: Swift.String?, acceptanceRequired: Swift.Bool, text: Swift.String?)
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMMemberInfo.TermsOfUse, b: TicketmasterAuthentication.TMMemberInfo.TermsOfUse) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
@@ -411,6 +409,7 @@ public struct TMMemberInfo : Swift.Codable, Swift.Hashable {
     }
     public init(from decoder: any Swift.Decoder) throws
   }
+  public init(backend: TicketmasterAuthentication.TMAuthentication.BackendService, localID: Swift.String?, globalID: Swift.String?, hmacID: Swift.String?, doNotSellFlag: Swift.Bool?, firstName: Swift.String?, lastName: Swift.String?, email: Swift.String?, phone: Swift.String?, postalCode: Swift.String?, language: Swift.String?, country: Swift.String?, relatedAccounts: [TicketmasterAuthentication.TMMemberInfo.RelatedAccount]?, termsOfUse: TicketmasterAuthentication.TMMemberInfo.TermsOfUse?, acquiredDate: Foundation.Date)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMMemberInfo, b: TicketmasterAuthentication.TMMemberInfo) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -423,13 +422,6 @@ extension TicketmasterAuthentication.TMMemberInfo {
   public func verify(relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?) -> Swift.Bool
   public func localID(relatedAccount: TicketmasterAuthentication.TMMemberInfo.RelatedAccount?) -> Swift.String?
   public func relatedAccount(localID: Swift.String) -> TicketmasterAuthentication.TMMemberInfo.RelatedAccount?
-}
-public struct AppAttestAttestation : Swift.Codable, Swift.Equatable {
-  public let attestationObject: Foundation.Data
-  public let clientDataJSON: Foundation.Data
-  public static func == (a: TicketmasterAuthentication.AppAttestAttestation, b: TicketmasterAuthentication.AppAttestAttestation) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public struct TMXSettings : Swift.Codable, Swift.Hashable, Swift.Equatable {
@@ -526,11 +518,6 @@ extension TicketmasterAuthentication.TMAuthentication {
       get
     }
   }
-}
-@_hasMissingDesignatedInitializers public class JsonUtil {
-  public static func decode<T>(_ data: Foundation.Data) throws -> T where T : Swift.Decodable, T : Swift.Encodable
-  public static func encode<T>(_ data: T) throws -> Foundation.Data where T : Swift.Decodable, T : Swift.Encodable
-  @objc deinit
 }
 extension UIKit.UIViewController : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
@@ -823,7 +810,7 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public var forceEphemeralWebBrowserSession: Swift.Bool?
   final public var disableSystemExchangeDuringLogin: Swift.Bool
   final public var useBrandedNavigationBar: Swift.Bool
-  @available(*, deprecated, message: "Call login(backend:..) to present login directly, skipping the login page entirely")
+  @available(*, deprecated, message: "Call login(backend:...) to present login directly, skipping the login page entirely")
   final public var autoPresentLoginPrompt: Swift.Bool
   weak final public var delegate: (any TicketmasterAuthentication.TMAuthenticationDelegate)?
   weak final public var externalTokenProviderDelegate: (any TicketmasterAuthentication.TMAuthenticationExternalTokenProvider)?
@@ -843,6 +830,7 @@ public struct TMMFAToken : Swift.Codable, Swift.Hashable {
   public let backend: TicketmasterAuthentication.TMAuthentication.BackendService
   public let deviceVerifiedToken: Swift.String
   public let encryptedDeviceID: Swift.String
+  public init(backend: TicketmasterAuthentication.TMAuthentication.BackendService, deviceVerifiedToken: Swift.String, encryptedDeviceID: Swift.String)
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMMFAToken, b: TicketmasterAuthentication.TMMFAToken) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws

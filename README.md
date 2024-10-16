@@ -23,7 +23,7 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 ### Basic Requirements
 
-* Xcode 15.0.1+ for development
+* Swift 5.9+ (Xcode 15.0.1+ or Xcode 16.0+) for development
 * iOS 15.0+ for deployment
 
 ### Change Log

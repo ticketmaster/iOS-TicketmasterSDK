@@ -124,7 +124,7 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMApigeeConfig {
-  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, acquiredDate: Foundation.Date? = nil)
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, forcedJSONDictionary: TicketmasterFoundation.JSONDictionary?, acquiredDate: Foundation.Date? = nil)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
@@ -537,6 +537,8 @@ public struct TMApigeeConfig : Swift.Codable, Swift.Hashable {
   public let fanEducation: TicketmasterAuthentication.TMApigeeConfig.FanEducation
   public let gameday: TicketmasterAuthentication.TMApigeeConfig.GameDay
   public let launchAction: TicketmasterAuthentication.TMApigeeConfig.LaunchAction?
+  public let forcedLogout: TicketmasterAuthentication.TMApigeeConfig.ForcedLogout?
+  public let originalData: Foundation.Data
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterAuthentication.TMApigeeConfig, b: TicketmasterAuthentication.TMApigeeConfig) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -589,6 +591,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
       public let clientId: Swift.String
       public let mfaEnabled: Swift.Bool
       public let mfaClientId: Swift.String?
+      public let forceWebTransfer: Swift.Bool
       public let scope: Swift.String?
       public let siteToken: Swift.String?
       public let redirectScheme: Swift.String?
@@ -728,6 +731,17 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let venueDiscoveryIds: [Swift.String]?
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule, b: TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct ForcedLogout : Swift.Codable, Swift.Hashable {
+    public let instance: Swift.Double
+    public let sdkVersion: Swift.String?
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterAuthentication.TMApigeeConfig.ForcedLogout, b: TicketmasterAuthentication.TMApigeeConfig.ForcedLogout) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public var hashValue: Swift.Int {
       get

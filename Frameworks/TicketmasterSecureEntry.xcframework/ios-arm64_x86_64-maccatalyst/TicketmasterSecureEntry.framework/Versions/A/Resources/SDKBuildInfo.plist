@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Sep  9 17:00:39 BST 2024</string>
+	<string>Fri Nov  1 11:50:14 GMT 2024</string>
 	<key>BuildHost</key>
 	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.8.0</string>
+	<string>release/3.9.0</string>
 	<key>GITComment</key>
-	<string>PSDK-13171 - Cherry pick Merge branch Fix-PSDK-13171-Assign-Missing-Validation-On-Phone-Number-Field into mastere74626f3	mateus.forgiarini &lt;mateus.forgiarinidasilva@ticketmaster.com&gt; 4 Sep 2024 at 10:31</string>
+	<string>PSDK-13627 Fixed MFA logic for Archtics events</string>
 	<key>GITDate</key>
-	<string>Wed Sep 4 10:36:30 2024 -0300</string>
+	<string>Thu Oct 31 10:11:37 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>b5b754673452b532baf839fb5d856bc2b3bac168</string>
+	<string>a5df558c164ceaf4ae725dfb04c4c826c4a9852f</string>
 	<key>MarketingVersion</key>
-	<string>1.7.4</string>
+	<string>1.7.5</string>
 </dict>
 </plist>

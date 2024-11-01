@@ -53823,6 +53823,165 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "rawJSON",
+            "printedName": "rawJSON",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvp",
+            "mangledName": "$s22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvp",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvg",
+                "mangledName": "$s22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvg",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvs",
+                "mangledName": "$s22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvs",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvM",
+                "mangledName": "$s22TicketmasterFoundation16UALCommerceEventC7rawJSONSDySSypGSgvM",
+                "moduleName": "TicketmasterFoundation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(transactionEventJSON:)",
@@ -55137,6 +55296,58 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterFoundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "compareXYZVersions",
+        "printedName": "compareXYZVersions(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Foundation.ComparisonResult?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ComparisonResult",
+                "printedName": "Foundation.ComparisonResult",
+                "usr": "c:@E@NSComparisonResult"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:22TicketmasterFoundation18compareXYZVersionsySo18NSComparisonResultVSgSS_SStF",
+        "mangledName": "$s22TicketmasterFoundation18compareXYZVersionsySo18NSComparisonResultVSgSS_SStF",
+        "moduleName": "TicketmasterFoundation",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -97608,238 +97819,238 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 1605,
+      "offset": 1645,
       "length": 13,
       "value": "\"transaction\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1736,
       "length": 18,
       "value": "\"transaction.item\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 1824,
+      "offset": 1864,
       "length": 24,
       "value": "\"total.transactionTotal\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2037,
+      "offset": 2077,
       "length": 6,
       "value": "\"cart\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2121,
+      "offset": 2161,
       "length": 11,
       "value": "\"cart.item\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2239,
+      "offset": 2279,
       "length": 17,
       "value": "\"total.cartTotal\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2676,
+      "offset": 2716,
       "length": 15,
       "value": "\"transactionID\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2748,
+      "offset": 2788,
       "length": 16,
       "value": "\"total.currency\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2890,
+      "offset": 2930,
       "length": 17,
       "value": "\"total.basePrice\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2965,
+      "offset": 3005,
       "length": 11,
       "value": "\"total.tax\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 3079,
       "length": 16,
       "value": "\"total.shipping\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3118,
+      "offset": 3158,
       "length": 22,
       "value": "\"total.additionalFees\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3198,
+      "offset": 3238,
       "length": 17,
       "value": "\"total.feesTotal\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3275,
+      "offset": 3315,
       "length": 19,
       "value": "\"total.upsellTotal\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3358,
+      "offset": 3398,
       "length": 23,
       "value": "\"total.voucherDiscount\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3444,
+      "offset": 3484,
       "length": 22,
       "value": "\"total.shippingMethod\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3528,
+      "offset": 3568,
       "length": 21,
       "value": "\"total.paymentMethod\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 3595,
+      "offset": 3635,
       "length": 25,
       "value": "\"page.attributes.country\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "Array",
-      "offset": 4598,
+      "offset": 4638,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4674,
+      "offset": 4714,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 4707,
+      "offset": 4747,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5042,
+      "offset": 5118,
       "length": 25,
       "value": "\"productInfo.productName\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5124,
+      "offset": 5200,
       "length": 23,
       "value": "\"productInfo.productID\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5198,
+      "offset": 5274,
       "length": 17,
       "value": "\"price.basePrice\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5260,
+      "offset": 5336,
       "length": 10,
       "value": "\"quantity\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "Array",
-      "offset": 5367,
+      "offset": 5443,
       "length": 15,
       "value": "[\"productInfo\"]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5496,
+      "offset": 5572,
       "length": 25,
       "value": "\"productInfo.productName\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5552,
+      "offset": 5628,
       "length": 23,
       "value": "\"productInfo.productID\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5606,
+      "offset": 5682,
       "length": 28,
       "value": "\"productInfo.productVariant\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5852,
+      "offset": 5928,
       "length": 26,
       "value": "\"category.primaryCategory\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5921,
+      "offset": 5997,
       "length": 26,
       "value": "\"Ticketmaster \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5946,
+      "offset": 6022,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 5950,
+      "offset": 6026,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
-      "offset": 6004,
+      "offset": 6080,
       "length": 28,
       "value": "\"productInfo.productVariant\""
     },
@@ -97870,6 +98081,202 @@
       "offset": 1720,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 485,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 554,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 565,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 632,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 643,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 709,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 720,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 799,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 810,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 884,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 895,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "StringLiteral",
+      "offset": 1254,
+      "length": 3,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1382,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1385,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1463,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1496,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1526,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1529,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1608,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1641,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1676,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1710,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1791,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1824,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1859,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/String+Version.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1894,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/PiecemealEventDateFormatter.swift",
@@ -100304,237 +100711,237 @@
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
       "offset": 3020,
-      "length": 44,
-      "value": "\"https:\/\/app.alpha.ticketmaster.\""
+      "length": 40,
+      "value": "\"https:\/\/alpha.ticketmaster.\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3063,
+      "offset": 3059,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
-      "length": 43,
-      "value": "\"https:\/\/app.beta.ticketmaster.\""
+      "offset": 3100,
+      "length": 39,
+      "value": "\"https:\/\/beta.ticketmaster.\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3138,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3190,
-      "length": 43,
-      "value": "\"https:\/\/app.demo.ticketmaster.\""
+      "offset": 3182,
+      "length": 39,
+      "value": "\"https:\/\/demo.ticketmaster.\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3232,
+      "offset": 3220,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3291,
+      "offset": 3279,
       "length": 23,
       "value": "\"http:\/\/localhost:8080\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3360,
+      "offset": 3348,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 3468,
       "length": 22,
       "value": "\"https:\/\/beta.tmol.co\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3612,
+      "offset": 3600,
       "length": 23,
       "value": "\"https:\/\/beta2.tmol.co\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3681,
+      "offset": 3669,
       "length": 25,
       "value": "\"https:\/\/ca-new2.tmol.co\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 3739,
       "length": 23,
       "value": "\"https:\/\/beta2.tmol.co\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3898,
+      "offset": 3886,
       "length": 43,
       "value": "\"https:\/\/www.tmus.preprod.ticketmaster.net\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 3987,
+      "offset": 3975,
       "length": 43,
       "value": "\"https:\/\/www.tmca.preprod.ticketmaster.net\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4075,
+      "offset": 4063,
       "length": 43,
       "value": "\"https:\/\/www.tmus.preprod.ticketmaster.net\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 4163,
       "length": 37,
       "value": "\"https:\/\/www1.stage.ticketmaster.com\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4272,
+      "offset": 4260,
       "length": 63,
       "value": "\"http:\/\/controller-staging.prd1224.prod3.us-east-1.pub-tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 4382,
       "length": 62,
       "value": "\"http:\/\/controller-staging.prd115.prod5.us-east-1.pub-tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4586,
+      "offset": 4574,
       "length": 39,
       "value": "\"https:\/\/edp-s1.stage.ticketmaster.com\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4679,
+      "offset": 4667,
       "length": 39,
       "value": "\"https:\/\/edp-s2.stage.ticketmaster.com\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4773,
+      "offset": 4761,
       "length": 35,
       "value": "\"https:\/\/www1-int.ticketmaster.net\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4861,
+      "offset": 4849,
       "length": 52,
       "value": "\"http:\/\/edp-alpha.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 4956,
+      "offset": 4944,
       "length": 51,
       "value": "\"http:\/\/edp-qa11.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5050,
+      "offset": 5038,
       "length": 51,
       "value": "\"http:\/\/edp-qa12.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5144,
+      "offset": 5132,
       "length": 51,
       "value": "\"http:\/\/edp-qa13.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5238,
+      "offset": 5226,
       "length": 51,
       "value": "\"http:\/\/edp-qa14.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5332,
+      "offset": 5320,
       "length": 51,
       "value": "\"http:\/\/edp-qa15.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5426,
+      "offset": 5414,
       "length": 51,
       "value": "\"http:\/\/edp-qa16.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5539,
+      "offset": 5527,
       "length": 61,
       "value": "\"http:\/\/edp-checkout-alpha.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5647,
+      "offset": 5635,
       "length": 59,
       "value": "\"http:\/\/edp-checkout-qa1.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5753,
+      "offset": 5741,
       "length": 59,
       "value": "\"http:\/\/edp-checkout-qa2.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5859,
+      "offset": 5847,
       "length": 59,
       "value": "\"http:\/\/edp-checkout-qa3.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 5965,
+      "offset": 5953,
       "length": 59,
       "value": "\"http:\/\/edp-checkout-qa4.prd115.nonprod9.us-east-1.tktm.io\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionEnvironment.swift",
       "kind": "StringLiteral",
-      "offset": 6071,
+      "offset": 6059,
       "length": 59,
       "value": "\"http:\/\/edp-checkout-qa5.prd115.nonprod9.us-east-1.tktm.io\""
     },
@@ -100660,581 +101067,581 @@
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 3866,
       "length": 23,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 3883,
+      "offset": 3875,
       "length": 1,
       "value": "\" = \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 3894,
+      "offset": 3886,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 3964,
+      "offset": 3956,
       "length": 6,
       "value": "\" }\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4059,
+      "offset": 4051,
       "length": 15,
       "value": "\" Cookies: {\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4179,
+      "offset": 4171,
       "length": 47,
       "value": "\"\t\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4223,
+      "offset": 4215,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4276,
+      "offset": 4268,
       "length": 6,
       "value": "\" }\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4376,
+      "offset": 4368,
       "length": 33,
       "value": "\" Body: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4406,
+      "offset": 4398,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4951,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5104,
+      "offset": 5096,
       "length": 51,
       "value": "\"\nRX \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5119,
+      "offset": 5111,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5152,
+      "offset": 5144,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5208,
+      "offset": 5200,
       "length": 45,
       "value": "\"\nRX ??? \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5250,
+      "offset": 5242,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5295,
+      "offset": 5287,
       "length": 30,
       "value": "\" Identifier: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5322,
+      "offset": 5314,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5484,
+      "offset": 5476,
       "length": 42,
       "value": "\" Response: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5523,
+      "offset": 5515,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "FloatLiteral",
-      "offset": 5593,
+      "offset": 5585,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5633,
+      "offset": 5625,
       "length": 53,
       "value": "\" Duration: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5662,
+      "offset": 5654,
       "length": 8,
       "value": "\"%0.02f\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5682,
+      "offset": 5674,
       "length": 1,
       "value": "\"s\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5753,
+      "offset": 5745,
       "length": 75,
       "value": "\" StatusCode: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5825,
+      "offset": 5817,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "FloatLiteral",
-      "offset": 5898,
+      "offset": 5890,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5938,
+      "offset": 5930,
       "length": 53,
       "value": "\" Duration: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5967,
+      "offset": 5959,
       "length": 8,
       "value": "\"%0.02f\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 5987,
+      "offset": 5979,
       "length": 1,
       "value": "\"s\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6127,
+      "offset": 6119,
       "length": 26,
       "value": "\" Error: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6150,
+      "offset": 6142,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6398,
+      "offset": 6390,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6411,
+      "offset": 6403,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6426,
+      "offset": 6418,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6636,
+      "offset": 6628,
       "length": 43,
       "value": "\" JSON: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6661,
+      "offset": 6653,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6676,
+      "offset": 6668,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6807,
+      "offset": 6799,
       "length": 50,
       "value": "\" JSON: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 6832,
+      "offset": 6824,
       "length": 1,
       "value": "\"\n<Error parsing JSON>\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7006,
+      "offset": 6998,
       "length": 31,
       "value": "\" JSON: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7031,
+      "offset": 7023,
       "length": 1,
       "value": "\"\n[\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "IntegerLiteral",
-      "offset": 7079,
+      "offset": 7071,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7360,
+      "offset": 7352,
       "length": 22,
       "value": "\"<Error parsing JSON>\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "IntegerLiteral",
-      "offset": 7455,
+      "offset": 7447,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7574,
+      "offset": 7566,
       "length": 5,
       "value": "\",\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7664,
+      "offset": 7656,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7764,
+      "offset": 7756,
       "length": 5,
       "value": "\"]\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 7983,
+      "offset": 7975,
       "length": 43,
       "value": "\" Data: \""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8008,
+      "offset": 8000,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8023,
+      "offset": 8015,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8390,
+      "offset": 8382,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8608,
+      "offset": 8600,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8622,
+      "offset": 8614,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8649,
+      "offset": 8641,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8670,
+      "offset": 8662,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 8683,
+      "offset": 8675,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "Array",
-      "offset": 8851,
+      "offset": 8843,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "Array",
-      "offset": 8890,
+      "offset": 8882,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9006,
+      "offset": 8998,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9021,
+      "offset": 9013,
       "length": 1,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9037,
+      "offset": 9029,
       "length": 1,
       "value": "\";\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9069,
+      "offset": 9061,
       "length": 27,
       "value": "\" domain=\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9094,
+      "offset": 9086,
       "length": 1,
       "value": "\";\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9157,
+      "offset": 9149,
       "length": 34,
       "value": "\" expires=\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9189,
+      "offset": 9181,
       "length": 1,
       "value": "\";\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9194,
+      "offset": 9186,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "BooleanLiteral",
-      "offset": 9246,
+      "offset": 9238,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9254,
+      "offset": 9246,
       "length": 10,
       "value": "\" secure;\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9267,
+      "offset": 9259,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "BooleanLiteral",
-      "offset": 9323,
+      "offset": 9315,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9331,
+      "offset": 9323,
       "length": 12,
       "value": "\" httponly;\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9346,
+      "offset": 9338,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "BooleanLiteral",
-      "offset": 9408,
+      "offset": 9400,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9416,
+      "offset": 9408,
       "length": 15,
       "value": "\" sessiononly;\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9434,
+      "offset": 9426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9461,
+      "offset": 9453,
       "length": 66,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9473,
+      "offset": 9465,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9483,
+      "offset": 9475,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9492,
+      "offset": 9484,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9501,
+      "offset": 9493,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9512,
+      "offset": 9504,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/TMFoundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Logging.swift",
       "kind": "StringLiteral",
-      "offset": 9526,
+      "offset": 9518,
       "length": 1,
       "value": "\"\""
     },

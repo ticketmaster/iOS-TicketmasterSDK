@@ -53,11 +53,11 @@ extension TicketmasterTickets.TMTickets {
   @objc deinit
 }
 extension TicketmasterTickets.TMTicketsModuleHeaderView {
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage, backgroundImageURL: Foundation.URL? = nil)
   @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundColor: UIKit.UIColor)
   @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, mapCoordinateRegion: MapKit.MKCoordinateRegion, mapAnnotation: (any MapKit.MKAnnotation)? = nil)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, qrCodeValue: Swift.String)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, barcode2DValue: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, qrCodeValue: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, barcode2DValue: Swift.String)
   @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, avContentURL: Foundation.URL, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) final public func playAVContent()
   @_Concurrency.MainActor(unsafe) final public func pauseAVContent()
@@ -179,10 +179,11 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
   public let isHostEvent: Swift.Bool?
   public let isSeriesMaster: Swift.Bool?
   public let isSeriesChild: Swift.Bool?
-  public let isThirdPartyResale: Swift.Bool?
-  public let isStreaming: Swift.Bool?
+  public let isArchticsEvent: Swift.Bool?
   public let isSportXREvent: Swift.Bool?
   public let isMicroflexEvent: Swift.Bool?
+  public let isThirdPartyResale: Swift.Bool?
+  public let isStreaming: Swift.Bool?
   public let eventSource: Swift.String?
   public let promoterBranding: TicketmasterTickets.TMPurchasedEventInfo.PromoterBranding?
   public let healthCheck: TicketmasterTickets.TMPurchasedEventInfo.HealthCheck?
@@ -672,7 +673,8 @@ extension TicketmasterTickets.TMTickets {
     public static let userAbortedLogin: Foundation.NSError
     public static let loginWindowMissing: Foundation.NSError
     public static let missingOAuthTokens: Foundation.NSError
-    public static let authSyncAborted: Foundation.NSError
+    public static let memberInfoConversion: Foundation.NSError
+    public static let featureNotSupportedByBackend: Foundation.NSError
     public enum FetchError : Swift.Error {
       case noMatchingEvent
       case noOrders

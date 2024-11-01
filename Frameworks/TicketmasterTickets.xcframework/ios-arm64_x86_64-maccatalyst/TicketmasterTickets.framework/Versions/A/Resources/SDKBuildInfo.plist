@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Sep 30 11:02:45 PDT 2024</string>
+	<string>Fri Nov  1 11:56:20 GMT 2024</string>
 	<key>BuildHost</key>
-	<string>LNEC02ZK2H4MD6Q</string>
+	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.8.3</string>
+	<string>release/3.9.0</string>
 	<key>GITComment</key>
-	<string>Revert PSDK-11666 Add Country Code Menu in Transfer Flow</string>
+	<string>PSDK-13627 Fixed MFA logic for Archtics events</string>
 	<key>GITDate</key>
-	<string>Fri Sep 27 15:28:10 2024 +0100</string>
+	<string>Thu Oct 31 10:11:37 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>f77dd7b322182e5cc179c87c290691c81ece28c0</string>
+	<string>a5df558c164ceaf4ae725dfb04c4c826c4a9852f</string>
 	<key>MarketingVersion</key>
-	<string>3.8.3</string>
+	<string>3.9.0</string>
 </dict>
 </plist>

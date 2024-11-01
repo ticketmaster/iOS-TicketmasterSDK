@@ -1756,6 +1756,7 @@ extension Swift.String : TicketmasterFoundation.ConvertibleToUTF8Data {
     get
   }
 }
+public func compareXYZVersions(_ lhs: Swift.String, _ rhs: Swift.String) -> Foundation.ComparisonResult?
 @_hasMissingDesignatedInitializers public class PiecemealEventDateFormatter {
   public class func stringForMonthDay(from eventDate: TicketmasterFoundation.EventDate, locale: Foundation.Locale? = nil) -> Swift.String?
   public class func stringForDayOfWeek(from eventDate: TicketmasterFoundation.EventDate) -> Swift.String?

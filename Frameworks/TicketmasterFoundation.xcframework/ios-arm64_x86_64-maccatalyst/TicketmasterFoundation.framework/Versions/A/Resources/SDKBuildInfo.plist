@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Jun 18 12:55:29 PDT 2024</string>
+	<string>Thu Oct 10 18:55:20 PDT 2024</string>
 	<key>BuildHost</key>
-	<string>USHOLJBA1-ML</string>
+	<string>LNEC02ZK2H4MD6Q</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Added FakeDataSession.reset() and FakeDataSession.clearCannedDataUponCompletion = true</string>
+	<string>1.3.9 Added x.y.z version comparison and tests</string>
 	<key>GITDate</key>
-	<string>Tue Jun 18 12:50:50 2024 -0700</string>
+	<string>Thu Oct 10 18:52:54 2024 -0700</string>
 	<key>GITRevision</key>
-	<string>90e57ef5c08a514cd46e5b2e72c119ab18f085ea</string>
+	<string>97819e1f480a819829da39fdeafdd3f770f1fac8</string>
 	<key>MarketingVersion</key>
-	<string>1.3.5</string>
+	<string>1.3.9</string>
 </dict>
 </plist>

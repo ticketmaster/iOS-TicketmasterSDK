@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Nov  1 11:56:20 GMT 2024</string>
+	<string>Fri Nov  8 16:11:02 GMT 2024</string>
 	<key>BuildHost</key>
 	<string>UKFARTMML9677</string>
 	<key>GITBranch</key>
-	<string>release/3.9.0</string>
+	<string>release/3.9.1</string>
 	<key>GITComment</key>
-	<string>PSDK-13627 Fixed MFA logic for Archtics events</string>
+	<string>PSDK-0 Updated version to 3.9.1</string>
 	<key>GITDate</key>
-	<string>Thu Oct 31 10:11:37 2024 -0700</string>
+	<string>Wed Nov 6 16:41:35 2024 -0800</string>
 	<key>GITRevision</key>
-	<string>a5df558c164ceaf4ae725dfb04c4c826c4a9852f</string>
+	<string>5d2885fb783688af18d866e9bcd74413530b66cb</string>
 	<key>MarketingVersion</key>
-	<string>3.9.0</string>
+	<string>3.9.1</string>
 </dict>
 </plist>

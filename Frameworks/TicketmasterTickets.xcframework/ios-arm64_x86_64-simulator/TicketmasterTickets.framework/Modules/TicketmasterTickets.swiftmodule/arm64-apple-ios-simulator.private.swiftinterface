@@ -544,6 +544,7 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
       case ups
       case willCall
       case mobileTransfer
+      case thirdPartyPrimaryUrl
       case unknown
       public init?(rawValue: Swift.String)
       public typealias RawValue = Swift.String

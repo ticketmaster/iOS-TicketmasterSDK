@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Nov  8 16:11:02 GMT 2024</string>
+	<string>Wed Nov 20 16:17:01 CST 2024</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>MX-IT09403</string>
 	<key>GITBranch</key>
-	<string>release/3.9.1</string>
+	<string>release/3.9.2</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Updated version to 3.9.1</string>
+	<string>Merge branch Fix-PSDK-13933-past-events into master</string>
 	<key>GITDate</key>
-	<string>Wed Nov 6 16:41:35 2024 -0800</string>
+	<string>Wed Nov 20 17:02:10 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>5d2885fb783688af18d866e9bcd74413530b66cb</string>
+	<string>a50f3ffb9238e52e9bb4c98e52bbd3cfe4ac9c29</string>
 	<key>MarketingVersion</key>
-	<string>3.9.1</string>
+	<string>3.9.2</string>
 </dict>
 </plist>

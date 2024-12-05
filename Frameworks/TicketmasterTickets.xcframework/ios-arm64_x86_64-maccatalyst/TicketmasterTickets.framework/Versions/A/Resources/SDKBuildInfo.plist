@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Nov 20 16:17:01 CST 2024</string>
+	<string>Thu Dec  5 08:43:42 PST 2024</string>
 	<key>BuildHost</key>
-	<string>MX-IT09403</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
-	<string>release/3.9.2</string>
+	<string>release/3.9.3</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-13933-past-events into master</string>
+	<string>PSDK-10904 Remove StyleManager, re-remove UIView.appearance(whenContainedIn…)</string>
 	<key>GITDate</key>
-	<string>Wed Nov 20 17:02:10 2024 +0000</string>
+	<string>Thu Dec 5 08:27:31 2024 -0800</string>
 	<key>GITRevision</key>
-	<string>a50f3ffb9238e52e9bb4c98e52bbd3cfe4ac9c29</string>
+	<string>da276411e105edeed62afb3c8d70ef353755549e</string>
 	<key>MarketingVersion</key>
-	<string>3.9.2</string>
+	<string>3.9.3</string>
 </dict>
 </plist>

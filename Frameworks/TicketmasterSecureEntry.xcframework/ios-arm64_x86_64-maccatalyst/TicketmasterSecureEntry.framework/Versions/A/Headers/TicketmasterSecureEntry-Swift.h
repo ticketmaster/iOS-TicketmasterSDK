@@ -329,6 +329,10 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 
 
 
+
+
+
+
 @class UIColor;
 
 @interface SecureEntryView (SWIFT_EXTENSION(TicketmasterSecureEntry))
@@ -683,6 +687,10 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 - (void)awakeFromNib;
 - (void)prepareForInterfaceBuilder;
 @end
+
+
+
+
 
 
 

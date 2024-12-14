@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Oct 30 10:52:57 PDT 2024</string>
+	<string>Tue Dec  3 10:26:00 CST 2024</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>MX-IT09403</string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/3.9.4</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-13627-MFAFallback into master</string>
+	<string>Merge branch Fix-PSDK-14065-fix-sportxr-login-url into master</string>
 	<key>GITDate</key>
-	<string>Wed Oct 30 17:49:27 2024 +0000</string>
+	<string>Tue Dec 3 09:41:40 2024 -0600</string>
 	<key>GITRevision</key>
-	<string>e0e321e2033bb6a0eaf84ff4225ec57f5d0315d8</string>
+	<string>f0a6f83a886e88be7447a738b4268236fb0fbe74</string>
 	<key>MarketingVersion</key>
-	<string>3.9.2</string>
+	<string>3.9.4</string>
 </dict>
 </plist>

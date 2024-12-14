@@ -327,6 +327,10 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 
 
 
+
+
+
+
 @class UIColor;
 
 @interface SecureEntryView (SWIFT_EXTENSION(TicketmasterSecureEntry))

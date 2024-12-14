@@ -10,7 +10,9 @@ import ImageIO
 import LocalAuthentication
 import Security
 import Swift
+import SwiftProtobuf
 import SwiftUI
+import TicketmasterFoundation
 @_exported import TicketmasterSecureEntry
 import UIKit
 import _Concurrency
@@ -33,6 +35,38 @@ extension Swift.Array {
     get {
     self[self.startIndex ..< self.endIndex]
   }
+  }
+}
+extension TicketmasterSecureEntry.SecureEntryView {
+  public struct Error {
+    public static let domain: Swift.String
+    public static let unknown: Foundation.NSError
+    public static let unableToGenerateRET: Foundation.NSError
+    public static let missingRetVersion: Foundation.NSError
+    public static let unableToCreateRetMetadata: Foundation.NSError
+    public static let tokenInvalid: Foundation.NSError
+    public static let missingDevicePublicKeyOrSignature: Foundation.NSError
+    public static let missingEventKey: Foundation.NSError
+    public static let missingTotp: Foundation.NSError
+    public static let unableToCreateTotpObject: Foundation.NSError
+    public static let unableToGenerateOtpAndTimestamp: Foundation.NSError
+  }
+}
+public protocol SecureEntryViewSigningDelegate : AnyObject {
+  func getSignedAssertion(infoToEncode: TicketmasterSecureEntry.SecureEntryView.InfoToEncode, callSource: Swift.String, success: @escaping ((_ format: Swift.UInt8, _ authenticatorData: Foundation.Data?, _ clientDataJSONHash: Foundation.Data?, _ signature: Foundation.Data) -> Swift.Void), failure: @escaping ((_ error: (any Swift.Error)?) -> Swift.Void))
+}
+extension TicketmasterSecureEntry.SecureEntryView {
+  public enum RetVersion : Swift.String, Swift.Codable {
+    case v1, v2, suppressed
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum InfoToEncode {
+    case string(Swift.String?)
+    case data(Foundation.Data)
   }
 }
 extension TicketmasterSecureEntry.SecureEntryView {
@@ -305,6 +339,8 @@ internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swif
     set
   }
   @_Concurrency.MainActor(unsafe) final public func setTokenBySkippingDecoding(_ token: Swift.String?)
+  @_Concurrency.MainActor(unsafe) final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion?
+  @_Concurrency.MainActor(unsafe) weak final public var signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
@@ -335,3 +371,6 @@ extension Swift.UInt32 {
     self = val0 | val1 | val2 | val3
   }
 }
+extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Equatable {}
+extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Hashable {}
+extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.RawRepresentable {}

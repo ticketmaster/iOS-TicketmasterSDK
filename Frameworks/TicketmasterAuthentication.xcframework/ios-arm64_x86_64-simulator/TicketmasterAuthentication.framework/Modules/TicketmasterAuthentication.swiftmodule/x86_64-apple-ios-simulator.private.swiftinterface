@@ -86,7 +86,7 @@ public protocol TMApigeeConfigurationProvider : AnyObject {
   func removeAllConfiguredBackendServices(completion: @escaping (_ success: Swift.Bool) -> Swift.Void)
 }
 public protocol TMDeviceBindingProvider : AnyObject {
-  func boundDeviceIdSignature(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, callSource: Swift.String, stringToEncode: Swift.String?, success: @escaping (_ deviceKey: TicketmasterAuthentication.TMDeviceKey) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  func boundDeviceIdSignature(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, callSource: Swift.String, infoToEncode: TicketmasterAuthentication.TMAuthentication.InfoToEncode, success: @escaping (_ deviceKey: TicketmasterAuthentication.TMDeviceKey) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   func bindNewDeviceKey(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String, success: @escaping (_ remainingKeys: Swift.Int?) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 public protocol TMAuthenticationExternalTokenProvider : AnyObject {
@@ -132,7 +132,11 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public func hasValidatedToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
 }
 extension TicketmasterAuthentication.TMAuthentication {
-  final public func boundDeviceIdSignature(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, callSource: Swift.String, stringToEncode: Swift.String? = nil, success: @escaping (_ deviceKey: TicketmasterAuthentication.TMDeviceKey) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
+  public enum InfoToEncode {
+    case string(Swift.String?)
+    case data(Foundation.Data)
+  }
+  final public func boundDeviceIdSignature(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, callSource: Swift.String, infoToEncode: TicketmasterAuthentication.TMAuthentication.InfoToEncode, success: @escaping (_ deviceKey: TicketmasterAuthentication.TMDeviceKey) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   final public func bindNewDeviceKey(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String, success: @escaping (_ remainingKeys: Swift.Int?) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMAuthentication {
@@ -459,6 +463,7 @@ extension TicketmasterAuthentication.TMAuthentication {
   @frozen public enum TMXDeploymentEnvironment : Swift.String, Swift.Codable, Swift.Hashable, Swift.CaseIterable {
     case Production
     case Staging
+    case StagingNew
     case PreProduction
     case Development
     public var keyName: Swift.String {
@@ -565,8 +570,6 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let venueIdFilter: [Swift.String]?
     public let attractionIdFilter: [Swift.String]?
     public let logoURL: Foundation.URL?
-    public let tmxWillCreateExternalGuestUser: Swift.Bool
-    public let allowTeamToHostSystemExchange: Swift.Bool
     public let assignFlowEnabled: Swift.Bool
     public let assignFlowLearnMoreURLs: [Swift.String : Foundation.URL]?
     public let useICCPFetchTickets: Swift.Bool
@@ -590,7 +593,6 @@ extension TicketmasterAuthentication.TMApigeeConfig {
       public let clientId: Swift.String
       public let mfaEnabled: Swift.Bool
       public let mfaClientId: Swift.String?
-      public let forceWebTransfer: Swift.Bool
       public let scope: Swift.String?
       public let siteToken: Swift.String?
       public let redirectScheme: Swift.String?
@@ -598,6 +600,10 @@ extension TicketmasterAuthentication.TMApigeeConfig {
       public let integratorId: Swift.String?
       public let placementId: Swift.String?
       public let prefersEphemeralWebBrowserSession: Swift.Bool
+      public let systemExchangeClientIDs: [Swift.String]?
+      public let allowTeamToHostSystemExchange: Swift.Bool
+      public let tmxWillCreateExternalGuestUser: Swift.Bool
+      public let forceWebTransfer: Swift.Bool
       public func hash(into hasher: inout Swift.Hasher)
       public static func == (a: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration, b: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration) -> Swift.Bool
       public func encode(to encoder: any Swift.Encoder) throws

@@ -37,7 +37,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "git@github.com:apple/swift-protobuf.git",
+        .package(name: "SwiftProtobuf",
+                 url: "git@github.com:apple/swift-protobuf.git",
                  exact: "1.28.2"),
     ],
     targets: [
@@ -72,8 +73,9 @@ let package = Package(
             path: "Frameworks/TicketmasterTickets.xcframework"
         ),
        .target(
-            name: "SwiftProtobuf",
-            dependencies: [.product(name: "SwiftProtobuf",
+            name: "TicketmasterSecureEntryTarget",
+            dependencies: [.target(name: "TicketmasterSecureEntry"),
+                           .product(name: "SwiftProtobuf",
                                     package: "swift-protobuf")
             ]
         ),

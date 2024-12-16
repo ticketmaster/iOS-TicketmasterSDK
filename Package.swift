@@ -65,6 +65,9 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
+            dependencies: [.product(name: "SwiftProtobuf",
+                                    package: "swift-protobuf")
+            ],
             path: "Frameworks/TicketmasterSecureEntry.xcframework"
         ),
         .binaryTarget(

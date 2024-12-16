@@ -13,12 +13,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TicketmasterFoundation",
-            targets: ["TicketmasterFoundation"]
-        ),
+            targets: ["TicketmasterFoundation"]),
         .library(
             name: "TicketmasterAuthentication",
-            targets: ["TicketmasterAuthentication"]
-        ),
+            targets: ["TicketmasterAuthentication"]),
         .library(
             name: "TicketmasterDiscoveryAPI",
             targets: ["TicketmasterDiscoveryAPI"]),
@@ -34,6 +32,9 @@ let package = Package(
         .library(
             name: "TicketmasterTickets",
             targets: ["TicketmasterTickets"]),
+        .library(
+            name: "TicketmasterSecureEntryTarget",
+            targets: ["TicketmasterSecureEntryTarget"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -71,13 +72,12 @@ let package = Package(
             name: "TicketmasterTickets",
             path: "Frameworks/TicketmasterTickets.xcframework"
         ),
-       .target(
-            name: "TicketmasterSecureEntryTarget",
-            dependencies: [.target(name: "TicketmasterSecureEntry"),
-                           .product(name: "SwiftProtobuf",
-                                    package: "swift-protobuf")
-            ]
-        ),
+        .target(
+             name: "TicketmasterSecureEntryTarget",
+             dependencies: [.target(name: "TicketmasterSecureEntry"),
+                            .product(name: "SwiftProtobuf",
+                                     package: "swift-protobuf")
+             ]),
     ],
     swiftLanguageVersions: [.v5]
 )

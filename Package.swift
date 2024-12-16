@@ -37,8 +37,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "SwiftProtobuf",
-                 url: "git@github.com:apple/swift-protobuf.git",
+        .package(url: "git@github.com:apple/swift-protobuf.git",
                  exact: "1.28.2"),
     ],
     targets: [

@@ -121,7 +121,7 @@ $ sudo gem install cocoapods
 2. Update your local `Podfile` to the [latest release version](https://github.com/ticketmaster/iOS-TicketmasterSDK/releases):
 
 ```ruby
-pod 'TM-Ignite', '~> 1.12.0'
+pod 'TM-Ignite', '~> 1.12.1'
 ```
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)
 
@@ -132,3 +132,11 @@ $ pod install
 
 4. CocoaPods requires `User Script Sandboxing = No` in your Xcode Project settings:
    <img src="Screenshots/CocoaPodsProjectSettings.jpg" alt="Project Settings" style="zoom: 50%;" />
+
+### External Dependencies
+
+#### [SwiftProtobuf](https://github.com/apple/swift-protobuf)
+
+As of version 1.12.0, SecureEntry SDK also requires the Apple SwiftProtobuf library. This library should be added automatically to your project if you use SwiftPackageManager or CocoaPods.
+
+

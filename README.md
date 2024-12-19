@@ -123,7 +123,7 @@ $ sudo gem install cocoapods
 ```ruby
 target 'MyApp' do
   use_frameworks!
-  pod 'TM-Ignite', '~> 1.12.9'
+  pod 'TM-Ignite', '~> 1.12.10'
 end
 ```
    * Make sure to add `use_frameworks!` (as in the example above)

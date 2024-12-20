@@ -5,6 +5,7 @@
 import CommonCrypto
 import CoreLocation
 import Foundation
+import OSLog
 import Security
 import Swift
 @_exported import TicketmasterFoundation
@@ -711,6 +712,8 @@ extension UIKit.UIColor {
 }
 @discardableResult
 public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel = .debug) -> Swift.Bool
+@discardableResult
+public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function: Swift.String = #function, _ line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel = .debug, logger: os.Logger) -> Swift.Bool
 @objc @_inheritsConvenienceInitializers final public class MessageLogger : ObjectiveC.NSObject {
   public static var currentLogLevel: TicketmasterFoundation.LogLevel
   public static var maximumMessageLength: Swift.Int
@@ -875,6 +878,7 @@ extension Foundation.Locale {
   public var testSession: Foundation.URLSession
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
+  public func reset()
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
   @objc deinit
 }
@@ -1724,6 +1728,7 @@ public class TrustedCert {
   final public var transactionData: TicketmasterFoundation.UALCommerceEvent.TransactionData
   final public var products: [TicketmasterFoundation.UALCommerceEvent.ProductData]?
   final public var customAttributes: [Swift.String : Any]
+  final public var rawJSON: TicketmasterFoundation.JSONDictionary?
   convenience public init?(transactionEventJSON: TicketmasterFoundation.JSONDictionary?)
   convenience public init?(addToCartEventJSON: TicketmasterFoundation.JSONDictionary?)
   @objc deinit
@@ -1751,6 +1756,7 @@ extension Swift.String : TicketmasterFoundation.ConvertibleToUTF8Data {
     get
   }
 }
+public func compareXYZVersions(_ lhs: Swift.String, _ rhs: Swift.String) -> Foundation.ComparisonResult?
 @_hasMissingDesignatedInitializers public class PiecemealEventDateFormatter {
   public class func stringForMonthDay(from eventDate: TicketmasterFoundation.EventDate, locale: Foundation.Locale? = nil) -> Swift.String?
   public class func stringForDayOfWeek(from eventDate: TicketmasterFoundation.EventDate) -> Swift.String?
@@ -1889,11 +1895,13 @@ extension Foundation.TimeZone {
   }
   public var cannedResultArrayIterator: Swift.Int
   public static let cannedResultArrayEndError: Foundation.NSError
+  public var clearCannedDataUponCompletion: Swift.Bool
   public var requestValidator: TicketmasterFoundation.FakeDataSession.URLRequestValidator?
   public var testSession: Foundation.URLSession
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
   public static func cannedHTTPResponse(code: Swift.Int) -> Foundation.HTTPURLResponse?
+  public func reset()
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
   @objc deinit
 }

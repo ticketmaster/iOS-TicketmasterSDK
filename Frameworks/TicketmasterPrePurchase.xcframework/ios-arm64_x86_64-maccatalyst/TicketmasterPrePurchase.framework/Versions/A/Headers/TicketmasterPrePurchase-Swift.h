@@ -339,11 +339,18 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class SFSafariViewController;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
+- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
 
 
@@ -356,11 +363,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class SFSafariViewController;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
-- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
-@end
 
 
 
@@ -379,15 +381,17 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-
 @class WKNavigation;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
+
+
 
 
 
@@ -754,11 +758,18 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
+
 @class WKUserContentController;
 @class WKScriptMessage;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class SFSafariViewController;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
+- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
 
 
@@ -771,11 +782,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class SFSafariViewController;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
-- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
-@end
 
 
 
@@ -794,15 +800,17 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-
 @class WKNavigation;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
+
+
 
 
 

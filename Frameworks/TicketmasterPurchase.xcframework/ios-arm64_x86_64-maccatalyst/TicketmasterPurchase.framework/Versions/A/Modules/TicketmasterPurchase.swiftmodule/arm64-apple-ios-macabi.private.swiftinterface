@@ -157,7 +157,8 @@ public protocol TMPurchaseWebAnalyticsDelegate : AnyObject {
   final public let billingStateProvince: Swift.String?
   final public let paymentMethod: Swift.String?
   final public let shippingMethod: Swift.String?
-  public init(identifier: Swift.String? = nil, date: Foundation.Date? = nil, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil, eventIdentifier: Swift.String? = nil, eventName: Swift.String? = nil, attractionIdentifier: Swift.String? = nil, attractionName: Swift.String? = nil, venueIdentifier: Swift.String? = nil, venueName: Swift.String? = nil, majorCategoryName: Swift.String? = nil, minorCategoryName: Swift.String? = nil, promoterIdentifier: Swift.String? = nil, edpType: Swift.String? = nil, isResale: Swift.Bool = false, ticketQuantity: Swift.Int? = nil, currencyCode: Swift.String? = nil, basePriceTotal: Foundation.NSDecimalNumber? = nil, shippingTotal: Foundation.NSDecimalNumber? = nil, orderProcessingFeeTotal: Foundation.NSDecimalNumber? = nil, upsellTotal: Foundation.NSDecimalNumber? = nil, voucherDiscountTotal: Foundation.NSDecimalNumber? = nil, taxTotal: Foundation.NSDecimalNumber? = nil, grandTotal: Foundation.NSDecimalNumber? = nil, items: [TicketmasterPurchase.TMPurchaseOrder.Item]? = nil, billingCountry: Swift.String? = nil, billingPostalCode: Swift.String? = nil, billingStateProvince: Swift.String? = nil, paymentMethod: Swift.String? = nil, shippingMethod: Swift.String? = nil)
+  final public let rawJSON: TicketmasterFoundation.JSONDictionary?
+  public init(identifier: Swift.String? = nil, date: Foundation.Date? = nil, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil, eventIdentifier: Swift.String? = nil, eventName: Swift.String? = nil, attractionIdentifier: Swift.String? = nil, attractionName: Swift.String? = nil, venueIdentifier: Swift.String? = nil, venueName: Swift.String? = nil, majorCategoryName: Swift.String? = nil, minorCategoryName: Swift.String? = nil, promoterIdentifier: Swift.String? = nil, edpType: Swift.String? = nil, isResale: Swift.Bool = false, ticketQuantity: Swift.Int? = nil, currencyCode: Swift.String? = nil, basePriceTotal: Foundation.NSDecimalNumber? = nil, shippingTotal: Foundation.NSDecimalNumber? = nil, orderProcessingFeeTotal: Foundation.NSDecimalNumber? = nil, upsellTotal: Foundation.NSDecimalNumber? = nil, voucherDiscountTotal: Foundation.NSDecimalNumber? = nil, taxTotal: Foundation.NSDecimalNumber? = nil, grandTotal: Foundation.NSDecimalNumber? = nil, items: [TicketmasterPurchase.TMPurchaseOrder.Item]? = nil, billingCountry: Swift.String? = nil, billingPostalCode: Swift.String? = nil, billingStateProvince: Swift.String? = nil, paymentMethod: Swift.String? = nil, shippingMethod: Swift.String? = nil, rawJSON: TicketmasterFoundation.JSONDictionary? = nil)
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc public class Item : ObjectiveC.NSObject {
     final public let ticketTypeIdentifier: Swift.String?
@@ -210,6 +211,7 @@ extension TicketmasterPurchase.TMPurchaseOrder.Item {
   public var showCalendarToolbarButton: Swift.Bool
   public var showFavoriteToolbarButton: Swift.Bool
   public var showShareToolbarButton: Swift.Bool
+  public var customTitleFont: UIKit.UIFont?
   public var additionalURLParameters: [Swift.String : Swift.String]
   public var internalTestingKeys: [Swift.String : Any]
   public init(eventID: Swift.String)
@@ -251,7 +253,7 @@ public protocol TMPurchaseSharingDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
 }
 extension TicketmasterPurchase.TMPurchaseNavigationController {
-  @_Concurrency.MainActor(unsafe) public class func eventDetailsNavigationController(eventIdentifier: Swift.String, internalTestingKeys: [Swift.String : Any] = [:], marketDomain: TicketmasterFoundation.MarketDomain = .US) -> TicketmasterPurchase.TMPurchaseNavigationController
+  @_Concurrency.MainActor(unsafe) public class func eventDetailsNavigationController(eventIdentifier: Swift.String, internalTestingKeys: [Swift.String : Any] = [:], marketDomain: TicketmasterFoundation.MarketDomain = .US, customFont: UIKit.UIFont? = nil) -> TicketmasterPurchase.TMPurchaseNavigationController
 }
 extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Equatable {}
 extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Hashable {}

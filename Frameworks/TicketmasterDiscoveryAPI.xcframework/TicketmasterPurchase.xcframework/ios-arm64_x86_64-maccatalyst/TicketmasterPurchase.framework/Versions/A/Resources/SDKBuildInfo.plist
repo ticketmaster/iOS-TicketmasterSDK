@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Thu Dec 19 20:14:50 PST 2024</string>
+	<key>BuildHost</key>
+	<string>LNERT9JF4YTCD</string>
+	<key>GITBranch</key>
+	<string>release/3.3.0</string>
+	<key>GITComment</key>
+	<string>Update version to 3.3.0</string>
+	<key>GITDate</key>
+	<string>Thu Dec 19 20:04:16 2024 -0800</string>
+	<key>GITRevision</key>
+	<string>6eb5b75bc32dc2f74bdb104bb86957504a7c5268</string>
+	<key>MarketingVersion</key>
+	<string>3.3.0</string>
+</dict>
+</plist>

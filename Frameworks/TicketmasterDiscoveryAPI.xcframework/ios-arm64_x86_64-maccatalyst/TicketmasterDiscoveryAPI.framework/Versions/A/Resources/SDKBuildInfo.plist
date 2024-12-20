@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Jun  7 14:36:40 PDT 2024</string>
+	<string>Thu Dec 19 20:09:58 PST 2024</string>
 	<key>BuildHost</key>
-	<string>USHOLJBA1-ML</string>
+	<string>LNERT9JF4YTCD</string>
 	<key>GITBranch</key>
-	<string>release/3.0.3</string>
+	<string>release/3.3.0</string>
 	<key>GITComment</key>
-	<string>Bump up version to 3.0.3</string>
+	<string>Update version to 3.3.0</string>
 	<key>GITDate</key>
-	<string>Wed Jun 5 17:22:04 2024 -0700</string>
+	<string>Thu Dec 19 20:04:16 2024 -0800</string>
 	<key>GITRevision</key>
-	<string>214e80256129c8ae30470bee052967ddfde0959a</string>
+	<string>6eb5b75bc32dc2f74bdb104bb86957504a7c5268</string>
 	<key>MarketingVersion</key>
-	<string>3.0.3</string>
+	<string>3.3.0</string>
 </dict>
 </plist>

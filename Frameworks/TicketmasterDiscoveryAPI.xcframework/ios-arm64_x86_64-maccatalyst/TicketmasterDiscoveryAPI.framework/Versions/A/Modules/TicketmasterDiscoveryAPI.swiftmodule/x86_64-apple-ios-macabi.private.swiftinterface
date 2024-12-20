@@ -28,6 +28,9 @@ extension TicketmasterDiscoveryAPI.DiscoveryAttraction {
   public var isMusicAttraction: Swift.Bool {
     get
   }
+  public var isTheatreAttraction: Swift.Bool {
+    get
+  }
   public var isSportsAttraction: Swift.Bool {
     get
   }
@@ -43,6 +46,9 @@ extension TicketmasterDiscoveryAPI.DiscoveryAttraction {
 }
 extension TicketmasterDiscoveryAPI.DiscoveryClassification {
   public var isMusic: Swift.Bool {
+    get
+  }
+  public var isTheatre: Swift.Bool {
     get
   }
   public var isSports: Swift.Bool {
@@ -110,6 +116,7 @@ public enum DiscoveryLocale : Swift.String, Swift.Hashable, Swift.Equatable, Swi
   case EN_GB
   case EN_MX
   case ES_MX
+  case ES_419
   public static func locale(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain?) -> TicketmasterDiscoveryAPI.DiscoveryLocale
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String

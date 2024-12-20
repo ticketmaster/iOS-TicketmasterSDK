@@ -1,0 +1,275 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterPurchase
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppKit
+import DeveloperToolsSupport
+import Foundation
+import SafariServices
+import Swift
+import SwiftUI
+import TicketmasterAuthentication
+import TicketmasterDiscoveryAPI
+import TicketmasterFoundation
+@_exported import TicketmasterPurchase
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol TMPurchaseUserAnalyticsDelegate : AnyObject {
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didBeginTicketSelectionFor event: TicketmasterDiscoveryAPI.DiscoveryEvent)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didEndTicketSelectionFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, because reason: TicketmasterPurchase.TMEndTicketSelectionReason)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didBeginCheckoutFor event: TicketmasterDiscoveryAPI.DiscoveryEvent)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didEndCheckoutFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, because reason: TicketmasterPurchase.TMEndCheckoutReason)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didMakePurchaseFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, order: TicketmasterPurchase.TMPurchaseOrder)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didPressNavBarButtonFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, button: TicketmasterPurchase.TMPurchaseNavBarButton)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didShare event: TicketmasterDiscoveryAPI.DiscoveryEvent, activityType: UIKit.UIActivity.ActivityType)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didViewSubPageFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, subPage: TicketmasterPurchase.TMPurchaseSubPage)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didMakeDecisionFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, component: TicketmasterPurchase.TMPurchaseComponent, decision: TicketmasterPurchase.TMPurchaseDecision)
+}
+public enum TMEndTicketSelectionReason : Swift.String {
+  case userDismissedTicketSelection
+  case ticketSelectionError
+  case eventIdentifierInvalid
+  case checkoutBegan
+  case maintenanceMode
+  case redirectedToEventBrowsing
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TMEndCheckoutReason : Swift.String {
+  case userDismissedCheckout
+  case checkoutCartError
+  case checkoutCartNotLoggedIn
+  case cartTimerExpired
+  case userCompletedPurchase
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TMPurchaseNavBarButton : Swift.String {
+  case infoButton
+  case calendarButton
+  case favoriteButton
+  case shareButton
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TMPurchaseSubPage : Swift.String {
+  case edpSmartQueue
+  case edpListView
+  case edpSeatMap
+  case edpOfferCard
+  case cartUpsells
+  case cartShipping
+  case cartBilling
+  case cartComplete
+  case cartExternalURL
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TMPurchaseComponent : Swift.String {
+  case ticketReleaseConfirmation
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum TMPurchaseDecision : Swift.String {
+  case confirm
+  case cancel
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol TMPurchaseWebAnalyticsDelegate : AnyObject {
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, pageLoadDidErrorFor url: Foundation.URL, error: Foundation.NSError)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, webPageDidErrorFor url: Foundation.URL, errorString: Swift.String)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, webPageDidReportUALPageView pageView: TicketmasterFoundation.UALPageView)
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, webPageDidReportUALCommerceEvent commerceEvent: TicketmasterFoundation.UALCommerceEvent)
+}
+@objc @_inheritsConvenienceInitializers final public class TMPurchase : ObjectiveC.NSObject {
+  public static var shared: TicketmasterPurchase.TMPurchase
+  final public var version: Swift.String {
+    get
+  }
+  final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
+  final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
+  final public var marketDomain: TicketmasterFoundation.MarketDomain {
+    get
+    set
+  }
+  final public var environment: TicketmasterFoundation.ConnectionEnvironment {
+    get
+    set
+  }
+  final public var brandColor: UIKit.UIColor
+  final public var useDebugAnalytics: Swift.Bool
+  final public var disableUFCLoginManagement: Swift.Bool
+  final public var dismissUponCompletion: Swift.Bool
+  @available(*, deprecated, message: "Use method configure(apiKey:region:completion:) instead")
+  final public var apiKey1: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class TMPurchaseOrder : ObjectiveC.NSObject {
+  final public let identifier: Swift.String?
+  final public let date: Foundation.Date
+  final public let discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent?
+  final public let eventIdentifier: Swift.String?
+  final public let eventName: Swift.String?
+  final public let attractionIdentifier: Swift.String?
+  final public let attractionName: Swift.String?
+  final public let venueIdentifier: Swift.String?
+  final public let venueName: Swift.String?
+  final public let majorCategoryName: Swift.String?
+  final public let minorCategoryName: Swift.String?
+  final public let promoterIdentifier: Swift.String?
+  final public let edpType: Swift.String?
+  final public let isResale: Swift.Bool
+  final public let ticketQuantity: Swift.Int?
+  final public let currencyCode: Swift.String?
+  final public let basePriceTotal: Foundation.NSDecimalNumber
+  final public let shippingTotal: Foundation.NSDecimalNumber
+  final public let orderProcessingFeeTotal: Foundation.NSDecimalNumber
+  public var upsellTotal: Foundation.NSDecimalNumber
+  public var voucherDiscountTotal: Foundation.NSDecimalNumber
+  final public let taxTotal: Foundation.NSDecimalNumber
+  final public let grandTotal: Foundation.NSDecimalNumber
+  final public let items: [TicketmasterPurchase.TMPurchaseOrder.Item]
+  final public let billingCountry: Swift.String?
+  final public let billingPostalCode: Swift.String?
+  final public let billingStateProvince: Swift.String?
+  final public let paymentMethod: Swift.String?
+  final public let shippingMethod: Swift.String?
+  final public let rawJSON: TicketmasterFoundation.JSONDictionary?
+  public init(identifier: Swift.String? = nil, date: Foundation.Date? = nil, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil, eventIdentifier: Swift.String? = nil, eventName: Swift.String? = nil, attractionIdentifier: Swift.String? = nil, attractionName: Swift.String? = nil, venueIdentifier: Swift.String? = nil, venueName: Swift.String? = nil, majorCategoryName: Swift.String? = nil, minorCategoryName: Swift.String? = nil, promoterIdentifier: Swift.String? = nil, edpType: Swift.String? = nil, isResale: Swift.Bool = false, ticketQuantity: Swift.Int? = nil, currencyCode: Swift.String? = nil, basePriceTotal: Foundation.NSDecimalNumber? = nil, shippingTotal: Foundation.NSDecimalNumber? = nil, orderProcessingFeeTotal: Foundation.NSDecimalNumber? = nil, upsellTotal: Foundation.NSDecimalNumber? = nil, voucherDiscountTotal: Foundation.NSDecimalNumber? = nil, taxTotal: Foundation.NSDecimalNumber? = nil, grandTotal: Foundation.NSDecimalNumber? = nil, items: [TicketmasterPurchase.TMPurchaseOrder.Item]? = nil, billingCountry: Swift.String? = nil, billingPostalCode: Swift.String? = nil, billingStateProvince: Swift.String? = nil, paymentMethod: Swift.String? = nil, shippingMethod: Swift.String? = nil, rawJSON: TicketmasterFoundation.JSONDictionary? = nil)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc public class Item : ObjectiveC.NSObject {
+    final public let ticketTypeIdentifier: Swift.String?
+    final public let ticketTypeName: Swift.String?
+    final public let basePrice: Foundation.NSDecimalNumber
+    final public let convenienceFee: Foundation.NSDecimalNumber
+    final public let facilityFee: Foundation.NSDecimalNumber
+    final public let tax: Foundation.NSDecimalNumber
+    final public let quantity: Swift.Int?
+    final public let variant: Swift.String?
+    final public let productType: Swift.String?
+    public init(ticketTypeIdentifier: Swift.String?, ticketTypeName: Swift.String?, basePrice: Foundation.NSDecimalNumber?, convenienceFee: Foundation.NSDecimalNumber?, facilityFee: Foundation.NSDecimalNumber?, tax: Foundation.NSDecimalNumber?, quantity: Swift.Int?, variant: Swift.String?, productType: Swift.String?)
+    @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+    @objc deinit
+  }
+  @objc deinit
+}
+extension TicketmasterPurchase.TMPurchaseOrder {
+  public var convenienceFeeTotal: Foundation.NSDecimalNumber {
+    get
+  }
+  public var otherFeeTotal: Foundation.NSDecimalNumber {
+    get
+  }
+}
+extension TicketmasterPurchase.TMPurchaseOrder.Item {
+  public var otherFee: Foundation.NSDecimalNumber {
+    get
+  }
+}
+extension TicketmasterPurchase.TMPurchaseOrder {
+  convenience public init(jsonString: Swift.String?, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent?)
+  convenience public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent?)
+}
+extension TicketmasterPurchase.TMPurchaseOrder.Item {
+  convenience public init(jsonDictionary: TicketmasterFoundation.JSONDictionary)
+}
+@objc public class TMPurchaseWebsiteConfiguration : ObjectiveC.NSObject {
+  public var eventID: Swift.String
+  public var attractionID: Swift.String?
+  public var brandName: Swift.String?
+  public var showNFLBranding: Swift.Bool
+  @available(*, deprecated, message: "Use TMPurchase.shared.marketDomain instead")
+  public var marketDomain: TicketmasterFoundation.MarketDomain
+  public var discreteID: Swift.String?
+  public var cameFromCode: Swift.String?
+  public var showResaleSoftLanding: Swift.Bool
+  public var showResaleMessageBanner: Swift.Bool
+  public var showInfoToolbarButton: Swift.Bool
+  public var showCalendarToolbarButton: Swift.Bool
+  public var showFavoriteToolbarButton: Swift.Bool
+  public var showShareToolbarButton: Swift.Bool
+  public var customTitleFont: UIKit.UIFont?
+  public var additionalURLParameters: [Swift.String : Swift.String]
+  public var internalTestingKeys: [Swift.String : Any]
+  public init(eventID: Swift.String)
+  @objc deinit
+}
+public protocol TMPurchaseNavigationDelegate : AnyObject {
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, didFailToLoadWith error: any Swift.Error)
+  func purchaseNavigationControllerDidFinish(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController)
+}
+public protocol TMPurchaseSharingDelegate : AnyObject {
+  func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, sharingMessageFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, completion: @escaping (_ sharingMessage: Swift.String) -> Swift.Void)
+}
+@objc @_Concurrency.MainActor(unsafe) public class TMPurchaseNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public init(configuration: TicketmasterPurchase.TMPurchaseWebsiteConfiguration, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) weak public var sharingDelegate: (any TicketmasterPurchase.TMPurchaseSharingDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var navigationDelegate: (any TicketmasterPurchase.TMPurchaseNavigationDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var userAnalyticsDelegate: (any TicketmasterPurchase.TMPurchaseUserAnalyticsDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var webAnalyticsDelegate: (any TicketmasterPurchase.TMPurchaseWebAnalyticsDelegate)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func checkoutDidReceive(paymentNonce: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func checkoutDidReceive(paymentError: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+}
+extension TicketmasterPurchase.TMPurchaseNavigationController {
+  @_Concurrency.MainActor(unsafe) public class func eventDetailsNavigationController(eventIdentifier: Swift.String, internalTestingKeys: [Swift.String : Any] = [:], marketDomain: TicketmasterFoundation.MarketDomain = .US, customFont: UIKit.UIFont? = nil) -> TicketmasterPurchase.TMPurchaseNavigationController
+}
+extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Equatable {}
+extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.Hashable {}
+extension TicketmasterPurchase.TMEndTicketSelectionReason : Swift.RawRepresentable {}
+extension TicketmasterPurchase.TMEndCheckoutReason : Swift.Equatable {}
+extension TicketmasterPurchase.TMEndCheckoutReason : Swift.Hashable {}
+extension TicketmasterPurchase.TMEndCheckoutReason : Swift.RawRepresentable {}
+extension TicketmasterPurchase.TMPurchaseNavBarButton : Swift.Equatable {}
+extension TicketmasterPurchase.TMPurchaseNavBarButton : Swift.Hashable {}
+extension TicketmasterPurchase.TMPurchaseNavBarButton : Swift.RawRepresentable {}
+extension TicketmasterPurchase.TMPurchaseSubPage : Swift.Equatable {}
+extension TicketmasterPurchase.TMPurchaseSubPage : Swift.Hashable {}
+extension TicketmasterPurchase.TMPurchaseSubPage : Swift.RawRepresentable {}
+extension TicketmasterPurchase.TMPurchaseComponent : Swift.Equatable {}
+extension TicketmasterPurchase.TMPurchaseComponent : Swift.Hashable {}
+extension TicketmasterPurchase.TMPurchaseComponent : Swift.RawRepresentable {}
+extension TicketmasterPurchase.TMPurchaseDecision : Swift.Equatable {}
+extension TicketmasterPurchase.TMPurchaseDecision : Swift.Hashable {}
+extension TicketmasterPurchase.TMPurchaseDecision : Swift.RawRepresentable {}

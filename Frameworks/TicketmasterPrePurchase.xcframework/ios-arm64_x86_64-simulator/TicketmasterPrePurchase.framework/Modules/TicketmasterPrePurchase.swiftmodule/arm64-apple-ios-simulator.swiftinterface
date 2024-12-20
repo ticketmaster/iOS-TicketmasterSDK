@@ -52,6 +52,7 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
     case attraction(identifier: Swift.String)
     case venue(identifier: Swift.String)
     case custom(path: Swift.String)
+    case category(identifier: Swift.String)
     public static func == (a: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, b: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage) -> Swift.Bool
   }
   public enum EnclosingEnvironment : Swift.String {
@@ -77,7 +78,7 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   @_Concurrency.MainActor(unsafe) weak public var navigationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseNavigationDelegate)?
   @_Concurrency.MainActor(unsafe) weak public var locationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseLocationDelegate)?
   @_Concurrency.MainActor(unsafe) weak public var analyticsDelegate: (any TicketmasterPrePurchase.TMPrePurchaseAnalyticsDelegate)?
-  @_Concurrency.MainActor(unsafe) public init(initialPage: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, marketDomain: TicketmasterFoundation.MarketDomain = .US, marketLocation: TicketmasterFoundation.MarketLocation?, queryParameters: [Swift.String : Swift.String]?, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, allowJavaScriptToBringUpKeyboard: Swift.Bool, internalTestingKeys: [Swift.String : Any]? = nil)
+  @_Concurrency.MainActor(unsafe) public init(initialPage: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, marketDomain: TicketmasterFoundation.MarketDomain = .US, marketLocation: TicketmasterFoundation.MarketLocation?, queryParameters: [Swift.String : Swift.String]?, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, allowJavaScriptToBringUpKeyboard: Swift.Bool, internalTestingKeys: [Swift.String : Any]? = nil, customFont: UIKit.UIFont? = nil)
   @available(*, unavailable)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
@@ -93,8 +94,8 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   @objc deinit
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController {
-  @_Concurrency.MainActor(unsafe) public class func attractionDetailsViewController(attractionIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment) -> TicketmasterPrePurchase.TMPrePurchaseViewController
-  @_Concurrency.MainActor(unsafe) public class func venueDetailsViewController(venueIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment) -> TicketmasterPrePurchase.TMPrePurchaseViewController
+  @_Concurrency.MainActor(unsafe) public class func attractionDetailsViewController(attractionIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
+  @_Concurrency.MainActor(unsafe) public class func venueDetailsViewController(venueIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKScriptMessageHandler {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -106,6 +107,7 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoun
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
@@ -122,6 +124,15 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController {
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoundation.UFCWebViewMessageHandlerDelegate {
   @_Concurrency.MainActor(unsafe) public func ufcWebview() -> WebKit.WKWebView
   @_Concurrency.MainActor(unsafe) public func loginStatusUpdated(isLoggedIn: Swift.Bool)
+}
+extension TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage {
+  public var headerImage: UIKit.UIImage? {
+    get
+  }
+  public static func minorCategoryHeaderImage(categoryId: Swift.String) -> UIKit.UIImage?
+}
+extension TicketmasterPrePurchase.TMPrePurchaseViewController {
+  @_Concurrency.MainActor(unsafe) public func imageForCategory(url: Foundation.URL?) -> UIKit.UIImage?
 }
 extension Foundation.URLRequest {
   public init?(page: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, domain: TicketmasterFoundation.MarketDomain, locale: Foundation.Locale, user: TicketmasterFoundation.TMUser?, requestedQueryParameters: TicketmasterFoundation.URLQueryParameters?, environment: TicketmasterFoundation.ConnectionEnvironment)

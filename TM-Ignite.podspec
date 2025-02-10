@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name              = 'TM-Ignite'
-  s.version           = '1.13.3'
+  s.version           = '1.13.4'
   s.summary           = 'iOS implementation of the Ticketmaster Ignite SDK.'
   s.description       = 'A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.'
   s.homepage          = 'https://ignite.ticketmaster.com/'
@@ -22,6 +22,4 @@ Pod::Spec.new do |s|
   s.swift_version = '5.9.0'
   
   s.vendored_frameworks = 'Frameworks/*.xcframework'
-  
-  s.dependency 'SwiftProtobuf', '~> 1.28.2'
 end

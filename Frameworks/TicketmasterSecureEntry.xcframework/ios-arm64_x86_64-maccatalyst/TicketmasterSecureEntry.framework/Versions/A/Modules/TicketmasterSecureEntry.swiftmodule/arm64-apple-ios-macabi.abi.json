@@ -4320,8 +4320,8 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
+        "name": "TicketmasterSwiftProtobuf",
+        "printedName": "TicketmasterSwiftProtobuf",
         "declKind": "Import",
         "moduleName": "TicketmasterSecureEntry"
       },
@@ -5257,8 +5257,8 @@
             "kind": "Conformance",
             "name": "SwiftProtobufContiguousBytes",
             "printedName": "SwiftProtobufContiguousBytes",
-            "usr": "s:13SwiftProtobuf0aB15ContiguousBytesP",
-            "mangledName": "$s13SwiftProtobuf0aB15ContiguousBytesP"
+            "usr": "s:25TicketmasterSwiftProtobuf0bC15ContiguousBytesP",
+            "mangledName": "$s25TicketmasterSwiftProtobuf0bC15ContiguousBytesP"
           }
         ]
       },
@@ -39887,672 +39887,672 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 3082,
+      "offset": 3254,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4489,
+      "offset": 4807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4518,
+      "offset": 4836,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4825,
+      "offset": 5204,
       "length": 14,
       "value": "\"PBRetPayload\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4903,
+      "offset": 5294,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4919,
+      "offset": 5310,
       "length": 13,
       "value": "\"secureToken\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 4939,
+      "offset": 5330,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 4955,
+      "offset": 5346,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5154,
+      "offset": 5557,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5231,
+      "offset": 5634,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5521,
+      "offset": 5936,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 5629,
+      "offset": 6044,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 5808,
+      "offset": 6223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 5861,
+      "offset": 6276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 5922,
+      "offset": 6337,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 5940,
+      "offset": 6355,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 6115,
+      "offset": 6566,
       "length": 12,
       "value": "\"PBMetadata\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6191,
+      "offset": 6654,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 6207,
+      "offset": 6670,
       "length": 11,
       "value": "\"retFormat\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6225,
+      "offset": 6688,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 6241,
+      "offset": 6704,
       "length": 18,
       "value": "\"deviceKeyBinding\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6266,
+      "offset": 6729,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 6282,
+      "offset": 6745,
       "length": 6,
       "value": "\"totp\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6477,
+      "offset": 6952,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6552,
+      "offset": 7027,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6637,
+      "offset": 7112,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 6919,
+      "offset": 7406,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7035,
+      "offset": 7522,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7139,
+      "offset": 7626,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 7310,
+      "offset": 7797,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 7379,
+      "offset": 7866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 7424,
+      "offset": 7911,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 7485,
+      "offset": 7972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 7503,
+      "offset": 7990,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7686,
+      "offset": 8209,
       "length": 20,
       "value": "\"PBDeviceKeyBinding\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7770,
+      "offset": 8305,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7786,
+      "offset": 8321,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7804,
+      "offset": 8339,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7820,
+      "offset": 8355,
       "length": 17,
       "value": "\"devicePublicKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7844,
+      "offset": 8379,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7860,
+      "offset": 8395,
       "length": 26,
       "value": "\"devicePublicKeySignature\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 7893,
+      "offset": 8428,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 7909,
+      "offset": 8444,
       "length": 11,
       "value": "\"assertion\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8109,
+      "offset": 8656,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8185,
+      "offset": 8732,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8266,
+      "offset": 8813,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8356,
+      "offset": 8903,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8557,
+      "offset": 9116,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8640,
+      "offset": 9199,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8772,
+      "offset": 9331,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 8922,
+      "offset": 9481,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 9031,
+      "offset": 9590,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9218,
+      "offset": 9777,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9283,
+      "offset": 9842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9366,
+      "offset": 9925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9421,
+      "offset": 9980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9482,
+      "offset": 10041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 9500,
+      "offset": 10059,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 9676,
+      "offset": 10271,
       "length": 13,
       "value": "\"PBAssertion\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 9753,
+      "offset": 10360,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 9769,
+      "offset": 10376,
       "length": 8,
       "value": "\"format\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 9784,
+      "offset": 10391,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 9800,
+      "offset": 10407,
       "length": 11,
       "value": "\"signature\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 9818,
+      "offset": 10425,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 9834,
+      "offset": 10441,
       "length": 10,
       "value": "\"authData\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 9851,
+      "offset": 10458,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 9867,
+      "offset": 10474,
       "length": 20,
       "value": "\"clientDataJsonHash\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10076,
+      "offset": 10695,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10148,
+      "offset": 10767,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10223,
+      "offset": 10842,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10297,
+      "offset": 10916,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10584,
+      "offset": 11215,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10704,
+      "offset": 11335,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10822,
+      "offset": 11453,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 10960,
+      "offset": 11591,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11127,
+      "offset": 11758,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11180,
+      "offset": 11811,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11231,
+      "offset": 11862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11302,
+      "offset": 11933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11363,
+      "offset": 11994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 11381,
+      "offset": 12012,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 11552,
+      "offset": 12219,
       "length": 8,
       "value": "\"PBTotp\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 11624,
+      "offset": 12303,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 11640,
+      "offset": 12319,
       "length": 11,
       "value": "\"eventTotp\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 11658,
+      "offset": 12337,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "StringLiteral",
-      "offset": 11674,
+      "offset": 12353,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 11874,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11950,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12149,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12232,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12266,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12349,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12512,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
-      "kind": "BooleanLiteral",
       "offset": 12565,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12641,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12852,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12935,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12969,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13052,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13215,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 12626,
+      "offset": 13268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 12644,
+      "offset": 13329,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Models\/Ret2.0\/Protobuf\/RetPayload.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13347,
       "length": 4,
       "value": "true"
     },

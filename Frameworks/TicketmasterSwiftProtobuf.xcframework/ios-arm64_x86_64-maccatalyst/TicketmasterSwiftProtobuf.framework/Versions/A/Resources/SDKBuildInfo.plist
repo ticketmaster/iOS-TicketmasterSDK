@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildDate</key>
+	<string>Mon Feb 10 14:45:02 PST 2025</string>
+	<key>BuildHost</key>
+	<string>LNEH7VYVF25HY</string>
+	<key>GITBranch</key>
+	<string>release/3.10.3</string>
+	<key>GITComment</key>
+	<string>Merge branch ivan.mervich-PSDK-14360-Local-SwiftProtobuf into master</string>
+	<key>GITDate</key>
+	<string>Mon Feb 10 14:31:58 2025 -0800</string>
+	<key>GITRevision</key>
+	<string>8b7480a37916e1e972a959c26f758bb5733f82d9</string>
+	<key>MarketingVersion</key>
+	<string>1.28.2</string>
+</dict>
+</plist>

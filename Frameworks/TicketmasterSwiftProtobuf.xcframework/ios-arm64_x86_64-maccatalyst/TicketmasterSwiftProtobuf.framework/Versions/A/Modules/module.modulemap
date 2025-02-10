@@ -1,0 +1,11 @@
+framework module TicketmasterSwiftProtobuf {
+  umbrella header "TicketmasterSwiftProtobuf.h"
+  export *
+
+  module * { export * }
+}
+
+module TicketmasterSwiftProtobuf.Swift {
+  header "TicketmasterSwiftProtobuf-Swift.h"
+  requires objc
+}

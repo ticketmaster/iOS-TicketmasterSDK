@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Dec 13 16:05:51 PST 2024</string>
+	<string>Mon Feb 10 14:48:04 PST 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
-	<string>release/3.10.0</string>
+	<string>release/3.10.3</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Fixed TMAuthentication reference in SecureEntryView headers</string>
+	<string>Merge branch ivan.mervich-PSDK-14360-Local-SwiftProtobuf into master</string>
 	<key>GITDate</key>
-	<string>Fri Dec 13 15:55:03 2024 -0800</string>
+	<string>Mon Feb 10 14:31:58 2025 -0800</string>
 	<key>GITRevision</key>
-	<string>7dd0e8d1fbc7ce8fe13c6d83e493d4890beb780a</string>
+	<string>8b7480a37916e1e972a959c26f758bb5733f82d9</string>
 	<key>MarketingVersion</key>
-	<string>1.8.0</string>
+	<string>1.8.1</string>
 </dict>
 </plist>

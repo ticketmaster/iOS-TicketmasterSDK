@@ -9,10 +9,10 @@ import ImageIO
 import LocalAuthentication
 import Security
 import Swift
-import SwiftProtobuf
 import SwiftUI
 import TicketmasterFoundation
 @_exported import TicketmasterSecureEntry
+import TicketmasterSwiftProtobuf
 import UIKit
 import _Concurrency
 import _StringProcessing

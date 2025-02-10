@@ -79,6 +79,7 @@ Required xcframework libraries:
 
 * TicketmasterFoundation 
 * TicketmasterAuthentication
+* **TicketmasterSwiftProtobuf**
 * **TicketmasterSecureEntry**
 * **TicketmasterTickets**
 
@@ -122,11 +123,9 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'MyApp' do
-  use_frameworks!
-  pod 'TM-Ignite', '~> 1.13.3'
+  pod 'TM-Ignite', '~> 1.13.4'
 end
 ```
-   * Make sure to add `use_frameworks!` (as in the example above)
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)
 
 3. Install TM-Ignite Pod:
@@ -137,10 +136,8 @@ $ pod install
 4. CocoaPods requires `User Script Sandboxing = No` in your Xcode Project settings:
    <img src="Screenshots/CocoaPodsProjectSettings.jpg" alt="Project Settings" style="zoom: 50%;" />
 
-### External Dependencies
+### Additional Dependencies
 
-#### [SwiftProtobuf](https://github.com/apple/swift-protobuf)
-
-As of version 1.12.0+, SecureEntry SDK also requires the Apple SwiftProtobuf library. This library should be added automatically to your project if you use SwiftPackageManager or CocoaPods.
+As of version 1.13.4+, SecureEntry SDK also requires the TicketmasterSwiftProtobuf library. This library should be added automatically to your project if you use SwiftPackageManager or CocoaPods.
 
 

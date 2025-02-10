@@ -27,15 +27,17 @@ let package = Package(
             name: "TicketmasterPurchase",
             targets: ["TicketmasterPurchase"]),
         .library(
-            name: "TicketmasterTickets",
-            targets: ["TicketmasterTickets"]),
+            name: "TicketmasterSwiftProtobuf",
+            targets: ["TicketmasterSwiftProtobuf"]),
         .library(
             name: "TicketmasterSecureEntry",
-            targets: ["TicketmasterSecureEntryWrapper"]),
+            targets: ["TicketmasterSecureEntry"]),
+        .library(
+            name: "TicketmasterTickets",
+            targets: ["TicketmasterTickets"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -61,18 +63,16 @@ let package = Package(
             path: "Frameworks/TicketmasterPurchase.xcframework"
         ),
         .binaryTarget(
+            name: "TicketmasterSwiftProtobuf",
+            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework"
+        ),
+        .binaryTarget(
             name: "TicketmasterSecureEntry",
             path: "Frameworks/TicketmasterSecureEntry.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
             path: "Frameworks/TicketmasterTickets.xcframework"
-        ),
-        .target(
-             name: "TicketmasterSecureEntryWrapper",
-             dependencies: [.target(name: "TicketmasterSecureEntry"),
-                            .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-                           ]
         ),
     ],
     swiftLanguageVersions: [.v5]

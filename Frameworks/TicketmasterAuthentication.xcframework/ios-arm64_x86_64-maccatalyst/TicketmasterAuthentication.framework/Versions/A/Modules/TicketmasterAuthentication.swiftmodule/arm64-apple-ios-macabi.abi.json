@@ -12287,6 +12287,157 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "isEventRedesignEnabled",
+                "printedName": "isEventRedesignEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV22isEventRedesignEnabledSbvp",
+                "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV22isEventRedesignEnabledSbvp",
+                "moduleName": "TicketmasterAuthentication",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV22isEventRedesignEnabledSbvg",
+                    "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV22isEventRedesignEnabledSbvg",
+                    "moduleName": "TicketmasterAuthentication",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isSellButtonHidden",
+                "printedName": "isSellButtonHidden",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV18isSellButtonHiddenSbvp",
+                "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV18isSellButtonHiddenSbvp",
+                "moduleName": "TicketmasterAuthentication",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV18isSellButtonHiddenSbvg",
+                    "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV18isSellButtonHiddenSbvg",
+                    "moduleName": "TicketmasterAuthentication",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "sellManageListingsOverrideURL",
+                "printedName": "sellManageListingsOverrideURL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URL?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URL",
+                        "printedName": "Foundation.URL",
+                        "usr": "s:10Foundation3URLV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV29sellManageListingsOverrideURL10Foundation0J0VSgvp",
+                "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV29sellManageListingsOverrideURL10Foundation0J0VSgvp",
+                "moduleName": "TicketmasterAuthentication",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:26TicketmasterAuthentication14TMApigeeConfigV4BaseV29sellManageListingsOverrideURL10Foundation0J0VSgvg",
+                    "mangledName": "$s26TicketmasterAuthentication14TMApigeeConfigV4BaseV29sellManageListingsOverrideURL10Foundation0J0VSgvg",
+                    "moduleName": "TicketmasterAuthentication",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -62669,20 +62820,20 @@
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+ServiceEnums.swift",
       "kind": "StringLiteral",
       "offset": 6019,
-      "length": 18,
-      "value": "\"Accounts Manager\""
+      "length": 17,
+      "value": "\"Account Manager\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+ServiceEnums.swift",
       "kind": "StringLiteral",
-      "offset": 6104,
+      "offset": 6103,
       "length": 11,
       "value": "\"Microflex\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/TMAuthentication+ServiceEnums.swift",
       "kind": "StringLiteral",
-      "offset": 6166,
+      "offset": 6165,
       "length": 10,
       "value": "\"Sport XR\""
     },
@@ -67568,35 +67719,35 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8542,
+      "offset": 9293,
       "length": 6,
       "value": "\".sdk\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8556,
+      "offset": 9307,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10611,
+      "offset": 11362,
       "length": 3,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10734,
+      "offset": 11485,
       "length": 61,
       "value": "\"https:\/\/mobileentry.ticketmaster.com\/?client_id=\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/TMApigeeConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10794,
+      "offset": 11545,
       "length": 2,
       "value": "\"\""
     },
@@ -68597,16 +68748,37 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
       "kind": "StringLiteral",
-      "offset": 4133,
+      "offset": 4170,
       "length": 31,
       "value": "\"venueUnsuppressRuleIdentifier\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
       "kind": "StringLiteral",
-      "offset": 4230,
+      "offset": 4306,
       "length": 21,
       "value": "\"upsellAddOnsEnabled\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
+      "kind": "StringLiteral",
+      "offset": 4435,
+      "length": 24,
+      "value": "\"isEventRedesignEnabled\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
+      "kind": "StringLiteral",
+      "offset": 4563,
+      "length": 20,
+      "value": "\"isSellButtonHidden\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/Public\/ModelObjects\/DataParsing\/TMApigeeConfig+Base.swift",
+      "kind": "StringLiteral",
+      "offset": 4695,
+      "length": 31,
+      "value": "\"sellManageListingsOverrideURL\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Authentication1\/TicketmasterAuthentication\/TicketmasterAuthentication\/LoginDataModels\/JWT\/JWTDecodeError.swift",

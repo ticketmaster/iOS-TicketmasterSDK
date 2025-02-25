@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Feb 10 14:54:11 PST 2025</string>
+	<string>Fri Feb 21 10:20:55 PST 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
-	<string>release/3.10.3</string>
+	<string>release/3.10.4</string>
 	<key>GITComment</key>
-	<string>Merge branch ivan.mervich-PSDK-14360-Local-SwiftProtobuf into master</string>
+	<string>PSDK-0 Updated to version 3.10.4</string>
 	<key>GITDate</key>
-	<string>Mon Feb 10 14:31:58 2025 -0800</string>
+	<string>Fri Feb 21 09:54:15 2025 -0800</string>
 	<key>GITRevision</key>
-	<string>8b7480a37916e1e972a959c26f758bb5733f82d9</string>
+	<string>304fc40d2931290dd354ff152daafc1cccc5bb9f</string>
 	<key>MarketingVersion</key>
-	<string>3.10.3</string>
+	<string>3.10.4</string>
 </dict>
 </plist>

@@ -1,0 +1,24 @@
+{
+	"promoModules": [
+		{
+			"promoName": "dallasStarsApp",
+			"eventID": null,
+			"venueID": "KovZpZAJ67eA",
+			"attractionID": "K8vZ9171ozV",
+			"imageURL": "https://media.d3.nhle.com/image/private/t_ratio16_9-size20/dpr_2.0/f_png/prd/yo5ngemgfjkrrpq4cfho.png",
+			"buttonTitle": "Download the App",
+			"promoURL": "https://apps.apple.com/us/app/dallas-stars/id1660307857",
+			"openInExternalBrowser": true
+		},
+		{
+			"promoName": "dallasStarsStreamOnVictory",
+			"eventID": null,
+			"venueID": "KovZpZAJ67eA",
+			"attractionID": "K8vZ9171ozV",
+			"imageURL": "https://media.d3.nhle.com/image/private/t_ratio16_9-size40/dpr_2.0/f_png/prd/mlt4mrfavprnr7k0tvle.png",
+			"buttonTitle": "Stream on Victory",
+			"promoURL": "https://victoryplus.com/coming-soon",
+			"openInExternalBrowser": false
+		}
+	]
+}

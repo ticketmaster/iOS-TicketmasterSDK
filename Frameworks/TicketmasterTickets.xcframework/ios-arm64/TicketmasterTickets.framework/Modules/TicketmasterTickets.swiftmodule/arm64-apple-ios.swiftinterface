@@ -114,6 +114,7 @@ public struct TMTicketsPrebuiltModule {
     case hostSeatUpgrades
     case accountManagerMoreTicketActions
     case accountManagerInvoiceAction
+    case promotionalModule
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName]
     public typealias RawValue = Swift.String
@@ -201,6 +202,7 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
   public let useTmtt: Swift.Bool?
   public let isRetEnabled: Swift.Bool?
   public let isLarge: Swift.Bool?
+  public let assignEnabled: Swift.Bool?
   public let changeStatus: Swift.String?
   public struct ImageInfo : Swift.Codable, Swift.Hashable {
     public let identifier: Swift.String?
@@ -746,7 +748,7 @@ extension Swift.Collection {
   }
 }
 extension TicketmasterTickets.TMTicketsModule {
-  public static func moduleArray(jsonDict: [Swift.String : Any]) -> [TicketmasterTickets.TMTicketsModule]?
+  public static func moduleArray(jsonDict: [Swift.String : Any]) -> [TicketmasterTickets.TMTicketsModule]
 }
 extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swift.Int {
   @inlinable internal func toUInt32Array() -> Swift.Array<Swift.UInt32> {
@@ -904,6 +906,9 @@ public struct TMPurchasedOrder : Swift.Codable, Swift.Hashable, Swift.Comparable
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+extension TicketmasterTickets.TMTicketsPrebuiltModule {
+  public static func currentPromotionalModules(event: TicketmasterTickets.TMPurchasedEvent, appPromoKey: Swift.String, completion: @escaping (_ promotionalModules: [TicketmasterTickets.TMTicketsModule]) -> Swift.Void)
 }
 @_specialize(exported: false, kind: full, where T == Swift.Int)
 @_specialize(exported: false, kind: full, where T == Swift.UInt)

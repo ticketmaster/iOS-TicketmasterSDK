@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>124.json</key>
-		<data>
-		axDbW2dj2rT7J5DCRuW3YLPlGRM=
-		</data>
-		<key>840.json</key>
-		<data>
-		juolkp6QVidasCPvRBsy9eM9f8s=
-		</data>
 		<key>AccountSwitchingView.nib</key>
 		<data>
 		jTNjNxBG1pwUUbjqTW3hrRbKtuE=
@@ -30,7 +22,7 @@
 		</data>
 		<key>AddedValueCell.nib</key>
 		<data>
-		99OTRv5eM/O3n+sVROGd9IUGE/4=
+		AHR8DgwWvj6QRzpzcb+N6qslpKM=
 		</data>
 		<key>Assets.car</key>
 		<data>
@@ -42,7 +34,7 @@
 		</data>
 		<key>BarcodeCell.nib</key>
 		<data>
-		xAPC48FuS+IVfhGYkiIZtfGJm30=
+		BJx0D+M+aXVPFAvKT4mC5au65SQ=
 		</data>
 		<key>Base.lproj/TMXEventsListViewCell.nib</key>
 		<data>
@@ -142,47 +134,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZUkQBAx8988RAt++fQT256AnDGU=
+		iXWOK/013x6TX+vkk4IIJBNiYfQ=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uU/MIbftdN0DNCgcvaA0bIXe9EU=
+		qVouIqxOxu/Gt9RC4zvuWXXoZrM=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9VqoV4R3jIBL/Lg+ea3Rm49KCww=
+		ahj/SShZx43v6BY6zjoEDFGEPio=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Bv8GL2PVpOGFt2VYHoSLdNydLks=
+		EjS7+xWvjO9eDPmvUnF1kCe3ctE=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9VqoV4R3jIBL/Lg+ea3Rm49KCww=
+		ahj/SShZx43v6BY6zjoEDFGEPio=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tVA+V/Bc+yj9/jIr5FituGUtB1Q=
+		fPJi+8NXSfTiHvzAzjyojzvv+AY=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uU/MIbftdN0DNCgcvaA0bIXe9EU=
+		qVouIqxOxu/Gt9RC4zvuWXXoZrM=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Z709DV8PG6ooKGq2EBz0zKKB1vo=
+		7jgfYnYRFMi2DgwL5S3Kqf7ysGk=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		henL/pQray3BsAASccGG5Sl7pxQ=
+		N46Xnhs7DigHbH4GGwKbv/LRMHI=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Z709DV8PG6ooKGq2EBz0zKKB1vo=
+		7jgfYnYRFMi2DgwL5S3Kqf7ysGk=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hSki0PTUKoLHTUlyeAy7BlkxO+0=
+		vt4qVv/BNkEoRBiFoAss1eu2Dkk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -210,7 +202,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		MDY4kMqnAvOxLfLJ0J9XIec+5/8=
+		VMNvmrAm/HWzowvQ/2nrTsItfco=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -230,7 +222,7 @@
 		</data>
 		<key>SpecificSeatTransferFlow.storyboardc/Hsp-fv-Ohn-view-tJf-si-uuI.nib</key>
 		<data>
-		nWXHAwmX7Ws2ZtUF05WRjHwK3LQ=
+		TMyszFFEpOi3bIvCOHr4XLn0YBQ=
 		</data>
 		<key>SpecificSeatTransferFlow.storyboardc/Info.plist</key>
 		<data>
@@ -384,20 +376,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fLDnNjFNlxcosXp0aQXTz0Ne4ig=
+			PeLSpVikhtapdDQF7lsqtqF3L40=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>countries.json</key>
-		<data>
-		OiByim2sw8lwgELGYYsl9K8mfBY=
-		</data>
 		<key>cs-CZ.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xGvCwPcBhsaVIzzA4t0CxZySy7g=
+			KvUfQOx/YlPxgBTRwForz9AFeoU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -406,7 +394,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tUVqVSPqXChMjfrJg+xMZSnGwxs=
+			LbpzhsfsacBlmbqlEhV9xbrKggc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -415,7 +403,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6PzisBf9zw3gY7iLIQLUgaLRje4=
+			aE9FlC9GSqSd+4jJqsQa+e9usRs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -424,7 +412,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/mM9Pa8ZLvjhZpoCt4HtDQyRpz8=
+			OKCUTscbP3HzcjKPzIpNYo3ZIdc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -433,7 +421,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mIdXYwqq/UeXEfw5zc5p0HVCEOs=
+			Uxmm9hqg3+MBYkif9n0yFt/aLjo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -442,7 +430,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/LyL5Z2jtlj+LOjUcsUOQK6nTJs=
+			TUdTa7er5dEhkhpKxXwp8k85acY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -451,7 +439,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RMFk9Rwr7hhwgD8d5BpkDcrJfu4=
+			ufFERK+6toPgj00T4JRFCiZkkRU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -460,7 +448,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xwHl5rWi+uKcyT18qVv0Ok0Ryhc=
+			C8S+iXI1jTTF/r++Jx2mc5MMOI4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -469,7 +457,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wM+jRoscmP3ft9RBe9Hx4ec3Bgw=
+			sR6fwswCTGncUD1SGL9nuNCy5WA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -478,7 +466,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FUh43lHzIPuEZ2nrPj08DeaaQ5c=
+			r/O3SLmGfUPGVPkHAxsky2zSIyg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -487,7 +475,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fRzgzK3CH7cna9a8I7YjXZ3OVKE=
+			2gNzXEGmm0CxbybgaBnfdlddrsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -496,7 +484,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NQ3YjYvZw4rYVVT6sQAfVsqmla0=
+			OTQ//CZ3/kCChLg+5FYDbeSXYaE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -505,7 +493,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sUV5SNYZBa+dwVEr8Ku4xu7AlUQ=
+			kNaoiPNaQ2QFxKVNO2dJWfvPSWc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -532,7 +520,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dkCYJHnkfcP8OYcQJsp7D3wFSYg=
+			lrAAcE8bqWwM8noBN5iSJbUhpN0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -541,7 +529,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Aany5wgL5wM55n+KKrBFDW5vTPE=
+			l1ZdblQfFtBbWw/c2Xv3V/Ee/hg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -550,7 +538,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0+dr5OGoRaIVX5HVe2mWT0uiiyw=
+			Z8kTvKaJKcU2E1Z0gjaqIx+W/os=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -559,7 +547,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eRpyHF1Z/SAX1J77JUbsEJoQv3s=
+			t5dVEV12S8OrKgrxY0viKBgo7+U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -568,7 +556,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xuYsUJB+YWXw11p5EtbLEChvC+A=
+			4+OCTC+gkTS5j3AIddl8pZiJMt0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -595,7 +583,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SazhBrqzMfpd39gPtF+n6CAv9No=
+			mGX1CgQzv2K4xlarlEt6NwmFklY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -604,7 +592,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BVlDAKyMCTZktKFVyAEVmBnZ4YQ=
+			GGXF7KDrcWHW/PbLwBr+8TK9b+I=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -613,7 +601,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FBydhDoWGhxLhYq4DWRx6TRurdc=
+			T3qQU+hozNozpQOK2UVOO+Xeazw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -622,7 +610,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yQO67ijjnzt6+NYfYeE0Cbqexso=
+			aEBM2mor/esYgSJsWrxcIbc54T0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -631,7 +619,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+CI8OWiy7IjocwsGrciUVqrSotw=
+			zTscGbslIgpjzhkSBnfHjymgHUw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -640,7 +628,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JrpWXEZe9ETCaD5lzhXSyBeZ0yQ=
+			wV4NN4OqoPCispP8hhmIDiskeeU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -649,7 +637,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gl2iiVS0YcnkQZqxwa4/FBmlYd4=
+			ODdyDO4I0KOqYtJ1ll+KdnttUOs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -672,23 +660,17 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>tm_core_app_ios.json</key>
+		<data>
+		hguruEuHI3ZWqvKPwl7asmjHNa0=
+		</data>
+		<key>tm_core_app_ios_test.json</key>
+		<data>
+		102e1XXHqImygJkll3u2AFjO3kA=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>124.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ApjvjwOFqpqiMHpwIbtKAzB9DmWFaq2pkbHUEfYVTLs=
-			</data>
-		</dict>
-		<key>840.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m7rYEthvPesOkBPXPtrVJv38U7J7SsTNUWUrg5SGips=
-			</data>
-		</dict>
 		<key>AccountSwitchingView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -721,7 +703,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yR0csjsZkJwtCZ8Xlw2wtqEICwnjrZbGpt44/CxlzHs=
+			jELcS0cUmI+qluVPcPoty1a2BAO/lWRcwbsVoPTypf0=
 			</data>
 		</dict>
 		<key>Assets.car</key>
@@ -742,7 +724,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hYqD+OXznIjM4xnkl/W/kyW3mrpceHEufG2Sxqw5bs4=
+			cL9exRIgvPJZAOzDgzvSZo2ygKsPfWMTJYiXybjIp44=
 			</data>
 		</dict>
 		<key>Base.lproj/TMXEventsListViewCell.nib</key>
@@ -917,70 +899,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IHzaBVjdDERPhyXsE6ymmOf1FhcbBRns3zNWVpwKFHc=
+			mlfb+LDPG3T5F0gLhEJJah5+rfs3gIjDQzlRH/X+LOg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U17jPEq9Ri8l7kLtbzzUg4j8PYvJn5rnu4Ud9ThrOJs=
+			xGId9z5KPAKT74Pu7SPuitS/WjMvZw4OSnFZu1hoeiQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LZjxCkcT/7V8r+SX75eqpstm90T0gNy4xSYk2Q2Enmw=
+			llUrbXOfecvQeigNRdRGksdg78qkRKPsVwPI8IALu6w=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U17jPEq9Ri8l7kLtbzzUg4j8PYvJn5rnu4Ud9ThrOJs=
+			xGId9z5KPAKT74Pu7SPuitS/WjMvZw4OSnFZu1hoeiQ=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ovymeoFa555c8Mp507gENJLnx8zRRcLEOor1ppoOJs8=
+			SSw7FOtWhmCNEn7R0phHRDxhhOPNvgRgWlEVMzPGDqc=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IHzaBVjdDERPhyXsE6ymmOf1FhcbBRns3zNWVpwKFHc=
+			mlfb+LDPG3T5F0gLhEJJah5+rfs3gIjDQzlRH/X+LOg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DU3aM+6vZGXzT7NpNUlp+VLnFQsdPCEujRLer+ynR8c=
+			utnpfmG8aoGCrQhGDLmi4O2c/GEjo1xZItyIff7mDsk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v0pk3Tia8JJJMA5tz/ysV/yfbGxbk2pI2agebLajJYU=
+			/Q2DupFiYTHHkOUWl4dqQq1hb3SyJ3axAFQQc780ka4=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DU3aM+6vZGXzT7NpNUlp+VLnFQsdPCEujRLer+ynR8c=
+			utnpfmG8aoGCrQhGDLmi4O2c/GEjo1xZItyIff7mDsk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rg/FQWP4BNM2nfXOTE9nnG2L6vRfppAErK0fxzTbHyc=
+			catArbQmiNeeToLEq546Ah6SfvvvIaZy4X4p4VklolM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1029,7 +1011,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HVapmk4wl+MLkMyUYDCt2mgrPrWobKheCOeK2MqeAgk=
+			caYtwZY8BYBV2w1KLSBOvPPVruGps7IcVRXv4379Dyk=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>
@@ -1064,7 +1046,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+4kI3o9x6FmTHjq17pNwQwWmRIq3dL5yV6h22JkFzHI=
+			7QjhE2Dh8C4NJtSsLpzdWVdwRtOzkTIZNKMzgoXNpxM=
 			</data>
 		</dict>
 		<key>SpecificSeatTransferFlow.storyboardc/Info.plist</key>
@@ -1330,23 +1312,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			32FIPm7PVTyDpxh1Da0qMYorRgBETaXu88N8Aoryt18=
+			B51EdX3QWjHa7ccrFWFUdAhZuQuYCskD47Encsh3Ht8=
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>countries.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			k0nGrmr8jEQeRblC17wQETpio0WIoUNcT1Y5fSUqQzk=
-			</data>
 		</dict>
 		<key>cs-CZ.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZnVZaNKRR5kxCNHH0DPtde+x6wjmUhkHLk8dJJAnBIo=
+			WkeUfzs6JnkSaQag+oqQhRVEfQH13x+LnUG6cnfaDJk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1355,7 +1330,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8m2FErpx5I++mmLqFZR0dmIT8CGgaHgkzaj6m6ch0Eg=
+			rhGBkLcHdTEfXeV/PkFx6cU8y0A16XlKJLWRQe1zbsQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1364,7 +1339,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rIumHadE30+CE4Hfq5bA/cmha+A/sKbp/y1wENuto9w=
+			UMQm0nebmgL6nkhtALSmOA7BebB0D9IMJkJtI2C4GrQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1373,7 +1348,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vipGtWMvsqT5UNKb5+SnSaxM0M5FwgWswF2V8MiSS7M=
+			3BpNm6CYeVuHWRWa9OxizLLSoUnsy/8kg0RBgx2dOQ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1382,7 +1357,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			daRkntMyMGuqpjq0pDHjh7oGroibrfNDpFbAAefYNdQ=
+			aoWEH3gA2YxTZ/oNkNdLLiTNb0DRuZTRPnEV1d07S9E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1391,7 +1366,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4SRzn0ZnY4DN7wLuilsNSO6Ob/EdJPIsHUe5RRmvQXg=
+			tugjIXUzGLfI472Z+M8H6c1DBrMLqTMqVPD9aD5dPsc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1400,7 +1375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VrHbSIPIQeuSC5vCcBit0eBkixQrTCiTyFUlS9t10YM=
+			YwSWer2D8oIyL94GZQRoQ1eEdeVmRkDHpkc/+xLlfrA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1409,7 +1384,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hUPcfAesJT0WcLUydpvLxiTXCqGbfaSzY+IDX0FHhu0=
+			ctV5tsSTESbUdBLmFs8g087vF+daG0O59uEV74dshdE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1418,7 +1393,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c16NdmyxW8ROCjihbyXkbzer4z6Jl5TsqgBGIfPd8uk=
+			kOZ/02k0IrfSKkFG48DOEaWHdLhs+oAGcog5nXNh8sk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1427,7 +1402,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4pUBvnk+Q8hnneGIaQgQmpALbHksU6H8tH3mtitm9C8=
+			6hSRDJ+T3w/HmKI0LCHTqc6A2TlZM8tj9gCcEMUl9LQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1436,7 +1411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tdpU6TRoF78IxY9MsSI9fLoQTimyytC8c4LglZUdCVQ=
+			58DvwAKx1WIBdot3HB3DKOQq+fFf4NsIQqIe6v3Mwd0=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1445,7 +1420,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eJEMP4Ct+hXhkXahZf0sxE41GV1ENauD/jMo11d7k/E=
+			Tru+rBUgZnlb9d99bNP67EllDyg9Vs6JjyueD1JX820=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1454,7 +1429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGq72uxUnAPsT24r0pVa7M0PG4EYQb+gYMEJm4nWVUQ=
+			ar4fiWNDnTcZG3iXGWbjT+Nh4xHYXxymQjjoBYq8KRQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1481,7 +1456,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RmIiit+HIYVd+nCYWgQCpfR2rU7WX80I3XfqSgAAzhs=
+			jSk8fs5DzKEFgEvTAIqmhMybZH7fbQz+FyEbRZawRVU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1490,7 +1465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X3JP8viD7Ujd025yhtcmXR1eAtpv1DaLID7/oj2ENd0=
+			S6h7Z8fYf7MZyhH1Na5xecKeEYdgHhEuoeWDhhy4yUo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1499,7 +1474,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iVtbgDl8549I3wYb8qw3ZQBznc/qP3alvH74BoSNOAU=
+			NR14is9EgpT5CDxQU3M02ic7FpsDMtYZk5oe3uCrhas=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1508,7 +1483,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EPGQnEx8QtLgke4mdMrgmB4VNhxDN9/a/z5M5BBrOCM=
+			bVAGwu89vapa3/hEpBQ8M4MA/2VOXeUNZnzrF7638+8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1517,7 +1492,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5cm8XJwQdM1agVpHGA4Id3ihqqlVSntlovFckOL5+dU=
+			JmCqsdoIkcnIwFoUZN8WwC5n6mI1yhXWsL5jV87ufrE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1544,7 +1519,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0u2eWBLKjR4ugqQXr9RNXuRYZU0w2VKu4VPY2kbQxUA=
+			33i++Z0YREasL4mJwf/5BccaI6mv3g/aPDc6kFVNlRo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1553,7 +1528,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XngdC8BW08LmgAOTl3SdEruHLAO/OCEJrNuJRRNUhyY=
+			aVjaBYIOQ8hvSr+E6+UR4FKjvff7HkEvtuFSRgy8BWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1562,7 +1537,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F5LcEyizT3RmHXCx1i2Uwm/T31HnPODps6wFzYBIWWI=
+			Uco5MPxdv3/BmujyHnowyHMH2TYNIIPUhbKdVJphbpA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1571,7 +1546,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMWrSTVICgJ/+4JyV+OcAcWaKNWIhY1NrLWVpXg1TAQ=
+			CfnphT6jVnSMDRnKbEXhv4LRSLDhFpEi/rqtyBwKK+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1580,7 +1555,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BVMnl/vkAnuSnp5oi8eAKR7dhhqTKs7kCRqme0SFaQg=
+			5deoTE6e2mAQYyLJY5GVBd6oX9cjMVWpY+pUILNVnlA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1589,7 +1564,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7HvFV2T081yzZkUu6T6PZjah9P46dNFYw1UGyxpNjlw=
+			SHpT3OsAmEsGNt/uxun+Fd2vQbBD9BBuC7WhZh5k3+4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1598,7 +1573,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VHBxwAFU9swvWiyFmsz4GHbsAIqAECL8y/zxxMPb8fA=
+			40PxJ2/5LTF5QnjfButzok0K+CYVt2GsPwLaz0IL7u4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1620,6 +1595,20 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>tm_core_app_ios.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v10F79vOtztaGhWmIelBE+I85awlzwdoMqtl4J1e0mE=
+			</data>
+		</dict>
+		<key>tm_core_app_ios_test.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			f3WRiroOoGp5JiLQDDSTLrwygc4dUPg9YjZxqNhPdLk=
+			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

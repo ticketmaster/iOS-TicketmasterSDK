@@ -50,6 +50,7 @@ extension TicketmasterSecureEntry.SecureEntryView {
     public static let missingTotp: Foundation.NSError
     public static let unableToCreateTotpObject: Foundation.NSError
     public static let unableToGenerateOtpAndTimestamp: Foundation.NSError
+    public static let unableToEncodeRET: Foundation.NSError
   }
 }
 public protocol SecureEntryViewSigningDelegate : AnyObject {
@@ -339,7 +340,7 @@ internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swif
     set
   }
   @_Concurrency.MainActor(unsafe) final public func setTokenBySkippingDecoding(_ token: Swift.String?)
-  @_Concurrency.MainActor(unsafe) final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion?
+  @_Concurrency.MainActor(unsafe) final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion
   @_Concurrency.MainActor(unsafe) weak final public var signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get

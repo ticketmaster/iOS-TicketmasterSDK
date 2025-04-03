@@ -45,59 +45,41 @@ let package = Package(
         .binaryTarget(
             name: "TicketmasterFoundation",
             path: "Frameworks/TicketmasterFoundation.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
             path: "Frameworks/TicketmasterAuthentication.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
             path: "Frameworks/TicketmasterDiscoveryAPI.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
             path: "Frameworks/TicketmasterPrePurchase.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
             path: "Frameworks/TicketmasterPurchase.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
             path: "Frameworks/TicketmasterSwiftProtobuf.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
             path: "Frameworks/TicketmasterSecureEntry.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
             path: "Frameworks/TicketmasterTickets.xcframework",
-            swiftSettings: [
-                .swiftLanguageMode(.v5)
-            ]
         ),
+        swiftSettings: [
+            .swiftLanguageMode(.v5)
+        ]
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v5],
+    swiftSettings: [
+        .swiftLanguageMode(.v5)
+    ]
 )

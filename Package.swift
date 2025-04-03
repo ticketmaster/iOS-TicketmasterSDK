@@ -72,7 +72,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            path: "Frameworks/TicketmasterTickets.xcframework",
+            path: "Frameworks/TicketmasterTickets.xcframework"
         )
     ],
     swiftLanguageVersions: [.v5]

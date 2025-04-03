@@ -13,25 +13,25 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TicketmasterFoundation",
-            targets: ["TicketmasterFoundation"])
+            targets: ["TicketmasterFoundation"]),
         .library(
             name: "TicketmasterAuthentication",
-            targets: ["TicketmasterAuthentication"])
+            targets: ["TicketmasterAuthentication"]),
         .library(
             name: "TicketmasterDiscoveryAPI",
-            targets: ["TicketmasterDiscoveryAPI"])
+            targets: ["TicketmasterDiscoveryAPI"]),
         .library(
             name: "TicketmasterPrePurchase",
-            targets: ["TicketmasterPrePurchase"])
+            targets: ["TicketmasterPrePurchase"]),
         .library(
             name: "TicketmasterPurchase",
-            targets: ["TicketmasterPurchase"])
+            targets: ["TicketmasterPurchase"]),
         .library(
             name: "TicketmasterSwiftProtobuf",
-            targets: ["TicketmasterSwiftProtobuf"])
+            targets: ["TicketmasterSwiftProtobuf"]),
         .library(
             name: "TicketmasterSecureEntry",
-            targets: ["TicketmasterSecureEntry"])
+            targets: ["TicketmasterSecureEntry"]),
         .library(
             name: "TicketmasterTickets",
             targets: ["TicketmasterTickets"])

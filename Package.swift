@@ -13,28 +13,28 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TicketmasterFoundation",
-            targets: ["TicketmasterFoundation"]),
+            targets: ["TicketmasterFoundation"])
         .library(
             name: "TicketmasterAuthentication",
-            targets: ["TicketmasterAuthentication"]),
+            targets: ["TicketmasterAuthentication"])
         .library(
             name: "TicketmasterDiscoveryAPI",
-            targets: ["TicketmasterDiscoveryAPI"]),
+            targets: ["TicketmasterDiscoveryAPI"])
         .library(
             name: "TicketmasterPrePurchase",
-            targets: ["TicketmasterPrePurchase"]),
+            targets: ["TicketmasterPrePurchase"])
         .library(
             name: "TicketmasterPurchase",
-            targets: ["TicketmasterPurchase"]),
+            targets: ["TicketmasterPurchase"])
         .library(
             name: "TicketmasterSwiftProtobuf",
-            targets: ["TicketmasterSwiftProtobuf"]),
+            targets: ["TicketmasterSwiftProtobuf"])
         .library(
             name: "TicketmasterSecureEntry",
-            targets: ["TicketmasterSecureEntry"]),
+            targets: ["TicketmasterSecureEntry"])
         .library(
             name: "TicketmasterTickets",
-            targets: ["TicketmasterTickets"]),
+            targets: ["TicketmasterTickets"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -44,35 +44,35 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TicketmasterFoundation",
-            path: "Frameworks/TicketmasterFoundation.xcframework",
+            path: "Frameworks/TicketmasterFoundation.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
-            path: "Frameworks/TicketmasterAuthentication.xcframework",
+            path: "Frameworks/TicketmasterAuthentication.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
-            path: "Frameworks/TicketmasterDiscoveryAPI.xcframework",
+            path: "Frameworks/TicketmasterDiscoveryAPI.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
-            path: "Frameworks/TicketmasterPrePurchase.xcframework",
+            path: "Frameworks/TicketmasterPrePurchase.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
-            path: "Frameworks/TicketmasterPurchase.xcframework",
+            path: "Frameworks/TicketmasterPurchase.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
-            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework",
+            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
-            path: "Frameworks/TicketmasterSecureEntry.xcframework",
+            path: "Frameworks/TicketmasterSecureEntry.xcframework"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            path: "Frameworks/TicketmasterTickets.xcframework",
+            path: "Frameworks/TicketmasterTickets.xcframework"
         ),
     ],
     swiftLanguageVersions: [.v5],

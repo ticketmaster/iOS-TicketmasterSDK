@@ -75,5 +75,8 @@ let package = Package(
             path: "Frameworks/TicketmasterTickets.xcframework"
         ),
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v5],
+    swiftSettings: [
+        .swiftLanguageMode(.v5)
+    ]
 )

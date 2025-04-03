@@ -44,35 +44,59 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TicketmasterFoundation",
-            path: "Frameworks/TicketmasterFoundation.xcframework"
+            path: "Frameworks/TicketmasterFoundation.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
-            path: "Frameworks/TicketmasterAuthentication.xcframework"
+            path: "Frameworks/TicketmasterAuthentication.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
-            path: "Frameworks/TicketmasterDiscoveryAPI.xcframework"
+            path: "Frameworks/TicketmasterDiscoveryAPI.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
-            path: "Frameworks/TicketmasterPrePurchase.xcframework"
+            path: "Frameworks/TicketmasterPrePurchase.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
-            path: "Frameworks/TicketmasterPurchase.xcframework"
+            path: "Frameworks/TicketmasterPurchase.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
-            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework"
+            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
-            path: "Frameworks/TicketmasterSecureEntry.xcframework"
+            path: "Frameworks/TicketmasterSecureEntry.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            path: "Frameworks/TicketmasterTickets.xcframework"
+            path: "Frameworks/TicketmasterTickets.xcframework",
+            swiftSettings: [
+                .swiftLanguageMode(.v5)
+            ]
         ),
     ],
     swiftLanguageVersions: [.v5]

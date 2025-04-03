@@ -78,8 +78,5 @@ let package = Package(
             .swiftLanguageMode(.v5)
         ]
     ],
-    swiftLanguageVersions: [.v5],
-    swiftSettings: [
-        .swiftLanguageMode(.v5)
-    ]
+    swiftLanguageVersions: [.v5]
 )

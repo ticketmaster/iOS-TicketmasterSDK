@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Oct 10 18:55:20 PDT 2024</string>
+	<string>Tue Mar 25 18:31:03 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNEC02ZK2H4MD6Q</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>1.3.9 Added x.y.z version comparison and tests</string>
+	<string>Merge branch arennard/MA-10685-MFX into master</string>
 	<key>GITDate</key>
-	<string>Thu Oct 10 18:52:54 2024 -0700</string>
+	<string>Fri Oct 25 11:40:14 2024 +0000</string>
 	<key>GITRevision</key>
-	<string>97819e1f480a819829da39fdeafdd3f770f1fac8</string>
+	<string>b42dc2af78c42b1d3a0819d98a7309d034d0793b</string>
 	<key>MarketingVersion</key>
-	<string>1.3.9</string>
+	<string>1.3.11</string>
 </dict>
 </plist>

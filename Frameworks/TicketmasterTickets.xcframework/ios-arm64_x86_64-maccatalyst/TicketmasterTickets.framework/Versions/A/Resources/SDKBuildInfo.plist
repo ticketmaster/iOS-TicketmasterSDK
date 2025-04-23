@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Mar 26 13:05:06 GMT 2025</string>
+	<string>Tue Apr  8 10:20:04 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
-	<string>release/3.12.0</string>
+	<string>release/3.12.1</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-15274-Information_disappear-in_QR_code_view into master</string>
+	<string>PSDK-0 Updated optional SPM resolved</string>
 	<key>GITDate</key>
-	<string>Tue Mar 25 15:44:18 2025 +0000</string>
+	<string>Tue Apr 8 10:16:48 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>fe2221974d5c973527a1be5b55fd31a4a6a3e352</string>
+	<string>323a79c7ba5a8f3bc7c654e20e14283fc61dab79</string>
 	<key>MarketingVersion</key>
-	<string>3.12.0</string>
+	<string>3.12.1</string>
 </dict>
 </plist>

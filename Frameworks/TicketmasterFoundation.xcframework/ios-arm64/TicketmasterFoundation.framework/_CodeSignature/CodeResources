@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2Nr25UkAowUNzEmTxpGbWNpFrkE=
+		KQtY8UJERfsac5ZVDOnVPty/eLQ=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		57N9NqoSZqQqZU5JX0vaAmWzWxM=
+		aJchspnzHgZmQSI5pr4F0fcUcvo=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		OV+8FS2VUFGhwFN7uiC+fFQebII=
+		tnn6Ererc8onsoti88Ul9qfAvVY=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		OV+8FS2VUFGhwFN7uiC+fFQebII=
+		tnn6Ererc8onsoti88Ul9qfAvVY=
 		</data>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		o6yVOLnRBbnlN6ZxDqbHDsBOhGI=
+		CpnHUgmFkw5ugLiJvbzAmu6gBfY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		nmCko5Ha8ArLCICdNiblvdIZkU0=
+		SMSyNmjIxF/0CENmuyNo23a768M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MydTL92FrMB6pfNMngvDObYT9J+t1m8C8gI4n21AaCY=
+			GWoXen+gAcS2yJwW0oywe7pRNx0nNOlnlkgsoYhGfTM=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJwdsuUF2Bf+5X94e9bn8RZgoecMiARt9Y1HhP8JCQQ=
+			WB+obzEopclEtBUwDNU3N3kQPq5vsnAR8qPKcCF8V7M=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gJwdsuUF2Bf+5X94e9bn8RZgoecMiARt9Y1HhP8JCQQ=
+			WB+obzEopclEtBUwDNU3N3kQPq5vsnAR8qPKcCF8V7M=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAWs/8ka9p42ER3vMUrIfTSMFHU+Ixr8CSBD3lfQ+1k=
+			1j8FdelBXWQYvnvWcb+b7TbOgHslRkYaR9WC7Xk4CjI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gKe7g7s8I1YPwFc60jgYZVcxlJKmJtbLwXSk2+xOmAI=
+			K17YCcsy2RKp8mfJxehVm9GJ6E3DI6g3X8osmaqSbL4=
 			</data>
 		</dict>
 	</dict>

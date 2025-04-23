@@ -348,6 +348,7 @@ SWIFT_CLASS("_TtC26TicketmasterAuthentication16TMAuthentication")
 
 
 
+
 @class ASWebAuthenticationSession;
 
 @interface UIViewController (SWIFT_EXTENSION(TicketmasterAuthentication)) <ASWebAuthenticationPresentationContextProviding>

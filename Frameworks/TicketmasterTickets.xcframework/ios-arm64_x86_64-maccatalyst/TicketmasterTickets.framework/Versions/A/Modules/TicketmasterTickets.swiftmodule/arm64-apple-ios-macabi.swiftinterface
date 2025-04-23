@@ -962,6 +962,9 @@ extension Swift.UInt64 {
   final public var secureEntryVersion: Swift.String {
     get
   }
+  final public var sdkBuildInfo: TicketmasterFoundation.JSONDictionary? {
+    get
+  }
   weak final public var orderDelegate: (any TicketmasterTickets.TMTicketsOrderDelegate)?
   weak final public var moduleDelegate: (any TicketmasterTickets.TMTicketsModuleDelegate)?
   weak final public var analyticsDelegate: (any TicketmasterTickets.TMTicketsAnalyticsDelegate)?
@@ -999,8 +1002,9 @@ extension Swift.UInt64 {
     public var openExternalURL: Swift.Bool
     public var internalPresentationStyle: UIKit.UIModalPresentationStyle?
     public var reloadTicketInfo: Swift.Bool
-    public var oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings?
-    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings? = nil)
+    public var oauthCookieSettingsArray: [TicketmasterTickets.TMTicketsModule.OAuthCookieSettings]?
+    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettingsArray: [TicketmasterTickets.TMTicketsModule.OAuthCookieSettings]? = nil)
+    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings?)
     @objc deinit
   }
   @objc public class OAuthCookieSettings : ObjectiveC.NSObject {
@@ -1008,7 +1012,18 @@ extension Swift.UInt64 {
     public var value: Swift.String?
     public var webDomains: [Swift.String]
     public var backend: TicketmasterAuthentication.TMAuthentication.BackendService?
-    public init(name: Swift.String, webDomains: [Swift.String], backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil)
+    public var backendTokenType: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType
+    public enum BackendTokenType : Swift.String {
+      case accessToken
+      case idToken
+      case hmacId
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public init(name: Swift.String, webDomains: [Swift.String], backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, backendTokenType: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType = .accessToken)
     public init(name: Swift.String, value: Swift.String?, webDomains: [Swift.String])
     @objc deinit
   }
@@ -1041,3 +1056,6 @@ extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.RawRepresentable 
 extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.Equatable {}
 extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.Hashable {}
 extension TicketmasterTickets.TMTickets.Analytics.Action : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType : Swift.Equatable {}
+extension TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType : Swift.Hashable {}
+extension TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType : Swift.RawRepresentable {}

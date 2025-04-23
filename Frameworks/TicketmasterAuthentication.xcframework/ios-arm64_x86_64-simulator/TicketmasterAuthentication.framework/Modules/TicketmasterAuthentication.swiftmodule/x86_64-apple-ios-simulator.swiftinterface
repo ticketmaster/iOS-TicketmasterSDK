@@ -120,6 +120,15 @@ public struct TMAuthToken : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension TicketmasterAuthentication.TMAuthentication {
+  public struct LoginURLOAuth {
+    public let url: Foundation.URL
+    public let callbackURLScheme: Swift.String
+    public let codeVerifier: Swift.String?
+    public let state: Swift.String?
+    public init(url: Foundation.URL, callbackURLScheme: Swift.String, codeVerifier: Swift.String?, state: Swift.String?)
+  }
+}
+extension TicketmasterAuthentication.TMAuthentication {
   final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMApigeeConfig {
@@ -667,7 +676,11 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let redirectScheme: Swift.String
     public let tenantId: Swift.String
     public let scope: Swift.String
-    public let cookieName: Swift.String
+    public let teamDomain: Swift.String?
+    public let teamPathName: Swift.String?
+    public let cookieName: Swift.String?
+    public let cookieDomains: [Swift.String]?
+    public let prefersEphemeralWebBrowserSession: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.SportXR, b: TicketmasterAuthentication.TMApigeeConfig.SportXR) -> Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
@@ -827,6 +840,9 @@ extension TicketmasterAuthentication.TMAuthentication {
 @objc @_inheritsConvenienceInitializers final public class TMAuthentication : ObjectiveC.NSObject, TicketmasterAuthentication.TMAuthenticationProvider, TicketmasterAuthentication.TMApigeeConfigurationProvider, TicketmasterAuthentication.TMDeviceBindingProvider {
   public static let shared: TicketmasterAuthentication.TMAuthentication
   final public var version: Swift.String {
+    get
+  }
+  final public var sdkBuildInfo: TicketmasterFoundation.JSONDictionary? {
     get
   }
   final public var useCombinedLogin: Swift.Bool

@@ -1874,6 +1874,9 @@ extension Foundation.TimeZone {
   public var version: Swift.String {
     get
   }
+  public var sdkBuildInfo: TicketmasterFoundation.JSONDictionary? {
+    get
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -2050,6 +2053,7 @@ public enum ConnectionEnvironment : Swift.String, Swift.CaseIterable, Swift.Coda
   case alpha
   case beta
   case appDemo
+  case mfx
   case localHost
   case customHost
   case preProduction1

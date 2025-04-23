@@ -350,6 +350,7 @@ SWIFT_CLASS("_TtC26TicketmasterAuthentication16TMAuthentication")
 
 
 
+
 @class ASWebAuthenticationSession;
 
 @interface UIViewController (SWIFT_EXTENSION(TicketmasterAuthentication)) <ASWebAuthenticationPresentationContextProviding>
@@ -675,6 +676,7 @@ SWIFT_CLASS("_TtC26TicketmasterAuthentication16TMAuthentication")
 @interface TMAuthentication : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

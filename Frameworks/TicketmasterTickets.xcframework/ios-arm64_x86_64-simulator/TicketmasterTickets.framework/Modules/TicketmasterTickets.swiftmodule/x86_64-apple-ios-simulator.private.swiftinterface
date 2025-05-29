@@ -1,14 +1,17 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterTickets
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterTickets
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AuthenticationServices
 import Combine
 import Contacts
 import ContactsUI
+import CoreImage
+import CoreLocation
 import Darwin
 import DeveloperToolsSupport
+import EventKit
 import Foundation
 import MapKit
 import MessageUI
@@ -35,44 +38,39 @@ public protocol TMTicketsOrderDelegate : AnyObject {
   func didUpdateTickets(event: TicketmasterTickets.TMPurchasedEvent, fromCache: Swift.Bool)
   func didClearEventsTicketsCache(backend: TicketmasterAuthentication.TMAuthentication.BackendService)
 }
+extension UIKit.UITextView {
+  @_Concurrency.MainActor @preconcurrency public func setTextWithLetterSpacing(text: Swift.String, letterSpacingPercentage: CoreFoundation.CGFloat, lineHeight: CoreFoundation.CGFloat = 0)
+}
 extension TicketmasterTickets.TMTickets {
   final public func configure(callSource: Swift.String? = nil, success: @escaping () -> Swift.Void, failure: @escaping (_ error: any Swift.Error) -> Swift.Void)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TMTicketsModuleHeaderView : UIKit.UIView {
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var colorView: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var imageView: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var mapView: MapKit.MKMapView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var topLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var centerLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var bottomLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak final public var barcodeBackgroundView: UIKit.UIView!
-  @_Concurrency.MainActor(unsafe) public static func build() -> TicketmasterTickets.TMTicketsModuleHeaderView
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class TMTicketsModuleHeaderView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static func build() -> TicketmasterTickets.TMTicketsModuleHeaderView
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension TicketmasterTickets.TMTicketsModuleHeaderView {
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage, backgroundImageURL: Foundation.URL? = nil)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundColor: UIKit.UIColor)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, mapCoordinateRegion: MapKit.MKCoordinateRegion, mapAnnotation: (any MapKit.MKAnnotation)? = nil)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, qrCodeValue: Swift.String)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, barcode2DValue: Swift.String)
-  @_Concurrency.MainActor(unsafe) final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, gradientAlpha: CoreFoundation.CGFloat? = 0.0, avContentURL: Foundation.URL, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false)
-  @_Concurrency.MainActor(unsafe) final public func playAVContent()
-  @_Concurrency.MainActor(unsafe) final public func pauseAVContent()
+  @_Concurrency.MainActor @preconcurrency final public func playAVContent()
+  @_Concurrency.MainActor @preconcurrency final public func pauseAVContent()
+}
+extension TicketmasterTickets.TMTicketsModuleHeaderView {
   @objc public class MapAnnotation : ObjectiveC.NSObject, MapKit.MKAnnotation {
     @objc final public let coordinate: CoreLocation.CLLocationCoordinate2D
     @objc final public let title: Swift.String?
-    public init(coordinate: CoreLocation.CLLocationCoordinate2D, title: Swift.String)
+    public init(coordinate: CoreLocation.CLLocationCoordinate2D, title: Swift.String?)
     @objc deinit
   }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency public func setTextWithLetterSpacing(text: Swift.String, letterSpacingPercentage: CoreFoundation.CGFloat, lineHeight: CoreFoundation.CGFloat = 0)
 }
 extension Swift.FixedWidthInteger {
   @inlinable internal func bytes(totalBytes: Swift.Int = MemoryLayout<Self>.size) -> Swift.Array<Swift.UInt8> {
     arrayOfBytes(value: self.littleEndian, length: totalBytes)
-    // TODO: adjust bytes order
-    // var value = self.littleEndian
-    // return withUnsafeBytes(of: &value, Array.init).reversed()
+     
+     
+     
   }
 }
 extension TicketmasterTickets.TMTickets {
@@ -92,6 +90,10 @@ extension TicketmasterTickets.TMTickets {
     get
     set
   }
+  final public var brandingEventsPageBackgroundOverride: UIKit.UIColor? {
+    get
+    set
+  }
   final public var userTrackingEnabled: Swift.Bool {
     get
     set
@@ -101,24 +103,23 @@ extension TicketmasterTickets.TMTickets {
     set
   }
 }
-extension SwiftUI.Font {
-  public static func tmFontRegular(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
-  public static func tmFontBold(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
-  public static func tmFontSemibold(_ size: CoreFoundation.CGFloat) -> SwiftUI.Font
+extension TicketmasterTickets.TMTicketsModule {
+  public static func moduleArray(jsonDict: TicketmasterFoundation.JSONDictionary, event: TicketmasterTickets.TMPurchasedEvent, completion: @escaping (_ modules: [TicketmasterTickets.TMTicketsModule]) -> Swift.Void)
 }
 public struct TMTicketsPrebuiltModule {
   public enum ModuleName : Swift.String, Swift.CaseIterable {
-    case venueDirectionsViaAppleMaps
+    case venueDirections
     case venueConcessions
-    case accountManagerSeatUpgrades
     case hostSeatUpgrades
+    case accountManagerSeatUpgrades
     case accountManagerMoreTicketActions
     case accountManagerInvoiceAction
     case promotionalModule
+    case customModule
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName]
     public typealias RawValue = Swift.String
-    public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName] {
+    nonisolated public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName] {
       get
     }
     public var rawValue: Swift.String {
@@ -137,30 +138,19 @@ public struct TMTicketsPrebuiltModule {
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName]
     public typealias RawValue = Swift.String
-    public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName] {
+    nonisolated public static var allCases: [TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName] {
       get
     }
     public var rawValue: Swift.String {
       get
     }
   }
-  public struct HeaderOverride {
-    public let topLabelText: Swift.String?
-    public let topLabelTextAlignment: UIKit.NSTextAlignment?
-    public let centerLabelText: Swift.String?
-    public let centerLabelTextAlignment: UIKit.NSTextAlignment?
-    public let bottomLabelText: Swift.String?
-    public let bottomLabelTextAlignment: UIKit.NSTextAlignment?
-    public let gradientAlpha: CoreFoundation.CGFloat?
-    public let backgroundImage: UIKit.UIImage?
-    public init(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = nil, gradientAlpha: CoreFoundation.CGFloat? = nil, backgroundImage: UIKit.UIImage? = nil)
-  }
-  public static func accountManagerSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> TicketmasterTickets.TMTicketsModule?
-  public static func hostSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> TicketmasterTickets.TMTicketsModule?
-  public static func accountManagerMoreTicketActions(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
-  public static func accountManagerInvoiceAction(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
-  public static func venueDirectionsViaAppleMaps(event: TicketmasterTickets.TMPurchasedEvent) -> TicketmasterTickets.TMTicketsModule?
-  public static func venueConcessions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, showWalletButton: Swift.Bool) -> TicketmasterTickets.TMTicketsModule?
+  public static func accountManagerSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func hostSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func accountManagerMoreTicketActions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func accountManagerInvoiceAction(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func venueDirectionsViaAppleMaps(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func venueConcessions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, showWalletButton: Swift.Bool, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
 }
 public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
   public let identifier: Swift.String
@@ -199,6 +189,7 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
   public let isF2FExchangeEnabled: Swift.Bool?
   public let ticketManagement: TicketmasterTickets.TMPurchasedEventInfo.TicketManagement?
   public let isOrdersAPI: Swift.Bool?
+  public let isGlobal: Swift.Bool?
   public let useTmtt: Swift.Bool?
   public let isRetEnabled: Swift.Bool?
   public let isLarge: Swift.Bool?
@@ -410,7 +401,7 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
     buf.deallocate()
   }
 
-  // xor
+   
   for i in 0..<length {
     buf[i] = left[left.startIndex.advanced(by: i)] ^ right[right.startIndex.advanced(by: i)]
   }
@@ -419,13 +410,13 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
 }
 @inline(__always) @inlinable internal func bitPadding(to data: inout Swift.Array<Swift.UInt8>, blockSize: Swift.Int, allowance: Swift.Int = 0) {
   let msgLength = data.count
-  // Step 1. Append Padding Bits
-  // append one bit (UInt8 with one bit) to message
+   
+   
   data.append(0x80)
 
-  // Step 2. append "0" bit until message length in bits ≡ 448 (mod 512)
-  let max = blockSize - allowance // 448, 986
-  if msgLength % blockSize < max { // 448
+   
+  let max = blockSize - allowance  
+  if msgLength % blockSize < max {  
     data += Array<UInt8>(repeating: 0, count: max - 1 - (msgLength % blockSize))
   } else {
     data += Array<UInt8>(repeating: 0, count: blockSize + max - 1 - (msgLength % blockSize))
@@ -435,35 +426,6 @@ extension TicketmasterTickets.TMTickets {
   final public var navBarButtonTitle: Swift.String? {
     get
     set
-  }
-}
-extension SwiftUI.Color {
-  public static var shadow: SwiftUI.Color {
-    get
-  }
-  public static var border: SwiftUI.Color {
-    get
-  }
-  public static var primaryLabel: SwiftUI.Color {
-    get
-  }
-  public static var secondaryLabel: SwiftUI.Color {
-    get
-  }
-  public static var secondaryBorder: SwiftUI.Color {
-    get
-  }
-  public static var success: SwiftUI.Color {
-    get
-  }
-  public static var loadingSecondaryColor: SwiftUI.Color {
-    get
-  }
-  public static var loadingPrimaryColor: SwiftUI.Color {
-    get
-  }
-  public static var lightGray: SwiftUI.Color {
-    get
   }
 }
 public protocol TMTicketsModuleDelegate : AnyObject {
@@ -511,6 +473,8 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   public let displayOrderIdentifier: Swift.String?
   public let encodedOrderIdentifier: Swift.String?
   public let isOrdersApi: Swift.Bool?
+  public let isGlobal: Swift.Bool?
+  public let sellManageListingsOverrideURL: Foundation.URL?
   public let orderStatus: Swift.String?
   public let purchaseDate: Foundation.Date?
   public let ticketFees: [TicketmasterTickets.TMPurchasedTicket.TicketFee]?
@@ -624,19 +588,17 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TMTicketsViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public var addLogoutButton: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TMTicketsViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var addLogoutButton: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
-  @_Concurrency.MainActor(unsafe) public func reload()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
-extension Swift.String : Swift.Error {
+  @_Concurrency.MainActor @preconcurrency public func reload()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 extension TicketmasterTickets.TMTickets {
   public enum IdType : Swift.String, Swift.Codable, Swift.Hashable {
@@ -748,7 +710,59 @@ extension Swift.Collection {
   }
 }
 extension TicketmasterTickets.TMTicketsModule {
-  public static func moduleArray(jsonDict: [Swift.String : Any]) -> [TicketmasterTickets.TMTicketsModule]
+  public static func module(jsonDict: TicketmasterFoundation.JSONDictionary?, event: TicketmasterTickets.TMPurchasedEvent, completion: @escaping (_ modules: [TicketmasterTickets.TMTicketsModule]) -> Swift.Void)
+}
+extension UIKit.UIFont {
+  public enum SourceSansFontFilenames : Swift.String, Swift.CaseIterable {
+    case regular
+    case bold
+    case semibold
+    case black
+    public init?(rawValue: Swift.String)
+    @available(iOS 2.0, *)
+    public typealias AllCases = [UIKit.UIFont.SourceSansFontFilenames]
+    @available(iOS 2.0, *)
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [UIKit.UIFont.SourceSansFontFilenames] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func tmFontRegular(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func tmFontBold(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func tmFontSemibold(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func tmFontBlack(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+}
+extension TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride {
+  public init(jsonDict: TicketmasterFoundation.JSONDictionary?)
+}
+extension TicketmasterTickets.TMTicketsPrebuiltModule {
+  public struct HeaderOverride {
+    public let topLabelText: Swift.String?
+    public let topLabelTextAlignment: UIKit.NSTextAlignment?
+    public let topLabelTextColor: UIKit.UIColor?
+    public let centerLabelText: Swift.String?
+    public let centerLabelTextAlignment: UIKit.NSTextAlignment?
+    public let centerLabelTextColor: UIKit.UIColor?
+    public let bottomLabelText: Swift.String?
+    public let bottomLabelTextAlignment: UIKit.NSTextAlignment?
+    public let bottomLabelTextColor: UIKit.UIColor?
+    public let titleLabelText: Swift.String?
+    public let titleLabelTextColor: UIKit.UIColor?
+    public let messageLabelText: Swift.String?
+    public let messageLabelTextColor: UIKit.UIColor?
+    public let messageLabelDetectLinks: Swift.Bool?
+    public let messageLabelLinkColor: UIKit.UIColor?
+    public let titleMessageBackgroundColor: UIKit.UIColor?
+    public let gradientAlpha: CoreFoundation.CGFloat?
+    public let backgroundAspectRatio: CoreFoundation.CGFloat?
+    public let backgroundColor: UIKit.UIColor?
+    public let backgroundImage: UIKit.UIImage?
+    public let backgroundImageURL: Foundation.URL?
+    public init(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = nil, topLabelTextColor: UIKit.UIColor? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = nil, centerLabelTextColor: UIKit.UIColor? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = nil, bottomLabelTextColor: UIKit.UIColor? = nil, titleLabelText: Swift.String? = nil, titleLabelTextColor: UIKit.UIColor? = nil, messageLabelText: Swift.String? = nil, messageLabelTextColor: UIKit.UIColor? = nil, messageLabelDetectLinks: Swift.Bool? = nil, messageLabelLinkColor: UIKit.UIColor? = nil, titleMessageBackgroundColor: UIKit.UIColor? = nil, gradientAlpha: CoreFoundation.CGFloat? = nil, backgroundAspectRatio: CoreFoundation.CGFloat? = nil, backgroundColor: UIKit.UIColor? = nil, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil)
+  }
 }
 extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swift.Int {
   @inlinable internal func toUInt32Array() -> Swift.Array<Swift.UInt32> {
@@ -799,6 +813,10 @@ public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+extension TicketmasterTickets.TMTicketsModuleHeaderView {
+  @discardableResult
+  @_Concurrency.MainActor @preconcurrency final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, topLabelTextColor: UIKit.UIColor? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, centerLabelTextColor: UIKit.UIColor? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, bottomLabelTextColor: UIKit.UIColor? = nil, titleLabelText: Swift.String? = nil, titleLabelTextColor: UIKit.UIColor? = nil, messageLabelText: Swift.String? = nil, messageLabelTextColor: UIKit.UIColor? = nil, messageLabelDetectLinks: Swift.Bool = true, messageLabelLinkColor: UIKit.UIColor? = nil, titleMessageBackgroundColor: UIKit.UIColor? = nil, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundAspectRatio: CoreFoundation.CGFloat? = nil, backgroundAspectRatioForced: Swift.Bool = false, backgroundColor: UIKit.UIColor? = nil, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, mapCoordinateRegion: MapKit.MKCoordinateRegion? = nil, mapAnnotation: (any MapKit.MKAnnotation)? = nil, avContentURL: Foundation.URL? = nil, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false, barcode2DValue: Swift.String? = nil, qrCodeValue: Swift.String? = nil, aztecValue: Swift.String? = nil, pdf417Value: Swift.String? = nil, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> Swift.Bool
 }
 extension TicketmasterTickets.TMTickets {
   final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil, callSource: Swift.String? = nil)
@@ -866,14 +884,14 @@ extension TicketmasterTickets.TMTickets {
     public init(from decoder: any Swift.Decoder) throws
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class TMTicketsView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TMTicketsView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
-  @_Concurrency.MainActor(unsafe) public func reload()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency public func reload()
 }
 extension Swift.UInt32 {
   @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
@@ -987,23 +1005,29 @@ extension Swift.UInt64 {
   }
   @objc public class ActionButton : ObjectiveC.NSObject {
     final public let title: Swift.String
+    final public let titleColor: UIKit.UIColor?
+    final public let buttonColor: UIKit.UIColor?
     final public let callbackValue: Swift.String
     final public let webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings?
     final public let requiresSpecificOrder: Swift.Bool
+    final public let walletSettings: TicketmasterTickets.TMTicketsModule.WalletSettings?
+    final public let mapLocation: TicketmasterTickets.TMTicketsModule.MapLocation?
     public var enabled: Swift.Bool
-    public init(title: Swift.String, callbackValue: Swift.String? = nil, requiresSpecificOrder: Swift.Bool? = false, enabled: Swift.Bool? = true)
-    public init(title: Swift.String, callbackValue: Swift.String? = nil, webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings, requiresSpecificOrder: Swift.Bool? = false, enabled: Swift.Bool? = true)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, walletSettings: TicketmasterTickets.TMTicketsModule.WalletSettings, enabled: Swift.Bool = true)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, mapLocation: TicketmasterTickets.TMTicketsModule.MapLocation, enabled: Swift.Bool = true)
     @objc deinit
   }
   @objc public class WebpageSettings : ObjectiveC.NSObject {
-    public var pageTitle: Swift.String
+    public var pageTitle: Swift.String?
     public var urlRequest: Foundation.URLRequest
     public var openExternalURL: Swift.Bool
     public var internalPresentationStyle: UIKit.UIModalPresentationStyle?
     public var reloadTicketInfo: Swift.Bool
     public var oauthCookieSettingsArray: [TicketmasterTickets.TMTicketsModule.OAuthCookieSettings]?
-    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettingsArray: [TicketmasterTickets.TMTicketsModule.OAuthCookieSettings]? = nil)
-    public init(pageTitle: Swift.String, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings?)
+    public init(pageTitle: Swift.String? = nil, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettingsArray: [TicketmasterTickets.TMTicketsModule.OAuthCookieSettings]? = nil)
+    public init(pageTitle: Swift.String? = nil, urlRequest: Foundation.URLRequest, openExternalURL: Swift.Bool? = false, internalPresentationStyle: UIKit.UIModalPresentationStyle? = nil, reloadTicketInfo: Swift.Bool? = false, oauthCookieSettings: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings?)
     @objc deinit
   }
   @objc public class OAuthCookieSettings : ObjectiveC.NSObject {
@@ -1024,6 +1048,20 @@ extension Swift.UInt64 {
     }
     public init(name: Swift.String, webDomains: [Swift.String], backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, backendTokenType: TicketmasterTickets.TMTicketsModule.OAuthCookieSettings.BackendTokenType = .accessToken)
     public init(name: Swift.String, value: Swift.String?, webDomains: [Swift.String])
+    @objc deinit
+  }
+  @objc public class MapLocation : ObjectiveC.NSObject {
+    final public let name: Swift.String?
+    final public let coordinates: CoreLocation.CLLocationCoordinate2D
+    public init(name: Swift.String? = nil, coordinates: CoreLocation.CLLocationCoordinate2D)
+    @objc deinit
+  }
+  @objc public class WalletSettings : ObjectiveC.NSObject {
+    final public let url: Foundation.URL?
+    final public let useTMBackend: Swift.Bool
+    final public let requiresAccountBinding: Swift.Bool
+    public var binary: PassKit.PKPass?
+    public init(url: Foundation.URL? = nil, useTMBackend: Swift.Bool = false, requiresAccountBinding: Swift.Bool = false, binary: PassKit.PKPass? = nil)
     @objc deinit
   }
   @objc deinit
@@ -1049,6 +1087,9 @@ extension TicketmasterTickets.TMPurchasedTicket.Delivery.Source : Swift.RawRepre
 extension TicketmasterTickets.TMPurchasedTicket.Delivery.SegmentType : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMTickets.IdType : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMTickets.ActionType : Swift.RawRepresentable {}
+extension UIKit.UIFont.SourceSansFontFilenames : Swift.Equatable {}
+extension UIKit.UIFont.SourceSansFontFilenames : Swift.Hashable {}
+extension UIKit.UIFont.SourceSansFontFilenames : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.Equatable {}
 extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.Hashable {}
 extension TicketmasterTickets.TMTickets.Analytics.Page : Swift.RawRepresentable {}

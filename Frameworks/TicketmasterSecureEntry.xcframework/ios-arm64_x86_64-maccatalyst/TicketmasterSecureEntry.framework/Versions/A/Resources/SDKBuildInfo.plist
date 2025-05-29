@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Mar 26 13:49:41 GMT 2025</string>
+	<string>Wed May 28 13:46:19 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>LNEH7VYVF25HY</string>
+	<key>BuildVariant</key>
+	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.12.0</string>
+	<string>release/3.13.0</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-15274-Information_disappear-in_QR_code_view into master</string>
+	<string>Merge branch Fix-PSDK-16143-Never-Ending-Spinner into master</string>
 	<key>GITDate</key>
-	<string>Tue Mar 25 15:44:18 2025 +0000</string>
+	<string>Wed May 28 17:26:54 2025 +0100</string>
 	<key>GITRevision</key>
-	<string>fe2221974d5c973527a1be5b55fd31a4a6a3e352</string>
+	<string>2a489819e749515957d998dfdcb5919030fffc9e</string>
 	<key>MarketingVersion</key>
-	<string>1.8.2</string>
+	<string>1.9.0</string>
 </dict>
 </plist>

@@ -23,8 +23,8 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 ### Basic Requirements
 
-* Swift 5.9+ (Xcode 15.0.1+ or Xcode 16.0+) for development
-* iOS 15.0+ for deployment
+* Swift 5.9+ or Swift 6.0.3+ (Xcode 16.2+) for development
+* iOS 16.2+ for deployment
 
 ### Change Log
 
@@ -123,7 +123,7 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'MyApp' do
-  pod 'TM-Ignite', '~> 1.14.2'
+  pod 'TM-Ignite', '~> 1.15.0'
 end
 ```
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)

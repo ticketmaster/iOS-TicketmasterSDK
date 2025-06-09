@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Mar 25 18:31:03 PDT 2025</string>
+	<string>Wed May 14 12:46:42 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Merge branch arennard/MA-10685-MFX into master</string>
+	<string>Do not add cookies to URLSession headers by default</string>
 	<key>GITDate</key>
-	<string>Fri Oct 25 11:40:14 2024 +0000</string>
+	<string>Wed May 14 12:44:26 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>b42dc2af78c42b1d3a0819d98a7309d034d0793b</string>
+	<string>66a0a754a323fa13b0891264e49219a224756dc4</string>
 	<key>MarketingVersion</key>
-	<string>1.3.11</string>
+	<string>1.4.2</string>
 </dict>
 </plist>

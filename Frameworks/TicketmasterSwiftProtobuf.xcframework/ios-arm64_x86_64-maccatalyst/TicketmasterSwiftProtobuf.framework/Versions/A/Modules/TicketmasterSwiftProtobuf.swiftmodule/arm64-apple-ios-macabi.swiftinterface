@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterSwiftProtobuf
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.6-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterSwiftProtobuf
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Dispatch
 import Foundation
 import Swift
@@ -416,6 +416,7 @@ final public class MessageExtension<FieldType, MessageType> : TicketmasterSwiftP
   @objc deinit
 }
 public enum Internal {
+  @available(*, deprecated, message: "Internal.emptyData isn't used any longer in newer versions of the generator. Generate code with a version later than 1.10.2 to get performance improvements. See https://github.com/apple/swift-protobuf/pull/1028 for more information.")
   public static let emptyData: Foundation.Data
   public static func areAllInitialized(_ listOfMessages: [any TicketmasterSwiftProtobuf.Message]) -> Swift.Bool
   public static func areAllInitialized<K>(_ mapToMessages: [K : any TicketmasterSwiftProtobuf.Message]) -> Swift.Bool where K : Swift.Hashable
@@ -640,6 +641,12 @@ extension TicketmasterSwiftProtobuf.SwiftProtobufError {
     public static var binaryStreamDecodingError: TicketmasterSwiftProtobuf.SwiftProtobufError.Code {
       get
     }
+    public static var jsonDecodingError: TicketmasterSwiftProtobuf.SwiftProtobufError.Code {
+      get
+    }
+    public static var jsonEncodingError: TicketmasterSwiftProtobuf.SwiftProtobufError.Code {
+      get
+    }
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterSwiftProtobuf.SwiftProtobufError.Code, b: TicketmasterSwiftProtobuf.SwiftProtobufError.Code) -> Swift.Bool
     public var hashValue: Swift.Int {
@@ -679,6 +686,14 @@ extension TicketmasterSwiftProtobuf.SwiftProtobufError {
     public static func malformedLength(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
     public static func noBytesAvailable(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
   }
+  public enum JSONDecoding {
+    public static func invalidAnyTypeURL(type_url: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
+    public static func emptyAnyTypeURL(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
+  }
+  public enum JSONEncoding {
+    public static func invalidAnyTypeURL(type_url: Swift.String, function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
+    public static func emptyAnyTypeURL(function: Swift.String = #function, file: Swift.String = #fileID, line: Swift.Int = #line) -> TicketmasterSwiftProtobuf.SwiftProtobufError
+  }
 }
 extension TicketmasterSwiftProtobuf.Google_Protobuf_Struct : Swift.ExpressibleByDictionaryLiteral {
   public typealias Key = Swift.String
@@ -692,8 +707,7 @@ extension TicketmasterSwiftProtobuf.Google_Protobuf_Struct {
     set(newValue)
   }
 }
-public enum Google_Protobuf_Edition : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-  public typealias RawValue = Swift.Int
+public enum Google_Protobuf_Edition : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
   case unknown
   case legacy
   case proto2
@@ -708,18 +722,20 @@ public enum Google_Protobuf_Edition : TicketmasterSwiftProtobuf.Enum, Swift.Case
   case max
   public init()
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_Edition]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_Edition] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }
-  public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_Edition]
-  public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_Edition] {
-    get
-  }
 }
-public struct Google_Protobuf_FileDescriptorSet : Swift.Sendable {
+public struct Google_Protobuf_FileDescriptorSet : TicketmasterSwiftProtobuf.ExtensibleMessage, Swift.Sendable {
   public var file: [TicketmasterSwiftProtobuf.Google_Protobuf_FileDescriptorProto]
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
   public init()
+  public var _protobuf_extensionFieldValues: TicketmasterSwiftProtobuf.ExtensionFieldValueSet
 }
 public struct Google_Protobuf_FileDescriptorProto : Swift.Sendable {
   public var name: Swift.String {
@@ -900,17 +916,17 @@ public struct Google_Protobuf_ExtensionRangeOptions : TicketmasterSwiftProtobuf.
   }
   public mutating func clearVerification()
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum VerificationState : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum VerificationState : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case declaration
     case unverified
     public init()
     public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState] {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_ExtensionRangeOptions.VerificationState] {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -1051,8 +1067,7 @@ public struct Google_Protobuf_FieldDescriptorProto : Swift.Sendable {
   }
   public mutating func clearProto3Optional()
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum TypeEnum : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum TypeEnum : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case double
     case float
     case int64
@@ -1073,26 +1088,27 @@ public struct Google_Protobuf_FieldDescriptorProto : Swift.Sendable {
     case sint64
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.TypeEnum] {
-      get
-    }
   }
-  public enum Label : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum Label : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case optional
     case repeated
     case required
     public init()
     public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label] {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldDescriptorProto.Label] {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -1428,18 +1444,18 @@ public struct Google_Protobuf_FileOptions : TicketmasterSwiftProtobuf.Extensible
     set
   }
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum OptimizeMode : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum OptimizeMode : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case speed
     case codeSize
     case liteRuntime
     public init()
     public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode] {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FileOptions.OptimizeMode] {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -1602,53 +1618,52 @@ public struct Google_Protobuf_FieldOptions : TicketmasterSwiftProtobuf.Extensibl
     set
   }
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum CType : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum CType : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case string
     case cord
     case stringPiece
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.CType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.CType] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.CType]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.CType] {
-      get
-    }
   }
-  public enum JSType : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum JSType : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case jsNormal
     case jsString
     case jsNumber
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.JSType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.JSType] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.JSType]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.JSType] {
-      get
-    }
   }
-  public enum OptionRetention : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum OptionRetention : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case retentionUnknown
     case retentionRuntime
     case retentionSource
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionRetention] {
-      get
-    }
   }
-  public enum OptionTargetType : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum OptionTargetType : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case targetTypeUnknown
     case targetTypeFile
     case targetTypeExtensionRange
@@ -1661,11 +1676,12 @@ public struct Google_Protobuf_FieldOptions : TicketmasterSwiftProtobuf.Extensibl
     case targetTypeMethod
     public init()
     public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType] {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FieldOptions.OptionTargetType] {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -1867,18 +1883,18 @@ public struct Google_Protobuf_MethodOptions : TicketmasterSwiftProtobuf.Extensib
   public mutating func clearFeatures()
   public var uninterpretedOption: [TicketmasterSwiftProtobuf.Google_Protobuf_UninterpretedOption]
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum IdempotencyLevel : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum IdempotencyLevel : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case idempotencyUnknown
     case noSideEffects
     case idempotent
     public init()
     public init?(rawValue: Swift.Int)
-    public var rawValue: Swift.Int {
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel] {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_MethodOptions.IdempotencyLevel] {
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -2007,95 +2023,118 @@ public struct Google_Protobuf_FeatureSet : TicketmasterSwiftProtobuf.ExtensibleM
     get
   }
   public mutating func clearJsonFormat()
+  public var enforceNamingStyle: TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle {
+    get
+    set
+  }
+  public var hasEnforceNamingStyle: Swift.Bool {
+    get
+  }
+  public mutating func clearEnforceNamingStyle()
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-  public enum FieldPresence : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum FieldPresence : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case explicit
     case implicit
     case legacyRequired
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.FieldPresence] {
-      get
-    }
   }
-  public enum EnumType : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum EnumType : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case open
     case closed
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnumType] {
-      get
-    }
   }
-  public enum RepeatedFieldEncoding : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum RepeatedFieldEncoding : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case packed
     case expanded
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.RepeatedFieldEncoding] {
-      get
-    }
   }
-  public enum Utf8Validation : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum Utf8Validation : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case verify
     case none
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.Utf8Validation] {
-      get
-    }
   }
-  public enum MessageEncoding : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum MessageEncoding : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case lengthPrefixed
     case delimited
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding] {
-      get
-    }
   }
-  public enum JsonFormat : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-    public typealias RawValue = Swift.Int
+  public enum JsonFormat : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
     case unknown
     case allow
     case legacyBestEffort
     public init()
     public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat] {
+      get
+    }
     public var rawValue: Swift.Int {
       get
     }
-    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat]
-    public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat] {
+  }
+  public enum EnforceNamingStyle : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
+    case unknown
+    case style2024
+    case styleLegacy
+    public init()
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle] {
+      get
+    }
+    public var rawValue: Swift.Int {
       get
     }
   }
@@ -2151,7 +2190,7 @@ public struct Google_Protobuf_FeatureSetDefaults : Swift.Sendable {
   }
   public init()
 }
-public struct Google_Protobuf_SourceCodeInfo : Swift.Sendable {
+public struct Google_Protobuf_SourceCodeInfo : TicketmasterSwiftProtobuf.ExtensibleMessage, Swift.Sendable {
   public var location: [TicketmasterSwiftProtobuf.Google_Protobuf_SourceCodeInfo.Location]
   public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
   public struct Location : Swift.Sendable {
@@ -2178,6 +2217,7 @@ public struct Google_Protobuf_SourceCodeInfo : Swift.Sendable {
     public init()
   }
   public init()
+  public var _protobuf_extensionFieldValues: TicketmasterSwiftProtobuf.ExtensionFieldValueSet
 }
 public struct Google_Protobuf_GeneratedCodeInfo : Swift.Sendable {
   public var annotation: [TicketmasterSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation]
@@ -2217,18 +2257,18 @@ public struct Google_Protobuf_GeneratedCodeInfo : Swift.Sendable {
     }
     public mutating func clearSemantic()
     public var unknownFields: TicketmasterSwiftProtobuf.UnknownStorage
-    public enum Semantic : TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
-      public typealias RawValue = Swift.Int
+    public enum Semantic : Swift.Int, TicketmasterSwiftProtobuf.Enum, Swift.CaseIterable {
       case none
       case set
       case alias
       public init()
       public init?(rawValue: Swift.Int)
-      public var rawValue: Swift.Int {
+      public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic]
+      public typealias RawValue = Swift.Int
+      nonisolated public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic] {
         get
       }
-      public typealias AllCases = [TicketmasterSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic]
-      public static var allCases: [TicketmasterSwiftProtobuf.Google_Protobuf_GeneratedCodeInfo.Annotation.Semantic] {
+      public var rawValue: Swift.Int {
         get
       }
     }
@@ -2620,6 +2660,9 @@ extension TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.MessageEncoding :
 extension TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.JsonFormat : TicketmasterSwiftProtobuf._ProtoNameProviding {
   public static let _protobuf_nameMap: TicketmasterSwiftProtobuf._NameMap
 }
+extension TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSet.EnforceNamingStyle : TicketmasterSwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: TicketmasterSwiftProtobuf._NameMap
+}
 extension TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSetDefaults : TicketmasterSwiftProtobuf.Message, TicketmasterSwiftProtobuf._MessageImplementationBase, TicketmasterSwiftProtobuf._ProtoNameProviding {
   public static let protoMessageName: Swift.String
   public static let _protobuf_nameMap: TicketmasterSwiftProtobuf._NameMap
@@ -2649,6 +2692,9 @@ extension TicketmasterSwiftProtobuf.Google_Protobuf_FeatureSetDefaults.FeatureSe
 extension TicketmasterSwiftProtobuf.Google_Protobuf_SourceCodeInfo : TicketmasterSwiftProtobuf.Message, TicketmasterSwiftProtobuf._MessageImplementationBase, TicketmasterSwiftProtobuf._ProtoNameProviding {
   public static let protoMessageName: Swift.String
   public static let _protobuf_nameMap: TicketmasterSwiftProtobuf._NameMap
+  public var isInitialized: Swift.Bool {
+    get
+  }
   public mutating func decodeMessage<D>(decoder: inout D) throws where D : TicketmasterSwiftProtobuf.Decoder
   public func traverse<V>(visitor: inout V) throws where V : TicketmasterSwiftProtobuf.Visitor
   public static func == (lhs: TicketmasterSwiftProtobuf.Google_Protobuf_SourceCodeInfo, rhs: TicketmasterSwiftProtobuf.Google_Protobuf_SourceCodeInfo) -> Swift.Bool
@@ -2907,8 +2953,12 @@ extension TicketmasterSwiftProtobuf.Google_Protobuf_Timestamp {
   public init(seconds: Swift.Int64 = 0, nanos: Swift.Int32 = 0)
 }
 extension TicketmasterSwiftProtobuf.Google_Protobuf_Timestamp {
+  @available(*, deprecated, renamed: "init(roundingTimeIntervalSince1970:rule:)")
   public init(timeIntervalSince1970: Foundation.TimeInterval)
+  public init(roundingTimeIntervalSince1970 timeIntervalSince1970: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+  @available(*, deprecated, renamed: "init(roundingTimeIntervalSinceReferenceDate:rule:)")
   public init(timeIntervalSinceReferenceDate: Foundation.TimeInterval)
+  public init(roundingTimeIntervalSinceReferenceDate timeIntervalSinceReferenceDate: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
   public init(date: Foundation.Date)
   public var timeIntervalSince1970: Foundation.TimeInterval {
     get
@@ -3187,6 +3237,9 @@ extension TicketmasterSwiftProtobuf.Message {
   public static var version: Swift.String {
     get
   }
+  public static var sdkBuildInfo: [Swift.String : Any]? {
+    get
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -3330,7 +3383,6 @@ public enum BinaryDecodingError : Swift.Error {
 public protocol _ProtoNameProviding {
   static var _protobuf_nameMap: TicketmasterSwiftProtobuf._NameMap { get }
 }
-#if compiler(>=5.3) && $RethrowsProtocol
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension _Concurrency.AsyncSequence where Self.Element == Swift.UInt8 {
   @inlinable public func binaryProtobufDelimitedMessages<M>(of messageType: M.Type = M.self, extensions: (any TicketmasterSwiftProtobuf.ExtensionMap)? = nil, partial: Swift.Bool = false, options: TicketmasterSwiftProtobuf.BinaryDecodingOptions = BinaryDecodingOptions()) -> TicketmasterSwiftProtobuf.AsyncMessageSequence<Self, M> where M : TicketmasterSwiftProtobuf.Message {
@@ -3342,8 +3394,6 @@ extension _Concurrency.AsyncSequence where Self.Element == Swift.UInt8 {
         )
     }
 }
-#endif
-#if compiler(>=5.3) && $RethrowsProtocol
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 public struct AsyncMessageSequence<Base, M> : _Concurrency.AsyncSequence where Base : _Concurrency.AsyncSequence, M : TicketmasterSwiftProtobuf.Message, Base.Element == Swift.UInt8 {
   public typealias Element = M
@@ -3357,7 +3407,6 @@ public struct AsyncMessageSequence<Base, M> : _Concurrency.AsyncSequence where B
     internal let partial: Swift.Bool
     @usableFromInline
     internal let options: TicketmasterSwiftProtobuf.BinaryDecodingOptions
-    #if compiler(>=5.3) && $AsyncAwait
     @inlinable internal mutating func nextVarInt() async throws -> Swift.UInt64? {
             var messageSize: UInt64 = 0
             var shift: UInt64 = 0
@@ -3374,18 +3423,14 @@ public struct AsyncMessageSequence<Base, M> : _Concurrency.AsyncSequence where B
                 }
             }
             if shift > 0 {
-                // The stream has ended inside a varint.
+                 
                 iterator = nil
                 throw BinaryDelimited.Error.truncated
             }
-            return nil  // End of stream reached.
+            return nil   
         }
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
     @usableFromInline
     internal mutating func readBytes(_ size: Swift.Int) async throws -> [Swift.UInt8]
-    #endif
-    #if compiler(>=5.3) && $AsyncAwait
     @inlinable public mutating func next() async throws -> M? {
             guard let messageSize = try await nextVarInt() else {
                 iterator = nil
@@ -3411,22 +3456,31 @@ public struct AsyncMessageSequence<Base, M> : _Concurrency.AsyncSequence where B
                 options: options
             )
         }
-    #endif
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     public typealias Element = M
+    #if compiler(>=5.3) && $AssociatedTypeImplements
+    @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+    @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = any Swift.Error
+    #else
+    @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+    public typealias __AsyncIteratorProtocol_Failure = any Swift.Error
+    #endif
   }
   public func makeAsyncIterator() -> TicketmasterSwiftProtobuf.AsyncMessageSequence<Base, M>.AsyncIterator
+  #if compiler(>=5.3) && $AssociatedTypeImplements
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = any Swift.Error
+  #else
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  public typealias __AsyncSequence_Failure = any Swift.Error
+  #endif
 }
-#endif
-#if compiler(>=5.3) && $RethrowsProtocol
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension TicketmasterSwiftProtobuf.AsyncMessageSequence : Swift.Sendable where Base : Swift.Sendable {
 }
-#endif
-#if compiler(>=5.3) && $RethrowsProtocol
 @available(*, unavailable)
 extension TicketmasterSwiftProtobuf.AsyncMessageSequence.AsyncIterator : Swift.Sendable {
 }
-#endif
 public struct Version {
   public static let major: Swift.Int
   public static let minor: Swift.Int
@@ -3545,10 +3599,20 @@ extension TicketmasterSwiftProtobuf.Google_Protobuf_Duration : Swift.Expressible
   public init(floatLiteral value: Swift.Double)
 }
 extension TicketmasterSwiftProtobuf.Google_Protobuf_Duration {
+  @available(*, deprecated, renamed: "init(rounding:rule:)")
   public init(timeInterval: Foundation.TimeInterval)
+  public init(rounding timeInterval: Foundation.TimeInterval, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
   public var timeInterval: Foundation.TimeInterval {
     get
   }
+}
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+extension TicketmasterSwiftProtobuf.Google_Protobuf_Duration {
+  public init(rounding duration: Swift.Duration, rule: Swift.FloatingPointRoundingRule = .toNearestOrAwayFromZero)
+}
+@available(macOS 13.0, iOS 16.0, watchOS 9.0, tvOS 16.0, *)
+extension Swift.Duration {
+  public init(_ duration: TicketmasterSwiftProtobuf.Google_Protobuf_Duration)
 }
 prefix public func - (operand: TicketmasterSwiftProtobuf.Google_Protobuf_Duration) -> TicketmasterSwiftProtobuf.Google_Protobuf_Duration
 public func + (lhs: TicketmasterSwiftProtobuf.Google_Protobuf_Duration, rhs: TicketmasterSwiftProtobuf.Google_Protobuf_Duration) -> TicketmasterSwiftProtobuf.Google_Protobuf_Duration

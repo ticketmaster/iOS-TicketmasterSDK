@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Apr  8 10:20:04 PDT 2025</string>
+	<string>Mon Jun  9 14:13:24 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
+	<key>BuildVariant</key>
+	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.12.1</string>
+	<string>release/3.13.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Updated optional SPM resolved</string>
+	<string>PSDK-0 Small fix to custom button docs</string>
 	<key>GITDate</key>
-	<string>Tue Apr 8 10:16:48 2025 -0700</string>
+	<string>Mon Jun 9 14:06:00 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>323a79c7ba5a8f3bc7c654e20e14283fc61dab79</string>
+	<string>a9578d0524e7f77b98504ee485b2ca3a5160d88e</string>
 	<key>MarketingVersion</key>
-	<string>3.12.1</string>
+	<string>3.13.0</string>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>23H420</string>
+	<string>23H527</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3.11</string>
+	<string>1.4.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
@@ -27,23 +27,23 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>21A326</string>
+	<string>24C94</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>14.0</string>
+	<string>15.2</string>
 	<key>DTSDKBuild</key>
-	<string>23A334</string>
+	<string>24C94</string>
 	<key>DTSDKName</key>
-	<string>macosx14.0</string>
+	<string>macosx15.2</string>
 	<key>DTXcode</key>
-	<string>1501</string>
+	<string>1620</string>
 	<key>DTXcodeBuild</key>
-	<string>15A507</string>
+	<string>16C5032a</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>12.0</string>
+	<string>13.5</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>© Ticketmaster 2024</string>
+	<string>© Ticketmaster 2025</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>2</integer>

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Dec 19 20:12:06 PST 2024</string>
+	<string>Wed May 28 13:15:36 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNERT9JF4YTCD</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>GITBranch</key>
-	<string>release/3.3.0</string>
+	<string>release/3.3.1</string>
 	<key>GITComment</key>
-	<string>Update version to 3.3.0</string>
+	<string>Updated for latest TMFoundation and TMAuthentication changes, dropped iOS 15 support</string>
 	<key>GITDate</key>
-	<string>Thu Dec 19 20:04:16 2024 -0800</string>
+	<string>Wed May 28 13:08:53 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>6eb5b75bc32dc2f74bdb104bb86957504a7c5268</string>
+	<string>63d41c174c23630022a18e32295c8c53c9629652</string>
 	<key>MarketingVersion</key>
-	<string>3.3.0</string>
+	<string>3.3.1</string>
 </dict>
 </plist>

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TicketmasterPrePurchase
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios16.6-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterPrePurchase
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppKit
 import CoreLocation
 import DeveloperToolsSupport
@@ -46,7 +46,7 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   func prePurchaseViewController(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController, didShare pageTitle: Swift.String, and pageURL: Foundation.URL, to activityType: UIKit.UIActivity.ActivityType)
   func prePurchaseViewController(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController, didFirePageView pageView: TicketmasterFoundation.UALPageView)
 }
-@objc @_Concurrency.MainActor(unsafe) open class TMPrePurchaseViewController : UIKit.UIViewController {
+@objc @_Concurrency.MainActor @preconcurrency open class TMPrePurchaseViewController : UIKit.UIViewController {
   public enum PrePurchasePage : Swift.Equatable {
     case home
     case search
@@ -76,55 +76,55 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
       get
     }
   }
-  @_Concurrency.MainActor(unsafe) weak public var navigationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseNavigationDelegate)?
-  @_Concurrency.MainActor(unsafe) weak public var locationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseLocationDelegate)?
-  @_Concurrency.MainActor(unsafe) weak public var analyticsDelegate: (any TicketmasterPrePurchase.TMPrePurchaseAnalyticsDelegate)?
-  @_Concurrency.MainActor(unsafe) public init(initialPage: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, marketDomain: TicketmasterFoundation.MarketDomain = .US, marketLocation: TicketmasterFoundation.MarketLocation?, queryParameters: [Swift.String : Swift.String]?, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, allowJavaScriptToBringUpKeyboard: Swift.Bool, internalTestingKeys: [Swift.String : Any]? = nil, customFont: UIKit.UIFont? = nil)
+  @_Concurrency.MainActor @preconcurrency weak public var navigationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseNavigationDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak public var locationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseLocationDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak public var analyticsDelegate: (any TicketmasterPrePurchase.TMPrePurchaseAnalyticsDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(initialPage: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, marketDomain: TicketmasterFoundation.MarketDomain = .US, marketLocation: TicketmasterFoundation.MarketLocation?, queryParameters: [Swift.String : Swift.String]?, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, allowJavaScriptToBringUpKeyboard: Swift.Bool, internalTestingKeys: [Swift.String : Any]? = nil, customFont: UIKit.UIFont? = nil)
   @available(*, unavailable)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMove(toParent parent: UIKit.UIViewController?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func didMove(toParent parent: UIKit.UIViewController?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public func changeLocation(coordinate: CoreLocation.CLLocationCoordinate2D)
-  @objc @_Concurrency.MainActor(unsafe) public func communicateLocationFetchError()
+  @objc @_Concurrency.MainActor @preconcurrency public func changeLocation(coordinate: CoreLocation.CLLocationCoordinate2D)
+  @objc @_Concurrency.MainActor @preconcurrency public func communicateLocationFetchError()
   @objc deinit
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController {
-  @_Concurrency.MainActor(unsafe) public class func attractionDetailsViewController(attractionIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
-  @_Concurrency.MainActor(unsafe) public class func venueDetailsViewController(venueIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
+  @_Concurrency.MainActor @preconcurrency public class func attractionDetailsViewController(attractionIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
+  @_Concurrency.MainActor @preconcurrency public class func venueDetailsViewController(venueIdentifier: Swift.String, marketDomain: TicketmasterFoundation.MarketDomain = .US, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, customFont: UIKit.UIFont?) -> TicketmasterPrePurchase.TMPrePurchaseViewController
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoundation.UALWebViewMessageHandlerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func adjustTrackedPageView(_ pageView: TicketmasterFoundation.UALPageView) -> TicketmasterFoundation.UALPageView?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func adjustTrackedUserAction(_ userAction: TicketmasterFoundation.UALUserAction) -> TicketmasterFoundation.UALUserAction?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func adjustTrackedCommerceEvent(_ commerceEvent: TicketmasterFoundation.UALCommerceEvent) -> TicketmasterFoundation.UALCommerceEvent?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adjustTrackedPageView(_ pageView: TicketmasterFoundation.UALPageView) -> TicketmasterFoundation.UALPageView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adjustTrackedUserAction(_ userAction: TicketmasterFoundation.UALUserAction) -> TicketmasterFoundation.UALUserAction?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adjustTrackedCommerceEvent(_ commerceEvent: TicketmasterFoundation.UALCommerceEvent) -> TicketmasterFoundation.UALCommerceEvent?
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : SafariServices.SFSafariViewControllerDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController {
-  @_Concurrency.MainActor(unsafe) public func runWhenNotShowingLoadingView(_ task: @escaping (() -> Swift.Void))
+  @_Concurrency.MainActor @preconcurrency public func runWhenNotShowingLoadingView(_ task: @escaping (() -> Swift.Void))
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoundation.UFCWebViewMessageHandlerDelegate {
-  @_Concurrency.MainActor(unsafe) public func ufcWebview() -> WebKit.WKWebView
-  @_Concurrency.MainActor(unsafe) public func loginStatusUpdated(isLoggedIn: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func ufcWebview() -> WebKit.WKWebView
+  @_Concurrency.MainActor @preconcurrency public func loginStatusUpdated(isLoggedIn: Swift.Bool)
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage {
   public var headerImage: UIKit.UIImage? {
@@ -133,7 +133,7 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage {
   public static func minorCategoryHeaderImage(categoryId: Swift.String) -> UIKit.UIImage?
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController {
-  @_Concurrency.MainActor(unsafe) public func imageForCategory(url: Foundation.URL?) -> UIKit.UIImage?
+  @_Concurrency.MainActor @preconcurrency public func imageForCategory(url: Foundation.URL?) -> UIKit.UIImage?
 }
 extension Foundation.URLRequest {
   public init?(page: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, domain: TicketmasterFoundation.MarketDomain, locale: Foundation.Locale, user: TicketmasterFoundation.TMUser?, requestedQueryParameters: TicketmasterFoundation.URLQueryParameters?, environment: TicketmasterFoundation.ConnectionEnvironment)

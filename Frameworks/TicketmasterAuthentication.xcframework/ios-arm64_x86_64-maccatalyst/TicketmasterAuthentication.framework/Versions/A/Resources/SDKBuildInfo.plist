@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed May 14 11:09:34 PDT 2025</string>
+	<string>Thu Jun  5 08:36:05 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
+	<key>BuildVariant</key>
+	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.10.8</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-16010 Fix SportXR logout failure (missing tenant id in path)</string>
+	<string>Updated version to 3.13.4</string>
 	<key>GITDate</key>
-	<string>Wed May 14 10:46:15 2025 -0700</string>
+	<string>Thu Jun 5 08:23:49 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>06e6f3305db14b4639c21c34f9ec1e4b04e718c8</string>
+	<string>d32b6f75c5fdf7e5ddfaa06b86ed8bb14737749f</string>
 	<key>MarketingVersion</key>
-	<string>3.10.8</string>
+	<string>3.13.4</string>
 </dict>
 </plist>

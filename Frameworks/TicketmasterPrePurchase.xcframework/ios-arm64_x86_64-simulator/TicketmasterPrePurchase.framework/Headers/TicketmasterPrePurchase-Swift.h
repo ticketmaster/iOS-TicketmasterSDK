@@ -342,19 +342,12 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
 
 @class SFSafariViewController;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
-
 
 @class WKWebView;
 @class WKWebViewConfiguration;
@@ -364,6 +357,14 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKUIDelegate>
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 
 
@@ -763,19 +764,12 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-@class WKUserContentController;
-@class WKScriptMessage;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-@end
 
 @class SFSafariViewController;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
 - (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
-
 
 @class WKWebView;
 @class WKWebViewConfiguration;
@@ -785,6 +779,14 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKUIDelegate>
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
 
 
 

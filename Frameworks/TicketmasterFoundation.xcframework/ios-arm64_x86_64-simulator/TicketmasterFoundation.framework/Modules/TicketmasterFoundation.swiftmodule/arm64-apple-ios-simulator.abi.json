@@ -2845,7 +2845,7 @@
           {
             "kind": "Function",
             "name": "loginUpdated",
-            "printedName": "loginUpdated(manager:operation:token:)",
+            "printedName": "loginUpdated(manager:operation:token:marketDomains:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2877,11 +2877,33 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TicketmasterFoundation.MarketDomain]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TicketmasterFoundation.MarketDomain]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MarketDomain",
+                        "printedName": "TicketmasterFoundation.MarketDomain",
+                        "usr": "c:@M@TicketmasterFoundation@E@MarketDomain"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:22TicketmasterFoundation23UFCLoginManagerDelegateP12loginUpdated7manager9operation5tokenyAA0cD0_p_AA0cD9OperationOAA0A10OAuthTokenCSgtF",
-            "mangledName": "$s22TicketmasterFoundation23UFCLoginManagerDelegateP12loginUpdated7manager9operation5tokenyAA0cD0_p_AA0cD9OperationOAA0A10OAuthTokenCSgtF",
+            "usr": "s:22TicketmasterFoundation23UFCLoginManagerDelegateP12loginUpdated7manager9operation5token13marketDomainsyAA0cD0_p_AA0cD9OperationOAA0A10OAuthTokenCSgSayAA12MarketDomainOGSgtF",
+            "mangledName": "$s22TicketmasterFoundation23UFCLoginManagerDelegateP12loginUpdated7manager9operation5token13marketDomainsyAA0cD0_p_AA0cD9OperationOAA0A10OAuthTokenCSgSayAA12MarketDomainOGSgtF",
             "moduleName": "TicketmasterFoundation",
             "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterFoundation.UFCLoginManagerDelegate>",
             "sugared_genericSig": "<Self where Self : TicketmasterFoundation.UFCLoginManagerDelegate>",
@@ -50047,7 +50069,7 @@
           {
             "kind": "Function",
             "name": "loginUpdated",
-            "printedName": "loginUpdated(manager:operation:token:)",
+            "printedName": "loginUpdated(manager:operation:token:marketDomains:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -50079,11 +50101,33 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TicketmasterFoundation.MarketDomain]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TicketmasterFoundation.MarketDomain]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MarketDomain",
+                        "printedName": "TicketmasterFoundation.MarketDomain",
+                        "usr": "c:@M@TicketmasterFoundation@E@MarketDomain"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:22TicketmasterFoundation17UFCMessageHandlerC12loginUpdated7manager9operation5tokenyAA15UFCLoginManager_p_AA0jK9OperationOAA0A10OAuthTokenCSgtF",
-            "mangledName": "$s22TicketmasterFoundation17UFCMessageHandlerC12loginUpdated7manager9operation5tokenyAA15UFCLoginManager_p_AA0jK9OperationOAA0A10OAuthTokenCSgtF",
+            "usr": "s:22TicketmasterFoundation17UFCMessageHandlerC12loginUpdated7manager9operation5token13marketDomainsyAA15UFCLoginManager_p_AA0lM9OperationOAA0A10OAuthTokenCSgSayAA12MarketDomainOGSgtF",
+            "mangledName": "$s22TicketmasterFoundation17UFCMessageHandlerC12loginUpdated7manager9operation5token13marketDomainsyAA15UFCLoginManager_p_AA0lM9OperationOAA0A10OAuthTokenCSgSayAA12MarketDomainOGSgtF",
             "moduleName": "TicketmasterFoundation",
             "declAttributes": [
               "Final",
@@ -64031,6 +64075,48 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22TicketmasterFoundation12MarketDomainO11descriptionSSvp",
+            "mangledName": "$s22TicketmasterFoundation12MarketDomainO11descriptionSSvp",
+            "moduleName": "TicketmasterFoundation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22TicketmasterFoundation12MarketDomainO11descriptionSSvg",
+                "mangledName": "$s22TicketmasterFoundation12MarketDomainO11descriptionSSvg",
+                "moduleName": "TicketmasterFoundation",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -64137,6 +64223,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -85110,2821 +85203,2821 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+MarketDomain.swift",
       "kind": "Array",
       "offset": 1503,
       "length": 248,
       "value": "[\".ticketmaster.net\", \".beta2.tmol.co\", \".tktm.io\", \".tmol.co\", \".localhost\"]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URL+Build.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URL+Build.swift",
       "kind": "StringLiteral",
       "offset": 952,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALMessageHandler.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALMessageHandler.swift",
       "kind": "Array",
       "offset": 2507,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALMessageHandler.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALMessageHandler.swift",
       "kind": "StringLiteral",
       "offset": 6053,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/JSON\/Data+JSONDictionary.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/JSON\/Data+JSONDictionary.swift",
       "kind": "Array",
       "offset": 1225,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCProtocols.swift",
       "kind": "StringLiteral",
-      "offset": 2864,
+      "offset": 2896,
       "length": 27,
       "value": "\"appviewLoginStatusUpdated\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCProtocols.swift",
       "kind": "StringLiteral",
-      "offset": 2940,
+      "offset": 2972,
       "length": 25,
       "value": "\"appviewInitMFACompleted\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 383,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 394,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 5,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 444,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 461,
       "length": 4,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 475,
       "length": 10,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 11,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 516,
       "length": 5,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 7,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/LogLevel.swift",
       "kind": "IntegerLiteral",
       "offset": 566,
       "length": 5,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "StringLiteral",
       "offset": 1458,
       "length": 19,
       "value": "\"data-event-action\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "StringLiteral",
       "offset": 1521,
       "length": 21,
       "value": "\"data-event-category\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "StringLiteral",
       "offset": 1583,
       "length": 18,
       "value": "\"data-event-label\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "StringLiteral",
       "offset": 1642,
       "length": 18,
       "value": "\"data-event-value\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "StringLiteral",
       "offset": 1734,
       "length": 13,
       "value": "\"digitalData\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction.swift",
       "kind": "Array",
       "offset": 1783,
       "length": 36,
       "value": "[\"digitalDataObject\", \"digitalData\"]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1145,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1998,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketLocation.swift",
       "kind": "BooleanLiteral",
       "offset": 326,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
       "kind": "BooleanLiteral",
       "offset": 458,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
       "kind": "BooleanLiteral",
       "offset": 505,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/HTTPCookie+Quick.swift",
       "kind": "StringLiteral",
       "offset": 4530,
       "length": 10,
       "value": "\"HttpOnly\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24720,
       "length": 8,
       "value": "\"iphone\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24750,
       "length": 6,
       "value": "\"ipod\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24773,
       "length": 6,
       "value": "\"ipad\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24799,
       "length": 9,
       "value": "\"appletv\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24831,
       "length": 7,
       "value": "\"watch\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/UserAgent.swift",
       "kind": "StringLiteral",
       "offset": 24858,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
       "offset": 268,
       "length": 6,
       "value": "\"SOTC\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 12,
       "value": "\"tm-hmac_id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCCookieManager+Login.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 8,
       "value": "\"MA.dvt\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/URLDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/URLDataSession.swift",
       "kind": "BooleanLiteral",
       "offset": 428,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/UIColor+HexString.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/UIColor+HexString.swift",
       "kind": "BooleanLiteral",
       "offset": 1907,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureDataPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 406,
       "length": 10,
       "value": "\"memberId\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2438,
       "length": 7,
       "value": "2000000"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 2587,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DebugLogging\/MessageLogger.swift",
       "kind": "StringLiteral",
       "offset": 2696,
       "length": 6,
       "value": "\"main\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 222,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 292,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 389,
       "length": 7,
       "value": "\"TRACE\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "StringLiteral",
       "offset": 416,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 498,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 548,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 608,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 669,
       "length": 3,
       "value": "201"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 693,
       "length": 3,
       "value": "202"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 736,
       "length": 3,
       "value": "203"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 761,
       "length": 3,
       "value": "204"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 789,
       "length": 3,
       "value": "205"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 819,
       "length": 3,
       "value": "206"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 846,
       "length": 3,
       "value": "207"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 877,
       "length": 3,
       "value": "208"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 899,
       "length": 3,
       "value": "226"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 954,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 986,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1007,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1031,
       "length": 3,
       "value": "303"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1058,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1082,
       "length": 3,
       "value": "305"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1109,
       "length": 3,
       "value": "306"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1142,
       "length": 3,
       "value": "307"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 3,
       "value": "308"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1226,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1254,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1285,
       "length": 3,
       "value": "402"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1310,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1334,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1366,
       "length": 3,
       "value": "405"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1395,
       "length": 3,
       "value": "406"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1438,
       "length": 3,
       "value": "407"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1468,
       "length": 3,
       "value": "408"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1492,
       "length": 3,
       "value": "409"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1512,
       "length": 3,
       "value": "410"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1542,
       "length": 3,
       "value": "411"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1576,
       "length": 3,
       "value": "412"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1613,
       "length": 3,
       "value": "413"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1646,
       "length": 3,
       "value": "414"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1682,
       "length": 3,
       "value": "415"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1726,
       "length": 3,
       "value": "416"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1759,
       "length": 3,
       "value": "417"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1793,
       "length": 3,
       "value": "421"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1828,
       "length": 3,
       "value": "422"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1850,
       "length": 3,
       "value": "423"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1882,
       "length": 3,
       "value": "424"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1913,
       "length": 3,
       "value": "426"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1949,
       "length": 3,
       "value": "427"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 1980,
       "length": 3,
       "value": "428"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2023,
       "length": 3,
       "value": "431"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2051,
       "length": 3,
       "value": "440"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2077,
       "length": 3,
       "value": "444"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2102,
       "length": 3,
       "value": "449"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2150,
       "length": 3,
       "value": "450"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2192,
       "length": 3,
       "value": "451"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2229,
       "length": 3,
       "value": "494"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2254,
       "length": 3,
       "value": "495"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2276,
       "length": 3,
       "value": "496"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2303,
       "length": 3,
       "value": "497"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2340,
       "length": 3,
       "value": "498"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2375,
       "length": 3,
       "value": "499"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2435,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2465,
       "length": 3,
       "value": "501"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2491,
       "length": 3,
       "value": "502"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2525,
       "length": 3,
       "value": "503"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2555,
       "length": 3,
       "value": "504"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2594,
       "length": 3,
       "value": "505"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2631,
       "length": 3,
       "value": "506"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2666,
       "length": 3,
       "value": "507"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2694,
       "length": 3,
       "value": "508"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2732,
       "length": 3,
       "value": "509"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2759,
       "length": 3,
       "value": "510"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2804,
       "length": 3,
       "value": "511"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2832,
       "length": 3,
       "value": "520"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2863,
       "length": 3,
       "value": "521"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2897,
       "length": 3,
       "value": "522"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2932,
       "length": 3,
       "value": "523"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2964,
       "length": 3,
       "value": "524"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 2998,
       "length": 3,
       "value": "525"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/HTTPEnums.swift",
       "kind": "IntegerLiteral",
       "offset": 3035,
       "length": 3,
       "value": "526"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureStorage.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureStorage.swift",
       "kind": "Array",
       "offset": 282,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureStorage.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDisclosureStorage.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 24,
       "value": "\"DisclosureStorageQueue\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 3313,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 3423,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 3529,
       "length": 15,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 3624,
       "length": 13,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 3742,
       "length": 21,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 8772,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10138,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10282,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10286,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10349,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10353,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10357,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 10361,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 15414,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 20318,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/RNCryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 20366,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakePaginatedDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakePaginatedDataSession.swift",
       "kind": "FloatLiteral",
       "offset": 591,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "IntegerLiteral",
       "offset": 4407,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "Array",
       "offset": 4470,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "Dictionary",
       "offset": 4539,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "StringLiteral",
       "offset": 4638,
       "length": 64,
       "value": "\"org.ticketmaster.imagedownloader.synchronizationqueue-%08x%08x\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "StringLiteral",
       "offset": 4870,
       "length": 57,
       "value": "\"org.ticketmaster.imagedownloader.responsequeue-%08x%08x\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageDownloader.swift",
       "kind": "IntegerLiteral",
       "offset": 5990,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
       "kind": "StringLiteral",
       "offset": 1046,
       "length": 24,
       "value": "\"page.pageInfo.pageName\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
       "kind": "StringLiteral",
       "offset": 1107,
       "length": 6,
       "value": "\"page\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALPageView.swift",
       "kind": "StringLiteral",
       "offset": 1151,
       "length": 13,
       "value": "\"digitalData\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 747,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 1331,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 1394,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 1888,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 1944,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 2803,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIAlertController+Quick.swift",
       "kind": "StringLiteral",
       "offset": 3358,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4431,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4435,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4449,
       "length": 5,
       "value": "108.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4455,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4468,
       "length": 5,
       "value": "223.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4474,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4488,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4570,
       "length": 4,
       "value": "71.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4575,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4589,
       "length": 4,
       "value": "80.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4594,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4607,
       "length": 4,
       "value": "88.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4612,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4626,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4710,
       "length": 4,
       "value": "25.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4715,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4729,
       "length": 5,
       "value": "171.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4735,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4748,
       "length": 4,
       "value": "32.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4753,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4767,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4980,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4985,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 4999,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 5004,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 5017,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 5022,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/UIKit\/UIColor+Utilities.swift",
       "kind": "FloatLiteral",
       "offset": 5036,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 612,
       "length": 28,
       "value": "\"yyyy-MM-dd'T'HH:mm:ssZZZZZ\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1455,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1495,
       "length": 10,
       "value": "\"event_id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1536,
       "length": 14,
       "value": "\"is_new_party\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1583,
       "length": 16,
       "value": "\"is_new_session\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1635,
       "length": 22,
       "value": "\"client_timestamp_iso\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelRequestPayload.swift",
       "kind": "StringLiteral",
       "offset": 1688,
       "length": 12,
       "value": "\"parameters\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "BooleanLiteral",
       "offset": 322,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1041,
       "length": 19,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1049,
       "length": 1,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1059,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1433,
       "length": 27,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1449,
       "length": 1,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "StringLiteral",
       "offset": 1459,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "BooleanLiteral",
       "offset": 1614,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/UserLocation.swift",
       "kind": "BooleanLiteral",
       "offset": 1910,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/StringObfuscation\/StringObfuscator+Even.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/StringObfuscation\/StringObfuscator+Even.swift",
       "kind": "IntegerLiteral",
       "offset": 195,
       "length": 3,
       "value": "127"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "StringLiteral",
       "offset": 1431,
       "length": 24,
       "value": "\"SWXMLHash_Root_Element\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "BooleanLiteral",
       "offset": 1642,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "BooleanLiteral",
       "offset": 1810,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "BooleanLiteral",
       "offset": 2022,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "BooleanLiteral",
       "offset": 8980,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "Array",
       "offset": 9118,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "BooleanLiteral",
       "offset": 11806,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "Array",
       "offset": 13836,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "IntegerLiteral",
       "offset": 26288,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DataParsing\/XML\/SWXMLHash.swift",
       "kind": "IntegerLiteral",
       "offset": 26657,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
       "kind": "StringLiteral",
       "offset": 2207,
       "length": 36,
       "value": "\"encodingError=percentEncodingError\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
       "kind": "StringLiteral",
       "offset": 2582,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
       "kind": "StringLiteral",
       "offset": 3185,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLQueryParameters.swift",
       "kind": "StringLiteral",
       "offset": 4634,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "BooleanLiteral",
       "offset": 336,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "BooleanLiteral",
       "offset": 371,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 61,
       "value": "\"0:\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 497,
       "length": 1,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 28,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "IntegerLiteral",
       "offset": 592,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Internal\/TMPixelDivolte.swift",
       "kind": "StringLiteral",
       "offset": 2871,
       "length": 25,
       "value": "\"TMPixelPartyIDTimestamp\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 420,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 442,
       "length": 9,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 487,
       "length": 12,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 513,
       "length": 6,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 533,
       "length": 6,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 553,
       "length": 4,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 571,
       "length": 7,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 592,
       "length": 9,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 615,
       "length": 8,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 637,
       "length": 6,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 657,
       "length": 13,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 684,
       "length": 9,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 707,
       "length": 9,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 730,
       "length": 5,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 749,
       "length": 13,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 776,
       "length": 19,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 809,
       "length": 8,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 831,
       "length": 15,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 860,
       "length": 23,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 897,
       "length": 9,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 9,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 943,
       "length": 9,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 966,
       "length": 9,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 989,
       "length": 17,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1020,
       "length": 9,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1043,
       "length": 7,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1064,
       "length": 10,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1088,
       "length": 14,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1116,
       "length": 7,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1137,
       "length": 6,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1157,
       "length": 6,
       "value": "33"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1177,
       "length": 7,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1198,
       "length": 4,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1216,
       "length": 16,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1246,
       "length": 11,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1271,
       "length": 6,
       "value": "38"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1291,
       "length": 17,
       "value": "39"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1322,
       "length": 8,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1344,
       "length": 9,
       "value": "41"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1447,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1466,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1487,
       "length": 16,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1517,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1540,
       "length": 5,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1559,
       "length": 5,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1578,
       "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1603,
       "length": 20,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
       "length": 19,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1670,
       "length": 13,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1697,
       "length": 4,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1715,
       "length": 9,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1738,
       "length": 6,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1758,
       "length": 21,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1793,
       "length": 17,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1824,
       "length": 16,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1854,
       "length": 16,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1884,
       "length": 31,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1929,
       "length": 30,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 1973,
       "length": 13,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2000,
       "length": 15,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2029,
       "length": 13,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2056,
       "length": 15,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2085,
       "length": 15,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2114,
       "length": 21,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2149,
       "length": 17,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2180,
       "length": 18,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2212,
       "length": 20,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2246,
       "length": 42,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2302,
       "length": 20,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2336,
       "length": 5,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2487,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2516,
       "length": 36,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2566,
       "length": 23,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2603,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2626,
       "length": 14,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2654,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2794,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2812,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "IntegerLiteral",
       "offset": 2859,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "StringLiteral",
       "offset": 3147,
       "length": 5,
       "value": "\"PII\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelDisclosure.swift",
       "kind": "StringLiteral",
       "offset": 3249,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1826,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1831,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1887,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
       "kind": "IntegerLiteral",
       "offset": 1892,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/TMDateFormatter.swift",
       "kind": "Array",
       "offset": 2144,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCMessageHandler.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/UFCMessageHandler.swift",
       "kind": "Array",
       "offset": 1455,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 407,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 693,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 788,
       "length": 19,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 859,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 935,
       "length": 9,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1006,
       "length": 12,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1097,
       "length": 9,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1186,
       "length": 17,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1285,
       "length": 16,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1383,
       "length": 16,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/LocationSource.swift",
       "kind": "IntegerLiteral",
       "offset": 1455,
       "length": 14,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 17,
       "value": "\"TMOAuth_INVALID\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
       "kind": "BooleanLiteral",
       "offset": 1041,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
       "kind": "BooleanLiteral",
       "offset": 1063,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/CookieManagement\/TicketmasterOAuthToken.swift",
       "kind": "BooleanLiteral",
       "offset": 1086,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/EventDate.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/EventDate.swift",
       "kind": "BooleanLiteral",
       "offset": 1790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/EventDate.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/DateHandling\/EventDate.swift",
       "kind": "BooleanLiteral",
       "offset": 2367,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 300,
       "length": 5,
       "value": "359.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 341,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 384,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 429,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 632,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 634,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 649,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 2640,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 2667,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 2713,
       "length": 5,
       "value": "180.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 2769,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/LoadingView\/LoadingView.swift",
       "kind": "FloatLiteral",
       "offset": 2797,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALCommerceEvent.swift",
       "kind": "StringLiteral",
       "offset": 264,
       "length": 13,
       "value": "\"digitalData\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Build.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Utilities\/URLRequest+Build.swift",
       "kind": "StringLiteral",
       "offset": 1548,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/NetworkService.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/NetworkService.swift",
       "kind": "BooleanLiteral",
       "offset": 1452,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/NetworkService.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/NetworkService.swift",
       "kind": "StringLiteral",
       "offset": 3867,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelService.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/TMPixel\/Public\/TMPixelService.swift",
       "kind": "Array",
       "offset": 696,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "FloatLiteral",
       "offset": 621,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
       "offset": 1577,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
       "offset": 1645,
       "length": 17,
       "value": "\"FakeDataSession\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "IntegerLiteral",
       "offset": 1670,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "StringLiteral",
       "offset": 1712,
       "length": 34,
       "value": "\"Reached end of cannedResultArray\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/FakeDataSession.swift",
       "kind": "BooleanLiteral",
       "offset": 1807,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 624,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 650,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 717,
       "length": 2,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 802,
       "length": 2,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 863,
       "length": 2,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 895,
       "length": 2,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 951,
       "length": 2,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 978,
       "length": 2,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1005,
       "length": 2,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1033,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1061,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1096,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1123,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1156,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1182,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1210,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1251,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1283,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1315,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/MarketLocation\/MarketDomain.swift",
       "kind": "IntegerLiteral",
       "offset": 1343,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionDriver.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionDriver.swift",
       "kind": "BooleanLiteral",
       "offset": 1426,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionDriver.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/ConnectionDriver.swift",
       "kind": "StringLiteral",
       "offset": 7363,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
       "kind": "StringLiteral",
       "offset": 1627,
       "length": 20,
       "value": "\"appviewLogPageView\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
       "kind": "StringLiteral",
       "offset": 1669,
       "length": 18,
       "value": "\"appviewLogAction\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
       "kind": "StringLiteral",
       "offset": 1714,
       "length": 25,
       "value": "\"appviewTransactionEvent\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALProtocols.swift",
       "kind": "StringLiteral",
       "offset": 1764,
       "length": 23,
       "value": "\"appviewAddToCartEvent\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageCache.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 5423,
       "length": 11,
       "value": "100000000"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageCache.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/ImageCaching\/ImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 5477,
       "length": 10,
       "value": "60000000"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
       "kind": "IntegerLiteral",
       "offset": 753,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
       "kind": "IntegerLiteral",
       "offset": 768,
       "length": 16,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/FileStorage\/EncryptedArchiver.swift",
       "kind": "StringLiteral",
       "offset": 1267,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Security\/SecTrust+Validation.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/NetworkService\/Security\/SecTrust+Validation.swift",
       "kind": "BooleanLiteral",
       "offset": 327,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction+LoadTime.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction+LoadTime.swift",
       "kind": "StringLiteral",
       "offset": 287,
       "length": 11,
       "value": "\"Load Time\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Foundation1\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction+LoadTime.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/module-tmfoundation\/TicketmasterFoundation\/TicketmasterFoundation\/WebAnalytics\/UALUserAction+LoadTime.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 13,

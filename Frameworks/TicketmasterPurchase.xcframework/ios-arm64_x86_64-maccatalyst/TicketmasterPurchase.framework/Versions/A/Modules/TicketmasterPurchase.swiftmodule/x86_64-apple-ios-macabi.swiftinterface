@@ -5,6 +5,7 @@
 import AppKit
 import DeveloperToolsSupport
 import Foundation
+import PopupBridge
 import SafariServices
 import Swift
 import SwiftUI
@@ -103,9 +104,15 @@ public protocol TMPurchaseWebAnalyticsDelegate : AnyObject {
   func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, webPageDidReportUALPageView pageView: TicketmasterFoundation.UALPageView)
   func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, webPageDidReportUALCommerceEvent commerceEvent: TicketmasterFoundation.UALCommerceEvent)
 }
+public struct CheckoutConfirmationHandler {
+  public static func handleCheckoutCompletion(withURL deepLinkURL: Foundation.URL)
+}
 @objc @_inheritsConvenienceInitializers final public class TMPurchase : ObjectiveC.NSObject {
   public static let shared: TicketmasterPurchase.TMPurchase
   final public var version: Swift.String {
+    get
+  }
+  final public var sdkBuildInfo: [Swift.String : Any]? {
     get
   }
   final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
@@ -204,6 +211,8 @@ extension TicketmasterPurchase.TMPurchaseOrder.Item {
   @available(*, deprecated, message: "Use TMPurchase.shared.marketDomain instead")
   public var marketDomain: TicketmasterFoundation.MarketDomain
   public var discreteID: Swift.String?
+  public var originID: (Swift.String, Swift.String)?
+  public var subchannelID: Swift.String?
   public var cameFromCode: Swift.String?
   public var showResaleSoftLanding: Swift.Bool
   public var showResaleMessageBanner: Swift.Bool
@@ -225,6 +234,7 @@ public protocol TMPurchaseSharingDelegate : AnyObject {
   func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, sharingMessageFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, completion: @escaping (_ sharingMessage: Swift.String) -> Swift.Void)
 }
 @objc @_Concurrency.MainActor @preconcurrency public class TMPurchaseNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency public var purchaseMarketDomain: TicketmasterFoundation.MarketDomain?
   @_Concurrency.MainActor @preconcurrency public init(configuration: TicketmasterPurchase.TMPurchaseWebsiteConfiguration, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil)
   @objc deinit
   @_Concurrency.MainActor @preconcurrency weak public var sharingDelegate: (any TicketmasterPurchase.TMPurchaseSharingDelegate)? {

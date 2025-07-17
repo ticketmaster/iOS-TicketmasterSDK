@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed May 28 13:11:12 PDT 2025</string>
+	<string>Wed Jul 16 16:37:20 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>LNERT9JF4YTCD</string>
+	<key>BuildVariant</key>
+	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.3.1</string>
+	<string>kkao-BumpVersion-3.6.0</string>
 	<key>GITComment</key>
-	<string>Updated for latest TMFoundation and TMAuthentication changes, dropped iOS 15 support</string>
+	<string>Bump version number to 3.6.0, no code changes</string>
 	<key>GITDate</key>
-	<string>Wed May 28 13:08:53 2025 -0700</string>
+	<string>Wed Jul 16 16:28:28 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>63d41c174c23630022a18e32295c8c53c9629652</string>
+	<string>4cadb4d56dd527489b5df21ea7f8060c376f924f</string>
 	<key>MarketingVersion</key>
-	<string>3.3.1</string>
+	<string>3.6.0</string>
 </dict>
 </plist>

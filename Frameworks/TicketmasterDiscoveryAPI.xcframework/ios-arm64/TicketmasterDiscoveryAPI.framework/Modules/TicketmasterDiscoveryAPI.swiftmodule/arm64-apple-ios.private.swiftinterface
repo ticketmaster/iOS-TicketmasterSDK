@@ -18,11 +18,45 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> Swift.Void)
   public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> Swift.Void)
 }
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func venueDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryVenue
+  public func venueDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryVenue
+  public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryVenue]
+  public func venueDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryVenue]
+}
 public struct DiscoveryPromoter : TicketmasterFoundation.InitJSONThrowable {
   public let promoterIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
   public let name: Swift.String?
   public let description: Swift.String?
   public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+public struct Geohash {
+}
+extension TicketmasterDiscoveryAPI.Geohash {
+  public enum Precision : Swift.Int {
+    case twentyFiveHundredKilometers
+    case sixHundredThirtyKilometers
+    case seventyEightKilometers
+    case twentyKilometers
+    case twentyFourHundredMeters
+    case sixHundredTenMeters
+    case seventySixMeters
+    case nineteenMeters
+    case twoHundredFourtyCentimeters
+    case sixtyCentimeters
+    case seventyFourMillimeters
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static func encode(latitude: Swift.Double, longitude: Swift.Double, precision: TicketmasterDiscoveryAPI.Geohash.Precision) -> Swift.String
+}
+extension CoreLocation.CLLocationCoordinate2D {
+  public init(geohash: Swift.String)
+  public func geohash(length: Swift.Int) -> Swift.String
+  public func geohash(precision: TicketmasterDiscoveryAPI.Geohash.Precision) -> Swift.String
 }
 extension TicketmasterDiscoveryAPI.DiscoveryAttraction {
   public var isMusicAttraction: Swift.Bool {
@@ -60,6 +94,12 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func eventImages(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> Swift.Void)
   public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> Swift.Void)
   public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> Swift.Void)
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func eventImages(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier) async throws -> [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public func eventImages(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier) async throws -> [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]
+  public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]) async throws -> [Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]
+  public func eventImages(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier]) async throws -> [Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]
 }
 public struct DiscoveryEventSearchCriteria {
   public var keywordsFilter: [Swift.String]?
@@ -106,7 +146,7 @@ public struct DiscoveryEventSearchCriteria {
   }
   public init()
 }
-public enum DiscoveryLocale : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
+public enum DiscoveryLocale : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable, Swift.CaseIterable {
   case EN_US
   case ES_US
   case EN_CA
@@ -117,9 +157,27 @@ public enum DiscoveryLocale : Swift.String, Swift.Hashable, Swift.Equatable, Swi
   case EN_MX
   case ES_MX
   case ES_419
+  case DE_AT
+  case PL_PL
+  case NO_NO
+  case FI_FI
+  case NL_BE
+  case CS_CZ
+  case SV_SE
+  case EN_ZA
+  case ES_ES
+  case DE_DE
+  case EN_AE
+  case NL_NL
+  case DE_CH
+  case DA_DK
   public static func locale(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain?) -> TicketmasterDiscoveryAPI.DiscoveryLocale
   public init?(rawValue: Swift.String)
+  public typealias AllCases = [TicketmasterDiscoveryAPI.DiscoveryLocale]
   public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TicketmasterDiscoveryAPI.DiscoveryLocale] {
+    get
+  }
   public var rawValue: Swift.String {
     get
   }
@@ -129,14 +187,24 @@ extension TicketmasterFoundation.MarketDomain {
     get
   }
   public func marketDomain(forLocale locale: TicketmasterDiscoveryAPI.DiscoveryLocale) -> TicketmasterFoundation.MarketDomain
+  public var name: Swift.String? {
+    get
+  }
 }
 extension TicketmasterDiscoveryAPI.DiscoveryService {
   @discardableResult
   public func venueSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryVenueResponse) -> Swift.Void) -> Foundation.URLSessionTask?
 }
 extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func venueSearch(criteria: TicketmasterDiscoveryAPI.DiscoveryVenueSearchCriteria) async throws -> TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func classificationDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier, locale: Swift.String? = nil, completion: @escaping (_ response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> Swift.Void)
 }
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func classificationDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryClassification
+}
+@available(*, deprecated, message: "Dont use this info to get prices")
 public struct DiscoveryPriceRange : TicketmasterFoundation.InitJSONThrowable {
   public let type: Swift.String?
   public let minimum: Foundation.NSDecimalNumber
@@ -159,6 +227,9 @@ public struct DiscoveryPriceRange : TicketmasterFoundation.InitJSONThrowable {
   final public var version: Swift.String {
     get
   }
+  final public var sdkBuildInfo: [Swift.String : Any]? {
+    get
+  }
   final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
   final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
   final public var marketDomain: TicketmasterFoundation.MarketDomain {
@@ -174,7 +245,7 @@ public struct DiscoveryPriceRange : TicketmasterFoundation.InitJSONThrowable {
   }
   @available(*, deprecated, message: "Use method configure(apiKey:region:completion:) instead")
   final public var apiKey: Swift.String?
-  public static var apiKeyError: any Swift.Error
+  public static let apiKeyError: any Swift.Error
   @objc override dynamic public init()
   @objc deinit
 }
@@ -200,6 +271,9 @@ public struct DiscoveryImageMetadata : TicketmasterFoundation.InitJSONThrowable,
 extension TicketmasterDiscoveryAPI.DiscoveryService {
   @discardableResult
   public func classificationSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryClassificationResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func classificationSearch(criteria: TicketmasterDiscoveryAPI.DiscoveryClassificationSearchCriteria) async throws -> TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>
 }
 public struct DiscoverySuggestCriteria {
   public var keywords: [Swift.String]
@@ -231,6 +305,11 @@ public struct DiscoveryAttraction : TicketmasterFoundation.InitJSONThrowable {
   public var url: Foundation.URL?
   public let rawJSON: TicketmasterFoundation.JSONDictionary
   public init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
+}
+extension TicketmasterDiscoveryAPI.DiscoveryAttraction {
+  public var tatIdentifier: Swift.String? {
+    get
+  }
 }
 public struct DiscoveryClassificationSearchCriteria {
   public var keywordsFilter: [Swift.String]?
@@ -331,10 +410,15 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   @discardableResult
   public func eventSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryEventResponse) -> Swift.Void) -> Foundation.URLSessionTask?
 }
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func eventSearch(criteria: TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria) async throws -> TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>
+}
 public struct DiscoveryVenue : TicketmasterFoundation.InitJSONThrowable {
   public let venueIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
   public let legacyVenueIdentifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier?
   public let name: Swift.String?
+  public let venueSource: Swift.String?
+  public let venueSourceIdentifier: Swift.String?
   public let isActive: Swift.Bool
   public let isDiscoverable: Swift.Bool
   public let isTestVenue: Swift.Bool
@@ -370,6 +454,16 @@ extension TicketmasterDiscoveryAPI.DiscoveryVenue {
   public func cityState() -> Swift.String?
   public func postalAddress() -> Contacts.CNPostalAddress
   public func boxOfficePhoneNumberTrimmed() -> Swift.String?
+}
+extension TicketmasterDiscoveryAPI.DiscoveryVenue {
+  public var primaryVenueIdentifier: Swift.String {
+    get
+  }
+}
+extension TicketmasterDiscoveryAPI.DiscoveryVenue {
+  public var tatIdentifier: Swift.String? {
+    get
+  }
 }
 public enum DiscoverySource : Swift.String, Swift.Hashable, Swift.Equatable, Swift.Codable {
   case all
@@ -460,6 +554,13 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> Swift.Void)
   public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> Swift.Void)
 }
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func eventDetails(_ identifier: Swift.String) async throws -> TicketmasterDiscoveryAPI.DiscoveryEvent
+  public func eventDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryEvent
+  public func eventDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryEvent
+  public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryEvent]
+  public func eventDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryEvent]
+}
 public struct DiscoveryAttractionSearchCriteria {
   public var keywordsFilter: [Swift.String]?
   public var attractionIdentifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]?
@@ -489,8 +590,17 @@ extension TicketmasterDiscoveryAPI.DiscoveryService {
   public func attractionDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier], completion: @escaping (_ response: TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> Swift.Void)
 }
 extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func attractionDetails(_ identifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryAttraction
+  public func attractionDetails(_ identifier: TicketmasterDiscoveryAPI.LegacyHostIdentifier) async throws -> TicketmasterDiscoveryAPI.DiscoveryAttraction
+  public func attractionDetails(_ identifiers: [TicketmasterDiscoveryAPI.DiscoveryIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryAttraction]
+  public func attractionDetails(_ identifiers: [TicketmasterDiscoveryAPI.LegacyHostIdentifier]) async throws -> [TicketmasterDiscoveryAPI.DiscoveryAttraction]
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
   @discardableResult
   public func attractionSearch(_ criteria: TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria, completion: @escaping (_ response: TicketmasterDiscoveryAPI.DiscoveryService.PaginatedDiscoveryAttractionResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+}
+extension TicketmasterDiscoveryAPI.DiscoveryService {
+  public func attractionSearch(criteria: TicketmasterDiscoveryAPI.DiscoveryAttractionSearchCriteria) async throws -> TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>
 }
 public struct DiscoveryEvent : TicketmasterFoundation.InitJSONThrowable {
   public let eventIdentifier: TicketmasterDiscoveryAPI.DiscoveryIdentifier
@@ -553,6 +663,14 @@ extension TicketmasterDiscoveryAPI.DiscoveryEvent {
     get
   }
 }
+extension TicketmasterDiscoveryAPI.DiscoveryEvent {
+  public var primaryEventIdentifier: Swift.String {
+    get
+  }
+}
+extension TicketmasterDiscoveryAPI.Geohash.Precision : Swift.Equatable {}
+extension TicketmasterDiscoveryAPI.Geohash.Precision : Swift.Hashable {}
+extension TicketmasterDiscoveryAPI.Geohash.Precision : Swift.RawRepresentable {}
 extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.Equatable {}
 extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.Hashable {}
 extension TicketmasterDiscoveryAPI.DiscoveryEventSearchCriteria.EventSort : Swift.RawRepresentable {}

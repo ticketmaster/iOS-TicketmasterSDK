@@ -3,18 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed May 14 12:46:42 PDT 2025</string>
+	<string>Wed Jun  4 16:53:06 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>LNERT9JF4YTCD</string>
+	<key>BuildVariant</key>
+	<string></string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>kkao-MA-11623-SOTCLimitDomains-Remastered</string>
 	<key>GITComment</key>
-	<string>Do not add cookies to URLSession headers by default</string>
+	<string>Bump version number to 1.4.3</string>
 	<key>GITDate</key>
-	<string>Wed May 14 12:44:26 2025 -0700</string>
+	<string>Wed Jun 4 16:29:09 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>66a0a754a323fa13b0891264e49219a224756dc4</string>
+	<string>f243ac0a149bf6613bc8651dac06fd685b3b33c1</string>
 	<key>MarketingVersion</key>
-	<string>1.4.2</string>
+	<string>1.4.4</string>
 </dict>
 </plist>

@@ -272,7 +272,7 @@ public protocol UFCLoginManager : AnyObject {
   func setLoginManager(delegate: any TicketmasterFoundation.UFCLoginManagerDelegate)
 }
 public protocol UFCLoginManagerDelegate : AnyObject {
-  func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?)
+  func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?, marketDomains: [TicketmasterFoundation.MarketDomain]?)
   func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, mfaToken: Swift.String?, error: Foundation.NSError?)
 }
 public enum UFCLoginManagerOperation {
@@ -1632,7 +1632,7 @@ extension TicketmasterFoundation.UFCMessageHandler : WebKit.WKScriptMessageHandl
   @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 extension TicketmasterFoundation.UFCMessageHandler : TicketmasterFoundation.UFCLoginManagerDelegate {
-  final public func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?)
+  final public func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?, marketDomains: [TicketmasterFoundation.MarketDomain]?)
   final public func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, mfaToken: Swift.String?, error: Foundation.NSError?)
 }
 public typealias ElementValue<Key, Value> = (key: Key, value: Value)
@@ -2089,6 +2089,11 @@ extension TicketmasterFoundation.MarketDomain {
 extension TicketmasterFoundation.MarketDomain {
   public init?(rawValue: Swift.String)
   public var stringValue: Swift.String {
+    get
+  }
+}
+extension TicketmasterFoundation.MarketDomain : Swift.CustomStringConvertible {
+  public var description: Swift.String {
     get
   }
 }

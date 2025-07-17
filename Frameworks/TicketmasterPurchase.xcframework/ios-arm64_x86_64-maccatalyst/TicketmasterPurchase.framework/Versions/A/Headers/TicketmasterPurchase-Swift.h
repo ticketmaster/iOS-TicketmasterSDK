@@ -312,6 +312,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 /// A class that stores the global configuration for the TicketmasterPurchase SDK.
 SWIFT_CLASS("_TtC20TicketmasterPurchase10TMPurchase")
 @interface TMPurchase : NSObject
@@ -345,6 +346,9 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase30TMPurchaseNavigationController")
 
 
 
+
+/// A data structure that represents a purchased order
+/// Contains properties such as identifiers, and order information
 SWIFT_CLASS("_TtC20TicketmasterPurchase15TMPurchaseOrder")
 @interface TMPurchaseOrder : NSObject
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
@@ -697,6 +701,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
 /// A class that stores the global configuration for the TicketmasterPurchase SDK.
 SWIFT_CLASS("_TtC20TicketmasterPurchase10TMPurchase")
 @interface TMPurchase : NSObject
@@ -730,6 +735,9 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase30TMPurchaseNavigationController")
 
 
 
+
+/// A data structure that represents a purchased order
+/// Contains properties such as identifiers, and order information
 SWIFT_CLASS("_TtC20TicketmasterPurchase15TMPurchaseOrder")
 @interface TMPurchaseOrder : NSObject
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;

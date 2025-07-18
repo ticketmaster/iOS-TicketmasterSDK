@@ -35,7 +35,7 @@ jobs:
       - name: Process .doccarchives
         run: |
           mkdir -p docs
-          for archive in source/**/*.doccarchive; do
+          for archive in Frameworks/**/*.doccarchive; do
             name=$(basename "$archive" .doccarchive)
             echo "Processing $name..."
             $(xcrun --find docc) process-archive \

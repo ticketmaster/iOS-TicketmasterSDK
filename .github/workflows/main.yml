@@ -41,7 +41,7 @@ jobs:
             $(xcrun --find docc) process-archive \
               transform-for-static-hosting "$archive" \
               --output-path "docs/$name" \
-              --hosting-base-path iOS-TicketmasterSDK/$name
+              --hosting-base-path iOS-TicketmasterSDK/docs/$name
           done
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmaster SDK Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #024DDF;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #0238b3;
+        }
+
+        .logo {
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container {
+            height: 100%;
+            width: auto;
+            display: flex;
+            align-items: center;
+            min-width: 150px;
+        }
+
+        .logo-container svg {
+            height: 100%;
+            width: auto;
+            fill: white;
+        }
+
+        .main-container {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .title {
+            color: #024DDF;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .sdk-section {
+            margin-bottom: 4rem;
+        }
+
+        .sdk-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .sdk-icon {
+            width: 50px;
+            height: 50px;
+            background: #024DDF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .sdk-title {
+            color: #024DDF;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .sdk-description {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .nav-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(2, 77, 223, 0.1);
+            border: 1px solid rgba(2, 77, 223, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #024DDF;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .nav-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 32px rgba(2, 77, 223, 0.2);
+            border-color: #024DDF;
+        }
+
+        .nav-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1.5rem;
+            background: #024DDF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .nav-card:hover .nav-icon {
+            transform: scale(1.1);
+            box-shadow: 0 8px 24px rgba(2, 77, 223, 0.3);
+        }
+
+        .nav-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .standalone-section {
+            margin-bottom: 4rem;
+        }
+
+        .standalone-card {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #024DDF, transparent);
+            margin: 3rem 0;
+        }
+
+        .footer {
+            background: #024DDF;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .sdk-title {
+                font-size: 1.5rem;
+            }
+            
+            .sdk-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .nav-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .nav-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="logo-container">
+                <svg class="sc-e486b071-0 hlphLY" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 24" fill="#fff" height="100%"><path d="M41.57 6.27c-4.02 0-6.97 3.63-6.97 7.4 0 3.62 2.38 5.32 5.9 5.32 1.3 0 2.66-.3 3.9-.68l.4-2.5a8.98 8.98 0 0 1-3.75.86c-2.04 0-3.23-.71-3.39-2.62l-.02-.34v-.1a6.46 6.46 0 0 1 .52-2.41c.61-1.55 1.48-2.62 3.36-2.62 1.33 0 2.02.73 2.02 2.03 0 .28-.02.54-.07.83H39.1a7.57 7.57 0 0 0-.34 2.17h7.5c.2-.9.32-1.8.32-2.72 0-3.09-2-4.62-5.02-4.62zm-5.4.28h-4.15l-4.44 4.41h-.05L29.65 1h-3.19l-3.78 17.7h3.11l1.38-6.44h.05l3.16 6.45h3.6l-3.7-6.62 5.88-5.54zm15.16 8.8a5 5 0 0 1 .15-1.18l1.16-5.3h2.86l.5-2.32h-2.86l.79-3.61-3.42 1.1-.55 2.5h-2.3l-.51 2.32h2.3l-.9 4.11c-.2.97-.4 1.89-.4 2.83 0 2.34 1.52 3.2 3.69 3.2.54 0 1.16-.18 1.7-.3l.56-2.45a4.28 4.28 0 0 1-1.55.28c-.72 0-1.22-.44-1.22-1.18zm-47.14 0c0-.47.07-.9.14-1.18l1.16-5.3h2.86l.5-2.32H5.99l.79-3.61-3.43 1.1-.54 2.5H.5L0 8.87h2.3l-.9 4.11c-.21.97-.4 1.89-.4 2.83C1 18.14 2.52 19 4.69 19c.54 0 1.16-.18 1.7-.3l.56-2.45a4.27 4.27 0 0 1-1.55.28c-.71 0-1.22-.44-1.22-1.18zm12.48-1.98c0-2.29 1.42-4.65 3.97-4.65.88 0 1.7.21 2.33.62l.78-2.6a11.4 11.4 0 0 0-3.19-.47c-4.4 0-7.22 3.23-7.22 7.48 0 3.14 2.04 5.24 5.2 5.24 1.05 0 2.1-.1 3.07-.57l.36-2.5c-.83.4-1.81.61-2.6.61-2.18 0-2.7-1.58-2.7-3.16zM14.5 1.31h-3.19l-.67 3.02h3.2l.66-3.02zm-4.36 5.24L7.54 18.7h3.19l2.61-12.16h-3.19zm72.06-.27c-1.43 0-2.81.26-4.17.73l-.45 2.53a9.48 9.48 0 0 1 4.02-.95c1.12 0 2.45.35 2.45 1.58 0 .36 0 .71-.1 1.04h-1.11c-3 0-7.52.3-7.52 4.32 0 2.24 1.57 3.47 3.78 3.47 1.76 0 2.86-.78 3.95-2.15h.05l-.33 1.87h2.68c.29-2.3 1.5-7.06 1.5-8.7 0-2.85-2.3-3.74-4.75-3.74zM80 16.68c-.82 0-1.62-.42-1.62-1.27 0-2.05 2.56-2.31 4.1-2.31h1.13c-.5 1.96-1.24 3.58-3.61 3.58zM71.6 6.27c-1.72 0-3.5.73-4.31 2.31h-.05c-.17-1.47-1.67-2.31-3.12-2.31-1.5 0-2.9.66-3.75 1.9h-.05l.29-1.62h-2.98l-.26 1.35-2.23 10.8h3.18l1.26-5.78c.4-1.63 1-4.2 3.16-4.2.82 0 1.5.57 1.5 1.46 0 .74-.23 1.87-.4 2.6l-1.28 5.93h3.18L67 12.92c.4-1.65.95-4.2 3.17-4.2.8 0 1.5.57 1.5 1.46 0 .74-.24 1.87-.4 2.6l-1.3 5.93h3.2l1.27-5.81c.27-1 .55-2.22.55-3.3a3.4 3.4 0 0 0-3.4-3.33zm41.24 0c-4.02 0-6.97 3.63-6.97 7.4 0 3.62 2.38 5.32 5.9 5.32 1.3 0 2.66-.3 3.9-.68l.4-2.5a9 9 0 0 1-3.75.86c-2.04 0-3.23-.71-3.38-2.62-.01-.12-.03-.22-.03-.34v-.1c.02-.84.2-1.66.53-2.41.6-1.55 1.47-2.62 3.35-2.62 1.33 0 2.02.73 2.02 2.03 0 .28-.02.54-.07.83h-4.36a7.57 7.57 0 0 0-.34 2.17h7.5c.2-.9.32-1.8.32-2.72 0-3.09-2-4.62-5.02-4.62zm10.18 2.57h-.05l.43-2.3h-3.05l-.28 1.64-2.19 10.53h3.19l1.14-5.46c.4-1.96 1.5-3.96 3.76-3.96.4 0 .85.07 1.2.19l.68-3.1a4.9 4.9 0 0 0-1.22-.11c-1.47 0-3.04 1.25-3.61 2.57zm-20.87 6.51c0-.47.07-.9.14-1.18l1.17-5.3h2.85l.5-2.32h-2.85l.78-3.61-3.42 1.1-.55 2.5h-2.3l-.5 2.32h2.3l-.9 4.11c-.22.97-.4 1.89-.4 2.83 0 2.34 1.52 3.2 3.68 3.2.55 0 1.17-.18 1.71-.3l.55-2.45c-.4.17-.98.28-1.55.28-.71 0-1.21-.44-1.21-1.18zm-13.31-5.21c0 3.04 4.13 3.23 4.13 5.2 0 .98-1.12 1.33-2.19 1.33a6.01 6.01 0 0 1-3.04-.94l-.7 2.53a8.8 8.8 0 0 0 3.74.73c2.74 0 5.52-.95 5.52-4.1 0-2.98-4.14-3.55-4.14-5.08 0-.97 1.19-1.23 2.14-1.23.9 0 1.79.26 2.13.44l.69-2.38a13.27 13.27 0 0 0-2.98-.37c-2.53 0-5.3 1.01-5.3 3.87zm43.23-3.86A2.74 2.74 0 0 0 129.33 9c0 1.5 1.23 2.72 2.74 2.72A2.73 2.73 0 0 0 134.81 9c0-1.5-1.23-2.72-2.74-2.72zm.01 5.04A2.23 2.23 0 0 1 129.86 9c0-1.3.95-2.31 2.22-2.31 1.26 0 2.21 1.01 2.21 2.31s-.95 2.32-2.2 2.32zm1.28-3.02c0-.6-.36-.9-1.1-.9h-1.23v3.2h.52V9.17h.44l.9 1.41h.55l-.91-1.4c.5 0 .83-.38.83-.89zm-1.81.48V7.8h.62c.34 0 .66.1.66.47 0 .41-.26.5-.66.5h-.62z"></path></svg>
+            </div>
+        </div>
+    </header>
+
+       <div class="main-container">
+        <div class="content-wrapper">
+            <h1 class="title">Ignite iOS SDKs Documentation</h1>
+            <p class="subtitle">Build engaging fan experiences with secure authentication, seamless ticket discovery and purchasing, and comprehensive digital ticket management</p>
+            
+            <!-- Accounts SDK - Standalone -->
+            <div class="standalone-section">
+                <div class="sdk-header">
+                    <div class="sdk-icon">👤</div>
+                    <h2 class="sdk-title">Accounts SDK</h2>
+                </div>
+                <p class="sdk-description">Leverage Ticketmaster's secure accounts and login system to unlock access to all Retail SDK and Tickets SDK fan experiences.</p>
+                
+                <div class="nav-grid">
+                    <a href="https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterAuthentication/documentation/ticketmasterauthentication//" class="nav-card standalone-card" target="_blank">
+                        <div class="nav-icon">🔐</div>
+                        <h3 class="nav-title">Authentication</h3>
+                        <p class="nav-description">Secure authentication and account management for your users</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Retail SDK - Multi-part -->
+            <div class="sdk-section">
+                <div class="sdk-header">
+                    <div class="sdk-icon">🛍️</div>
+                    <h2 class="sdk-title">Retail SDK</h2>
+                </div>
+                <p class="sdk-description">Drive revenue with seamless app integration delivering discovery, engagement, and ticket sales via optimized fan experiences.</p>
+                
+                <div class="nav-grid">
+                    <a href="https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterDiscoveryAPI/documentation/ticketmasterdiscoveryapi/" class="nav-card" target="_blank">
+                        <div class="nav-icon">🔍</div>
+                        <h3 class="nav-title">Discovery API</h3>
+                        <p class="nav-description">Explore events, venues, and attractions with comprehensive search capabilities</p>
+                    </a>
+                    
+                    <a href="https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterPrePurchase/documentation/ticketmasterprepurchase/" class="nav-card" target="_blank">
+                        <div class="nav-icon">📋</div>
+                        <h3 class="nav-title">Pre Purchase</h3>
+                        <p class="nav-description">Access presale information, pricing, and availability workflows</p>
+                    </a>
+                    
+                    <a href="https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterPurchase/documentation/ticketmasterpurchase/" class="nav-card" target="_blank">
+                        <div class="nav-icon">💳</div>
+                        <h3 class="nav-title">Purchase</h3>
+                        <p class="nav-description">Complete secure ticket transactions and payment processing</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Tickets SDK - Standalone -->
+            <div class="standalone-section">
+                <div class="sdk-header">
+                    <div class="sdk-icon">🎫</div>
+                    <h2 class="sdk-title">Tickets SDK</h2>
+                </div>
+                <p class="sdk-description">A feature and engagement rich digital ticket offering ticket management, rendering, customization, and entry.</p>
+                
+                <div class="nav-grid">
+                    <a href="https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterTickets/documentation/ticketmastertickets/" class="nav-card standalone-card">
+                        <div class="nav-icon">🎟️</div>
+                        <h3 class="nav-title">Ticket Management</h3>
+                        <p class="nav-description">Comprehensive digital ticket management with secure entry, customizable rendering, transfer and resale features, plus modular content integration.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Ticketmaster. All rights reserved. | SDK Portal</p>
+    </footer>
+
+    <script>
+        // Add interactive animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.nav-card');
+            
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.style.animation = 'slideInUp 0.6s ease forwards';
+            });
+        });
+
+        // Add CSS animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

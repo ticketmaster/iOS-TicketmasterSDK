@@ -1,8 +1,13 @@
 # Ticketmaster Ignite SDK
 
-![iOS](https://img.shields.io/badge/iOS-15-green.svg?style=flat)[![Platform](https://img.shields.io/cocoapods/p/TM-Ignite.svg?style=flat)](https://cocoapods.org/pods/TM-Ignite)![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg?style=flat)[![License](https://img.shields.io/cocoapods/l/TM-Ignite.svg?style=flat)](https://cocoapods.org/pods/TM-Ignite)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fticketmaster%2FiOS-TicketmasterSDK%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ticketmaster/iOS-TicketmasterSDK)
 
-[![Version](https://img.shields.io/cocoapods/v/TM-Ignite.svg?style=flat)](https://cocoapods.org/pods/TM-Ignite)[![Swift Package Manager compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fticketmaster%2FiOS-TicketmasterSDK%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ticketmaster/iOS-TicketmasterSDK)
+
+[![License](https://img.shields.io/cocoapods/l/TM-Ignite.svg?style=flat)](https://cocoapods.org/pods/TM-Ignite)
+
+[![Version](https://img.shields.io/cocoapods/v/TM-Ignite.svg?style=flat)](https://cocoapods.org/pods/TM-Ignite) [![Swift Package Manager compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+
 
 iOS implementation of Ticketmaster's Ignite SDK
 
@@ -16,7 +21,7 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
   * Authentication: https://ignite.ticketmaster.com/docs/ios-authentication-change-log
   * Tickets: https://ignite.ticketmaster.com/docs/ios-tickets-change-log
 
-* Documentation: https://ignite.ticketmaster.com/docs/tickets-sdk-overview
+* API Documentation: https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/
 * Frameworks: https://github.com/ticketmaster/iOS-TicketmasterSDK
 * Android Source (Tickets SDK): https://github.com/ticketmaster/Android-TicketsDemoApp
 * iOS Source (Tickets SDK): https://github.com/ticketmaster/iOS-TicketsDemoApp
@@ -38,6 +43,8 @@ A collection of mobile frameworks encompassing the User journey of Event Discove
 
 Purpose: **Login Management**
 
+[API Documentation](https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterAuthentication/documentation/ticketmasterauthentication/)
+
 Required xcframework libraries:
 
 * TicketmasterFoundation 
@@ -46,6 +53,8 @@ Required xcframework libraries:
 ### [DiscoveryAPI](https://ignite.ticketmaster.com/docs/discovery-overview)
 Purpose: **API-based Event, Attraction, and Venue Discovery**
 
+[API Documentation](https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterDiscoveryAPI/documentation/ticketmasterdiscoveryapi/)
+
 Required xcframework libraries:
 
 * TicketmasterFoundation 
@@ -53,6 +62,8 @@ Required xcframework libraries:
 
 ### [PrePurchase](https://ignite.ticketmaster.com/docs/pre-purchase-overview)
 Purpose: **Webpage-based Event, Attraction, and Venue Discovery**
+
+[API Documentation](https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterPrePurchase/documentation/ticketmasterprepurchase/)
 
 Required xcframework libraries:
 
@@ -64,6 +75,8 @@ Required xcframework libraries:
 ### [Purchase](https://ignite.ticketmaster.com/docs/purchase-overview)
 Purpose: **Event Ticket Purchasing**
 
+[API Documentation](https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterPurchase/documentation/ticketmasterpurchase/)
+
 Required xcframework libraries:
 
 * TicketmasterFoundation 
@@ -74,6 +87,8 @@ Required xcframework libraries:
 ### [Tickets](https://ignite.ticketmaster.com/docs/tickets-sdk-overview)
 
 Purpose: **Post-Purchase Ticket Management and Event Entry**
+
+[API Documentation](https://code.ticketmaster.com/iOS-TicketmasterSDK/docs/TicketmasterTickets/documentation/ticketmastertickets/)
 
 Required xcframework libraries:
 
@@ -139,5 +154,4 @@ $ pod install
 ### Additional Dependencies
 
 As of version 1.13.4+, SecureEntry SDK also requires the TicketmasterSwiftProtobuf library. This library should be added automatically to your project if you use SwiftPackageManager or CocoaPods.
-
 

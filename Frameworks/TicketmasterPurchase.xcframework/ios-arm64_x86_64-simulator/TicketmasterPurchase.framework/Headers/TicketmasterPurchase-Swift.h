@@ -280,8 +280,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AuthenticationServices;
 @import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -309,6 +311,34 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+@class WKWebView;
+@class WKUserContentController;
+@class WKScriptMessage;
+
+SWIFT_CLASS("_TtC20TicketmasterPurchase14POPPopupBridge")
+@interface POPPopupBridge : NSObject <WKScriptMessageHandler>
+/// Initialize a Popup Bridge.
+/// \param webView The web view to add a script message handler to. Do not change the web view’s configuration or user content controller after initializing Popup Bridge.
+///
+/// \param prefersEphemeralWebBrowserSession A Boolean that, when true, requests that the browser does not share cookies
+/// or other browsing data between the authenthication session and the user’s normal browser session.
+/// Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initWithWebView:(WKWebView * _Nonnull)webView prefersEphemeralWebBrowserSession:(BOOL)prefersEphemeralWebBrowserSession OBJC_DESIGNATED_INITIALIZER;
+/// :nodoc: This method is not covered by Semantic Versioning. Do not use.
+/// Called when the webpage sends a JavaScript message back to the native app
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class ASWebAuthenticationSession;
+
+@interface POPPopupBridge (SWIFT_EXTENSION(TicketmasterPurchase)) <ASWebAuthenticationPresentationContextProviding>
+- (ASPresentationAnchor _Nonnull)presentationAnchorForWebAuthenticationSession:(ASWebAuthenticationSession * _Nonnull)session SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// A class that stores the global configuration for the TicketmasterPurchase SDK.
@@ -365,6 +395,8 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase30TMPurchaseWebsiteConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -667,8 +699,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AuthenticationServices;
 @import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -696,6 +730,34 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+@class WKWebView;
+@class WKUserContentController;
+@class WKScriptMessage;
+
+SWIFT_CLASS("_TtC20TicketmasterPurchase14POPPopupBridge")
+@interface POPPopupBridge : NSObject <WKScriptMessageHandler>
+/// Initialize a Popup Bridge.
+/// \param webView The web view to add a script message handler to. Do not change the web view’s configuration or user content controller after initializing Popup Bridge.
+///
+/// \param prefersEphemeralWebBrowserSession A Boolean that, when true, requests that the browser does not share cookies
+/// or other browsing data between the authenthication session and the user’s normal browser session.
+/// Defaults to <code>true</code>.
+///
+- (nonnull instancetype)initWithWebView:(WKWebView * _Nonnull)webView prefersEphemeralWebBrowserSession:(BOOL)prefersEphemeralWebBrowserSession OBJC_DESIGNATED_INITIALIZER;
+/// :nodoc: This method is not covered by Semantic Versioning. Do not use.
+/// Called when the webpage sends a JavaScript message back to the native app
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class ASWebAuthenticationSession;
+
+@interface POPPopupBridge (SWIFT_EXTENSION(TicketmasterPurchase)) <ASWebAuthenticationPresentationContextProviding>
+- (ASPresentationAnchor _Nonnull)presentationAnchorForWebAuthenticationSession:(ASWebAuthenticationSession * _Nonnull)session SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 /// A class that stores the global configuration for the TicketmasterPurchase SDK.
@@ -752,6 +814,8 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase30TMPurchaseWebsiteConfiguration")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 

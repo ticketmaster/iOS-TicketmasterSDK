@@ -89,6 +89,9 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency weak public var navigationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseNavigationDelegate)?
   @_Concurrency.MainActor @preconcurrency weak public var locationDelegate: (any TicketmasterPrePurchase.TMPrePurchaseLocationDelegate)?
   @_Concurrency.MainActor @preconcurrency weak public var analyticsDelegate: (any TicketmasterPrePurchase.TMPrePurchaseAnalyticsDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var queryParameters: [Swift.String : Swift.String]? {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public init(initialPage: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, marketDomain: TicketmasterFoundation.MarketDomain = .US, marketLocation: TicketmasterFoundation.MarketLocation?, queryParameters: [Swift.String : Swift.String]?, enclosingEnvironment: TicketmasterPrePurchase.TMPrePurchaseViewController.EnclosingEnvironment, allowJavaScriptToBringUpKeyboard: Swift.Bool, internalTestingKeys: [Swift.String : Any]? = nil, customFont: UIKit.UIFont? = nil, customBoldFont: UIKit.UIFont? = nil, incomingURL: Foundation.URL? = nil)
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -119,7 +122,7 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController : TicketmasterFoun
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func adjustTrackedCommerceEvent(_ commerceEvent: TicketmasterFoundation.UALCommerceEvent) -> TicketmasterFoundation.UALCommerceEvent?
 }
 extension TicketmasterPrePurchase.TMPrePurchaseViewController : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc dynamic open func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)

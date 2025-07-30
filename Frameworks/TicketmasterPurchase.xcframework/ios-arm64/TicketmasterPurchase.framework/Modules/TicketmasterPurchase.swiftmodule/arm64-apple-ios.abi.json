@@ -6,6 +6,13 @@
     "children": [
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
         "name": "TicketmasterDiscoveryAPI",
         "printedName": "TicketmasterDiscoveryAPI",
         "declKind": "Import",
@@ -2419,6 +2426,13 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "TicketmasterPurchase",
         "declAttributes": [
           "RawDocComment"
@@ -2775,6 +2789,27 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2889,6 +2924,257 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "POPPopupBridge",
+        "printedName": "POPPopupBridge",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(webView:prefersEphemeralWebBrowserSession:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "POPPopupBridge",
+                "printedName": "TicketmasterPurchase.POPPopupBridge",
+                "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge(im)initWithWebView:prefersEphemeralWebBrowserSession:",
+            "mangledName": "$s20TicketmasterPurchase14POPPopupBridgeC7webView33prefersEphemeralWebBrowserSessionACSo05WKWebF0C_Sbtcfc",
+            "moduleName": "TicketmasterPurchase",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s20TicketmasterPurchase14POPPopupBridgeC21userContentController_10didReceiveySo06WKUserfG0C_So15WKScriptMessageCtF",
+            "moduleName": "TicketmasterPurchase",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "POPPopupBridge",
+                "printedName": "TicketmasterPurchase.POPPopupBridge",
+                "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge(im)init",
+            "mangledName": "$s20TicketmasterPurchase14POPPopupBridgeCACycfc",
+            "moduleName": "TicketmasterPurchase",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "presentationAnchor",
+            "printedName": "presentationAnchor(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindow",
+                "printedName": "UIKit.UIWindow",
+                "usr": "c:objc(cs)UIWindow"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthenticationSession",
+                "printedName": "AuthenticationServices.ASWebAuthenticationSession",
+                "usr": "c:objc(cs)ASWebAuthenticationSession"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@TicketmasterPurchase@objc(cs)POPPopupBridge(im)presentationAnchorForWebAuthenticationSession:",
+            "mangledName": "$s20TicketmasterPurchase14POPPopupBridgeC18presentationAnchor3forSo8UIWindowCSo26ASWebAuthenticationSessionC_tF",
+            "moduleName": "TicketmasterPurchase",
+            "objc_name": "presentationAnchorForWebAuthenticationSession:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TicketmasterPurchase@objc(cs)POPPopupBridge",
+        "mangledName": "$s20TicketmasterPurchase14POPPopupBridgeC",
+        "moduleName": "TicketmasterPurchase",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -4204,13 +4490,6 @@
       },
       {
         "kind": "Import",
-        "name": "PopupBridge",
-        "printedName": "PopupBridge",
-        "declKind": "Import",
-        "moduleName": "TicketmasterPurchase"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4250,6 +4529,13 @@
         "kind": "Import",
         "name": "TicketmasterFoundation",
         "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "TicketmasterPurchase"
       },
@@ -8107,6 +8393,20 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "TicketmasterPurchase",
         "declAttributes": [
           "RawDocComment"
@@ -8302,6 +8602,27 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
       },
       {
         "kind": "Import",
@@ -10801,6 +11122,20 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
         "name": "SafariServices",
         "printedName": "SafariServices",
         "declKind": "Import",
@@ -12168,17 +12503,429 @@
         "printedName": "DeveloperToolsSupport",
         "declKind": "Import",
         "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 14,
+      "value": "\"batch_params\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 541,
+      "length": 14,
+      "value": "\"event_params\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 831,
+      "length": 11,
+      "value": "\"Braintree\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 12,
+      "value": "\"event_name\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1002,
+      "length": 13,
+      "value": "\"tenant_name\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1254,
+      "length": 5,
+      "value": "\"N\/A\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1369,
+      "length": 5,
+      "value": "\"N\/A\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1517,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1595,
+      "length": 16,
+      "value": "\"popupbridgesdk\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1662,
+      "length": 7,
+      "value": "\"Apple\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 1915,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2011,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2211,
+      "length": 15,
+      "value": "\"mobile-native\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2370,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2530,
+      "length": 5,
+      "value": "\"N\/A\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2746,
+      "length": 19,
+      "value": "\"Carthage or Other\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2837,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2961,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 2997,
+      "length": 10,
+      "value": "\"app_name\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3044,
+      "length": 11,
+      "value": "\"c_sdk_ver\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3084,
+      "length": 11,
+      "value": "\"client_os\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3125,
+      "length": 6,
+      "value": "\"comp\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3170,
+      "length": 21,
+      "value": "\"device_manufacturer\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3223,
+      "length": 21,
+      "value": "\"mobile_device_model\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3276,
+      "length": 14,
+      "value": "\"event_source\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3322,
+      "length": 14,
+      "value": "\"is_simulator\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3375,
+      "length": 6,
+      "value": "\"mapv\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3416,
+      "length": 21,
+      "value": "\"ios_package_manager\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "kind": "StringLiteral",
+      "offset": 3493,
+      "length": 12,
+      "value": "\"session_id\""
+    },
+    {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/MFOL\/MFOLCheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 812,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/PopupBridgeConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 92,
+      "length": 22,
+      "value": "\"sdk.ios.popup-bridge\""
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
@@ -12326,6 +13073,48 @@
       "offset": 1492,
       "length": 30,
       "value": "\"TMConfirmationURLUserInfoKey\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "BooleanLiteral",
+      "offset": 201,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 368,
+      "length": 16,
+      "value": "\"POPPopupBridge\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 15,
+      "value": "\"popupbridgev1\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 499,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 510,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1377,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
@@ -12631,35 +13420,35 @@
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1582,
+      "offset": 1563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1799,
       "length": 19,
       "value": "\"WebViewController\""
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2221,
+      "offset": 2202,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2297,
+      "offset": 2278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2452,
+      "offset": 2433,
       "length": 5,
       "value": "false"
     },
@@ -12711,6 +13500,34 @@
       "offset": 230,
       "length": 16,
       "value": "\"expirationTime\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 58,
+      "length": 22,
+      "value": "\"popup-bridge:started\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 108,
+      "length": 24,
+      "value": "\"popup-bridge:succeeded\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 21,
+      "value": "\"popup-bridge:failed\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 23,
+      "value": "\"popup-bridge:canceled\""
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
@@ -12809,6 +13626,13 @@
       "offset": 1187,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/AnalyticsService.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 49,
+      "value": "\"https:\/\/api.paypal.com\/v1\/tracking\/batch\/events\""
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
@@ -13201,6 +14025,13 @@
       "offset": 2047,
       "length": 13,
       "value": "\"checkoutURL\""
+    },
+    {
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/WebAuthenticationSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 202,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",

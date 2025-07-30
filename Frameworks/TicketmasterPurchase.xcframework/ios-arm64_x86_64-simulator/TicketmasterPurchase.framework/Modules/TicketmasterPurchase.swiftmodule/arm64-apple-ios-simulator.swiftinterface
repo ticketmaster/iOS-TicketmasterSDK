@@ -2,9 +2,9 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterPurchase
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AuthenticationServices
 import DeveloperToolsSupport
 import Foundation
-import PopupBridge
 import SafariServices
 import Swift
 import SwiftUI
@@ -105,6 +105,14 @@ public protocol TMPurchaseWebAnalyticsDelegate : AnyObject {
 }
 public struct CheckoutConfirmationHandler {
   public static func handleCheckoutCompletion(withURL deepLinkURL: Foundation.URL)
+}
+@objc @objcMembers @_Concurrency.MainActor @preconcurrency public class POPPopupBridge : ObjectiveC.NSObject, WebKit.WKScriptMessageHandler {
+  @objc @_Concurrency.MainActor @preconcurrency public init(webView: WebKit.WKWebView, prefersEphemeralWebBrowserSession: Swift.Bool = true)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+extension TicketmasterPurchase.POPPopupBridge : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
 }
 @objc @_inheritsConvenienceInitializers final public class TMPurchase : ObjectiveC.NSObject {
   public static let shared: TicketmasterPurchase.TMPurchase
@@ -282,3 +290,4 @@ extension TicketmasterPurchase.TMPurchaseComponent : Swift.RawRepresentable {}
 extension TicketmasterPurchase.TMPurchaseDecision : Swift.Equatable {}
 extension TicketmasterPurchase.TMPurchaseDecision : Swift.Hashable {}
 extension TicketmasterPurchase.TMPurchaseDecision : Swift.RawRepresentable {}
+extension TicketmasterPurchase.POPPopupBridge : Swift.Sendable {}

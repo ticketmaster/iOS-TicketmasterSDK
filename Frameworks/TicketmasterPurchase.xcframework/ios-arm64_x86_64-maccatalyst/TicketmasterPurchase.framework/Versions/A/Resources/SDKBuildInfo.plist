@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Jul 16 16:47:34 PDT 2025</string>
+	<string>Wed Jul 30 13:43:21 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNERT9JF4YTCD</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>kkao-BumpVersion-3.6.0</string>
+	<string>release/3.6.1</string>
 	<key>GITComment</key>
-	<string>Bump version number to 3.6.0, no code changes</string>
+	<string>Bump version to 3.6.1</string>
 	<key>GITDate</key>
-	<string>Wed Jul 16 16:28:28 2025 -0700</string>
+	<string>Wed Jul 30 11:53:14 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>4cadb4d56dd527489b5df21ea7f8060c376f924f</string>
+	<string>15a3f645887d6d24349740deaae452bd9508b523</string>
 	<key>MarketingVersion</key>
-	<string>3.6.0</string>
+	<string>3.6.1</string>
 </dict>
 </plist>

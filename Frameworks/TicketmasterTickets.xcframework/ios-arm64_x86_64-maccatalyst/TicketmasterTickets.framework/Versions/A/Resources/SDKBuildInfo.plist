@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Jun 23 12:35:34 BST 2025</string>
+	<string>Wed Aug  6 10:52:29 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>UKFARTMML9677</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.13.1</string>
+	<string>release/3.13.2</string>
 	<key>GITComment</key>
-	<string>Merge branch Bug-PSDK-0-Fix-TicketsBarcodePagesViewModelTests into master</string>
+	<string>PSDK-0000: Change marketing version</string>
 	<key>GITDate</key>
-	<string>Thu Jun 19 15:47:54 2025 +0100</string>
+	<string>Wed Aug 6 18:40:00 2025 +0300</string>
 	<key>GITRevision</key>
-	<string>f8d798eaabdf263fd459b9e3e38bb6dbfdd8760a</string>
+	<string>3fd83a856b816e92691af440b64bc50f57515ee7</string>
 	<key>MarketingVersion</key>
-	<string>3.13.1</string>
+	<string>3.13.2</string>
 </dict>
 </plist>

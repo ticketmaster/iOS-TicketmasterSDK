@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Jul 30 11:55:20 PDT 2025</string>
+	<string>Tue Aug 19 19:16:36 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNERT9JF4YTCD</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
-	<string></string>
+	<string>RC1</string>
 	<key>GITBranch</key>
-	<string>release/3.6.1</string>
+	<string>Feature-PSDK-16819-UpdatedNetworking</string>
 	<key>GITComment</key>
-	<string>Bump version to 3.6.1</string>
+	<string>PSDK-16819 Updated networking (TMFoundation 1.5.0)</string>
 	<key>GITDate</key>
-	<string>Wed Jul 30 11:53:14 2025 -0700</string>
+	<string>Tue Aug 19 18:54:32 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>15a3f645887d6d24349740deaae452bd9508b523</string>
+	<string>1a234a1265c35cdad24f429bd1b44de6eb1f053c</string>
 	<key>MarketingVersion</key>
-	<string>3.6.1</string>
+	<string>3.7.0</string>
 </dict>
 </plist>

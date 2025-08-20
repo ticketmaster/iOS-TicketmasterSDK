@@ -128,7 +128,7 @@ extension TicketmasterPurchase.POPPopupBridge : AuthenticationServices.ASWebAuth
     get
     set
   }
-  final public var environment: TicketmasterFoundation.ConnectionEnvironment {
+  final public var environment: TicketmasterPurchase.TMPurchase.Environment {
     get
     set
   }
@@ -209,6 +209,60 @@ extension TicketmasterPurchase.TMPurchaseOrder {
 }
 extension TicketmasterPurchase.TMPurchaseOrder.Item {
   convenience public init(jsonDictionary: TicketmasterFoundation.JSONDictionary)
+}
+extension TicketmasterPurchase.TMPurchase {
+  public enum Environment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case productionLiveNation
+    case alpha
+    case beta
+    case appDemo
+    case preProduction1
+    case preProduction2
+    case preProduction3
+    case staging
+    case qa
+    case testingProduction1
+    case testingProduction2
+    case edpAlpha
+    case edpQA11
+    case edpQA12
+    case edpQA13
+    case edpQA14
+    case edpQA15
+    case edpQA16
+    case checkoutAlpha
+    case checkoutQA1
+    case checkoutQA2
+    case checkoutQA3
+    case checkoutQA4
+    case checkoutQA5
+    case localHost
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterPurchase.TMPurchase.Environment]
+    public var isForProduction: Swift.Bool {
+      get
+    }
+    public var isForTesting: Swift.Bool {
+      get
+    }
+    public func httpHostString(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Swift.String
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterPurchase.TMPurchase.Environment, b: TicketmasterPurchase.TMPurchase.Environment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterPurchase.TMPurchase.Environment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension TicketmasterPurchase.TMPurchase.Environment {
+  public init(tmxDeploymentEnvironment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment)
 }
 @objc public class TMPurchaseWebsiteConfiguration : ObjectiveC.NSObject {
   public var eventID: Swift.String

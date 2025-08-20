@@ -35,7 +35,8 @@ extension TicketmasterAuthentication.TMAuthentication {
 }
 public struct TMXNetworkServiceConfig : Swift.Codable, Swift.Hashable {
   public let backendService: TicketmasterAuthentication.TMAuthentication.BackendService
-  public let brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings
+  public let tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings
+  public let branding: TicketmasterAuthentication.TMAuthentication.Branding?
   public let localeString: Swift.String
   public let deviceGUID: Foundation.UUID
   public let responseInfo: TicketmasterAuthentication.TMXNetworkServiceConfig.ResponseInfo?
@@ -60,10 +61,15 @@ public struct TMXNetworkServiceConfig : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+extension TicketmasterAuthentication.TMXNetworkServiceConfig {
+  public var brandedServiceSettings: TicketmasterAuthentication.TMAuthentication.BrandedServiceSettings {
+    get
+  }
+}
 public protocol TMAuthenticationProvider : AnyObject {
   var useCombinedLogin: Swift.Bool { get set }
   var forceEphemeralWebBrowserSession: Swift.Bool? { get set }
-  var disableSystemExchangeDuringLogin: Swift.Bool { get set }
+  var autoLoginUsingSystemExchangeOnConfigure: Swift.Bool { get set }
   func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
   func clearAllStateChangedBlocks()
   func loginSelectionPage(backend: TicketmasterAuthentication.TMAuthentication.BackendService?, loginProperties: [Swift.String : Swift.String]?, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule?, callSource: Swift.String?) -> UIKit.UIViewController?
@@ -140,13 +146,33 @@ extension TicketmasterAuthentication.TMAuthentication {
   final public func validateMFAToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, mfaProperties: [Swift.String : Any]? = nil, presentationViewController: UIKit.UIViewController? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, success: @escaping (_ mfaToken: TicketmasterAuthentication.TMMFAToken) -> Swift.Void, aborted: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
 }
 extension TicketmasterAuthentication.TMApigeeConfig {
-  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, forcedJSONDictionary: TicketmasterFoundation.JSONDictionary?, acquiredDate: Foundation.Date? = nil)
+  public init(jsonDictionary: TicketmasterFoundation.JSONDictionary, originalData: Foundation.Data, tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, forcedJSONDictionary: TicketmasterFoundation.JSONDictionary? = nil, acquiredDate: Foundation.Date? = nil)
 }
 extension TicketmasterAuthentication.TMAuthentication {
   final public func hasToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
   final public func hasUnexpiredToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
   @available(*, deprecated, message: "Call hasUnexpiredToken(backend:...) instead. Because tokens can be invalidated at any time, this method is meaningless.")
   final public func hasValidatedToken(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil) -> Swift.Bool
+}
+extension TicketmasterAuthentication.TMApigeeConfig {
+  public enum LoginServiceCombination : Swift.String, Swift.Codable {
+    case teamHost
+    case teamMicroflex
+    case sportXRHost
+    case sportXRMicroflex
+    case hostOnly
+    case teamOnly
+    case microflexOnly
+    case sportXROnly
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var loginServiceCombination: TicketmasterAuthentication.TMApigeeConfig.LoginServiceCombination? {
+    get
+  }
 }
 extension TicketmasterAuthentication.TMAuthentication {
   public enum InfoToEncode {
@@ -162,8 +188,10 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static let serviceConfigured: Foundation.Notification.Name
     public static let serviceConfigurationCompleted: Foundation.Notification.Name
     public static let loginStarted: Foundation.Notification.Name
-    public static let loginExchanging: Foundation.Notification.Name
     public static let loginPresented: Foundation.Notification.Name
+    public static let loginOAuthCodeExchanging: Foundation.Notification.Name
+    public static let loginExternalExchanging: Foundation.Notification.Name
+    public static let loginSystemExchanging: Foundation.Notification.Name
     public static let loggedIn: Foundation.Notification.Name
     public static let loginAborted: Foundation.Notification.Name
     public static let loginFailed: Foundation.Notification.Name
@@ -235,13 +263,13 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static let apigeeConfigurationNotCached: Foundation.NSError
     public static let notSupportedByBackendService: Foundation.NSError
     public static let unknownJSONFormat: Foundation.NSError
-    public static let exchangeMissingAuthTokenForRequestedService: Foundation.NSError
     public static let userNotLoggedIn: Foundation.NSError
     public static let relatedAccountNotFound: Foundation.NSError
     public static let memberInfoNotCached: Foundation.NSError
     public static let authTokenServiceMismatch: Foundation.NSError
     public static let userRefreshedAsDifferentUser: Foundation.NSError
     public static let authTokenSourceServiceNotFound: Foundation.NSError
+    public static let authTokenMissingRefreshToken: Foundation.NSError
     public static let missingEncryptedDeviceId: Foundation.NSError
     public static let mfaWidgetUnknown: Foundation.NSError
     public static let mfaWidgetFailedLoad: Foundation.NSError
@@ -285,9 +313,7 @@ extension TicketmasterAuthentication.TMAuthentication {
     public let environment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment
     public let instanceID: Swift.String?
     public static let HostModernAccounts: TicketmasterAuthentication.TMAuthentication.BackendService
-    public static let HostFederated: TicketmasterAuthentication.TMAuthentication.BackendService
     public static let TeamModernAccounts: TicketmasterAuthentication.TMAuthentication.BackendService
-    public static let TeamFederated: TicketmasterAuthentication.TMAuthentication.BackendService
     public static let MFXModernAccounts: TicketmasterAuthentication.TMAuthentication.BackendService
     public static let SportXR: TicketmasterAuthentication.TMAuthentication.BackendService
     public init(source: TicketmasterAuthentication.TMAuthentication.AuthSource, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion? = nil, environment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment? = .Production, instanceID: Swift.String? = nil)
@@ -309,8 +335,6 @@ extension TicketmasterAuthentication.TMAuthentication {
     case modernAccountsHost
     case modernAccountsTeam
     case modernAccountsMicroflex
-    case federatedHost
-    case federatedTeam
     case sportXR
     public var keyName: Swift.String {
       get
@@ -486,9 +510,6 @@ extension TicketmasterAuthentication.TMAuthentication {
     public var keyName: Swift.String {
       get
     }
-    public var connectionEnvironment: TicketmasterFoundation.ConnectionEnvironment {
-      get
-    }
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment]
     public typealias RawValue = Swift.String
@@ -504,8 +525,10 @@ extension TicketmasterAuthentication.TMAuthentication {
     case serviceConfigured
     case serviceConfigurationCompleted
     case loginStarted
-    case loginExchanging
     case loginPresented
+    case loginOAuthCodeExchanging
+    case loginExternalExchanging
+    case loginSystemExchanging
     case loggedIn
     case loginAborted
     case loginFailed
@@ -593,7 +616,6 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let venueIdFilter: [Swift.String]?
     public let attractionIdFilter: [Swift.String]?
     public let logoURL: Foundation.URL?
-    public let assignFlowEnabled: Swift.Bool
     public let assignFlowLearnMoreURLs: [Swift.String : Foundation.URL]?
     public let useICCPFetchTickets: Swift.Bool
     public let venueSuppressionRules: [TicketmasterAuthentication.TMApigeeConfig.VenueSuppressionRule]?
@@ -616,6 +638,9 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let host: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration?
     public let team: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration?
     public let mfx: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration?
+    public let systemExchangeClientIDs: [Swift.String]?
+    public let allowTeamToHostSystemExchange: Swift.Bool
+    public let tmxWillCreateExternalGuestUser: Swift.Bool
     public struct Configuration : Swift.Codable, Swift.Hashable {
       public let enabled: Swift.Bool
       public let clientId: Swift.String
@@ -628,9 +653,6 @@ extension TicketmasterAuthentication.TMApigeeConfig {
       public let integratorId: Swift.String?
       public let placementId: Swift.String?
       public let prefersEphemeralWebBrowserSession: Swift.Bool
-      public let systemExchangeClientIDs: [Swift.String]?
-      public let allowTeamToHostSystemExchange: Swift.Bool
-      public let tmxWillCreateExternalGuestUser: Swift.Bool
       public let forceWebTransfer: Swift.Bool
       public func hash(into hasher: inout Swift.Hasher)
       public static func == (a: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration, b: TicketmasterAuthentication.TMApigeeConfig.ModernAccounts.Configuration) -> Swift.Bool
@@ -652,6 +674,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let host: TicketmasterAuthentication.TMApigeeConfig.Federated.Host?
     public let team: TicketmasterAuthentication.TMApigeeConfig.Federated.Team?
     public struct Host : Swift.Codable, Swift.Hashable {
+      public let enabled: Swift.Bool
       public let consumerKey: Swift.String
       public let consumerSecret: Swift.String
       public let redirectURL: Foundation.URL
@@ -664,6 +687,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
       public init(from decoder: any Swift.Decoder) throws
     }
     public struct Team : Swift.Codable, Swift.Hashable {
+      public let enabled: Swift.Bool
       public let consumerKey: Swift.String
       public let consumerSecret: Swift.String
       public let redirectURL: Foundation.URL
@@ -688,6 +712,7 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct SportXR : Swift.Codable, Swift.Hashable {
+    public let enabled: Swift.Bool
     public let consumerKey: Swift.String
     public let redirectScheme: Swift.String
     public let tenantId: Swift.String
@@ -863,10 +888,8 @@ extension TicketmasterAuthentication.TMAuthentication {
   }
   final public var useCombinedLogin: Swift.Bool
   final public var forceEphemeralWebBrowserSession: Swift.Bool?
-  final public var disableSystemExchangeDuringLogin: Swift.Bool
+  final public var autoLoginUsingSystemExchangeOnConfigure: Swift.Bool
   final public var useBrandedNavigationBar: Swift.Bool
-  @available(*, deprecated, message: "Call login(backend:...) to present login directly, skipping the login page entirely")
-  final public var autoPresentLoginPrompt: Swift.Bool
   weak final public var delegate: (any TicketmasterAuthentication.TMAuthenticationDelegate)?
   weak final public var externalTokenProviderDelegate: (any TicketmasterAuthentication.TMAuthenticationExternalTokenProvider)?
   final public func registerStateChanged(block: @escaping (_ backend: TicketmasterAuthentication.TMAuthentication.BackendService?, _ state: TicketmasterAuthentication.TMAuthentication.ServiceState, _ error: (any Swift.Error)?) -> Swift.Void)
@@ -894,6 +917,9 @@ public struct TMMFAToken : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+extension TicketmasterAuthentication.TMApigeeConfig.LoginServiceCombination : Swift.Equatable {}
+extension TicketmasterAuthentication.TMApigeeConfig.LoginServiceCombination : Swift.Hashable {}
+extension TicketmasterAuthentication.TMApigeeConfig.LoginServiceCombination : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.AuthSource : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion : Swift.RawRepresentable {}
 extension TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment : Swift.RawRepresentable {}

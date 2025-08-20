@@ -33,7 +33,7 @@ import _SwiftConcurrencyShims
   }
   final public func configure(apiKey: Swift.String, region: TicketmasterAuthentication.TMAuthentication.TMXDeploymentRegion = .US, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
   final public func configure(tmxSettings: TicketmasterAuthentication.TMAuthentication.TMXSettings, completion: @escaping (_ didSetMarketDomain: Swift.Bool) -> Swift.Void)
-  final public var environment: TicketmasterFoundation.ConnectionEnvironment {
+  final public var environment: TicketmasterPrePurchase.TMPrePurchase.Environment {
     get
     set
   }
@@ -49,6 +49,45 @@ import _SwiftConcurrencyShims
   final public var domain: TicketmasterFoundation.MarketDomain
   @objc override dynamic public init()
   @objc deinit
+}
+extension TicketmasterPrePurchase.TMPrePurchase {
+  public enum Environment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case productionLiveNation
+    case alpha
+    case beta
+    case appDemo
+    case preProduction1
+    case preProduction2
+    case preProduction3
+    case staging
+    case qa
+    case localHost
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterPrePurchase.TMPrePurchase.Environment]
+    public var isForProduction: Swift.Bool {
+      get
+    }
+    public var isForTesting: Swift.Bool {
+      get
+    }
+    public func httpHostString(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Swift.String
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterPrePurchase.TMPrePurchase.Environment, b: TicketmasterPrePurchase.TMPrePurchase.Environment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterPrePurchase.TMPrePurchase.Environment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension TicketmasterPrePurchase.TMPrePurchase.Environment {
+  public init(tmxDeploymentEnvironment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment)
 }
 public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   func prePurchaseViewController(_ viewController: TicketmasterPrePurchase.TMPrePurchaseViewController, didShare pageTitle: Swift.String, and pageURL: Foundation.URL, to activityType: UIKit.UIActivity.ActivityType)
@@ -104,7 +143,7 @@ public protocol TMPrePurchaseAnalyticsDelegate : AnyObject {
   }
   @objc @_Concurrency.MainActor @preconcurrency public func changeLocation(coordinate: CoreLocation.CLLocationCoordinate2D)
   @objc @_Concurrency.MainActor @preconcurrency public func communicateLocationFetchError()
-  @_Concurrency.MainActor @preconcurrency open func handleAttractionResponse(response: TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>)
+  @_Concurrency.MainActor @preconcurrency open func handleAttractionResponse(response: TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>)
   @_Concurrency.MainActor @preconcurrency open func backButtonAction()
   @objc deinit
 }
@@ -150,7 +189,7 @@ extension TicketmasterPrePurchase.TMPrePurchaseViewController {
   @_Concurrency.MainActor @preconcurrency public func imageForCategory(url: Foundation.URL?) -> UIKit.UIImage?
 }
 extension Foundation.URLRequest {
-  public init?(page: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, domain: TicketmasterFoundation.MarketDomain, locale: Foundation.Locale, user: TicketmasterFoundation.TMUser?, requestedQueryParameters: TicketmasterFoundation.URLQueryParameters?, environment: TicketmasterFoundation.ConnectionEnvironment, incomingURL: Foundation.URL? = nil)
+  public init?(page: TicketmasterPrePurchase.TMPrePurchaseViewController.PrePurchasePage, domain: TicketmasterFoundation.MarketDomain, locale: Foundation.Locale, user: TicketmasterFoundation.TMUser?, requestedQueryParameters: TicketmasterFoundation.URLQueryParameters?, environment: TicketmasterPrePurchase.TMPrePurchase.Environment, incomingURL: Foundation.URL? = nil)
 }
 extension TicketmasterFoundation.MarketLocation {
   convenience public init(discoverJsonDictionary: TicketmasterFoundation.JSONDictionary, source: TicketmasterFoundation.LocationSource) throws

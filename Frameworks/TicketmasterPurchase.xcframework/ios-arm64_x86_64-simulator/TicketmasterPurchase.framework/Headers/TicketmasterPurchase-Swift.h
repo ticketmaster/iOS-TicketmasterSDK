@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase10TMPurchase")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSCoder;
 @class NSString;
 @class NSBundle;
@@ -765,6 +766,7 @@ SWIFT_CLASS("_TtC20TicketmasterPurchase10TMPurchase")
 @interface TMPurchase : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @class NSCoder;
 @class NSString;

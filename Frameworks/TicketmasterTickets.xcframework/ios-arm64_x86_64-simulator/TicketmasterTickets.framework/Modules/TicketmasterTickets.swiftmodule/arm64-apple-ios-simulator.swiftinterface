@@ -609,7 +609,6 @@ extension TicketmasterTickets.TMTickets {
     case production
     case alpha
     case beta
-    case appDemo
     case custom(baseUrlString: Swift.String)
     public static var allCases: [TicketmasterTickets.TMTickets.TMWebsiteEnvironment]
     public var keyValue: Swift.String {

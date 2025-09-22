@@ -3228,6 +3228,285 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TipKit",
+        "printedName": "TipKit",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TipDecorating",
+        "printedName": "TipDecorating",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "addToolTip",
+            "printedName": "addToolTip(_:from:style:backgroundColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tip",
+                "printedName": "any TipKit.Tip",
+                "usr": "s:6TipKit0A0P"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIBarButtonItem",
+                "printedName": "UIKit.UIBarButtonItem",
+                "usr": "c:objc(cs)UIBarButtonItem"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TipViewStyle",
+                "printedName": "any TipKit.TipViewStyle",
+                "usr": "s:6TipKit0A9ViewStyleP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20TicketmasterPurchase13TipDecoratingP07addToolC0_4from5style15backgroundColory0C3Kit0C0_p_So15UIBarButtonItemCAH0C9ViewStyle_pSo7UIColorCSgtF",
+            "mangledName": "$s20TicketmasterPurchase13TipDecoratingP07addToolC0_4from5style15backgroundColory0C3Kit0C0_p_So15UIBarButtonItemCAH0C9ViewStyle_pSo7UIColorCSgtF",
+            "moduleName": "TicketmasterPurchase",
+            "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterPurchase.TipDecorating>",
+            "sugared_genericSig": "<Self where Self : TicketmasterPurchase.TipDecorating>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addToolTip",
+            "printedName": "addToolTip(_:from:style:backgroundColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Tip",
+                "printedName": "any TipKit.Tip",
+                "usr": "s:6TipKit0A0P"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIBarButtonItem",
+                "printedName": "UIKit.UIBarButtonItem",
+                "usr": "c:objc(cs)UIBarButtonItem"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TipViewStyle",
+                "printedName": "any TipKit.TipViewStyle",
+                "hasDefaultArg": true,
+                "usr": "s:6TipKit0A9ViewStyleP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20TicketmasterPurchase13TipDecoratingPAAE07addToolC0_4from5style15backgroundColory0C3Kit0C0_p_So15UIBarButtonItemCAH0C9ViewStyle_pSo7UIColorCSgtF",
+            "mangledName": "$s20TicketmasterPurchase13TipDecoratingPAAE07addToolC0_4from5style15backgroundColory0C3Kit0C0_p_So15UIBarButtonItemCAH0C9ViewStyle_pSo7UIColorCSgtF",
+            "moduleName": "TicketmasterPurchase",
+            "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterPurchase.TipDecorating>",
+            "sugared_genericSig": "<Self where Self : TicketmasterPurchase.TipDecorating>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:20TicketmasterPurchase13TipDecoratingP",
+        "mangledName": "$s20TicketmasterPurchase13TipDecoratingP",
+        "moduleName": "TicketmasterPurchase",
+        "genericSig": "<τ_0_0 : UIKit.UIViewController>",
+        "sugared_genericSig": "<Self : UIKit.UIViewController>",
+        "intro_iOS": "17.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HeadlineTipViewStyle",
+        "printedName": "HeadlineTipViewStyle",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HeadlineTipViewStyle",
+                "printedName": "TicketmasterPurchase.HeadlineTipViewStyle",
+                "usr": "s:20TicketmasterPurchase20HeadlineTipViewStyleV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:20TicketmasterPurchase20HeadlineTipViewStyleVACycfc",
+            "mangledName": "$s20TicketmasterPurchase20HeadlineTipViewStyleVACycfc",
+            "moduleName": "TicketmasterPurchase",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeBody",
+            "printedName": "makeBody(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TipViewStyleConfiguration",
+                "printedName": "TipKit.TipViewStyleConfiguration",
+                "usr": "s:6TipKit0A22ViewStyleConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20TicketmasterPurchase20HeadlineTipViewStyleV8makeBody13configurationQr0D3Kit0deF13ConfigurationV_tF",
+            "mangledName": "$s20TicketmasterPurchase20HeadlineTipViewStyleV8makeBody13configurationQr0D3Kit0deF13ConfigurationV_tF",
+            "moduleName": "TicketmasterPurchase",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:20TicketmasterPurchase20HeadlineTipViewStyleV",
+        "mangledName": "$s20TicketmasterPurchase20HeadlineTipViewStyleV",
+        "moduleName": "TicketmasterPurchase",
+        "intro_iOS": "17.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "TipViewStyle",
+            "printedName": "TipViewStyle",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:6TipKit0A9ViewStyleP",
+            "mangledName": "$s6TipKit0A9ViewStyleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3741,14 +4020,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ConnectionEnvironment",
-                "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                "name": "Environment",
+                "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvp",
-            "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvp",
+            "usr": "s:20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvp",
+            "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvp",
             "moduleName": "TicketmasterPurchase",
             "declAttributes": [
               "Final",
@@ -3763,14 +4042,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ConnectionEnvironment",
-                    "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                    "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvg",
-                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvg",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvg",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvg",
                 "moduleName": "TicketmasterPurchase",
                 "declAttributes": [
                   "Final"
@@ -3789,14 +4068,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ConnectionEnvironment",
-                    "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                    "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvs",
-                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvs",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvs",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvs",
                 "moduleName": "TicketmasterPurchase",
                 "declAttributes": [
                   "Final"
@@ -3815,8 +4094,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvM",
-                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environment0A10Foundation21ConnectionEnvironmentOvM",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvM",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11environmentAC11EnvironmentOvM",
                 "moduleName": "TicketmasterPurchase",
                 "implicit": true,
                 "declAttributes": [
@@ -4364,6 +4643,814 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Environment",
+            "printedName": "Environment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "production",
+                "printedName": "production",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO10productionyA2EmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO10productionyA2EmF",
+                "moduleName": "TicketmasterPurchase"
+              },
+              {
+                "kind": "Var",
+                "name": "productionLiveNation",
+                "printedName": "productionLiveNation",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO20productionLiveNationyA2EmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO20productionLiveNationyA2EmF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "alpha",
+                "printedName": "alpha",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO5alphayA2EmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO5alphayA2EmF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "beta",
+                "printedName": "beta",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO4betayA2EmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO4betayA2EmF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "localHost",
+                "printedName": "localHost",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO9localHostyA2EmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO9localHostyA2EmF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "custom",
+                "printedName": "custom",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterPurchase.TMPurchase.Environment.Type) -> (Swift.String) -> TicketmasterPurchase.TMPurchase.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> TicketmasterPurchase.TMPurchase.Environment",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(baseUrlString: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO6customyAESS_tcAEmF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO6customyAESS_tcAEmF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TicketmasterPurchase.TMPurchase.Environment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                        "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvpZ",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvpZ",
+                "moduleName": "TicketmasterPurchase",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterPurchase.TMPurchase.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvgZ",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvgZ",
+                    "moduleName": "TicketmasterPurchase",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterPurchase.TMPurchase.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvsZ",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvsZ",
+                    "moduleName": "TicketmasterPurchase",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvMZ",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8allCasesSayAEGvMZ",
+                    "moduleName": "TicketmasterPurchase",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isForProduction",
+                "printedName": "isForProduction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO15isForProductionSbvp",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO15isForProductionSbvp",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO15isForProductionSbvg",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO15isForProductionSbvg",
+                    "moduleName": "TicketmasterPurchase",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isForTesting",
+                "printedName": "isForTesting",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO12isForTestingSbvp",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO12isForTestingSbvp",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO12isForTestingSbvg",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO12isForTestingSbvg",
+                    "moduleName": "TicketmasterPurchase",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "httpHostString",
+                "printedName": "httpHostString(forMarketDomain:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MarketDomain",
+                    "printedName": "TicketmasterFoundation.MarketDomain",
+                    "usr": "c:@M@TicketmasterFoundation@E@MarketDomain"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO14httpHostString15forMarketDomainSS0A10Foundation0iJ0O_tF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO14httpHostString15forMarketDomainSS0A10Foundation0iJ0O_tF",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "keyValue",
+                "printedName": "keyValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueSSvp",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueSSvp",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueSSvg",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueSSvg",
+                    "moduleName": "TicketmasterPurchase",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(keyValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueAESS_tcfc",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO8keyValueAESS_tcfc",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO6encode2toys7Encoder_p_tKF",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO9hashValueSivp",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO9hashValueSivp",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO9hashValueSivg",
+                    "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO9hashValueSivg",
+                    "moduleName": "TicketmasterPurchase",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO4hash4intoys6HasherVz_tF",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO2eeoiySbAE_AEtFZ",
+                "moduleName": "TicketmasterPurchase",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(tmxDeploymentEnvironment:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                    "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TMXDeploymentEnvironment",
+                    "printedName": "TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment",
+                    "usr": "s:26TicketmasterAuthentication16TMAuthenticationC24TMXDeploymentEnvironmentO"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO013tmxDeploymentD0AE0A14Authentication16TMAuthenticationC013TMXDeploymentD0O_tcfc",
+                "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO013tmxDeploymentD0AE0A14Authentication16TMAuthenticationC013TMXDeploymentD0O_tcfc",
+                "moduleName": "TicketmasterPurchase",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO",
+            "mangledName": "$s20TicketmasterPurchase10TMPurchaseC11EnvironmentO",
+            "moduleName": "TicketmasterPurchase",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterPurchase.TMPurchase.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterPurchase.TMPurchase.Environment",
+                            "usr": "s:20TicketmasterPurchase10TMPurchaseC11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -8216,6 +9303,37 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterAuthentication",
+        "printedName": "TicketmasterAuthentication",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterDiscoveryAPI",
+        "printedName": "TicketmasterDiscoveryAPI",
+        "declKind": "Import",
+        "moduleName": "TicketmasterPurchase"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -10796,7 +11914,10 @@
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
-        "moduleName": "TicketmasterPurchase"
+        "moduleName": "TicketmasterPurchase",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "Import",
@@ -11392,6 +12513,112 @@
         "children": [
           {
             "kind": "Var",
+            "name": "discoveryDelegate",
+            "printedName": "discoveryDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any TicketmasterDiscoveryAPI.TMDiscoveryDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvp",
+            "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvp",
+            "moduleName": "TicketmasterPurchase",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any TicketmasterDiscoveryAPI.TMDiscoveryDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TMDiscoveryDelegate",
+                        "printedName": "any TicketmasterDiscoveryAPI.TMDiscoveryDelegate",
+                        "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvg",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvg",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any TicketmasterDiscoveryAPI.TMDiscoveryDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TMDiscoveryDelegate",
+                        "printedName": "any TicketmasterDiscoveryAPI.TMDiscoveryDelegate",
+                        "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvs",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvs",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvM",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseNavigationControllerC17discoveryDelegate0A12DiscoveryAPI011TMDiscoveryG0_pSgvM",
+                "moduleName": "TicketmasterPurchase",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "purchaseMarketDomain",
             "printedName": "purchaseMarketDomain",
             "children": [
@@ -11419,8 +12646,7 @@
               "Preconcurrency",
               "Custom",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -12816,1444 +14042,1458 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 496,
       "length": 14,
       "value": "\"batch_params\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 541,
       "length": 14,
       "value": "\"event_params\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 11,
       "value": "\"Braintree\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 926,
       "length": 12,
       "value": "\"event_name\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 968,
       "length": 3,
       "value": "\"t\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1002,
       "length": 13,
       "value": "\"tenant_name\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1254,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1369,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1517,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1595,
       "length": 16,
       "value": "\"popupbridgesdk\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1662,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 1915,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "IntegerLiteral",
       "offset": 2011,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2211,
       "length": 15,
       "value": "\"mobile-native\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "BooleanLiteral",
       "offset": 2370,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2530,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2746,
       "length": 19,
       "value": "\"Carthage or Other\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2837,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2961,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 2997,
       "length": 10,
       "value": "\"app_name\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3044,
       "length": 11,
       "value": "\"c_sdk_ver\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3084,
       "length": 11,
       "value": "\"client_os\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3125,
       "length": 6,
       "value": "\"comp\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3170,
       "length": 21,
       "value": "\"device_manufacturer\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3223,
       "length": 21,
       "value": "\"mobile_device_model\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3276,
       "length": 14,
       "value": "\"event_source\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3322,
       "length": 14,
       "value": "\"is_simulator\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3375,
       "length": 6,
       "value": "\"mapv\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3416,
       "length": 21,
       "value": "\"ios_package_manager\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/FPTIBatchData.swift",
       "kind": "StringLiteral",
       "offset": 3493,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/MFOL\/MFOLCheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/MFOL\/MFOLCheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 812,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/PopupBridgeConstants.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/PopupBridgeConstants.swift",
       "kind": "StringLiteral",
       "offset": 92,
       "length": 22,
       "value": "\"sdk.ios.popup-bridge\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 622,
       "length": 32,
       "value": "\"TMPurchaseNavigationController\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "IntegerLiteral",
       "offset": 662,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 704,
       "length": 54,
       "value": "\"TMPurchaseNavigationController.oAuthDelegate not set\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 834,
       "length": 32,
       "value": "\"TMPurchaseNavigationController\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "IntegerLiteral",
       "offset": 874,
       "length": 2,
       "value": "-2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 916,
       "length": 40,
       "value": "\"TMPurchaseNavigationController not set\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 32,
       "value": "\"TMPurchaseNavigationController\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "IntegerLiteral",
       "offset": 1048,
       "length": 2,
       "value": "-3"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseLoginManager+UFC.swift",
       "kind": "StringLiteral",
       "offset": 1090,
       "length": 23,
       "value": "\"MFA Challenge Aborted\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 464,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 3,
       "value": "\"_\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 596,
       "length": 14,
       "value": "\"Purchase SDK\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 43,
       "value": "\"com.ticketmaster.ios.TicketmasterPurchase\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/AnalyticsVariables.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController+NavBarUI.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController+NavBarUI.swift",
       "kind": "IntegerLiteral",
       "offset": 2101,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 6,
       "value": "\"Done\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/DoneOrCancelBarButtonItem.swift",
       "kind": "StringLiteral",
       "offset": 682,
       "length": 9,
       "value": "\"Dismiss\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutConfirming.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutConfirming.swift",
       "kind": "StringLiteral",
       "offset": 1413,
       "length": 31,
       "value": "\"TMConfirmPurchaseNotification\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutConfirming.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutConfirming.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 30,
       "value": "\"TMConfirmationURLUserInfoKey\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "BooleanLiteral",
       "offset": 201,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "StringLiteral",
       "offset": 368,
       "length": 16,
       "value": "\"POPPopupBridge\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 15,
       "value": "\"popupbridgev1\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "StringLiteral",
       "offset": 499,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "StringLiteral",
       "offset": 510,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/POPPopupBridge.swift",
       "kind": "BooleanLiteral",
-      "offset": 1377,
+      "offset": 1371,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "StringLiteral",
       "offset": 682,
       "length": 23,
       "value": "\"Avenir Next Demi Bold\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "FloatLiteral",
       "offset": 713,
       "length": 4,
       "value": "16.0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 21,
       "value": "\"Avenir Next Regular\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "FloatLiteral",
       "offset": 939,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 1184,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 1236,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "Array",
       "offset": 1659,
       "length": 18,
       "value": "[0, 0.04, 0.96, 1]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 1863,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 1869,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 4728,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 4768,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 4796,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "BooleanLiteral",
       "offset": 4836,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5156,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5162,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5267,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5309,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5427,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5453,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5486,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5528,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5534,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5658,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5684,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/TwoLineTitleView.swift",
       "kind": "IntegerLiteral",
       "offset": 5720,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
       "kind": "Array",
       "offset": 1264,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
       "kind": "Array",
       "offset": 2097,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/PurchaseConfiguationManager.swift",
       "kind": "StringLiteral",
       "offset": 2450,
       "length": 3,
       "value": "\"6\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController+Tips.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 16,
+      "value": "\"watchlistColor\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
       "kind": "StringLiteral",
       "offset": 1192,
       "length": 10,
       "value": "\"Checkout\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1297,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1354,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1524,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/CheckoutViewController\/CheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1567,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
       "offset": 711,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6346,
+      "offset": 6343,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6356,
+      "offset": 6353,
       "length": 3,
       "value": "156"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6360,
+      "offset": 6357,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6371,
+      "offset": 6368,
       "length": 3,
       "value": "222"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6375,
+      "offset": 6372,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "IntegerLiteral",
-      "offset": 6387,
+      "offset": 6384,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 6618,
+      "offset": 6615,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7300,
+      "offset": 7297,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase.swift",
       "kind": "BooleanLiteral",
-      "offset": 7742,
+      "offset": 7739,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1563,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "StringLiteral",
       "offset": 1799,
       "length": 19,
       "value": "\"WebViewController\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2202,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2278,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/WebViewController\/WebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2433,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseOrder.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseOrder.swift",
       "kind": "BooleanLiteral",
-      "offset": 3029,
+      "offset": 3025,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
       "kind": "StringLiteral",
       "offset": 335,
       "length": 10,
       "value": "\"MMddyyyy\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
       "kind": "StringLiteral",
       "offset": 518,
       "length": 12,
       "value": "\"MM\/dd\/yyyy\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/DateFormatter+Format.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Analytics\/GoogleAnalyticsService+Shared.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Analytics\/GoogleAnalyticsService+Shared.swift",
       "kind": "StringLiteral",
       "offset": 270,
       "length": 16,
       "value": "\"UA-60025178-19\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Analytics\/GoogleAnalyticsService+Shared.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Analytics\/GoogleAnalyticsService+Shared.swift",
       "kind": "StringLiteral",
       "offset": 333,
       "length": 16,
       "value": "\"UA-60025178-20\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/CountdownTimerBarItem.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/Views\/CountdownTimerBarItem.swift",
       "kind": "StringLiteral",
       "offset": 230,
       "length": 16,
       "value": "\"expirationTime\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchase+Environment.swift",
+      "kind": "StringLiteral",
+      "offset": 2314,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 58,
       "length": 22,
       "value": "\"popup-bridge:started\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 108,
       "length": 24,
       "value": "\"popup-bridge:succeeded\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 157,
       "length": 21,
       "value": "\"popup-bridge:failed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/PopupBridgeAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 205,
       "length": 23,
       "value": "\"popup-bridge:canceled\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1130,
-      "length": 21,
-      "value": "\"favoriteFilled_icon\""
-    },
-    {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1198,
-      "length": 20,
-      "value": "\"favoriteEmpty_icon\""
-    },
-    {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 947,
+      "offset": 1533,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2082,
+      "offset": 2536,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2141,
+      "offset": 2595,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPEventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2187,
+      "offset": 2641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/StealthCommunicator.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/StealthCommunicator.swift",
       "kind": "StringLiteral",
       "offset": 338,
       "length": 18,
       "value": "\"PurchaseSDKToApp\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/StealthCommunicator.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Managers\/StealthCommunicator.swift",
       "kind": "StringLiteral",
       "offset": 377,
       "length": 18,
       "value": "\"AppToPurchaseSDK\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 704,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 798,
+      "offset": 922,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ViewControllers\/EventDetailsViewController\/EventDetailsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1016,
+      "offset": 1140,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 923,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 993,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCheckoutViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1187,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/AnalyticsService.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/Analytics\/AnalyticsService.swift",
       "kind": "StringLiteral",
       "offset": 303,
       "length": 49,
       "value": "\"https:\/\/api.paypal.com\/v1\/tracking\/batch\/events\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 9,
       "value": "\"onError\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 23,
       "value": "\"onTicketListDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 538,
       "length": 17,
       "value": "\"onSeatMapOpened\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 17,
       "value": "\"onSeatMapClosed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 635,
       "length": 24,
       "value": "\"onTicketOfferDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 689,
       "length": 19,
       "value": "\"onQuickPickOpened\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 19,
       "value": "\"onQuickPickClosed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 973,
       "length": 29,
       "value": "\"onCartExpirationTimerUpdate\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 20,
       "value": "\"onUpsellsDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1085,
       "length": 21,
       "value": "\"onShippingDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1137,
       "length": 20,
       "value": "\"onBillingDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1195,
       "length": 27,
       "value": "\"onTicketPurchaseCompleted\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1257,
       "length": 24,
       "value": "\"onTicketPurchaseFailed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1478,
       "length": 25,
       "value": "\"onOrderDetailsDisplayed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1530,
       "length": 16,
       "value": "\"onOrdersLoaded\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1578,
       "length": 21,
       "value": "\"presentOrderDetails\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1625,
       "length": 23,
       "value": "\"displayAppleWalletBtn\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1980,
       "length": 18,
       "value": "\"onEditCardSubmit\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2026,
       "length": 17,
       "value": "\"onAddCardSubmit\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2074,
       "length": 20,
       "value": "\"onDeleteCardSubmit\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2123,
       "length": 18,
       "value": "\"onEditCardFailed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2169,
       "length": 17,
       "value": "\"onAddCardFailed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2217,
       "length": 20,
       "value": "\"onDeleteCardFailed\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2267,
       "length": 19,
       "value": "\"onEditCardSuccess\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2315,
       "length": 18,
       "value": "\"onAddCardSuccess\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPCallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2365,
       "length": 21,
       "value": "\"onDeleteCardSuccess\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 820,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1666,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1782,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1988,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2166,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2313,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2454,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "Dictionary",
       "offset": 2779,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "Dictionary",
       "offset": 2959,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 328,
       "length": 16,
       "value": "\"startAnimating\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 15,
       "value": "\"stopAnimating\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 14,
       "value": "\"presentError\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 10,
       "value": "\"viewList\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 803,
       "length": 9,
       "value": "\"viewMap\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 838,
       "length": 15,
       "value": "\"viewOfferCard\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 880,
       "length": 16,
       "value": "\"closeOfferCard\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 935,
       "length": 23,
       "value": "\"appviewEnableCalendar\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 985,
       "length": 16,
       "value": "\"appviewSpaLoad\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 13,
       "value": "\"viewQueueIt\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1326,
       "length": 30,
       "value": "\"cartExpirationTimerDidUpdate\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 13,
       "value": "\"viewUpsells\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1418,
       "length": 14,
       "value": "\"viewShipping\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1456,
       "length": 13,
       "value": "\"viewBilling\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1498,
       "length": 18,
       "value": "\"didCompleteOrder\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1544,
       "length": 17,
       "value": "\"appviewSetValue\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1593,
       "length": 21,
       "value": "\"appviewGoToMyEvents\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1686,
       "length": 32,
       "value": "\"appviewCheckoutOpenExternalURL\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1775,
       "length": 17,
       "value": "\"appviewSetTitle\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 1819,
       "length": 16,
       "value": "\"appviewOpenURL\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/DataStructures\/CallbackMessage.swift",
       "kind": "StringLiteral",
       "offset": 2047,
       "length": 13,
       "value": "\"checkoutURL\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/WebAuthenticationSession.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Dependencies\/PopupBridge\/WebAuthenticationSession.swift",
       "kind": "BooleanLiteral",
       "offset": 202,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 296,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 556,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 810,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/ICCP\/ICCPWebViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 911,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/URL+EventDetailsWebPage.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Extensions\/URL+EventDetailsWebPage.swift",
       "kind": "BooleanLiteral",
       "offset": 499,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10473,
+      "offset": 10775,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseNavigationController.swift",
       "kind": "Dictionary",
-      "offset": 12472,
+      "offset": 12774,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 14,
       "value": "\"back_chevron\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 885,
+      "offset": 876,
+      "length": 10,
+      "value": "\"bookmark\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1025,
+      "length": 17,
+      "value": "\"bookmark_filled\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1177,
       "length": 15,
       "value": "\"calendar_icon\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 1337,
       "length": 20,
       "value": "\"favoriteEmpty_icon\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1221,
+      "offset": 1513,
       "length": 26,
       "value": "\"favoriteEmpty_icon_white\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1394,
+      "offset": 1686,
       "length": 21,
       "value": "\"favoriteFilled_icon\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1573,
+      "offset": 1865,
       "length": 27,
       "value": "\"favoriteFilled_icon_white\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1727,
+      "offset": 2019,
       "length": 11,
       "value": "\"info_icon\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1867,
+      "offset": 2159,
       "length": 12,
       "value": "\"share_icon\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-fvnhmuoujtfgnyekycokezlmjgxg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/jonathan.backer\/Library\/Developer\/Xcode\/DerivedData\/TicketmasterPurchase-glikribqhlxkoagyaqypyajyappi\/Build\/Intermediates.noindex\/ArchiveIntermediates\/TicketmasterPurchase\/IntermediateBuildFilesPath\/TicketmasterPurchase.build\/Release-maccatalyst\/TicketmasterPurchase.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2008,
+      "offset": 2300,
       "length": 12,
       "value": "\"video_icon\""
     }

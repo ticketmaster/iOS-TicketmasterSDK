@@ -39,23 +39,6 @@
         "moduleName": "TicketmasterDiscoveryAPI"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TicketmasterDiscoveryAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TicketmasterFoundation",
-        "printedName": "TicketmasterFoundation",
-        "declKind": "Import",
-        "moduleName": "TicketmasterDiscoveryAPI"
-      },
-      {
         "kind": "TypeDecl",
         "name": "DiscoveryPromoter",
         "printedName": "DiscoveryPromoter",
@@ -3686,6 +3669,141 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "excludes",
+            "printedName": "excludes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvs",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvs",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvM",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B19EventSearchCriteriaV8excludesSaySSGSgvM",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "EventSort",
             "printedName": "EventSort",
@@ -4282,23 +4400,6 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "TicketmasterDiscoveryAPI",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TicketmasterFoundation",
-        "printedName": "TicketmasterFoundation",
-        "declKind": "Import",
-        "moduleName": "TicketmasterDiscoveryAPI"
       },
       {
         "kind": "Import",
@@ -6052,9 +6153,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ConnectionEnvironment",
-                "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                "name": "Environment",
+                "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
               },
               {
                 "kind": "TypeNominal",
@@ -6070,8 +6171,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11environment6domain6apiKeyAC0A10Foundation21ConnectionEnvironmentO_AG12MarketDomainOSStcfc",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11environment6domain6apiKeyAC0A10Foundation21ConnectionEnvironmentO_AG12MarketDomainOSStcfc",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11environment6domain6apiKeyAcA011TMDiscoveryC0C11EnvironmentO_0A10Foundation12MarketDomainOSStcfc",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11environment6domain6apiKeyAcA011TMDiscoveryC0C11EnvironmentO_0A10Foundation12MarketDomainOSStcfc",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "Convenience",
@@ -6079,6 +6180,37 @@
               "RawDocComment"
             ],
             "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "hostURL",
+            "printedName": "hostURL()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC7hostURL10Foundation0F0VSgyF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC7hostURL10Foundation0F0VSgyF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "overriding": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -6128,6 +6260,59 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(configuration:securityExceptionHosts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryService",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryService",
+                "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC13configuration22securityExceptionHostsACSo25NSURLSessionConfigurationC_SaySSGSgtcfc",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC13configuration22securityExceptionHostsACSo25NSURLSessionConfigurationC_SaySSGSgtcfc",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(connectionDriver:)",
             "children": [
               {
@@ -6173,7 +6358,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6183,7 +6368,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6192,14 +6377,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B5VenueV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B5VenueVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B5VenueVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5VenueVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5VenueVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6226,7 +6411,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6236,7 +6421,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6245,14 +6430,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B5VenueV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B5VenueVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B5VenueVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5VenueVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5VenueVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6287,7 +6472,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6297,7 +6482,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6314,14 +6499,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B5VenueVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B5VenueVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5VenueVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5VenueVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6356,7 +6541,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6366,7 +6551,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryVenue]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6383,14 +6568,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B5VenueVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B5VenueVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5VenueVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12venueDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5VenueVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6565,7 +6750,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6575,7 +6760,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6592,14 +6777,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOySayAA0B13ImageMetadataVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOySayAA0B13ImageMetadataVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B13ImageMetadataVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B13ImageMetadataVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6626,7 +6811,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6636,7 +6821,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryImageMetadata]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6653,14 +6838,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOySayAA0B13ImageMetadataVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOySayAA0B13ImageMetadataVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B13ImageMetadataVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B13ImageMetadataVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6695,7 +6880,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6705,7 +6890,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6736,14 +6921,14 @@
                         "usr": "s:SD"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySDySSSayAA0B13ImageMetadataVGGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySDySSSayAA0B13ImageMetadataVGGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SDySSSayAA0B13ImageMetadataVGGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SDySSSayAA0B13ImageMetadataVGGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -6778,7 +6963,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -6788,7 +6973,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[Swift.String : [TicketmasterDiscoveryAPI.DiscoveryImageMetadata]]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6819,14 +7004,14 @@
                         "usr": "s:SD"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySDySSSayAA0B13ImageMetadataVGGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySDySSSayAA0B13ImageMetadataVGGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SDySSSayAA0B13ImageMetadataVGGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventImages_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SDySSSayAA0B13ImageMetadataVGGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7054,7 +7239,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7064,12 +7249,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaginatedResponse",
-                        "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
+                        "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7078,17 +7263,17 @@
                             "usr": "s:24TicketmasterDiscoveryAPI0B5VenueV"
                           }
                         ],
-                        "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                        "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch_10completionSo16NSURLSessionTaskCSgAA0b5VenueF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch_10completionSo16NSURLSessionTaskCSgAA0b5VenueF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch_10completionSo16NSURLSessionTaskCSgAA0b5VenueF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch_10completionSo16NSURLSessionTaskCSgAA0b5VenueF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "DiscardableResult",
@@ -7105,7 +7290,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "PaginatedResponse",
-                "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
+                "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryVenue>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7114,7 +7299,7 @@
                     "usr": "s:24TicketmasterDiscoveryAPI0B5VenueV"
                   }
                 ],
-                "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -7124,8 +7309,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch8criteria0A10Foundation17PaginatedResponseVyAA0B5VenueVGAA0bkF8CriteriaV_tYaKF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch8criteria0A10Foundation17PaginatedResponseVyAA0B5VenueVGAA0bkF8CriteriaV_tYaKF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B5VenueVGAA0bmF8CriteriaV_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11venueSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B5VenueVGAA0bmF8CriteriaV_tYaKF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7168,7 +7353,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7178,7 +7363,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7187,14 +7372,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B14ClassificationV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation11APIResponseOyAA0B14ClassificationVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation07NetworkD0C11APIResponseOy_AA0B14ClassificationVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC21classificationDetails_6locale10completionyAA0B10IdentifierV_SSSgy0A10Foundation07NetworkD0C11APIResponseOy_AA0B14ClassificationVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7233,6 +7418,88 @@
           },
           {
             "kind": "Function",
+            "name": "cityDetails",
+            "printedName": "cityDetails(cityName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryCity",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryCity",
+                "usr": "s:24TicketmasterDiscoveryAPI0B4CityV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11cityDetails0E4NameAA0B4CityVSS_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11cityDetails0E4NameAA0B4CityVSS_tYaKF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cityDetails",
+            "printedName": "cityDetails(cityName:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryCity>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIResponse",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryCity>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DiscoveryCity",
+                        "printedName": "TicketmasterDiscoveryAPI.DiscoveryCity",
+                        "usr": "s:24TicketmasterDiscoveryAPI0B4CityV"
+                      }
+                    ],
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11cityDetails0E4Name10completionySS_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B4CityVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11cityDetails0E4Name10completionySS_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B4CityVGctF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "classificationSearch",
             "printedName": "classificationSearch(_:completion:)",
             "children": [
@@ -7259,7 +7526,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7269,12 +7536,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaginatedResponse",
-                        "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
+                        "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7283,17 +7550,17 @@
                             "usr": "s:24TicketmasterDiscoveryAPI0B14ClassificationV"
                           }
                         ],
-                        "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                        "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch_10completionSo16NSURLSessionTaskCSgAA0b14ClassificationF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch_10completionSo16NSURLSessionTaskCSgAA0b14ClassificationF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch_10completionSo16NSURLSessionTaskCSgAA0b14ClassificationF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch_10completionSo16NSURLSessionTaskCSgAA0b14ClassificationF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "DiscardableResult",
@@ -7310,7 +7577,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "PaginatedResponse",
-                "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
+                "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryClassification>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7319,7 +7586,7 @@
                     "usr": "s:24TicketmasterDiscoveryAPI0B14ClassificationV"
                   }
                 ],
-                "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -7329,8 +7596,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch8criteria0A10Foundation17PaginatedResponseVyAA0B14ClassificationVGAA0bkF8CriteriaV_tYaKF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch8criteria0A10Foundation17PaginatedResponseVyAA0B14ClassificationVGAA0bkF8CriteriaV_tYaKF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B14ClassificationVGAA0bmF8CriteriaV_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC20classificationSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B14ClassificationVGAA0bmF8CriteriaV_tYaKF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7367,7 +7634,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7377,12 +7644,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaginatedResponse",
-                        "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
+                        "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -7391,17 +7658,17 @@
                             "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
                           }
                         ],
-                        "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                        "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch_10completionSo16NSURLSessionTaskCSgAA0b5EventF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch_10completionSo16NSURLSessionTaskCSgAA0b5EventF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch_10completionSo16NSURLSessionTaskCSgAA0b5EventF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch_10completionSo16NSURLSessionTaskCSgAA0b5EventF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "DiscardableResult",
@@ -7418,7 +7685,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "PaginatedResponse",
-                "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
+                "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7427,7 +7694,7 @@
                     "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
                   }
                 ],
-                "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -7437,8 +7704,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch8criteria0A10Foundation17PaginatedResponseVyAA0B5EventVGAA0bkF8CriteriaV_tYaKF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch8criteria0A10Foundation17PaginatedResponseVyAA0B5EventVGAA0bkF8CriteriaV_tYaKF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B5EventVGAA0bmF8CriteriaV_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC11eventSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B5EventVGAA0bmF8CriteriaV_tYaKF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7466,7 +7733,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7476,7 +7743,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7485,14 +7752,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySS_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySS_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySS_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySS_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7519,7 +7786,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7529,7 +7796,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7538,14 +7805,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7572,7 +7839,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7582,7 +7849,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryEvent>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7591,14 +7858,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B5EventVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B5EventVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7633,7 +7900,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7643,7 +7910,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7660,14 +7927,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B5EventVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B5EventVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5EventVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5EventVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7702,7 +7969,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7712,7 +7979,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryEvent]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7729,14 +7996,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B5EventVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B5EventVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5EventVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC12eventDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B5EventVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7940,7 +8207,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -7950,7 +8217,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7959,14 +8226,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B10AttractionV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B10AttractionVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA0B10IdentifierV_y0A10Foundation11APIResponseOyAA0B10AttractionVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B10AttractionVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA0B10IdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B10AttractionVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -7993,7 +8260,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8003,7 +8270,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -8012,14 +8279,14 @@
                         "usr": "s:24TicketmasterDiscoveryAPI0B10AttractionV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B10AttractionVGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation11APIResponseOyAA0B10AttractionVGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B10AttractionVGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionyAA20LegacyHostIdentifierV_y0A10Foundation07NetworkD0C11APIResponseOy_AA0B10AttractionVGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -8054,7 +8321,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8064,7 +8331,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -8081,14 +8348,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B10AttractionVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation11APIResponseOySayAA0B10AttractionVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B10AttractionVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA0B10IdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B10AttractionVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -8123,7 +8390,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8133,7 +8400,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<[TicketmasterDiscoveryAPI.DiscoveryAttraction]>",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -8150,14 +8417,14 @@
                         "usr": "s:Sa"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B10AttractionVGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation11APIResponseOySayAA0B10AttractionVGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B10AttractionVGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC17attractionDetails_10completionySayAA20LegacyHostIdentifierVG_y0A10Foundation07NetworkD0C11APIResponseOy_SayAA0B10AttractionVGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -8341,7 +8608,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>>) -> ()",
+                "printedName": "(TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8351,12 +8618,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "APIResponse",
-                    "printedName": "TicketmasterFoundation.APIResponse<TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>>",
+                    "printedName": "TicketmasterFoundation.NetworkService.APIResponse<TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>>",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaginatedResponse",
-                        "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
+                        "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -8365,17 +8632,17 @@
                             "usr": "s:24TicketmasterDiscoveryAPI0B10AttractionV"
                           }
                         ],
-                        "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                        "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
                       }
                     ],
-                    "usr": "s:22TicketmasterFoundation11APIResponseO"
+                    "usr": "s:22TicketmasterFoundation14NetworkServiceC11APIResponseO"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch_10completionSo16NSURLSessionTaskCSgAA0b10AttractionF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch_10completionSo16NSURLSessionTaskCSgAA0b10AttractionF8CriteriaV_y0A10Foundation11APIResponseOyAK17PaginatedResponseVyAA0bJ0VGGctF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch_10completionSo16NSURLSessionTaskCSgAA0b10AttractionF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch_10completionSo16NSURLSessionTaskCSgAA0b10AttractionF8CriteriaV_y0A10Foundation07NetworkD0C11APIResponseOy_AK16ConnectionDriverC17PaginatedResponseVy_AA0bJ0VGGctF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "DiscardableResult",
@@ -8392,7 +8659,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "PaginatedResponse",
-                "printedName": "TicketmasterFoundation.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
+                "printedName": "TicketmasterFoundation.ConnectionDriver.PaginatedResponse<TicketmasterDiscoveryAPI.DiscoveryAttraction>",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -8401,7 +8668,7 @@
                     "usr": "s:24TicketmasterDiscoveryAPI0B10AttractionV"
                   }
                 ],
-                "usr": "s:22TicketmasterFoundation17PaginatedResponseV"
+                "usr": "s:22TicketmasterFoundation16ConnectionDriverC17PaginatedResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -8411,8 +8678,37 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch8criteria0A10Foundation17PaginatedResponseVyAA0B10AttractionVGAA0bkF8CriteriaV_tYaKF",
-            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch8criteria0A10Foundation17PaginatedResponseVyAA0B10AttractionVGAA0bkF8CriteriaV_tYaKF",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B10AttractionVGAA0bmF8CriteriaV_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC16attractionSearch8criteria0A10Foundation16ConnectionDriverC17PaginatedResponseVy_AA0B10AttractionVGAA0bmF8CriteriaV_tYaKF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "suggestionSearch",
+            "printedName": "suggestionSearch(criteria:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoverySuggestResponse",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoverySuggestResponse",
+                "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoverySuggestCriteria",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoverySuggestCriteria",
+                "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI0B7ServiceC16suggestionSearch8criteriaAA0B15SuggestResponseVAA0bH8CriteriaV_tYaKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B7ServiceC16suggestionSearch8criteriaAA0B15SuggestResponseVAA0bH8CriteriaV_tYaKF",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "RawDocComment"
@@ -8862,14 +9158,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ConnectionEnvironment",
-                "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                "name": "Environment",
+                "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvp",
-            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvp",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvp",
             "moduleName": "TicketmasterDiscoveryAPI",
             "declAttributes": [
               "Final",
@@ -8884,14 +9180,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ConnectionEnvironment",
-                    "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                    "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvg",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvg",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvg",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "declAttributes": [
                   "Final"
@@ -8910,14 +9206,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ConnectionEnvironment",
-                    "printedName": "TicketmasterFoundation.ConnectionEnvironment",
-                    "usr": "s:22TicketmasterFoundation21ConnectionEnvironmentO"
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvs",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvs",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvs",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvs",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "declAttributes": [
                   "Final"
@@ -8936,8 +9232,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvM",
-                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environment0A10Foundation21ConnectionEnvironmentOvM",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvM",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11environmentAC11EnvironmentOvM",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "implicit": true,
                 "declAttributes": [
@@ -9210,6 +9506,643 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Environment",
+            "printedName": "Environment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "production",
+                "printedName": "production",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type) -> TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                        "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO10productionyA2EmF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO10productionyA2EmF",
+                "moduleName": "TicketmasterDiscoveryAPI"
+              },
+              {
+                "kind": "Var",
+                "name": "preProduction",
+                "printedName": "preProduction",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type) -> TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                        "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO13preProductionyA2EmF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO13preProductionyA2EmF",
+                "moduleName": "TicketmasterDiscoveryAPI"
+              },
+              {
+                "kind": "Var",
+                "name": "qa",
+                "printedName": "qa",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type) -> TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                        "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO2qayA2EmF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO2qayA2EmF",
+                "moduleName": "TicketmasterDiscoveryAPI"
+              },
+              {
+                "kind": "Var",
+                "name": "custom",
+                "printedName": "custom",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type) -> (Swift.String) -> TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(baseUrlString: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO6customyAESS_tcAEmF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO6customyAESS_tcAEmF",
+                "moduleName": "TicketmasterDiscoveryAPI"
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                        "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvpZ",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvpZ",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvgZ",
+                    "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvgZ",
+                    "moduleName": "TicketmasterDiscoveryAPI",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvsZ",
+                    "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvsZ",
+                    "moduleName": "TicketmasterDiscoveryAPI",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvMZ",
+                    "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8allCasesSayAEGvMZ",
+                    "moduleName": "TicketmasterDiscoveryAPI",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "keyValue",
+                "printedName": "keyValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueSSvp",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueSSvp",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueSSvg",
+                    "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueSSvg",
+                    "moduleName": "TicketmasterDiscoveryAPI",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(keyValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueAESS_tcfc",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO8keyValueAESS_tcfc",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "httpHostString",
+                "printedName": "httpHostString(forMarketDomain:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MarketDomain",
+                    "printedName": "TicketmasterFoundation.MarketDomain",
+                    "usr": "c:@M@TicketmasterFoundation@E@MarketDomain"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO14httpHostString15forMarketDomainSS0A10Foundation0jK0O_tF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO14httpHostString15forMarketDomainSS0A10Foundation0jK0O_tF",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO6encode2toys7Encoder_p_tKF",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO9hashValueSivp",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO9hashValueSivp",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO9hashValueSivg",
+                    "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO9hashValueSivg",
+                    "moduleName": "TicketmasterDiscoveryAPI",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO4hash4intoys6HasherVz_tF",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO2eeoiySbAE_AEtFZ",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(tmxDeploymentEnvironment:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                    "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TMXDeploymentEnvironment",
+                    "printedName": "TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment",
+                    "usr": "s:26TicketmasterAuthentication16TMAuthenticationC24TMXDeploymentEnvironmentO"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO013tmxDeploymentE0AE0A14Authentication16TMAuthenticationC013TMXDeploymentE0O_tcfc",
+                "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO013tmxDeploymentE0AE0A14Authentication16TMAuthenticationC013TMXDeploymentE0O_tcfc",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "isFromExtension": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO",
+            "mangledName": "$s24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Environment",
+                            "printedName": "TicketmasterDiscoveryAPI.TMDiscoveryAPI.Environment",
+                            "usr": "s:24TicketmasterDiscoveryAPI011TMDiscoveryC0C11EnvironmentO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -9629,6 +10562,23 @@
             "mangledName": "$s22TicketmasterFoundation17InitJSONThrowableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI"
       },
       {
         "kind": "Import",
@@ -10123,6 +11073,566 @@
             "printedName": "InitJSONThrowable",
             "usr": "s:22TicketmasterFoundation17InitJSONThrowableP",
             "mangledName": "$s22TicketmasterFoundation17InitJSONThrowableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DiscoveryCity",
+        "printedName": "DiscoveryCity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI0B4CityV4nameSSvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV4nameSSvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B4CityV4nameSSvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV4nameSSvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "header",
+            "printedName": "header",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Header",
+                "printedName": "TicketmasterDiscoveryAPI.Header",
+                "usr": "s:24TicketmasterDiscoveryAPI6HeaderV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI0B4CityV6headerAA6HeaderVvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV6headerAA6HeaderVvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Header",
+                    "printedName": "TicketmasterDiscoveryAPI.Header",
+                    "usr": "s:24TicketmasterDiscoveryAPI6HeaderV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B4CityV6headerAA6HeaderVvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV6headerAA6HeaderVvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryCity",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryCity",
+                "usr": "s:24TicketmasterDiscoveryAPI0B4CityV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24TicketmasterDiscoveryAPI0B4CityV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI0B4CityV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:24TicketmasterDiscoveryAPI0B4CityV",
+        "mangledName": "$s24TicketmasterDiscoveryAPI0B4CityV",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Header",
+        "printedName": "Header",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI6HeaderV11descriptionSSvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV11descriptionSSvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI6HeaderV11descriptionSSvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV11descriptionSSvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CityImage",
+                "printedName": "TicketmasterDiscoveryAPI.CityImage",
+                "usr": "s:24TicketmasterDiscoveryAPI9CityImageV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI6HeaderV5imageAA9CityImageVvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV5imageAA9CityImageVvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CityImage",
+                    "printedName": "TicketmasterDiscoveryAPI.CityImage",
+                    "usr": "s:24TicketmasterDiscoveryAPI9CityImageV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI6HeaderV5imageAA9CityImageVvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV5imageAA9CityImageVvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Header",
+                "printedName": "TicketmasterDiscoveryAPI.Header",
+                "usr": "s:24TicketmasterDiscoveryAPI6HeaderV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24TicketmasterDiscoveryAPI6HeaderV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI6HeaderV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:24TicketmasterDiscoveryAPI6HeaderV",
+        "mangledName": "$s24TicketmasterDiscoveryAPI6HeaderV",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CityImage",
+        "printedName": "CityImage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "largeHighRes",
+            "printedName": "largeHighRes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI9CityImageV12largeHighResSSvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV12largeHighResSSvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI9CityImageV12largeHighResSSvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV12largeHighResSSvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "smallHighRes",
+            "printedName": "smallHighRes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI9CityImageV12smallHighResSSvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV12smallHighResSSvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI9CityImageV12smallHighResSSvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV12smallHighResSSvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CityImage",
+                "printedName": "TicketmasterDiscoveryAPI.CityImage",
+                "usr": "s:24TicketmasterDiscoveryAPI9CityImageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24TicketmasterDiscoveryAPI9CityImageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI9CityImageV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:24TicketmasterDiscoveryAPI9CityImageV",
+        "mangledName": "$s24TicketmasterDiscoveryAPI9CityImageV",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -11567,6 +13077,141 @@
                 "declKind": "Accessor",
                 "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV17includeSpellcheckSbvM",
                 "mangledName": "$s24TicketmasterDiscoveryAPI0B15SuggestCriteriaV17includeSpellcheckSbvM",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "excludes",
+            "printedName": "excludes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvp",
+            "mangledName": "$s24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvp",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvg",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvg",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvs",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvs",
+                "moduleName": "TicketmasterDiscoveryAPI",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvM",
+                "mangledName": "$s24TicketmasterDiscoveryAPI0B15SuggestCriteriaV8excludesSaySSGSgvM",
                 "moduleName": "TicketmasterDiscoveryAPI",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13715,6 +15360,30 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI"
+      },
+      {
+        "kind": "Import",
+        "name": "TicketmasterAuthentication",
+        "printedName": "TicketmasterAuthentication",
+        "declKind": "Import",
+        "moduleName": "TicketmasterDiscoveryAPI"
       },
       {
         "kind": "Import",
@@ -20854,6 +22523,120 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TMDiscoveryDelegate",
+        "printedName": "TMDiscoveryDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "discoveryDidReceiveAttractionResponse",
+            "printedName": "discoveryDidReceiveAttractionResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryAttraction",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryAttraction",
+                "usr": "s:24TicketmasterDiscoveryAPI0B10AttractionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP37discoveryDidReceiveAttractionResponseyyAA0bI0VF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP37discoveryDidReceiveAttractionResponseyyAA0bI0VF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "sugared_genericSig": "<Self where Self : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "discoveryDidReceiveVenueResponse",
+            "printedName": "discoveryDidReceiveVenueResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryVenue",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryVenue",
+                "usr": "s:24TicketmasterDiscoveryAPI0B5VenueV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP32discoveryDidReceiveVenueResponseyyAA0bI0VF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP32discoveryDidReceiveVenueResponseyyAA0bI0VF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "sugared_genericSig": "<Self where Self : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "discoveryDidReceiveEventResponse",
+            "printedName": "discoveryDidReceiveEventResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DiscoveryEvent",
+                "printedName": "TicketmasterDiscoveryAPI.DiscoveryEvent",
+                "usr": "s:24TicketmasterDiscoveryAPI0B5EventV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP32discoveryDidReceiveEventResponseyyAA0bI0VF",
+            "mangledName": "$s24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP32discoveryDidReceiveEventResponseyyAA0bI0VF",
+            "moduleName": "TicketmasterDiscoveryAPI",
+            "genericSig": "<τ_0_0 where τ_0_0 : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "sugared_genericSig": "<Self where Self : TicketmasterDiscoveryAPI.TMDiscoveryDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP",
+        "mangledName": "$s24TicketmasterDiscoveryAPI19TMDiscoveryDelegateP",
+        "moduleName": "TicketmasterDiscoveryAPI",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -26819,378 +28602,385 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "StringLiteral",
       "offset": 4069,
       "length": 34,
       "value": "\"0123456789bcdefghjkmnpqrstuvwxyz\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4176,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4188,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4504,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4535,
       "length": 26,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4595,
       "length": 22,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4656,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4715,
       "length": 23,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4775,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4836,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4898,
       "length": 14,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4960,
       "length": 27,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 5023,
       "length": 16,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 5087,
       "length": 22,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3251,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3337,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3468,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 3666,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 3764,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 7,
       "value": "\"en-us\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 362,
       "length": 7,
       "value": "\"es-us\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 7,
       "value": "\"en-ca\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 7,
       "value": "\"fr-ca\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 7,
       "value": "\"en-au\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 7,
       "value": "\"en-nz\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 7,
       "value": "\"en-gb\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 7,
       "value": "\"en-mx\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 7,
       "value": "\"es-mx\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 8,
       "value": "\"es-419\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 668,
       "length": 7,
       "value": "\"de-at\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 7,
       "value": "\"pl-pl\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 7,
       "value": "\"no-no\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 7,
       "value": "\"fi-fi\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 808,
       "length": 7,
       "value": "\"nl-be\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 7,
       "value": "\"cs-cz\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 878,
       "length": 7,
       "value": "\"sv-se\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 913,
       "length": 7,
       "value": "\"en-za\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 948,
       "length": 7,
       "value": "\"es-es\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 983,
       "length": 7,
       "value": "\"de-de\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1018,
       "length": 7,
       "value": "\"en-ae\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 7,
       "value": "\"nl-nl\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1088,
       "length": 7,
       "value": "\"de-ch\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1123,
       "length": 7,
       "value": "\"da-dk\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 6505,
+      "offset": 6555,
       "length": 16,
       "value": "\"TMDiscoveryAPI\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 6529,
+      "offset": 6579,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
-      "offset": 6571,
+      "offset": 6621,
       "length": 188,
       "value": "\"Fatal Error: An API key must be set via TMDiscoveryAPI.configure before initializing instances of DiscoveryService. To get a developer API key, visit https:\/\/developer.ticketmaster.com\/.\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 1883,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1200,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1298,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI+Environment.swift",
+      "kind": "StringLiteral",
+      "offset": 545,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1501,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryCriteria.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 5,
       "value": "\"tmr\""
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1476,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1574,
       "length": 2,

@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Jun  4 16:53:06 PDT 2025</string>
+	<string>Mon Aug 11 16:50:45 PDT 2025</string>
 	<key>BuildHost</key>
-	<string>LNERT9JF4YTCD</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>kkao-MA-11623-SOTCLimitDomains-Remastered</string>
+	<string>master</string>
 	<key>GITComment</key>
-	<string>Bump version number to 1.4.3</string>
+	<string>Merge branch Feature-PSDK-16819-ModernizeNetworking into master</string>
 	<key>GITDate</key>
-	<string>Wed Jun 4 16:29:09 2025 -0700</string>
+	<string>Mon Aug 11 23:34:27 2025 +0000</string>
 	<key>GITRevision</key>
-	<string>f243ac0a149bf6613bc8651dac06fd685b3b33c1</string>
+	<string>a094c4ff431238690b95098e76fcdad2cb2673e9</string>
 	<key>MarketingVersion</key>
-	<string>1.4.4</string>
+	<string>1.5.0</string>
 </dict>
 </plist>

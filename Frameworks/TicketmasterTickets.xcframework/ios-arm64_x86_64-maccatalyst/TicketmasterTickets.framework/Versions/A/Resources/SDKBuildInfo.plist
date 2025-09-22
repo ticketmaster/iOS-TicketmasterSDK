@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Aug  6 10:52:29 PDT 2025</string>
+	<string>Mon Sep 22 12:09:13 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.13.2</string>
+	<string>release/3.14.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0000: Change marketing version</string>
+	<string>PSDK-0 Removed RC2, 3.14.0 public release</string>
 	<key>GITDate</key>
-	<string>Wed Aug 6 18:40:00 2025 +0300</string>
+	<string>Mon Sep 22 12:01:25 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>3fd83a856b816e92691af440b64bc50f57515ee7</string>
+	<string>6576498c739aac05e22fd17d397a2aef312d2b4e</string>
 	<key>MarketingVersion</key>
-	<string>3.13.2</string>
+	<string>3.14.0</string>
 </dict>
 </plist>

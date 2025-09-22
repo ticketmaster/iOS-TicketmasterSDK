@@ -318,6 +318,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase13TMPrePurchase")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSCoder;
 @class NSString;
 @class NSBundle;
@@ -345,12 +346,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-@class SFSafariViewController;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
-- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
-@end
-
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
@@ -365,6 +360,12 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class SFSafariViewController;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
+- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
 
 
@@ -386,6 +387,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
+
 @class WKNavigation;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKNavigationDelegate>
@@ -395,7 +397,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
-
 
 
 
@@ -742,6 +743,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase13TMPrePurchase")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class NSCoder;
 @class NSString;
 @class NSBundle;
@@ -769,12 +771,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
-@class SFSafariViewController;
-
-@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
-- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
-@end
-
 @class WKWebView;
 @class WKWebViewConfiguration;
 @class WKNavigationAction;
@@ -789,6 +785,12 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+@class SFSafariViewController;
+
+@interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <SFSafariViewControllerDelegate>
+- (void)safariViewControllerDidFinish:(SFSafariViewController * _Nonnull)controller;
 @end
 
 
@@ -810,6 +812,7 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 
 
 
+
 @class WKNavigation;
 
 @interface TMPrePurchaseViewController (SWIFT_EXTENSION(TicketmasterPrePurchase)) <WKNavigationDelegate>
@@ -819,7 +822,6 @@ SWIFT_CLASS("_TtC23TicketmasterPrePurchase27TMPrePurchaseViewController")
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
-
 
 
 

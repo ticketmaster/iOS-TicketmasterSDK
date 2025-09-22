@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		9IXfzPKPCSRhbRXxbOdPw2uyw08=
+		9D1J0OilJauxuVJmbCjcUcBpM0Y=
 		</data>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/SDKBuildInfo.plist</key>
 		<data>
-		EaZJs8YDOZyiCuweh80XJix4yT8=
+		x0K05oOxw00CL1iv3p4v96bP2eo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,7 +23,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SDN0I1FvmhECGPxUn/CsJNZirDJsQAyVNPH00htDbcA=
+			MHPH1ECIcgBFWAisWQUJKrpbsh7OIzzpp8rNZDyNMeg=
 			</data>
 		</dict>
 		<key>Headers/TicketmasterFoundation.h</key>
@@ -37,70 +37,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lzkvqskB+47e6ab28CfoKBKmlsXEJOoIFOMxHGYhkzc=
+			fMNs7NcPWyL3g6I8Q8PUPqdgyh/6XQocZQC0QCXgiMs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vivf4KhQG1w/U+KIs8KloeEMuThiZzotqUqdruQuS6k=
+			8KwQ+ynRyowDD4i0CbD+XGLzX5hpoj4RUsKtcwgNaHk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nMLBuesNq4v8nv/BYfruHrHUnZgt0DnhbNmj7fpoZmk=
+			3aJJdI8pC5EuZ7m06elkOwcJTECzXOCuCaDsopJs1vc=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vivf4KhQG1w/U+KIs8KloeEMuThiZzotqUqdruQuS6k=
+			8KwQ+ynRyowDD4i0CbD+XGLzX5hpoj4RUsKtcwgNaHk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDKO0rhO8mrWNr/golczQKrWzKLFfaA1ho8kKNmY3j4=
+			aEQ93AsGjVuWiZnygea19EX854HrjClfLLdS/6KecVY=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lzkvqskB+47e6ab28CfoKBKmlsXEJOoIFOMxHGYhkzc=
+			fMNs7NcPWyL3g6I8Q8PUPqdgyh/6XQocZQC0QCXgiMs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9zGeYbeeRjNDdCAjemODT7i4V+fiN5w6SQdXsbp/C/w=
+			NT/ew7NBwAyNanfCk8x0gU7BhobPvK0GZGi8jbngr+k=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D2IuRI8Un5qRHpU639Y5YhnjKqleJtYrBF+P9mXuY08=
+			Ap/pMt0lJlc62ZH8fJthE88X0bQe+0MeOcbm07hXvxI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9zGeYbeeRjNDdCAjemODT7i4V+fiN5w6SQdXsbp/C/w=
+			NT/ew7NBwAyNanfCk8x0gU7BhobPvK0GZGi8jbngr+k=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterFoundation.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kS1N9cn7sRlTkiIF0lJlSmt286t+OGCL9DgHnHgDWUI=
+			lRa9LoIzDPTgAjBACalBBhmWjpesUbO4uj4Hs88PnKc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -114,7 +114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bEZQKglQO/M0Tkm+mJaIryXN8hlYssbjU8Qsb13n/RI=
+			kYEV4FLt3o7Ygf143VOLl3Gp0nQ3T5c17LF66sf6Z8k=
 			</data>
 		</dict>
 		<key>Resources/PrivacyInfo.xcprivacy</key>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ID3W+qO9FQcjDScmwIFGqvMVQiVY7JvPZEn75B07gL0=
+			g6SDjR4TYX4iDFRClnZgWEF+r8sPIOnBiw8Ydhct+T0=
 			</data>
 		</dict>
 	</dict>

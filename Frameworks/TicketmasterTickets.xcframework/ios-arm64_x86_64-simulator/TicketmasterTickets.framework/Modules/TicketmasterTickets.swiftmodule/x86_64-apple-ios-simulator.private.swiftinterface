@@ -171,15 +171,18 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
   public let color: Swift.String?
   public let dateInfo: TicketmasterTickets.TMPurchasedEventInfo.DateInfo?
   public let isPastEvent: Swift.Bool?
+  @available(*, deprecated, message: "Use (eventSource == .host) for HOST events OR (eventSource == .archtics) for Archtics events instead")
   public let isHostEvent: Swift.Bool?
   public let isSeriesMaster: Swift.Bool?
   public let isSeriesChild: Swift.Bool?
   public let isArchticsEvent: Swift.Bool?
+  @available(*, deprecated, message: "Use eventSource == .sportXR instead")
   public let isSportXREvent: Swift.Bool?
+  @available(*, deprecated, message: "Use eventSource == .microflex instead")
   public let isMicroflexEvent: Swift.Bool?
   public let isThirdPartyResale: Swift.Bool?
   public let isStreaming: Swift.Bool?
-  public let eventSource: Swift.String?
+  public let eventSource: TicketmasterTickets.TMPurchasedEventInfo.EventSource?
   public let promoterBranding: TicketmasterTickets.TMPurchasedEventInfo.PromoterBranding?
   public let healthCheck: TicketmasterTickets.TMPurchasedEventInfo.HealthCheck?
   public let venue: TicketmasterTickets.TMPurchasedEventInfo.Venue?
@@ -344,6 +347,17 @@ public struct TMPurchasedEventInfo : Swift.Codable, Swift.Hashable {
       get
     }
     public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum EventSource : Swift.String, Swift.Codable {
+    case host
+    case archtics
+    case sportXR
+    case microflex
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
   }
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: TicketmasterTickets.TMPurchasedEventInfo, b: TicketmasterTickets.TMPurchasedEventInfo) -> Swift.Bool
@@ -590,6 +604,65 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+extension TicketmasterTickets.TMTickets {
+  public enum TMWebsiteEnvironment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case alpha
+    case beta
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterTickets.TMTickets.TMWebsiteEnvironment]
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMTickets.TMWebsiteEnvironment, b: TicketmasterTickets.TMTickets.TMWebsiteEnvironment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterTickets.TMTickets.TMWebsiteEnvironment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum NAMWebsiteEnvironment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case staging
+    case preProduction
+    case qa
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterTickets.TMTickets.NAMWebsiteEnvironment]
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMTickets.NAMWebsiteEnvironment, b: TicketmasterTickets.TMTickets.NAMWebsiteEnvironment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterTickets.TMTickets.NAMWebsiteEnvironment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public enum ROKTWebsiteEnvironment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case preProduction
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterTickets.TMTickets.ROKTWebsiteEnvironment]
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterTickets.TMTickets.ROKTWebsiteEnvironment, b: TicketmasterTickets.TMTickets.ROKTWebsiteEnvironment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterTickets.TMTickets.ROKTWebsiteEnvironment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class TMTicketsViewController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public var addLogoutButton: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
@@ -833,6 +906,7 @@ extension TicketmasterTickets.TMTickets {
       case events
       case eventTickets
       case eventModules
+      case eventModulesV2
       case ticketBarcode
       case ticketDelivery
       case ticketDetails
@@ -855,6 +929,7 @@ extension TicketmasterTickets.TMTickets {
       case postingCancelButton
       case eventInfoBannerButton
       case moduleActionButton
+      case moduleActionButtonV2
       case pullToRefreshEvents
       case retryErrorButton
       case logoutErrorButton
@@ -874,7 +949,9 @@ extension TicketmasterTickets.TMTickets {
       case eventTickets(event: TicketmasterTickets.TMPurchasedEvent, tickets: [TicketmasterTickets.TMPurchasedTicket])
       case eventTicket(event: TicketmasterTickets.TMPurchasedEvent, ticket: TicketmasterTickets.TMPurchasedTicket)
       case module(event: TicketmasterTickets.TMPurchasedEvent, module: TicketmasterTickets.TMTicketsModule)
+      case moduleV2(event: TicketmasterTickets.TMPurchasedEvent, moduleID: Swift.String)
       case moduleButton(event: TicketmasterTickets.TMPurchasedEvent, module: TicketmasterTickets.TMTicketsModule, button: TicketmasterTickets.TMTicketsModule.ActionButton)
+      case moduleButtonV2(event: TicketmasterTickets.TMPurchasedEvent, moduleID: Swift.String, analyticsValue: Swift.String)
       case empty
       public var description: Swift.String {
         get
@@ -993,7 +1070,12 @@ extension Swift.UInt64 {
   weak final public var orderDelegate: (any TicketmasterTickets.TMTicketsOrderDelegate)?
   weak final public var moduleDelegate: (any TicketmasterTickets.TMTicketsModuleDelegate)?
   weak final public var analyticsDelegate: (any TicketmasterTickets.TMTicketsAnalyticsDelegate)?
-  final public var doNotPresentTeamLoginIfHostLoggedIn: Swift.Bool
+  @available(*, deprecated, message: "Use doNotPresentPrimaryLoginIfSecondaryLoggedIn instead")
+  final public var doNotPresentTeamLoginIfHostLoggedIn: Swift.Bool {
+    get
+    set
+  }
+  final public var doNotPresentPrimaryLoginIfSecondaryLoggedIn: Swift.Bool
   @objc deinit
 }
 @objc public class TMTicketsModule : ObjectiveC.NSObject, Swift.Comparable {
@@ -1091,6 +1173,9 @@ extension TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName : Swift.RawRepr
 extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.Equatable {}
 extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.Hashable {}
 extension TicketmasterTickets.TMTicketsPrebuiltModule.ButtonCallbackName : Swift.RawRepresentable {}
+extension TicketmasterTickets.TMPurchasedEventInfo.EventSource : Swift.Equatable {}
+extension TicketmasterTickets.TMPurchasedEventInfo.EventSource : Swift.Hashable {}
+extension TicketmasterTickets.TMPurchasedEventInfo.EventSource : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMPurchasedTicket.Delivery.Source : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMPurchasedTicket.Delivery.SegmentType : Swift.RawRepresentable {}
 extension TicketmasterTickets.TMTickets.IdType : Swift.RawRepresentable {}

@@ -213,6 +213,13 @@ open class UserDefaultsStringEnum<E> where E : Swift.CaseIterable, E : Swift.Raw
 extension Foundation.URLRequest {
   public mutating func applyBasicAuth(username: Swift.String, password: Swift.String)
 }
+extension TicketmasterFoundation.NetworkService {
+  @frozen public enum RequestBuilderResponse {
+    case success(request: Foundation.URLRequest)
+    case failure(error: TicketmasterFoundation.ConnectionDriver.ConnectionError)
+  }
+  final public func urlRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, path: Swift.String, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.HTTPRequestHeaders? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.NetworkService.RequestBuilderResponse
+}
 extension Foundation.Data {
   public var jsonDictionaryArray: [TicketmasterFoundation.JSONDictionary]? {
     get
@@ -402,6 +409,20 @@ public protocol TMPixelServiceDelegate : AnyObject {
   var hmacIdentifier: Swift.String? { get }
   var advertisingIdentifier: Swift.String { get }
 }
+extension TicketmasterFoundation.ConnectionDriver {
+  @discardableResult
+  final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionaryArray>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionary>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendObject<T>(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<T>) -> Swift.Void) -> Foundation.URLSessionTask? where T : Swift.Decodable
+  @discardableResult
+  final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void) -> Foundation.URLSessionTask?
+}
 public typealias NotificationDictionary = [Swift.AnyHashable : Any]
 extension Swift.Dictionary where Key == Swift.AnyHashable, Value == Any {
   public func date(_ key: Swift.String) -> Foundation.Date?
@@ -433,7 +454,7 @@ public protocol TMPixelConfig {
   var domain: Swift.String { get }
   var enableBatchSending: Swift.Bool { get }
   var batchSendingInterval: Foundation.TimeInterval { get }
-  var environment: TicketmasterFoundation.ConnectionEnvironment { get }
+  var environment: TicketmasterFoundation.TMPixelDivolte.PixelEnvironment { get }
   var serviceLoggingDetails: TicketmasterFoundation.URLLoggingDetails { get }
 }
 @_hasMissingDesignatedInitializers public class UserAgent {
@@ -662,27 +683,28 @@ public struct EncryptedArchiverFile {
   public let date: Foundation.Date
   public let version: Swift.String
 }
-public enum ConnectionError : Swift.Error, Swift.Equatable {
-  case logicError
-  case missingData(statusCode: TicketmasterFoundation.HTTPStatusCode)
-  case missingDataUnknown(statusCode: Swift.Int)
-  case server(error: any Swift.Error)
-  case malformedResponse
-  case requestCanceled
-  case malformedBody
-  case badObjectSerialization
-  case badJSONFormat(reason: Swift.String)
-  case badXMLFormat(reason: Swift.String)
-  case badURLFormat
-  case badCriteria
-  case badConfiguration(reason: Swift.String)
-  public init(missingDataStatusCode: Swift.Int)
-  public static func == (lhs: TicketmasterFoundation.ConnectionError, rhs: TicketmasterFoundation.ConnectionError) -> Swift.Bool
-  public var localizedDescription: Swift.String {
-    get
-  }
-  public var publicDescription: Swift.String {
-    get
+extension TicketmasterFoundation.ConnectionDriver {
+  public enum ConnectionError : Swift.Error, Swift.Equatable {
+    case missingData(statusCode: TicketmasterFoundation.HTTPStatusCode)
+    case missingDataUnknown(statusCode: Swift.Int)
+    case urlSession(error: any Swift.Error)
+    case malformedResponse
+    case requestCanceled
+    case malformedBody
+    case badObjectSerialization
+    case badJSONFormat(reason: Swift.String)
+    case badXMLFormat(reason: Swift.String)
+    case badURLFormat
+    case badCriteria
+    case badConfiguration(reason: Swift.String)
+    public init(missingDataStatusCode: Swift.Int)
+    public static func == (lhs: TicketmasterFoundation.ConnectionDriver.ConnectionError, rhs: TicketmasterFoundation.ConnectionDriver.ConnectionError) -> Swift.Bool
+    public var localizedDescription: Swift.String {
+      get
+    }
+    public var publicDescription: Swift.String {
+      get
+    }
   }
 }
 extension TicketmasterFoundation.UFCCookieManager {
@@ -888,7 +910,7 @@ extension Foundation.Locale {
 }
 @objc @objcMembers open class ImageDownloader : ObjectiveC.NSObject {
   @objc public static let shared: TicketmasterFoundation.ImageDownloader
-  public typealias CompletionHandler = (TicketmasterFoundation.ImageResponse) -> Swift.Void
+  public typealias CompletionHandler = (TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void
   public typealias ObjcCompletionHandler = (_ image: UIKit.UIImage?, _ error: (any Swift.Error)?) -> Swift.Void
   public enum DownloadPrioritization {
     case fifo, lifo
@@ -1058,6 +1080,20 @@ extension UIKit.UIAlertController {
   @_Concurrency.MainActor @preconcurrency public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, action1Name: Swift.String, action2Name: Swift.String, action1: @escaping () -> Swift.Void, action2: @escaping () -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, action1Name: Swift.String, action2Name: Swift.String, action1: @escaping () -> Swift.Void, action2: @escaping () -> Swift.Void) -> UIKit.UIAlertController
 }
+extension TicketmasterFoundation.NetworkService {
+  @discardableResult
+  final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionaryArray>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionary>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void) -> Foundation.URLSessionTask?
+  @discardableResult
+  final public func sendObject<T>(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<T>) -> Swift.Void) -> Foundation.URLSessionTask? where T : Swift.Decodable
+  @discardableResult
+  final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void) -> Foundation.URLSessionTask?
+}
 @objc extension UIKit.UIColor {
   @objc dynamic public func color(betweenColor color: UIKit.UIColor) -> UIKit.UIColor
   @objc dynamic public func color(byAdjustingBrightnessPercentage percentage: CoreFoundation.CGFloat) -> UIKit.UIColor
@@ -1070,10 +1106,11 @@ extension UIKit.UIAlertController {
   @objc public static func tmBlue() -> UIKit.UIColor
   @objc public static func popoverPurple() -> UIKit.UIColor
 }
-@_inheritsConvenienceInitializers open class GoogleAnalyticsService : TicketmasterFoundation.NetworkService {
-  convenience public init(applicationName: Swift.String, applicationID: Swift.String? = nil, applicationVersion: Swift.String? = nil, applicationInstallerID: Swift.String? = nil, propertyID: Swift.String)
+open class GoogleAnalyticsService : TicketmasterFoundation.NetworkService {
+  required public init(applicationName: Swift.String, applicationID: Swift.String? = nil, applicationVersion: Swift.String? = nil, applicationInstallerID: Swift.String? = nil, propertyID: Swift.String)
+  override open func hostURL() -> Foundation.URL?
+  override open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.URLQueryParameters?
   public func report(_ event: TicketmasterFoundation.GoogleAnalyticsEvent)
-  override public init(connectionDriver: TicketmasterFoundation.ConnectionDriver)
   @objc deinit
 }
 extension WebKit.WKWebView {
@@ -1101,6 +1138,27 @@ extension WebKit.WKWebView {
   @objc final public func encode(with coder: Foundation.NSCoder)
   @objc public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+public enum WebsiteEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case production
+  case productionLiveNation
+  case alpha
+  case beta
+  case localHost
+  case customHost
+  public var isProduction: Swift.Bool {
+    get
+  }
+  public func httpHostURL(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Foundation.URL
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [TicketmasterFoundation.WebsiteEnvironment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TicketmasterFoundation.WebsiteEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
 }
 extension TicketmasterFoundation.UALCommerceEvent {
   final public var eventID: Swift.String? {
@@ -1302,6 +1360,7 @@ extension UIKit.UIView {
 }
 public typealias URLQueryParameter = TicketmasterFoundation.ElementValue<Swift.String, Swift.String>
 public typealias URLQueryParameters = [Swift.String : Swift.String]
+public typealias HTTPRequestHeaders = [Swift.String : Swift.String]
 extension Swift.Dictionary where Key == Swift.String, Value == Swift.String {
   public init(queryItems: [Foundation.URLQueryItem])
   public var queryItems: [Foundation.URLQueryItem] {
@@ -1391,6 +1450,21 @@ public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringC
   }
 }
 @_hasMissingDesignatedInitializers public class TMPixelDivolte : TicketmasterFoundation.NetworkService {
+  public enum PixelEnvironment : Swift.String, Swift.Codable, Swift.CaseIterable {
+    case internalQA
+    case preProduction
+    case production
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [TicketmasterFoundation.TMPixelDivolte.PixelEnvironment]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [TicketmasterFoundation.TMPixelDivolte.PixelEnvironment] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  override public func hostURL() -> Foundation.URL?
   @objc deinit
 }
 extension Foundation.URL {
@@ -1408,12 +1482,12 @@ extension Foundation.URL {
   }
 }
 @_inheritsConvenienceInitializers open class GenericService : TicketmasterFoundation.NetworkService {
-  convenience public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
-  final public func sendJSONArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.JSONArrayResponse) -> Swift.Void)
-  final public func sendJSONRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.JSONResponse) -> Swift.Void)
-  final public func sendDataRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.DataResponse) -> Swift.Void)
-  final public func sendArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ArrayResponse) -> Swift.Void)
-  final public func sendImageRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ImageResponse) -> Swift.Void)
+  final public func sendJSONArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionaryArray>) -> Swift.Void)
+  final public func sendJSONRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionary>) -> Swift.Void)
+  final public func sendArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void)
+  final public func sendImageRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void)
+  final public func sendDataRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void)
+  override public init(configuration: Foundation.URLSessionConfiguration = super, securityExceptionHosts: [Swift.String]? = nil)
   override public init(connectionDriver: TicketmasterFoundation.ConnectionDriver)
   @objc deinit
 }
@@ -1729,21 +1803,19 @@ extension Foundation.Data {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-public typealias ArrayResponse = TicketmasterFoundation.APIResponse<[Any]>
-public typealias DataResponse = TicketmasterFoundation.APIResponse<Foundation.Data>
-public typealias JSONResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.JSONDictionary>
-public typealias JSONArrayResponse = TicketmasterFoundation.APIResponse<TicketmasterFoundation.JSONDictionaryArray>
-public typealias ImageResponse = TicketmasterFoundation.APIResponse<UIKit.UIImage>
-@frozen public enum APIResponse<T> {
-  case success(response: T)
-  case failure(error: any Swift.Error)
-}
-@frozen public struct PaginatedResponse<T> {
-  public let data: [T]
-  public let pageNumber: Swift.Int
-  public let pageCount: Swift.Int
-  public let totalItems: Swift.Int
-  public init(data: [T], pageNumber: Swift.Int, pageCount: Swift.Int, totalItems: Swift.Int)
+extension TicketmasterFoundation.ConnectionDriver {
+  public typealias URLResponseHeaders = [Swift.AnyHashable : Any]
+  @frozen public enum APIResponse<T> {
+    case success(response: T)
+    case failure(error: TicketmasterFoundation.ConnectionDriver.ConnectionError)
+  }
+  @frozen public struct PaginatedResponse<T> {
+    public let data: [T]
+    public let pageNumber: Swift.Int
+    public let pageCount: Swift.Int
+    public let totalItems: Swift.Int
+    public init(data: [T], pageNumber: Swift.Int, pageCount: Swift.Int, totalItems: Swift.Int)
+  }
 }
 extension Foundation.Data {
   public func sha256String() -> Swift.String
@@ -1808,7 +1880,7 @@ public class TrustedCert {
   @objc deinit
 }
 extension Foundation.URLRequest {
-  public static func buildRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, scheme: Swift.String? = nil, host: Swift.String? = nil, path: Swift.String? = nil, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.URLQueryParameters? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.APIResponse<Foundation.URLRequest>
+  public static func buildRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, scheme: Swift.String? = nil, host: Swift.String? = nil, path: Swift.String? = nil, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.HTTPRequestHeaders? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.NetworkService.RequestBuilderResponse
 }
 extension TicketmasterFoundation.Base64SHA1HMACConvertible where Self : TicketmasterFoundation.ConvertibleToUTF8Data {
   public func base64SHA1HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
@@ -1854,19 +1926,14 @@ open class NetworkService {
     get
     set
   }
+  @frozen public enum APIResponse<T> {
+    case success(response: T)
+    case failure(error: any Swift.Error)
+  }
+  public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
   public init(connectionDriver: TicketmasterFoundation.ConnectionDriver)
-  open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.URLQueryParameters?
-  final public func urlRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, path: Swift.String, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", pathHttpHeaders: TicketmasterFoundation.URLQueryParameters? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.APIResponse<Foundation.URLRequest>
-  @discardableResult
-  final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.JSONArrayResponse) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.JSONResponse) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.DataResponse) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ArrayResponse) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ImageResponse) -> Swift.Void) -> Foundation.URLSessionTask?
+  open func hostURL() -> Foundation.URL?
+  open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.HTTPRequestHeaders?
   @objc deinit
 }
 extension WebKit.WKWebView {
@@ -1976,6 +2043,8 @@ extension Foundation.TimeZone {
   public static let cannedResultArrayEndError: Foundation.NSError
   public var clearCannedDataUponCompletion: Swift.Bool
   public var requestValidator: TicketmasterFoundation.FakeDataSession.URLRequestValidator?
+  public var lastRequest: Foundation.URLRequest?
+  public var lastResponse: TicketmasterFoundation.FakeDataSession.CannedResult?
   public var testSession: Foundation.URLSession
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
@@ -2098,10 +2167,6 @@ extension TicketmasterFoundation.MarketDomain : Swift.CustomStringConvertible {
   }
 }
 open class ConnectionDriver {
-  final public let environment: TicketmasterFoundation.ConnectionEnvironment
-  public var hostURLString: Swift.String? {
-    get
-  }
   public var startImmediately: Swift.Bool {
     get
     set
@@ -2110,71 +2175,12 @@ open class ConnectionDriver {
     get
     set
   }
-  convenience public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil, environment: TicketmasterFoundation.ConnectionEnvironment = .production, hostURLString: Swift.String? = nil)
-  public init(session: TicketmasterFoundation.URLDataSession, environment: TicketmasterFoundation.ConnectionEnvironment = .production, hostURLString: Swift.String? = nil)
-  open func hostString(for environment: TicketmasterFoundation.ConnectionEnvironment) -> Swift.String?
+  convenience public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
+  public init(session: TicketmasterFoundation.URLDataSession)
   @discardableResult
-  open func sendBase(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ jsonArray: TicketmasterFoundation.JSONDictionaryArray?, _ responseHeaderFields: [Swift.AnyHashable : Any]?, _ error: TicketmasterFoundation.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ jsonDictionary: TicketmasterFoundation.JSONDictionary?, _ responseHeaderFields: [Swift.AnyHashable : Any]?, _ error: TicketmasterFoundation.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ responseHeaderFields: [Swift.AnyHashable : Any]?, _ error: TicketmasterFoundation.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ array: [Any]?, _ responseHeaderFields: [Swift.AnyHashable : Any]?, _ error: TicketmasterFoundation.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
-  @discardableResult
-  final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ uiImage: UIKit.UIImage?, _ responseHeaderFields: [Swift.AnyHashable : Any]?, _ error: TicketmasterFoundation.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
-  final public func sendAuthorizedData(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask?
+  open func sendBase(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: TicketmasterFoundation.ConnectionDriver.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
+  final public func sendAuthorizedData(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: TicketmasterFoundation.ConnectionDriver.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
   @objc deinit
-}
-public enum ConnectionEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable {
-  case production
-  case productionLiveNation
-  case alpha
-  case beta
-  case appDemo
-  case mfx
-  case localHost
-  case customHost
-  case preProduction1
-  case preProduction2
-  case preProduction3
-  case staging
-  case stagingControllerPrd1224
-  case stagingControllerPrd115
-  case testingProduction1
-  case testingProduction2
-  case internalQA
-  case edpAlpha
-  case edpQA11
-  case edpQA12
-  case edpQA13
-  case edpQA14
-  case edpQA15
-  case edpQA16
-  case checkoutAlpha
-  case checkoutQA1
-  case checkoutQA2
-  case checkoutQA3
-  case checkoutQA4
-  case checkoutQA5
-  public var isForProduction: Swift.Bool {
-    get
-  }
-  public var isForTesting: Swift.Bool {
-    get
-  }
-  public func httpHostString(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Swift.String
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [TicketmasterFoundation.ConnectionEnvironment]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [TicketmasterFoundation.ConnectionEnvironment] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers final public class LoggedMessageCache {
   public static let shared: TicketmasterFoundation.LoggedMessageCache
@@ -2341,6 +2347,7 @@ extension Foundation.Date {
   public func days(from date: Foundation.Date) -> Swift.Int
   public func isSameDayAs(_ otherDate: Foundation.Date, in timeZone: Foundation.TimeZone) -> Swift.Bool
 }
+extension TicketmasterFoundation.NetworkService.RequestBuilderResponse : Swift.Sendable {}
 extension TicketmasterFoundation.UFCLoginManagerOperation : Swift.Equatable {}
 extension TicketmasterFoundation.UFCLoginManagerOperation : Swift.Hashable {}
 extension TicketmasterFoundation.UFCContractMessages : Swift.Equatable {}
@@ -2370,6 +2377,12 @@ extension TicketmasterFoundation.GoogleAnalyticsProductAction : Swift.RawReprese
 extension TicketmasterFoundation.CurrencyCodeISO4217 : Swift.Equatable {}
 extension TicketmasterFoundation.CurrencyCodeISO4217 : Swift.Hashable {}
 extension TicketmasterFoundation.CurrencyCodeISO4217 : Swift.RawRepresentable {}
+extension TicketmasterFoundation.WebsiteEnvironment : Swift.Equatable {}
+extension TicketmasterFoundation.WebsiteEnvironment : Swift.Hashable {}
+extension TicketmasterFoundation.WebsiteEnvironment : Swift.RawRepresentable {}
+extension TicketmasterFoundation.TMPixelDivolte.PixelEnvironment : Swift.Equatable {}
+extension TicketmasterFoundation.TMPixelDivolte.PixelEnvironment : Swift.Hashable {}
+extension TicketmasterFoundation.TMPixelDivolte.PixelEnvironment : Swift.RawRepresentable {}
 extension TicketmasterFoundation.TMPixelDisclosure.Target : Swift.Equatable {}
 extension TicketmasterFoundation.TMPixelDisclosure.Target : Swift.Hashable {}
 extension TicketmasterFoundation.TMPixelDisclosure.Target : Swift.RawRepresentable {}
@@ -2391,9 +2404,6 @@ extension TicketmasterFoundation.UALCommerceEvent.EventType : Swift.Equatable {}
 extension TicketmasterFoundation.UALCommerceEvent.EventType : Swift.Hashable {}
 extension TicketmasterFoundation.UALCommerceEvent.EventType : Swift.RawRepresentable {}
 extension TicketmasterFoundation.MarketDomain : Swift.RawRepresentable {}
-extension TicketmasterFoundation.ConnectionEnvironment : Swift.Equatable {}
-extension TicketmasterFoundation.ConnectionEnvironment : Swift.Hashable {}
-extension TicketmasterFoundation.ConnectionEnvironment : Swift.RawRepresentable {}
 extension TicketmasterFoundation.URLLoggingDetails : Swift.Equatable {}
 extension TicketmasterFoundation.URLLoggingDetails : Swift.Hashable {}
 extension TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory : Swift.Equatable {}

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Jun  5 08:36:05 PDT 2025</string>
+	<string>Tue Aug 19 11:05:25 PDT 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
@@ -11,12 +11,12 @@
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Updated version to 3.13.4</string>
+	<string>PSDK-0 Fixed issue with re-configuring constantly (LN usage)</string>
 	<key>GITDate</key>
-	<string>Thu Jun 5 08:23:49 2025 -0700</string>
+	<string>Tue Aug 19 10:58:51 2025 -0700</string>
 	<key>GITRevision</key>
-	<string>d32b6f75c5fdf7e5ddfaa06b86ed8bb14737749f</string>
+	<string>489db446f89d5afaca39778d55fae50aa1526b4f</string>
 	<key>MarketingVersion</key>
-	<string>3.13.4</string>
+	<string>3.14.6</string>
 </dict>
 </plist>

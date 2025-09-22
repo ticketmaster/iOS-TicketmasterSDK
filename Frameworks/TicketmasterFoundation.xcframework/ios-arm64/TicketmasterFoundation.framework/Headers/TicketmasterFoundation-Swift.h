@@ -424,7 +424,7 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13LoggedMessage")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Ticketmaster Host International Market Domain
+/// Ticketmaster Host/Archtics/Microflex International Market Domain
 /// enums match ISO-3166-1 2-letter country codes:
 /// https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 typedef SWIFT_ENUM(NSInteger, MarketDomain, open) {

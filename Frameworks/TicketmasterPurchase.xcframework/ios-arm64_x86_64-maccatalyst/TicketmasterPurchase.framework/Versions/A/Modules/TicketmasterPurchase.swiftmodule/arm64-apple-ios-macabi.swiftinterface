@@ -13,6 +13,7 @@ import TicketmasterAuthentication
 import TicketmasterDiscoveryAPI
 import TicketmasterFoundation
 @_exported import TicketmasterPurchase
+import TipKit
 import UIKit
 import WebKit
 import _Concurrency
@@ -115,6 +116,22 @@ public struct CheckoutConfirmationHandler {
 extension TicketmasterPurchase.POPPopupBridge : AuthenticationServices.ASWebAuthenticationPresentationContextProviding {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func presentationAnchor(for session: AuthenticationServices.ASWebAuthenticationSession) -> AuthenticationServices.ASPresentationAnchor
 }
+@available(iOS 17.0, *)
+public protocol TipDecorating : UIKit.UIViewController {
+  func addToolTip(_ tip: any TipKit.Tip, from barButton: UIKit.UIBarButtonItem, style: any TipKit.TipViewStyle, backgroundColor: UIKit.UIColor?)
+}
+@available(iOS 17.0, *)
+extension TicketmasterPurchase.TipDecorating {
+  public func addToolTip(_ tip: any TipKit.Tip, from barButton: UIKit.UIBarButtonItem, style: any TipKit.TipViewStyle = HeadlineTipViewStyle(), backgroundColor: UIKit.UIColor? = UIColor(named: "watchlistColor"))
+}
+@available(iOS 17.0, *)
+public struct HeadlineTipViewStyle : TipKit.TipViewStyle {
+  public init()
+  @_Concurrency.MainActor @preconcurrency public func makeBody(configuration: TipKit.TipViewStyleConfiguration) -> some SwiftUICore.View
+  
+  @available(iOS 17.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s20TicketmasterPurchase20HeadlineTipViewStyleV8makeBody13configurationQr0D3Kit0deF13ConfigurationV_tF", 0) __
+}
 @objc @_inheritsConvenienceInitializers final public class TMPurchase : ObjectiveC.NSObject {
   public static let shared: TicketmasterPurchase.TMPurchase
   final public var version: Swift.String {
@@ -129,7 +146,7 @@ extension TicketmasterPurchase.POPPopupBridge : AuthenticationServices.ASWebAuth
     get
     set
   }
-  final public var environment: TicketmasterFoundation.ConnectionEnvironment {
+  final public var environment: TicketmasterPurchase.TMPurchase.Environment {
     get
     set
   }
@@ -211,6 +228,39 @@ extension TicketmasterPurchase.TMPurchaseOrder {
 extension TicketmasterPurchase.TMPurchaseOrder.Item {
   convenience public init(jsonDictionary: TicketmasterFoundation.JSONDictionary)
 }
+extension TicketmasterPurchase.TMPurchase {
+  public enum Environment : Swift.Codable, Swift.Hashable, Swift.CaseIterable {
+    case production
+    case productionLiveNation
+    case alpha
+    case beta
+    case localHost
+    case custom(baseUrlString: Swift.String)
+    public static var allCases: [TicketmasterPurchase.TMPurchase.Environment]
+    public var isForProduction: Swift.Bool {
+      get
+    }
+    public var isForTesting: Swift.Bool {
+      get
+    }
+    public func httpHostString(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Swift.String
+    public var keyValue: Swift.String {
+      get
+    }
+    public init(keyValue: Swift.String)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: TicketmasterPurchase.TMPurchase.Environment, b: TicketmasterPurchase.TMPurchase.Environment) -> Swift.Bool
+    public typealias AllCases = [TicketmasterPurchase.TMPurchase.Environment]
+    public func encode(to encoder: any Swift.Encoder) throws
+    public var hashValue: Swift.Int {
+      get
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension TicketmasterPurchase.TMPurchase.Environment {
+  public init(tmxDeploymentEnvironment: TicketmasterAuthentication.TMAuthentication.TMXDeploymentEnvironment)
+}
 @objc public class TMPurchaseWebsiteConfiguration : ObjectiveC.NSObject {
   public var eventID: Swift.String
   public var attractionID: Swift.String?
@@ -242,6 +292,7 @@ public protocol TMPurchaseSharingDelegate : AnyObject {
   func purchaseNavigationController(_ purchaseNavigationController: TicketmasterPurchase.TMPurchaseNavigationController, sharingMessageFor event: TicketmasterDiscoveryAPI.DiscoveryEvent, completion: @escaping (_ sharingMessage: Swift.String) -> Swift.Void)
 }
 @objc @_Concurrency.MainActor @preconcurrency public class TMPurchaseNavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency weak public var discoveryDelegate: (any TicketmasterDiscoveryAPI.TMDiscoveryDelegate)?
   @_Concurrency.MainActor @preconcurrency public var purchaseMarketDomain: TicketmasterFoundation.MarketDomain?
   @_Concurrency.MainActor @preconcurrency public init(configuration: TicketmasterPurchase.TMPurchaseWebsiteConfiguration, discoveryEvent: TicketmasterDiscoveryAPI.DiscoveryEvent? = nil)
   @objc deinit

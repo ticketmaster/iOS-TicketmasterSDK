@@ -150,15 +150,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TrnMX8lvvvP4duG9qSBHm/TeF3U=
+		wEHnfN+ws+d/zMtglzsuieSkdC0=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KJtXB92SiqC/FRDwPaIsjJUmRs8=
+		4ck94n4sSPU55VlfWg4wc6cd3KM=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		W1aBEE2Ju+7gMDejv3M7vdZFWew=
+		iSUaq+XOfcdb01lOLbXIPZdgc98=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -166,19 +166,19 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		W1aBEE2Ju+7gMDejv3M7vdZFWew=
+		iSUaq+XOfcdb01lOLbXIPZdgc98=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eXpkSlsEFPqGpbApRd9yfnNxct4=
+		sGn20ekvQmT5eJkgRlAkI5IZCxs=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KJtXB92SiqC/FRDwPaIsjJUmRs8=
+		4ck94n4sSPU55VlfWg4wc6cd3KM=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		khC+Ofv7BBzPVIC2rD/7SyZziTw=
+		AKBIFdIkDYxhhSbKlUZeAziqz/s=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -186,11 +186,11 @@
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		khC+Ofv7BBzPVIC2rD/7SyZziTw=
+		AKBIFdIkDYxhhSbKlUZeAziqz/s=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dvpI+TqPSRiBDQ7wg33vC0HUX2A=
+		nnEGUB3bv9k+79EpTdNQ31ZXqtI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		U5lsghxrhS4DopldXZMEyoFwS4E=
+		9OYWe/yDttFSIn7mHKDyURf+pj0=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -935,14 +935,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			esuQOyXaZUvXsbTQQJc8GIp6+x0sh1CVaIegewastpw=
+			eaZDk5Vq9TrMdm1cbFwth5lqyfMT3nH1WjK49jJVF2U=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mq+htHm006n9v+8uEZDyvY12qPret3XPTGE7fzp3sp0=
+			glpbHMRA6Yt1y1wHKPBjBadMg196hE0ZAP1wyICh6Gs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -956,28 +956,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mq+htHm006n9v+8uEZDyvY12qPret3XPTGE7fzp3sp0=
+			glpbHMRA6Yt1y1wHKPBjBadMg196hE0ZAP1wyICh6Gs=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDhd/X/aTw5WPy9M58D1GgxkrY0bVXfMfWvVNzyXWY0=
+			RCczPkz+ffTF6fhF6UdS9DCC16ONuqiE13N9jAczYpk=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			esuQOyXaZUvXsbTQQJc8GIp6+x0sh1CVaIegewastpw=
+			eaZDk5Vq9TrMdm1cbFwth5lqyfMT3nH1WjK49jJVF2U=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cxNH2pQkhpJhELUusCRcrUK9673NsyGJfMa7373Nrec=
+			sAvIepDywaSmyOxZJgG51Z8vj0y1H5sIG37wYRrMsqI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -991,14 +991,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cxNH2pQkhpJhELUusCRcrUK9673NsyGJfMa7373Nrec=
+			sAvIepDywaSmyOxZJgG51Z8vj0y1H5sIG37wYRrMsqI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jZFr8qr8Jm7OMbD/gGcBL9sf0xOh2LxmwFNF+iFWIgU=
+			tnJ2t5TaNriL2i0uyMGoQA5sLaMsf8b8R51jGY0lHww=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1047,7 +1047,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BsiJegdI2UlijRP8rhnfvLkekelvvCU5VAsrfX4tcB0=
+			wdsAQClNzoDvW+S55c0tB/Cyc8HRvleiwACgjAIWVn8=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>

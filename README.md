@@ -138,7 +138,7 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'MyApp' do
-  pod 'TM-Ignite', '~> 1.17.0'
+  pod 'TM-Ignite', '~> 1.17.1'
 end
 ```
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)
@@ -150,6 +150,11 @@ $ pod install
 
 4. CocoaPods requires `User Script Sandboxing = No` in your Xcode Project settings:
    <img src="Screenshots/CocoaPodsProjectSettings.jpg" alt="Project Settings" style="zoom: 50%;" />
+   
+### React Native
+
+If you are developing your app using React Native, you may want to use our wrapped classes available at:
+[https://github.com/ticketmaster/react-native-ticketmaster-ignite](https://github.com/ticketmaster/react-native-ticketmaster-ignite)
 
 ### Additional Dependencies
 

@@ -723,6 +723,8 @@ extension TicketmasterTickets.TMTickets {
     public static let configurationServiceNotSet: Foundation.NSError
     public static let configurationInvalidForOperation: Foundation.NSError
     public static let configurationInProgress: Foundation.NSError
+    public static let configurationLoginCombinationInvalid: Foundation.NSError
+    public static let configurationLoginCombinationUnknown: Foundation.NSError
     public static let emptyResponse: Foundation.NSError
     public static let unexpectedReponse: Foundation.NSError
     public static let userNotLoggedIn: Foundation.NSError

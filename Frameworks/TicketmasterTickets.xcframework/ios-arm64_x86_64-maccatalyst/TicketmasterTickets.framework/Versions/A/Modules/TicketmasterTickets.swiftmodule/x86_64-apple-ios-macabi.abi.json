@@ -37388,6 +37388,100 @@
               },
               {
                 "kind": "Var",
+                "name": "configurationLoginCombinationInvalid",
+                "printedName": "configurationLoginCombinationInvalid",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationInvalidSo7NSErrorCvpZ",
+                "mangledName": "$s19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationInvalidSo7NSErrorCvpZ",
+                "moduleName": "TicketmasterTickets",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationInvalidSo7NSErrorCvgZ",
+                    "mangledName": "$s19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationInvalidSo7NSErrorCvgZ",
+                    "moduleName": "TicketmasterTickets",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "configurationLoginCombinationUnknown",
+                "printedName": "configurationLoginCombinationUnknown",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationUnknownSo7NSErrorCvpZ",
+                "mangledName": "$s19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationUnknownSo7NSErrorCvpZ",
+                "moduleName": "TicketmasterTickets",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationUnknownSo7NSErrorCvgZ",
+                    "mangledName": "$s19TicketmasterTickets9TMTicketsC0B5ErrorV36configurationLoginCombinationUnknownSo7NSErrorCvgZ",
+                    "moduleName": "TicketmasterTickets",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "emptyResponse",
                 "printedName": "emptyResponse",
                 "children": [
@@ -54321,14 +54415,14 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Member\/MembersService.swift",
       "kind": "StringLiteral",
-      "offset": 3054,
+      "offset": 3114,
       "length": 38,
       "value": "\"MembersService.Working.DispatchQueue\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Member\/MembersService.swift",
       "kind": "StringLiteral",
-      "offset": 3174,
+      "offset": 3234,
       "length": 39,
       "value": "\"MembersService.Delegate.DispatchQueue\""
     },
@@ -55196,343 +55290,322 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 731,
-      "length": 24,
-      "value": "\"userDidCancelHostLogin\""
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 799,
-      "length": 29,
-      "value": "\"userDidCancelMicroflexLogin\""
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 870,
-      "length": 27,
-      "value": "\"userDidCancelSportXRLogin\""
-    },
-    {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 948,
+      "offset": 743,
       "length": 27,
       "value": "\"teamRelatedAccountLocalID\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1009,
+      "offset": 804,
       "length": 19,
       "value": "\"acceptedTermsDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 879,
       "length": 32,
       "value": "\"LastSessionTimeUserDefaultsKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 955,
       "length": 29,
       "value": "\"SessionsTimeUserDefaultsKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1234,
+      "offset": 1029,
       "length": 30,
       "value": "\"SessionsCountUserDefaultsKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1307,
+      "offset": 1102,
       "length": 53,
       "value": "\"PresenceSDK.TMXAnalyticsService.AnalyticsIdentifier\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1417,
+      "offset": 1212,
       "length": 29,
       "value": "\"savedVersionUserDefaultsKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1485,
+      "offset": 1280,
       "length": 32,
       "value": "\"presence_eventsLastUpdatedDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1551,
+      "offset": 1346,
       "length": 12,
       "value": "\"TMXTKCache\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1596,
+      "offset": 1391,
       "length": 12,
       "value": "\"TMXEVCache\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1655,
+      "offset": 1450,
       "length": 29,
       "value": "\"TMXEventsCachedHostMemberId\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1735,
+      "offset": 1530,
       "length": 33,
       "value": "\"TMXEventsCachedArchticsMemberId\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 1783,
       "length": 47,
       "value": "\"Ticketmaster.PresenceSDK.MeberService.AES.Key\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2102,
+      "offset": 1897,
       "length": 74,
       "value": "\"TimeSyncService.shouldNotifyUserAboutSystemClockDidChangeUserDefaultsKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2222,
+      "offset": 2017,
       "length": 37,
       "value": "\"presence_lastSuccessfulPrefetchDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2297,
+      "offset": 2092,
       "length": 20,
       "value": "\"dontRemindPDFPopup\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2427,
+      "offset": 2222,
       "length": 14,
       "value": "\"access_token\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2472,
+      "offset": 2267,
       "length": 9,
       "value": "\"expDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2514,
+      "offset": 2309,
       "length": 10,
       "value": "\"refTMKey\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2551,
+      "offset": 2346,
       "length": 8,
       "value": "\"member\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2383,
       "length": 13,
       "value": "\"tm_identity\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 2421,
       "length": 15,
       "value": "\"presence_hmac\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2669,
+      "offset": 2464,
       "length": 18,
       "value": "\"presence_idToken\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2516,
       "length": 24,
       "value": "\"presence_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2772,
+      "offset": 2567,
       "length": 17,
       "value": "\"presence_source\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 2613,
       "length": 20,
       "value": "\"presence_client_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2870,
+      "offset": 2665,
       "length": 23,
       "value": "\"presence_placement_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2926,
+      "offset": 2721,
       "length": 24,
       "value": "\"presence_integrator_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2983,
+      "offset": 2778,
       "length": 21,
       "value": "\"tmx_am_access_token\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3035,
+      "offset": 2830,
       "length": 16,
       "value": "\"tmx_am_expDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3084,
+      "offset": 2879,
       "length": 16,
       "value": "\"tmx_am_refresh\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3129,
+      "offset": 2924,
       "length": 13,
       "value": "\"am_identity\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3167,
+      "offset": 2962,
       "length": 18,
       "value": "\"presence_am_hmac\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3213,
+      "offset": 3008,
       "length": 21,
       "value": "\"presence_am_idToken\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3268,
+      "offset": 3063,
       "length": 27,
       "value": "\"presence_am_doNotSellFlag\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3117,
       "length": 20,
       "value": "\"presence_am_source\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3371,
+      "offset": 3166,
       "length": 23,
       "value": "\"presence_am_client_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3426,
+      "offset": 3221,
       "length": 26,
       "value": "\"presence_am_placement_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3485,
+      "offset": 3280,
       "length": 27,
       "value": "\"presence_am_integrator_id\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3553,
+      "offset": 3348,
       "length": 22,
       "value": "\"UserDefaultsMigrated\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3772,
+      "offset": 3567,
       "length": 30,
       "value": "\"localisationLastModifiedDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3852,
+      "offset": 3647,
       "length": 35,
       "value": "\"stageLocalisationLastModifiedDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3939,
+      "offset": 3734,
       "length": 37,
       "value": "\"preprodLocalisationLastModifiedDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4024,
+      "offset": 3819,
       "length": 33,
       "value": "\"devLocalisationLastModifiedDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4096,
+      "offset": 3891,
       "length": 24,
       "value": "\"recentContactsAssigned\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PSDKDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4432,
+      "offset": 4227,
       "length": 6,
       "value": "\"PSDK\""
     },
@@ -56526,224 +56599,238 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2270,
+      "offset": 2310,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2448,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 2331,
+      "offset": 2645,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2335,
+      "offset": 2649,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2407,
+      "offset": 2721,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "Array",
-      "offset": 2481,
+      "offset": 2795,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2756,
+      "offset": 3070,
       "length": 5,
       "value": "226.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2762,
+      "offset": 3076,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2776,
+      "offset": 3090,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2781,
+      "offset": 3095,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2794,
+      "offset": 3108,
       "length": 4,
       "value": "56.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2799,
+      "offset": 3113,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2813,
+      "offset": 3127,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2895,
+      "offset": 3209,
       "length": 5,
       "value": "226.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2901,
+      "offset": 3215,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2915,
+      "offset": 3229,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2920,
+      "offset": 3234,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2933,
+      "offset": 3247,
       "length": 4,
       "value": "56.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2938,
+      "offset": 3252,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "FloatLiteral",
-      "offset": 2952,
+      "offset": 3266,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 6776,
+      "offset": 7090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 6813,
+      "offset": 7127,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 6852,
+      "offset": 7166,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 6927,
+      "offset": 7241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 6970,
+      "offset": 7284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "Array",
-      "offset": 7371,
+      "offset": 7685,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "Array",
-      "offset": 7628,
+      "offset": 7942,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 8128,
+      "offset": 8442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "BooleanLiteral",
-      "offset": 9126,
+      "offset": 9440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "StringLiteral",
-      "offset": 14665,
+      "offset": 14979,
       "length": 19,
       "value": "\"DidLogoutFromHost\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "StringLiteral",
-      "offset": 14744,
+      "offset": 15058,
       "length": 23,
       "value": "\"DidLogoutFromArchtics\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "StringLiteral",
-      "offset": 14828,
+      "offset": 15142,
       "length": 24,
       "value": "\"DidLogoutFromMicroflex\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/TicketmasterCore.swift",
       "kind": "StringLiteral",
-      "offset": 14911,
+      "offset": 15225,
       "length": 22,
       "value": "\"DidLogoutFromSportXR\""
     },
@@ -56855,63 +56942,63 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 1991,
       "length": 12,
       "value": "\"Pass Queue\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16118,
+      "offset": 16056,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16163,
+      "offset": 16101,
       "length": 17,
       "value": "\"Accept-Language\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16271,
+      "offset": 16209,
       "length": 16,
       "value": "\"x-secure-token\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16329,
+      "offset": 16267,
       "length": 23,
       "value": "\"Access-Token-Archtics\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16390,
+      "offset": 16328,
       "length": 19,
       "value": "\"Access-Token-Host\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16452,
+      "offset": 16390,
       "length": 18,
       "value": "\"Access-Token-MFX\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16511,
+      "offset": 16449,
       "length": 22,
       "value": "\"Access-Token-SportXR\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Passes\/PassService.swift",
       "kind": "StringLiteral",
-      "offset": 16572,
+      "offset": 16510,
       "length": 18,
       "value": "\"X-Tmx-Client-SDK\""
     },
@@ -57065,112 +57152,140 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2070,
+      "offset": 2062,
+      "length": 2,
+      "value": "-6"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 31,
+      "value": "\"Configuration type is invalid\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2293,
+      "length": 2,
+      "value": "-7"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
+      "kind": "StringLiteral",
+      "offset": 2395,
+      "length": 31,
+      "value": "\"Configuration type is unknown\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2524,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 2163,
+      "offset": 2617,
       "length": 21,
       "value": "\"Empty response body\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2263,
+      "offset": 2717,
       "length": 3,
       "value": "-11"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2814,
       "length": 26,
       "value": "\"Unexpected response body\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2496,
+      "offset": 2950,
       "length": 3,
       "value": "-20"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 2591,
+      "offset": 3045,
       "length": 20,
       "value": "\"User not logged in\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2689,
+      "offset": 3143,
       "length": 3,
       "value": "-21"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 2785,
+      "offset": 3239,
       "length": 20,
       "value": "\"User aborted login\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 2885,
+      "offset": 3339,
       "length": 3,
       "value": "-22"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 2983,
+      "offset": 3437,
       "length": 35,
       "value": "\"Login window cannot be determined\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3098,
+      "offset": 3552,
       "length": 3,
       "value": "-23"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 3196,
+      "offset": 3650,
       "length": 22,
       "value": "\"Missing OAuth tokens\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3300,
+      "offset": 3754,
       "length": 3,
       "value": "-24"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 3400,
+      "offset": 3854,
       "length": 30,
       "value": "\"Could not convert MemberInfo\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "IntegerLiteral",
-      "offset": 3545,
+      "offset": 3999,
       "length": 3,
       "value": "-30"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/PresenceSDK\/TMTickets+TicketsError.swift",
       "kind": "StringLiteral",
-      "offset": 3658,
+      "offset": 4112,
       "length": 34,
       "value": "\"Feature not supported by backend\""
     },
@@ -59347,7 +59462,7 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/ExternalContract\/TMXSDK.swift",
       "kind": "StringLiteral",
-      "offset": 9030,
+      "offset": 9043,
       "length": 7,
       "value": "\"1.0.0\""
     },
@@ -60565,49 +60680,49 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 13625,
+      "offset": 15211,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 16281,
+      "offset": 17867,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 16334,
+      "offset": 17920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 25289,
+      "offset": 25713,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 25312,
+      "offset": 25736,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "IntegerLiteral",
-      "offset": 26536,
+      "offset": 26960,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "IntegerLiteral",
-      "offset": 26551,
+      "offset": 26975,
       "length": 6,
       "value": "1"
     },
@@ -65430,28 +65545,28 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/v1\/EventsViewControllerV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 9882,
+      "offset": 11555,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/v1\/EventsViewControllerV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 9935,
+      "offset": 11608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/v1\/EventsViewControllerV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 14811,
+      "offset": 15312,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/v1\/EventsViewControllerV1.swift",
       "kind": "BooleanLiteral",
-      "offset": 14834,
+      "offset": 15335,
       "length": 4,
       "value": "true"
     },

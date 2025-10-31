@@ -26,7 +26,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		BHk9oRhEuKS4XfcbHqK+/1Pit1w=
+		pnE1seflw8wurdb04pp+XKaznM4=
 		</data>
 		<key>BarcodeCell.DeliveryView.nib</key>
 		<data>
@@ -150,47 +150,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wEHnfN+ws+d/zMtglzsuieSkdC0=
+		XiJ2E0PB9IERAIIt6rAFykqWPYQ=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4ck94n4sSPU55VlfWg4wc6cd3KM=
+		MFaJA8ygvNEMeKGDGRxPpRFnGVw=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iSUaq+XOfcdb01lOLbXIPZdgc98=
+		AbYZtE+KOxRaywbBiy3q0aMYsV0=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		hYCNHqm2mZXTW6W2TAFscBhF9Gs=
+		Uz1P++Z7iiAG/nZhWD3c8AR73CM=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iSUaq+XOfcdb01lOLbXIPZdgc98=
+		AbYZtE+KOxRaywbBiy3q0aMYsV0=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sGn20ekvQmT5eJkgRlAkI5IZCxs=
+		aMoUnxOtJ8GJP+zIJXyhcgSHwg8=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4ck94n4sSPU55VlfWg4wc6cd3KM=
+		MFaJA8ygvNEMeKGDGRxPpRFnGVw=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AKBIFdIkDYxhhSbKlUZeAziqz/s=
+		THlmh1NkxbrcEzgxEgNe/0yyuS0=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0dI4D/QRoHGSrxVOiyEAQ6w0Soo=
+		CJggwROJBNK5ALjmXb3GkczTuzI=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AKBIFdIkDYxhhSbKlUZeAziqz/s=
+		THlmh1NkxbrcEzgxEgNe/0yyuS0=
 		</data>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nnEGUB3bv9k+79EpTdNQ31ZXqtI=
+		E8psh18iziw8r1WxLElA399vURo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>SDKBuildInfo.plist</key>
 		<data>
-		9OYWe/yDttFSIn7mHKDyURf+pj0=
+		oR2zMcVMNAl/RdAQxNfaePrc6hQ=
 		</data>
 		<key>SeatingMessageCell.nib</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>TMTicketsModuleHeaderView.nib</key>
 		<data>
-		TOvpsrf+CZPC1C4XtFPBGtSwQLw=
+		0pSs0WisyY1Boun76aMFrCV95XE=
 		</data>
 		<key>TMXActivityOverlayView.nib</key>
 		<data>
@@ -473,7 +473,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bTz5rbWQsRdezUs1aQ33nvNqLzA=
+			m0aN5Vb7nFc2AUMVXrhkH19ua+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -718,7 +718,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2aZ7nIcFXfPBeG4qq5W+0St9ytMsxO0n9XM1OjRt7c=
+			AdUc0huI3sk6IvxzaQfFJ9brMXIRqo+sjhCKtcWptfE=
 			</data>
 		</dict>
 		<key>BarcodeCell.DeliveryView.nib</key>
@@ -935,70 +935,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaZDk5Vq9TrMdm1cbFwth5lqyfMT3nH1WjK49jJVF2U=
+			88QSCNm+bj2AZDVDEA9O4oVSUQjnNQw6PudprqCKsxU=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			glpbHMRA6Yt1y1wHKPBjBadMg196hE0ZAP1wyICh6Gs=
+			6u+yfeJz28vOpt5PSRcgo+//SyKsbnIYd/zsJar9idI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oD80FU0bcI8Av4JuSW9AuseZdfug7wr3Qw4C9K8WBW0=
+			RkwYC1LMbDnuiopGGzYVudEm+G11tXdhKIWrz6nwlC4=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			glpbHMRA6Yt1y1wHKPBjBadMg196hE0ZAP1wyICh6Gs=
+			6u+yfeJz28vOpt5PSRcgo+//SyKsbnIYd/zsJar9idI=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RCczPkz+ffTF6fhF6UdS9DCC16ONuqiE13N9jAczYpk=
+			5Ryc5FdjJpFnWdgVs5/tHu5Xe8HgvCLCqgbDSVmSmjo=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaZDk5Vq9TrMdm1cbFwth5lqyfMT3nH1WjK49jJVF2U=
+			88QSCNm+bj2AZDVDEA9O4oVSUQjnNQw6PudprqCKsxU=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sAvIepDywaSmyOxZJgG51Z8vj0y1H5sIG37wYRrMsqI=
+			j/u43ymmil1TXe3W2Fb/tocUWe9LxS5IqYP87WZgeIg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I2khsReGISl1a7ZGC+M/COqddK4X8pqzCyy03kdtOjU=
+			wKlo/fUoql0oVmXEc8iSlM1pCC4+sBVsamm/6naeUv4=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sAvIepDywaSmyOxZJgG51Z8vj0y1H5sIG37wYRrMsqI=
+			j/u43ymmil1TXe3W2Fb/tocUWe9LxS5IqYP87WZgeIg=
 			</data>
 		</dict>
 		<key>Modules/TicketmasterTickets.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tnJ2t5TaNriL2i0uyMGoQA5sLaMsf8b8R51jGY0lHww=
+			tUpTZXT3P0KC3ce+Bbcr1eTI2amVs5LXy3dVms4On/Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1047,7 +1047,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wdsAQClNzoDvW+S55c0tB/Cyc8HRvleiwACgjAIWVn8=
+			JRESdCHTM2Ig9aiKiqTsYmPA5nTpQNKMwbhoKztzmww=
 			</data>
 		</dict>
 		<key>SeatingMessageCell.nib</key>
@@ -1145,7 +1145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LOzqJhYiK8Xabc0GoMMxuaB/JJ7+OYr/TRKxVBqcVh0=
+			+dm8k7xliOIvL/4j/Ygi++Id4nxfzg+KKFm/u5Uv2Ag=
 			</data>
 		</dict>
 		<key>TMXActivityOverlayView.nib</key>
@@ -1429,7 +1429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0U2Xn7qW+t/RYvj4SBZGAgKm5V3gm0wisNBUwWsGNcI=
+			0A8Webixg5UPcam6XNrYGl84WKraVwDtgOlCeuh5aNk=
 			</data>
 			<key>optional</key>
 			<true/>

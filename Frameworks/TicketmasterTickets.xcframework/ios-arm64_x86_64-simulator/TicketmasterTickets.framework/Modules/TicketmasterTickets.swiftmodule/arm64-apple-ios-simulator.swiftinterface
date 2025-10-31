@@ -13,6 +13,7 @@ import Darwin
 import DeveloperToolsSupport
 import EventKit
 import Foundation
+import LinkPresentation
 import MapKit
 import MessageUI
 import PassKit
@@ -118,6 +119,7 @@ public struct TMTicketsPrebuiltModule {
     case accountManagerInvoiceAction
     case promotionalModule
     case customModule
+    case shareEventOnSocialMedia
     public init?(rawValue: Swift.String)
     public typealias AllCases = [TicketmasterTickets.TMTicketsPrebuiltModule.ModuleName]
     public typealias RawValue = Swift.String
@@ -149,6 +151,7 @@ public struct TMTicketsPrebuiltModule {
   }
   public static func accountManagerSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
   public static func hostSeatUpgrades(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
+  public static func shareEventOnSocialMedia(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
   public static func accountManagerMoreTicketActions(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
   public static func accountManagerInvoiceAction(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
   public static func venueDirectionsViaAppleMaps(event: TicketmasterTickets.TMPurchasedEvent, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil, customIdentifier: Swift.String? = nil) -> TicketmasterTickets.TMTicketsModule?
@@ -893,7 +896,7 @@ public struct TMPurchasedEvent : Swift.Codable, Swift.Hashable {
 }
 extension TicketmasterTickets.TMTicketsModuleHeaderView {
   @discardableResult
-  @_Concurrency.MainActor @preconcurrency final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, topLabelTextColor: UIKit.UIColor? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, centerLabelTextColor: UIKit.UIColor? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, bottomLabelTextColor: UIKit.UIColor? = nil, titleLabelText: Swift.String? = nil, titleLabelTextColor: UIKit.UIColor? = nil, messageLabelText: Swift.String? = nil, messageLabelTextColor: UIKit.UIColor? = nil, messageLabelDetectLinks: Swift.Bool = true, messageLabelLinkColor: UIKit.UIColor? = nil, titleMessageBackgroundColor: UIKit.UIColor? = nil, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundAspectRatio: CoreFoundation.CGFloat? = nil, backgroundAspectRatioForced: Swift.Bool = false, backgroundColor: UIKit.UIColor? = nil, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, mapCoordinateRegion: MapKit.MKCoordinateRegion? = nil, mapAnnotation: (any MapKit.MKAnnotation)? = nil, avContentURL: Foundation.URL? = nil, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false, barcode2DValue: Swift.String? = nil, qrCodeValue: Swift.String? = nil, aztecValue: Swift.String? = nil, pdf417Value: Swift.String? = nil, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public func configure(topLabelText: Swift.String? = nil, topLabelTextAlignment: UIKit.NSTextAlignment? = .left, topLabelTextColor: UIKit.UIColor? = nil, centerLabelText: Swift.String? = nil, centerLabelTextAlignment: UIKit.NSTextAlignment? = .center, centerLabelTextColor: UIKit.UIColor? = nil, bottomLabelText: Swift.String? = nil, bottomLabelTextAlignment: UIKit.NSTextAlignment? = .right, bottomLabelTextColor: UIKit.UIColor? = nil, titleLabelText: Swift.String? = nil, titleLabelTextColor: UIKit.UIColor? = nil, messageLabelText: Swift.String? = nil, messageLabelTextColor: UIKit.UIColor? = nil, messageLabelDetectLinks: Swift.Bool = true, messageLabelLinkColor: UIKit.UIColor? = nil, titleMessageBackgroundColor: UIKit.UIColor? = nil, gradientAlpha: CoreFoundation.CGFloat? = 0.0, backgroundAspectRatio: CoreFoundation.CGFloat? = nil, backgroundAspectRatioForced: Swift.Bool = false, backgroundColor: UIKit.UIColor? = nil, backgroundImage: UIKit.UIImage? = nil, backgroundImageURL: Foundation.URL? = nil, backgroundView: UIKit.UIView? = nil, mapCoordinateRegion: MapKit.MKCoordinateRegion? = nil, mapAnnotation: (any MapKit.MKAnnotation)? = nil, avContentURL: Foundation.URL? = nil, disableLoopingContent: Swift.Bool = false, disableAVAudio: Swift.Bool = false, barcode2DValue: Swift.String? = nil, qrCodeValue: Swift.String? = nil, aztecValue: Swift.String? = nil, pdf417Value: Swift.String? = nil, headerOverride: TicketmasterTickets.TMTicketsPrebuiltModule.HeaderOverride? = nil) -> Swift.Bool
 }
 extension TicketmasterTickets.TMTickets {
   final public func display(orderOrEventId: Swift.String, type: TicketmasterTickets.TMTickets.IdType = .any, action: TicketmasterTickets.TMTickets.ActionType? = nil, callSource: Swift.String? = nil)
@@ -1105,10 +1108,12 @@ extension Swift.UInt64 {
     final public let walletSettings: TicketmasterTickets.TMTicketsModule.WalletSettings?
     final public let mapLocation: TicketmasterTickets.TMTicketsModule.MapLocation?
     public var enabled: Swift.Bool
-    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true)
-    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true)
-    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, walletSettings: TicketmasterTickets.TMTicketsModule.WalletSettings, enabled: Swift.Bool = true)
-    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, mapLocation: TicketmasterTickets.TMTicketsModule.MapLocation, enabled: Swift.Bool = true)
+    public var iconImage: UIKit.UIImage?
+    public var systemIconName: Swift.String?
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true, iconImage: UIKit.UIImage? = nil, systemIconName: Swift.String? = nil)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, webpageSettings: TicketmasterTickets.TMTicketsModule.WebpageSettings, requiresSpecificOrder: Swift.Bool = false, enabled: Swift.Bool = true, iconImage: UIKit.UIImage? = nil, systemIconName: Swift.String? = nil)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, walletSettings: TicketmasterTickets.TMTicketsModule.WalletSettings, enabled: Swift.Bool = true, iconImage: UIKit.UIImage? = nil, systemIconName: Swift.String? = nil)
+    public init(title: Swift.String, titleColor: UIKit.UIColor? = nil, buttonColor: UIKit.UIColor? = nil, callbackValue: Swift.String? = nil, mapLocation: TicketmasterTickets.TMTicketsModule.MapLocation, enabled: Swift.Bool = true, iconImage: UIKit.UIImage? = nil, systemIconName: Swift.String? = nil)
     @objc deinit
   }
   @objc public class WebpageSettings : ObjectiveC.NSObject {

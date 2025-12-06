@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.source            = { :git => 'https://github.com/ticketmaster/iOS-TicketmasterSDK.git', :tag => s.version.to_s }
 
   s.platform = :ios
-  s.ios.deployment_target = '16.6'
-  s.swift_version = '5.9.0'
+  s.ios.deployment_target = '17.0'
+  s.swift_version = '6.2.0'
   
   s.vendored_frameworks = 'Frameworks/*.xcframework'
 end

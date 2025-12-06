@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Aug 19 11:05:25 PDT 2025</string>
+	<string>Wed Nov  5 18:23:18 PST 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
@@ -11,12 +11,12 @@
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Fixed issue with re-configuring constantly (LN usage)</string>
+	<string>PSDK-13390 validToken(showLogin: false) uses systemExchange if enabled</string>
 	<key>GITDate</key>
-	<string>Tue Aug 19 10:58:51 2025 -0700</string>
+	<string>Wed Nov 5 18:13:06 2025 -0800</string>
 	<key>GITRevision</key>
-	<string>489db446f89d5afaca39778d55fae50aa1526b4f</string>
+	<string>be65551d66b9b6d3cc486e123c2ee708143d42d2</string>
 	<key>MarketingVersion</key>
-	<string>3.14.6</string>
+	<string>3.14.8</string>
 </dict>
 </plist>

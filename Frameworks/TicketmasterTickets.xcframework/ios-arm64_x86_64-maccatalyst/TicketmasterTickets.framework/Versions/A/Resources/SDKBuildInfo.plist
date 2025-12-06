@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Nov 18 09:15:27 PST 2025</string>
+	<string>Fri Dec  5 18:34:25 PST 2025</string>
 	<key>BuildHost</key>
-	<string>LNEC02ZK2H4MD6Q</string>
+	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
-	<string></string>
+	<string>beta1</string>
 	<key>GITBranch</key>
-	<string></string>
+	<string>release/3.15.0</string>
 	<key>GITComment</key>
-	<string></string>
+	<string>PSDK-0 Fixed RELEASE bug with font extension, updated resolved packages</string>
 	<key>GITDate</key>
-	<string></string>
+	<string>Fri Dec 5 17:03:37 2025 -0800</string>
 	<key>GITRevision</key>
-	<string></string>
+	<string>355a7b55a92518d1ec8a50eca404fb8b3ef07d92</string>
 	<key>MarketingVersion</key>
-	<string>3.14.3</string>
+	<string>3.15.0</string>
 </dict>
 </plist>

@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed May 28 13:46:19 PDT 2025</string>
+	<string>Fri Dec  5 18:26:00 PST 2025</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
-	<string></string>
+	<string>beta1</string>
 	<key>GITBranch</key>
-	<string>release/3.13.0</string>
+	<string>release/3.15.0</string>
 	<key>GITComment</key>
-	<string>Merge branch Fix-PSDK-16143-Never-Ending-Spinner into master</string>
+	<string>PSDK-0 Fixed RELEASE bug with font extension, updated resolved packages</string>
 	<key>GITDate</key>
-	<string>Wed May 28 17:26:54 2025 +0100</string>
+	<string>Fri Dec 5 17:03:37 2025 -0800</string>
 	<key>GITRevision</key>
-	<string>2a489819e749515957d998dfdcb5919030fffc9e</string>
+	<string>355a7b55a92518d1ec8a50eca404fb8b3ef07d92</string>
 	<key>MarketingVersion</key>
-	<string>1.9.0</string>
+	<string>1.10.0</string>
 </dict>
 </plist>

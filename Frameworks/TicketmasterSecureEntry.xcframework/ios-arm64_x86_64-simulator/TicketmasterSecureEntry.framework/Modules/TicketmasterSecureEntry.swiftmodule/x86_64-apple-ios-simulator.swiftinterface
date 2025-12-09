@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterSecureEntry
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
 import Darwin
 import DeveloperToolsSupport
 import Foundation
@@ -57,7 +58,9 @@ public protocol SecureEntryViewSigningDelegate : AnyObject {
 }
 extension TicketmasterSecureEntry.SecureEntryView {
   public enum RetVersion : Swift.String, Swift.Codable {
-    case v1, v2, suppressed
+    case v1
+    case v2
+    case suppressed
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -219,6 +222,19 @@ extension TicketmasterSecureEntry.SecureEntryView {
     data += Array<UInt8>(repeating: 0, count: blockSize + max - 1 - (msgLength % blockSize))
   }
 }
+@available(iOS 17, *)
+@_Concurrency.MainActor @preconcurrency public struct SecureEntryView2 : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?, pdf417Subtitle: Swift.String? = nil, errorMessage: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, tokenBySkippingDecoding token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?)
+  @_Concurrency.MainActor @preconcurrency public init(qrCodeTokenBySkippingDecoding token: Swift.String?, strokeColor: SwiftUICore.Color?)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 17, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s23TicketmasterSecureEntry0bC5View2V4bodyQrvp", 0) __
+}
+
+
 @usableFromInline
 internal struct BatchedCollectionIndex<Base> where Base : Swift.Collection {
 }
@@ -322,7 +338,7 @@ extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swif
 }
 @usableFromInline
 internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swift.Int
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class SecureEntryView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class SecureEntryView : UIKit.UIView, Combine.ObservableObject {
   @_Concurrency.MainActor @preconcurrency public static var version: Swift.String {
     get
   }
@@ -346,6 +362,19 @@ internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swif
   @_Concurrency.MainActor @preconcurrency final public func setTokenBySkippingDecoding(_ token: Swift.String?)
   @_Concurrency.MainActor @preconcurrency final public func setQRCodeTokenBySkippingDecoding(_ token: Swift.String?)
   @_Concurrency.MainActor @preconcurrency final public func setPDF417TokenBySkippingDecoding(_ token: Swift.String?)
+  public enum VerticalAlignment {
+    case top
+    case center
+    public static func == (a: TicketmasterSecureEntry.SecureEntryView.VerticalAlignment, b: TicketmasterSecureEntry.SecureEntryView.VerticalAlignment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency final public var verticalAlignment: TicketmasterSecureEntry.SecureEntryView.VerticalAlignment {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion
   @_Concurrency.MainActor @preconcurrency weak final public var signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
@@ -356,6 +385,7 @@ internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swif
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
 extension TicketmasterSecureEntry.SecureEntryView {
   @_Concurrency.MainActor @preconcurrency final public func showError(message: Swift.String, icon: UIKit.UIImage? = nil)
@@ -381,3 +411,7 @@ extension Swift.UInt32 {
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Equatable {}
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Hashable {}
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.RawRepresentable {}
+@available(iOS 17, *)
+extension TicketmasterSecureEntry.SecureEntryView2 : Swift.Sendable {}
+extension TicketmasterSecureEntry.SecureEntryView.VerticalAlignment : Swift.Equatable {}
+extension TicketmasterSecureEntry.SecureEntryView.VerticalAlignment : Swift.Hashable {}

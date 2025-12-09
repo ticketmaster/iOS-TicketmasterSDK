@@ -357,6 +357,7 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 
 
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -716,6 +717,7 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull brandingColor SWIFT_DEPRECATED_MSG("brandingColor has been deprecated and no longer has any functionality");
 @property (nonatomic, readonly) BOOL isSubtitleBrandingEnabled SWIFT_DEPRECATED_MSG("isSubtitleBrandingEnabled has been deprecated and no longer has any functionality");
 @end
+
 
 
 

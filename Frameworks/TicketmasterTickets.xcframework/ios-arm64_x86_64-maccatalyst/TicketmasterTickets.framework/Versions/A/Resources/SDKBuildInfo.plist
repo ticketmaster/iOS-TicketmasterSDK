@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Nov 18 09:15:27 PST 2025</string>
+	<string>Tue Dec  9 09:12:58 PST 2025</string>
 	<key>BuildHost</key>
 	<string>LNEC02ZK2H4MD6Q</string>
 	<key>BuildVariant</key>
-	<string></string>
+	<string>beta2</string>
 	<key>GITBranch</key>
 	<string></string>
 	<key>GITComment</key>
@@ -17,6 +17,6 @@
 	<key>GITRevision</key>
 	<string></string>
 	<key>MarketingVersion</key>
-	<string>3.14.3</string>
+	<string>3.15.0</string>
 </dict>
 </plist>

@@ -354,8 +354,6 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 
 
 
-
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

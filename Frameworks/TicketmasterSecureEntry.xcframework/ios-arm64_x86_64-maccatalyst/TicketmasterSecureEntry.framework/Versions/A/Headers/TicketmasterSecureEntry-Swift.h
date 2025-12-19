@@ -303,8 +303,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-
 @class NSString;
 @class NSCoder;
 
@@ -349,8 +347,6 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull brandingColor SWIFT_DEPRECATED_MSG("brandingColor has been deprecated and no longer has any functionality");
 @property (nonatomic, readonly) BOOL isSubtitleBrandingEnabled SWIFT_DEPRECATED_MSG("isSubtitleBrandingEnabled has been deprecated and no longer has any functionality");
 @end
-
-
 
 
 
@@ -671,8 +667,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-
 @class NSString;
 @class NSCoder;
 
@@ -717,8 +711,6 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 @property (nonatomic, readonly, strong) UIColor * _Nonnull brandingColor SWIFT_DEPRECATED_MSG("brandingColor has been deprecated and no longer has any functionality");
 @property (nonatomic, readonly) BOOL isSubtitleBrandingEnabled SWIFT_DEPRECATED_MSG("isSubtitleBrandingEnabled has been deprecated and no longer has any functionality");
 @end
-
-
 
 
 

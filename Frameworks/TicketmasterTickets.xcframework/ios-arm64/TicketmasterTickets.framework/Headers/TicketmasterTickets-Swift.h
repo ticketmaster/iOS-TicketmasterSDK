@@ -321,7 +321,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
 /// main class of Tickets SDK, intended to be used as singleton
 /// Example:
 /// \code

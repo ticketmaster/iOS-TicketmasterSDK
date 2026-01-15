@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/jonathan.backer/Library/Developer/Xcode/DerivedData/TicketmasterSwiftProtobuf-eafffpnmldauspeofnogvcqgkuon/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSwiftProtobuf/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSwiftProtobuf.framework/TicketmasterSwiftProtobuf'
+binary-path:     '/Users/Jonathan.Backer/Library/Developer/Xcode/DerivedData/TicketmasterSwiftProtobuf-fezapdrnkcqvktfoovjrnkhzpboc/Build/Intermediates.noindex/ArchiveIntermediates/TicketmasterSwiftProtobuf/InstallationBuildProductsLocation/Library/Frameworks/TicketmasterSwiftProtobuf.framework/TicketmasterSwiftProtobuf'
 relocations:
   - { offset: 0x3328C, size: 0x8, addend: 0x0, symName: _TicketmasterSwiftProtobufVersionString, symObjAddr: 0x0, symBinAddr: 0xE6180, symSize: 0x0 }
   - { offset: 0x332C0, size: 0x8, addend: 0x0, symName: _TicketmasterSwiftProtobufVersionNumber, symObjAddr: 0x50, symBinAddr: 0xE61D0, symSize: 0x0 }
@@ -3718,7 +3718,7 @@ relocations:
   - { offset: 0xE83B3, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf3divyxx_xtSZRzlFs5Int64V_Tg5', symObjAddr: 0x196C, symBinAddr: 0x9D494, symSize: 0x2C }
   - { offset: 0xE845E, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf1soiyAA07Google_C10_TimestampVAD_AA0d1_C9_DurationVtF', symObjAddr: 0x1A00, symBinAddr: 0x9D524, symSize: 0x60 }
   - { offset: 0xE8500, size: 0x8, addend: 0x0, symName: '_$sSlsE3mapySayqd__Gqd__7ElementQzqd_0_YKXEqd_0_YKs5ErrorRd_0_r0_lFSS8UTF8ViewV_Sis5NeverOTg5123$s25TicketmasterSwiftProtobuf14parseTimestamp33_35DB8A8AE5D6658110EC751D3CB00CD9LL1ss5Int64V_s5Int32VtSS_tKFSis5UInt8VXEfU_Tf1cn_n', symObjAddr: 0x0, symBinAddr: 0x9BB28, symSize: 0x25C }
-  - { offset: 0xE890C, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf12base64ValuesSaySiGvp', symObjAddr: 0x1BC88, symBinAddr: 0x134A88, symSize: 0x0 }
+  - { offset: 0xE890C, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf12base64ValuesSaySiGvp', symObjAddr: 0x1BC90, symBinAddr: 0x134A88, symSize: 0x0 }
   - { offset: 0xE8EC3, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf12fromHexDigit33_B316E4A3BC5F9C97EC5960B5DC5C9AE1LLys6UInt32VSgs7UnicodeO6ScalarVF', symObjAddr: 0x1F40, symBinAddr: 0x9F4C4, symSize: 0xA0 }
   - { offset: 0xE8EF1, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf12fromHexDigit33_B316E4A3BC5F9C97EC5960B5DC5C9AE1LLys6UInt32VSgs7UnicodeO6ScalarVF', symObjAddr: 0x1F40, symBinAddr: 0x9F4C4, symSize: 0xA0 }
   - { offset: 0xE8F11, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf12base64Values_WZ', symObjAddr: 0x1FE0, symBinAddr: 0x9F564, symSize: 0x30 }
@@ -4635,7 +4635,7 @@ relocations:
   - { offset: 0x10F4F5, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf13BinaryEncoderV14putStringValue5valueySS_tF', symObjAddr: 0x7C, symBinAddr: 0xC39BC, symSize: 0x218 }
   - { offset: 0x10FAF6, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf13BinaryEncoderV9remainderSwvg', symObjAddr: 0x2CC, symBinAddr: 0xC3BD4, symSize: 0x24 }
   - { offset: 0x10FB1E, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf13BinaryEncoderV9remainderSwvg', symObjAddr: 0x2CC, symBinAddr: 0xC3BD4, symSize: 0x24 }
-  - { offset: 0x10FC6B, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf17AnyMessageStorageC15defaultInstanceACvpZ', symObjAddr: 0x1F900, symBinAddr: 0x134A90, symSize: 0x0 }
+  - { offset: 0x10FC6B, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf17AnyMessageStorageC15defaultInstanceACvpZ', symObjAddr: 0x1F908, symBinAddr: 0x134A90, symSize: 0x0 }
   - { offset: 0x11003C, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf17AnyMessageStorageC12textTraverse7visitoryAA25TextFormatEncodingVisitorVz_tF', symObjAddr: 0x0, symBinAddr: 0xC3C8C, symSize: 0x6A0 }
   - { offset: 0x110B77, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf17AnyMessageStorageC16decodeTextFormat7typeURL7decoderySS_AA0hI7DecoderVztKF', symObjAddr: 0x6A0, symBinAddr: 0xC432C, symSize: 0x868 }
   - { offset: 0x1112A2, size: 0x8, addend: 0x0, symName: '_$s25TicketmasterSwiftProtobuf17AnyMessageStorageC17encodedJSONString7optionsSSAA19JSONEncodingOptionsV_tKF', symObjAddr: 0xF08, symBinAddr: 0xC4B94, symSize: 0xAF4 }

@@ -623,8 +623,10 @@ extension TicketmasterAuthentication.TMApigeeConfig {
     public let upsellAddOnsEnabled: Swift.Bool
     public let forceEventsDesignVersion: Swift.String?
     public let forceTicketsDesignVersion: Swift.String?
+    public let forceTicketDetailsDesignVersion: Swift.String?
     public let isSellButtonHidden: Swift.Bool
     public let sellManageListingsOverrideURL: Foundation.URL?
+    public let disableExternalModules: Swift.Bool
     public let cmsModulesEnabled: Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: TicketmasterAuthentication.TMApigeeConfig.Base, b: TicketmasterAuthentication.TMApigeeConfig.Base) -> Swift.Bool

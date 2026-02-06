@@ -138,7 +138,7 @@ $ sudo gem install cocoapods
 
 ```ruby
 target 'MyApp' do
-  pod 'TM-Ignite', '~> 1.18.0'
+  pod 'TM-Ignite', '~> 1.19.0'
 end
 ```
    * For more information about the `Podfile` see [CocoaPods.org](https://cocoapods.org/)

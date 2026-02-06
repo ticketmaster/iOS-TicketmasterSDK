@@ -335,25 +335,6 @@ SWIFT_CLASS("_TtC23TicketmasterSecureEntry15SecureEntryView")
 
 
 
-@class UIColor;
-
-@interface SecureEntryView (SWIFT_EXTENSION(TicketmasterSecureEntry))
-@property (nonatomic, readonly) BOOL livePreview SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly) BOOL staticPreview SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly, copy) NSString * _Nonnull qrBarcodeSubtitle SWIFT_UNAVAILABLE;
-@property (nonatomic, copy) NSString * _Nonnull pdf417BarcodeSubtitle SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly) BOOL brandSubtitleText SWIFT_UNAVAILABLE;
-@property (nonatomic, readonly, copy) NSString * _Nonnull qrSubtitle SWIFT_DEPRECATED_MSG("qrSubtitle has been deprecated and no longer has any functionality");
-@property (nonatomic, readonly, strong) UIColor * _Nonnull brandingColor SWIFT_DEPRECATED_MSG("brandingColor has been deprecated and no longer has any functionality");
-@property (nonatomic, readonly) BOOL isSubtitleBrandingEnabled SWIFT_DEPRECATED_MSG("isSubtitleBrandingEnabled has been deprecated and no longer has any functionality");
-@end
-
-
-
-
-
-
-
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

@@ -2,7 +2,9 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios17.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterSecureEntry
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreImage.CIFilterBuiltins
 import Combine
+import CoreImage
 import Darwin
 import DeveloperToolsSupport
 import Foundation
@@ -37,6 +39,14 @@ extension Swift.Array {
   }
   }
 }
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class SecureEntryViewModel : Foundation.ObservableObject {
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class TimeService {
+  public static func syncTime(force: Swift.Bool = false, timePool: Swift.String? = nil, completion: ((_ synced: Swift.Bool) -> Swift.Void)? = nil)
+  @objc deinit
+}
 extension TicketmasterSecureEntry.SecureEntryView {
   public struct Error {
     public static let domain: Swift.String
@@ -70,64 +80,6 @@ extension TicketmasterSecureEntry.SecureEntryView {
   public enum InfoToEncode {
     case string(Swift.String?)
     case data(Foundation.Data)
-  }
-}
-extension TicketmasterSecureEntry.SecureEntryView {
-  @_Concurrency.MainActor @preconcurrency public static func syncTime(force: Swift.Bool = false, timePool: Swift.String? = nil, completion: ((_ synced: Swift.Bool) -> Swift.Void)? = nil)
-  @available(*, deprecated, renamed: "syncTime(force:completion:)")
-  @_Concurrency.MainActor @preconcurrency public static func syncTime(completed: ((_ synced: Swift.Bool) -> Swift.Void)?)
-}
-extension TicketmasterSecureEntry.SecureEntryView {
-  @available(*, deprecated, message: "Use brandingColor property instead")
-  @_Concurrency.MainActor @preconcurrency final public func setBrandingColor(color: UIKit.UIColor)
-  @available(*, deprecated, message: "Use pdf417Subtitle property instead")
-  @_Concurrency.MainActor @preconcurrency final public func setPdf417Subtitle(subtitleText: Swift.String)
-  @available(*, deprecated, message: "setQrCodeSubtitle has been deprecated and no longer has any functionality")
-  @_Concurrency.MainActor @preconcurrency final public func setQrCodeSubtitle(subtitleText: Swift.String)
-  @available(*, deprecated, message: "Use isSubtitleBrandingEnabled property instead")
-  @_Concurrency.MainActor @preconcurrency final public func enableBrandedSubtitle(enable: Swift.Bool)
-  @available(*, deprecated, renamed: "showError(message:icon:)")
-  @_Concurrency.MainActor @preconcurrency final public func showError(text: Swift.String?, icon: UIKit.UIImage? = nil)
-  @available(*, deprecated, message: "Use token and errorMessage properties instead")
-  @_Concurrency.MainActor @preconcurrency final public func setToken(token: Swift.String!, errorText: Swift.String? = nil)
-  @available(*, unavailable)
-  @_Concurrency.MainActor @preconcurrency final public func startAnimation()
-  @available(*, deprecated, message: "Use SecureEntryView.syncTime() instead")
-  @_Concurrency.MainActor @preconcurrency final public func syncTime(completed: ((_ synced: Swift.Bool) -> Swift.Void)? = nil)
-}
-extension TicketmasterSecureEntry.SecureEntryView {
-  @available(*, unavailable)
-  @objc @_Concurrency.MainActor @preconcurrency final public var livePreview: Swift.Bool {
-    @objc get
-  }
-  @available(*, unavailable)
-  @objc @_Concurrency.MainActor @preconcurrency final public var staticPreview: Swift.Bool {
-    @objc get
-  }
-  @available(*, unavailable)
-  @objc @_Concurrency.MainActor @preconcurrency final public var qrBarcodeSubtitle: Swift.String {
-    @objc get
-  }
-  @available(*, unavailable)
-  @objc @_Concurrency.MainActor @preconcurrency final public var pdf417BarcodeSubtitle: Swift.String {
-    @objc get
-    @objc set
-  }
-  @available(*, unavailable)
-  @objc @_Concurrency.MainActor @preconcurrency final public var brandSubtitleText: Swift.Bool {
-    @objc get
-  }
-  @available(*, deprecated, message: "qrSubtitle has been deprecated and no longer has any functionality")
-  @objc @_Concurrency.MainActor @preconcurrency final public var qrSubtitle: Swift.String {
-    @objc get
-  }
-  @available(*, deprecated, message: "brandingColor has been deprecated and no longer has any functionality")
-  @objc @_Concurrency.MainActor @preconcurrency final public var brandingColor: UIKit.UIColor {
-    @objc get
-  }
-  @available(*, deprecated, message: "isSubtitleBrandingEnabled has been deprecated and no longer has any functionality")
-  @objc @_Concurrency.MainActor @preconcurrency final public var isSubtitleBrandingEnabled: Swift.Bool {
-    @objc get
   }
 }
 @_specialize(exported: false, kind: full, where T == Swift.Int)
@@ -224,8 +176,8 @@ extension TicketmasterSecureEntry.SecureEntryView {
 }
 @available(iOS 17, *)
 @_Concurrency.MainActor @preconcurrency public struct SecureEntryView2 : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?, pdf417Subtitle: Swift.String? = nil, errorMessage: Swift.String? = nil)
-  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, tokenBySkippingDecoding token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?)
+  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, displayFormat: TicketmasterSecureEntry.BarcodeDisplayFormat, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?, pdf417Subtitle: Swift.String? = nil, errorMessage: Swift.String? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion, displayFormat: TicketmasterSecureEntry.BarcodeDisplayFormat, signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?, tokenBySkippingDecoding token: Swift.String?, qrCodeStrokeColor: SwiftUICore.Color?)
   @_Concurrency.MainActor @preconcurrency public init(qrCodeTokenBySkippingDecoding token: Swift.String?, strokeColor: SwiftUICore.Color?)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -233,6 +185,7 @@ extension TicketmasterSecureEntry.SecureEntryView {
   @available(iOS 17, *)
   public typealias Body = @_opaqueReturnTypeOf("$s23TicketmasterSecureEntry0bC5View2V4bodyQrvp", 0) __
 }
+
 
 
 @usableFromInline
@@ -276,6 +229,20 @@ internal struct BatchedCollection<Base> : Swift.Collection where Base : Swift.Co
 extension Swift.Collection {
   @inlinable internal func batched(by size: Swift.Int) -> TicketmasterSecureEntry.BatchedCollection<Self> {
     BatchedCollection(base: self, size: size)
+  }
+}
+public enum BarcodeDisplayFormat : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case aztec
+  case pdf417
+  case qrCode
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [TicketmasterSecureEntry.BarcodeDisplayFormat]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [TicketmasterSecureEntry.BarcodeDisplayFormat] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
   }
 }
 extension Swift.UInt64 {
@@ -338,14 +305,14 @@ extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swif
 }
 @usableFromInline
 internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swift.Int
-@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class SecureEntryView : UIKit.UIView, Combine.ObservableObject {
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency final public class SecureEntryView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public static var version: Swift.String {
     get
   }
   @_Concurrency.MainActor @preconcurrency public static var sdkBuildInfo: TicketmasterFoundation.JSONDictionary? {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static let invalidToken: Swift.String
+  nonisolated public static let invalidToken: Swift.String
   @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var pdf417Subtitle: Swift.String {
     @objc get
     @objc set
@@ -375,17 +342,26 @@ internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swif
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion
-  @_Concurrency.MainActor @preconcurrency weak final public var signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)?
+  @_Concurrency.MainActor @preconcurrency final public var retVersion: TicketmasterSecureEntry.SecureEntryView.RetVersion {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency final public var rotatingDisplayFormat: TicketmasterSecureEntry.BarcodeDisplayFormat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency weak final public var signingDelegate: (any TicketmasterSecureEntry.SecureEntryViewSigningDelegate)? {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override final public func prepareForInterfaceBuilder()
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
 }
 extension TicketmasterSecureEntry.SecureEntryView {
   @_Concurrency.MainActor @preconcurrency final public func showError(message: Swift.String, icon: UIKit.UIImage? = nil)
@@ -408,10 +384,14 @@ extension Swift.UInt32 {
     self = val0 | val1 | val2 | val3
   }
 }
+extension TicketmasterSecureEntry.SecureEntryViewModel : Swift.Sendable {}
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Equatable {}
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.Hashable {}
 extension TicketmasterSecureEntry.SecureEntryView.RetVersion : Swift.RawRepresentable {}
 @available(iOS 17, *)
 extension TicketmasterSecureEntry.SecureEntryView2 : Swift.Sendable {}
+extension TicketmasterSecureEntry.BarcodeDisplayFormat : Swift.Equatable {}
+extension TicketmasterSecureEntry.BarcodeDisplayFormat : Swift.Hashable {}
+extension TicketmasterSecureEntry.BarcodeDisplayFormat : Swift.RawRepresentable {}
 extension TicketmasterSecureEntry.SecureEntryView.VerticalAlignment : Swift.Equatable {}
 extension TicketmasterSecureEntry.SecureEntryView.VerticalAlignment : Swift.Hashable {}

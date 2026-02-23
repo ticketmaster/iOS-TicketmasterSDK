@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Fri Feb  6 12:10:40 PST 2026</string>
+	<string>Mon Feb 23 11:30:53 PST 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.16.0</string>
+	<string>release/3.16.0a</string>
 	<key>GITComment</key>
-	<string>PSDK-15138 Update translations via CI pipeline 2</string>
+	<string>PSDK-20358 Fix v1 qr code animation</string>
 	<key>GITDate</key>
-	<string>Fri Feb 6 11:29:47 2026 -0800</string>
+	<string>Mon Feb 23 11:19:40 2026 -0800</string>
 	<key>GITRevision</key>
-	<string>c7bc9028a61cac36f9cc4d4beda1d4c3659c7b96</string>
+	<string>eb244022d8d2704ce42302e57b8f832ffe3623e5</string>
 	<key>MarketingVersion</key>
-	<string>1.11.0</string>
+	<string>1.11.1</string>
 </dict>
 </plist>

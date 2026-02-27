@@ -12734,6 +12734,13 @@
       "value": "4096"
     },
     {
+      "filePath": "\/Users\/Jonathan.Backer\/Code\/Tickets_3.16.0a\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView2\/BarcodeImageGenerator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3712,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/Jonathan.Backer\/Code\/Tickets_3.16.0a\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/CryptoSwift\/Checksum.swift",
       "kind": "Array",
       "offset": 1038,

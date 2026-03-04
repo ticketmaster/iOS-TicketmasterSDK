@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Aug 11 16:50:45 PDT 2025</string>
+	<string>Mon Feb  9 10:53:38 PST 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
@@ -11,12 +11,12 @@
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-16819-ModernizeNetworking into master</string>
+	<string>Improved documentation of Data+Encryption</string>
 	<key>GITDate</key>
-	<string>Mon Aug 11 23:34:27 2025 +0000</string>
+	<string>Mon Feb 9 10:49:30 2026 -0800</string>
 	<key>GITRevision</key>
-	<string>a094c4ff431238690b95098e76fcdad2cb2673e9</string>
+	<string>35770ecef6f8924eca409b677e8d46e5c549a55c</string>
 	<key>MarketingVersion</key>
-	<string>1.5.0</string>
+	<string>1.6.0</string>
 </dict>
 </plist>

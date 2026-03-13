@@ -1,58 +1,61 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy DocC to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
-
   release:
     types: [published]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
-      - name: Checkout this repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Process .doccarchives
+      - name: Download doccarchives from release
         run: |
-          mkdir -p docs
-          for archive in Frameworks/*.doccarchive; do
-            name=$(basename "$archive" .doccarchive)
-            echo "Processing $name..."
-            $(xcrun --find docc) process-archive \
-              transform-for-static-hosting "$archive" \
-              --output-path "docs/$name" \
-              --hosting-base-path iOS-TicketmasterSDK/docs/$name
-          done
+          TAG="${GITHUB_REF_NAME}"
+          mkdir -p Frameworks
+          curl -L --retry 3 --fail -o "TicketmasterAuthentication.doccarchive.zip" \
+            "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/${TAG}/TicketmasterAuthentication.doccarchive.zip"
+          unzip -o "TicketmasterAuthentication.doccarchive.zip" -d Frameworks/
+          rm "TicketmasterAuthentication.doccarchive.zip"
+          curl -L --retry 3 --fail -o "TicketmasterDiscoveryAPI.doccarchive.zip" \
+            "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/${TAG}/TicketmasterDiscoveryAPI.doccarchive.zip"
+          unzip -o "TicketmasterDiscoveryAPI.doccarchive.zip" -d Frameworks/
+          rm "TicketmasterDiscoveryAPI.doccarchive.zip"
+          curl -L --retry 3 --fail -o "TicketmasterPrePurchase.doccarchive.zip" \
+            "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/${TAG}/TicketmasterPrePurchase.doccarchive.zip"
+          unzip -o "TicketmasterPrePurchase.doccarchive.zip" -d Frameworks/
+          rm "TicketmasterPrePurchase.doccarchive.zip"
+          curl -L --retry 3 --fail -o "TicketmasterPurchase.doccarchive.zip" \
+            "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/${TAG}/TicketmasterPurchase.doccarchive.zip"
+          unzip -o "TicketmasterPurchase.doccarchive.zip" -d Frameworks/
+          rm "TicketmasterPurchase.doccarchive.zip"
+          curl -L --retry 3 --fail -o "TicketmasterTickets.doccarchive.zip" \
+            "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/${TAG}/TicketmasterTickets.doccarchive.zip"
+          unzip -o "TicketmasterTickets.doccarchive.zip" -d Frameworks/
+          rm "TicketmasterTickets.doccarchive.zip"
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: docs/
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

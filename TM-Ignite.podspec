@@ -1,25 +1,27 @@
-#
-# Be sure to run `pod lib lint TM-Ignite.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name              = 'TM-Ignite'
-  s.version           = '1.19.2'
-  s.summary           = 'iOS implementation of the Ticketmaster Ignite SDK.'
-  s.description       = 'A collection of mobile frameworks encompassing the User journey of Event Discovery, Purchase, and Entry.'
-  s.homepage          = 'https://ignite.ticketmaster.com/'
-  s.documentation_url = 'https://ignite.ticketmaster.com/docs'
-  s.license           = { :type => 'MIT', :file => 'LICENSE' }
-  s.author            = 'Ticketmaster'
-  s.source            = { :git => 'https://github.com/ticketmaster/iOS-TicketmasterSDK.git', :tag => s.version.to_s }
+  s.name         = 'TM-Ignite'
+  s.version      = '0.99.0'
+  s.summary      = 'Ticketmaster Ignite SDK for iOS'
+  s.description  = <<-DESC
+    The Ticketmaster Ignite SDK provides a suite of frameworks for integrating
+    Ticketmaster functionality into iOS applications.
+  DESC
+  s.homepage     = 'https://github.com/kinoroy/iOS-TicketmasterSDK'
+  s.license      = { :type => 'Proprietary', :file => 'LICENSE' }
+  s.author       = { 'Ticketmaster' => 'mobile-sdk@ticketmaster.com' }
+  s.source       = { :git => 'https://github.com/kinoroy/iOS-TicketmasterSDK.git', :tag => s.version.to_s }
+  s.platform     = :ios, '17.0'
+  s.swift_version = '5.9'
 
-  s.platform = :ios
-  s.ios.deployment_target = '17.0'
-  s.swift_version = '5.9.0'
-  
+  s.prepare_command = <<-CMD
+    mkdir -p Frameworks
+    for fw in TicketmasterFoundation TicketmasterAuthentication TicketmasterDiscoveryAPI TicketmasterPrePurchase TicketmasterPurchase TicketmasterSwiftProtobuf TicketmasterSecureEntry TicketmasterTickets; do
+      curl -L --retry 3 --fail -o "${fw}.xcframework.zip" \
+        "https://github.com/kinoroy/iOS-TicketmasterSDK/releases/download/#{s.version}/${fw}.xcframework.zip"
+      unzip -o "${fw}.xcframework.zip" -d Frameworks/
+      rm "${fw}.xcframework.zip"
+    done
+  CMD
+
   s.vendored_frameworks = 'Frameworks/*.xcframework'
 end

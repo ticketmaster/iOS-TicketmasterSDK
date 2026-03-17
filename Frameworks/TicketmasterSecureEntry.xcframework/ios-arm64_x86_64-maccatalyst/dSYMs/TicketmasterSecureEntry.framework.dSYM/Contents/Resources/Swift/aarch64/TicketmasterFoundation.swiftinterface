@@ -2319,14 +2319,23 @@ extension Foundation.URLRequest {
   public static func buildRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, scheme: Swift.String? = nil, host: Swift.String? = nil, path: Swift.String? = nil, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.HTTPRequestHeaders? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.NetworkService.RequestBuilderResponse
   #endif
 }
-extension TicketmasterFoundation.Base64SHA1HMACConvertible where Self : TicketmasterFoundation.ConvertibleToUTF8Data {
+extension TicketmasterFoundation.Base64SHA256HMACConvertible where Self : TicketmasterFoundation.ConvertibleToUTF8Data {
+  public func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  @available(*, deprecated, message: "SHA-1 is cryptographically broken. Use base64SHA256HMAC(withSecret:) instead.")
   public func base64SHA1HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
 }
-public protocol Base64SHA1HMACConvertible {
+public protocol Base64SHA256HMACConvertible {
+  func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  @available(*, deprecated, message: "SHA-1 is cryptographically broken. Use base64SHA256HMAC(withSecret:) instead.")
   func base64SHA1HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
   var stringValue: Swift.String { get }
 }
-extension Swift.String : TicketmasterFoundation.Base64SHA1HMACConvertible {
+public typealias Base64SHA1HMACConvertible = TicketmasterFoundation.Base64SHA256HMACConvertible
+public protocol Base64HMACConvertible {
+  func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  var stringValue: Swift.String { get }
+}
+extension Swift.String : TicketmasterFoundation.Base64SHA256HMACConvertible {
   public var stringValue: Swift.String {
     get
   }
@@ -2932,6 +2941,14 @@ open class AutoPurgingImageCache : TicketmasterFoundation.ImageRequestCache {
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func save(object: any Foundation.NSSecureCoding, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil) -> (any Swift.Error)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func save<T>(codable: T, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil, fileProtection: Foundation.Data.WritingOptions) -> (any Swift.Error)? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func save(object: any Foundation.NSSecureCoding, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil, fileProtection: Foundation.Data.WritingOptions) -> (any Swift.Error)?
   #endif
   public static func fileExists(fileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory) -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes

@@ -306,6 +306,16 @@ extension TicketmasterPurchase.TMPurchase.Environment {
   public var showFavoriteToolbarButton: Swift.Bool
   public var showShareToolbarButton: Swift.Bool
   public var customTitleFont: UIKit.UIFont?
+  @available(*, deprecated, renamed: "showEventFeaturesToolbarButton")
+  public var showInfoToolbarButton: Swift.Bool {
+    get
+    set
+  }
+  @available(*, deprecated, renamed: "showEventFeaturesToolbarButton")
+  public var showCalendarToolbarButton: Swift.Bool {
+    get
+    set
+  }
   public var additionalURLParameters: [Swift.String : Swift.String]
   public var internalTestingKeys: [Swift.String : Any]
   public init(eventID: Swift.String)

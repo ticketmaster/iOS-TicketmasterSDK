@@ -11368,6 +11368,180 @@
           },
           {
             "kind": "Var",
+            "name": "showInfoToolbarButton",
+            "printedName": "showInfoToolbarButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvp",
+            "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvp",
+            "moduleName": "TicketmasterPurchase",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvg",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvg",
+                "moduleName": "TicketmasterPurchase",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvs",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvs",
+                "moduleName": "TicketmasterPurchase",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvM",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC21showInfoToolbarButtonSbvM",
+                "moduleName": "TicketmasterPurchase",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showCalendarToolbarButton",
+            "printedName": "showCalendarToolbarButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvp",
+            "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvp",
+            "moduleName": "TicketmasterPurchase",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvg",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvg",
+                "moduleName": "TicketmasterPurchase",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvs",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvs",
+                "moduleName": "TicketmasterPurchase",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvM",
+                "mangledName": "$s20TicketmasterPurchase30TMPurchaseWebsiteConfigurationC25showCalendarToolbarButtonSbvM",
+                "moduleName": "TicketmasterPurchase",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "additionalURLParameters",
             "printedName": "additionalURLParameters",
             "children": [
@@ -15063,14 +15237,14 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 2936,
+      "offset": 3498,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterPurchase\/TicketmasterPurchase\/Public\/TMPurchaseWebsiteConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 3116,
+      "offset": 3678,
       "length": 3,
       "value": "[]"
     },

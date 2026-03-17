@@ -342,6 +342,9 @@ extension TicketmasterAuthentication.TMAuthentication {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func login(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, externalToken: Swift.String? = nil, loginProperties: [Swift.String : Swift.String]? = nil, presentationViewController: UIKit.UIViewController? = nil, fetchRule: TicketmasterAuthentication.TMAuthentication.FetchRule? = .fetchIfEmptyOrOld, callSource: Swift.String? = nil, success: @escaping (_ authToken: TicketmasterAuthentication.TMAuthToken) -> Swift.Void, aborted: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService) -> Swift.Void, failure: @escaping (_ oldAuthToken: TicketmasterAuthentication.TMAuthToken?, _ error: any Swift.Error, _ backend: TicketmasterAuthentication.TMAuthentication.BackendService?) -> Swift.Void)
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func loginCancel(backend: TicketmasterAuthentication.TMAuthentication.BackendService? = nil, callSource: Swift.String? = nil, completion: (() -> Swift.Void)? = nil)
+  #endif
 }
 extension TicketmasterAuthentication.TMAuthentication {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -390,6 +393,7 @@ extension TicketmasterAuthentication.TMAuthentication {
     public static let deviceLimitReached: Foundation.NSError
     public static let appNotAuthorized: Foundation.NSError
     public static let assertionDataInvalid: Foundation.NSError
+    public static let emptyAssertionData: Foundation.NSError
   }
 }
 public struct TMDeviceKey : Swift.Codable, Swift.Hashable {

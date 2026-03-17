@@ -63,6 +63,9 @@ extension TicketmasterSecureEntry.SecureEntryView {
     public static let unableToCreateTotpObject: Foundation.NSError
     public static let unableToGenerateOtpAndTimestamp: Foundation.NSError
     public static let unableToEncodeRET: Foundation.NSError
+    public static let signingDelegateNotAvailable: Foundation.NSError
+    public static let emptyAssertionData: Foundation.NSError
+    public static let signingFailed: Foundation.NSError
   }
 }
 public protocol SecureEntryViewSigningDelegate : AnyObject {

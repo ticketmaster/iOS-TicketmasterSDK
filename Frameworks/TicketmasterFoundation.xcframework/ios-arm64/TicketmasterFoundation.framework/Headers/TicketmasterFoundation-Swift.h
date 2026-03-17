@@ -557,12 +557,13 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation13MessageLogger")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull queryParameters;
 @end
 
+/// note that this class provides obfuscation, NOT encryption
 SWIFT_CLASS("_TtC22TicketmasterFoundation16StringObfuscator")
 @interface StringObfuscator : NSObject
 /// convert a <code>String</code> into a compressed, obfuscated <code>UInt16</code> array
 /// \param inputString <code>String</code> to convert
 ///
-/// \param password <code>String</code> used for encryption (<code>nil</code> = no encryption)
+/// \param password <code>String</code> used for obfuscation (<code>nil</code> = no obfuscation)
 ///
 ///
 /// returns:
@@ -573,17 +574,17 @@ SWIFT_CLASS("_TtC22TicketmasterFoundation16StringObfuscator")
 ///   </li>
 /// </ul>
 + (NSArray<NSNumber *> * _Nonnull)obfuscateWithInputString:(NSString * _Nonnull)inputString password:(NSString * _Nullable)password SWIFT_WARN_UNUSED_RESULT;
-/// convert a compressed. encrypted <code>UInt16</code> array into a <code>String</code>
-/// \param intArray a previously compressed, encrypted <code>String</code> (as an <code>UInt16</code> array)
+/// convert a compressed. obfuscated <code>UInt16</code> array into a <code>String</code>
+/// \param intArray a previously compressed, obfuscated <code>String</code> (as an <code>UInt16</code> array)
 ///
-/// \param password <code>String</code> used for decryption (<code>nil</code> = no decryption)
+/// \param password <code>String</code> used for de-obfuscation (<code>nil</code> = no decryption)
 ///
 ///
 /// returns:
 ///
 /// <ul>
 ///   <li>
-///     intArray as a decompressed and decrypted <code>String</code>
+///     intArray as a decompressed and de-obfuscated <code>String</code>
 ///   </li>
 /// </ul>
 + (NSString * _Nonnull)deobfuscateWithIntArray:(NSArray<NSNumber *> * _Nonnull)intArray password:(NSString * _Nullable)password SWIFT_WARN_UNUSED_RESULT;

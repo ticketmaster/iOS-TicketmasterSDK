@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Feb 10 08:57:25 PST 2026</string>
+	<string>Tue Mar 17 08:34:00 PDT 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
@@ -11,12 +11,12 @@
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>build doccarchive the hard way</string>
+	<string>PSDK-0 Updated version number to 3.17.3</string>
 	<key>GITDate</key>
-	<string>Mon Feb 9 15:13:37 2026 -0800</string>
+	<string>Mon Mar 16 10:21:32 2026 -0700</string>
 	<key>GITRevision</key>
-	<string>d6d34ab0b02f25a79678f15acf24f259d5f02a16</string>
+	<string>ed75167c52a46443c1a938c648fe196d4c297789</string>
 	<key>MarketingVersion</key>
-	<string>3.17.1</string>
+	<string>3.17.3</string>
 </dict>
 </plist>

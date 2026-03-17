@@ -50040,10 +50040,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Base64SHA1HMACConvertible",
-            "printedName": "Base64SHA1HMACConvertible",
-            "usr": "s:22TicketmasterFoundation25Base64SHA1HMACConvertibleP",
-            "mangledName": "$s22TicketmasterFoundation25Base64SHA1HMACConvertibleP"
+            "name": "Base64SHA256HMACConvertible",
+            "printedName": "Base64SHA256HMACConvertible",
+            "usr": "s:22TicketmasterFoundation27Base64SHA256HMACConvertibleP",
+            "mangledName": "$s22TicketmasterFoundation27Base64SHA256HMACConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -58014,112 +58014,119 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 2361,
+      "offset": 2499,
       "length": 5,
       "value": "\"GMT\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2573,
       "length": 5,
       "value": "\"GMT\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "BooleanLiteral",
-      "offset": 4518,
+      "offset": 4656,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "BooleanLiteral",
-      "offset": 4780,
+      "offset": 4953,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "BooleanLiteral",
-      "offset": 4870,
+      "offset": 5043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5569,
+      "offset": 5779,
       "length": 11,
       "value": "\"multi_day\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5608,
+      "offset": 5824,
+      "length": 10,
+      "value": "\"duration\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
+      "kind": "StringLiteral",
+      "offset": 5862,
       "length": 6,
       "value": "\"date\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5645,
+      "offset": 5899,
       "length": 9,
       "value": "\"endDate\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5686,
+      "offset": 5940,
       "length": 10,
       "value": "\"datetime\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5728,
+      "offset": 5982,
       "length": 10,
       "value": "\"timezone\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5773,
+      "offset": 6027,
       "length": 14,
       "value": "\"datetime_utc\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5820,
+      "offset": 6074,
       "length": 19,
       "value": "\"has_date_override\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5873,
+      "offset": 6127,
       "length": 20,
       "value": "\"date_override_text\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5926,
+      "offset": 6180,
       "length": 19,
       "value": "\"has_time_override\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 5979,
+      "offset": 6233,
       "length": 20,
       "value": "\"time_override_text\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Event\/Event.Date.swift",
       "kind": "StringLiteral",
-      "offset": 7240,
+      "offset": 7572,
       "length": 7,
       "value": "\" • \""
     },
@@ -69473,28 +69480,28 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 27928,
+      "offset": 28352,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "BooleanLiteral",
-      "offset": 27951,
+      "offset": 28375,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "IntegerLiteral",
-      "offset": 29394,
+      "offset": 29818,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/Events\/Controller\/EventsViewControllerV2.swift",
       "kind": "IntegerLiteral",
-      "offset": 29409,
+      "offset": 29833,
       "length": 6,
       "value": "1"
     },
@@ -71419,7 +71426,7 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterTickets\/TicketmasterTickets\/AssignFlow\/Views\/Sender\/AssignToOthers\/Components\/PhoneNumberInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 322,
+      "offset": 279,
       "length": 5,
       "value": "false"
     },

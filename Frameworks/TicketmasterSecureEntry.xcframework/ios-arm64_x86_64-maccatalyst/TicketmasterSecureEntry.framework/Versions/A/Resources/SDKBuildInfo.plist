@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Wed Mar  4 08:53:25 PST 2026</string>
+	<string>Tue Mar 17 09:07:00 PDT 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
-	<string>beta1</string>
+	<string>beta2</string>
 	<key>GITBranch</key>
 	<string>release/3.17.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Added Boston Legacy keys</string>
+	<string>PSDK-0 Update Auth SDK to 3.17.3</string>
 	<key>GITDate</key>
-	<string>Tue Mar 3 13:00:48 2026 -0800</string>
+	<string>Tue Mar 17 08:48:00 2026 -0700</string>
 	<key>GITRevision</key>
-	<string>842e762f67f2a0f1ef34583d30eb05e7f96e90c1</string>
+	<string>7d4c7fa3babdef7987a33cb58e6032fb25f64079</string>
 	<key>MarketingVersion</key>
 	<string>1.12.0</string>
 </dict>

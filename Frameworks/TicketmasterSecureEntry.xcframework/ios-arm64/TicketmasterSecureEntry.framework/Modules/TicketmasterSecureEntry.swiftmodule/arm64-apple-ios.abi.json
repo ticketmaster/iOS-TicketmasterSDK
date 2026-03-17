@@ -175,6 +175,13 @@
         "moduleName": "TicketmasterSecureEntry"
       },
       {
+        "kind": "Import",
+        "name": "TicketmasterFoundation",
+        "printedName": "TicketmasterFoundation",
+        "declKind": "Import",
+        "moduleName": "TicketmasterSecureEntry"
+      },
+      {
         "kind": "TypeDecl",
         "name": "SecureEntryViewModel",
         "printedName": "SecureEntryViewModel",
@@ -4857,6 +4864,150 @@
                     "declKind": "Accessor",
                     "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV17unableToEncodeRETSo7NSErrorCvgZ",
                     "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV17unableToEncodeRETSo7NSErrorCvgZ",
+                    "moduleName": "TicketmasterSecureEntry",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "signingDelegateNotAvailable",
+                "printedName": "signingDelegateNotAvailable",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV27signingDelegateNotAvailableSo7NSErrorCvpZ",
+                "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV27signingDelegateNotAvailableSo7NSErrorCvpZ",
+                "moduleName": "TicketmasterSecureEntry",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV27signingDelegateNotAvailableSo7NSErrorCvgZ",
+                    "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV27signingDelegateNotAvailableSo7NSErrorCvgZ",
+                    "moduleName": "TicketmasterSecureEntry",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "emptyAssertionData",
+                "printedName": "emptyAssertionData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV18emptyAssertionDataSo7NSErrorCvpZ",
+                "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV18emptyAssertionDataSo7NSErrorCvpZ",
+                "moduleName": "TicketmasterSecureEntry",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV18emptyAssertionDataSo7NSErrorCvgZ",
+                    "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV18emptyAssertionDataSo7NSErrorCvgZ",
+                    "moduleName": "TicketmasterSecureEntry",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "signingFailed",
+                "printedName": "signingFailed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV13signingFailedSo7NSErrorCvpZ",
+                "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV13signingFailedSo7NSErrorCvpZ",
+                "moduleName": "TicketmasterSecureEntry",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23TicketmasterSecureEntry0bC4ViewC5ErrorV13signingFailedSo7NSErrorCvgZ",
+                    "mangledName": "$s23TicketmasterSecureEntry0bC4ViewC5ErrorV13signingFailedSo7NSErrorCvgZ",
                     "moduleName": "TicketmasterSecureEntry",
                     "static": true,
                     "implicit": true,
@@ -12272,21 +12423,21 @@
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3962,
+      "offset": 3992,
       "length": 31,
       "value": "\"Screenshots won't get you in.\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4032,
+      "offset": 4062,
       "length": 15,
       "value": "\"Reload ticket\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4215,
+      "offset": 4245,
       "length": 2,
       "value": "15"
     },
@@ -12541,6 +12692,48 @@
       "offset": 2582,
       "length": 22,
       "value": "\"Unable to encode RET\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2778,
+      "length": 3,
+      "value": "-30"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "StringLiteral",
+      "offset": 2821,
+      "length": 43,
+      "value": "\"Signing delegate not available for RET v2\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3000,
+      "length": 3,
+      "value": "-31"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "StringLiteral",
+      "offset": 3043,
+      "length": 42,
+      "value": "\"Empty assertion data received for RET v2\""
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3193,
+      "length": 3,
+      "value": "-32"
+    },
+    {
+      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/SecureEntryView+Error.swift",
+      "kind": "StringLiteral",
+      "offset": 3236,
+      "length": 27,
+      "value": "\"Signing failed for RET v2\""
     },
     {
       "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Tickets1\/TicketmasterSecureEntry\/TicketmasterSecureEntry\/Source\/Externals\/CryptoSwift\/BlockMode\/PCBC.swift",

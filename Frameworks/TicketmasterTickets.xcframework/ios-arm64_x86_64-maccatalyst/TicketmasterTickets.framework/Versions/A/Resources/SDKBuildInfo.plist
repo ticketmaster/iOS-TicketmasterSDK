@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Mar 17 09:29:56 PDT 2026</string>
+	<string>Wed Mar 25 14:28:55 PDT 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
-	<string>beta2</string>
+	<string>rc1</string>
 	<key>GITBranch</key>
 	<string>release/3.17.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Update TMSwiftProtobuf scheme</string>
+	<string>PSDK-15138 Update translations via CI pipeline</string>
 	<key>GITDate</key>
-	<string>Tue Mar 17 09:19:47 2026 -0700</string>
+	<string>Wed Mar 25 14:13:49 2026 -0700</string>
 	<key>GITRevision</key>
-	<string>f1c8d20ac61fbc6c1a81a25d0e4f9227670d0070</string>
+	<string>904eb9815bf2190e1e3db99d9d628a2e27a9447e</string>
 	<key>MarketingVersion</key>
 	<string>3.17.0</string>
 </dict>

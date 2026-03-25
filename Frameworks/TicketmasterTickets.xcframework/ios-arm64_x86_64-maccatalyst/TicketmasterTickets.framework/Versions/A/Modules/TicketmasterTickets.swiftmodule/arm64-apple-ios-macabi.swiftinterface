@@ -143,6 +143,9 @@ extension TicketmasterTickets.TMTickets {
 
 
 
+
+
+
 extension TicketmasterTickets.TMTicketsModule {
   public static func moduleArray(jsonDict: TicketmasterFoundation.JSONDictionary, event: TicketmasterTickets.TMPurchasedEvent, completion: @escaping (_ modules: [TicketmasterTickets.TMTicketsModule]) -> Swift.Void)
 }
@@ -727,6 +730,9 @@ public struct TMPurchasedTicket : Swift.Codable, Swift.Hashable {
   }
   public init(from decoder: any Swift.Decoder) throws
 }
+
+
+
 
 
 extension TicketmasterTickets.TMTickets {

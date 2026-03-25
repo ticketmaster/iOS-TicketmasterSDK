@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Tue Mar 17 08:34:00 PDT 2026</string>
+	<string>Wed Mar 25 11:28:24 CST 2026</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>MX-IT09403</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
 	<string>master</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Updated version number to 3.17.3</string>
+	<string>Merge branch Fix-PSDK-20877-serialize-app-attest-signing into master</string>
 	<key>GITDate</key>
-	<string>Mon Mar 16 10:21:32 2026 -0700</string>
+	<string>Wed Mar 25 11:18:56 2026 -0600</string>
 	<key>GITRevision</key>
-	<string>ed75167c52a46443c1a938c648fe196d4c297789</string>
+	<string>78889506c34fff4772efa1d20e495a032a4045f6</string>
 	<key>MarketingVersion</key>
-	<string>3.17.3</string>
+	<string>3.17.4</string>
 </dict>
 </plist>

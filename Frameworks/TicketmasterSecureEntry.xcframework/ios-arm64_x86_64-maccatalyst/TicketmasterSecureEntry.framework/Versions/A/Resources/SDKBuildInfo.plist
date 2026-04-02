@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Thu Feb 26 14:12:30 PST 2026</string>
+	<string>Thu Apr  2 14:50:31 PDT 2026</string>
 	<key>BuildHost</key>
 	<string>LNEH7VYVF25HY</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>release/3.16.0b</string>
+	<string>release/3.17.0</string>
 	<key>GITComment</key>
-	<string>PSDK-0 Fix QR code appearing rotated 90 degrees</string>
+	<string>PSDK-0 Removed “rc1” variant for release</string>
 	<key>GITDate</key>
-	<string>Thu Feb 26 13:50:20 2026 -0800</string>
+	<string>Thu Apr 2 14:39:12 2026 -0700</string>
 	<key>GITRevision</key>
-	<string>c344ce4a90b09b6364c8bb36dbfbf5457cc77791</string>
+	<string>a92fbbca79a6eeb582d305267e4e2b21ea4548d2</string>
 	<key>MarketingVersion</key>
-	<string>1.11.2</string>
+	<string>1.12.0</string>
 </dict>
 </plist>

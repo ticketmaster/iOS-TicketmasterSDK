@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Aug 11 16:50:45 PDT 2025</string>
+	<string>Wed Mar 11 12:37:30 CST 2026</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>MX-IT09403</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>master</string>
+	<string>release/1.6.1</string>
 	<key>GITComment</key>
-	<string>Merge branch Feature-PSDK-16819-ModernizeNetworking into master</string>
+	<string>Merge branch Fix-PSDK-20427-file-protection-parameter into master</string>
 	<key>GITDate</key>
-	<string>Mon Aug 11 23:34:27 2025 +0000</string>
+	<string>Wed Mar 11 11:31:40 2026 -0600</string>
 	<key>GITRevision</key>
-	<string>a094c4ff431238690b95098e76fcdad2cb2673e9</string>
+	<string>6f567b2df4a5f7118032d2c5eb2e14a3e6f5ca6a</string>
 	<key>MarketingVersion</key>
-	<string>1.5.0</string>
+	<string>1.6.1</string>
 </dict>
 </plist>

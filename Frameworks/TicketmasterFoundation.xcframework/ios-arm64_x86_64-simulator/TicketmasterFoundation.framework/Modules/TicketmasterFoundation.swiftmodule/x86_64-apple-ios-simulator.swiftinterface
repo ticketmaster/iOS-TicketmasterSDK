@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name TicketmasterFoundation
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name TicketmasterFoundation
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CommonCrypto
 import CoreLocation
 import Foundation
@@ -17,24 +17,40 @@ import _SwiftConcurrencyShims
 infix operator <==> : ComparisonPrecedence
 public func <==> (lhs: Foundation.URL, rhs: Foundation.URL) -> Swift.Bool
 extension UIKit.UIImageView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func setImage(withURL url: Foundation.URL?, placeholderImage: UIKit.UIImage? = nil, completion: TicketmasterFoundation.ImageDownloader.ObjcCompletionHandler? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func setImage(withURLRequest urlRequest: Foundation.URLRequest?, placeholderImage: UIKit.UIImage? = nil, completion: TicketmasterFoundation.ImageDownloader.ObjcCompletionHandler? = nil)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func cancelSetImage()
 }
 final public class ObjectAssociation<T> where T : AnyObject {
   public init(policy: ObjectiveC.objc_AssociationPolicy = .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public subscript(index: Swift.AnyObject) -> T? {
     get
     set
   }
+  #endif
   @objc deinit
 }
 extension Foundation.Bundle {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadJSONDictionaryArray(fileName: Swift.String) -> [TicketmasterFoundation.JSONDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadJSONDictionary(fileName: Swift.String) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadJavascript(fileName: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadHTML(fileName: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loadData(fileName: Swift.String, fileType: Swift.String? = nil) -> Foundation.Data?
+  #endif
 }
 extension TicketmasterFoundation.MarketLocation {
   public static func UnitedStates_All() -> TicketmasterFoundation.MarketLocation
@@ -128,7 +144,9 @@ public protocol InitJSONThrowable {
   init(jsonDictionary: TicketmasterFoundation.JSONDictionary) throws
 }
 extension TicketmasterFoundation.InitJSONThrowable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(json: Swift.String?)
+  #endif
 }
 public enum JSONError : Swift.Error {
   case missingRequiredValue(value: Swift.String)
@@ -136,32 +154,50 @@ public enum JSONError : Swift.Error {
   case badObjectSerialization
 }
 extension Swift.Dictionary {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonData: Foundation.Data? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonString: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var prettyJsonString: Swift.String? {
     get
   }
+  #endif
   public func transformedWith(keyPrefix: Swift.String) -> TicketmasterFoundation.JSONDictionary
 }
 extension Swift.Array {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonData: Foundation.Data? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonString: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var prettyJsonString: Swift.String? {
     get
   }
+  #endif
 }
 extension TicketmasterFoundation.UFCCookieManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addToAllTMDomains(cookie: Foundation.HTTPCookie, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removeFromAllTMDomains(cookieName: Swift.String, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addTo(marketDomains: [TicketmasterFoundation.MarketDomain], cookie: Foundation.HTTPCookie, completion: (() -> Swift.Void)? = nil)
+  #endif
   public static let testDomainURLHosts: [Swift.String]
   public static var allMarketDomainURLHosts: [Swift.String] {
     get
@@ -169,14 +205,18 @@ extension TicketmasterFoundation.UFCCookieManager {
   public static func marketDomainURLHosts(forMarketDomains marketDomains: [TicketmasterFoundation.MarketDomain]) -> [Swift.String]
 }
 extension Foundation.URL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(scheme: Swift.String? = nil, host: Swift.String?, path: Swift.String? = nil, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "")
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class UALMessageHandler : ObjectiveC.NSObject, TicketmasterFoundation.UALWebViewMessageHandler {
   public static let shared: TicketmasterFoundation.UALMessageHandler
   public var analyticsReporter: (any TicketmasterFoundation.UALAnalyticsReporter)?
   public func registerWebViewUALMessagesForHandling(contentController: WebKit.WKUserContentController)
   public func registerWebViewUALMessagesForHandling(contentController: WebKit.WKUserContentController, delegate: any TicketmasterFoundation.UALWebViewMessageHandlerDelegate)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func registerUALContractMessages(_ contentController: WebKit.WKUserContentController, scriptMessageHandler: (any WebKit.WKScriptMessageHandler)? = nil)
+  #endif
   public func unregisterUALContractMessages(_ contentController: WebKit.WKUserContentController)
   @objc deinit
 }
@@ -184,30 +224,50 @@ extension TicketmasterFoundation.UALMessageHandler : WebKit.WKScriptMessageHandl
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func topViewController(base: UIKit.UIViewController? = nil) -> UIKit.UIViewController?
+  #endif
 }
 open class UserDefaultsStringEnum<E> where E : Swift.CaseIterable, E : Swift.RawRepresentable, E.RawValue == Swift.String {
   public init()
   public func remove(_ key: E)
   public func removeAll()
   public func set(_ value: Swift.String, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func string(_ key: E) -> Swift.String?
+  #endif
   public func set(_ value: Swift.Bool, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func bool(_ key: E) -> Swift.Bool?
+  #endif
   public func set(_ value: Swift.Int, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int(_ key: E) -> Swift.Int?
+  #endif
   public func set(_ value: Swift.Double, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func double(_ key: E) -> Swift.Double?
+  #endif
   public func set(_ value: TicketmasterFoundation.JSONDictionary, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonDictionary(_ key: E) -> TicketmasterFoundation.JSONDictionary?
+  #endif
   public func set(_ value: TicketmasterFoundation.JSONDictionaryArray, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonDictionaryArray(_ key: E) -> TicketmasterFoundation.JSONDictionaryArray?
+  #endif
   public func set(_ value: Any, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object(_ key: E) -> Any?
+  #endif
   public func set(_ value: [Any], forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func objectArray(_ key: E) -> [Any]?
+  #endif
   public func set(_ value: Foundation.Data, forKey key: E)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func data(_ key: E) -> Foundation.Data?
+  #endif
   @objc deinit
 }
 extension Foundation.URLRequest {
@@ -218,23 +278,35 @@ extension TicketmasterFoundation.NetworkService {
     case success(request: Foundation.URLRequest)
     case failure(error: TicketmasterFoundation.ConnectionDriver.ConnectionError)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func urlRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, path: Swift.String, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.HTTPRequestHeaders? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.NetworkService.RequestBuilderResponse
+  #endif
 }
 extension Foundation.Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonDictionaryArray: [TicketmasterFoundation.JSONDictionary]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonDictionary: TicketmasterFoundation.JSONDictionary? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var objectArray: [Any]? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uiImage: UIKit.UIImage? {
     get
   }
+  #endif
   public func prettyString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(jsonObject: Any, options: Foundation.JSONSerialization.WritingOptions = [])
+  #endif
 }
 extension Swift.Dictionary where Key == Swift.String, Value == Any {
   public func flattenWithStringValues() -> TicketmasterFoundation.JSONStringDictionary
@@ -259,9 +331,11 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
   @objc deinit
 }
 extension WebKit.WKWebViewConfiguration {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var copyWithNewUserContentController: WebKit.WKWebViewConfiguration? {
     get
   }
+  #endif
 }
 public protocol UFCWebViewMessageHandler : AnyObject {
   func registerWebViewUFCMessagesForHandling(delegate: any TicketmasterFoundation.UFCWebViewMessageHandlerDelegate)
@@ -271,16 +345,24 @@ public protocol UFCWebViewMessageHandlerDelegate : AnyObject {
   func loginStatusUpdated(isLoggedIn: Swift.Bool)
 }
 public protocol UFCLoginManager : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func presentUserLogin(options: TicketmasterFoundation.JSONDictionary?)
+  #endif
   func fetchLoginToken()
   func updateLoginToken()
   func removeLoginToken()
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetchDeviceToken(options: TicketmasterFoundation.JSONDictionary?)
+  #endif
   func setLoginManager(delegate: any TicketmasterFoundation.UFCLoginManagerDelegate)
 }
 public protocol UFCLoginManagerDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?, marketDomains: [TicketmasterFoundation.MarketDomain]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, mfaToken: Swift.String?, error: Foundation.NSError?)
+  #endif
 }
 public enum UFCLoginManagerOperation {
   case presentUserLogin
@@ -302,7 +384,9 @@ public enum UFCContractMessages : Swift.String, Swift.CaseIterable {
   case appviewInitMFA
   public static let appviewLoginStatusUpdated: Swift.String
   public static let appviewInitMFACompleted: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [TicketmasterFoundation.UFCContractMessages]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [TicketmasterFoundation.UFCContractMessages] {
@@ -315,10 +399,16 @@ public enum UFCContractMessages : Swift.String, Swift.CaseIterable {
 public protocol TicketmasterOAuthDelegate : AnyObject {
   func fetchLoginToken(for object: Swift.AnyObject, success: @escaping (_ userToken: TicketmasterFoundation.TicketmasterOAuthToken) -> Swift.Void, failure: @escaping () -> Swift.Void)
   func fetchLoginTokenOrPresentUI(for object: Swift.AnyObject, success: @escaping (_ userToken: TicketmasterFoundation.TicketmasterOAuthToken) -> Swift.Void, failure: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   func logoutThenPresentLoginUI(for object: Swift.AnyObject, options: [Swift.String : Any]?, success: @escaping (_ userToken: TicketmasterFoundation.TicketmasterOAuthToken) -> Swift.Void, failure: @escaping () -> Swift.Void)
+  #endif
   func updateLoginToken(for object: Swift.AnyObject, success: @escaping (_ userToken: TicketmasterFoundation.TicketmasterOAuthToken) -> Swift.Void, failure: @escaping () -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   func removeLoginToken(for object: Swift.AnyObject, success: @escaping () -> Swift.Void, failure: @escaping (_ userToken: TicketmasterFoundation.TicketmasterOAuthToken?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func fetch2FADeviceToken(for object: Swift.AnyObject, options: [Swift.String : Any], success: @escaping (_ mfaToken: Swift.String) -> Swift.Void, failure: @escaping (_ error: Foundation.NSError?) -> Swift.Void)
+  #endif
 }
 @objc public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case off = 0
@@ -331,11 +421,15 @@ public protocol TicketmasterOAuthDelegate : AnyObject {
   case debug
   case network
   case trace
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [TicketmasterFoundation.LogLevel]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [TicketmasterFoundation.LogLevel] {
@@ -354,8 +448,12 @@ extension TicketmasterFoundation.LogLevel : Swift.Comparable {
   final public let category: Swift.String?
   final public let label: Swift.String?
   final public let value: Foundation.NSNumber?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, category: Swift.String?, label: Swift.String?, value: Foundation.NSNumber?, payload: TicketmasterFoundation.JSONDictionary?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(json: TicketmasterFoundation.JSONDictionary?)
+  #endif
   public static let payloadActionKey: Swift.String
   public static let payloadCategoryKey: Swift.String
   public static let payloadLabelKey: Swift.String
@@ -364,14 +462,23 @@ extension TicketmasterFoundation.LogLevel : Swift.Comparable {
 }
 @objc @_inheritsConvenienceInitializers final public class UFCCookieManager : ObjectiveC.NSObject {
   public static let shared: TicketmasterFoundation.UFCCookieManager
-  final public let processPool: WebKit.WKProcessPool
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func add(cookie: Foundation.HTTPCookie, addToURLSession: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func add(cookies: [Foundation.HTTPCookie], addToURLSession: Swift.Bool = false, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func remove(cookie: Foundation.HTTPCookie, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func remove(cookies: [Foundation.HTTPCookie], completion: (() -> Swift.Void)? = nil)
-  final public func getAllWebsiteCookies(completion: @escaping (([Foundation.HTTPCookie]) -> Swift.Void))
-  final public func getAllNetworkCookies(completion: @escaping (([Foundation.HTTPCookie]) -> Swift.Void))
+  #endif
+  final public func getAllWebsiteCookies(completion: @escaping ([Foundation.HTTPCookie]) -> Swift.Void)
+  final public func getAllNetworkCookies(completion: @escaping ([Foundation.HTTPCookie]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func removeAllCookies(completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -387,16 +494,24 @@ extension TicketmasterFoundation.LogLevel : Swift.Comparable {
   @objc final public var source: TicketmasterFoundation.LocationSource
   @objc final public let dateCreated: Foundation.Date
   @objc final public var dateLastCurrent: Foundation.Date?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(domain: TicketmasterFoundation.MarketDomain, identifier: Swift.String, name: Swift.String, localizedName: Swift.String, dmaId: Swift.String?, countryCode: Swift.String, userLocation: TicketmasterFoundation.UserLocation?, source: TicketmasterFoundation.LocationSource)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   final public func description() -> Swift.String
   final public func debugDescription() -> Swift.String
   @objc final public func encode(with coder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 extension Foundation.HTTPCookie {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func cookie(name: Swift.String, value: Swift.String, domain: Swift.String, path: Swift.String? = nil, expires: Foundation.Date? = nil, secure: Swift.Bool = false, httpOnly: Swift.Bool = false) -> Foundation.HTTPCookie
+  #endif
   public var isExpired: Swift.Bool {
     get
   }
@@ -406,42 +521,74 @@ extension Foundation.HTTPCookiePropertyKey {
 }
 public protocol TMPixelServiceDelegate : AnyObject {
   var isLoggedIn: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var hmacIdentifier: Swift.String? { get }
+  #endif
   var advertisingIdentifier: Swift.String { get }
 }
 extension TicketmasterFoundation.ConnectionDriver {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionaryArray>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionary>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendObject<T>(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<T>) -> Swift.Void) -> Foundation.URLSessionTask? where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
 }
 public typealias NotificationDictionary = [Swift.AnyHashable : Any]
 extension Swift.Dictionary where Key == Swift.AnyHashable, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func date(_ key: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func url(_ key: Swift.String) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func bool(_ key: Swift.String) -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int(_ key: Swift.String) -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func double(_ key: Swift.String) -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decimalNumber(_ key: Swift.String) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func string(_ key: Swift.String) -> Swift.String?
+  #endif
 }
 extension Foundation.Notification {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var userNotificationDictionary: TicketmasterFoundation.NotificationDictionary? {
     get
   }
+  #endif
 }
 @objc extension Foundation.NSNotification {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public var userNotificationDictionary: TicketmasterFoundation.NotificationDictionary? {
     @objc get
   }
+  #endif
 }
 extension Dispatch.DispatchQueue {
   public static func dispatchOnMainIfNeeded(_ work: @escaping @convention(block) () -> Swift.Void)
@@ -459,7 +606,9 @@ public protocol TMPixelConfig {
 }
 @_hasMissingDesignatedInitializers public class UserAgent {
   public static func fullString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func versionString() -> Swift.String?
+  #endif
   public static func deviceHardwareString() -> Swift.String
   public static func deviceHardware() -> TicketmasterFoundation.DeviceHardware
   public static func devicePlatform() -> TicketmasterFoundation.DevicePlatform
@@ -672,7 +821,9 @@ public enum DevicePlatform : Swift.String {
   case appleTV
   case appleWatch
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -711,26 +862,42 @@ extension TicketmasterFoundation.UFCCookieManager {
   public static let oAuthAccessCookieKey: Swift.String
   public static let hmacIdCookieKey: Swift.String
   public static let mfaCookieKey: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func reAddLoginCookies(completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addRemoveLoginCookies(forToken token: TicketmasterFoundation.TicketmasterOAuthToken?, marketDomains: [TicketmasterFoundation.MarketDomain]? = nil, completion: (() -> Swift.Void)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func addRemoveMFACookies(forVerifiedDeviceToken token: Swift.String?, marketDomains: [TicketmasterFoundation.MarketDomain]? = nil, completion: (() -> Swift.Void)? = nil)
+  #endif
 }
 extension Foundation.Locale {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var acceptLanguageCode: Swift.String? {
     get
   }
+  #endif
 }
 open class URLDataSession {
   public var startImmediately: Swift.Bool
   public var loggingDetails: TicketmasterFoundation.URLLoggingDetails
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(configuration: Foundation.URLSessionConfiguration = .default, delegate: (any Foundation.URLSessionDelegate)? = nil)
+  #endif
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
+  #endif
 }
 extension UIKit.UIColor {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(hexString: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func hexString(withAlpha: Swift.Bool = false) -> Swift.String?
+  #endif
   public static func == (lhs: UIKit.UIColor, rhs: UIKit.UIColor) -> Swift.Bool
 }
 @discardableResult
@@ -741,12 +908,18 @@ public func logMessage<T>(_ message: T, _ file: Swift.String = #file, _ function
   public static var currentLogLevel: TicketmasterFoundation.LogLevel
   public static var maximumMessageLength: Swift.Int
   public static var maximumMessageCacheSize: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc public static func objcLogMessage(_ message: Any?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc public static func objcLogRequest(identifier: Swift.String, request: Foundation.URLRequest?, file: Swift.String, function: Swift.String, line: Swift.Int, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   @objc public static func objcLogResponse(identifier: Swift.String, response: Foundation.URLResponse?, request: Foundation.URLRequest?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, level: TicketmasterFoundation.LogLevel) -> Swift.Bool
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -760,7 +933,9 @@ public enum HTTPMethod : Swift.String {
   case DELETE
   case TRACE
   case CONNECT
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -849,7 +1024,9 @@ public enum HTTPStatusCode : Swift.Int {
   public var publicDescription: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -860,23 +1037,33 @@ extension Foundation.HTTPCookie {
     get
   }
   public static func oauthCookie(forToken token: TicketmasterFoundation.TicketmasterOAuthToken, domain: Swift.String) -> Foundation.HTTPCookie
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func hmacCookie(forToken token: TicketmasterFoundation.TicketmasterOAuthToken, domain: Swift.String) -> Foundation.HTTPCookie?
+  #endif
   public var isMFA: Swift.Bool {
     get
   }
   public static func mfaCookie(forToken token: Swift.String, domain: Swift.String) -> Foundation.HTTPCookie
 }
 extension WebKit.WKScriptMessage {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func jsonString(forKey key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func jsonValue(forKey key: Swift.String) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var jsonPayload: TicketmasterFoundation.JSONDictionary? {
     get
   }
+  #endif
 }
 public struct URLPattern {
   public let host: Swift.String
   public let pathPattern: TicketmasterFoundation.PathPattern?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(host: Swift.String, pathPattern: TicketmasterFoundation.PathPattern? = nil)
+  #endif
   public func matches(with url: Foundation.URL) -> Swift.Bool
 }
 extension TicketmasterFoundation.URLPattern {
@@ -899,10 +1086,14 @@ extension Foundation.Locale {
   public var cannedErrors: [Foundation.NSError?]?
   public var requestValidators: [TicketmasterFoundation.FakeDataSession.URLRequestValidator?]?
   public var testSession: Foundation.URLSession
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
+  #endif
   public func reset()
+  #if compiler(>=5.3) && $NonescapableTypes
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
+  #endif
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers open class ImageRequestTask : ObjectiveC.NSObject {
@@ -920,16 +1111,28 @@ extension Foundation.Locale {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(configuration: Foundation.URLSessionConfiguration? = nil, downloadPrioritization: TicketmasterFoundation.ImageDownloader.DownloadPrioritization = .fifo, maximumActiveDownloads: Swift.Int = 4, imageCache: (any TicketmasterFoundation.ImageRequestCache)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func downloadImage(_ urlRequest: Foundation.URLRequest, taskIdentifier: Swift.String? = nil, completion: @escaping TicketmasterFoundation.ImageDownloader.CompletionHandler) -> TicketmasterFoundation.ImageRequestTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func downloadImage(_ url: Foundation.URL, taskIdentifier: Swift.String? = nil, completion: @escaping TicketmasterFoundation.ImageDownloader.CompletionHandler) -> TicketmasterFoundation.ImageRequestTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @discardableResult
   open func objcDownloadImage(withURL url: Foundation.URL, taskIdentifier: Swift.String? = nil, completion: @escaping TicketmasterFoundation.ImageDownloader.ObjcCompletionHandler) -> TicketmasterFoundation.ImageRequestTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @discardableResult
   open func objcDownloadImage(withURLRequest urlRequest: Foundation.URLRequest, taskIdentifier: Swift.String? = nil, completion: @escaping TicketmasterFoundation.ImageDownloader.ObjcCompletionHandler) -> TicketmasterFoundation.ImageRequestTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc open func cancelRequest(_ imageRequest: TicketmasterFoundation.ImageRequestTask?)
+  #endif
   @objc deinit
 }
 public typealias PathPattern = Swift.String
@@ -1017,11 +1220,15 @@ public struct GoogleAnalyticsProduct {
   public let position: Swift.UInt?
   public let customDimension1: Swift.String?
   public let customMetric1: Swift.UInt?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(ID: Swift.String? = nil, name: Swift.String? = nil, brand: Swift.String? = nil, category: Swift.String? = nil, variant: Swift.String? = nil, unitPrice: Foundation.NSDecimalNumber? = nil, quantity: Swift.UInt? = nil, couponCode: Swift.String? = nil, position: Swift.UInt? = nil, customDimension1: Swift.String? = nil, customMetric1: Swift.UInt? = nil)
+  #endif
 }
 public enum GoogleAnalyticsHitType : Swift.String {
   case pageview, screenview, event, transaction, item, social, exception, timing
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1029,7 +1236,9 @@ public enum GoogleAnalyticsHitType : Swift.String {
 }
 public enum GoogleAnalyticsProductAction : Swift.String {
   case detail, click, add, remove, checkout, checkout_option, purchase, refund
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1037,28 +1246,42 @@ public enum GoogleAnalyticsProductAction : Swift.String {
 }
 public enum CurrencyCodeISO4217 : Swift.String {
   case usd, cad, eur, gbp, aud, nzd, mxn
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 extension Foundation.URLRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(queryParameters: TicketmasterFoundation.URLQueryParameters?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(queryItems: [Foundation.URLQueryItem]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(httpHeaders: TicketmasterFoundation.URLQueryParameters?)
+  #endif
 }
 extension Foundation.URL {
   public func mutableRequest(method: TicketmasterFoundation.HTTPMethod) -> Foundation.URLRequest
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func mutableRequest(method: TicketmasterFoundation.HTTPMethod) -> Foundation.URLRequest?
+  #endif
 }
 @objc final public class UALPageView : ObjectiveC.NSObject {
   final public let name: Swift.String
   final public let payload: TicketmasterFoundation.JSONDictionary?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(name: Swift.String, payload: TicketmasterFoundation.JSONDictionary?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(json: TicketmasterFoundation.JSONDictionary?)
+  #endif
   public static let pagePath: Swift.String
   public static let inputPrefix: Swift.String
   public static let outputPrefix: Swift.String
@@ -1071,28 +1294,56 @@ extension WebKit.WKWebView {
   }
 }
 extension UIKit.UIAlertController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", completion: @escaping () -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", completion: @escaping () -> Swift.Void) -> UIKit.UIAlertController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", cancelButtonText: Swift.String? = "Cancel", ok: @escaping () -> Swift.Void, cancel: @escaping () -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, okButtonText: Swift.String? = "OK", cancelButtonText: Swift.String? = "Cancel", ok: @escaping () -> Swift.Void, cancel: @escaping () -> Swift.Void) -> UIKit.UIAlertController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, destructiveButtonText: Swift.String, cancelButtonText: Swift.String? = "Cancel", destroy: @escaping () -> Swift.Void, cancel: @escaping () -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, destructiveButtonText: Swift.String, cancelButtonText: Swift.String? = "Cancel", destroy: @escaping () -> Swift.Void, cancel: @escaping () -> Swift.Void) -> UIKit.UIAlertController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func presentAlert(title: Swift.String? = nil, message: Swift.String? = nil, action1Name: Swift.String, action2Name: Swift.String, action1: @escaping () -> Swift.Void, action2: @escaping () -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func alert(title: Swift.String? = nil, message: Swift.String? = nil, action1Name: Swift.String, action2Name: Swift.String, action1: @escaping () -> Swift.Void, action2: @escaping () -> Swift.Void) -> UIKit.UIAlertController
+  #endif
 }
 extension TicketmasterFoundation.NetworkService {
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendJSONArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionaryArray>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendJSON(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<TicketmasterFoundation.JSONDictionary>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendArray(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendImage(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendObject<T>(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<T>) -> Swift.Void) -> Foundation.URLSessionTask? where T : Swift.Decodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   final public func sendData(request: Foundation.URLRequest, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
 }
 @objc extension UIKit.UIColor {
   @objc dynamic public func color(betweenColor color: UIKit.UIColor) -> UIKit.UIColor
@@ -1107,36 +1358,54 @@ extension TicketmasterFoundation.NetworkService {
   @objc public static func popoverPurple() -> UIKit.UIColor
 }
 open class GoogleAnalyticsService : TicketmasterFoundation.NetworkService {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(applicationName: Swift.String, applicationID: Swift.String? = nil, applicationVersion: Swift.String? = nil, applicationInstallerID: Swift.String? = nil, propertyID: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   override open func hostURL() -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   override open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.URLQueryParameters?
+  #endif
   public func report(_ event: TicketmasterFoundation.GoogleAnalyticsEvent)
   @objc deinit
 }
 extension WebKit.WKWebView {
   @_Concurrency.MainActor @preconcurrency public func reloadFirstPage()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func goToFirstPage() -> WebKit.WKNavigation?
+  #endif
 }
 @objc final public class UserLocation : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public static var supportsSecureCoding: Swift.Bool
-  @objc final public var location: CoreLocation.CLLocation
+  @objc final public var location: _LocationEssentials.CLLocation
   @objc final public let isFromIPAddress: Swift.Bool
   @objc final public let placemark: CoreLocation.CLPlacemark?
   @objc final public var source: TicketmasterFoundation.LocationSource
   @objc final public let dateCreated: Foundation.Date
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var cityState: Swift.String? {
     @objc get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public var neighborhoodState: Swift.String? {
     @objc get
   }
-  @objc public init(location: CoreLocation.CLLocation, source: TicketmasterFoundation.LocationSource, isFromIPAddress: Swift.Bool = false)
+  #endif
+  @objc public init(location: _LocationEssentials.CLLocation, source: TicketmasterFoundation.LocationSource, isFromIPAddress: Swift.Bool = false)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(placemark: CoreLocation.CLPlacemark, source: TicketmasterFoundation.LocationSource, isFromIPAddress: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   final public func description() -> Swift.String
   final public func debugDescription() -> Swift.String
   @objc final public func encode(with coder: Foundation.NSCoder)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 public enum WebsiteEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable {
@@ -1150,7 +1419,9 @@ public enum WebsiteEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable
     get
   }
   public func httpHostURL(forMarketDomain marketDomain: TicketmasterFoundation.MarketDomain) -> Foundation.URL
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [TicketmasterFoundation.WebsiteEnvironment]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [TicketmasterFoundation.WebsiteEnvironment] {
@@ -1161,56 +1432,86 @@ public enum WebsiteEnvironment : Swift.String, Swift.CaseIterable, Swift.Codable
   }
 }
 extension TicketmasterFoundation.UALCommerceEvent {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var eventID: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var eventName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var eventDate: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var venueName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var venueID: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var artistID: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var artistName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var edpType: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var majorCategoryName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var minorCategoryName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var promoterID: Swift.String? {
     get
   }
+  #endif
   final public var isResale: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var ticketQuantity: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var shippingMethod: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var paymentMethod: Swift.String? {
     get
   }
+  #endif
 }
 extension TicketmasterFoundation.UALCommerceEvent.ProductData {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var productClass: Swift.String? {
     get
   }
+  #endif
 }
 @_hasMissingDesignatedInitializers public class SWXMLHashOptions {
   public var shouldProcessLazily: Swift.Bool
@@ -1271,9 +1572,11 @@ public enum XMLIndexer {
   public static func XMLError(_: TicketmasterFoundation.IndexingError) -> TicketmasterFoundation.XMLIndexer
   @available(*, unavailable, renamed: "withAttribute(_:_:)")
   public static func withAttr(_ attr: Swift.String, _ value: Swift.String) throws -> TicketmasterFoundation.XMLIndexer
+  #if compiler(>=5.3) && $NonescapableTypes
   public var element: TicketmasterFoundation.XMLElement? {
     get
   }
+  #endif
   public var all: [TicketmasterFoundation.XMLIndexer] {
     get
   }
@@ -1316,7 +1619,9 @@ public struct XMLAttribute {
   final public let name: Swift.String
   public var caseInsensitive: Swift.Bool
   public var allAttributes: [Swift.String : TicketmasterFoundation.XMLAttribute]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func attribute(by name: Swift.String) -> TicketmasterFoundation.XMLAttribute?
+  #endif
   public var text: Swift.String {
     get
   }
@@ -1346,9 +1651,13 @@ extension TicketmasterFoundation.SWXMLHash {
 }
 public typealias SWXMLHashXMLElement = TicketmasterFoundation.XMLElement
 extension TicketmasterFoundation.EncryptedArchiver {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadJSONDictionary(fromFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, withDecryptionKey: Swift.String? = nil) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func save(jsonDictionary: TicketmasterFoundation.JSONDictionary, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil) -> (any Swift.Error)?
+  #endif
 }
 extension Swift.String {
   public static func randomAlphaNumeric(_ length: Swift.Int) -> Swift.String
@@ -1356,7 +1665,9 @@ extension Swift.String {
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public func constrainToEqualHeightAndWidth(of length: CoreFoundation.CGFloat)
   @_Concurrency.MainActor @preconcurrency public func constrainToEdgesOfSuperview()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func constrainToCenterOfSuperview(xOffset: CoreFoundation.CGFloat? = nil, yOffset: CoreFoundation.CGFloat? = nil)
+  #endif
 }
 public typealias URLQueryParameter = TicketmasterFoundation.ElementValue<Swift.String, Swift.String>
 public typealias URLQueryParameters = [Swift.String : Swift.String]
@@ -1366,19 +1677,31 @@ extension Swift.Dictionary where Key == Swift.String, Value == Swift.String {
   public var queryItems: [Foundation.URLQueryItem] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(_ param: TicketmasterFoundation.URLQueryParameter?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(_ array: TicketmasterFoundation.URLQueryParameters?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(_ item: Foundation.URLQueryItem?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func replace(_ array: [Foundation.URLQueryItem]?)
+  #endif
 }
 extension Swift.Dictionary where Key == Swift.String, Value == Swift.String {
   public static let encodingError: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func percentEncodedString(alwaysEncodeCharacters: Swift.String = "") -> Swift.String?
+  #endif
   public func percentEncodedArray(alwaysEncodeCharacters: Swift.String = "") -> [Swift.String]
   public mutating func applyBasicAuth(username: Swift.String, password: Swift.String)
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringByAddingPercentEncodingForURLQueryParamValues(alwaysEncodeCharacters: Swift.String = "") -> Swift.String?
+  #endif
   public static func separated(fromArray array: [Foundation.NSNumber], withToken token: Swift.String) -> Swift.String
   public static func separated(fromArray array: [Swift.String], withToken token: Swift.String) -> Swift.String
 }
@@ -1386,54 +1709,92 @@ extension Swift.Array {
   public func map<Key, Value>(toDictionary: (Element) -> Swift.Dictionary<Key, Value>.Element) -> [Key : Value] where Key : Swift.Hashable
 }
 extension UIKit.UIViewController {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func dismissSelf(animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func dismissViewControllersOnTopOfSelf(animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  #endif
 }
 public protocol JWT {
   var header: [Swift.String : Any] { get }
   var body: [Swift.String : Any] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var signature: Swift.String? { get }
+  #endif
   var string: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var expiresAt: Foundation.Date? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var issuer: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var subject: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var audience: [Swift.String]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var issuedAt: Foundation.Date? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var notBefore: Foundation.Date? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var identifier: Swift.String? { get }
+  #endif
   var expired: Swift.Bool { get }
 }
 public func decode(jwt: Swift.String) throws -> any TicketmasterFoundation.JWT
 public struct Claim {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var rawValue: Any? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var string: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var boolean: Swift.Bool? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var double: Swift.Double? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var integer: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var date: Foundation.Date? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var array: [Swift.String]? {
     get
   }
+  #endif
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jwtBody: TicketmasterFoundation.JSONDictionary? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jwt: (any TicketmasterFoundation.JWT)? {
     get
   }
+  #endif
 }
 public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringConvertible {
   case invalidBase64URL(Swift.String)
@@ -1442,9 +1803,11 @@ public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringC
   public var localizedDescription: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
   public var debugDescription: Swift.String {
     get
   }
@@ -1454,7 +1817,9 @@ public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringC
     case internalQA
     case preProduction
     case production
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias AllCases = [TicketmasterFoundation.TMPixelDivolte.PixelEnvironment]
     public typealias RawValue = Swift.String
     nonisolated public static var allCases: [TicketmasterFoundation.TMPixelDivolte.PixelEnvironment] {
@@ -1464,13 +1829,17 @@ public enum JWTDecodeError : Foundation.LocalizedError, Swift.CustomDebugStringC
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   override public func hostURL() -> Foundation.URL?
+  #endif
   @objc deinit
 }
 extension Foundation.URL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var cookieDomain: Swift.String? {
     get
   }
+  #endif
   public var isHTTPOrHTTPS: Swift.Bool {
     get
   }
@@ -1487,7 +1856,9 @@ extension Foundation.URL {
   final public func sendArrayRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<[Any]>) -> Swift.Void)
   final public func sendImageRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<UIKit.UIImage>) -> Swift.Void)
   final public func sendDataRequest(urlString: Swift.String, completion: @escaping (_ response: TicketmasterFoundation.ConnectionDriver.APIResponse<Foundation.Data>) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   override public init(configuration: Foundation.URLSessionConfiguration = super, securityExceptionHosts: [Swift.String]? = nil)
+  #endif
   override public init(connectionDriver: TicketmasterFoundation.ConnectionDriver)
   @objc deinit
 }
@@ -1535,7 +1906,9 @@ extension Foundation.URL {
     case PardotbySaleforce
     case BasisNet
     case mParticle
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1574,7 +1947,9 @@ extension Foundation.URL {
     case professionalOrEmploymentRelatedInfromation
     case educationInformation
     case other
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1588,7 +1963,9 @@ extension Foundation.URL {
     case marketing
     case clientServices
     case staffAdministration
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1598,7 +1975,9 @@ extension Foundation.URL {
     case collected
     case sold
     case disclosed
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1611,8 +1990,12 @@ extension Foundation.URL {
   final public let disclosureType: Swift.String
   final public let disclosureDescription: Swift.String?
   @objc convenience public init(target: TicketmasterFoundation.TMPixelDisclosure.Target, pii: [Swift.Int])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc convenience public init(target: TicketmasterFoundation.TMPixelDisclosure.Target, pii: [Swift.Int], justificationType: TicketmasterFoundation.TMPixelDisclosure.JustificationType, disclosureType: TicketmasterFoundation.TMPixelDisclosure.DisclosureType, disclosureDescription: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(target: TicketmasterFoundation.TMPixelDisclosure.Target, pii: [TicketmasterFoundation.TMPixelDisclosure.PII], justificationType: TicketmasterFoundation.TMPixelDisclosure.JustificationType = .marketing, disclosureType: TicketmasterFoundation.TMPixelDisclosure.DisclosureType = .disclosed, disclosureDescription: Swift.String? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -1668,7 +2051,9 @@ public enum TMDateStyle {
   final public let countryCode: Swift.String
   final public let deviceID: Swift.String?
   final public let accessToken: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(email: Swift.String, firstName: Swift.String?, lastName: Swift.String?, memberID: Swift.String?, hmacID: Swift.String, countryCode: Swift.String, deviceID: Swift.String?, accessToken: Swift.String?)
+  #endif
   @objc deinit
 }
 extension Swift.Decodable where Self : UIKit.UIColor {
@@ -1677,21 +2062,33 @@ extension Swift.Decodable where Self : UIKit.UIColor {
 extension Swift.Encodable where Self : UIKit.UIColor {
   public func encode(to encoder: any Swift.Encoder) throws
 }
-extension UIKit.UIColor : Swift.Codable {
+extension UIKit.UIColor : @retroactive Swift.Decodable {
+}
+extension UIKit.UIColor : @retroactive Swift.Encodable {
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func base64URLEncodedSHA256String() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sha256Data() -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sha256String() -> Swift.String?
+  #endif
   public func base64URLString() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func fromBase64URLString() -> Swift.String?
+  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class UFCMessageHandler : ObjectiveC.NSObject {
   public static let shared: TicketmasterFoundation.UFCMessageHandler
+  #if compiler(>=5.3) && $NonescapableTypes
   final public var loginManager: (any TicketmasterFoundation.UFCLoginManager)? {
     get
     set(loginMan)
   }
+  #endif
   final public var loggingLevel: TicketmasterFoundation.LogLevel
   @objc deinit
 }
@@ -1699,15 +2096,21 @@ extension TicketmasterFoundation.UFCMessageHandler : TicketmasterFoundation.UFCW
   final public func registerWebViewUFCMessagesForHandling(delegate: any TicketmasterFoundation.UFCWebViewMessageHandlerDelegate)
 }
 extension TicketmasterFoundation.UFCMessageHandler {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func registerUFCContractMessages(_ contentController: WebKit.WKUserContentController, scriptMessageHandler: (any WebKit.WKScriptMessageHandler)? = nil)
+  #endif
   final public func unregisterUFCContractMessages(_ contentController: WebKit.WKUserContentController)
 }
 extension TicketmasterFoundation.UFCMessageHandler : WebKit.WKScriptMessageHandler {
   @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 extension TicketmasterFoundation.UFCMessageHandler : TicketmasterFoundation.UFCLoginManagerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, operation: TicketmasterFoundation.UFCLoginManagerOperation, token: TicketmasterFoundation.TicketmasterOAuthToken?, marketDomains: [TicketmasterFoundation.MarketDomain]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func loginUpdated(manager: any TicketmasterFoundation.UFCLoginManager, mfaToken: Swift.String?, error: Foundation.NSError?)
+  #endif
 }
 public typealias ElementValue<Key, Value> = (key: Key, value: Value)
 extension Swift.Dictionary {
@@ -1716,9 +2119,11 @@ extension Swift.Dictionary {
   public init(elements: [Swift.Dictionary<Key, Value>.Element])
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var jsonDictionary: TicketmasterFoundation.JSONDictionary? {
     get
   }
+  #endif
   public var notEmpty: Swift.Bool {
     get
   }
@@ -1737,11 +2142,15 @@ extension Swift.String {
   case websiteDiscovery
   case websiteFavorites
   case countryDefault
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var stringValue: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1755,11 +2164,15 @@ extension Swift.String {
   final public let doNotSell: Swift.Bool
   final public let secure: Swift.Bool
   final public let httpOnly: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(value: Swift.String, expirationDate: Foundation.Date? = nil, hmacID: Swift.String? = nil, doNotSell: Swift.Bool = false, secure: Swift.Bool = true, httpOnly: Swift.Bool = true)
+  #endif
   @objc deinit
 }
 extension Foundation.NSError {
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(data: Foundation.Data?, domain: Swift.String)
+  #endif
 }
 @objc public class EventDate : ObjectiveC.NSObject {
   final public let startDates: [Foundation.Date]
@@ -1769,13 +2182,19 @@ extension Foundation.NSError {
   final public let isConsecutiveDateRange: Swift.Bool
   final public let isNonConsecutiveDates: Swift.Bool
   final public let isSeriesMaster: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(startDates: [Foundation.Date], endDate: Foundation.Date?, venueTimeZone: Foundation.TimeZone?, isAllDayEvent: Swift.Bool, isConsecutiveDateRange: Swift.Bool, isNonConsecutiveDates: Swift.Bool, isSeriesMaster: Swift.Bool = false)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(startDates: [Foundation.Date], endDate: Foundation.Date?, venueTimeZone: Foundation.TimeZone?, isAllDayEvent: Swift.Bool, isNonConsecutiveDates: Swift.Bool, isSeriesMaster: Swift.Bool = false)
+  #endif
   public func isEventinCurrentYear() -> Swift.Bool
   @objc deinit
 }
 extension TicketmasterFoundation.TMDateFormatter {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func string(from eventDate: TicketmasterFoundation.EventDate?) -> Swift.String
+  #endif
 }
 public enum DateShape {
   case singleDay(startDate: Foundation.Date)
@@ -1793,15 +2212,21 @@ extension TicketmasterFoundation.EventDate {
   public func dateShapeForMultipleStartDates() -> TicketmasterFoundation.DateShape
 }
 extension Foundation.Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func encrypted(withKey: Swift.String?) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decrypted(withKey: Swift.String?) -> Foundation.Data?
+  #endif
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoadingView : UIKit.UIView {
+@_inheritsConvenienceInitializers @objc(TMFLoadingView) @_Concurrency.MainActor @preconcurrency public class LoadingView : UIKit.UIView {
   @objc deinit
   @_Concurrency.MainActor @preconcurrency public func startAnimating()
   @_Concurrency.MainActor @preconcurrency public func stopAnimating()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
 }
 extension TicketmasterFoundation.ConnectionDriver {
   public typealias URLResponseHeaders = [Swift.AnyHashable : Any]
@@ -1823,15 +2248,19 @@ extension Foundation.Data {
   public func base64URLEncodedString() -> Swift.String
   public func hexStringFromData() -> Swift.String
 }
-public typealias JavascriptResult = ((_ result: Any?, _ error: (any Swift.Error)?) -> Swift.Void)
+public typealias JavascriptResult = (_ result: Any?, _ error: (any Swift.Error)?) -> Swift.Void
 extension WebKit.WKWebView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func run(javaScript: Swift.String, completion: TicketmasterFoundation.JavascriptResult? = nil)
+  #endif
 }
 public class TrustedCert {
   final public let identityRef: Security.SecIdentity
   final public let trust: Security.SecTrust
   final public let certArray: [Swift.AnyObject]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(data: Foundation.Data, password: Swift.String)
+  #endif
   public func credential() -> Foundation.URLCredential
   @objc deinit
 }
@@ -1839,7 +2268,9 @@ public class TrustedCert {
   public enum EventType : Swift.String {
     case transaction
     case addToCart
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -1875,43 +2306,74 @@ public class TrustedCert {
   final public var products: [TicketmasterFoundation.UALCommerceEvent.ProductData]?
   final public var customAttributes: [Swift.String : Any]
   final public var rawJSON: TicketmasterFoundation.JSONDictionary?
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(transactionEventJSON: TicketmasterFoundation.JSONDictionary?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(addToCartEventJSON: TicketmasterFoundation.JSONDictionary?)
+  #endif
   @objc deinit
 }
 extension Foundation.URLRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func buildRequest(httpMethod: TicketmasterFoundation.HTTPMethod = .GET, scheme: Swift.String? = nil, host: Swift.String? = nil, path: Swift.String? = nil, queryParameters: TicketmasterFoundation.URLQueryParameters? = nil, alwaysEncodeCharacters: Swift.String = "", httpHeaders: TicketmasterFoundation.HTTPRequestHeaders? = nil, requestBody: Foundation.Data? = nil, cachePolicy: Foundation.URLRequest.CachePolicy = .useProtocolCachePolicy) -> TicketmasterFoundation.NetworkService.RequestBuilderResponse
+  #endif
 }
-extension TicketmasterFoundation.Base64SHA1HMACConvertible where Self : TicketmasterFoundation.ConvertibleToUTF8Data {
+extension TicketmasterFoundation.Base64SHA256HMACConvertible where Self : TicketmasterFoundation.ConvertibleToUTF8Data {
+  public func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  @available(*, deprecated, message: "SHA-1 is cryptographically broken. Use base64SHA256HMAC(withSecret:) instead.")
   public func base64SHA1HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
 }
-public protocol Base64SHA1HMACConvertible {
+public protocol Base64SHA256HMACConvertible {
+  func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  @available(*, deprecated, message: "SHA-1 is cryptographically broken. Use base64SHA256HMAC(withSecret:) instead.")
   func base64SHA1HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
   var stringValue: Swift.String { get }
 }
-extension Swift.String : TicketmasterFoundation.Base64SHA1HMACConvertible {
+public typealias Base64SHA1HMACConvertible = TicketmasterFoundation.Base64SHA256HMACConvertible
+public protocol Base64HMACConvertible {
+  func base64SHA256HMAC(withSecret secret: any TicketmasterFoundation.ConvertibleToUTF8Data) -> Swift.String
+  var stringValue: Swift.String { get }
+}
+extension Swift.String : TicketmasterFoundation.Base64SHA256HMACConvertible {
   public var stringValue: Swift.String {
     get
   }
 }
 public protocol ConvertibleToUTF8Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   var utf8Representation: Foundation.Data? { get }
+  #endif
 }
 extension Swift.String : TicketmasterFoundation.ConvertibleToUTF8Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var utf8Representation: Foundation.Data? {
     get
   }
+  #endif
 }
+#if compiler(>=5.3) && $NonescapableTypes
 public func compareXYZVersions(_ lhs: Swift.String, _ rhs: Swift.String) -> Foundation.ComparisonResult?
+#endif
 @_hasMissingDesignatedInitializers public class PiecemealEventDateFormatter {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func stringForMonthDay(from eventDate: TicketmasterFoundation.EventDate, locale: Foundation.Locale? = nil) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func stringForDayOfWeek(from eventDate: TicketmasterFoundation.EventDate) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func stringForTime(from eventDate: TicketmasterFoundation.EventDate) -> Swift.String?
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class StringObfuscator : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func obfuscate(inputString: Swift.String, password: Swift.String?) -> [Swift.UInt16]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func deobfuscate(intArray: [Swift.UInt16], password: Swift.String?) -> Swift.String
+  #endif
   @objc public static func randomString(ofLength length: Swift.Int) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -1930,64 +2392,162 @@ open class NetworkService {
     case success(response: T)
     case failure(error: any Swift.Error)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
+  #endif
   public init(connectionDriver: TicketmasterFoundation.ConnectionDriver)
+  #if compiler(>=5.3) && $NonescapableTypes
   open func hostURL() -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func defaultHttpHeadersForRequest() -> TicketmasterFoundation.HTTPRequestHeaders?
+  #endif
   @objc deinit
 }
 extension WebKit.WKWebView {
   @_Concurrency.MainActor @preconcurrency public func setKeyboardRequiresUserInteraction(_ value: Swift.Bool)
 }
 extension Swift.Dictionary where Key == Swift.String, Value == Any {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionary(_ key: Swift.String) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryNonEmpty(_ key: Swift.String) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionary(path: Swift.String) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryNonEmpty(path: Swift.String) -> TicketmasterFoundation.JSONDictionary?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryArray(_ key: Swift.String) -> [TicketmasterFoundation.JSONDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryArrayNonEmpty(_ key: Swift.String) -> [TicketmasterFoundation.JSONDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryArray(path: Swift.String) -> [TicketmasterFoundation.JSONDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dictionaryArrayNonEmpty(path: Swift.String) -> [TicketmasterFoundation.JSONDictionary]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func string(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringNonEmpty(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func string(path: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringNonEmpty(path: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringArray(_ key: Swift.String) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringArrayNonEmpty(_ key: Swift.String) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringArray(path: Swift.String) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringArrayNonEmpty(path: Swift.String) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromInt(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromInt(path: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromDouble(_ key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromDouble(path: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromValue(_ key: Key) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stringFromValue(path: Key) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func url(_ key: Swift.String) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func url(path: Swift.String) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dateFromIso8601(_ key: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dateFromIso8601(path: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dateFromMillisSince1970(_ key: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dateFromMillisSince1970(path: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object<T>(_ key: Swift.String, transform: (TicketmasterFoundation.JSONDictionary) throws -> T) -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func object<T>(path: Swift.String, transform: (TicketmasterFoundation.JSONDictionary) throws -> T) -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func objectArray<T>(_ key: Swift.String, transform: (TicketmasterFoundation.JSONDictionary) throws -> T) -> [T]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func objectArray<T>(path: Swift.String, transform: (TicketmasterFoundation.JSONDictionary) throws -> T) -> [T]?
+  #endif
   public func bool(_ key: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func boolNonEmpty(_ key: Swift.String) -> Swift.Bool?
+  #endif
   public func bool(path: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func boolNonEmpty(path: Swift.String) -> Swift.Bool?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func uInt(_ key: Swift.String) -> Swift.UInt?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func uInt(path: Swift.String) -> Swift.UInt?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int(_ key: Swift.String) -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int(path: Swift.String) -> Swift.Int?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int64(_ key: Swift.String) -> Swift.Int64?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func int64(path: Swift.String) -> Swift.Int64?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func double(_ key: Swift.String) -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func double(path: Swift.String) -> Swift.Double?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decimalNumber(_ key: Swift.String) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func decimalNumber(path: Swift.String) -> Foundation.NSDecimalNumber?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func color(_ key: Swift.String) -> UIKit.UIColor?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func color(path: Swift.String) -> UIKit.UIColor?
+  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TMPixelService : ObjectiveC.NSObject {
   @objc deinit
@@ -2001,15 +2561,25 @@ extension Foundation.NSTimeZone {
 }
 extension Foundation.TimeZone {
   public static func makeGMTTimeZone() -> Foundation.TimeZone
+  #if compiler(>=5.3) && $NonescapableTypes
   public var localizedAbbreviation: Swift.String? {
     get
   }
+  #endif
 }
 @_hasMissingDesignatedInitializers public class DateParsing {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func date(fromISO8601GMTString gmtString: Swift.String) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func date(fromDateString gmtString: Swift.String, timeZone: Foundation.TimeZone? = nil) -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func iso8601GMTString(fromDate date: Foundation.Date) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func rfc2616GMTString(fromDate date: Foundation.Date) -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class TMFoundation : ObjectiveC.NSObject {
@@ -2017,9 +2587,11 @@ extension Foundation.TimeZone {
   public var version: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var sdkBuildInfo: TicketmasterFoundation.JSONDictionary? {
     get
   }
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -2033,12 +2605,16 @@ extension Foundation.TimeZone {
     public let response: Foundation.URLResponse?
     public let data: Foundation.Data?
     public let error: (any Swift.Error)?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(response: Foundation.URLResponse? = nil, data: Foundation.Data? = nil, error: (any Swift.Error)? = nil)
+    #endif
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var cannedResultArray: [TicketmasterFoundation.FakeDataSession.CannedResult]? {
     get
     set
   }
+  #endif
   public var cannedResultArrayIterator: Swift.Int
   public static let cannedResultArrayEndError: Foundation.NSError
   public var clearCannedDataUponCompletion: Swift.Bool
@@ -2046,21 +2622,33 @@ extension Foundation.TimeZone {
   public var lastRequest: Foundation.URLRequest?
   public var lastResponse: TicketmasterFoundation.FakeDataSession.CannedResult?
   public var testSession: Foundation.URLSession
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   override public func sendDataTask(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionTask
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func cannedHTTPResponse(code: Swift.Int) -> Foundation.HTTPURLResponse?
+  #endif
   public func reset()
+  #if compiler(>=5.3) && $NonescapableTypes
   override public init(configuration: Foundation.URLSessionConfiguration = super, delegate: (any Foundation.URLSessionDelegate)? = nil)
+  #endif
   @objc deinit
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func basicAuthString(username: Swift.String, password: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base64EncodedString: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base64DecodedString: Swift.String? {
     get
   }
+  #endif
 }
 @objc public enum MarketDomain : Swift.Int, Swift.CaseIterable, Swift.Hashable, Swift.Equatable, Swift.Codable {
   case US = 0
@@ -2084,11 +2672,21 @@ extension Swift.String {
   case NL
   case CH
   case DK
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(locale: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(countryCode: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(numericCountryCode: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(marketID: Swift.Int, domainHint: TicketmasterFoundation.MarketDomain? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [TicketmasterFoundation.MarketDomain]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [TicketmasterFoundation.MarketDomain] {
@@ -2156,7 +2754,9 @@ extension TicketmasterFoundation.MarketDomain {
   public func isValid(forDomain: TicketmasterFoundation.MarketDomain) -> Swift.Bool
 }
 extension TicketmasterFoundation.MarketDomain {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public var stringValue: Swift.String {
     get
   }
@@ -2175,11 +2775,17 @@ open class ConnectionDriver {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(configuration: Foundation.URLSessionConfiguration = .default, securityExceptionHosts: [Swift.String]? = nil)
+  #endif
   public init(session: TicketmasterFoundation.URLDataSession)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func sendBase(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: TicketmasterFoundation.ConnectionDriver.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func sendAuthorizedData(request: Foundation.URLRequest, completion: @escaping (_ data: Foundation.Data?, _ response: Foundation.HTTPURLResponse?, _ error: TicketmasterFoundation.ConnectionDriver.ConnectionError?) -> Swift.Void) -> Foundation.URLSessionTask?
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class LoggedMessageCache {
@@ -2187,7 +2793,9 @@ open class ConnectionDriver {
   final public var count: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func message(atIndex: Swift.Int) -> TicketmasterFoundation.LoggedMessage?
+  #endif
   final public func removeAll()
   final public func allMessages() -> [TicketmasterFoundation.LoggedMessage]
   final public func messages(logLevelOrHigher: TicketmasterFoundation.LogLevel) -> [TicketmasterFoundation.LoggedMessage]
@@ -2204,12 +2812,20 @@ public enum URLLoggingDetails {
 }
 extension Foundation.URLRequest {
   public func logSendRequest(identifier: Swift.String, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func logRecieveRequest(identifier: Swift.String, response: Foundation.URLResponse?, data: Foundation.Data?, error: (any Swift.Error)?, duration: Foundation.TimeInterval, loggingDetails: TicketmasterFoundation.URLLoggingDetails)
+  #endif
 }
 @objc public protocol UALWebViewMessageHandlerDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func adjustTrackedPageView(_ pageView: TicketmasterFoundation.UALPageView) -> TicketmasterFoundation.UALPageView?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func adjustTrackedUserAction(_ userAction: TicketmasterFoundation.UALUserAction) -> TicketmasterFoundation.UALUserAction?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func adjustTrackedCommerceEvent(_ commerceEvent: TicketmasterFoundation.UALCommerceEvent) -> TicketmasterFoundation.UALCommerceEvent?
+  #endif
 }
 public protocol UALWebViewMessageHandler : AnyObject {
   func registerWebViewUALMessagesForHandling(contentController: WebKit.WKUserContentController)
@@ -2225,12 +2841,20 @@ public protocol ImageCache {
   func removeImage(withIdentifier identifier: Swift.String) -> Swift.Bool
   @discardableResult
   func removeAllImages() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   func image(withIdentifier identifier: Swift.String) -> UIKit.UIImage?
+  #endif
 }
 public protocol ImageRequestCache : TicketmasterFoundation.ImageCache {
+  #if compiler(>=5.3) && $NonescapableTypes
   func add(_ image: UIKit.UIImage, for request: Foundation.URLRequest, withIdentifier identifier: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func removeImage(for request: Foundation.URLRequest, withIdentifier identifier: Swift.String?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func image(for request: Foundation.URLRequest, withIdentifier identifier: Swift.String?) -> UIKit.UIImage?
+  #endif
 }
 open class AutoPurgingImageCache : TicketmasterFoundation.ImageRequestCache {
   open var memoryUsage: Swift.UInt64 {
@@ -2240,26 +2864,38 @@ open class AutoPurgingImageCache : TicketmasterFoundation.ImageRequestCache {
   final public let preferredMemoryUsageAfterPurge: Swift.UInt64
   public init(memoryCapacity: Swift.UInt64 = 100_000_000, preferredMemoryUsageAfterPurge: Swift.UInt64 = 60_000_000)
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   open func add(_ image: UIKit.UIImage, for request: Foundation.URLRequest, withIdentifier identifier: Swift.String? = nil)
+  #endif
   open func add(_ image: UIKit.UIImage, withIdentifier identifier: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   open func removeImage(for request: Foundation.URLRequest, withIdentifier identifier: Swift.String?) -> Swift.Bool
+  #endif
   @discardableResult
   open func removeImages(matching request: Foundation.URLRequest) -> Swift.Bool
   @discardableResult
   open func removeImage(withIdentifier identifier: Swift.String) -> Swift.Bool
   @discardableResult
   @objc open func removeAllImages() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   open func image(for request: Foundation.URLRequest, withIdentifier identifier: Swift.String? = nil) -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func image(withIdentifier identifier: Swift.String) -> UIKit.UIImage?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func imageCacheKey(for request: Foundation.URLRequest, withIdentifier identifier: Swift.String?) -> Swift.String
+  #endif
 }
 @_hasMissingDesignatedInitializers public class EncryptedArchiver {
   public typealias EncryptedArchiverResponse = TicketmasterFoundation.EncryptedArchiver.ArchiverResponse<TicketmasterFoundation.EncryptedArchiverFile>
   @objc public enum ArchiverDirectory : Swift.Int {
     case documentDirectory = 0
     case libraryDirectory
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -2286,42 +2922,74 @@ open class AutoPurgingImageCache : TicketmasterFoundation.ImageRequestCache {
     case failure(error: any Swift.Error)
   }
   public static let defaultVersion: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadCodable<T>(fromFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, decryptionKey: Swift.String? = nil, as type: T.Type) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadObject(fromFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, decryptionKey: Swift.String? = nil) -> (any Foundation.NSSecureCoding)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadCodableResponse<T>(fromFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, decryptionKey: Swift.String? = nil, as type: T.Type) -> TicketmasterFoundation.EncryptedArchiver.ArchiverResponse<T> where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadResponse(fromFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, decryptionKey: Swift.String? = nil) -> TicketmasterFoundation.EncryptedArchiver.EncryptedArchiverResponse
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func save<T>(codable: T, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil) -> (any Swift.Error)? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func save(object: any Foundation.NSSecureCoding, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil) -> (any Swift.Error)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func save<T>(codable: T, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil, fileProtection: Foundation.Data.WritingOptions) -> (any Swift.Error)? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func save(object: any Foundation.NSSecureCoding, toFileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory, encryptionKey: Swift.String? = nil, version: Swift.String? = nil, fileProtection: Foundation.Data.WritingOptions) -> (any Swift.Error)?
+  #endif
   public static func fileExists(fileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func fileURLs(inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory) -> [Foundation.URL]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func remove(fileName: Swift.String, inDirectory: TicketmasterFoundation.EncryptedArchiver.ArchiverDirectory = .libraryDirectory) -> (any Swift.Error)?
+  #endif
   @objc deinit
 }
 extension Security.SecTrust {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func validateTrust(forProtectionSpace: Foundation.URLProtectionSpace, withSSLPinningData: Foundation.Data? = nil, allowBreach: Swift.Bool? = false) -> Swift.Bool
+  #endif
 }
 extension Foundation.HTTPCookie {
   public func isTMMarketDomain() -> Swift.Bool
   public func cookie(forUpdatedDomain: Swift.String) -> Foundation.HTTPCookie
 }
 extension WebKit.WKWebView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(configuration: WebKit.WKWebViewConfiguration?)
+  #endif
 }
 extension Foundation.URL {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var queryItems: [Foundation.URLQueryItem]? {
     get
   }
+  #endif
   public var queryParameters: TicketmasterFoundation.URLQueryParameters {
     get
   }
 }
 @objc extension Foundation.NSURL {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public var queryItems: [Foundation.URLQueryItem]? {
     @objc get
   }
+  #endif
   @objc dynamic public var queryParameters: TicketmasterFoundation.URLQueryParameters {
     @objc get
   }

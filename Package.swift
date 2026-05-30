@@ -1,78 +1,60 @@
 // swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
     name: "TicketmasterSDK",
     defaultLocalization: "en",
-    platforms: [
-        .iOS(.v17)
-    ],
+    platforms: [.iOS(.v17)],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "TicketmasterFoundation",
-            targets: ["TicketmasterFoundation"]),
-        .library(
-            name: "TicketmasterAuthentication",
-            targets: ["TicketmasterAuthentication"]),
-        .library(
-            name: "TicketmasterDiscoveryAPI",
-            targets: ["TicketmasterDiscoveryAPI"]),
-        .library(
-            name: "TicketmasterPrePurchase",
-            targets: ["TicketmasterPrePurchase"]),
-        .library(
-            name: "TicketmasterPurchase",
-            targets: ["TicketmasterPurchase"]),
-        .library(
-            name: "TicketmasterSwiftProtobuf",
-            targets: ["TicketmasterSwiftProtobuf"]),
-        .library(
-            name: "TicketmasterSecureEntry",
-            targets: ["TicketmasterSecureEntry"]),
-        .library(
-            name: "TicketmasterTickets",
-            targets: ["TicketmasterTickets"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        .library(name: "TicketmasterFoundation", targets: ["TicketmasterFoundation"]),
+        .library(name: "TicketmasterAuthentication", targets: ["TicketmasterAuthentication"]),
+        .library(name: "TicketmasterDiscoveryAPI", targets: ["TicketmasterDiscoveryAPI"]),
+        .library(name: "TicketmasterPrePurchase", targets: ["TicketmasterPrePurchase"]),
+        .library(name: "TicketmasterPurchase", targets: ["TicketmasterPurchase"]),
+        .library(name: "TicketmasterSwiftProtobuf", targets: ["TicketmasterSwiftProtobuf"]),
+        .library(name: "TicketmasterSecureEntry", targets: ["TicketmasterSecureEntry"]),
+        .library(name: "TicketmasterTickets", targets: ["TicketmasterTickets"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TicketmasterFoundation",
-            path: "Frameworks/TicketmasterFoundation.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterFoundation.xcframework.zip",
+            checksum: "dd14436a5113bbcffac83956eabf4d213aad913a539446f89eddfa6cf4f991ff"
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
-            path: "Frameworks/TicketmasterAuthentication.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterAuthentication.xcframework.zip",
+            checksum: "be7132c2fea96ec07edc59397b02aeeaf3bfa2831bb2baf833de93fdd36efb7d"
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
-            path: "Frameworks/TicketmasterDiscoveryAPI.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterDiscoveryAPI.xcframework.zip",
+            checksum: "9c110f6ec2a5227bf1bcf9313861a816c1cb7bb0381a820d4f4c55d657f785c2"
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
-            path: "Frameworks/TicketmasterPrePurchase.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterPrePurchase.xcframework.zip",
+            checksum: "3c0aed3fee64b6336df094e50b5f2d3e014aaa50b600ee5f0d22c1d02436df71"
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
-            path: "Frameworks/TicketmasterPurchase.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterPurchase.xcframework.zip",
+            checksum: "f41b09b90672bbbf2adb4b590d6a809a92f408a01290c2736c4088fe189f5195"
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
-            path: "Frameworks/TicketmasterSwiftProtobuf.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterSwiftProtobuf.xcframework.zip",
+            checksum: "3eb1223ff14b1ff75488a699a7932b9f6d53c9144a22cb13115fbdc3dc072f43"
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
-            path: "Frameworks/TicketmasterSecureEntry.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterSecureEntry.xcframework.zip",
+            checksum: "7009dc14816cccb0b47b4d70a4a1b6340f244e6dd1424fcfd763860df400a1ec"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            path: "Frameworks/TicketmasterTickets.xcframework"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-alpha5/TicketmasterTickets.xcframework.zip",
+            checksum: "54e96fd05c269150833579f8eb8f3a676999d36f9a3705cd22f3a0a257dce16e"
         ),
     ],
     swiftLanguageVersions: [.v5]

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TM-Ignite'
-  s.version      = '1.21.0-beta'
+  s.version      = '1.21.0-rc'
   s.summary      = 'Ticketmaster Ignite SDK for iOS'
   s.description  = <<-DESC
     The Ticketmaster Ignite SDK provides a suite of frameworks for integrating

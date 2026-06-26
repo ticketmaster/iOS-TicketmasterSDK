@@ -18,43 +18,43 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TicketmasterFoundation",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterFoundation.xcframework.zip",
-            checksum: "059788f71646e0ceef390f106d86a5ebd510160acfccb59d0fed00b1e925944d"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterFoundation.xcframework.zip",
+            checksum: "9c7ed095d24bec71dbf22e455dfaf1beebc801024091d9ec43736bd9adcba383"
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterAuthentication.xcframework.zip",
-            checksum: "728403a9da7e88218c2f21acf51f4dd31284f0fd2b0ce1e98957fbf6dcaeb8fb"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterAuthentication.xcframework.zip",
+            checksum: "e71f50a1c893b39441e79e790bf5017d8c8774ea3e0696f1e1b2a3fe839b85d3"
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterDiscoveryAPI.xcframework.zip",
-            checksum: "be6b8e06c83c3723cec899697064d0155ac27c933b8250dc31349bd9ba370c86"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterDiscoveryAPI.xcframework.zip",
+            checksum: "d825fc6375a8f4afc869df9f7980570b1ddb71826b3599c986e4daa3dbf0f39f"
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterPrePurchase.xcframework.zip",
-            checksum: "62db5858df5ef65583974efd3b8fb7063e74b1ba7d4c2d78e16d48bc654169ee"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterPrePurchase.xcframework.zip",
+            checksum: "69d824e77c87c3d6b9ab5df92e56fec43f661d14137c876b295632dc0257bc79"
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterPurchase.xcframework.zip",
-            checksum: "4665ab21826d1f4e864f78bb376124e1d53ac5ea78982a30b8a9b47f18a83ca3"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterPurchase.xcframework.zip",
+            checksum: "294c2b495829b40930cadd1d9a2cf7c3a68153646aaaca1b639572f1ddc7ab55"
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterSwiftProtobuf.xcframework.zip",
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterSwiftProtobuf.xcframework.zip",
             checksum: "3eb1223ff14b1ff75488a699a7932b9f6d53c9144a22cb13115fbdc3dc072f43"
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterSecureEntry.xcframework.zip",
-            checksum: "8108dcbc54233d73a016ddaef607622b804512213d21a729eb04a6139b14a418"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterSecureEntry.xcframework.zip",
+            checksum: "56e5cf418cce2d238f24945e5dd700948f36776045039284f1568eb7b2698e3b"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-beta/TicketmasterTickets.xcframework.zip",
-            checksum: "336e219a8a1bab736322681579fcf2d048a935d2627b6fa7c013163a9df28d87"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.0-rc/TicketmasterTickets.xcframework.zip",
+            checksum: "662ae1026cc5a9eaec12d4edfc88ddebea8caa0b2556e882e420595856518b06"
         ),
     ],
     swiftLanguageVersions: [.v5]

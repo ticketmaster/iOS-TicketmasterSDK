@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>BuildDate</key>
-	<string>Mon Mar 16 18:40:42 PDT 2026</string>
+	<string>Mon Jun 29 10:31:45 PDT 2026</string>
 	<key>BuildHost</key>
-	<string>LNEH7VYVF25HY</string>
+	<string>LNERT9JF4YTCD</string>
 	<key>BuildVariant</key>
 	<string></string>
 	<key>GITBranch</key>
-	<string>release/4.0.1</string>
+	<string>kkao-UpdateVersionTo-4.0.1</string>
 	<key>GITComment</key>
-	<string>Re-added old methods, marked as deprecated for compatability</string>
+	<string>Change EDP custom scheme param to mobileApplicationName, previously f_appviewglobal_applicationname</string>
 	<key>GITDate</key>
-	<string>Mon Mar 16 17:10:24 2026 -0700</string>
+	<string>Mon Jun 29 10:29:44 2026 -0700</string>
 	<key>GITRevision</key>
-	<string>24aceaae9614b79484f2931aa2945b2d748301ed</string>
+	<string>f91ae74f44ee27c6f131fb65d271c0c47fceeda5</string>
 	<key>MarketingVersion</key>
 	<string>4.0.1</string>
 </dict>

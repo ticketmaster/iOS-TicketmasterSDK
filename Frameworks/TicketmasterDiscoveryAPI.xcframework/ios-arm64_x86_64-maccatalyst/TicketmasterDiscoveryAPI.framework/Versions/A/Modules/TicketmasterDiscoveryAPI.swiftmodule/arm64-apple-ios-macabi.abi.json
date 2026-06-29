@@ -32871,644 +32871,644 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPromoter.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPromoter.swift",
       "kind": "StringLiteral",
       "offset": 1248,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "StringLiteral",
       "offset": 4069,
       "length": 34,
       "value": "\"0123456789bcdefghjkmnpqrstuvwxyz\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4176,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4188,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4504,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4535,
       "length": 26,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4595,
       "length": 22,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4656,
       "length": 16,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4715,
       "length": 23,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4775,
       "length": 19,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4836,
       "length": 16,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4898,
       "length": 14,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 4960,
       "length": 27,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 5023,
       "length": 16,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/Geohash.swift",
       "kind": "IntegerLiteral",
       "offset": 5087,
       "length": 22,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3353,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3439,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3525,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 3656,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 3854,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryEventSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 3952,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 7,
       "value": "\"en-us\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 362,
       "length": 7,
       "value": "\"es-us\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 397,
       "length": 7,
       "value": "\"en-ca\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 422,
       "length": 7,
       "value": "\"fr-ca\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 7,
       "value": "\"en-au\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 7,
       "value": "\"en-nz\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 7,
       "value": "\"en-gb\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 7,
       "value": "\"en-mx\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 7,
       "value": "\"es-mx\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 632,
       "length": 8,
       "value": "\"es-419\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 668,
       "length": 7,
       "value": "\"de-at\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 7,
       "value": "\"pl-pl\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 7,
       "value": "\"no-no\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 773,
       "length": 7,
       "value": "\"fi-fi\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 808,
       "length": 7,
       "value": "\"nl-be\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 7,
       "value": "\"cs-cz\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 878,
       "length": 7,
       "value": "\"sv-se\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 913,
       "length": 7,
       "value": "\"en-za\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 948,
       "length": 7,
       "value": "\"es-es\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 983,
       "length": 7,
       "value": "\"de-de\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1018,
       "length": 7,
       "value": "\"en-ae\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 7,
       "value": "\"nl-nl\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1088,
       "length": 7,
       "value": "\"de-ch\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Utilities\/MarketDomain+DiscoveryLocale.swift",
       "kind": "StringLiteral",
       "offset": 1123,
       "length": 7,
       "value": "\"da-dk\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPriceRange.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPriceRange.swift",
       "kind": "StringLiteral",
       "offset": 1386,
       "length": 5,
       "value": "\"min\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPriceRange.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryPriceRange.swift",
       "kind": "StringLiteral",
       "offset": 1418,
       "length": 5,
       "value": "\"max\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 438,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 476,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 514,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 578,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "StringLiteral",
       "offset": 1588,
       "length": 16,
       "value": "\"relevance,desc\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "StringLiteral",
       "offset": 1639,
       "length": 15,
       "value": "\"relevance,asc\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryGlobalEventsCriteria.swift",
       "kind": "StringLiteral",
       "offset": 1685,
       "length": 11,
       "value": "\"date,desc\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
       "offset": 6555,
       "length": 16,
       "value": "\"TMDiscoveryAPI\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 6579,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI.swift",
       "kind": "StringLiteral",
       "offset": 6621,
       "length": 188,
       "value": "\"Fatal Error: An API key must be set via TMDiscoveryAPI.configure before initializing instances of DiscoveryService. To get a developer API key, visit https:\/\/developer.ticketmaster.com\/.\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 1967,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoverySuggestCriteria.swift",
       "kind": "BooleanLiteral",
       "offset": 2168,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "Array",
       "offset": 1507,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4288,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4359,
       "length": 8,
       "value": "\"active\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4398,
       "length": 14,
       "value": "\"discoverable\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4445,
       "length": 6,
       "value": "\"test\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4524,
       "length": 8,
       "value": "\"images\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4568,
       "length": 17,
       "value": "\"classifications\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryAttraction.swift",
       "kind": "StringLiteral",
       "offset": 4610,
       "length": 11,
       "value": "\"_embedded\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1200,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryClassificationSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1298,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI+Environment.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/TMDiscoveryAPI+Environment.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryVenueSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1501,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryClassification.swift",
       "kind": "StringLiteral",
       "offset": 5023,
       "length": 9,
       "value": "\"primary\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryCriteria.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 5,
       "value": "\"tmr\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryDateRange.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryDateRange.swift",
       "kind": "StringLiteral",
       "offset": 1587,
       "length": 15,
       "value": "\"startDateTime\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryDateRange.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryDateRange.swift",
       "kind": "StringLiteral",
       "offset": 1630,
       "length": 13,
       "value": "\"endDateTime\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1476,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/CriteriaObjects\/DiscoveryAttractionSearchCriteria.swift",
       "kind": "IntegerLiteral",
       "offset": 1574,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15058,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15289,
       "length": 10,
       "value": "\"timezone\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15433,
       "length": 8,
       "value": "\"active\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15467,
       "length": 19,
       "value": "\"isPubliclyVisible\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15517,
       "length": 14,
       "value": "\"discoverable\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15584,
       "length": 6,
       "value": "\"test\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15686,
       "length": 6,
       "value": "\"code\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15759,
       "length": 13,
       "value": "\"priceRanges\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15870,
       "length": 12,
       "value": "\"pleaseNote\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15923,
       "length": 13,
       "value": "\"ticketLimit\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 15973,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 16058,
       "length": 17,
       "value": "\"classifications\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 16110,
       "length": 8,
       "value": "\"images\""
     },
     {
-      "filePath": "\/Users\/jonathan.backer\/Code\/iOS-Retail1\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
+      "filePath": "\/Users\/kelvin.kao\/Development\/iOS-RetailSDK\/TicketmasterDiscoveryAPI\/TicketmasterDiscoveryAPI\/Public\/ModelObjects\/DiscoveryEvent.swift",
       "kind": "StringLiteral",
       "offset": 16152,
       "length": 11,

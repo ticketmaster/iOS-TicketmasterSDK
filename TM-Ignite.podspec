@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TM-Ignite'
-  s.version      = '1.21.0'
+  s.version      = '1.21.1'
   s.summary      = 'Ticketmaster Ignite SDK for iOS'
   s.description  = <<-DESC
     The Ticketmaster Ignite SDK provides a suite of frameworks for integrating
@@ -36,9 +36,8 @@ LICENSE
   s.author       = { 'Ticketmaster' => 'mobile-sdk@ticketmaster.com' }
   # CocoaPods is blocking `prepare_command` as part of the trunk sunset, so we
   # distribute the binaries via an :http zip source instead. CocoaPods downloads
-  # and unpacks this at install time — equivalent to the old curl loop, but using
-  # a field trunk still accepts. This is a temporary workaround for the React
-  # Native team; SPM continues to fetch frameworks remotely as usual.
+  # and unpacks this at install time. The combined TM-Ignite-xcframeworks.zip is
+  # built and uploaded to the GitHub release by scripts/build_combined_zip.sh.
   s.source       = { :http => "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/#{s.version}/TM-Ignite-xcframeworks.zip" }
   s.platform     = :ios, '17.0'
   s.swift_version = '5.9'

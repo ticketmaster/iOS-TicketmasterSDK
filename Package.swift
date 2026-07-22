@@ -18,43 +18,43 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TicketmasterFoundation",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterFoundation.xcframework.zip",
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterFoundation.xcframework.zip",
             checksum: "9c7ed095d24bec71dbf22e455dfaf1beebc801024091d9ec43736bd9adcba383"
         ),
         .binaryTarget(
             name: "TicketmasterAuthentication",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterAuthentication.xcframework.zip",
-            checksum: "e71f50a1c893b39441e79e790bf5017d8c8774ea3e0696f1e1b2a3fe839b85d3"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterAuthentication.xcframework.zip",
+            checksum: "ebf5388df434b33cd0c7342ff3f38560ab3f3477a2de65a63187f3e6ff2bae87"
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterDiscoveryAPI.xcframework.zip",
-            checksum: "d825fc6375a8f4afc869df9f7980570b1ddb71826b3599c986e4daa3dbf0f39f"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterDiscoveryAPI.xcframework.zip",
+            checksum: "539b1ff4a4e3830c51b1f23956624e43edcb464ac62bea08cd68238dfca647db"
         ),
         .binaryTarget(
             name: "TicketmasterPrePurchase",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterPrePurchase.xcframework.zip",
-            checksum: "69d824e77c87c3d6b9ab5df92e56fec43f661d14137c876b295632dc0257bc79"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterPrePurchase.xcframework.zip",
+            checksum: "72709c87cc51ba4c22692098084d3db3452bcb52f849cbfaa139b14c4bb3a2f5"
         ),
         .binaryTarget(
             name: "TicketmasterPurchase",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterPurchase.xcframework.zip",
-            checksum: "294c2b495829b40930cadd1d9a2cf7c3a68153646aaaca1b639572f1ddc7ab55"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterPurchase.xcframework.zip",
+            checksum: "5a6f593549407e6d380d662a7b2cdeef2560d6acb44bf32cd66281cf8f7def22"
         ),
         .binaryTarget(
             name: "TicketmasterSwiftProtobuf",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterSwiftProtobuf.xcframework.zip",
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterSwiftProtobuf.xcframework.zip",
             checksum: "3eb1223ff14b1ff75488a699a7932b9f6d53c9144a22cb13115fbdc3dc072f43"
         ),
         .binaryTarget(
             name: "TicketmasterSecureEntry",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterSecureEntry.xcframework.zip",
-            checksum: "ee3947f9148761130b7ca607ae51ea894145359c804fd14373d32fd536f3de3e"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterSecureEntry.xcframework.zip",
+            checksum: "d231f4f296f0919f68d0444f0d0a7fc70e721a2e76530a0ee4dcbd0b3a732773"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
-            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.1/TicketmasterTickets.xcframework.zip",
-            checksum: "0954cba0dc63fa7dc9db336e2a1bb861a46eead522b2e3bdc5824d421378c462"
+            url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.2/TicketmasterTickets.xcframework.zip",
+            checksum: "88180c9761b86e8ca016bedd96dba726cb486b1f1a6580000e21c81d37b07418"
         ),
     ],
     swiftLanguageVersions: [.v5]

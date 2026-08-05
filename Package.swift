@@ -24,7 +24,7 @@ let package = Package(
         .binaryTarget(
             name: "TicketmasterAuthentication",
             url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.3/TicketmasterAuthentication.xcframework.zip",
-            checksum: "ebf5388df434b33cd0c7342ff3f38560ab3f3477a2de65a63187f3e6ff2bae87"
+            checksum: "2a32b2ec5eb96d49b1fa57f918a51305a35fa16e0ad27a440994c7474d10d888"
         ),
         .binaryTarget(
             name: "TicketmasterDiscoveryAPI",
@@ -49,12 +49,12 @@ let package = Package(
         .binaryTarget(
             name: "TicketmasterSecureEntry",
             url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.3/TicketmasterSecureEntry.xcframework.zip",
-            checksum: "d231f4f296f0919f68d0444f0d0a7fc70e721a2e76530a0ee4dcbd0b3a732773"
+            checksum: "2212d7445b76046ae7bfaec8651d45bbe7a54b0b6c488c5a18e829f65707429a"
         ),
         .binaryTarget(
             name: "TicketmasterTickets",
             url: "https://github.com/ticketmaster/iOS-TicketmasterSDK/releases/download/1.21.3/TicketmasterTickets.xcframework.zip",
-            checksum: "b9bc2aa033b017d5944eb82a17360b5b3c49618e656f5dbb1624830444dd94f5"
+            checksum: "839a8aa8904d560cf7f73b2a51c58be316985258126e3702c989373f547f64f7"
         ),
     ],
     swiftLanguageVersions: [.v5]
